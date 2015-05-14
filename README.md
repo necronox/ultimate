@@ -15,12 +15,12 @@ Credits:
 
 Ed - Mod founder, former developer and former leader
 
-Current Developers
+    Current Developers
     napoleonb1974
     cesarcurado
     justrubish
 
-  Former Developers
+    Former Developers
     The Pink Panzer  
     Mr Zero 
     Robert Graff 
