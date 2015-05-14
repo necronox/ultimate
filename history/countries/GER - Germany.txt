@@ -30,13 +30,6 @@ unemployment_subsidies = low_subsidies
 pensions = good_pensions 
 school_reforms = no_schools
 
-
-govt_flag = 
-{
-        government = hms_government
-        flag = presidential_dictatorship
-}
-
 ruling_party = GER_conservative
 upper_house = {
         fascist = 0
@@ -384,12 +377,6 @@ combustion_engine = 1
 advanced_steel_railroad = 1
 shift_work = 1
 electric_furnace = 1 #until this for 1913
-	
-govt_flag = 
-{
-	government = hms_government
-	flag = presidential_dictatorship
-}
 
 ruling_party = GER_conservative_3
 upper_house = {
