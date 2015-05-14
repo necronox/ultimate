@@ -1,0 +1,37 @@
+1764.1.1 = {
+owner = SPA
+controller = SPA
+colonial = 1
+		}
+1836.1.1 = {
+owner = TEX
+controller = TEX
+add_core = TEX
+add_core = MEX
+colonial = 0
+		}
+
+trade_goods = cattle
+life_rating = 35
+1867.1.1 = {
+	owner = USA
+	controller = USA
+		}
+		
+
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}
+
+fort = 1 #Remember the Alamo!
+
+
+1861.1.1 = {
+	controller = CSA
+	owner = CSA
+	add_core = USA
+	add_core = CSA
+	remove_core = MEX
+}

@@ -1,0 +1,25 @@
+owner = MDR
+controller = MDR
+add_core = MDR
+
+1650.1.1 = {
+owner = FRA
+controller = FRA
+colonial = 2
+		}
+add_core = HYD
+
+
+#Decolonisation
+1947.1.1 = {
+	owner = HND
+	controller = HND
+	colonial = 0
+		}
+
+
+
+add_core = HND
+
+trade_goods = spices
+life_rating = 32

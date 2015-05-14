@@ -1,0 +1,25 @@
+owner = TUR
+controller = TUR
+
+
+1800.1.1 = {
+owner = GEO
+controller = GEO
+}
+
+1836.1.1 = {
+owner = RUS
+controller = RUS
+add_core = RUS
+		}
+add_core = GEO
+trade_goods = wool
+life_rating = 35
+
+1992.1.1 = {
+		owner = GEO
+		controller = GEO
+		colonial = 0
+		}
+
+

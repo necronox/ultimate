@@ -1,0 +1,21 @@
+
+
+1910.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 2
+		}
+
+1963.1.1 = {
+	owner = MAL
+	controller = MAL
+	add_core = MAL
+	colonial = 0
+		}
+
+
+owner = BRU
+controller = BRU
+add_core = BRU
+trade_goods = grain
+life_rating = 15

@@ -1,0 +1,31 @@
+1600.1.1 = {
+	owner = BYZ
+	controller = BYZ
+	add_core = BYZ
+	}
+
+1604.1.1 = { 
+	owner = TUR
+	controller = TUR
+	add_core = GRE
+	remove_core = BYZ
+	}	
+
+1700.1.1 = {
+	owner = VEN
+	controller = VEN
+		}
+1724.1.1 = {
+	owner = TUR
+	controller = TUR
+		}
+1830.1.1 = {
+	owner = GRE
+	controller = GRE
+		}
+1919.6.28 = { 
+		controller = GRE
+		owner = GRE
+		}
+trade_goods = fruit
+life_rating = 35

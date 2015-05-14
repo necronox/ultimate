@@ -1,0 +1,21 @@
+trade_goods = fruit
+life_rating = 10
+1910.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		add_core = ALD
+		}
+1945.1.1 = {
+owner = FRA
+controller = FRA
+add_core = ALD
+}
+1965.1.1 = {
+owner = ALD
+controller = ALD
+add_core = ALD
+colonial = 0
+		}
+
+

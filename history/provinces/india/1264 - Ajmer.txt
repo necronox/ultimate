@@ -1,0 +1,35 @@
+	owner = MUG
+	controller = MUG
+
+1818.1.1 = {
+	owner = ENG #hello
+	controller = ENG #hello
+	colonial = 2
+}
+
+add_core = MUG
+
+1800.1.1 = {
+	remove_core = MUG
+		}
+add_core = MEW
+
+
+
+#Decolonisation
+1947.1.1 = {
+	owner = HND
+	controller = HND
+	colonial = 0
+		}
+
+
+
+add_core = HND
+1880.1.1 = {
+owner = ENG #hello
+controller = ENG #hello
+colonial = 2
+		}
+trade_goods = cotton
+life_rating = 32

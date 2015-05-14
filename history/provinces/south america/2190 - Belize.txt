@@ -1,0 +1,28 @@
+owner = ANG
+controller = ANG
+1707.1.1 = {
+	owner = ENG
+controller = ENG
+colonial = 2
+		}
+1823.1.1 = {
+add_core = GUA
+add_core = UCA
+		}
+trade_goods = fruit
+life_rating = 30
+colonial = 2
+
+1910.1.1 = {
+	add_core = BLZ
+	}
+
+1981.1.1 = {
+owner = BLZ
+controller = BLZ
+add_core = BLZ
+colonial = 0
+		}
+	
+
+		}

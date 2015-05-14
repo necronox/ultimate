@@ -1,0 +1,130 @@
+# gravity
+country_event = {
+id = 800100
+title = "EVTNAME800100"
+desc = "EVTDESC800100"
+picture = "newton"
+fire_only_once = yes
+
+        trigger = { 
+            tag = ANG
+            year = 1665
+        }
+
+          mean_time_to_happen = {
+                  months = 12
+
+          }
+
+          option = {
+                  name = "EVTOPTA800100"
+                  years_of_research = 0.50
+          }
+
+          option = { 
+                  name = "EVTOPTB800100"
+                  money = 100000
+          }
+
+}
+
+# einstein
+
+country_event = {
+id = 800110
+title = "EVTNAME800110"
+desc = "EVTDESC800110"
+picture = "einstein"
+fire_only_once = yes
+
+		trigger = { 
+			tag = GER
+			year = 1921
+                              
+          }
+
+          mean_time_to_happen = {
+                  months = 240
+
+          }
+
+          option = {
+                  name = "EVTOPTA800110"
+                  years_of_research = 2
+          }
+
+          option = { 
+                  name = "EVTOPTB800110"
+                  money = 100000
+          }
+
+}
+
+#naziscientists1
+
+country_event = {
+id = 800120
+title = "EVTNAME800120"
+desc = "EVTDESC800120"
+picture = "scientists"
+
+   trigger = {
+            tag = USA
+            has_global_flag = WW2inprogress
+            549 = {
+            controlled_by = USA
+                  }
+   }
+
+   mean_time_to_happen = { 
+           days = 1
+
+   }
+
+   option = {
+                  name = "EVTOPTA800120"
+                  years_of_research = 6
+
+            }
+
+}
+
+#naziscientists2
+
+country_event = {
+id = 800130
+title = "EVTNAME800130"
+desc = "EVTDESC800130"
+picture = "scientists"
+
+  trigger = {
+           tag = RUS
+           has_global_flag = WW2inprogress
+           549 = {
+           controlled_by = RUS
+                 }
+  }
+
+  mean_time_to_happen = { 
+          days = 1
+
+  }
+
+  option = {
+                 name = "EVTOPTA800130"
+                 years_of_research = 6
+
+           }
+
+  option = {
+                 name = "EVTOPTB800130"
+                 any_pop = { 
+                             ideology = {
+					value = communist
+					factor = 0.1
+           }
+                             militancy = -5
+
+           }
+}
+}

@@ -1,0 +1,101 @@
+#911
+country_event = {
+	id = 800000
+	title = "EVTNAME800000"
+	desc = "EVTDESC800000"
+	picture = "korea_war"
+	is_triggered_only = yes
+
+option = {
+name = "EVTOPTA800000"
+set_global_flag = war_on_terror_happened
+war = {
+	target = AFG
+	attacker_goal = {
+		casus_belli = install_democratic_gov_cb
+	}
+	defender_goal = {
+		casus_belli = status_quo
+	}
+        call_ally = yes
+}
+	any_pop = {
+	limit = {
+	OR = {
+	pop_majority_ideology = liberal
+	pop_majority_ideology = socialist
+	pop_majority_ideology = communist
+	pop_majority_ideology = anarcho_liberal
+		}
+			}
+	consciousness = 2
+	militancy = 2
+		}
+	}
+
+option = {
+name = "EVTOPTB800000"
+	set_global_flag = 911happened
+	any_pop = {
+	limit = {
+	OR = {
+	pop_majority_ideology = conservative
+	pop_majority_ideology = reactionary
+	pop_majority_ideology = fascist
+		}
+			}
+	consciousness = 3
+	militancy = 3 }
+		}
+}
+
+#Early Warning System
+country_event = {
+	id = 800001
+	title = "EVTNAME800001"
+	desc = "EVTDESC800001"
+	picture = "early_warning_alert"
+	is_triggered_only = yes
+
+option = {
+name = "EVTOPTA800001"
+set_global_flag = war_on_terror_happened
+war = {
+	target = AFG
+	attacker_goal = {
+		casus_belli = install_democratic_gov_cb
+	}
+	defender_goal = {
+		casus_belli = status_quo
+	}
+        call_ally = yes
+}
+	any_pop = {
+	limit = {
+	OR = {
+	pop_majority_ideology = liberal
+	pop_majority_ideology = socialist
+	pop_majority_ideology = communist
+	pop_majority_ideology = anarcho_liberal
+		}
+			}
+	consciousness = 2
+	militancy = 2
+		}
+	}
+
+option = {
+name = "EVTOPTB800001"
+	set_global_flag = 911happened
+	any_pop = {
+	limit = {
+	OR = {
+	pop_majority_ideology = conservative
+	pop_majority_ideology = reactionary
+	pop_majority_ideology = fascist
+		}
+			}
+	consciousness = 3
+	militancy = 3 }
+		}
+}

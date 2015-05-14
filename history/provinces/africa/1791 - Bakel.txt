@@ -1,0 +1,14 @@
+trade_goods = cattle
+life_rating = 15
+
+1903.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+add_core = SNL
+1960.1.1 = {
+	owner = SNL
+	controller = SNL
+	colonial = 0
+		}

@@ -1,0 +1,17 @@
+1767.1.1 = {
+owner = SPA
+controller = SPA
+colonial = 2
+		}
+1810.1.1 = {
+owner = ARG
+controller = ARG
+add_core = ARG
+colonial = 0
+		}
+
+#There will be blood
+1882.1.1 = {
+	trade_goods = oil
+		}
+trade_goods = wool life_rating = 25

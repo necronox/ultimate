@@ -1,0 +1,20 @@
+owner = SPA
+controller = SPA
+colonial = 2
+1810.1.1 = {
+owner = UCA
+controller = UCA
+add_core = ELS
+add_core = UCA
+colonial = 0
+		}
+trade_goods = sugar
+life_rating = 30
+1861.1.1 = {
+	owner = ELS
+	controller = ELS
+}
+#Rubber discovered!
+1890.1.1 = {
+	trade_goods = rubber
+		}

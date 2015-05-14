@@ -1,0 +1,16 @@
+owner = ANG
+controller = ANG
+1707.1.1 = {
+owner = ENG
+controller = ENG
+		}
+trade_goods = fruit
+life_rating = 30
+colonial = 2
+
+add_core = GAM
+1960.1.1 = {
+	owner = GAM
+	controller = GAM
+	colonial = 0
+		}

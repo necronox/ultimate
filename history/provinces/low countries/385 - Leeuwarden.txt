@@ -1,0 +1,19 @@
+owner = NET
+controller = NET
+add_core = NET
+add_core = HRE
+1810.1.1 = {
+owner = FRA
+controller = FRA
+		}
+1815.1.1 = {
+owner = NET
+controller = NET
+		}
+trade_goods = cattle
+life_rating = 35
+#state_building = {
+#	level = 1
+#	building = glass_factory
+#	upgrade = yes
+#}

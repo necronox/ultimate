@@ -1,0 +1,989 @@
+#####Early Inventions#####
+###Technologies###
+#Post Renaissance 1604#
+
+#basic_chemistry
+microscope = {
+	limit = { basic_chemistry = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			birth_of_science_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1614
+		}
+	}
+	effect = {
+		supply_limit = 0.05
+	}
+}
+water_thermometer = {
+	limit = { basic_chemistry = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			birth_of_science_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1616
+		}
+	}
+	effect = {
+		supply_limit = 0.05
+	}
+}
+#stock_exchange
+multitude_of_financial_instruments = {
+	limit = { stock_exchange = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 2
+			trade_policy = free_trade
+		}
+	}
+	effect = {
+		tax_eff = 1 
+	}
+}
+insurance_companies = {
+	limit = { stock_exchange = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 2
+			slavery = no_slavery
+		}
+	}
+	effect = {
+		tax_eff = 1 
+	}
+}
+regulated_buying_and_selling_of_stocks = {
+	limit = { stock_exchange = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			economic_policy = interventionism
+		}
+		modifier = {
+			factor = 1
+			economic_policy = state_capitalism
+		}
+	}
+	effect = {
+		tax_eff = 1 
+	}
+}
+#colombus_voyage
+conquering_the_seven_seas = {
+	limit = { colombus_voyage = 1 }
+	chance = {
+		base = 5
+		modifier = {
+			factor = 2
+			early_military_revolution = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1605
+		}
+	}
+	effect = {
+	colonial_points = 50
+	}
+}
+
+#magelan_voyage
+early_colonialism = {
+	limit = { magelan_voyage = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			early_military_revolution = 1
+		}
+		modifier = {
+			factor = 5
+			year = 1606
+		}
+	}
+	effect = {
+		colonial_points = 100
+	}
+}
+#guild_based_production
+renaissance_clothing = {
+	limit = { guild_based_production = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			mannerism = 1
+		}
+	}
+	effect = {	
+		activate_building = luxury_clothes_factory  
+	}
+}
+first_telescope = {
+	limit = { post_renaissance_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			late_medieval_warfare = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1610
+		}
+	}
+	effect = {
+		shared_prestige = 10 
+	}
+}
+food_manufactories = {
+	limit = { post_renaissance_tech = 1 }
+	chance = {
+		base = 5
+		modifier = {
+			factor = 5
+			late_medieval_warfare = 1
+		}
+		modifier = {
+			factor = 10
+			year = 1610
+		}
+	}
+	effect = {
+	activate_building = canned_food_factory 
+	}
+}
+cement_manufactories = {
+	limit = { post_renaissance_tech = 1 }
+	chance = {
+		base = 5
+		modifier = {
+			factor = 10
+			year = 1610
+		}
+		modifier = {
+			factor = 40
+			birth_of_science_tech = 1
+		}
+	}
+	effect = {
+		activate_building = cement_factory 
+	}
+}
+knitting_machine = {
+	limit = { post_renaissance_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			birth_of_science_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1615
+		}
+	}
+	effect = {
+		activate_building =  fabric_factory
+		factory_goods_output = {
+			fabric = 0.05 
+		}
+	}
+}
+
+#Birth of Science 1630#
+steam_jacks = {
+	limit = { birth_of_science_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			scientific_revolution_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1635
+		}
+	}
+	effect = {
+		shared_prestige = 10 
+	}
+}
+barometer = {
+	limit = { birth_of_science_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			scientific_revolution_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1650
+		}
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 1
+		} 
+	}
+}
+early_lumber_mills = {
+	limit = { birth_of_science_tech = 1 }
+	chance = {
+		base = 5
+		modifier = {
+			factor = 5
+			scientific_revolution_tech = 1
+		}
+		modifier = {
+			factor = 10
+			year = 1635
+		}
+	}
+	effect = {
+		activate_building = lumber_mill
+	}
+}
+heliocentrism = {
+	limit = { birth_of_science_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			scientific_revolution_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1645
+		}
+	}
+	effect = {
+		shared_prestige = 10
+	}
+}
+#Scientific Revolution 1660#
+steam_pump = {
+	limit = { scientific_revolution_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			early_agricultural_reforms_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1670
+		}
+	}
+	effect = {
+		shared_prestige = 5
+		mine_rgo_eff = 0.1
+	}
+}
+pocket_watch = {
+	limit = { scientific_revolution_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			early_agricultural_reforms_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1680
+		}
+	}
+	effect = {
+		shared_prestige = 10
+		factory_throughput = 0.05
+	}
+}
+binary_system = {
+	limit = { scientific_revolution_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			early_agricultural_reforms_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1690
+		}
+	}
+	effect = {
+		shared_prestige = 10
+		administrative_efficiency = 0.025
+	}
+}
+#Early Agricultural Revolution 1700#
+tulls_seed_drill = {
+	limit = { early_agricultural_reforms_tech = 1 }
+	chance = {
+		base = 6
+	}
+	effect = {
+		rgo_goods_output = {
+			grain = 0.1
+		}
+		rgo_goods_output = {
+			fruit = 0.1
+		}
+	}
+	
+}
+four_course_crop_rotation = {
+	limit = { early_agricultural_reforms_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			agricultural_revolution_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1720
+		}
+	}
+	effect = {
+		farm_rgo_eff = 0.05
+	}
+}
+###Army###
+#Late Medieval Warfare 1604#
+early_cannons = {
+	limit = { late_medieval_warfare = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			early_military_revolution = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1606
+		}
+	}
+	effect = {
+		activate_unit = artillery
+	}
+}
+
+matchlock_arquebuse = {
+	limit = { late_medieval_warfare = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			early_military_revolution = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1615
+		}
+	}
+	effect = {
+		irregular = {
+			attack = 0.25
+			defence = 0.5
+		}
+	}
+}
+
+decline_of_plate_armor = {
+	limit = { late_medieval_warfare = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			early_military_revolution = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1610
+		}
+	}
+	effect = {
+		cavalry = {
+			maneuver = 0.25
+		}
+	}
+}
+#Early Military Revolution 1639#
+mixed_armies = {
+	limit = { early_military_revolution = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			flintlock_muskets = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1645
+		}
+	}
+	effect = {
+		irregular = {
+			default_organisation = 3
+		}
+		cavalry = {
+			default_organisation = 3
+		}
+	}
+}
+grenadier_invention = {
+	limit = { early_military_revolution = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			flintlock_muskets = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1647
+		}
+	}
+	effect = {
+		irregular = {
+			attack = 0.25
+		}
+	}
+}
+#Early Flintlock Muskets#
+early_flintlock_musketeers = {
+	limit = { flintlock_muskets = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			military_revolution = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1670
+		}
+	}
+	effect = {
+		irregular = {
+			attack = 0.25
+			defence = 0.5
+		}
+	}
+}
+firearmed_cavalry = {
+	limit = { flintlock_muskets = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			military_revolution = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1685
+		}
+	}
+	effect = {
+		cavalry = {
+			defence = 1
+			maneuver = 0.25
+			default_organisation = 1
+		}
+	}
+}
+#Military Revolution#
+ranks_and_companies = {
+	limit = { military_revolution = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			era_of_mass_armies = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1705
+		}
+	}
+	effect = {
+		irregular = {
+			attack = 0.25
+			defence = 0.25
+			maneuver = 0.25
+		}
+	}
+}
+combined_forces = {
+	limit = { military_revolution = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			era_of_mass_armies = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1710
+		}
+	}
+	effect = {
+		irregular = {
+			attack = 0.25
+			defence = 0.25
+			maneuver = 0.25
+		}
+	}
+}
+###CULTURE###
+#Late Renaissance 1604#
+antiquity_invention = {
+	limit = { late_renaissance = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			mannerism = 1
+		}
+	}
+	effect = {	
+		shared_prestige = 10 
+	}
+}
+
+modern_arch_invention = {
+	limit = { late_renaissance = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			mannerism = 1
+		}
+	}
+	effect = {	
+		shared_prestige = 5
+	}
+}
+#Mannerism 1610#
+mannerist_sculpture = {
+	limit = { mannerism = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			early_baroque = 1
+		}
+	}
+	effect = {	
+		shared_prestige = 10
+	}
+}
+mannerist_construction = {
+	limit = { mannerism = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			early_baroque = 1
+		}
+	}
+	effect = {	
+		shared_prestige = 10
+	}
+}
+#Early Baroque 1620#
+early_baroque_construction = {
+	limit = { early_baroque = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			high_baroque = 1
+		}
+	}
+	effect = {	
+		shared_prestige = 10
+	}
+}
+early_baroque_fine_arts = {
+	limit = { early_baroque = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			high_baroque = 1
+		}
+	}
+	effect = {	
+		shared_prestige = 10
+	}
+}
+early_baroque_music_n_literature = {
+	limit = { early_baroque = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			high_baroque = 1
+		}
+	}
+	effect = {	
+		shared_prestige = 10
+	}
+}
+#High Baroque 1640#
+high_baroque_construction = {
+	limit = { high_baroque = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			rococo = 1
+		}
+	}
+	effect = {	
+		shared_prestige = 10
+	}
+}
+high_baroque_fine_arts = {
+	limit = { high_baroque = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			rococo = 1
+		}
+	}
+	effect = {	
+		shared_prestige = 10
+	}
+}
+high_baroque_music_n_literature = {
+	limit = { high_baroque = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			rococo = 1
+		}
+	}
+	effect = {	
+		shared_prestige = 10
+	}
+}
+#Early romanticism#
+early_romantistic_construction = {
+	limit = { early_romanticism = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			year = 1820
+		}
+	}
+	effect = {	
+		shared_prestige = 10
+	}
+}
+early_romantistic_fine_arts = {
+	limit = { early_romanticism = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			year = 1820
+		}
+	}
+	effect = {	
+		shared_prestige = 10
+	}
+}
+early_romantistic_music_n_literature = {
+	limit = { early_romanticism = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			year = 1820
+		}
+	}
+	effect = {	
+		shared_prestige = 10
+	}
+}
+###RELIGION###
+#Late Reformation#
+native_language_schools = {
+	limit = { late_reformation = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			counter_reformation = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1605
+		}
+	}
+	effect = {
+		education_efficiency = 0.025
+	}
+}
+native_language_books = {
+	limit = { late_reformation = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			counter_reformation = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1605
+		}
+	}
+	effect = {
+		education_efficiency = 0.015
+		shared_prestige = 5
+	}
+}
+#Counter Reformation#
+reformation_of_the_church = {
+	limit = { counter_reformation = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			inquisitions_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1615
+		}
+	}
+	effect = {
+		shared_prestige = 10
+	}
+}
+roman_christian_universities = {
+	limit = { counter_reformation = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			inquisitions_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1620
+		}
+	}
+	effect = {
+		education_efficiency = 0.03
+		shared_prestige = 5
+	}
+}
+#Inquisitions#
+inquisition_invention = {
+	limit = { inquisitions_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			jesuit_movements_tech = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1635
+		}
+	}
+	effect = {
+		core_pop_consciousness_modifier = 0.01
+		suppression_points_modifier = 0.1
+	}
+}
+#Jesuit Movements#
+jesuit_missions = {
+	limit = { jesuit_movements_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			the_great_awakening = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1660
+		}
+	}
+	effect = {
+		shared_prestige = 10
+		diplomatic_points_modifier = 0.05
+	}
+}
+jesuit_schools = {
+	limit = { jesuit_movements_tech = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			the_great_awakening = 1
+		}
+		modifier = {
+			factor = 3
+			year = 1680
+		}
+	}
+	effect = {
+		education_efficiency = 0.03
+		shared_prestige = 5
+	}
+}
+###PHILOSOPHY###
+#Late Renaissance Philosophies#
+empiricism_invention = {
+	limit = { late_renaissance_philosophies = 1 }
+	chance = {
+		base = 3
+		modifier = {
+			factor = 5
+			age_of_rationalism = 1
+		}
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}
+rationalism_invention = {
+	limit = { late_renaissance_philosophies = 1 }
+	chance = {
+		base = 3
+		modifier = {
+			factor = 5
+			age_of_rationalism = 1
+		}
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}
+esoteric_traditions_invention = {
+	limit = { late_renaissance_philosophies = 1 }
+	chance = {
+		base = 3
+		modifier = {
+			factor = 5
+			age_of_rationalism = 1
+		}
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}
+#Age of Rationalism#
+humanism_invention = {
+	limit = { age_of_rationalism = 1 }
+	chance = {
+		base = 3
+		modifier = {
+			factor = 5
+			early_modern_philosphies = 1
+		}
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}
+material_reality_invention = {
+	limit = { age_of_rationalism = 1 }
+	chance = {
+		base = 3
+		modifier = {
+			factor = 5
+			early_modern_philosphies = 1
+		}
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}
+#Early Modern Philosophy#
+metaphysics_invention = {
+	limit = { early_modern_philosphies = 1 }
+	chance = {
+		base = 3
+		modifier = {
+			factor = 5
+			enlightenment = 1
+		}
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}
+psyschology_of_reason_invention = {
+	limit = { early_modern_philosphies = 1 }
+	chance = {
+		base = 3
+		modifier = {
+			factor = 5
+			enlightenment = 1
+		}
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}
+modern_ethics_invention = {
+	limit = { early_modern_philosphies = 1 }
+	chance = {
+		base = 3
+		modifier = {
+			factor = 5
+			enlightenment = 1
+		}
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}
+epistemology_invention = {
+	limit = { early_modern_philosphies = 1 }
+	chance = {
+		base = 3
+		modifier = {
+			factor = 5
+			enlightenment = 1
+		}
+	}
+	effect = {
+		permanent_prestige = 2
+	}
+}

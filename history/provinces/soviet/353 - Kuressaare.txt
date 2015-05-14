@@ -1,0 +1,39 @@
+owner = DEN
+controller = DEN
+add_core = EST
+
+1700.1.1 = {
+	controller = SWE
+	owner = SWE
+		}
+1800.1.1 = {
+	owner = RUS
+	controller = RUS
+		}
+
+
+
+1939.1.1 = {
+	owner = RUS
+	controller = RUS
+		}
+
+
+1919.6.28 = { 
+		controller = EST
+		owner = EST
+		}
+add_core = UBD
+trade_goods = grain
+life_rating = 35
+
+
+#Soviet Collapse
+1992.5.1 = {
+	owner = EST
+	controller = EST
+		}
+
+
+
+

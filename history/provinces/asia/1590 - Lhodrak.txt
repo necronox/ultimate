@@ -1,0 +1,29 @@
+owner = MNG
+controller = MNG
+
+1644.1.1 = {
+	owner = CHI
+	controller = CHI
+	}
+
+1910.1.1 = {
+	owner = TIB
+	controller = TIB
+		}
+
+1950.1.1 = {
+	owner = CHI
+	controller = CHI
+		}
+
+
+add_core = TIB
+
+trade_goods = cattle
+life_rating = 25
+
+#Uygur Uprising and Chinese concessions
+2016.1.1 = {
+	owner = TIB
+	controller = TIB
+		}

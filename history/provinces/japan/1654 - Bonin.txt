@@ -1,0 +1,10 @@
+add_core = JAP
+add_core = TKG
+trade_goods = fish
+life_rating = 30
+
+1675.1.1 = {
+owner = JAP
+controller = JAP
+
+}

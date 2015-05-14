@@ -1,0 +1,27 @@
+owner = KOK
+controller = KOK
+add_core = KOK
+1880.1.1 = {
+owner = RUS
+controller = RUS
+		}
+trade_goods = wool
+life_rating = 35
+
+1917.1.1 = {
+	add_core = KYR
+		}
+1992.1.1 = {
+	owner = KYR
+	controller = KYR
+	colonial = 0
+		}
+
+1936.1.1 = {
+	add_core = RUS
+		}
+
+1992.1.1 = {
+	remove_core = RUS
+		}
+

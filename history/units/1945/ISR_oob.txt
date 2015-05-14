@@ -1,0 +1,94 @@
+army = {
+	name = "Tzahal"
+	location = 917
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 917
+	}
+		}

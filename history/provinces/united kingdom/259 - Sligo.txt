@@ -1,0 +1,15 @@
+owner = ANG
+controller = ANG
+1707.1.1 = {
+owner = ENG
+controller = ENG
+add_core = ENG
+	}
+add_core = IRE
+trade_goods = cattle
+life_rating = 35
+1923.1.1 = {
+	controller = IRE
+	owner = IRE
+	remove_core = ENG
+		}

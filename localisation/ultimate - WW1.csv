@@ -1,0 +1,97 @@
+Treaty_of_Alliance_title;Treaty of Alliance;Treaty of Alliance;Treaty of Alliance;;;;;;;;;;;;x;;;;;;;;;;;;;;
+Treaty_of_Alliance_desc;According to the treaty both states agreed not to enter in an alliance against the other state, to follow policy of friendship and to help each other. According to Annex 2 Germany guaranteed "with all its efforts the political independence and the territorial integrity of Bulgaria... against every attack or claim from any country." Bulgaria agreed to help Germany with its whole army in case "Germany is attacked without reason by a country bordering with Bulgaria." The Treaty also set the boundaries for Bulgaria and Austria-Hungary after the partition of SerbiaAccording to the treaty both states agreed not to enter in an alliance against the other state, to follow policy of friendship and to help each other. According to Annex 2 Germany guaranteed "with all its efforts the political independence and the territorial integrity of Bulgaria... against every attack or claim from any country." Bulgaria agreed to help Germany with its whole army in case "Germany is attacked without reason by a country bordering with Bulgaria." The Treaty also set the boundaries for Bulgaria and Austria-Hungary after the partition of Serbia.;According to the treaty both states agreed not to enter in an alliance against the other state, to follow policy of friendship and to help each other. According to Annex 2 Germany guaranteed "with all its efforts the political independence and the territorial integrity of Bulgaria... against every attack or claim from any country." Bulgaria agreed to help Germany with its whole army in case "Germany is attacked without reason by a country bordering with Bulgaria." The Treaty also set the boundaries for Bulgaria and Austria-Hungary after the partition of Serbia.;;;;;;;;;;;;x;;;;;;;;;;;;;;
+WWONE_NAME;World War One;Disposent d'un score militaire inférieur à :  ;Erringen Sie eine geringere Militärpunktzahl als:;;Tiene una puntuación militar menor que: ;;;;;;;;x;
+WWONE_DESC;The World is on the brink of war. Europe is set in two alliaces, the Central Powers of Austria-Hungary and Germany, and the Triple Entente of Great Britain, France, and Russia. In the Americas, Mexico is in turmoil. The USA is a power on the rise, with a strong leader in Woodrow Wilson, and a booming economy. In Asia, Japan is another rising power, seeking to impose its rule and increase its colonial holdings across Asia. Russia is the bear of Europe, but has recently been subject to a rebellion brought on by a disasterous war with Japan. They are still a threat to be reckoned with though, as their army is one of the largest, which makes up for its technological and tactical backwardness. Germany is the finest war machine on the planet, but is being dragged down by a fading power, Austria-Hungary. The Balkans, an area full of racial unrest and tension, have almost driven Europe to war in recent years, and may well be the spark that ignites the fire looming on the dawn.;Besoins satisfaits à moins de;Erfüllte Bedürfnisse weniger als;;Necesidades satisfechas a menos de;;;;;;;;x;
+Tension_Event;There is much tension in Europe;Besoins satisfaits d'au moins;Erfüllte Bedürfnisse mindestens;;Necesidades satisfechas a;;;;;;;;x;
+Tension_DESC;Tension fills the air as Europe is readying for war. Our people are ignited by this war fever, and we now have the ability to call up more of them for military service if the need arises.;Moins de $VAL$ souhaitent une réforme politique.;Weniger als $VAL$ wollen politische Reformen.;;Menos de $VAL$ quieren reformas políticas.;;;;;;;;x;
+tension_1;We must be prepared;Au moins $VAL$ souhaitent une réforme politique.;Mindestens $VAL$ wollen politische Reformen.;;Al menos $VAL$ quieren reformas políticas.;;;;;;;;x;
+builduptowar;Building up to war;Moins de $VAL$ souhaitent une réforme sociale.;Weniger als $VAL$ wollen soziale Reformen.;;Menos de $VAL$ quieren reformas sociales.;;;;;;;;x;
+builduptowarDESC;We are readying the masses for the possibility of war.;Au moins $VAL$ souhaitent une réforme sociale.;Mindestens $VAL$ wollen soziale Reformen.;;Al menos $VAL$ quieren reformas sociales.;;;;;;;;x;
+balkan_problems;Problems in the Balkans;République populaire d'Amérique;American People's Republic;;EE UU;;;;;;;;;x
+balkan_problems_desc;There have long been problems in the Balkans and people are starting to revolt;États confédérés d'Amérique;CSA;;EE CC;;;;;;;;;x
+Franceset_Event;Is war a threat?;États-Unis;USA;;EE UU;;;;;;;;;x
+Franceset_DESC;War might be looming on the horizon, but will it be a global war?;États confédérés d'Amérique;CSA;;EE CC;;;;;;;;;x
+Franceset_1;Yes.;États-Unis;USA;;EE UU;;;;;;;;;x
+Franceset_2;No;États confédérés d'Amérique;CSA;;EE CC;;;;;;;;;x
+Balkanoverview_Event;Overview of Balkans;États-Unis;USA;;EE UU;;;;;;;;;x
+Balkanoverview_DESC;The Balkans have been a hot spot for centuries. Nationalism is on the rise. People want independence. At the 1878 Congress of Berlin, leaders of countries across Europe met to decide the fate of the Balkans. As a result of this congress, Bulgaria was established as a sattelite of the Ottomans, but lost some of its previous territory. Romania was given full independence. Serbia and Montenegro were also, but their territory was reduced. Austria took over Bosnia and Herzegovina. So, many pieces of land had claims by multuple countries. Also, the Ottoman Empire got land that was formerly owned by Bulgaria, so they wanted their land back. In the first balkan war, the Balkan countries took almost all of the rest of Turkey's land in Europe. Bulgaria was upset over division of spoils though, which led to the Second Balkan War. In this war Bulgaria attacked Serbia and Greece, and Romania attacked Bulgaria. Bulgaria was defeated. All countries were still upset at the end of this war, so another war could draw the intervention of the Great Powers.;x;x;;x;;;;;;;;;x
+Balkanoverview_1;Interesting...;États-Unis;USA;;EE UU;;;;;;;;;x
+Europeoverview_Event;Overview of Europe;États-Unis;USA;;EE UU;;;;;;;;;x
+Europeoverview_DESC;Europe is split into two alliances, the Central Powers and the Triple Entente. The Central Powers center around the German Empire. Germany and Austria-Hungary formed the Dual Alliance in 1879, to combat the threat of a French or Russian attack. Italy was added to the alliance in 1882. It was intended to be a defensive alliance only. These three countries form the Central Powers. But, Italy has claims on some of Austria-Hungary's land, so if war happens, their allegance will not be certain. Russia and France formed an alliance in 1887, to counterbalance the Central Powers. When Britain signed on in 1907, it was the end of their neutrality in Europe. This was partially because of Germany's growing naval power, which could threaten British naval supremacy. Those countries make up the Triple Entente;États-Unis;USA;;EE UU;;;;;;;;;x
+Europeoverview_1;Interesting...;États-Unis;USA;;EE UU;;;;;;;;;x
+Balkanproblems_Event;Balkan Problems;x;x;;x;;;;;;;;;x
+Balkanproblems_desc;The citizens of our Balkan nation are mad;États-Unis;USA;;EE UU;;;;;;;;;x
+Balkanproblems_1;Thats not good;États-Unis;USA;;EE UU;;;;;;;;;x
+Europewarfever_desc;The people of Europe are getting riled up for war, ready to avenge their ancestors and take back what is rightfully theirs.;États-Unis;USA;;EE UU;;;;;;;;;x
+Europewarfever_Event;War Fever Spreads;États-Unis;USA;;EE UU;;;;;;;;;x
+Europewarfever_1;So our people are more interested in war. hmm...;États-Unis;USA;;EE UU;;;;;;;;;x
+stopwar_Event;Stop War;États-Unis;USA;;EE UU;;;;;;;;;x
+stopwar_DESC;We are not ready for war yet;États-Unis;USA;;EE UU;;;;;;;;;x
+stopwar_1;There shall be peace;États-Unis;USA;;EE UU;;;;;;;;;x
+stopwar2_Event;Stop War;États-Unis;USA;;EE UU;;;;;;;;;x
+stopwar2_desc;We are not ready for war yet;États-Unis;USA;;EE UU;;;;;;;;;x
+stopwar2_1;Peace for eternity;États-Unis;USA;;EE UU;;;;;;;;;x
+zimmermann_telegram_DESC;The Zimmermann Telegram was a telegram from Germany to Mexico. It was a proposal to join the war for Mexico, and the promise that it would get its former land back in the west. The Foreign Secretary of the German Empire, Arthur Zimmermann, sent it to the German ambassador in Washington DC. It was intercepted by British cryptographers. ;États-Unis;USA;;EE UU;;;;;;;;;x
+Blanknote_Event;A Blank Note of Support?;États-Unis;USA;;EE UU;;;;;;;;;x
+Blanknote_DESC;Shall we give our waning southern allies support against any foe? Shall we give them in essence, a blank check?;États-Unis;USA;;EE UU;;;;;;;;;x
+Blanknote_1;We shall support them completely;États-Unis;USA;;EE UU;;;;;;;;;x
+Blanknote_2;We shall only support them if attacked;États-Unis;USA;;EE UU;;;;;;;;;x
+Blanknote_3;We must abandon our allies for the greater good;États-Unis;USA;;EE UU;;;;;;;;;x
+Blanknotesend_Event;Do we need help?;États-Unis;USA;;EE UU;;;;;;;;;x
+Blanknotesend_DESC;Shall we ask Germany for a "blank check", saying that we have their full support?;États-Unis;USA;;EE UU;;;;;;;;;x
+Blanknotesend_1;We need support, our enemies are strong and numerous;États-Unis;USA;;EE UU;;;;;;;;;x
+Blanknotesend_2;We dont need their help;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanntelegram_Event;Shall we send a telegram to Mexico?;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanntelegram_DESC;Would it be a good idea to send a telegram to Mexico asking them to join the war? This offer is for them to attack the USA, and in return get their historical territory back. We would provide them with arms and monetary aid, neither of which we can truly supply. We shall soon begin unrestricted submarine warfare, incresing the potential for the US to join the war. Also, the telegram has to go through British telegraph cables, since they cut our transatlantic ones.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanntelegram_1;We should send it.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanntelegram_2;We dont need their help.;États-Unis;USA;;EE UU;;;;;;;;;x
+send_zimmermann_telegram_title;Send the Zimmermann Telegram;États-Unis;USA;;EE UU;;;;;;;;;x
+send_zimmermann_telegram_desc;Shall we send the a telegram to Mexico asking for their entrance into the Great War?;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermannrecieved_Event;Germany has sent a telegram to us;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermannrecieved_DESC;FROM 2nd from London # 5747. "We intend to begin unrestricted submarine warfare. We shall endeavor in spite of this to keep the United States of America neutral. In the event of this not succeeding, we make Mexico a proposal of alliance on the following basis: make war together, make peace together, generous financial support and an understanding on our part that Mexico is to reconquer the lost territory in Texas, New Mexico, and Arizona. The settlement in detail is left to you. You will inform the President of the above most secretly as soon as the outbreak of war with the United States of America is certain and add the suggestion that he should, on his own initiative, invite Japan to immediate adherence and at the same time mediate between Japan and ourselves. Please call the President's attention to the fact that the ruthless employment of our submarines now offers the prospect of compelling England in a few months to make peace." Signed, ZIMMERMANN;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermannrecieved_1;Interesting, we shall have to deliberate about this.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanndiscovered_Event;A secret telegram discovered!;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanndiscovered_DESC;Germany has sent a telegram to the Mexican Government about them joining the war and attacking the United States. If we reveal this to the US, it will enrage them, bringing them closer to joining the war on our side.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanndiscovered_1;More of our troops are dying each day, we need all the help we can get.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanndiscovered_2;We shant have those rebellious American scoundrels ruining our fun killing the huns, shall we?;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermannreleased_Event;The UK has released the Zimmermann telegram.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermannreleased_DESC;Germany has sent a telegram to Mexico asking them to join the war and declare war on us.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermannreleased_1;Oh no, thats terrible!;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanndeliberated_Event;Shall we accept Germany's offer?;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanndeliberated_DESC;Would declaring war on the United States to reclaim territory be a good idea?;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanndeliberated_1;Yes, we shall reclaim our rightful land.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanndeliberated_2;No, the US is too powerful.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermannaccepted_Event;Mexico has accepted our proposal!;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermannaccepted_DESC;Mexico has accepted our proposal concerning war against the United States, and will now declare war on the United States, calling us in. We shall provide them with supplies and monetary aid to help them in their fight.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermannaccepted_1;This is great news!;États-Unis;USA;;EE UU;;;;;;;;;x
+Givingaid_Event;Aid Sent;États-Unis;USA;;EE UU;;;;;;;;;x
+Givingaid_DESC;We are currently giving aid to Mexico.;États-Unis;USA;;EE UU;;;;;;;;;x
+Givingaid_1;Well here you go.;États-Unis;USA;;EE UU;;;;;;;;;x
+giving_aid;We are giving aid;États-Unis;USA;;EE UU;;;;;;;;;x
+Receivingaid_Event;Aid Received;États-Unis;USA;;EE UU;;;;;;;;;x
+Receivingaid_DESC;We have recieved aid from Germany;États-Unis;USA;;EE UU;;;;;;;;;x
+Receivingaid_1;Thats great news!;États-Unis;USA;;EE UU;;;;;;;;;x
+Tampicoaffair_Event;Mexico has threatened some of our soldiers;États-Unis;USA;;EE UU;;;;;;;;;x
+Tampicoaffair_DESC;While collecting fuel, seven of our soldiers were confronted and detained by the Mexican authorities in Veracruz. Shall we occupy the port city, which is soon recieving an arms shipment from Germany? We currently have an arms embargo on Mexico, right now we support the other side in their civil war.;États-Unis;USA;;EE UU;;;;;;;;;x
+Tampicoaffair_1;Yes, it is imperative to American safety.;États-Unis;USA;;EE UU;;;;;;;;;x
+Tampicoaffair_2;No, we have no justification.;États-Unis;USA;;EE UU;;;;;;;;;x
+Tampicoresponse_Event;The United States wants Veracruz;États-Unis;USA;;EE UU;;;;;;;;;x
+Tampicoresponse_DESC;Our soldiers have reportedly detained American soldiers, and now the United States will occupy Veracruz. We can't really do very much about it, since they have part of their navy there.;États-Unis;USA;;EE UU;;;;;;;;;x
+Tampicoresponse_1;Well here you go, but were angry.;États-Unis;USA;;EE UU;;;;;;;;;x
+Veracruzback_Event;We must give Veracruz back.;États-Unis;USA;;EE UU;;;;;;;;;x
+Veracruzback_DESC;Well, we dont want to be disliked by the world, and it really was a mistake to take it, so here you go, Mexico, we will be watching your civil war closely, and dont get too close with Germany.;États-Unis;USA;;EE UU;;;;;;;;;x
+Veracruzback_1;Well, if we have to.;États-Unis;USA;;EE UU;;;;;;;;;x
+Veracruzreturned_Event;Veracruz back!;États-Unis;USA;;EE UU;;;;;;;;;x
+Veracruzreturned_DESC;The United States, after much negotiation and mediation by Argentina, Brazil, and Chile, have decided to return Veracruz to us.;États-Unis;USA;;EE UU;;;;;;;;;x
+Veracruzreturned_1;Rejoice!;États-Unis;USA;;EE UU;;;;;;;;;x
+zimmermanndeclined_Event;Mexico declined our offer.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanndeclined_DESC;Mexico has declined our offer to attack the United States. We shall have to fight on our own them.;États-Unis;USA;;EE UU;;;;;;;;;x
+Zimmermanndeclined_1;Thats not good news;États-Unis;USA;;EE UU;;;;;;;;;x
+partial_mobilisation_title;Partial Mobilisation?;États-Unis;USA;;EE UU;;;;;;;;;x
+partial_mobilisation_desc;Shall we partially mobilise, threatening others and readying us for war?;États-Unis;USA;;EE UU;;;;;;;;;x
+partmob;Partial Mobilisation;États-Unis;USA;;EE UU;;;;;;;;;x
+partmob_desc;We have partially mobilised our reserve armed forces;États-Unis;USA;;EE UU;;;;;;;;;x
+fullmob;Full Mobilisation;États-Unis;USA;;EE UU;;;;;;;;;x
+fullmob_desc;We have fully mobilised our armed forces.;États-Unis;USA;;EE UU;;;;;;;;;x 
+full_mobilisation_title;Full Mobilisation;États-Unis;USA;;EE UU;;;;;;;;;x
+full_mobilisation_desc;Shall we fully mobilise, threatening others?;États-Unis;USA;;EE UU;;;;;;;;;x

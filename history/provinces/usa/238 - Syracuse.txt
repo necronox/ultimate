@@ -1,0 +1,19 @@
+owner = IRO
+controller = IRO
+add_core = IRO
+
+1800.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+		}
+trade_goods = grain
+life_rating = 35
+1867.1.1 = { 	#AFTER CIVIL WAR
+	owner = USA	#AFTER CIVIL WAR
+
+
+	controller = USA #AFTER CIVIL WAR
+
+		}
+1861.1.1 = { railroad = 3 }

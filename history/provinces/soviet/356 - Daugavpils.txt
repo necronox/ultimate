@@ -1,0 +1,41 @@
+owner = PLC
+controller = PLC
+
+1800.1.1 = {
+	add_core = RUS
+	owner = RUS
+	controller = RUS
+		}
+
+add_core = LAT
+
+#End of WW2
+1945.5.1 = {
+	owner = RUS
+	controller = RUS
+		}
+
+
+1919.6.28 = { 
+		controller = LAT
+		owner = LAT
+		}
+
+add_core = UBD
+
+add_core = PLC
+trade_goods = grain
+
+life_rating = 35
+
+1861.1.1 = { railroad = 2 }
+
+
+#Soviet Collapse
+1992.5.1 = {
+	owner = LAT
+	controller = LAT
+		}
+
+
+

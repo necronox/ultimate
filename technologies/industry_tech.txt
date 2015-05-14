@@ -1,0 +1,3125 @@
+#tech_power
+
+medicine = {
+	area = tech_power
+	year = 99999
+	cost = 10000
+
+	supply_limit = 0.30
+	land_attrition = -0.05 
+	soldier_to_pop_loss = 0.05
+	
+	ai_chance = {
+		factor = 1.5
+#		modifier = {
+#			factor = 0
+#			NOT = { 
+#				wooden_mine_railways = 1 
+#			} 
+#		}
+		modifier = {
+			factor = 1.5
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+	}
+}
+
+coke_iron = {
+	area = tech_power
+	year = 1717
+	cost = 10800
+	rgo_goods_output = {
+		precious_metal = 0.1
+	}
+	rgo_size = {
+		precious_metal = 0.2
+	}
+	rgo_goods_output = {
+		coal = 0.1
+	}
+	rgo_goods_output = {
+		iron = 0.25
+	}
+	rgo_size = {
+		iron = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+metal_water_wheels = {
+	area = tech_power
+	year = 1717
+	cost = 10800
+
+	RGO_output = 0.05
+
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 250
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 400
+		}
+		modifier = {
+			factor = 0.9 #0.1
+			not = { literacy = 0.2  }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+early_high_pressure_engine = {
+	area = tech_power
+	year = 1723
+	cost = 11200
+
+	mine_rgo_eff = 0.20
+	farm_rgo_eff = 0.15
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+				modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 400
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+	}
+}
+
+advanced_wooden_mine_railways = {
+	area = tech_power
+	year = 1729
+	cost = 11600
+	mine_rgo_eff = 0.20
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1855
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+conservation_of_mass = {
+	area = tech_power
+	year = 1735
+	cost = 12000
+
+	supply_limit = 0.30
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+	}
+}
+
+coke_pig_iron = {
+	area = tech_power
+	year = 1741
+	cost = 12400
+	rgo_goods_output = {
+		precious_metal = 0.1
+	}
+	rgo_goods_output = {
+		coal = 0.15
+	}
+	rgo_goods_output = {
+		iron = 0.15
+	}
+	rgo_size = {
+		precious_metal = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+textile_machinery = {
+	area = tech_power
+	year = 1747
+	cost = 12800
+
+	RGO_output = 0.05
+
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 750
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+watt_steam_engine = {
+	area = tech_power
+	year = 1753
+	cost = 13200
+
+	mine_rgo_eff = 0.10
+	farm_rgo_eff = 0.15
+	ai_chance = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 2
+			year = 1900
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 750
+		}
+	}
+}
+
+iron_machine_work = {
+	area = tech_power
+	year = 1759
+	cost = 13600
+	
+	rgo_output = 0.1
+	artisan_throughput = 0.1
+
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+potting_and_stamping = {
+	area = tech_power
+	year = 1765
+	cost = 14000
+
+	rgo_goods_output = {
+		sulphur = 0.25
+	}
+	rgo_goods_output = {
+		coal = 0.25
+	}
+	rgo_goods_output = {
+		iron = 0.20
+	}
+	rgo_size = {
+		sulphur = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+dawn_of_industrial_revolution_tech = {
+	area = tech_power
+	year = 1771
+	cost = 14400
+	increase_research = 0.05
+	factory_throughput = 0.05
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			industrial_score = 1
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			year = 1780
+		}
+		modifier = {
+			factor = 1.2
+			prestige = 150
+		}
+	}
+}
+
+experimental_railroad = {
+	area = tech_power
+	year = 1777
+	cost = 14800
+
+	RGO_output = 0.2
+	
+	ai_chance = {
+		factor = 1.5 #1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1845
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+modern_chemistry = {
+	area = tech_power
+	year = 1783
+	cost = 15200
+	
+	supply_limit = 0.30
+	land_attrition = -0.05 
+	soldier_to_pop_loss = 0.05
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 1890
+		}
+		modifier = {
+			factor = 2
+			year = 1900
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 750
+		}
+	}
+}
+
+puddling_iron = {
+	area = tech_power
+	year = 1789
+	cost = 15600
+
+	factory_goods_output = {
+		steel = 0.05 
+	}
+	rgo_goods_output = {
+		coal = 0.3
+	}
+	rgo_goods_output = {
+		iron = 0.3
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+first_industrial_revolution_tech = {
+	area = tech_power
+	year = 1795
+	cost = 32400
+	increase_research = 0.10
+	factory_throughput = 0.05 
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			industrial_score = 1
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			year = 1790
+		}
+		modifier = {
+			factor = 1.2
+			prestige = 150
+		}
+	}
+}
+
+#mechanization
+
+publishing_industry = {
+	area = mechanization
+	year = 99999
+	cost = 16400
+
+	factory_goods_output = {
+			regular_clothes = 0.05
+		} 
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 0
+			NOT = { 
+				first_industrial_revolution_tech = 1 
+			} 
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1
+		}
+		modifier = {
+			factor = 0.9 #0.1
+			not = { literacy = 0.2  }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 10
+		}
+	}	
+}
+
+advanced_experimental_railroad = {
+	area = mechanization
+	year = 1805
+	cost = 16800
+	activate_building = railroad
+	 
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1885
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+conservation_of_energy = {
+	area = mechanization
+	year = 1810
+	cost = 22400
+
+	supply_limit = 0.25
+	activate_building = fertilizer_factory
+	land_attrition = -0.05 
+	soldier_to_pop_loss = 0.05
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 100
+		}
+		modifier = {
+			factor = 1.1
+			year = 1860
+		}
+		modifier = {
+			factor = 2
+			year = 1870
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 150
+		}
+	}
+}
+
+mechanized_mining = {
+	area = mechanization
+	year = 1815
+	cost = 17600
+	 
+
+	rgo_goods_output = {
+		iron = 0.25
+	}
+	rgo_goods_output = {
+		coal = 0.25
+	}
+	rgo_goods_output = {
+		sulphur = 0.25
+	}
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+practical_steam_engine = {
+	area = mechanization
+	year = 1820
+	cost = 18000
+
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 2
+			year = 1850
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.02
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			industrial_score = 100
+		}
+		modifier = {
+			factor = 1.02
+			industrial_score = 150
+		}
+	}
+}
+
+mechanical_production = {
+	area = mechanization
+	year = 1825
+	cost = 18400
+
+	factory_throughput = 0.05 
+	
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 20
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				big_producer = cotton
+				big_producer = wool
+				big_producer = fabric
+				big_producer = silk
+				big_producer = timber
+				big_producer = tropical_wood
+				big_producer = fruit
+				big_producer = grain
+				big_producer = tea
+				big_producer = cattle
+			}
+		}
+		modifier = {
+			factor = 0.9 #0.1
+			not = { literacy = 0.2  }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 50
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+clean_coal = {
+	area = mechanization
+	year = 1830
+	cost = 18800
+	
+	rgo_goods_output = {
+		coal = 0.2
+	}
+	rgo_size = {
+		coal = 0.2
+	}
+	rgo_goods_output = {
+		sulphur = 0.1
+	}
+	rgo_size = {
+		sulphur = 0.2
+	}
+	rgo_goods_output = {
+		iron = 0.1
+	}
+	rgo_size = {
+		iron = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+compound_steam_engine = {
+	area = mechanization
+	year = 1835
+	cost = 19200
+
+	mine_rgo_eff = 0.15
+	farm_rgo_eff = 0.15
+	factory_throughput = 0.1
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.4
+			is_greater_power = yes
+		}
+	}
+}
+
+interchangeable_parts = {
+	area = mechanization
+	year = 1840
+	cost = 19600
+
+	factory_throughput = 0.05
+	
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 100
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 150
+		}
+		modifier = {
+			factor = 0.9 #0.1
+			not = { literacy = 0.2  }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+late_high_pressure_engine = {
+	area = mechanization
+	year = 1844
+	cost = 20000
+
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			year = 1845
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 10
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 25
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+early_electricity = {
+	area = mechanization
+	year = 1848
+	cost = 20400
+	
+	supply_limit = 0.25
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+early_railroad = {
+	area = mechanization
+	year = 1852
+	cost = 20800
+
+	max_railroad = 1
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1855
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+cheap_iron = {
+	area = mechanization
+	year = 1856
+	cost = 21200
+	rgo_goods_output = {
+		precious_metal = 0.1
+	}
+	rgo_size = {
+		precious_metal = 0.2
+	}
+	rgo_goods_output = {
+		coal = 0.1
+	}
+	rgo_goods_output = {
+		iron = 0.25
+	}
+	rgo_size = {
+		iron = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+high_n_low_pressure_steam_engines = {
+	area = mechanization
+	year = 1860
+	cost = 21600
+
+	mine_rgo_eff = 0.1
+	farm_rgo_eff = 0.15
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 1.01
+			year = 1865
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 200
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 250
+		}
+	}
+}
+
+semi_automatization = {
+	area = mechanization
+	year = 1864
+	cost = 22000
+	factory_throughput = 0.1
+	factory_cost = -0.1 
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 250
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 400
+		}
+		modifier = {
+			factor = 0.9 #0.1
+			not = { literacy = 0.2  }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+organic_chemistry = {
+	area = mechanization
+	year = 1868
+	cost = 40000
+
+	supply_limit = 0.25
+	land_attrition = -0.05 
+	soldier_to_pop_loss = 0.05
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 2
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 400
+		}
+		modifier = {
+			factor = 1.1
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+	}
+}
+
+#metallurgy
+
+iron_railroad = {
+	area = metallurgy
+	year = 99999
+	cost = 22800
+
+	max_railroad = 1 
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { 
+				organic_chemistry = 1 
+			} 
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1865
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+cheap_steel = {
+	area = metallurgy
+	year = 1876
+	cost = 23200
+	rgo_goods_output = {
+		precious_metal = 0.1
+	}
+	rgo_goods_output = {
+		coal = 0.15
+	}
+	rgo_goods_output = {
+		iron = 0.15
+	}
+	rgo_size = {
+		precious_metal = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+steam_turbine = {
+	area = metallurgy
+	year = 1879
+	cost = 23600
+
+	mine_rgo_eff = 0.15
+	farm_rgo_eff = 0.15
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+				modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 400
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+	}
+}
+
+modern_medicine = {
+	area = metallurgy
+	year = 1882
+	cost = 24000
+
+	supply_limit = 0.25
+	land_attrition = -0.05 
+	soldier_to_pop_loss = 0.05
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 1.5
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+	}
+}
+
+assembly_line = {
+	area = metallurgy
+	year = 1885
+	cost = 24400
+	factory_throughput = 0.1
+	factory_cost = -0.1 
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 750
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+advanced_iron_railroad = {
+	area = metallurgy
+	year = 1888
+	cost = 24800
+
+	max_railroad = 1
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+advanced_metallurgy = {
+	area = metallurgy
+	year = 1891
+	cost = 25200
+
+	rgo_goods_output = {
+		sulphur = 0.25
+	}
+	rgo_goods_output = {
+		coal = 0.25
+	}
+	rgo_goods_output = {
+		iron = 0.25
+	}
+	rgo_size = {
+		sulphur = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+electricity = {
+	area = metallurgy
+	year = 1894
+	cost = 26800
+	
+	supply_limit = 0.25
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 1890
+		}
+		modifier = {
+			factor = 2
+			year = 1900
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 750
+		}
+	}
+}
+
+periodic_table = {
+	area = metallurgy
+	year = 1897
+	cost = 26000
+
+	supply_limit = 0.25
+	land_attrition = -0.05 
+	soldier_to_pop_loss = 0.05
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 2
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 400
+		}
+		modifier = {
+			factor = 1.1
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+	}
+}
+
+steel_railroad = {
+	area = metallurgy
+	year = 1900
+	cost = 26400
+
+	max_railroad = 1 
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1885
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+combustion_engine = {
+	area = metallurgy
+	year = 1894
+	cost = 15600
+
+	mine_rgo_eff = 0.15
+	farm_rgo_eff = 0.15
+	ai_chance = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 2
+			year = 1900
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 750
+		}
+	}
+}
+
+advanced_steel_railroad = {
+	area = metallurgy
+	year = 1906
+	cost = 27200
+
+	max_railroad = 1
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1855
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+shift_work = {
+	area = metallurgy
+	year = 1909
+	cost = 27600
+
+	
+	rgo_output = 0.05
+	factory_throughput = 0.1 
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+electric_furnace = {
+	area = metallurgy
+	year = 1912
+	cost = 28000
+
+	factory_goods_output = {
+		steel = 0.05 
+	}
+	rgo_goods_output = {
+		coal = 0.5
+	}
+	rgo_goods_output = {
+		iron = 0.25
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+electrical_power_generation = {
+	area = metallurgy
+	year = 1915
+	cost = 28400
+
+	mine_rgo_eff = 0.15
+	farm_rgo_eff = 0.15
+	factory_throughput = 0.1
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.4
+			is_greater_power = yes
+		}
+	}
+}
+
+integral_rail_system = {
+	area = metallurgy
+	year = 1918
+	cost = 58000
+
+	max_railroad = 1
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1905
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+#tech_infrastructure
+
+synthetic_polymers = {
+	area = tech_infrastructure
+	year = 99999
+	cost = 29200
+
+	supply_limit = 0.50
+	land_attrition = -0.05 
+	soldier_to_pop_loss = 0.05
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 0
+			NOT = { 
+				integral_rail_system = 1 
+			} 
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+	}
+}
+
+advanced_metallurgy_&_glassblowing = {
+	area = tech_infrastructure
+	year = 1921
+	cost = 29600
+	 
+	rgo_goods_output = {
+		            iron = 0.5
+	}
+	rgo_goods_output = {
+		            coal = 0.5
+	}
+	rgo_goods_output = {
+		precious_metal = 0.25
+		}
+        rgo_size = {
+                    iron = 0.25
+        }
+        rgo_size = {
+                    coal = 0.25
+        }
+        rgo_size = {
+                    sulphur = 0.5
+        }
+	rgo_size = {
+		    precious_metal = 0.25
+	}
+        factory_goods_output = {
+                                glass = 0.1
+        }
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+advanced_integral_rail_system = {
+	area = tech_infrastructure
+	year = 1923
+	cost = 30000
+
+	max_railroad = 1 
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1885
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+semi-automated_assembly_line = {
+	area = tech_infrastructure
+	year = 1925
+	cost = 30400
+
+	factory_throughput = 0.05
+	rgo_throughput = 0.025
+        
+	
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 100
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 150
+		}
+		modifier = {
+			factor = 0.9 #0.1
+			not = { literacy = 0.2  }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+hydropower = {
+	area = tech_infrastructure
+	year = 1927
+	cost = 30800
+
+	rgo_throughput = 0.05
+	factory_throughput = 0.05
+	activate_building = hydroelectric_power_station
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 1.01
+			year = 1865
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 200
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 250
+		}
+	}
+}
+
+limited_access_roads = {
+	area = tech_infrastructure
+	year = 1929
+	cost = 31200
+
+	mobilisation_size = 0.05
+        reinforce_rate = 0.025
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+electrochemical_cell = {
+	area = tech_infrastructure
+	year = 1931
+	cost = 31600
+        soldier_to_pop_loss = 0.02
+        land_attrition = -0.025
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 100
+		}
+		modifier = {
+			factor = 1.1
+			year = 1860
+		}
+		modifier = {
+			factor = 2
+			year = 1870
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 150
+		}
+	}
+}
+
+borosilicate_glass = {
+	area = tech_infrastructure
+	year = 1933
+	cost = 32000
+
+	rgo_goods_output = {
+		            coal = 0.25
+	}
+        factory_goods_output = {
+                                glass = 0.25
+        }
+        rgo_goods_output = {
+		            sulphur = 0.5
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+advanced_limited_access_roads = {
+	area = tech_infrastructure
+	year = 1935
+	cost = 32400
+
+	mobilisation_size = 0.05
+        reinforce_rate = 0.025
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+natural_gas_power_station = {
+	area = tech_infrastructure
+	year = 1937
+	cost = 32800
+	rgo_throughput = 0.1
+	factory_throughput = 0.1
+	activate_building = gas_power_station
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+				modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 400
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+	}
+}
+
+electronic_circuit = {
+	area = tech_infrastructure
+	year = 1939
+	cost = 33200
+        soldier_to_pop_loss = 0.02
+        land_attrition = -0.025
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 2
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 400
+		}
+		modifier = {
+			factor = 1.1
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+	}
+}
+
+advanced_sub-surface_mining = {
+	area = tech_infrastructure
+	year = 1941
+	cost = 33600
+        rgo_size = {
+                    iron = 0.25
+        }
+        rgo_size = {
+                    coal = 0.25
+        }
+        rgo_size = {
+                    sulphur = 0.25
+        }
+	rgo_size = {
+		    precious_metal = 0.25
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+street_road = {
+	area = tech_infrastructure
+	year = 1943
+	cost = 34000
+
+	mobilisation_size = 0.05
+        reinforce_rate = 0.025
+
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1865
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+secret_of_atom = {
+	area = tech_infrastructure
+	year = 1945
+	cost = 34400
+
+	factory_throughput = 0.3
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 1940
+		}
+		modifier = {
+			factor = 2
+			year = 1950
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 750
+		}
+	}
+}
+
+industrial_robotic_machinery = {
+	area = tech_infrastructure
+	year = 1947
+	cost = 34800
+	factory_throughput = 0.1
+	rgo_throughput = 0.025
+
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 750
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+advanced_surface_mining = {
+	area = tech_infrastructure
+	year = 1949
+	cost = 70800
+
+        rgo_size = {
+                    iron = 0.25
+        }
+        rgo_size = {
+                    coal = 0.25
+        }
+        rgo_size = {
+                    sulphur = 0.25
+        }
+	rgo_size = {
+		    precious_metal = 0.25
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+#chemistry_and_electricity
+
+semiconductor_device = {
+	area = chemistry_and_electricity
+	year = 99999
+	cost = 35600
+        soldier_to_pop_loss = 0.02
+        land_attrition = -0.025
+
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { 
+				advanced_surface_mining = 1 
+			} 
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 1890
+		}
+		modifier = {
+			factor = 2
+			year = 1900
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 750
+		}
+	}
+}
+
+autobahn = {
+	area = chemistry_and_electricity
+	year = 1957
+	cost = 36000
+	mobilisation_size = 0.05
+        reinforce_rate = 0.025
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1865
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+nuclear_reactor = {
+	area = chemistry_and_electricity
+	year = 1961
+	cost = 36400
+	rgo_throughput = 0.1
+	factory_throughput = 0.1
+	ai_chance = {
+		factor = 1.25
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 2
+			year = 1900
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 750
+		}
+	}
+}
+
+public_road_transit_system = {
+	area = chemistry_and_electricity
+	year = 1965
+	cost = 36800
+
+	mobilisation_size = 0.05
+        reinforce_rate = 0.05
+
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1885
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+spaceflight_capability = {
+	area = chemistry_and_electricity
+	year = 1969
+	cost = 37200
+        soldier_to_pop_loss = 0.05
+        land_attrition = -0.05
+
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+	}
+}
+
+monorail = {
+	area = chemistry_and_electricity
+	year = 1973
+	cost = 37600
+
+	max_railroad = 1
+
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1905
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+fully_automated_factories = {
+	area = chemistry_and_electricity
+	year = 1977
+	cost = 38000
+	factory_throughput = 0.25
+	rgo_throughput = 0.025
+
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+macro_engineering = {
+	area = chemistry_and_electricity
+	year = 1981
+	cost = 38400
+
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+modern_mining_&_glassblowing = {
+	area = chemistry_and_electricity
+	year = 1985
+	cost = 38800
+
+	rgo_goods_output = {
+		            iron = 0.5
+	}
+	rgo_goods_output = {
+		            coal = 0.5
+	}
+	rgo_goods_output = {
+		            sulphur = 0.5
+	}
+		rgo_goods_output = {
+		precious_metal = 0.25
+		}
+        rgo_size = {
+                    iron = 0.5
+        }
+        rgo_size = {
+                    coal = 0.5
+        }
+        rgo_size = {
+                    sulphur = 0.5
+        }
+	rgo_size = {
+		    precious_metal = 0.25
+	}
+        factory_goods_output = {
+                                glass = 0.15
+        }
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+superhighways = {
+	area = chemistry_and_electricity
+	year = 1989
+	cost = 39200
+	mobilisation_size = 0.05
+        reinforce_rate = 0.05
+
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1905
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+renewable_energy = {
+	area = chemistry_and_electricity
+	year = 1993
+	cost = 39600
+	rgo_throughput = 0.1
+	factory_throughput = 0.1
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.4
+			is_greater_power = yes
+		}
+	}
+}
+
+quantum_physics = {
+	area = chemistry_and_electricity
+	year = 1997
+	cost = 40000
+
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+	}
+}
+
+robotics = {
+	area = chemistry_and_electricity
+	year = 2001
+	cost = 40400
+
+	
+	rgo_output = 0.05
+	factory_throughput = 0.1 
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+high_speed_rail = {
+	area = chemistry_and_electricity
+	year = 2005
+	cost = 40800
+
+	max_railroad = 1
+
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+synthetic_graphite = {
+	area = chemistry_and_electricity
+	year = 2009
+	cost = 41200
+
+	factory_goods_output = {
+		steel = 0.05 
+	}
+	rgo_goods_output = {
+		coal = 1
+	}
+	rgo_goods_output = {
+		iron = 1
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+green_power = {
+	area = chemistry_and_electricity
+	year = 2013
+	cost = 41600
+	farm_rgo_eff = 0.15
+	factory_throughput = 0.15
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 1940
+		}
+		modifier = {
+			factor = 2
+			year = 1950
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 500
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 750
+		}
+	}
+}
+

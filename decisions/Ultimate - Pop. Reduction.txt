@@ -1,0 +1,23 @@
+political_decisions = {
+	global_population_reduction = {
+		potential = {
+			NOT = {
+				has_country_flag = population_reduction_decision
+				has_country_flag = hidden_decisions
+				}
+		}
+		allow = {
+			
+		}
+		effect = {
+			any_country = { any_pop = { reduce_pop = 0.7 }}
+			any_owned = { any_pop = { reduce_pop = 0.7 }}
+			set_country_flag = population_reduction_decision
+		}
+	
+		ai_will_do = {
+			factor = 0
+			}
+	}
+}
+

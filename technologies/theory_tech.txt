@@ -1,0 +1,3431 @@
+#theory1
+standing_army = {
+	area = jacobean_era
+	year = 1430
+	cost = 3600
+	unciv_military = yes
+	activate_building = fort
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.10
+	}
+	
+	ai_chance = {
+		factor = 1.01
+#		modifier = {
+#			factor = 1.2
+#			civilized = yes
+#			any_neighbor_country = {
+#				civilized = yes
+#				NOT = { is_greater_power = yes }
+#				military_score = THIS
+#			}
+#		}
+#		modifier = {
+#			factor = 1.05
+#			war = yes
+#		}
+#		modifier = {
+#			factor = 1.4
+#			is_greater_power = yes
+#			any_neighbor_country = {
+#				is_greater_power = yes
+#				military_score = THIS
+#			}
+#		}
+#		modifier = {
+#			factor = 1.1
+#			is_greater_power = yes
+#		}
+#		modifier = {
+#			factor = 1.02
+#			tech_school = army_tech_school
+#		}
+	}
+}
+
+late_medieval_warfare = {
+	area = jacobean_era
+	year = 1453
+	cost = 4000
+	irregular = {
+		default_organisation = 1
+		supply_consumption = 0.05
+	}
+	cavalry = {
+		default_organisation = 1
+		supply_consumption = 0.05
+	}
+
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+	}
+}
+
+early_muskets = {
+	area = jacobean_era
+	year = 1490
+	cost = 4400
+	unciv_military = yes
+	combat_width = -1
+
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+	}
+}
+
+strict_military_doctrine = {
+	area = jacobean_era
+	year = 1505
+	cost = 4800
+	unciv_military = yes
+	
+	army_base = {
+		supply_consumption = 0.10
+	}
+	dig_in_cap = 1
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.1
+			year = 1840
+		}
+		modifier = {
+			factor = 2
+			year = 1850
+		}
+		modifier = {
+			factor = 1.1
+			is_greater_power = yes
+		}
+	}
+}
+
+field_artillery = {
+	area = jacobean_era
+	year = 1520
+	cost = 5200
+	unciv_military = yes
+	artillery = { support = 0.15
+		      supply_consumption = 0.1 
+	}
+	
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+	}
+}
+
+flintlock_muskets = {
+	area = jacobean_era
+	year = 1550
+	cost = 5600
+	irregular = {
+		default_organisation = 1
+		supply_consumption = 0.10
+	}
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+			}
+}
+
+early_military_revolution = {
+	area = jacobean_era
+	year = 1580
+	cost = 6000
+	activate_unit = cuirassier
+	cuirassier = {
+		supply_consumption = 1
+	}
+	irregular = {
+		default_organisation = 1
+		supply_consumption = 0.05
+	}
+	cavalry = {
+		default_organisation = 1
+		supply_consumption = 0.05
+	}
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+			}
+}
+
+bayonets = {
+	area = jacobean_era
+	year = 1590
+	cost = 6400
+	unciv_military = yes
+	activate_unit = engineer
+	engineer = { support = -0.15 }
+	combat_width = -2
+
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 6
+			rank = 16
+			year = 1850
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+	}
+}
+
+army_direct_command = {
+	area = jacobean_era
+	year = 1600
+	cost = 6800
+
+	morale = 0.15
+	unciv_military = yes
+	military_tactics = 0.15
+
+	army_base = {
+		supply_consumption = 0.10
+		discipline = 0.25
+	}
+
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 1.05
+			rank = 16
+			year = 1850
+		}
+		modifier = {
+			factor = 1.05
+			year = 1860
+		}
+	}
+}
+
+30_years_war_era = {
+	area = jacobean_era
+	year = 1610
+	cost = 7200
+	unciv_military = yes
+	factory_goods_output = {
+			artillery = -0.2
+		}
+	engineer = {
+		support = 0.25
+	} 
+	army_base = {
+		supply_consumption = 0.10
+	} 
+	army_base = {
+		default_organisation = 5
+	} 
+	dig_in_cap = 1
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+		modifier = {
+			factor = 1.4
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.1
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+	}
+}
+
+military_revolution = {
+	area = jacobean_era
+	year = 1615
+	cost = 7600
+	activate_unit = hussar
+	hussar = {
+		supply_consumption = 1
+	}
+	irregular = {
+		default_organisation = 2
+		supply_consumption = 0.05
+	}
+	cavalry = {
+		default_organisation = 2
+		supply_consumption = 0.05
+	}	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+			}
+}
+
+early_century_plans = {
+	area = jacobean_era
+	year = 1620
+	cost = 8000
+	unciv_military = yes
+	
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.10
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.02
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+	}
+}
+
+enfilading_tactics = {
+	area = jacobean_era
+	year = 1630
+	cost = 8400
+	unciv_military = yes
+	artillery = {
+		attack = 0.25
+		support = 0.15
+		supply_consumption = 0.15
+	}
+	
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.02
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+	}
+}
+
+late_muskets = {
+	area = jacobean_era
+	year = 1650
+	cost = 8800
+	unciv_military = yes
+
+	combat_width = -2
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 6
+			rank = 16
+			year = 1860
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+	}
+}
+
+officer_corps = {
+	area = jacobean_era
+	year = 1660
+	cost = 9200
+	unciv_military = yes
+	morale = 0.1
+	army_base = {
+		discipline = 0.25
+	}
+
+	military_tactics = 0.10
+	
+	army_base = {
+		supply_consumption = 0.10
+	}
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.02
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			rank = 16
+			year = 1850
+		}
+		modifier = {
+			factor = 1.05
+			year = 1860
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+	}
+}
+
+prussian_doctrine = {
+	area = jacobean_era
+	year = 1680
+	cost = 19600
+	unciv_military = yes
+	army_base = {
+		supply_consumption = 0.10
+	} 
+	max_fort = 1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 1860
+		}
+		modifier = {
+			factor = 2
+			year = 1870
+		}
+		modifier = {
+			factor = 1.4
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			is_greater_power = yes
+		}
+	}
+}
+
+#theory2
+galleon_design = {
+	area = caroline_era
+	year = 1430
+	cost = 3600
+	unciv_military = yes
+	activate_building = clipper_shipyard 
+	ai_chance = {
+		factor = 1
+#		# Land-locked countries don't research this
+#		modifier = {
+#			factor = 0
+#			NOT = { total_num_of_ports = 1 }
+#		}
+#		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+#		modifier = {
+#			factor = 0.9
+#			NOT = { literacy = 0.2 }
+#		}
+#		# Valuable to naval tech school countries (UK)
+#		modifier = {
+#			factor = 1.05
+#			tech_school = naval_tech_school
+#		}
+#		# Valuable for major producers of fish (+50% output invention)
+#		modifier = {
+#			factor = 1.03
+#			big_producer = fish
+#		}
+#		# GPs with 9 or more coastal provinces (Prussia+)
+#		modifier = {
+#			factor = 1.5
+#			total_num_of_ports = 9
+#			is_greater_power = yes
+#			post_nelsonian_thought = 1
+#		}
+#		# GPs and SPs with more than 12 ports
+#		modifier = {
+#			factor = 1.25
+#			total_num_of_ports = 12
+#			rank = 16
+#			post_nelsonian_thought = 1
+#		}
+#		# Bigger navy, more weight
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 20
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 40
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 60
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 80
+#		}
+#		# Big country with more than 1/4 coastal provinces
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 10
+#			not = { num_of_cities = 40 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 20
+#			not = { num_of_cities = 80 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 30
+#			not = { num_of_cities = 120 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 40
+#		}
+	}
+}
+15th_century_cannons = {
+	area = caroline_era
+	year = 1453
+	cost = 4000
+	unciv_military = yes
+	navy_base = {
+			gun_power = 1
+		}
+		ai_chance = {
+		factor = 1
+#		# Land-locked countries don't research this
+#		modifier = {
+#			factor = 0
+#			NOT = { total_num_of_ports = 1 }
+#		}
+#		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+#		modifier = {
+#			factor = 0.8
+#			NOT = { literacy = 0.2 }
+#		}
+#		# Valuable to naval tech school countries (UK)
+#		modifier = {
+#			factor = 1.15
+#			tech_school = naval_tech_school
+#		}
+#		# More popular when at war
+#		modifier = {
+#			factor = 1.05
+#			war = yes
+#		}
+#		# GPs with 9 or more coastal provinces (Prussia+)
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 9
+#			is_greater_power = yes
+#			clipper_design = 1
+#		}
+#		# GPs and SPs with more than 12 ports
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 12
+#			rank = 16
+#			clipper_design = 1
+#		}
+#		# We're late with this!
+#		modifier = {
+#			factor = 1.25
+#			year = 1850
+#		}
+#		# Bigger navy, more weight
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 20
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 40
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 60
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 80
+#		}
+#		# Big country with more than 1/4 coastal provinces
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 10
+#			not = { num_of_cities = 40 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 20
+#			not = { num_of_cities = 80 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 30
+#			not = { num_of_cities = 120 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 40
+#		}
+	} 
+}
+
+colombus_voyage = {
+	area = caroline_era
+	year = 1492
+	cost = 4400
+	unciv_military = yes
+	activate_building = naval_base
+	ai_chance = {
+		factor = 1
+		# Land-locked countries don't research this
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+		modifier = {
+			factor = 0.5
+			NOT = { literacy = 0.2 }
+		}
+		# Valuable to naval tech school countries (UK)
+		modifier = {
+			factor = 1.05
+			tech_school = naval_tech_school
+		}
+		# GPs with 9 or more coastal provinces (Prussia+)
+		modifier = {
+			factor = 1.5
+			total_num_of_ports = 9
+			is_greater_power = yes
+		}
+		# GPs and SPs with more than 12 ports
+		modifier = {
+			factor = 1.25
+			total_num_of_ports = 12
+			rank = 16
+		}
+		# Bigger navy, more weight
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 20
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 40
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 60
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 80
+		}
+		# Big country with more than 1/4 coastal provinces
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 10
+			not = { num_of_cities = 40 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 20
+			not = { num_of_cities = 80 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 30
+			not = { num_of_cities = 120 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 40
+		}
+	}
+}
+
+carrack_design = {
+	area = caroline_era
+	year = 1500
+	cost = 4800
+	unciv_military = yes
+	manowar = {
+		hull = 1
+	}
+		ai_chance = {
+		factor = 1
+#		# Land-locked countries don't research this
+#		modifier = {
+#			factor = 0
+#			NOT = { total_num_of_ports = 1 }
+#		}
+#		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+#		modifier = {
+#			factor = 0.9
+#			NOT = { literacy = 0.2 }
+#		}
+#		# Valuable to naval tech school countries (UK)
+#		modifier = {
+#			factor = 1.05
+#			tech_school = naval_tech_school
+#		}
+#		# Valuable for major producers of fish (+50% output invention)
+#		modifier = {
+#			factor = 1.03
+#			big_producer = fish
+#		}
+#		# GPs with 9 or more coastal provinces (Prussia+)
+#		modifier = {
+#			factor = 1.5
+#			total_num_of_ports = 9
+#			is_greater_power = yes
+#			post_nelsonian_thought = 1
+#		}
+#		# GPs and SPs with more than 12 ports
+#		modifier = {
+#			factor = 1.25
+#			total_num_of_ports = 12
+#			rank = 16
+#			post_nelsonian_thought = 1
+#		}
+#		# Bigger navy, more weight
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 20
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 40
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 60
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 80
+#		}
+#		# Big country with more than 1/4 coastal provinces
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 10
+#			not = { num_of_cities = 40 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 20
+#			not = { num_of_cities = 80 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 30
+#			not = { num_of_cities = 120 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 40
+#		}
+	}
+}
+
+magelan_voyage = {
+	area = caroline_era
+	year = 1520
+	cost = 5200
+	unciv_military = yes
+	supply_range = 0.10
+	ai_chance = {
+		factor = 1
+		# Land-locked countries don't research this
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+		modifier = {
+			factor = 0.5
+			NOT = { literacy = 0.2 }
+		}
+		# Valuable to naval tech school countries (UK)
+		modifier = {
+			factor = 1.05
+			tech_school = naval_tech_school
+		}
+		# GPs with 9 or more coastal provinces (Prussia+)
+		modifier = {
+			factor = 1.5
+			total_num_of_ports = 9
+			is_greater_power = yes
+		}
+		# GPs and SPs with more than 12 ports
+		modifier = {
+			factor = 1.25
+			total_num_of_ports = 12
+			rank = 16
+		}
+		# Bigger navy, more weight
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 20
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 40
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 60
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 80
+		}
+		# Big country with more than 1/4 coastal provinces
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 10
+			not = { num_of_cities = 40 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 20
+			not = { num_of_cities = 80 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 30
+			not = { num_of_cities = 120 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 40
+		}
+	}
+}
+
+16th_century_cannons = {
+	area = caroline_era
+	year = 1530
+	cost = 5600
+	unciv_military = yes
+	navy_base = {
+			gun_power = 0.5
+		}
+		ai_chance = {
+		factor = 1
+#		# Land-locked countries don't research this
+#		modifier = {
+#			factor = 0
+#			NOT = { total_num_of_ports = 1 }
+#		}
+#		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+#		modifier = {
+#			factor = 0.8
+#			NOT = { literacy = 0.2 }
+#		}
+#		# Valuable to naval tech school countries (UK)
+#		modifier = {
+#			factor = 1.15
+#			tech_school = naval_tech_school
+#		}
+#		# More popular when at war
+#		modifier = {
+#			factor = 1.05
+#			war = yes
+#		}
+#		# GPs with 9 or more coastal provinces (Prussia+)
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 9
+#			is_greater_power = yes
+#			clipper_design = 1
+#		}
+#		# GPs and SPs with more than 12 ports
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 12
+#			rank = 16
+#			clipper_design = 1
+#		}
+#		# We're late with this!
+#		modifier = {
+#			factor = 1.25
+#			year = 1850
+#		}
+#		# Bigger navy, more weight
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 20
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 40
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 60
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 80
+#		}
+#		# Big country with more than 1/4 coastal provinces
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 10
+#			not = { num_of_cities = 40 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 20
+#			not = { num_of_cities = 80 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 30
+#			not = { num_of_cities = 120 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 40
+#		}
+	} 
+}
+
+pirate_ships_design = {
+	area = caroline_era
+	year = 1550
+	cost = 6000
+	unciv_military = yes
+	navy_base = { maximum_speed = 1 }
+		ai_chance = {
+		factor = 1
+#		# Land-locked countries don't research this
+#		modifier = {
+#			factor = 0
+#			NOT = { total_num_of_ports = 1 }
+#		}
+#		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+#		modifier = {
+#			factor = 0.9
+#			NOT = { literacy = 0.2 }
+#		}
+#		# Valuable to naval tech school countries (UK)
+#		modifier = {
+#			factor = 1.05
+#			tech_school = naval_tech_school
+#		}
+#		# Valuable for major producers of fish (+50% output invention)
+#		modifier = {
+#			factor = 1.03
+#			big_producer = fish
+#		}
+#		# GPs with 9 or more coastal provinces (Prussia+)
+#		modifier = {
+#			factor = 1.5
+#			total_num_of_ports = 9
+#			is_greater_power = yes
+#			post_nelsonian_thought = 1
+#		}
+#		# GPs and SPs with more than 12 ports
+#		modifier = {
+#			factor = 1.25
+#			total_num_of_ports = 12
+#			rank = 16
+#			post_nelsonian_thought = 1
+#		}
+#		# Bigger navy, more weight
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 20
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 40
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 60
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 80
+#		}
+#		# Big country with more than 1/4 coastal provinces
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 10
+#			not = { num_of_cities = 40 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 20
+#			not = { num_of_cities = 80 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 30
+#			not = { num_of_cities = 120 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 40
+#		}
+	}
+}
+
+sir_francis_drake_doctrine = {
+	area = caroline_era
+	year = 1570
+	cost = 6400
+	unciv_military = yes
+	max_naval_base = 1
+	ai_chance = {
+		factor = 1
+		# Land-locked countries don't research this
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+		modifier = {
+			factor = 0.5
+			NOT = { literacy = 0.2 }
+		}
+		# Valuable to naval tech school countries (UK)
+		modifier = {
+			factor = 1.05
+			tech_school = naval_tech_school
+		}
+		# GPs with 9 or more coastal provinces (Prussia+)
+		modifier = {
+			factor = 1.5
+			total_num_of_ports = 9
+			is_greater_power = yes
+		}
+		# GPs and SPs with more than 12 ports
+		modifier = {
+			factor = 1.25
+			total_num_of_ports = 12
+			rank = 16
+		}
+		# Bigger navy, more weight
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 20
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 40
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 60
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 80
+		}
+		# Big country with more than 1/4 coastal provinces
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 10
+			not = { num_of_cities = 40 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 20
+			not = { num_of_cities = 80 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 30
+			not = { num_of_cities = 120 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 40
+		}
+	}
+}
+
+elisabetan_naval_leadership = {
+	area = caroline_era
+	year = 1580
+	cost = 6800
+	unciv_military = yes
+	navy_base = {
+		default_organisation = 5
+	}
+		ai_chance = {
+		factor = 1
+#		# Land-locked countries don't research this
+#		modifier = {
+#			factor = 0
+#			NOT = { total_num_of_ports = 1 }
+#		}
+#		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+#		modifier = {
+#			factor = 0.8
+#			NOT = { literacy = 0.2 }
+#		}
+#		# Valuable to naval tech school countries (UK)
+#		modifier = {
+#			factor = 1.15
+#			tech_school = naval_tech_school
+#		}
+#		# More popular when at war
+#		modifier = {
+#			factor = 1.05
+#			war = yes
+#		}
+#		# GPs with 9 or more coastal provinces (Prussia+)
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 9
+#			is_greater_power = yes
+#			clipper_design = 1
+#		}
+#		# GPs and SPs with more than 12 ports
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 12
+#			rank = 16
+#			clipper_design = 1
+#		}
+#		# Bigger navy, more weight
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 20
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 40
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 60
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 80
+#		}
+#		# Big country with more than 1/4 coastal provinces
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 10
+#			not = { num_of_cities = 40 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 20
+#			not = { num_of_cities = 80 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 30
+#			not = { num_of_cities = 120 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 40
+#		}
+	}
+}
+
+spanish_armada = {
+	area = caroline_era
+	year = 1585
+	cost = 7200
+	unciv_military = yes
+	supply_range = 0.10
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_amount_of_ships = 1 }
+		}
+		modifier = {
+			factor = 1.05
+			total_num_of_ports = 30
+		}
+		modifier = {
+			factor = 1.02
+			total_amount_of_ships = 30
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { rank = 18 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = naval_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			rank = 16
+		}
+	}
+}
+
+early_command_principle = {
+	area = caroline_era
+	year = 1610
+	cost = 7600
+	unciv_military = yes
+	navy_base = {
+		default_organisation = 5
+	}
+	ai_chance = {
+		factor = 1
+#		# Land-locked countries don't research this
+#		modifier = {
+#			factor = 0
+#			NOT = { total_num_of_ports = 1 }
+#		}
+#		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+#		modifier = {
+#			factor = 0.8
+#			NOT = { literacy = 0.2 }
+#		}
+#		# Valuable to naval tech school countries (UK)
+#		modifier = {
+#			factor = 1.15
+#			tech_school = naval_tech_school
+#		}
+#		# More popular when at war
+#		modifier = {
+#			factor = 1.05
+#			war = yes
+#		}
+#		# GPs with 9 or more coastal provinces (Prussia+)
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 9
+#			is_greater_power = yes
+#			clipper_design = 1
+#		}
+#		# GPs and SPs with more than 12 ports
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 12
+#			rank = 16
+#			clipper_design = 1
+#		}
+#		# Bigger navy, more weight
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 20
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 40
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 60
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 80
+#		}
+#		# Big country with more than 1/4 coastal provinces
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 10
+#			not = { num_of_cities = 40 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 20
+#			not = { num_of_cities = 80 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 30
+#			not = { num_of_cities = 120 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 40
+#		}
+	}
+}
+
+naval_flag_signaling = {
+	area = caroline_era
+	year = 1620
+	cost = 8000
+	unciv_military = yes
+	supply_range = 0.10
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_amount_of_ships = 1 }
+		}
+		modifier = {
+			factor = 1.05
+			total_num_of_ports = 30
+		}
+		modifier = {
+			factor = 1.02
+			total_amount_of_ships = 30
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { rank = 18 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = naval_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			rank = 16
+		}
+	}
+}
+
+17th_century_cannons = {
+	area = caroline_era
+	year = 1630
+	cost = 8400
+	unciv_military = yes
+	navy_base = {
+			gun_power = 0.5
+		}
+		ai_chance = {
+		factor = 1
+#		# Land-locked countries don't research this
+#		modifier = {
+#			factor = 0
+#			NOT = { total_num_of_ports = 1 }
+#		}
+#		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+#		modifier = {
+#			factor = 0.8
+#			NOT = { literacy = 0.2 }
+#		}
+#		# Valuable to naval tech school countries (UK)
+#		modifier = {
+#			factor = 1.15
+#			tech_school = naval_tech_school
+#		}
+#		# More popular when at war
+#		modifier = {
+#			factor = 1.05
+#			war = yes
+#		}
+#		# GPs with 9 or more coastal provinces (Prussia+)
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 9
+#			is_greater_power = yes
+#			clipper_design = 1
+#		}
+#		# GPs and SPs with more than 12 ports
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 12
+#			rank = 16
+#			clipper_design = 1
+#		}
+#		# We're late with this!
+#		modifier = {
+#			factor = 1.25
+#			year = 1850
+#		}
+#		# Bigger navy, more weight
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 20
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 40
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 60
+#		}
+#		modifier = {
+#			factor = 1.1
+#			total_amount_of_ships = 80
+#		}
+#		# Big country with more than 1/4 coastal provinces
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 10
+#			not = { num_of_cities = 40 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 20
+#			not = { num_of_cities = 80 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 30
+#			not = { num_of_cities = 120 }
+#		}
+#		modifier = {
+#			factor = 1.05
+#			total_num_of_ports = 40
+#		}
+	}
+}
+
+robert_blake_doctrine = {
+	area = caroline_era
+	year = 1640
+	cost = 8800
+	unciv_military = yes
+	colonial_points = 100
+
+
+	ai_chance = {
+		factor = 1
+		# Land-locked countries don't research this
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+		modifier = {
+			factor = 0.5
+			NOT = { literacy = 0.2 }
+		}
+		# Valuable to naval tech school countries (UK)
+		modifier = {
+			factor = 1.05
+			tech_school = naval_tech_school
+		}
+		# GPs with 9 or more coastal provinces (Prussia+)
+		modifier = {
+			factor = 1.5
+			total_num_of_ports = 9
+			is_greater_power = yes
+		}
+		# GPs and SPs with more than 12 ports
+		modifier = {
+			factor = 1.25
+			total_num_of_ports = 12
+			rank = 16
+		}
+		# Bigger navy, more weight
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 20
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 40
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 60
+		}
+		modifier = {
+			factor = 1.15
+			total_amount_of_ships = 80
+		}
+		# Big country with more than 1/4 coastal provinces
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 10
+			not = { num_of_cities = 40 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 20
+			not = { num_of_cities = 80 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 30
+			not = { num_of_cities = 120 }
+		}
+		modifier = {
+			factor = 1.2
+			total_num_of_ports = 40
+		}
+	}
+}
+
+ship_of_the_line_design = {
+	area = caroline_era
+	year = 1650
+	cost = 9200
+	unciv_military = yes
+	navy_base = { build_time = -10 }
+	navy_base = { maximum_speed = 1 } 
+	ai_chance = {
+		factor = 1
+#		# Land-locked countries don't research this
+#		modifier = {
+#			factor = 0
+#			NOT = { total_num_of_ports = 1 }
+#		}
+#		# Low LIT countries should pay less attention here (0.2 = Craftsmen ceiling)
+#		modifier = {
+#			factor = 0.9
+#			NOT = { literacy = 0.2 }
+#		}
+#		# Valuable to naval tech school countries (UK)
+#		modifier = {
+#			factor = 1.05
+#			tech_school = naval_tech_school
+#		}
+#		# Valuable for major producers of fish (+50% output invention)
+#		modifier = {
+#			factor = 1.03
+#			big_producer = fish
+#		}
+#		# GPs with 9 or more coastal provinces (Prussia+)
+#		modifier = {
+#			factor = 1.5
+#			total_num_of_ports = 9
+#			is_greater_power = yes
+#			battleship_column_doctrine = 1
+#		}
+#		# GPs and SPs with more than 12 ports
+#		modifier = {
+#			factor = 1.25
+#			total_num_of_ports = 12
+#			rank = 16
+#			battleship_column_doctrine = 1
+#		}
+#		# Bigger navy, more weight
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 20
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 40
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 60
+#		}
+#		modifier = {
+#			factor = 1.15
+#			total_amount_of_ships = 80
+#		}
+#		# Big country with more than 1/4 coastal provinces
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 10
+#			not = { num_of_cities = 40 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 20
+#			not = { num_of_cities = 80 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 30
+#			not = { num_of_cities = 120 }
+#		}
+#		modifier = {
+#			factor = 1.2
+#			total_num_of_ports = 40
+#		}
+	}
+}
+
+early_naval_plans = {
+	area = caroline_era
+	year = 1660
+	cost = 19600
+	unciv_military = yes
+	supply_range = 0.10
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { rank = 18 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_amount_of_ships = 1 }
+		}
+		modifier = {
+			factor = 1.05
+			total_num_of_ports = 30
+		}
+		modifier = {
+			factor = 1.02
+			total_amount_of_ships = 30
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = naval_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			rank = 16
+		}
+	}
+}
+
+#theory3
+no_standard = {
+	area = georgian_era
+	year = 1453
+	cost = 3600
+
+	administrative_efficiency = 0.05
+	ai_chance = {
+		factor = 1.1
+#		modifier = {
+#			factor = 1.1
+#			rank = 16
+#		}
+#		modifier = {
+#			factor = 1.02
+#			tech_school = commerce_tech_school
+#		}
+	}
+}
+coin_minting = {
+	area = georgian_era
+	year = 1500
+	cost = 4000
+	
+	administrative_efficiency = 0.05
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.25 #1.1
+			rank = 16
+		}
+		modifier = {
+			factor = 1.25
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}
+}
+
+private_banks = {
+	area = georgian_era
+	year = 1550
+	cost = 4400
+
+	tax_eff = 5
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 3.5
+			rank = 16
+		}
+		modifier = {
+			factor = 1.25
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.15
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.15
+			literacy = 0.6
+		}
+	}
+}
+
+post_renaissance_tech = {
+	area = georgian_era
+	year = 1580
+	cost = 4800
+	farm_rgo_eff = 0.1
+	mine_rgo_eff = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			year = 1610
+		}
+		modifier = {
+			factor = 1.2
+			prestige = 50
+		}
+	}
+}
+
+guild_based_production = {
+	area = georgian_era
+	year = 1600
+	cost = 5200
+	activate_building = dye_factory
+	RGO_output = 0.05
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 10
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 50
+		}
+		modifier = {
+			factor = 1.25
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.5
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}	
+}
+
+early_business_banks = {
+	area = georgian_era
+	year = 1610
+	cost = 5600
+
+	tax_eff = 3
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 3.5
+			rank = 16
+		}
+		modifier = {
+			factor = 1.5
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.6
+		}
+	}
+}
+
+private_bank_coin_minting = {
+	area = georgian_era
+	year = 1620
+	cost = 6000
+
+	administrative_efficiency = 0.05
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.25
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.25 #1.1
+			rank = 16
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}
+}
+
+protectionist_policies = {
+	area = georgian_era
+	year = 1620
+	cost = 6400
+
+	influence = 0.1
+	farm_rgo_eff = 0.1
+	mine_rgo_eff = 0.1
+	
+	ai_chance = {
+		factor = 11
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.1 
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.2
+		}		
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}
+}
+
+pure_artisan_production = {
+	area = georgian_era
+	year = 1640
+	cost = 6800
+	RGO_output = 0.05
+	activate_building = steel_factory
+		ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.25
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.25
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 1.2
+			industrial_score = 100
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 150
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}	
+}
+
+stock_exchange = {
+	area = georgian_era
+	year = 1650
+	cost = 7200
+
+	tax_eff = 3
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 3.5
+			rank = 16
+		}
+		modifier = {
+			factor = 1.25
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.15
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.15
+			literacy = 0.6
+		}
+	}
+}
+
+mercantilist_thought = {
+	area = georgian_era
+	year = 1660
+	cost = 7600
+	
+
+	factory_input = -0.02
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+	}
+}
+
+business_regulations = {
+	area = georgian_era
+	year = 1670
+	cost = 8000
+
+	influence = 0.1
+	farm_rgo_eff = 0.1
+	mine_rgo_eff = 0.1
+	
+	ai_chance = {
+		factor = 3.5
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 10
+		}
+		modifier = {
+			factor = 2
+			year = 1850
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 50
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}	
+}
+
+heavy_market_regulations = {
+	area = georgian_era
+	year = 1680
+	cost = 8400
+
+	influence = 0.1
+	farm_rgo_eff = 0.1
+	mine_rgo_eff = 0.1
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 100
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 150
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}	
+	
+}
+
+monopolistic_economics = {
+	area = georgian_era
+	year = 1690
+	cost = 8800
+
+	factory_input = -0.02
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			industrial_score = 20 #10
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 100 #50
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}
+}
+
+early_agricultural_reforms_tech = {
+	area = georgian_era
+	year = 1695
+	cost = 9200
+	farm_rgo_eff = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			year = 1770
+		}
+		modifier = {
+			factor = 1.2
+			prestige = 150
+		}
+	}
+}
+
+early_free_trade_theory = {
+	area = georgian_era
+	year = 1699
+	cost = 19600
+
+	factory_input = -0.02
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			industrial_score = 150 #100
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 200 #150
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+	}
+}
+
+#theory4
+feudalism = {
+	area = edwardian_era
+	year = 1450
+	cost = 3600
+
+	max_national_focus = 1
+	
+	ai_chance = {
+		factor = 11
+#		modifier = {
+#			factor = 1.02
+#			tech_school = culture_tech_school
+#		}
+#		modifier = {
+#			factor = 6
+#			is_greater_power = yes
+#			year = 1850
+#		}
+	}
+}
+
+scholasticism = {
+	area = edwardian_era
+	year = 1470
+	cost = 4000
+
+
+	increase_research = 0.10
+	
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1840
+		}
+		modifier = {
+			factor = 2
+			year = 1850
+		}
+		modifier = {
+			factor = 1.1
+			year = 1865
+		}
+		modifier = {
+			factor = 2
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
+		}
+	}
+}
+
+divine_right = {
+	area = edwardian_era
+	year = 1500
+	cost = 4400
+
+	max_national_focus = 1 
+		
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			total_pops = 1000000
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1840
+		}
+		modifier = {
+			factor = 51
+			year = 1850
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		
+	}
+}
+
+late_renaissance = {
+	area = edwardian_era
+	year = 1550
+	cost = 4800
+	prestige = 0.025
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			not = { literacy = 0.3 }
+		}
+	}
+}
+
+late_renaissance_philosophies = {
+	area = edwardian_era
+	year = 1580
+	cost = 5200
+	increase_research = 0.15
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+	}
+}
+
+late_reformation = {
+	area = edwardian_era
+	year = 1590
+	cost = 5600
+	education_efficiency = 0.025	
+ 
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+counter_reformation = {
+	area = edwardian_era
+	year = 1604
+	cost = 6000
+	education_efficiency = 0.025	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+mannerism = {
+	area = edwardian_era
+	year = 1609
+	cost = 6400
+	prestige = 0.025
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			not = { literacy = 0.3 }
+		}
+			}
+}
+
+age_of_rationalism = {
+	area = edwardian_era
+	year = 1619
+	cost = 6800
+	increase_research = 0.15
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+early_baroque = {
+	area = edwardian_era
+	year = 1619
+	cost = 7200
+	prestige = 0.025
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			not = { literacy = 0.3 }
+		}
+			}
+}
+
+inquisitions_tech = {
+	area = edwardian_era
+	year = 1629
+	cost = 7600
+	education_efficiency = 0.025	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+high_baroque = {
+	area = edwardian_era
+	year = 1639
+	cost = 8000
+	prestige = 0.025
+		ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			not = { literacy = 0.3 }
+		}
+			}
+}
+
+jesuit_movements_tech = {
+	area = edwardian_era
+	year = 1654
+	cost = 8400
+	education_efficiency = 0.05	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+early_18th_absolutism = {
+	area = edwardian_era
+	year = 1670
+	cost = 8800
+
+	max_national_focus = 1 
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 3.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			total_pops = 2000000
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1850
+		}
+		modifier = {
+			factor = 51
+			year = 1860
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		
+	}	
+}
+
+cartesianism = {
+	area = edwardian_era
+	year = 1680
+	cost = 9200
+
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+early_modern_philosphies = {
+	area = edwardian_era
+	year = 1685
+	cost = 19600
+	increase_research = 0.15
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+#theory5
+early_water_wheel = {
+	area = elizabethan_era
+	year = 1453
+	cost = 3600
+
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.05
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			year = 1845
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 10
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 25
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+calculus = {
+	area = elizabethan_era
+	year = 1500
+	cost = 4000
+
+	RGO_output = 0.05
+
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1
+		}
+		modifier = {
+			factor = 0.9 #0.1
+			not = { literacy = 0.2  }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 10
+		}
+	}	
+}
+
+basic_chemistry = {
+	area = elizabethan_era
+	year = 1550
+	cost = 4400
+	supply_limit = 0.15 
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+modern_water_wheel = {
+	area = elizabethan_era
+	year = 1580
+	cost = 4800
+
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	 
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 2
+			year = 1850
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.02
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			industrial_score = 100
+		}
+		modifier = {
+			factor = 1.02
+			industrial_score = 150
+		}
+	}
+}
+
+artisan_guilds = {
+	area = elizabethan_era
+	year = 1590
+	cost = 5200
+
+	RGO_output = 0.05 
+	activate_building = regular_clothes_factory
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 20
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				big_producer = cotton
+				big_producer = wool
+				big_producer = fabric
+				big_producer = silk
+				big_producer = timber
+				big_producer = tropical_wood
+				big_producer = fruit
+				big_producer = grain
+				big_producer = tea
+				big_producer = cattle
+			}
+		}
+		modifier = {
+			factor = 0.9 #0.1
+			not = { literacy = 0.2  }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 50
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+early_medicine = {
+	area = elizabethan_era
+	year = 1600
+	cost = 5600
+
+	supply_limit = 0.15
+	pop_growth = 0.0005
+	land_attrition = -0.05 
+	soldier_to_pop_loss = 0.05
+	
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 1.5
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+	}
+}
+
+early_manufactures = {
+	area = elizabethan_era
+	year = 1610
+	cost = 6000
+	RGO_throughput = 0.05
+	
+	activate_building = machine_parts_factory
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 20
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				big_producer = cotton
+				big_producer = wool
+				big_producer = fabric
+				big_producer = silk
+				big_producer = timber
+				big_producer = tropical_wood
+				big_producer = fruit
+				big_producer = grain
+				big_producer = tea
+				big_producer = cattle
+			}
+		}
+		modifier = {
+			factor = 0.9 #0.1
+			not = { literacy = 0.2  }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 50
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+birth_of_science_tech = {
+	area = elizabethan_era
+	year = 1620
+	cost = 6400
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			year = 1640
+		}
+		modifier = {
+			factor = 1.2
+			prestige = 100
+		}
+	}
+}
+
+scientific_revolution_tech = {
+	area = elizabethan_era
+	year = 1630
+	cost = 6800
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			year = 1670
+		}
+		modifier = {
+			factor = 1.2
+			prestige = 150
+		}
+	}
+}
+
+late_manufactures = {
+	area = elizabethan_era
+	year = 1640
+	cost = 7200
+	RGO_throughput = 0.05
+	activate_building = artillery_factory
+	
+	
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 20
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				big_producer = cotton
+				big_producer = wool
+				big_producer = fabric
+				big_producer = silk
+				big_producer = timber
+				big_producer = tropical_wood
+				big_producer = fruit
+				big_producer = grain
+				big_producer = tea
+				big_producer = cattle
+			}
+		}
+		modifier = {
+			factor = 0.9 #0.1
+			not = { literacy = 0.2  }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 50
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+inorganic_chemistry = {
+	area = elizabethan_era
+	year = 1650
+	cost = 7600
+
+	supply_limit = 0.10
+	land_attrition = -0.05 
+	soldier_to_pop_loss = 0.05
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 100
+		}
+		modifier = {
+			factor = 1.1
+			year = 1860
+		}
+		modifier = {
+			factor = 2
+			year = 1870
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 150
+		}
+	}
+}
+
+cast_iron = {
+	area = elizabethan_era
+	year = 1660
+	cost = 8000
+	 
+	rgo_goods_output = {
+		iron = 0.25
+	}
+	rgo_goods_output = {
+		coal = 0.25
+	}
+	rgo_goods_output = {
+		sulphur = 0.25
+	}
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+early_steam_engines = {
+	area = elizabethan_era
+	year = 1670
+	cost = 8400
+
+	mine_rgo_eff = 0.20
+	farm_rgo_eff = 0.15
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			OR = {
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
+			}
+		}
+		modifier = {
+			factor = 1.01
+			year = 1865
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 200
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 250
+		}
+	}
+}
+
+early_water_pump = {
+	area = elizabethan_era
+	year = 1680
+	cost = 8800
+
+	RGO_output = 0.05
+	
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 100
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 150
+		}
+		modifier = {
+			factor = 0.9 #0.1
+			not = { literacy = 0.2  }
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}	
+}
+
+cementation_steel = {
+	area = elizabethan_era
+	year = 1690
+	cost = 9200
+	
+	rgo_goods_output = {
+		coal = 0.1
+	}
+	rgo_size = {
+		coal = 0.2
+	}
+	rgo_goods_output = {
+		sulphur = 0.1
+	}
+	rgo_size = {
+		sulphur = 0.2
+	}
+	rgo_goods_output = {
+		iron = 0.1
+	}
+	rgo_size = {
+		iron = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.6
+			big_producer = coal
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = iron
+		}
+		modifier = {
+			factor = 1.4
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 1.3
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}
+
+wooden_mine_railways = {
+	area = elizabethan_era
+	year = 1699
+	cost = 19600
+	rgo_goods_output = {
+		iron = 0.10
+	}
+	rgo_goods_output = {
+		coal = 0.10
+	}
+	rgo_goods_output = {
+		sulphur = 0.10
+	}
+	
+	ai_chance = {
+		factor = 1.5 #1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1845
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+	}
+}

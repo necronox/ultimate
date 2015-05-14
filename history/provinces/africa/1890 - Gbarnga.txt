@@ -1,0 +1,11 @@
+trade_goods = coffee
+life_rating = 15
+add_core = LIB
+#Rubber discovered!
+1880.1.1 = {
+	trade_goods = rubber
+		}
+1903.1.1 = {
+		owner = LIB
+		controller = LIB
+		}

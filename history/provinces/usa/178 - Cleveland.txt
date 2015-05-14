@@ -1,0 +1,57 @@
+1700.1.1 = {
+owner = FRA
+controller = FRA
+	colonial = 1
+	}
+1763.1.1 = {
+	owner = THC
+	controller = THC
+	add_core = THC
+	colonial = 1
+		}
+1800.1.1 = {
+owner = USA
+controller = USA
+add_core = USA
+colonial = 2
+		}
+1820.1.1 = {
+	colonial = 0
+		}
+trade_goods = coal
+life_rating = 35
+1867.1.1 = {
+	owner = USA
+	controller = USA
+		}
+railroad = 1
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+	party_loyalty = {
+		ideology = liberal
+		loyalty_value = 25
+	}
+}
+1861.1.1 = { railroad = 3 }
+
+1910.1.1 = {
+	state_building = {
+		level = 2
+		building = barrel_factory
+		upgrade = yes
+	}
+		}

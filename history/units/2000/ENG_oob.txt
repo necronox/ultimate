@@ -1,0 +1,71 @@
+AST = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+FIJ = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+GHA = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+SRL = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+PAK = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+HND = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+
+JAM = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+SAF = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+NZL = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+KNA = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+SNG = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+CYP = {
+	value = 100
+	level = 5
+	influence_value = 50
+}

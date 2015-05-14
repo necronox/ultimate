@@ -1,0 +1,22 @@
+owner = SCO
+controller = SCO
+1707.1.1 = {
+owner = ENG
+controller = ENG
+add_core = ENG
+	}
+add_core = SCO
+add_core = ENG
+2014.5.1 = {
+owner = SCO
+controller = SCO
+		}
+trade_goods = sulphur
+life_rating = 35
+1700.1.1 = {
+naval_base = 1
+	}
+1861.1.1 = { railroad = 1 }
+1936.1.1 = { 
+	naval_base = 6
+}

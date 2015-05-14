@@ -1,0 +1,16 @@
+1836.1.1 = {
+owner = ENG
+controller = ENG
+colonial = 2
+		}
+
+1800.1.1 = {
+	add_core = CAN
+		}
+1880.1.1 = { 
+		controller = CAN
+		owner = CAN
+		colonial = 0
+		}
+trade_goods = iron
+life_rating = 35

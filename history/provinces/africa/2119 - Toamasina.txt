@@ -1,0 +1,19 @@
+owner = MAD
+controller = MAD
+add_core = MAD
+
+1903.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+
+
+1960.1.1 = {
+		owner = MAD
+		controller = MAD
+		colonial = 0
+		}
+
+trade_goods = fruit
+life_rating = 35

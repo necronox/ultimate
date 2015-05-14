@@ -1,0 +1,23 @@
+1700.1.1 = {
+	owner = NET
+controller = NET
+	}
+1806.1.1 = {
+owner = ENG
+controller = ENG
+add_core = SAF
+		}
+
+1920.1.1 = {
+		owner = SAF
+		controller = SAF
+		colonial = 0
+		}
+
+
+
+
+trade_goods = fruit
+life_rating = 35
+colonial = 2
+

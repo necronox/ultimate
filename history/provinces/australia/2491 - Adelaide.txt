@@ -1,0 +1,16 @@
+1788.1.1 = {
+	owner = ENG #hello
+	controller = ENG #hello
+	colonial = 2
+}
+add_core = AST
+
+1910.1.1 = {
+	owner = AST
+	controller = AST
+colonial = 0
+		}
+trade_goods = wool
+life_rating = 30
+colonial = 2
+1861.1.1 = { railroad = 1 }

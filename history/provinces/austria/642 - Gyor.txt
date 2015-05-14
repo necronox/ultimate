@@ -1,0 +1,16 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = HUN
+1914.1.1 = {
+owner = KUK
+controller = KUK
+add_core = KUK
+}	
+1919.6.28 = { 
+		controller = HUN
+		owner = HUN
+		}
+trade_goods = cattle
+life_rating = 35
+1861.1.1 = { railroad = 3 }

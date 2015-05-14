@@ -1,0 +1,159 @@
+ army= {
+	name = "1. Panzerdivision"
+	location = 534
+	regiment = {
+		name= "Panzergrenadierbataillon"
+		type = infantry
+	}
+	regiment = {
+		name= "Panzergrenadierbataillon"
+		type = infantry
+	}
+	regiment = {
+		name= "Panzerartilleriebataillon"
+		type = artillery
+	}
+	regiment = {
+		name= "Panzerlehrbrigade 9"
+		type = tank
+	}
+	regiment = {
+		name= "Panzerlehrbrigade 21"
+		type = tank
+	}
+	regiment = {
+		name= "Panzergrenadierbrigade 41"
+		type = infantry
+	}
+	
+}
+
+army = {
+	name = "10. Panzerdivision"
+	location = 597
+	regiment = {
+		name= "Panzerbrigade Infanterie"
+		type = infantry
+	}
+	regiment = {
+		name= "Panzergrenadierbrigade 37"
+		type = guard
+	}
+	regiment = {
+		name= "Panzerbrigade 12"
+		type = tank
+	}
+	regiment = {
+		name= "Gebirgsjägerbrigade 23"
+		type = infantry
+	}
+}
+
+army = {
+	name = "Division Schnelle Kräfte"
+	location = 568
+	regiment = {
+		name= "Kommando Spezialkräfte"
+		type = specops
+	}
+	regiment = {
+		name= "Luftlandebrigade 26"
+		type = specops
+	}
+	regiment = {
+		name= "Luftlandebrigade 31"
+		type = specops
+	}
+	
+}
+
+army = {
+	name = "Zentrales Langzeitlager"
+	location = 577
+	regiment = {
+		name= "Zentral Infanterie"
+		type = infantry
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = infantry
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = infantry
+	}
+	regiment = {
+		name= "Zentral Artillerie"
+		type = artillery
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = engineer
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = engineer
+	}
+	
+}
+
+army = {
+	name = "Zentrales Langzeitlager"
+	location = 571
+	regiment = {
+		name= "Zentral Infanterie"
+		type = infantry
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = infantry
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = infantry
+	}
+	regiment = {
+		name= "Zentral Artillerie"
+		type = artillery
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = engineer
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = engineer
+	}
+	
+}
+
+army = {
+	name = "Zentraler Mobilmachungsstützpunkt"
+	location = 549
+	regiment = {
+		name= "Zentral Infanterie"
+		type = infantry
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = infantry
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = infantry
+	}
+	regiment = {
+		name= "Zentral Artillerie"
+		type = artillery
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = engineer
+	}
+	regiment = {
+		name= "Zentral Infanterie"
+		type = engineer
+	}
+	
+}
+

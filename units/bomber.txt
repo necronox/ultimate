@@ -1,0 +1,45 @@
+bomber = {
+	icon = 25
+	
+	type = land
+	sprite = Bomber
+	active = no
+	unit_type = cavalry
+	floating_flag = yes
+	
+	#Core Abilities
+	priority = 45
+	max_strength = 3
+	default_organisation = 30
+	maximum_speed = 5.00
+	weighted_value = 10.0
+
+
+	#Building Costs
+	build_time = 120
+	build_cost = {
+		aeroplanes = 10
+		explosives = 10
+		canned_food = 10
+		wine = 10
+		fuel = 6
+	}
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		aeroplanes = 0.1
+		explosives = 0.1
+		canned_food = 0.04
+		fuel = 0.2
+	}
+	
+
+	#Land Abilties
+	reconnaissance = 4
+	attack = 16
+	defence = 2
+	discipline = 1.0
+	support = 6
+	maneuver = 3
+	siege = 4
+}

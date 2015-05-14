@@ -1,0 +1,332 @@
+army = {
+	name = "Albinian infantry division"
+	leader = {
+		name = "peitro Badoglio"
+		type = land
+		personality = aggressive
+		background = school_of_offense
+		date="1939.1.1"
+			}
+	location = 853
+	regiment = {
+		name= "Engineer Regiment"
+		type = engineer
+	}
+	regiment = {
+		name= "Fighters Squadron"
+		type = plane
+	}
+	regiment = {
+		name= "tank Regiment"
+		type = tank
+	}
+	regiment = {
+		name= "Artillery Regiment"
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery Regiment"
+		type = artillery
+	}
+	regiment = {
+		name = "Infantry Regiment"
+		type = guard
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = infantry
+			}
+}
+
+army = {
+	name = "Lybian infantry division"
+	leader = {
+		name = "Ugo Cavallero"
+		type = land
+		personality = immoral
+		background = audacious
+		date="1939.1.1"
+			}
+	location = 1737
+	regiment = {
+		name= "Engineer Regiment"
+		type = engineer
+	}
+	regiment = {
+		name= "Fighters Squadron"
+		type = plane
+	}
+	regiment = {
+		name= "tank Regiment"
+		type = tank
+	}
+	regiment = {
+		name= "Artillery Regiment"
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery Regiment"
+		type = artillery
+	}
+	regiment = {
+		name = "Infantry Regiment"
+		type = guard
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+}
+
+army = {
+	name = "Ethiopian infantry division"
+	leader = {
+		name = "Giovanni Messe"
+		type = land
+		personality = immoral
+		background = audacious
+		date="1939.1.1"
+			}
+	location = 1859
+	regiment = {
+		name= "Engineer Regiment"
+		type = engineer
+	}
+	regiment = {
+		name= "Fighters Squadron"
+		type = plane
+	}
+	regiment = {
+		name= "tank Regiment"
+		type = tank
+	}
+	regiment = {
+		name= "Artillery Regiment"
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery Regiment"
+		type = artillery
+	}
+	regiment = {
+		name = "Infantry Regiment"
+		type = guard
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+	regiment = {
+		name = "Infantry Regiment"
+		type = irregular
+			}
+}
+
+navy = {
+	name = "Regia Marina"
+	location = 749
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+}

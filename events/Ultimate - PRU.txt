@@ -1,0 +1,27 @@
+country_event = {
+        id = 300000000
+        title = "EVTNAME300000000"
+        desc = "EVTDESC300000000"
+        picture = "hohenzollernlands"
+	trigger = {
+		tag = PRU
+		year = 1850
+		not = {
+			has_country_flag = inherited_hohenzollern
+		}
+		HZP = {
+			in_sphere = THIS
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "EVTOPTA300000000"
+		inherit = HZP
+		594 = {
+			add_core = PRU
+		}
+		set_country_flag = inherited_hohenzollern
+	}
+}

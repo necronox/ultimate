@@ -1,0 +1,152 @@
+USA = {
+	value = 100
+}
+SPA = {
+	value = 75
+}
+
+FRA = {
+	value = -200
+}
+
+leader = {
+	name = "Ignacio Mejía"
+	type = land
+	date="1846.1.1"
+	personality = persistant
+	background = politician
+}
+
+army = {
+	name = "Ejército de Oaxaca"
+	location = 2177
+	
+	leader = {
+	name = "Porfirio Díaz"
+	type = land
+	date="1854.1.1"
+	personality = audacious
+	background = cavalry_school
+}
+	
+	regiment = {
+		name= "1.Oaxaca y Tlaxcala"
+		type = irregular
+		home = 2177
+	}
+
+	regiment = {
+		name= "2.Oaxaca y Tlaxcala"
+		type = irregular
+		home = 2177
+	}
+
+	regiment = {
+		name= "3.Oaxaca y Tlaxcala"
+		type = irregular
+		home = 2177
+	}
+	regiment = {
+		name= "1ra División de caballería"
+		type = dragoon
+		home = 2177
+	}
+}
+
+army = {
+	name = "Ejército de Ciudad de México"
+	location = 2172
+	
+	leader = {
+	name = "Pedro Hinojosa de la Garza Falcón"
+	type = land
+	date="1840.1.1"
+	personality = expert
+	background = elderly
+}
+	
+	regiment = {
+		name= "1.Division Comonfort"
+		type = infantry
+		home = 2176
+	}
+
+	regiment = {
+		name= "2.Division Comonfort"
+		type = irregular
+		home = 2176
+	}
+
+	regiment = {
+		name= "3.Division Comonfort"
+		type = irregular
+		home = 2176
+	}
+
+}
+
+army = {
+	name = "Ejército de Oriente"
+	location = 2176
+	
+	leader = {
+	name = "Ignacio Zaragoza"
+	type = land
+	date="1853.1.1"
+	personality = heroic
+	background = cartographer
+}
+	
+	regiment = {
+		name= "1. Brigada Berriozábal"
+		type = infantry
+		home = 2176
+	}
+
+	regiment = {
+		name= "2. Brigada Lamadrid"
+		type = infantry
+		home = 2176
+	}
+
+	regiment = {
+		name= "3. Brigada Negrete"
+		type = irregular
+		home = 2176
+	}
+	
+	regiment = {
+		name= "4. Brigada Díaz"
+		type = infantry
+		home = 2176
+	}
+	
+	regiment = {
+		name= "1. Artillería"
+		type = artillery
+		home = 2176
+	}
+	
+	regiment = {
+		name= "1. Caballería"
+		type = dragoon
+		home = 2176
+	}
+
+}
+
+navy = {
+	name = "Armada de Mexico"
+	location = 2162
+	ship = {
+		name= "Vencedor del Alamo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Matilda"
+		type = clipper_transport
+	}
+
+}
+

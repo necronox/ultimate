@@ -1,0 +1,18 @@
+1604.1.1 = {
+owner = MAP
+controller = MAP
+add_core = MAP
+		}
+1767.1.1 = {
+owner = SPA
+controller = SPA
+colonial = 2
+		}
+1810.1.1 = {
+owner = CHL
+controller = CHL
+add_core = CHL
+colonial = 0
+		}
+trade_goods = grain
+life_rating = 35

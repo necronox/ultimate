@@ -1,0 +1,28 @@
+	owner = MYS
+	controller = MYS
+1818.1.1 = {
+	owner = ENG #hello
+	controller = ENG #hello
+	colonial = 2
+}
+
+
+add_core = MYS
+add_core = HYD
+
+
+#Decolonisation
+1947.1.1 = {
+	owner = HND
+	controller = HND
+	colonial = 0
+		}
+
+add_core = HND
+1880.1.1 = {
+owner = ENG #hello
+controller = ENG #hello
+colonial = 2
+		}
+trade_goods = tea
+life_rating = 32

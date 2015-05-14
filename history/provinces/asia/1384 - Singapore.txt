@@ -1,0 +1,22 @@
+owner = JOH
+controller = JOH
+add_core = JOH
+
+1810.1.1 = {
+owner = ENG
+controller = ENG
+colonial = 2
+		}
+#Rubber discovered!
+1880.1.1 = {
+	trade_goods = rubber
+		}
+trade_goods = tropical_wood
+life_rating = 30
+
+1965.1.1 = {
+	add_core = SNG
+	owner = SNG
+	controller = SNG
+	colonial = 0
+		}

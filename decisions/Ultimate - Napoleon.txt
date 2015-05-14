@@ -1,0 +1,61 @@
+political_decisions = {
+	code_civil = {  #The French Code Civil of 1804
+		potential = {
+			tag = FRA
+			government = presidential_dictatorship
+			year = 1804
+			NOT = {
+				has_country_flag = code_civil
+			}
+		}
+	
+		allow = {
+			plurality = 10
+			
+		}
+		
+		effect = {
+			set_country_flag = code_civil
+			any_pop = {
+				limit = {
+					culture = french
+				}
+				militancy = -2
+			}
+				prestige = 10
+		}
+	}
+	the_emperor = {  #Coronation of Napoleon I
+		potential = {
+			tag = FRA
+			government = presidential_dictatorship
+			year = 1804
+			NOT = {
+				has_country_flag = the_emperor
+			}
+		}
+	
+		allow = {
+			prestige = 45
+			
+		}
+		
+		effect = {
+			set_country_flag = the_emperor
+			any_pop = {
+				scaled_militancy = {
+					ideology = liberal
+					factor = 2
+				}
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 2
+				}
+			}
+				prestige = 20
+				badboy = 5
+		}
+
+	}
+
+}

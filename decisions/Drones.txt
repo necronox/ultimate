@@ -1,0 +1,29 @@
+
+
+political_decisions = {
+
+	drone_campaign_ABU = {
+	picture = dronecampaign
+
+		potential = {
+            quantum_physics = 1
+            military_access = ABU
+			NOT = {
+			has_country_flag = droning_ABU
+				}
+			}
+
+		effect = {
+			set_country_flag = droning_ABU
+			ABU = {
+			all_core  = {
+				add_province_modifier = {
+				name = drone_campaignmodifier
+				duration = -1 			}
+						}
+				}
+				}
+					}
+
+	}
+

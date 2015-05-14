@@ -1,0 +1,31 @@
+1714.1.1 = {
+owner = FRA
+controller = FRA
+colonial = 2
+		}
+1764.1.1 = {
+owner = ENG
+controller = ENG
+colonial = 2
+		}
+1775.1.1 = {
+	owner = ENG
+controller = ENG
+colonial = 2
+		}
+1800.1.1 = {
+	add_core = USA
+		}
+
+1800.1.1 = {
+	add_core = CAN
+		}
+add_core = NEN
+trade_goods = timber
+life_rating = 35
+
+1861.1.1 = {
+	owner = USA
+	controller = USA
+	colonial = 0
+}

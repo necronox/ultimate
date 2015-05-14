@@ -1,0 +1,32 @@
+owner = MUG
+controller = MUG
+
+1818.1.1 = {
+owner = AWA
+controller = AWA
+		}
+add_core = AWA
+
+
+#Decolonisation
+1947.1.1 = {
+	owner = HND
+	controller = HND
+	colonial = 0
+		}
+
+
+
+add_core = HND
+1880.1.1 = {
+owner = ENG #hello
+controller = ENG #hello
+colonial = 2
+		}
+trade_goods = timber
+life_rating = 32
+1861.1.1 = {
+	owner = ENG #hello
+	controller = ENG #hello
+	colonial = 2
+}

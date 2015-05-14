@@ -1,0 +1,46 @@
+name = "War againts Germany"
+
+1914.1.1 = {
+	add_attacker = JAP
+	add_defender = GER
+
+
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = place_in_the_sun
+		state_province_id = 1566
+		actor = JAP
+		receiver = GER
+		
+	}
+	war_goal = {
+		casus_belli = place_in_the_sun
+		state_province_id = 2522
+		actor = JAP
+		receiver = GER
+		
+	}
+	war_goal = {
+		casus_belli = place_in_the_sun
+		state_province_id = 2523
+		actor = JAP
+		receiver = GER
+		
+	}
+	war_goal = {
+		casus_belli = status_quo
+		actor = GER
+		receiver = JAP
+	}
+
+}
+
+1918.4.1 = {
+	rem_attacker = JAP
+	add_defender = GER
+		}

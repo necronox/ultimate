@@ -1,0 +1,31 @@
+
+
+1936.1.1 = {
+	owner = THA
+	controller = THA
+	add_core = THA
+	colonial = 0
+		}
+
+owner = SIA
+controller = SIA
+add_core = SIA
+trade_goods = tropical_wood
+life_rating = 30
+
+
+
+1920.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 2
+		}
+
+1963.1.1 = {
+	owner = MAL
+	controller = MAL
+	add_core = MAL
+	colonial = 0
+		}
+
+

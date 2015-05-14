@@ -1,0 +1,19 @@
+owner = SPA
+controller = SPA
+colonial = 2
+1810.1.1 = {
+owner = BOL
+controller = BOL
+add_core = BOL
+add_core = PRG
+add_core = ARG
+colonial = 0
+		}
+ trade_goods = timber
+life_rating = 30
+1910.1.1 = {
+		owner = ARG 
+		controller = ARG
+		remove_core = BOL
+		remove_core = PRG
+		}

@@ -1,0 +1,30 @@
+1714.1.1 = {
+	owner = THC
+	controller = THC
+	add_core = THC
+		}
+1775.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	remove_core = THC
+		}
+1820.1.1 = {
+		owner = USA
+	controller = USA
+	add_core = USA
+
+		}
+trade_goods = fish
+life_rating = 35
+1867.1.1 = { 	#AFTER CIVIL WAR
+	owner = USA	#AFTER CIVIL WAR
+
+
+	controller = USA #AFTER CIVIL WAR
+
+		}
+1836.1.1 = {
+railroad = 1
+		}
+1861.1.1 = { railroad = 3 }

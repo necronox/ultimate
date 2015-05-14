@@ -1,0 +1,16 @@
+add_core = RUS
+add_core = JAP
+trade_goods = fish
+life_rating = 35
+1880.1.1 = { owner = RUS
+		controller = RUS
+		}
+#There will be blood
+1882.1.1 = {
+	trade_goods = oil
+		}
+
+1945.1.1 = {
+remove_core = JAP
+
+}

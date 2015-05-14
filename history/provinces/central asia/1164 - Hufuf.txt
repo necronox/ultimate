@@ -1,0 +1,12 @@
+owner = NEJ
+controller = NEJ
+add_core = NEJ
+1919.1.1 = {
+	controller = SAU 
+	owner = SAU
+	add_core = SAU
+colonial = 0
+
+}
+trade_goods = grain
+life_rating = 35

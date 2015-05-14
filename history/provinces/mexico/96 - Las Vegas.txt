@@ -1,0 +1,31 @@
+1767.1.1 = {
+owner = SPA
+controller = SPA
+colonial = 1
+		}
+1811.1.1 = {
+owner = MEX
+controller = MEX
+add_core = MEX
+add_core = DES
+	colonial = 0
+		} 
+trade_goods = iron
+life_rating = 35
+1861.1.1 = {
+owner = USA
+controller = USA
+add_core = USA
+	remove_core = MEX
+}
+1910.1.1 = {
+			state_building = {
+		level = 2
+		building = entertainment_industry
+		upgrade = yes
+	}
+		}
+1920.1.1 = { 
+	railroad = 5
+	colonial = 0
+}

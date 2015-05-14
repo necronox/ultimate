@@ -1,0 +1,337 @@
+IRO = {
+	value = 150
+	level = 5
+	influence_value = 50
+}
+
+army = {
+	name = "1st Army"
+	location = 293
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Dragoon"
+		type = dragoon
+	}
+	regiment = {
+		name= "Cuirassier"
+		type = cuirassier
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+	}
+		}
+
+army = {
+	name = "2nd Army"
+	location = 48
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Dragoon"
+		type = dragoon
+	}
+		}
+
+navy = {
+	name = "1st Fleet"
+	location = 293
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+		}
+
+navy = {
+	name = "Royal Navy"
+	location = 303
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Ship of the Line"
+		type = manowar
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+		}

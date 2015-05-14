@@ -1,0 +1,11884 @@
+
+country_event = {
+	id = 401000 #SAM-Primitives stay primitive temp
+	title = "Western Barbarians"
+	desc = "The barbarians from the West appear to be getting increasingly belligerent, crisscrossing the world as they are on their rickety boats. If they keep this up $COUNTRY$ may have to teach them a lesson!"
+	picture = "smoking"
+
+trigger = {
+		NOT = {
+		civilized = yes
+		year = 1820
+		has_country_modifier = primitivemod
+		}
+			}
+
+
+	option = {
+	name = "We Are The Best"
+			add_country_modifier = { name = primitivemod duration = -1 }
+				}
+		}
+country_event = {
+	id = 401001 #SAM-Primitives stop primitive temp
+	title = "The West is here"
+	desc = "Westerners, while still barbarians, may hold one or two secrets we would do well to discover"
+	picture = "smoking"
+
+trigger = {
+		has_country_modifier = primitivemod
+		year = 1820
+			}
+
+
+	option = {
+	name = "Catch up and overtake!"
+		remove_country_modifier = primitivemod
+				}
+		}
+
+#HRE Booting 
+country_event = { 
+	id = 401002
+	title = "EVTNAME401002" 
+	desc = "EVTDESC401002" 
+	picture = "hre_pic"
+		trigger = { 
+			AND = {
+				NOT = {
+					has_country_modifier = hre_member
+					has_country_flag = left_hre 
+					has_global_flag = hre_dismantled
+					}
+				is_culture_group = germanic
+				}
+			}
+
+		option = {
+			name = "God Save the Emperor!"
+				add_country_modifier = { name = hre_member duration = -1 }
+			any_owned = {
+				limit = {
+				is_core = THIS
+					}
+				add_core = REH
+				}
+			}
+		}
+
+##English Civil War##
+
+#Bishops War
+country_event = {
+	id = 401003
+	title = "EVTNAME401003"
+	desc = "EVTDESC401003"
+	picture = "ecwbattlepic"
+		trigger = {
+			tag = ANG
+			is_our_vassal = SCO
+			has_country_flag = kingcharlesI
+			NOT = {
+				year = 1700
+			}
+			NOT = {
+				has_country_flag = bishop_revolted
+			}
+		}
+		mean_time_to_happen = {
+				months = 1
+						}
+		option = {
+			name = "Let's march North!"
+				set_country_flag = bishop_revolted
+				leave_alliance = SCO
+				SCO = {
+				war = {
+					target = ANG
+					attacker_goal = {
+					casus_belli = become_independent
+								}
+					}
+						}
+				}
+			}
+#King Charles I
+country_event = {
+	id = 401004
+	title = "King James is Dead!"
+	desc = "His son Charles will now become King of England, Scotland and Ireland."
+	picture = "kingcharlespic"
+		trigger = {
+			tag = ANG
+			year = 1625
+			NOT = {
+				has_global_flag = english_disorder_done
+				year = 1700
+				has_country_flag = kingcharlesI
+				}
+			}
+
+		mean_time_to_happen = {
+				days = 20
+						}
+		option = {
+			name = "God Save The King!"
+				prestige = 2
+				set_country_flag = kingcharlesI
+				}
+			}
+#King Charles I Executed
+country_event = {
+	id = 401005
+	title = "King Executed!"
+	desc = "Our King has been executed and England declared a republic, led by parliamentary leader Oliver Cromwell."
+	picture = "executioncharlesIpic"
+	is_triggered_only = yes
+
+		option = {
+			name = "Horrible!"
+				prestige = -5
+				set_global_flag = english_disorder_done
+				remove_country_modifier = english_cw_mod
+				}
+			}
+#King Charles II Dies
+country_event = {
+	id = 401006
+	title = "King Charles II is Dead!"
+	desc = "His brother James will now become King of England, Scotland and Ireland."
+	picture = "jamesIIpic"
+		trigger = {
+			has_country_flag = charlesII
+			tag = ANG
+			year = 1685
+			NOT = {
+				year = 1700
+				has_country_flag = kingjamesII
+				}
+			}
+
+		mean_time_to_happen = {
+				days = 20
+						}
+		option = {
+			name = "God Save The King!"
+				prestige = 2
+				set_country_flag = kingjamesII
+				}
+			}
+#Parliamentarians defeated
+country_event = {
+	id = 401007
+	title = "Parliamentarians Defeated"
+	desc = "We have successfully defeated the parliamentarians, they now know better than to question your rule!"
+	picture = "ecwbattlepic"
+		trigger = {
+			tag = ANG
+			government = absolute_monarchy
+				year = 1675
+				has_country_flag = english_cw
+			NOT = {
+				has_global_flag = english_disorder_done
+				}
+			}
+
+		mean_time_to_happen = {
+				months = 5
+						}
+		option = {
+			clr_country_flag = english_cw
+			name = "That'll teach them!"
+				prestige = 25
+				remove_country_modifier = english_cw_mod
+				}
+			}
+#English Civil War Start
+country_event = {
+	id = 401008
+	title = "The Parliament Questions Our Rule"
+	desc = "The English Parliament has grown to be a perennial problem to our claim to absolute divine rule."
+	picture = "englishparliamentpic"
+		trigger = {
+			tag = ANG
+			government = absolute_monarchy
+				year = 1610
+			NOT = {
+				has_country_flag = english_cw
+				has_global_flag = english_disorder_done
+				}
+			}
+
+		mean_time_to_happen = {
+				months = 5
+						}
+		option = {
+			name = "I Am The King!"
+				prestige = -10
+				set_country_flag = english_cw
+				add_country_modifier = { name = english_cw_mod duration = -1 }
+				}
+			}
+country_event = {
+	id = 401009
+	title = "$FROMCOUNTRY$ Unites the Empire"
+	desc = "The ruler of $FROMCOUNTRY$, the Holy Roman Emperor, has decided to unite the empire. Being part of it we are obliged to comply and hand over rule over our country."
+	picture = "hre_pic"
+		is_triggered_only = yes
+
+		option = {
+			name = "Blast!"
+				FROM = {
+					inherit = THIS
+					}
+				}
+			}
+#English Nobles Disatisfied
+province_event = {
+	title = "$PROVINCENAME$ Gentry Dissastified"
+	desc = "The English gentry in $PROVINCENAME$ has grown increasingly dissatisfied with our King's rule recently. As a result it has held many local events denouncing his reign, calling for increased parliamentary powers."
+	id = 401010
+	
+	trigger = {
+		is_core = ANG
+		owner = {
+		tag = ANG
+		government = absolute_monarchy
+		has_country_flag = english_cw
+				}
+		is_colonial = no
+		NOT = {
+			has_global_flag = english_disorder_done
+			}
+	}
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.9
+			year = 1630
+				}
+	}
+	option = {
+		name = "Such Nonsense!"
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+	}
+}
+#Native Population Decimated
+province_event = {
+	id = 401011
+	title = "$PROVINCENAME$ Natives Decimated"
+	desc = "EVTDESC401011"
+	
+	trigger = {
+		NOT = {
+			year = 1800
+			}
+		is_colonial = yes
+		OR = {
+		continent = north_america
+		continent = south_america
+			}
+		any_pop = {
+			OR = {
+			is_culture_group = native_american
+				}
+			}
+		}
+	
+	mean_time_to_happen = {
+		months = 400
+			modifier = {
+				factor = 0.9
+		any_pop = {
+			NOT = {
+				everyday_needs = 0.8
+				}
+			}
+		}
+			modifier = {
+				factor = 0.9
+		any_pop = {
+			NOT = {
+				life_needs = 0.9
+				}
+			}
+		}
+
+	}
+	
+	option = {
+		name = "Help Them"
+		any_pop = {
+		limit = {
+			is_culture_group = native_american
+				}
+			treasury = -100
+			reduce_pop = 0.75
+			consciousness = 4
+			militancy = 2
+			}
+		}
+	
+	option = {
+		name = "This is None of Our Concern"
+		any_pop = {
+		limit = {
+			is_culture_group = native_american
+				}
+			reduce_pop = 0.70
+			militancy = 4
+			consciousness = 2
+			}
+		}
+	}
+
+# Early Plague
+country_event = {
+	id = 401012
+	title = "Plague"
+	desc = "A plague appears to be spreading across our land, killing untold numbers of our subjects. We are utterly helpless against this calamity."
+	picture = "plaguepic"
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = early_plague_mod
+			year = 1760
+			poor_strata_everyday_needs = 0.9
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 1.5
+			any_neighbor_country = {
+			has_country_modifier = early_plague_mod
+							}
+				}
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 10
+				}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_everyday_needs = 0.7
+			}
+		}
+	}
+	
+	option = {
+		name = "God Preserve Us!"
+		add_country_modifier = { name = early_plague_mod duration = 820 }
+	}
+}
+#Colony Massacre
+province_event = {
+		id = 401013
+	title = "$PROVINCENAME$ Colonists Massacred"
+	desc = "EVTDESC401013"
+	trigger = {
+		NOT = {
+			year = 1820
+			}
+		is_colonial = yes
+		OR = {
+		continent = north_america
+		continent = south_america
+			}
+		any_pop = {
+			OR = {
+			is_culture_group = native_american
+				}
+			}
+		}
+	
+	mean_time_to_happen = {
+		months = 500
+			modifier = {
+				factor = 0.9
+		any_pop = {
+				consciousness = 3
+			}
+		}
+			modifier = {
+				factor = 1.5
+		any_pop = {
+				militancy = 4
+			}
+		}
+
+	}
+	
+	option = {
+		name = "Pursue Them"
+		any_pop = {
+		limit = {
+			is_culture_group = native_american
+				}
+			reduce_pop = 0.40
+			consciousness = 8
+			militancy = 8
+			}
+		any_pop = {
+		limit = {
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+					}
+				}
+			reduce_pop = 0.70
+			militancy = 1
+			consciousness = 1
+			}
+		}
+	
+	option = {
+		name = "Let Them Run"
+		any_pop = {
+		limit = {
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+					}
+				}
+			reduce_pop = 0.75
+			militancy = 2
+			consciousness = 2
+			}
+		}
+	}
+province_event = {
+	id = 401014
+	title = "Religious Clash"
+	desc = "Differences between Catholics and Protestants have erupted today in $PROVINCENAME$ resulting in a number of deaths and a tense stalemate between the two sides. Catholics, who are the minority, vow to continue fighting as long as their demands are not met."
+	trigger = {
+		owner = {
+			pop_majority_religion = protestant
+			}
+		NOT = {
+			has_global_flag = protestant_reformation_done
+			year = 1700
+			}
+		AND = {
+		any_pop = {
+			religion = protestant
+			}
+		any_pop = {
+			religion = catholic
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 1.5
+			NOT = {
+			any_pop = {
+				everyday_needs = 0.8 
+					}
+				}
+			}
+		}				
+
+
+				
+	option = {
+		name = "Good Lord!"
+		any_pop = {
+			limit = {
+				religion = catholic
+				}
+			militancy = 2
+			consciousness = 1
+			reduce_pop = 0.98
+			}
+		any_pop = {
+			limit = {
+				religion = protestant
+				}
+			reduce_pop = 0.98
+			consciousness = 1
+			}
+		}
+	}
+province_event = {
+	id = 401015
+	title = "Religious Clash"
+	desc = "EVTDESC401015"
+	trigger = {
+		owner = {
+			pop_majority_religion = catholic
+			}
+		NOT = {
+			has_global_flag = protestant_reformation_done
+			year = 1700
+			}
+		AND = {
+		any_pop = {
+			religion = protestant
+			}
+		any_pop = {
+			religion = catholic
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 1.5
+			NOT = {
+			any_pop = {
+				everyday_needs = 0.8 
+					}
+				}
+			}
+		}				
+
+
+				
+	option = {
+		name = "Good Lord!"
+		any_pop = {
+			limit = {
+				religion = protestant
+				}
+			militancy = 2
+			consciousness = 1
+			reduce_pop = 0.98
+			}
+		any_pop = {
+			limit = {
+				religion = catholic
+				}
+			reduce_pop = 0.98
+			consciousness = 1
+			}
+		}
+	}
+country_event = {
+	id = 401016
+	picture = "shakespearepic1"
+	title = "First Folio Published"
+	desc = "Though released post-humously and not put together by Shakespeare himself, the First Folio containing his written plays is already lauded as a marvel celebrating and enriching the English language and culture."
+	trigger = {
+		year = 1623
+		tag = ANG
+		NOT = {
+			has_country_flag = firstfoliopublished
+			year = 1700
+			}
+		}
+	option = {
+		name = "To be or not to be, that is the question..."
+		prestige = 50
+		set_country_flag = firstfoliopublished
+		any_pop = {
+			limit = {
+			culture = english
+				}
+			consciousness = 2
+			}
+		}
+	}
+country_event = {
+	id = 401017
+	picture = "shakespearepic2"
+	title = "Shakespeare is Dead"
+	desc = "The master playwright William Shakespeare has died today at the age of 52. His plays have touched a great many, including nobility, and the man has secured his place as one of the great figures of the Elizabethan era and English Renaissance."
+	trigger = {
+		year = 1616
+		tag = ANG
+		NOT = {
+			has_country_flag = shakespeare_dead
+			year = 1700
+			}
+		}
+	option = {
+		name = "Alas, I knew him Horatio"
+		set_country_flag = shakespeare_dead
+		prestige = 10
+		}
+	}	
+
+country_event = {
+	id = 401018 #Pre-industrial civs
+	title = "The Enlightenment"
+	desc = "The renaissance has blossomed into what we now call the enlightenment. Curiosity and innovation are now widely considered to be the way forward!"
+	picture = "windsor"
+
+trigger = {
+		civilized = yes
+		NOT = {
+			tech_school = pre_industrial_school
+			year = 1820
+			}
+		}
+
+
+	option = {
+		name = "Very Well"
+		tech_school = pre_industrial_school
+				}
+		}
+country_event = {
+	id = 401019 #Pre-Industrial civs
+	title = "The Age of Industry"
+	desc = "The Age of Enlightenment is coming to an end. The Age of Industry is the way forward."
+	picture = "windsor"
+
+trigger = {
+		year = 1820
+		tech_school = pre_industrial_school
+			}
+
+
+	option = {
+		name = "Progress!"
+		tech_school = traditional_academic
+	}
+}
+country_event = {
+	id = 20000000 #Kepler's Supernova
+	title = ev_20000000
+	desc = desc_ev_20000000
+	picture = Kepler
+	fire_only_once = yes
+	trigger = {
+		owns = 625
+		year = 1603
+		NOT = {
+			year = 1605
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		years_of_research = 0.5
+	}
+}
+country_event = {
+	id = 20000001 #Shakespeare's first performance
+	title = ev_20000001
+	desc = desc_ev_20000001
+	picture = shakespearepic2
+	fire_only_once = yes
+	trigger = {
+		year = 1603
+		owns = 300
+		NOT = {
+			year = 1605
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000002 #Table Alphabeticall
+	title = ev_20000002
+	desc = desc_ev_20000002
+	picture = TableAlphabetical
+	fire_only_once = yes
+	trigger = {
+		year = 1603
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1605
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000003 #Don Quixote
+	title = ev_20000003
+	desc = desc_ev_20000003
+	picture = DonQuixote
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		year = 1604
+		NOT = {
+			year = 1606
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000004 #Ireland becomes a subject of England
+	title = ev_20000004
+	desc = desc_ev_20000004
+	picture = greatpowers
+	fire_only_once = yes
+	trigger = {
+		tag = IRE
+		year = 1604
+		NOT = {
+			year = 1606
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -10
+		set_global_flag = ire_vassalized
+	}
+}
+country_event = {
+	id = 20000005 #Ireland vassalized
+	title = ev_20000005
+	desc = desc_ev_20000005
+	picture = englishparliamentpic
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		has_global_flag = ire_vassalized
+	}
+	option = {
+		name = event_option_great
+		create_vassal = IRE
+		prestige = 5
+		clr_global_flag = ire_vassalized
+	}
+}
+country_event = {
+	id = 20000006 #Year of three popes
+	title = ev_20000006
+	desc = desc_ev_20000006
+	picture = pope
+	fire_only_once = yes
+	trigger = {
+		tag = PAP
+		year = 1604
+		NOT = {
+			year = 1606
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000007 #Catholics expelled from Ireland
+	title = ev_20000007
+	desc = desc_ev_20000007
+	picture = poor
+	fire_only_once = yes
+	trigger = {
+		year = 1604
+		tag = IRE
+		OR = {
+			vassal_of = ENG
+			vassal_of = ANG
+		}
+		NOT = {
+			year = 1606
+		}
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			limit = {
+				religion = catholic
+			}
+			move_pop = 420
+		}
+		prestige = -5
+	}
+}
+country_event = {
+	id = 20000008 #First Newspaper
+	title = ev_20000008
+	desc = desc_ev_20000008
+	picture = news
+	fire_only_once = yes
+	trigger = {
+		year = 1604
+		owns = 409
+		NOT = {
+			year = 1606
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		
+	}
+}
+country_event = {
+	id = 20000009 #Gunpowder plot
+	title = ev_20000009
+	desc = desc_ev_20000009
+	picture = GunpowderPlot
+	fire_only_once = yes
+	trigger = {
+		year = 1604
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1606
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000010 #Irish College in Paris
+	title = ev_20000010
+	desc = desc_ev_20000010
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1604
+		owns = 425
+		NOT = {
+			year = 1606
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.5
+	}
+}
+country_event = {
+	id = 20000011 #Willem Janszoon discovers Australia
+	title = ev_20000011
+	desc = desc_ev_20000011
+	picture = AustraliaDiscovered
+	fire_only_once = yes
+	trigger = {
+		year = 1605
+		tag = NET
+		NOT = {
+			year = 1607
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+#country_event = {
+#	id = 20000012 #Virginia charter
+#	title = ev_20000012
+#	desc = desc_ev_20000012
+#	picture = 
+#	fire_only_once = yes
+#	trigger = {
+#		year = 1605
+#		OR = {
+#			tag = ENG
+#			tag = ANG
+#		}
+#		money = 50000
+#		NOT = {
+#			year = 1607
+#		}
+#	}
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	option = {
+#		name = event_option_great
+#		treasury = -50000
+#		211 = {
+#			secede_province = ANG
+#		}
+#	}
+#}
+country_event = {
+	id = 20000013 #Union Jack
+	title = ev_20000013
+	desc = desc_ev_20000013
+	picture = kingscolor
+	fire_only_once = yes
+	trigger = {
+		year = 1605
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1607
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000014 #Evangelic Lyceum Bratislava
+	title = ev_20000014
+	desc = desc_ev_20000014
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1605
+		owns = 633
+		NOT = {
+			year = 1607
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.5
+	}
+}
+country_event = {
+	id = 20000015 #San Augstin Church in Manila
+	title = ev_20000015
+	desc = desc_ev_20000015
+	picture = StAugstin
+	fire_only_once = yes
+	trigger = {
+		year = 1606
+		owns = 1455
+		NOT = {
+			year = 1608
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000016 #Monteverdi's L'Orfeo in Mantua
+	title = ev_20000016
+	desc = desc_ev_20000016
+	picture = theatre
+	fire_only_once = yes
+	trigger = {
+		year = 1606
+		owns = 728
+		NOT = {
+			year = 1608
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000017 #First Jesuit mission in Mexico
+	title = ev_20000017
+	desc = desc_ev_20000017
+	picture = penal_colony
+	fire_only_once = yes
+	trigger = {
+		year = 1606
+		owns = 2172
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1608
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+#country_event = {
+#	id = 20000019 #University of Oviedo founded
+#	title = ev_20000019
+#	desc = desc_ev_20000019
+#	picture = 
+#	fire_only_once = yes
+#	trigger = {
+#		year = 1607
+#		owns = 475
+#		NOT = {
+#			year = 1609
+#		}
+#	}
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	option = {
+#		name = event_option_great
+#		years_of_research = 0.5
+#		prestige = 5
+#	}
+#}
+country_event = {
+	id = 20000019 #First Telescope
+	title = ev_20000019
+	desc = desc_ev_20000019
+	picture = Telescope
+	fire_only_once = yes
+	trigger = {
+		year = 1607
+		tag = NET
+		NOT = {
+			year = 1609
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.2
+	}
+}
+country_event = {
+	id = 20000020 #Old Bushmills Distillery
+	title = ev_20000020
+	desc = desc_ev_20000020
+	picture = liquor
+	fire_only_once = yes
+	trigger = {
+		year = 1607
+		tag = IRE
+		NOT = {
+			year = 1609
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		build_factory_in_capital_state = liquor_distillery
+	}
+}
+country_event = {
+	id = 20000021 #Basque Witch Trial
+	title = ev_20000021
+	desc = desc_ev_20000021
+	picture = execution
+	fire_only_once = yes
+	trigger = {
+		year = 1608
+		owns = 492
+		NOT = {
+			year = 1610
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		492 = {
+			any_pop = {
+				reduce_pop = 0.95
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000022 #Bank of Amsterdam
+	title = ev_20000022
+	desc = desc_ev_20000022
+	picture = merchants
+	fire_only_once = yes
+	trigger = {
+		year = 1608
+		owns = 375
+		NOT = {
+			year = 1610
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		treasury = 50000
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000023 #Bohemia Freedom of Religion
+	title = ev_20000023
+	desc = desc_ev_20000023
+	picture = Upperhouse
+	fire_only_once = yes
+	trigger = {
+		year = 1608
+		tag = BOH
+		NOT = {
+			year = 1610
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		any_pop = {
+			militancy = -3
+			consciousness = 1
+		}
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000024 #Warsaw becomes capital of Poland
+	title = ev_20000024
+	desc = desc_ev_20000024
+	picture = military_reform
+	fire_only_once = yes
+	trigger = {
+		year = 1608
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+		NOT = {
+			year = 1610
+		}
+		NOT = {
+			capital = 706
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		capital = 706
+	}
+}
+country_event = {
+	id = 20000025 #Kepler's first two laws
+	title = ev_20000025
+	desc = desc_ev_20000025
+	picture = Kepler
+	fire_only_once = yes
+	trigger = {
+		year = 1609
+		owns = 625
+		NOT = {
+			year = 1611
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000026 #Colegio de Nuestra Senora del Sant√≠simo Rosario established
+	title = ev_20000026
+	desc = desc_ev_20000026
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1610
+		owns = 1455
+		NOT = {
+			year = 1612
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.5
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000027 #Nagoya castle complete
+	title = ev_20000027
+	desc = desc_ev_20000027
+	picture = Nagoya
+	fire_only_once = yes
+	trigger = {
+		year = 1611
+		tag = JAP
+		NOT = {
+			year = 1613
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000028 #Globe Theatre burnt
+	title = ev_20000028
+	desc = desc_ev_20000028
+	picture = cityfire
+	fire_only_once = yes
+	trigger = {
+		year = 1612
+		owns = 300
+		NOT = {
+			year = 1614
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -10
+	}
+}
+country_event = {
+	id = 20000029 #University of Groningen
+	title = ev_20000029
+	desc = desc_ev_20000029
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1613
+		owns = 383
+		NOT = {
+			year = 1615
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.5
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000030 #Christianity banned in Japan
+	title = ev_20000030
+	desc = desc_ev_20000030
+	picture = shogun
+	fire_only_once = yes
+	trigger = {
+		year = 1613
+		tag = JAP
+		NOT = {
+			year = 1615
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		any_pop = {
+			limit = {
+				OR = {
+					religion = catholic
+					religion = protestant
+					religion = orthodox
+					religion = coptic
+				}
+			}
+			militancy = 10
+			consciousness = 10
+		}
+	}
+}
+country_event = {
+	id = 20000031 #Wignacourt Aquaduct finished in Malta
+	title = ev_20000031
+	desc = desc_ev_20000031
+	picture = Wignacourt
+	fire_only_once = yes
+	trigger = {
+		year = 1614
+		owns = 854
+		NOT = {
+			year = 1616
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000032 #David Gareja monastery in Georgia looted
+	title = ev_20000032
+	desc = desc_ev_20000032
+	picture = GarejaMonastery
+	fire_only_once = yes
+	trigger = {
+		year = 1614
+		owns = 1095
+		NOT = {
+			year = 1616
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -10
+		casus_belli = {
+			target = PER
+			type = humiliate
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 20000033 #Mayon volcano in Philippines erupts
+	title = ev_20000033
+	desc = desc_ev_20000033
+	picture = volcano
+	fire_only_once = yes
+	trigger = {
+		year = 1615
+		owns = 1455
+		NOT = {
+			year = 1617
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		1455 = {
+			any_pop = {
+				reduce_pop = 0.5
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000034 #Guido Reni's Pi√©ta
+	title = ev_20000034
+	desc = desc_ev_20000034
+	picture = pieta
+	fire_only_once = yes
+	trigger = {
+		owns = 739
+		year = 1615
+		NOT = {
+			year = 1617
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000035 #Begining of the Qing dynasty
+	title = ev_20000035
+	desc = desc_ev_20000035
+	picture = asian_ruler
+	fire_only_once = yes
+	trigger = {
+		year = 1644
+		tag = MNG
+		NOT = {
+			year = 1645
+		}
+	}
+	
+	
+	option = {
+		name = event_option_alright
+		change_tag = CHI
+		all_core  = { remove_core = MNG
+			      add_core = CHI
+				}
+	}
+}
+country_event = {
+	id = 20000036 #Collegium Musicum in Prague
+	title = ev_20000036
+	desc = desc_ev_20000036
+	picture = hermitage
+	fire_only_once = yes
+	trigger = {
+		year = 1615
+		owns = 625
+		NOT = {
+			year = 1617
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+#country_event = {
+#	id = 20000037 #Smallpox epidemic in colonies English
+#	title = ev_20000037
+#	desc = desc_ev_20000037
+#	picture = 
+#	fire_only_once = yes
+#	trigger = {
+#		year = 1615
+#		OR = {
+#			tag = ANG
+#			tag = ENG
+#		}
+#		NOT = {
+#			year = 1617
+#		}
+#	}
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	option = {
+#		name = event_option_alright
+#		any_owned_province = {
+#			limit = {
+#				continent = north_america
+#			}
+#			any_pop = {
+#				limit = {
+#					is_culture_group = native_american
+#				}
+#				reduce_pop = 0.1
+#			}
+#		}
+#	}
+#}
+#country_event = {
+#	id = 20000038 #Smallpox epidemic in colonies French
+#	title = ev_20000038
+#	desc = desc_ev_20000038
+#	picture = 
+#	fire_only_once = yes
+#	trigger = {
+#		year = 1615
+#		OR = {
+#			tag = FRA
+#		}
+#		NOT = {
+#			year = 1617
+#		}
+#	}
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	option = {
+#		name = event_option_alright
+#		random_owned = {
+#			limit = {
+#				continent = north_america
+#			}
+#			any_pop = {
+#				limit = {
+#					is_culture_group = native_american
+#				}
+#				reduce_pop = 0.1
+#			}
+#		}
+#	}
+#}
+country_event = {
+	id = 20000039 #Faculty of Medicine and Surgery of the Uni of Sassari
+	title = ev_20000039
+	desc = desc_ev_20000039
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1615
+		owns = 766
+		NOT = {
+			year = 1617
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.25
+	}
+}
+country_event = {
+	id = 20000040 #First female actress Marie Venier
+	title = ev_20000040
+	desc = desc_ev_20000040
+	picture = theatre
+	fire_only_once = yes
+	trigger = {
+		year = 1615
+		tag = FRA
+		NOT = {
+			year = 1617
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 2
+	}
+}
+country_event = {
+	id = 20000041 #Blue Mosque completed
+	title = ev_20000041
+	desc = desc_ev_20000041
+	picture = BlueMosque
+	fire_only_once = yes
+	trigger = {
+		year = 1615
+		owns = 860
+		NOT = {
+			year = 1617
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+#country_event = {
+#	id = 20000042 #Markgraves of Brandenburg given right to inherit Prussia
+#	title = ev_20000042
+#	desc = desc_ev_20000042
+#	picture = BrandPrus
+#	fire_only_once = yes
+#	trigger = {
+#		year = 1617
+#		tag = BDB
+#		NOT = {
+#			year = 1619
+#		}
+#	}
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	option = {
+#		name = event_option_great
+#		695 = {
+#			secede_province = BDB
+#		}
+#		690 = {
+#			secede_province = BDB
+#		}
+#	}
+#}
+country_event = {
+	id = 20000043 #First merry-go-round
+	title = ev_20000043
+	desc = desc_ev_20000043
+	picture = merrygoround
+	fire_only_once = yes
+	trigger = {
+		year = 1619
+		tag = TUR
+		NOT = {
+			year = 1621
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 3
+	}
+}
+country_event = {
+	id = 20000044 #Thames Froze
+	title = ev_20000044
+	desc = desc_ev_20000044
+	picture = ThamesFroze
+	fire_only_once = yes
+	trigger = {
+		year = 1619
+		owns = 300
+		NOT = {
+			year = 1621
+		}
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000045 #Osaka castle restored
+	title = ev_20000045
+	desc = desc_ev_20000045
+	picture = OsakaCastle
+	fire_only_once = yes
+	trigger = {
+		year = 1619
+		tag = JAP
+		NOT = {
+			year = 1621
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000046 #Rudbeckianska Gymnasiet - first Swedish gymnasium
+	title = ev_20000046
+	desc = desc_ev_20000046
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1622
+		tag = SWE
+		NOT = {
+			year = 1624
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 2
+		years_of_research = 0.25
+	}
+}
+country_event = {
+	id = 20000047 #Persia tries to recapture Baghdad
+	title = ev_20000047
+	desc = desc_ev_20000047
+	picture = sultan
+	fire_only_once = yes
+	trigger = {
+		926 = {
+			owned_by = TUR
+		}
+		year = 1623
+		tag = PER
+		NOT = {
+			year = 1625
+		}
+	}
+	option = {
+		name = event_option_alright
+		war = {
+			target = TUR
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 926
+			}
+		}
+	}
+}
+#country_event = {
+#	id = 20000048 #New Netherlands
+#	title = ev_20000048
+#	desc = desc_ev_20000048
+#	picture = 
+#	fire_only_once = yes
+#	trigger = {
+#		year = 1623
+#		tag = NET
+#		money = 100000
+#		NOT = {
+#			year = 1625
+#		}
+#	}
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	option = {
+#		name = event_option_great
+#		233 = {
+#			secede_province = NET
+#		}
+#		232 = {
+#			secede_province = NET
+#		}
+#		treasury = -100000
+#	}
+#}
+country_event = {
+	id = 20000049 #Mail Service begins in Denmark
+	title = ev_20000049
+	desc = desc_ev_20000049
+	picture = PostOffice
+	fire_only_once = yes
+	trigger = {
+		year = 1623
+		tag = DEN
+		NOT = {
+			year = 1625
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 2
+	}
+}
+country_event = {
+	id = 20000050 #Naples earthquake
+	title = ev_20000050
+	desc = desc_ev_20000050
+	picture = earthquakeold
+	fire_only_once = yes
+	trigger = {
+		year = 1625
+		owns = 754
+		NOT = {
+			year = 1627
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		754 = {
+			any_pop = {
+				reduce_pop = 0.85
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000051 #W√ºrzburg witch trial begins
+	title = ev_20000051
+	desc = desc_ev_20000051
+	picture = execution
+	fire_only_once = yes
+	trigger = {
+		year = 1625
+		owns = 597
+		NOT = {
+			year = 1627
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		597 = {
+			any_pop = {
+				reduce_pop = 0.9
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000052 #aurochs hunted to extinction
+	title = ev_20000052
+	desc = desc_ev_20000052
+	picture = Auroch
+	fire_only_once = yes
+	trigger = {
+		year = 1626
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+		NOT = {
+			year = 1628
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		prestige = -1
+	}
+}
+
+country_event = {
+	id = 20000055 #Swedish warship Vasa sinks on her maiden voyage
+	title = ev_20000055
+	desc = desc_ev_20000055
+	picture = HMS_Resolute
+	fire_only_once = yes
+	trigger = {
+		year = 1627
+		tag = SWE
+		NOT = {
+			year = 1629
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -2
+	}
+}
+country_event = {
+	id = 20000056 #popcorn introduced by Quadequine indians
+	title = ev_20000056
+	desc = desc_ev_20000056
+	picture = indianspic1
+	fire_only_once = yes
+	trigger = {
+		year = 1629
+		tag = ANG
+		NOT = {
+			exists = ENG
+		}
+		NOT = {
+			year = 1631
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000057 #popcorn introduced by Quadequine indians
+	title = ev_20000057
+	desc = desc_ev_20000057
+	picture = indianspic1
+	fire_only_once = yes
+	trigger = {
+		year = 1629
+		tag = ENG
+		NOT = {
+			exists = ANG
+		}
+		NOT = {
+			year = 1631
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000058 #Deccan Famine
+	title = ev_20000058
+	desc = desc_ev_20000058
+	picture = starving
+	fire_only_once = yes
+	trigger = {
+		tag = MUG
+		year = 1629
+		NOT = {
+			year = 1631
+		}
+	}
+
+	option = {
+		name = event_option_blast
+		any_pop = {
+			reduce_pop = 0.33
+		}
+	}
+}
+country_event = {
+	id = 20000059 #La Gazette
+	title = ev_20000059
+	desc = desc_ev_20000059
+	picture = news
+	fire_only_once = yes
+	trigger = {
+		year = 1630
+		tag = FRA
+		NOT = {
+			year = 1632
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 2
+	}
+}
+country_event = {
+	id = 20000060 #Taj Mahal construction started
+	title = ev_20000060
+	desc = desc_ev_20000060
+	picture = TajConstruction
+	fire_only_once = yes
+	trigger = {
+		year = 1630
+		tag = MUG
+		NOT = {
+			year = 1632
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		treasury = -50000
+		set_country_flag = taj_mahal_begun
+	}
+}
+country_event = {
+	id = 20000061 # University of Tartu
+	title = ev_20000061
+	desc = desc_ev_20000061
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1631
+		tag = SWE
+		owns = 352
+		NOT = {
+			year = 1633
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.5
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000062 #Japanese isolation
+	title = ev_20000062
+	desc = desc_ev_20000062
+	picture = shogun
+	fire_only_once = yes
+	trigger = {
+		year = 1632
+		tag = JAP
+		NOT = {
+			year = 1634
+		}
+	}
+	option = {
+		name = event_option_alright
+		add_country_modifier = {
+			name = closed_country_policy
+			duration = 77252
+		}
+	}
+}
+country_event = {
+	id = 20000063 #Galilei convicted of heresy
+	title = ev_20000063
+	desc = desc_ev_20000063
+	picture = Galilei
+	fire_only_once = yes
+	trigger = {
+		year = 1632
+		tag = PAP
+		NOT = {
+			year = 1634
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		prestige = -10
+	}
+}
+country_event = {
+	id = 20000064 #St Columb's Cathedral Ireland
+	title = ev_20000064
+	desc = desc_ev_20000064
+	picture = StColumb
+	fire_only_once = yes
+	trigger = {
+		year = 1632
+		OR = {
+			tag = IRE
+			tag = ANG
+		}
+		NOT = {
+			year = 1634
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000066 #Academie francaise founded
+	title = ev_20000066
+	desc = desc_ev_20000066
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1633
+		tag = FRA
+		NOT = {
+			year = 1635
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 1
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000067 #Paulaner Brewery in M√ºnich
+	title = ev_20000067
+	desc = desc_ev_20000067
+	picture = liquor
+	fire_only_once = yes
+	trigger = {
+		year = 1633
+		tag = BAV
+		capital = 599
+		NOT = {
+			year = 1635
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		build_factory_in_capital_state = liquor_distillery
+		prestige = 2
+	}
+}
+country_event = {
+	id = 20000069 #Pearl Mosque completed
+	title = ev_20000069
+	desc = desc_ev_20000069
+	picture = PearlMosque
+	fire_only_once = yes
+	trigger = {
+		year = 1634
+		tag = MUG
+		NOT = {
+			year = 1636
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000070 #Nagyszombat Uni
+	title = ev_20000070
+	desc = desc_ev_20000070
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1634
+		owns = 633
+		NOT = {
+			year = 1636
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.5
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000071 #Atlas Novus
+	title = ev_20000071
+	desc = desc_ev_20000071
+	picture = AtlasNovus
+	fire_only_once = yes
+	trigger = {
+		year = 1634
+		owns = 375
+		tag = NET
+		NOT = {
+			year = 1636
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 2
+	}
+}
+country_event = {
+	id = 20000072 #Oxford University established
+	title = ev_20000072
+	desc = desc_ev_20000072
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1635
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1637
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.5
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000073 #Tiangong Kaiwu published
+	title = ev_20000073
+	desc = desc_ev_20000073
+	picture = asian_ruler
+	fire_only_once = yes
+	trigger = {
+		year = 1636
+		OR = {
+			tag = MNG
+			tag = CHI
+		}
+		NOT = {
+			year = 1638
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		research_points = 2000
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000074 #Teatro San Cassiano Venice first opera
+	title = ev_20000074
+	desc = desc_ev_20000074
+	picture = theatre
+	fire_only_once = yes
+	trigger = {
+		year = 1636
+		tag = VEN
+		NOT = {
+			year = 1638
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000075 #Red Fort begins, Delhi capital
+	title = ev_20000075
+	desc = desc_ev_20000075
+	picture = RedFortConstruction
+	fire_only_once = yes
+	trigger = {
+		year = 1637
+		tag = MUG
+		owns = 1236
+		NOT = {
+			year = 1639
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		capital = 1236
+		set_country_flag = red_fort_begun
+		treasury = -50000
+	}
+}
+country_event = {
+	id = 20000076 #Iberian Union Ends
+	title = ev_20000076
+	desc = desc_ev_20000076
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		tag = SPA
+		year = 1639
+		NOT = {
+			year = 1641
+		}
+		NOT = {
+			exists = IBU
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		release_vassal = POR
+		set_global_flag = bragazza_dynasty
+	}
+}
+country_event = {
+	id = 20000077 # Braganza Dynasty
+	title = ev_20000077
+	desc = desc_ev_20000077
+	picture = Monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1639
+		tag = POR
+		has_global_flag = bragazza_dynasty
+		NOT = {
+			year = 1641
+		}
+		NOT = {
+			exists = IBU
+		}
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		clr_global_flag = bragazza_dynasty
+	}
+}
+country_event = {
+	id = 20000078 #First coffee house if Europe, Venice
+	title = ev_20000078
+	desc = desc_ev_20000078
+	picture = CoffeeHouse
+	fire_only_once = yes
+	trigger = {
+		year = 1639
+		tag = VEN
+		owns = 729
+		NOT = {
+			year = 1641
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000079 #massive epidemic in China
+	title = ev_20000079
+	desc = desc_ev_20000079
+	picture = cholera
+	fire_only_once = yes
+	trigger = {
+		year = 1640
+		OR = {
+			tag = MNG
+			tag = CHI
+		}
+		NOT = {
+			year = 1642
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			reduce_pop = 0.75
+		}
+	}
+}
+country_event = {
+	id = 20000080 #Rebrandt finishes the Night Watch
+	title = ev_20000080
+	desc = desc_ev_20000080
+	picture = NightWatch
+	fire_only_once = yes
+	trigger = {
+		year = 1641
+		tag = NET
+		NOT = {
+			year = 1643
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000081 #first Qing emperor
+	title = ev_20000081
+	desc = desc_ev_20000081
+	picture = asian_ruler
+	fire_only_once = yes
+	trigger = {
+		year = 1644
+		OR = {
+			tag = MNG
+			tag = CHI
+		}
+		NOT = {
+			year = 1645
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000082 #Toricelli's mercury barometer
+	title = ev_20000082
+	desc = desc_ev_20000082
+	picture = Toricelli
+	fire_only_once = yes
+	trigger = {
+		year = 1642
+		owns = 739
+		NOT = {
+			year = 1744
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 2
+		years_of_research = 0.25
+	}
+}
+country_event = {
+	id = 20000083 #Sigismund's Column erected in Warsaw
+	title = ev_20000083
+	desc = desc_ev_20000083
+	picture = Sigismund
+	fire_only_once = yes
+	trigger = {
+		year = 1643
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+		owns = 706
+		NOT = {
+			year = 1645
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000084 #Red fort complete
+	title = ev_20000084
+	desc = desc_ev_20000084
+	picture = RedFort
+	fire_only_once = yes
+	trigger = {
+		year = 1647
+		NOT = {
+			year = 1649
+		}
+		tag = MUG
+		owns = 1236
+		has_country_flag = red_fort_begun
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000085 #First modern Palio horserace held in Siena
+	title = ev_20000085
+	desc = desc_ev_20000085
+	picture = Palio
+	fire_only_once = yes
+	trigger = {
+		owns = 747
+		year = 1649
+		NOT = {
+			year = 1651
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000086 #St Peter's Flood Amsterdam
+	title = ev_20000086
+	desc = desc_ev_20000086
+	picture = Flood
+	fire_only_once = yes
+	trigger = {
+		year = 1650
+		owns = 375
+		NOT = {
+			year = 1652
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		375 = {
+			any_pop = {
+				reduce_pop = 0.9
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000087 #Taj Mahal complete
+	title = ev_20000087
+	desc = desc_ev_20000087
+	picture = TajMahal
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = taj_mahal_begun
+		tag = MUG
+		year = 1652
+		NOT = {
+			year = 1654
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000088 #Russia declares war for Ukraine
+	title = ev_20000088
+	desc = desc_ev_20000088
+	picture = supportwar
+	fire_only_once = yes
+	trigger = {
+		year = 1653
+		tag = RUS
+		NOT = {
+			year = 1655
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		war = {
+			target = PLC
+			attacker_goal = {
+				casus_belli = liberate_country
+				country = UKR
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000089 #Christiaan Huygens discoveres Titan
+	title = ev_20000089
+	desc = desc_ev_20000089
+	picture = Huygens
+	fire_only_once = yes
+	trigger = {
+		year = 1654
+		owns = 376
+		tag = NET
+		NOT = {
+			year = 1656
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.5
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000090 #Sotckholm Banco - first ban to issue banknotes
+	title = ev_20000090
+	desc = desc_ev_20000090
+	picture = merchants
+	fire_only_once = yes
+	trigger = {
+		year = 1655
+		tag = SWE
+		NOT = {
+			year = 1657
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		treasury = 25000
+	}
+}
+country_event = {
+	id = 20000091 #Only English fifty shilling coin minted
+	title = ev_20000091
+	desc = desc_ev_20000091
+	picture = fiftyshilling
+	fire_only_once = yes
+	trigger = {
+		year = 1655
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1657
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000092 #Baking and money-changing business found in Osaka
+	title = ev_20000092
+	desc = desc_ev_20000092
+	picture = OsakaTrade
+	fire_only_once = yes
+	trigger = {
+		year = 1655
+		tag = JAP
+		NOT = {
+			year = 1657
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		treasury = 50000
+	}
+}
+country_event = {
+	id = 20000093 #Great fire of Edo
+	title = ev_20000093
+	desc = desc_ev_20000093
+	picture = EdoFire
+	fire_only_once = yes
+	trigger = {
+		year = 1656
+		tag = JAP
+		NOT = {
+			year = 1658
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		1649 = {
+			any_pop = {
+				reduce_pop = 0.45
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000094 #First chocolate house in England
+	title = ev_20000094
+	desc = desc_ev_20000094
+	picture = ChocolateHouse
+	fire_only_once = yes
+	trigger = {
+		year = 1656
+		OR = {	
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1658
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 2
+	}
+}
+country_event = {
+	id = 20000095 #coffee introduced into France
+	title = ev_20000095
+	desc = desc_ev_20000095
+	picture = FrenchCourt
+	fire_only_once = yes
+	trigger = {
+		year = 1656
+		tag = FRA
+		NOT = {
+			year = 1658
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000096 #Infanta Maria Theresa brings cocoa to Paris
+	title = ev_20000096
+	desc = desc_ev_20000096
+	picture = FrenchCourt
+	fire_only_once = yes
+	trigger = {
+		year = 1658
+		tag = FRA
+		NOT = {
+			year = 1660
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000097 #Thomas Hobbes Dem Homine
+	title = ev_20000097
+	desc = desc_ev_20000097
+	picture = Hobbes
+	fire_only_once = yes
+	trigger = {
+		year = 1658
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1660
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 2
+	}
+}
+country_event = {
+	id = 20000098 #Drought in India
+	title = ev_20000098
+	desc = desc_ev_20000098
+	picture = Drought
+	fire_only_once = yes
+	trigger = {
+		year = 1658
+		tag = MUG
+		NOT = {
+			year = 1660
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			reduce_pop = 0.85
+		}
+	}
+}
+country_event = {
+	id = 20000099 #First modern bank notes in Sweden
+	title = ev_20000099
+	desc = desc_ev_20000099
+	picture = Merchants
+	fire_only_once = yes
+	trigger = {
+		year = 1660
+		tag = SWE
+		NOT = {
+			year = 1662
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		treasury = 50000
+	}
+}
+country_event = {
+	id = 20000100 #First public transport experiment
+	title = ev_20000100
+	desc = desc_ev_20000100
+	picture = Omnibus
+	fire_only_once = yes
+	trigger = {
+		year = 1661
+		tag = FRA
+		NOT = {
+			year = 1663
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 15
+	}
+}
+country_event = {
+	id = 20000101 #Royal Society recieves charter
+	title = ev_20000101
+	desc = desc_ev_20000101
+	picture = Administration
+	fire_only_once = yes
+	trigger = {
+		year = 1661
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1663
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 1.5
+	}
+}
+country_event = {
+	id = 20000102 #Akademie der Bildernden K√ºnste N√ºrnberg found in N√ºrnberg
+	title = ev_20000102
+	desc = desc_ev_20000102
+	picture = Administration
+	fire_only_once = yes
+	trigger = {
+		year = 1661
+		owns = 595
+		NOT = {
+			year = 1663
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 1.5
+	}
+}
+country_event = {
+	id = 20000103 #Theatre Royal opens
+	title = ev_20000103
+	desc = desc_ev_20000103
+	picture = Theatre
+	fire_only_once = yes
+	trigger = {
+		year = 1662
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1664
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000104 #Severe frosts in England
+	title = ev_20000104
+	desc = desc_ev_20000104
+	picture = ThamesFroze
+	fire_only_once = yes
+	trigger = {
+		year = 1662
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1664
+		}
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			reduce_pop = 0.95
+		}
+	}
+}
+country_event = {
+	id = 20000105 #Prix de Rome in France
+	title = ev_20000105
+	desc = desc_ev_20000105
+	picture = Administration
+	fire_only_once = yes
+	trigger = {
+		year = 1662
+		tag = FRA
+		NOT = {
+			year = 1664
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 25
+	}
+}
+country_event = {
+	id = 20000106 #	the Duke of York and Albany's maritime regiment of foot is formed in London, origin of the Royal Marines
+	title = ev_20000106
+	desc = desc_ev_20000106
+	picture = EarlyRoyalMarines
+	fire_only_once = yes
+	trigger = {
+		year = 1663
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		not = {
+			year = 1665
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		plurality = 2
+	}
+}
+country_event = {
+	id = 20000107 #Gazzette di Mantova published
+	title = ev_20000107
+	desc = desc_ev_20000107
+	picture = news
+	fire_only_once = yes
+	trigger = {
+		year = 1663
+		owns = 728
+		NOT = {
+			year = 1665
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000108 #Journal des Scavans begins publication, first science journal
+	title = ev_20000108
+	desc = desc_ev_20000108
+	picture = news
+	fire_only_once = yes
+	trigger = {
+		year = 1664
+		tag = FRA
+		NOT = {
+			year = 1666
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.3
+	}
+}
+country_event = {
+	id = 20000109 #Philosophical Transaction of the Royal Society first English scientific journal
+	title = ev_20000109
+	desc = desc_ev_20000109
+	picture = news
+	fire_only_once = yes
+	trigger = {
+		year = 1664
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1666
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.3
+	}
+}
+country_event = {
+	id = 20000110 #Great Plague of London, capital moved to Salisbury
+	title = ev_20000110
+	desc = desc_ev_20000110
+	picture = plaguepic
+	fire_only_once = yes
+	trigger = {
+		year = 1664
+		owns = 300
+		NOT = {
+			year = 1666
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		300 = {
+			any_pop = {
+				reduce_pop = 0.85
+			}
+		}
+		capital = 297
+	}
+}
+country_event = {
+	id = 20000111 #University of Kiel formed
+	title = ev_20000111
+	desc = desc_ev_20000111
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1664
+		owns = 369
+		NOT = {
+			year = 1666
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.5
+		prestige = 5
+		set_country_flag = capital_salisbury
+	}
+}
+country_event = {
+	id = 20000112 #Royal court returns to London
+	title = ev_20000112
+	desc = desc_ev_20000112
+	picture = Upperhouse
+	fire_only_once = yes
+	trigger = {
+		year = 1665
+		has_country_flag = capital_salisbury
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1667
+		}
+	}
+	option = {
+		name = event_option_alright
+		capital = 300
+		clr_country_flag = capital_salisbury
+	}
+}
+country_event = {
+	id = 20000113 #Great Fire of London
+	title = ev_20000113
+	desc = desc_ev_20000113
+	picture = cityfire
+	fire_only_once = yes
+	trigger = {
+		year = 1665
+		owns = 300
+		NOT = {
+			year = 1667
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		300 = {
+			any_pop = {
+				reduce_pop = 0.99
+			}
+		}
+		treasury = -50000
+	}
+}
+country_event = {
+	id = 20000114 #French Academy of Sciences founded
+	title = ev_20000114
+	desc = desc_ev_20000114
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1665
+		tag = FRA
+		NOT = {
+			year = 1667
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 1.5
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000115 #Lund University
+	title = ev_20000115
+	desc = desc_ev_20000115
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1665
+		owns = 334
+		NOT = {
+			year = 1667
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.5
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000116 #Dubrovnik earthquake
+	title = ev_20000116
+	desc = desc_ev_20000116
+	picture = earthquakeold
+	fire_only_once = yes
+	trigger = {
+		year = 1666
+		owns = 782
+		NOT = {
+			year = 1668
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		782 = {
+			any_pop = {
+				reduce_pop = 0.8
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000117 #John Milton Paradise Lost
+	title = ev_20000117
+	desc = desc_ev_20000117
+	picture = ParadiseLost
+	fire_only_once = yes
+	trigger = {
+		year = 1666
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000118 #French Grenadiers
+	title = ev_20000118
+	desc = desc_ev_20000118
+	picture = FrenchGrenadier
+	fire_only_once = yes
+	trigger = {
+		year = 1666
+		tag = FRA
+		NOT = {
+			year = 1668
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000119 #Swedish Riksbank founded, first national bank
+	title = ev_20000119
+	desc = desc_ev_20000119
+	picture = merchants
+	fire_only_once = yes
+	trigger = {
+		year = 1667
+		tag = SWE
+		NOT = {
+			year = 1669
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		treasury = 50000
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000120 #Etna errupts
+	title = ev_20000120
+	desc = desc_ev_20000120
+	picture = volcano
+	fire_only_once = yes
+	trigger = {
+		year = 1668
+		owns = 764
+		NOT = {
+			year = 1670
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		764 = {
+			any_pop = {
+				reduce_pop = 0.85
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000121 #Hanseatic League's last meeting in L√ºbeck
+	title = ev_20000121
+	desc = desc_ev_20000121
+	picture = Administration
+	fire_only_once = yes
+	trigger = {
+		year = 1668
+		owns = 530
+		NOT = {
+			year = 1670
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000122 #Bengal famine
+	title = ev_20000122
+	desc = desc_ev_20000122
+	picture = starving
+	fire_only_once = yes
+	trigger = {
+		year = 1668
+		tag = BGL
+		NOT = {
+			year = 1670
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			reduce_pop = 0.5
+		}
+	}
+}
+country_event = {
+	id = 20000123 #First Stradivari violin
+	title = ev_20000123
+	desc = desc_ev_20000123
+	picture = Stradivari
+	fire_only_once = yes
+	trigger = {
+		year = 1668
+		owns = 728
+		NOT = {
+			year = 1670
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000124 #Okaya&Co Ltd founded in Nagoya
+	title = ev_20000124
+	desc = desc_ev_20000124
+	picture = OsakaTrade
+	fire_only_once = yes
+	trigger = {
+		year = 1668
+		tag = JAP
+		NOT = {
+			year = 1670
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		treasury = 50000
+	}
+}
+country_event = {
+	id = 20000125 #Tongrentang, Chinese medicine company established
+	title = ev_20000125
+	desc = desc_ev_20000125
+	picture = Tongrentang
+	fire_only_once = yes
+	trigger = {
+		year = 1668
+		tag = CHI
+		NOT = {
+			year = 1670
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 15
+	}
+}
+country_event = {
+	id = 20000126 #Acad√©mie royale d'architecture founded in Paris
+	title = ev_20000126
+	desc = desc_ev_20000126
+	picture = Administration
+	fire_only_once = yes
+	trigger = {
+		year = 1670
+		tag = FRA
+		NOT = {
+			year = 1672
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.25
+	}
+}
+country_event = {
+	id = 20000127 #Chelsea Physic Garden founded to study medicines
+	title = ev_20000127
+	desc = desc_ev_20000127
+	picture = Botanic_expedition
+	fire_only_once = yes
+	trigger = {
+		year = 1672
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1674
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000128 #Mitsui family's trading and banking house founded
+	title = ev_20000128
+	desc = desc_ev_20000128
+	picture = OsakaTrade
+	fire_only_once = yes
+	trigger = {
+		year = 1672
+		tag = JAP
+		NOT = {
+			year = 1674
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		treasury = 25000
+	}
+}
+country_event = {
+	id = 20000129 #Royal Greenwich Observatory begins construction
+	title = ev_20000129
+	desc = desc_ev_20000129
+	picture = Greenwich
+	fire_only_once = yes
+	trigger = {
+		year = 1674
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		owns = 300
+		NOT = {
+			year = 1676
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.75
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000130 #ice cream in Paris
+	title = ev_20000130
+	desc = desc_ev_20000130
+	picture = FrenchCourt
+	fire_only_once = yes
+	trigger = {
+		year = 1676
+		tag = FRA
+		NOT = {
+			year = 1678
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000131 #Jean d'Estrees runs his fleet aground
+	title = ev_20000131
+	desc = desc_ev_20000131
+	picture = FleetAground
+	fire_only_once = yes
+	trigger = {
+		year = 1677
+		tag = FRA
+		NOT = {
+			year = 1679
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -15
+	}
+}
+country_event = {
+	id = 20000132 #First woman with uni degree,Elena Lucrezia Cornaro Piscopia in Mantua, doctorate in philosophy 
+	title = ev_20000132
+	desc = desc_ev_20000132
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1677
+		owns = 728
+		NOT = {
+			year = 1679
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		prestige = 3
+	}
+}
+country_event = {
+	id = 20000133 #Jizya reintroduced in the Mughal Empire
+	title = ev_20000133
+	desc = desc_ev_20000133
+	picture = sultan
+	fire_only_once = yes
+	trigger = {
+		year = 1678
+		tag = MUG
+		NOT = {
+			year = 1680
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		treasury = 150000
+	}
+}
+country_event = {
+	id = 20000134 #Great Comet of 1680
+	title = ev_20000134
+	desc = desc_ev_20000134
+	picture = sight
+	fire_only_once = yes
+	trigger = {
+		year = 1679
+		NOT = {
+			year = 1681
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000135 #Palatinate passes to Sweden
+	title = ev_20000135
+	desc = desc_ev_20000135
+	picture = Administration
+	fire_only_once = yes
+	trigger = {
+		year = 1680
+		exists = PLT
+		tag = SWE
+		NOT = {
+			year = 1682
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		inherit = PLT
+	}
+}
+country_event = {
+	id = 20000136 #Canal du Midi opened
+	title = ev_20000136
+	desc = desc_ev_20000136
+	picture = CanalDuMidi
+	fire_only_once = yes
+	trigger = {
+		year = 1680
+		tag = FRA
+		NOT = {
+			year = 1682
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		treasury = -50000
+	}
+}
+country_event = {
+	id = 20000137 # Basilica of Santa Maria della Saluta opened in Venice
+	title = ev_20000137
+	desc = desc_ev_20000137
+	picture = SantaMaria
+	fire_only_once = yes
+	trigger = {
+		year = 1680
+		tag = VEN
+		owns = 729
+		NOT = {
+			year = 1682
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+		treasury = -50000
+	}
+}
+country_event = {
+	id = 20000138 #Louis XIV moves his court to Versailles
+	title = ev_20000138
+	desc = desc_ev_20000138
+	picture = Versailles
+	fire_only_once = yes
+	trigger = {
+		year = 1681
+		tag = FRA
+		NOT = {
+			year = 1683
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000139 #Peter the Great's reign begins
+	title = ev_20000139
+	desc = desc_ev_20000139
+	picture = monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1681
+		tag = RUS
+		NOT = {
+			year = 1683
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+	}
+}
+country_event = {
+	id = 20000140 #Moscow Uprising
+	title = ev_20000140
+	desc = desc_ev_20000140
+	picture = riot
+	fire_only_once = yes
+	trigger = {
+		year = 1681
+		tag = RUS
+		NOT = {
+			year = 1683
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		1008 = {
+			any_pop = {
+				limit = {
+					type = aristocrats
+				}
+				reduce_pop = 0.1
+			}
+			any_pop = {
+				limit = {
+					type = officers
+				}
+				reduce_pop = 0.1
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000141 #The Ottomans attack Austria, attempting to conquer it
+	title = ev_20000141
+	desc = desc_ev_20000141
+	picture = ottoman
+	fire_only_once = yes
+	trigger = {
+		year = 1682
+		tag = TUR
+		NOT = {
+			year = 1684
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		war = {
+			target = AUS
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			call_ally = yes
+		}
+		badboy = -22
+	}
+}
+country_event = {
+	id = 20000142 #Wild Boars hunted to extinction in Britain
+	title = ev_20000142
+	desc = desc_ev_20000142
+	picture = WildBoar
+	fire_only_once = yes
+	trigger = {
+		year = 1682
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1684
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -5
+	}
+}
+country_event = {
+	id = 20000143 #Japanese chief minister Hotta Masatoshi assassinated, leaving the shogun without advisors, leading to bad reforms
+	title = ev_20000143
+	desc = desc_ev_20000143
+	picture = shogun 
+	fire_only_once = yes
+	trigger = {
+		year = 1683
+		tag = JAP
+		NOT = {
+			year = 1685
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		treasury = -50000
+		any_pop = {
+			militancy = 1
+		}
+	}
+}
+
+country_event = {
+	id = 20000144 #Japanese poet Saikaku composes 23500 verses in 24 hours
+	title = ev_20000144
+	desc = desc_ev_20000144
+	picture = JapanPoet
+	fire_only_once = yes
+	trigger = {
+		year = 1683
+		tag = JAP
+		NOT = {
+			year = 1685
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000145 #World's first organized street lights in London
+	title = ev_20000145
+	desc = desc_ev_20000145
+	picture = StreetLights
+	fire_only_once = yes
+	trigger = {
+		year = 1684
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 3
+	}
+}
+country_event = {
+	id = 20000146 #Venetia badly damages the Parthenon
+	title = ev_20000146
+	desc = desc_ev_20000146
+	picture = Parthenon
+	fire_only_once = yes
+	trigger = {
+		year = 1686
+		tag = VEN
+		NOT = {
+			year = 1688
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -40
+	}
+}
+country_event = {
+	id = 20000147 #Bulgaria rebels against the Ottomans
+	title = ev_20000147
+	desc = desc_ev_20000147
+	picture = rebellion
+	fire_only_once = yes
+	trigger = {
+		year = 1687
+		tag = TUR
+		NOT = {
+			exists = BUL
+		}
+		NOT = {
+			year = 1689
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		release = BUL
+		war = {
+			target = BUL
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+		badboy = -10
+	}
+}
+country_event = {
+	id = 20000148 #Great Siberian Road started to the far east
+	title = ev_20000148
+	desc = desc_ev_20000148
+	picture = SiberianRoad
+	fire_only_once = yes
+	trigger = {
+		year = 1688
+		tag = RUS
+		NOT = {
+			year = 1690
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		treasury = -10000
+	}
+}
+
+country_event = {
+	id = 20000149 #Mexico City's famine
+	title = ev_20000149
+	desc = desc_ev_20000149
+	picture = starving
+	fire_only_once = yes
+	trigger = {
+		year = 1691
+		owns = 2172
+		NOT = {
+			year = 1693
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		2172 = {
+			any_pop = {
+				reduce_pop = 0.7
+				militancy = 8
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000150 #Academia opersorum Labacensis
+	title = ev_20000150
+	desc = desc_ev_20000150
+	picture = Administration
+	fire_only_once = yes
+	trigger = {
+		year = 1692
+		owns = 768
+		NOT = {
+			year = 1694
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.5
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000151 #William Penn's proposal for European Federation
+	title = ev_20000151
+	desc = desc_ev_20000151
+	picture = Upperhouse
+	fire_only_once = yes
+	trigger = {
+		year = 1692
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1694
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000152 #Book of the Science of Music through Letters to Ahmed II
+	title = ev_20000152
+	desc = desc_ev_20000152
+	picture = sultan
+	fire_only_once = yes
+	trigger = {
+		year = 1692
+		tag = TUR
+		NOT = {
+			year = 1694
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		plurality = 5
+	}
+}
+country_event = {
+	id = 20000153 #Bank of England founded
+	title = ev_20000153
+	desc = desc_ev_20000153
+	picture = merchants
+	fire_only_once = yes
+	trigger = {
+		year = 1693
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		treasury = 50000
+	}
+}
+country_event = {
+	id = 20000154 #slave ship Hannibal sinks with half of the slaves drowning
+	title = ev_20000154
+	desc = desc_ev_20000154
+	picture = Hannibal
+	fire_only_once = yes
+	trigger = {
+		year = 1693
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1695
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -20
+	}
+}
+country_event = {
+	id = 20000155 #Press Censorship lifted in England
+	title = ev_20000155
+	desc = desc_ev_20000155
+	picture = Administration
+	fire_only_once = yes
+	trigger = {
+		year = 1694
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		political_reform = free_press
+	}
+}
+country_event = {
+	id = 20000156 #Henry Every most profitable raid against mughal treasury ship
+	title = ev_20000156
+	desc = desc_ev_20000156
+	picture = opiumwar
+	fire_only_once = yes
+	trigger = {
+		year = 1694
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1696
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		treasury = 250000
+		add_casus_belli = {
+			target = MUG
+			type = humiliate
+			months = 48
+		}
+	}
+}
+country_event = {
+	id = 20000157 #Castillo de San Marcos complete
+	title = ev_20000157
+	desc = desc_ev_20000157
+	picture = SanMarcos
+	fire_only_once = yes
+	trigger = {
+		year = 1694
+		owns = 199
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1696
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+		199 = {
+			fort = 1
+		}
+	}
+}
+country_event = {
+	id = 20000158 #Inquisition burns Marrano jews in √âvora
+	title = ev_20000158
+	desc = desc_ev_20000158
+	picture = execution
+	fire_only_once = yes
+	trigger = {
+		year = 1695
+		OR = {
+			tag = POR
+			tag = IBU
+		}
+		owns = 525
+		NOT = {
+			year = 1697
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		525 = {
+			any_pop = {
+				limit = {
+					religion = jewish
+				}
+				reduce_pop = 0.1
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000159 #Charles XII of Sweden, the Swedish Meteor crowned
+	title = ev_20000159
+	desc = desc_ev_20000159
+	picture = monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1696
+		tag = SWE
+		NOT = {
+			year = 1698
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+	}
+}
+country_event = {
+	id = 20000160 #Kronor burns down with royal library
+	title = ev_20000160
+	desc = desc_ev_20000160
+	picture = KronorBurns
+	fire_only_once = yes
+	trigger = {
+		year = 1696
+		tag = SWE
+		NOT = {
+			year = 1698
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		years_of_research = -0.2
+		prestige = -5
+	}
+}
+country_event = {
+	id = 20000161 #use of palanquin spreads
+	title = ev_20000161
+	desc = desc_ev_20000161
+	picture = Palanquin
+	fire_only_once = yes
+	trigger = {
+		year = 1696
+		
+		NOT = {
+			year = 1698
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000162 #Thomas Savery obtains patent for the first steam pump
+	title = ev_20000162
+	desc = desc_ev_20000162
+	picture = SteamPump
+	fire_only_once = yes
+	trigger = {
+		year = 1697
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1699
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.2
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000163 #Peter the Great imposes tax on beards
+	title = ev_20000163
+	desc = desc_ev_20000163
+	picture = BeardTax
+	fire_only_once = yes
+	trigger = {
+		year = 1697
+		tag = RUS
+		NOT = {
+			year = 1699
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		treasury = 25000
+		any_pop = {
+			limit = {
+				strata = rich
+			}
+			militancy = 3
+		}
+	}
+}
+country_event = {
+	id = 20000164 #Title of Khalsa created by Guru Gobind Singh
+	title = ev_20000164
+	desc = desc_ev_20000164
+	picture = GobindSingh
+	fire_only_once = yes
+	trigger = {
+		year = 1698
+		OR = {
+			tag = BIH
+			tag = MUG
+		}
+		NOT = {
+			year = 1700
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 15
+	}
+}
+country_event = {
+	id = 20000165 #First known record of Australian flora and fauna begun to be collected by William Dampier
+	title = ev_20000165
+	desc = desc_ev_20000165
+	picture = Australia
+	fire_only_once = yes
+	trigger = {
+		year = 1698
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1700
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 0.75
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000166 #Prussian Academy of Sciences founded with Leibniz as president
+	title = ev_20000166
+	desc = desc_ev_20000166
+	picture = Administration
+	fire_only_once = yes
+	trigger = {
+		year = 1699
+		tag = PRU
+		NOT = {
+			year = 1701
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		years_of_research = 1.5
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000167 #World's first recorded piano in Florence
+	title = ev_20000167
+	desc = desc_ev_20000167
+	picture = FirstPiano
+	fire_only_once = yes
+	trigger = {
+		year = 1699
+		owns = 744
+		NOT = {
+			year = 1701
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000168 #18th century
+	title = ev_20000168
+	desc = desc_ev_20000168
+	picture = supportwar
+	fire_only_once = yes
+	trigger = {
+		year = 1700
+		
+		NOT = {
+			year = 1702
+		}
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000169 #Asano Naganori ordered to commit seppuku, his 47 samurais swear recenge
+	title = ev_20000169
+	desc = desc_ev_20000169
+	picture = Asano
+	fire_only_once = yes
+	trigger = {
+		year = 1700
+		tag = JAP
+		NOT = {
+			year = 1702
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000170 #Jethro Tull's seed drill invented
+	title = ev_20000170
+	desc = desc_ev_20000170
+	picture = SeedDrill
+	fire_only_once = yes
+	trigger = {
+		year = 1700
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1702
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000171 #Apennine earthquakes
+	title = ev_20000171
+	desc = desc_ev_20000171
+	picture = earthquakeold
+	fire_only_once = yes
+	trigger = {
+		year = 1702
+		owns = 751
+		NOT = {
+			year = 1704
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		751 = {
+			any_pop = {
+				reduce_pop = 0.9
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000172 #Daimyo Kira Yoshinaka killed by the 47 ronins who, apart from one commit seppuku after
+	title = ev_20000172
+	desc = desc_ev_20000172
+	picture = Ronins
+	fire_only_once = yes
+	trigger = {
+		year = 1702
+		tag = JAP
+		NOT = {
+			year = 1704
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000173 #First Mardi Gras in Mobile
+	title = ev_20000173
+	desc = desc_ev_20000173
+	picture = strike
+	fire_only_once = yes
+	trigger = {
+		year = 1702
+		owns = 197
+		NOT = {
+			year = 1704
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000174 #First complete census in the World, Iceland
+	title = ev_20000174
+	desc = desc_ev_20000174
+	picture = EarlyCensus
+	fire_only_once = yes
+	trigger = {
+		year = 1702
+		owns = 252
+		NOT = {
+			year = 1704
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 3
+	}
+}
+country_event = {
+	id = 20000175 #man in the iron mask dies in Bastille
+	title = ev_20000175
+	desc = desc_ev_20000175
+	picture = Bastille
+	fire_only_once = yes
+	trigger = {
+		year = 1702
+		tag = FRA
+		NOT = {
+			year = 1704
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000176 #Great storm of 1703
+	title = ev_20000176
+	desc = desc_ev_20000176
+	picture = storm_coming_field
+	fire_only_once = yes
+	trigger = {
+		year = 1702
+		owns = 300
+		owns = 301
+		owns = 302
+		NOT = {
+			year = 1704
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		300 = {
+			any_pop = {
+				reduce_pop = 0.95
+			}
+		}
+		301 = {
+			any_pop = {
+				reduce_pop = 0.95
+			}
+		}
+		302 = {
+			any_pop = {
+				reduce_pop = 0.95
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000178 #Dublin Gazette first edition
+	title = ev_20000178
+	desc = desc_ev_20000178
+	picture = news
+	fire_only_once = yes
+	trigger = {
+		year = 1704
+		tag = IRE
+		NOT = {
+			year = 1706
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000179 #Osaka merchant's property confiscated for conducts unbecoming to the merchant class of Japan
+	title = ev_20000179
+	desc = desc_ev_20000179
+	picture = shogun
+	fire_only_once = yes
+	trigger = {
+		year = 1704
+		tag = JAP
+		NOT = {
+			year = 1706
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		prestige = -2
+		any_pop = {
+			limit = {
+				strata = middle
+			}
+			militancy = 0.5
+		}
+		treasury = 50000
+	}
+}
+country_event = {
+	id = 20000180 #Treaty of Union
+	title = ev_20000180
+	desc = desc_ev_20000180
+	picture = treaty
+	fire_only_once = yes
+	trigger = {
+		year = 1706
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		exists = SCO
+		NOT = {
+			year = 1707
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		inherit = SCO
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000181 #Twinings teahouse founded by Thomas Twining, first teahouse
+	title = ev_20000181
+	desc = desc_ev_20000181
+	picture = Tea
+	fire_only_once = yes
+	trigger = {
+		year = 1705
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1707
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 4
+	}
+}
+country_event = {
+	id = 20000182 #Last eruption of Mount Fuji
+	title = ev_20000182
+	desc = desc_ev_20000182
+	picture = volcano
+	fire_only_once = yes
+	trigger = {
+		year = 1706
+			tag = JAP
+		NOT = {
+			year = 1708
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		1655 = {
+			any_pop = {
+				reduce_pop = 0.9
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000183 #St Paul's Cathedral finished
+	title = ev_20000183
+	desc = desc_ev_20000183
+	picture = StPauls
+	fire_only_once = yes
+	trigger = {
+		year = 1707
+		owns = 300
+		NOT = {
+			year = 1709
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000184 #Bach appointed chamber musician in Weimar
+	title = ev_20000184
+	desc = desc_ev_20000184
+	picture = Bach
+	fire_only_once = yes
+	trigger = {
+		year = 1707
+		owns = 561
+		NOT = {
+			year = 1709
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000185 #Hard-paste porcelain produced in Dresden
+	title = ev_20000185
+	desc = desc_ev_20000185
+	picture = Chinaware
+	fire_only_once = yes
+	trigger = {
+		year = 1707
+		owns = 558
+		NOT = {
+			year = 1709
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000186 #Western European Great Frost
+	title = ev_20000186
+	desc = desc_ev_20000186
+	picture = GreatFrost
+	fire_only_once = yes
+	trigger = {
+		year = 1708
+		tag = FRA
+		NOT = {
+			year = 1710
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		425 = {
+			any_pop = {
+				reduce_pop = 0.75
+			}
+		}
+		any_pop = {
+			reduce_pop = 0.95
+		}
+	}
+}
+country_event = {
+	id = 20000187 #First hot air balloon of Bartolomeu de Gusmao, Portugal
+	title = ev_20000187
+	desc = desc_ev_20000187
+	picture = balloon
+	fire_only_once = yes
+	trigger = {
+		year = 1708
+		OR = {
+			tag = POR
+			tag = IBU
+		}
+		NOT = {
+			year = 1710
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 4
+	}
+}
+country_event = {
+	id = 20000188 #First copyright legislation, Statute of Anne
+	title = ev_20000188
+	desc = desc_ev_20000188
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1709
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1711
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		treasury = 25000
+	}
+}
+country_event = {
+	id = 20000189 #Russian capital moved to St Petersburg by Peter the Great
+	title = ev_20000189
+	desc = desc_ev_20000189
+	picture = Petersburg
+	fire_only_once = yes
+	trigger = {
+		year = 1711
+		tag = RUS
+		NOT = {
+			capital = 994
+		}
+		NOT = {
+			year = 1713
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		capital = 994
+	}
+}
+country_event = {
+	id = 20000190 #Pragmatic Sanction of 1713 by Charles VI
+	title = ev_20000190
+	desc = desc_ev_20000190
+	picture = monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1712
+		tag = AUS
+		NOT = {
+			year = 1714
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 200001915 #George I crowned king of England
+	title = ev_200001915
+	desc = desc_ev_200001915
+	picture = monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1713
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		exists = HAN
+		NOT = {
+			year = 1715
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		create_vassal = HAN
+	}
+}
+country_event = {
+	id = 20000191 #Last solar eclipse over England, Sweden, Finland for 900 years
+	title = ev_20000191
+	desc = desc_ev_20000191
+	picture = SolarEclipse1715
+	fire_only_once = yes
+	trigger = {
+		year = 1714
+		OR = {
+			tag = ENG
+			tag = ANG
+			tag = SWE
+			tag = FIN
+		}
+		NOT = {
+			year = 1716
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000192 #First major Jacobite rebellion in Scotland
+	title = ev_20000192
+	desc = desc_ev_20000192
+	picture = riot
+	fire_only_once = yes
+	trigger = {
+		year = 1714
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			exists = SCO
+		}
+		NOT = {
+			year = 1716
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			limit = {
+				culture = scottish
+			}
+			militancy = 10
+		}
+	}
+}
+country_event = {
+	id = 20000193 #Kalsruhe Palace built
+	title = ev_20000193
+	desc = desc_ev_20000193
+	picture = Kalsruhe
+	fire_only_once = yes
+	trigger = {
+		year = 1714
+		owns = 586
+		NOT = {
+			year = 1716
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000194 #Banque Generale of France opened
+	title = ev_20000194
+	desc = desc_ev_20000194
+	picture = merchants
+	fire_only_once = yes
+	trigger = {
+		year = 1715
+		tag = FRA
+		NOT = {
+			year = 1717
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		treasury = 50000
+	}
+}
+country_event = {
+	id = 20000195 #Kangxi dictionary published laying the foundation of most references to Han characters
+	title = ev_20000195
+	desc = desc_ev_20000195
+	picture = asian_ruler
+	fire_only_once = yes
+	trigger = {
+		year = 1715
+		tag = CHI
+		NOT = {
+			year = 1717
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		research_points = 4000
+	}
+}
+country_event = {
+	id = 20000196 #Christmas Floods of 1717
+	title = ev_20000196
+	desc = desc_ev_20000196
+	picture = flood
+	fire_only_once = yes
+	trigger = {
+		year = 1716
+		tag = NET
+		NOT = {
+			year = 1718
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			reduce_pop = 0.98
+		}
+	}
+}
+country_event = {
+	id = 20000197 #Omani invasion of Bahrein
+	title = ev_20000197
+	desc = desc_ev_20000197
+	picture = sultan
+	fire_only_once = yes
+	trigger = {
+		year = 1716
+		exists = OMA
+		tag = OMA
+		NOT = {
+			year = 1718
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		war = {
+			target = ABU
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 1162
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000198 #Casa de Contrataci√≥n
+	title = ev_20000198
+	desc = desc_ev_20000198
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1716
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1718
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 15
+	}
+}
+country_event = {
+	id = 20000199 #Corfu mostly destroyed by lightning struck gunpowder magazine
+	title = ev_20000199
+	desc = desc_ev_20000199
+	picture = Corfu
+	fire_only_once = yes
+	trigger = {
+		year = 1717
+		owns = 826
+		NOT = {
+			year = 1719
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		826 = {
+			any_pop = {
+				reduce_pop = 0.1
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000200 # Sudan islamized
+	title = ev_20000200
+	desc = desc_ev_20000200
+	picture = Jihad
+	fire_only_once = yes
+	trigger = {
+		year = 1717
+		tag = EGY
+		NOT = {
+			year = 1719
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		any_pop = {
+			limit = {
+				NOT = {
+					OR = {
+						religion = sunni
+						religion = shiite
+					}
+				}
+			}
+			reduce_pop = 0.1
+			militancy = 10
+		}
+	}
+}
+country_event = {
+	id = 20000201 # Defoe Robinson
+	title = ev_20000201
+	desc = desc_ev_20000201
+	picture = RobinsonDefoe
+	fire_only_once = yes
+	trigger = {
+		year = 1718
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1720
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 6
+	}
+}
+country_event = {
+	id = 20000202 # First systematic census of Europe carried out in Prussia
+	title = ev_20000202
+	desc = desc_ev_20000202
+	picture = earlycensus
+	fire_only_once = yes
+	trigger = {
+		year = 1718
+		tag = PRU
+		NOT = {
+			year = 1720
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000203 # Academia Real da Historia founded in Lisbon
+	title = ev_20000203
+	desc = desc_ev_20000203
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1719
+		OR = {
+			tag = POR
+			tag = IBU
+		}
+		NOT = {
+			year = 1721
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.5
+	}
+}
+country_event = {
+	id = 20000204 # Peter I proclaimed emperor of all Russians, beginning the era of Russian Empire
+	title = ev_20000204
+	desc = desc_ev_20000204
+	picture = monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1720
+		tag = RUS
+		NOT = {
+			year = 1722
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000205 # Table of Ranks created by Peter I
+	title = ev_20000205
+	desc = desc_ev_20000205
+	picture = TableOfRanks
+	fire_only_once = yes
+	trigger = {
+		year = 1721
+		tag = RUS
+		NOT = {
+			year = 1723
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		plurality = 2
+	}
+}
+country_event = {
+	id = 20000206 # First public theatre of Denmark, Lille Gr√∂nnegade
+	title = ev_20000206
+	desc = desc_ev_20000206
+	picture = theatre
+	fire_only_once = yes
+	trigger = {
+		year = 1721
+		tag = DEN
+		NOT = {
+			year = 1723
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000207 # Peterhof Palace opens
+	title = ev_20000207
+	desc = desc_ev_20000207
+	picture = Peterhof
+	fire_only_once = yes
+	trigger = {
+		year = 1722
+		tag = RUS
+		NOT = {
+			year = 1724
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000208 # Four Seasons composed by Vivaldi
+	title = ev_20000208
+	desc = desc_ev_20000208
+	picture = Vivaldi
+	fire_only_once = yes
+	trigger = {
+		year = 1722
+		tag = VEN
+		NOT = {
+			year = 1724
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 15
+	}
+}
+country_event = {
+	id = 20000209 # St John Passion premier by Bach in Leipzig
+	title = ev_20000209
+	desc = desc_ev_20000209
+	picture = Bach
+	fire_only_once = yes
+	trigger = {
+		year = 1723
+		owns = 559
+		NOT = {
+			year = 1724
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000210 # China expels missionaries
+	title = ev_20000210
+	desc = desc_ev_20000210
+	picture = asian_ruler
+	fire_only_once = yes
+	trigger = {
+		year = 1723
+		tag = CHI
+		NOT = {
+			year = 1725
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		any_pop = {
+			limit = {
+				OR = {
+					religion = catholic
+					religion = protestant
+					religion = orthodox
+					religion = coptic
+				}
+				strata = middle
+			}
+			reduce_pop = 0.1
+		}
+	}
+}
+country_event = {
+	id = 20000211 # Catherine I becomes empress of Russia
+	title = ev_20000211
+	desc = desc_ev_20000211
+	picture = monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1724
+		tag = RUS
+		NOT = {
+			year = 1726
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+	}
+}
+country_event = {
+	id = 20000212 # Order of Alexander Nevsky instituted in Russia
+	title = ev_20000212
+	desc = desc_ev_20000212
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1724
+		tag = RUS
+		NOT = {
+			year = 1726
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		plurality = 2
+		any_pop = {
+			militancy = -1
+		}
+	}
+}
+country_event = {
+	id = 20000213 # Black Watch founded in Scotland
+	title = ev_20000213
+	desc = desc_ev_20000213
+	picture = BlackWatchEarly
+	fire_only_once = yes
+	trigger = {
+		year = 1724
+		OR = {
+			tag = ANG
+			tag = ENG
+			tag = SCO
+		}
+		NOT = {
+			year = 1726
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		plurality = 1
+	}
+}
+country_event = {
+	id = 20000214 # 66 copies of a 5020 volume long encyclopedia the Gujin Tushu Jincheng, (Complete Collection of Illustrations and Writings from the Earliest to Current Times) are printed, necessitating the crafting of 250,000 movable type characters cast in bronze.
+	title = ev_20000214
+	desc = desc_ev_20000214
+	picture = asian_ruler
+	fire_only_once = yes
+	trigger = {
+		year = 1724
+		tag = CHI
+		NOT = {
+			year = 1726
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		research_points = 2000
+	}
+}
+country_event = {
+	id = 20000215 # Swift's Gulliver's Travels first published
+	title = ev_20000215
+	desc = desc_ev_20000215
+	picture = Gulliver
+	fire_only_once = yes
+	trigger = {
+		year = 1725
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1727
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000216 # George II of Hannover becomes king, Handel composes the Coronation Anthems
+	title = ev_20000216
+	desc = desc_ev_20000216
+	picture = monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1726
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1728
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000217 # Tabriz earthquake
+	title = ev_20000217
+	desc = desc_ev_20000217
+	picture = earthquakeold
+	fire_only_once = yes
+	trigger = {
+		year = 1726
+		owns = 1108
+		NOT = {
+			year = 1728
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		1108 = {
+			any_pop = {
+				reduce_pop = 0.6
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000218 # Copenhagen fire
+	title = ev_20000218
+	desc = desc_ev_20000218
+	picture = cityfire
+	fire_only_once = yes
+	trigger = {
+		year = 1727
+		owns = 372
+		NOT = {
+			year = 1729
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		372 = {
+			any_pop = {
+				reduce_pop = 0.9
+			}
+		}
+		prestige = -5
+	}
+}
+country_event = {
+	id = 20000219 # Fire of Istanbul
+	title = ev_20000219
+	desc = desc_ev_20000219
+	picture = cityfire
+	fire_only_once = yes
+	trigger = {
+		year = 1728
+		owns = 860
+		NOT = {
+			year = 1730
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		860 = {
+			any_pop = {
+				reduce_pop = 0.88
+			}
+		}
+		prestige = -5
+	}
+}
+country_event = {
+	id = 20000220 # Laura Bassi first official female uni teacher in Bologna
+	title = ev_20000220
+	desc = desc_ev_20000220
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1730
+		owns = 741
+		NOT = {
+			year = 1732
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000222 # Original Theatre Royal, Covent Garden opened
+	title = ev_20000222
+	desc = desc_ev_20000222
+	picture = theatre
+	fire_only_once = yes
+	trigger = {
+		year = 1731
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1733
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000223 # Genoa regains Corsica
+	title = ev_20000223
+	desc = desc_ev_20000223
+	picture = monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1731
+		tag = GEN
+		NOT = {
+			owns = 473
+		}
+		NOT = {
+			year = 1733
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		473 = {
+			secede_province = GEN
+		}
+	}
+}
+country_event = {
+	id = 20000224 # Georg Brandt discovers cobalt
+	title = ev_20000224
+	desc = desc_ev_20000224
+	picture = Kobalt
+	fire_only_once = yes
+	trigger = {
+		year = 1734
+		tag = SWE
+		NOT = {
+			year = 1736
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 3
+		years_of_research = 0.2
+	}
+}
+country_event = {
+	id = 200002025 # Theatrical Licensing Act, censorship
+	title = ev_20000225
+	desc = desc_ev_20000225
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1736
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1738
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		political_reform = censored_press
+	}
+}
+country_event = {
+	id = 20000226 # tropical cyclone in Bengal
+	title = ev_20000226
+	desc = desc_ev_20000226
+	picture = storm_coming_field
+	fire_only_once = yes
+	trigger = {
+		year = 1736
+		tag = BGL
+		NOT = {
+			year = 1738
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			reduce_pop = 0.85
+		}
+	}
+}
+country_event = {
+	id = 20000227 # Teatro di San Carlo opera house built in Naples
+	title = ev_20000227
+	desc = desc_ev_20000227
+	picture = theatre
+	fire_only_once = yes
+	trigger = {
+		year = 1736
+		owns = 754
+		NOT = {
+			year = 1738
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000228 # University of G√∂ttingen founded
+	title = ev_20000228 
+	desc = desc_ev_20000228
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1736
+		owns = 537
+		NOT = {
+			year = 1738
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.5
+	}
+}
+country_event = {
+	id = 20000229 # Medici line becomes extinct
+	title = ev_20000229
+	desc = desc_ev_20000229
+	picture = LastMedici
+	fire_only_once = yes
+	trigger = {
+		year = 1736
+		tag = VEN
+		NOT = {
+			year = 1738
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -10
+		plurality = -1
+	}
+}
+country_event = {
+	id = 20000230 # Herculaneum excavation begins
+	title = ev_20000230
+	desc = desc_ev_20000230
+	picture = Herculaneum
+	fire_only_once = yes
+	trigger = {
+		year = 1737
+		owns = 755
+		NOT = {
+			year = 1739
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+		treasury = -10000
+		years_of_research = 0.1
+	}
+}
+country_event = {
+	id = 20000231 # Jacques de Vaucanson presents the first automaton the flute player
+	title = ev_20000231
+	desc = desc_ev_20000231
+	picture = FlutePlayer
+	fire_only_once = yes
+	trigger = {
+		year = 1737
+		tag = FRA
+		NOT = {
+			year = 1739
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000232 # Black Forest clockmaker Franz Ketterer produces one of the earliest cuckoo clocks
+	title = ev_20000232
+	desc = desc_ev_20000232
+	picture = FirstCuckoo
+	fire_only_once = yes
+	trigger = {
+		year = 1737
+		owns = 587
+		NOT = {
+			year = 1739
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000233 # Royal Swedish Academy of Sciences
+	title = ev_20000233
+	desc = desc_ev_20000233
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1738
+		tag = SWE
+		NOT = {
+			year = 1740
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 1
+	}
+}
+country_event = {
+	id = 20000234 # Rule Britannia! performed
+	title = ev_20000234
+	desc = desc_ev_20000234
+	picture = RuleBritannia
+	fire_only_once = yes
+	trigger = {
+		year = 1739
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1741
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		plurality = 2
+	}
+}
+country_event = {
+	id = 20000235 # Stemmatographia is the first Serbian and Bulgarian secular printed book, printed in Vienna
+	title = ev_20000235
+	desc = desc_ev_20000235
+	picture = Stematografia
+	fire_only_once = yes
+	trigger = {
+		year = 1740
+		tag = AUS
+		NOT = {
+			year = 1742
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		plurality = 1
+	}
+}
+country_event = {
+	id = 20000236 # Eisenach Stadtschloss built
+	title = ev_20000236
+	desc = desc_ev_20000236
+	picture = EisenachStadt
+	fire_only_once = yes
+	trigger = {
+		year = 1741
+		owns = 554
+		NOT = {
+			year = 1743
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000237 # Afghan Tribes unite
+	title = ev_20000237
+	desc = desc_ev_20000237
+	picture = sultan
+	fire_only_once = yes
+	trigger = {
+		year = 1741
+		tag = AFG
+		NOT = {
+			year = 1743
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		plurality = 10
+		any_pop = {
+			militancy = -10
+		}
+	}
+}
+country_event = {
+	id = 20000238 #Great Comet of 1744 
+	title = ev_20000238
+	desc = desc_ev_20000238
+	picture = sight
+	fire_only_once = yes
+	trigger = {
+		year = 1743
+		civilized = yes
+		NOT = {
+			year = 1745
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 15
+	}
+}
+country_event = {
+	id = 20000239 # Female Spectator, first monthly magazine for women
+	title = ev_20000239
+	desc = desc_ev_20000239
+	picture = FemaleSpectator
+	fire_only_once = yes
+	trigger = {
+		year = 1743
+		OR = {
+			tag = ENG
+			tag = ANG
+		}
+		NOT = {
+			year = 1745
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		plurality = 1
+	}
+}
+country_event = {
+	id = 20000240 # Kilt banned in Scotland
+	title = ev_20000240
+	desc = desc_ev_20000240
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1746
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			exists = SCO
+		}
+		NOT = {
+			year = 1748
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		any_pop = {
+			limit = {
+				culture = scottish
+			}
+			militancy = 3
+		}
+	}
+}
+country_event = {
+	id = 20000241 # Durrani Empire
+	title = ev_20000241
+	desc = desc_ev_20000241
+	picture = sultan
+	fire_only_once = yes
+	trigger = {
+		year = 1747
+		tag = AFG
+		NOT = {
+			year = 1749
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		1215 = { 
+			secede_province = AFG
+		}
+		treasury = -50000
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000242 # Fire in London
+	title = ev_20000242
+	desc = desc_ev_20000242
+	picture = cityfire
+	fire_only_once = yes
+	trigger = {
+		year = 1747
+		owns = 300
+		NOT = {
+			year = 1749
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		treasury = -120000
+	}
+}
+country_event = {
+	id = 20000243 # Pompeii discovered
+	title = ev_20000243
+	desc = desc_ev_20000243
+	picture = Pompeii
+	fire_only_once = yes
+	trigger = {
+		year = 1747
+		owns = 754
+		NOT = {
+			year = 1749
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000244 # Louis XV 5% income tax
+	title = ev_20000244
+	desc = desc_ev_20000244
+	picture = FrenchCourt
+	fire_only_once = yes
+	trigger = {
+		year = 1747
+		tag = FRA
+		NOT = {
+			year = 1749
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		treasury = 250000
+		any_pop = {
+			militancy = 2
+		}
+	}
+}
+country_event = {
+	id = 20000245 # Westminster Bridge opened
+	title = ev_20000245
+	desc = desc_ev_20000245
+	picture = WestminsterBridge
+	fire_only_once = yes
+	trigger = {
+		year = 1749
+		owns = 300
+		NOT = {
+			year = 1751
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000246 # Maruyama Okyo paints The Ghost of Oyuki
+	title = ev_20000246
+	desc = desc_ev_20000246
+	picture = OyukiGhost
+	fire_only_once = yes
+	trigger = {
+		year = 1749
+		tag = JAP
+		NOT = {
+			year = 1751
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 15
+	}
+}
+country_event = {
+	id = 20000247 # First Industrial Revolution
+	title = ev_20000247
+	desc = desc_ev_20000247
+	picture = train
+	fire_only_once = yes
+	trigger = {
+		year = 1749
+		OR = {
+			tag = ANG
+			tag = ENG
+			tag = FRA
+		}
+		NOT = {
+			year = 1751
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 50
+	}
+}
+country_event = {
+	id = 20000248 # Fire of Stockholm
+	title = ev_20000248
+	desc = desc_ev_20000248
+	picture = cityfire
+	fire_only_once = yes
+	trigger = {
+		year = 1752
+		tag = SWE
+		owns = 322
+		NOT = {
+			year = 1754
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		322 = {
+			any_pop = {
+				reduce_pop = 0.9
+			}
+		}
+		treasury = -40000
+	}
+}
+country_event = {
+	id = 20000249 # Encyclop√©die first published
+	title = ev_20000249
+	desc = desc_ev_20000249
+	picture = Encyclopedie
+	fire_only_once = yes
+	trigger = {
+		year = 1750
+		tag = FRA
+		NOT = {
+			year = 1752
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		years_of_research = 0.5
+	}
+}
+country_event = {
+	id = 20000250 #Maria Theresia thaler minted, first international currency 
+	title = ev_20000250
+	desc = desc_ev_20000250
+	picture = MariaThaler
+	fire_only_once = yes
+	trigger = {
+		year = 1750
+		tag = AUS
+		NOT = {
+			year = 1752
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		treasury = 100000
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000251 # Moscow Fire
+	title = ev_20000251
+	desc = desc_ev_20000251
+	picture = cityfire
+	fire_only_once = yes
+	trigger = {
+		year = 1751
+		owns = 1008
+		NOT = {
+			year = 1753
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		1008 = {
+			any_pop = {
+				reduce_pop = 0.95
+			}
+		}
+		treasury = -30000
+	}
+}
+
+country_event = {
+	id = 20000254 # Moscow University established
+	title = ev_20000254
+	desc = desc_ev_20000254
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1754
+		tag = RUS
+		owns = 1008
+		NOT = {
+			year = 1756
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.5
+	}
+}
+country_event = {
+	id = 20000255 # Lisbon Earthquake
+	title = ev_20000255
+	desc = desc_ev_20000255
+	picture = earthquakeold
+	fire_only_once = yes
+	trigger = {
+		year = 1754
+		OR = {
+			tag = POR
+			tag = IBU
+		}
+		NOT = {
+			year = 1756
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		521 = {
+			any_pop = {
+				reduce_pop = 0.85
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000256 # Puning Temple Complex complete
+	title = ev_20000256
+	desc = desc_ev_20000256
+	picture = PuningTemple
+	fire_only_once = yes
+	trigger = {
+		year = 1654
+		tag = CHI
+		owns = 1613
+		NOT = {
+			year = 1656
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000257 # Frederick II forces peasants to grow potatoes
+	title = ev_20000257
+	desc = desc_ev_20000257
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1755
+		tag = PRU
+		NOT = {
+			year = 1757
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		any_pop = {
+			limit = {
+				strata = poor
+			}
+			militancy = 1
+		}
+	}
+}
+country_event = {
+	id = 20000258 # British Museum opens
+	title = ev_20000258
+	desc = desc_ev_20000258
+	picture = BritishMuseum
+	fire_only_once = yes
+	trigger = {
+		year = 1758
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1760
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000259 # Sikh holocaust in Afghanistan
+	title = ev_20000259
+	desc = desc_ev_20000259
+	picture = cholera
+	fire_only_once = yes
+	trigger = {
+		year = 1761
+		tag = AFG
+		NOT = {
+			year = 1763
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		any_pop = {
+			limit = {
+				religion = sikh
+			}
+			reduce_pop = 0.1
+		}
+		badboy = 6
+	}
+}
+
+country_event = {
+	id = 20000263 # Catherine 2 new way to produce Vodka
+	title = ev_20000263
+	desc = desc_ev_20000263
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1764
+		tag = RUS
+		NOT = {
+			year = 1766
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		treasury = 10000
+		plurality = 2
+	}
+}
+country_event = {
+	id = 20000264 # Wolf attacks in France
+	title = ev_20000264
+	desc = desc_ev_20000264
+	picture = WolfAttacks
+	fire_only_once = yes
+	trigger = {
+		year = 1765
+		tag = FRA
+		NOT = {
+			year = 1767
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			reduce_pop = 0.995
+			militancy = 0.5
+		}
+	}
+}
+country_event = {
+	id = 20000265 # Mozart's Grand Tour
+	title = ev_20000265
+	desc = desc_ev_20000265
+	picture = Mozart
+	fire_only_once = yes
+	trigger = {
+		year = 1765
+		tag = AUS
+		NOT = {
+			year = 1767
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000266 # Swedish free press
+	title = ev_20000266
+	desc = desc_ev_20000266
+	picture = Administration
+	fire_only_once = yes
+	trigger = {
+		year = 1765
+		tag = SWE
+		NOT = {
+			year = 1766
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		political_reform = free_press
+	}
+}
+country_event = {
+	id = 20000267 # Corsica ceded to France by Genoa
+	title = ev_20000267
+	desc = desc_ev_20000267
+	picture = treaty
+	fire_only_once = yes
+	trigger = {
+		year = 1767
+		tag = GEN
+		NOT = {
+			year = 1769
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		473 = {
+			secede_province = FRA
+		}
+		treasury = 250000
+		FRA = {
+			treasury = -250000
+		}
+	}
+}
+country_event = {
+	id = 20000268 # Royal Academy founded in London
+	title = ev_20000268
+	desc = desc_ev_20000268
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1767
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		owns = 300
+		NOT = {
+			year = 1769
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		years_of_research = 1.5
+	}
+}
+country_event = {
+	id = 20000269 # James Watt granted patent for the steam engine
+	title = ev_20000269
+	desc = desc_ev_20000269
+	picture = JamesWatt
+	fire_only_once = yes
+	trigger = {
+		year = 1768
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1770
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.75
+	}
+}
+country_event = {
+	id = 20000270 # Mughal famine 1/3
+	title = ev_20000270
+	desc = desc_ev_20000270
+	picture = starving
+	fire_only_once = yes
+	trigger = {
+		year = 1768
+		tag = MUG
+		NOT = {
+			year = 1770
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			reduce_pop = 0.1
+		}
+	}
+}
+
+country_event = {
+	id = 20000272 # Moscow bubonic plague
+	title = ev_20000272
+	desc = desc_ev_20000272
+	picture = plaguepic
+	fire_only_once = yes
+	trigger = {
+		year = 1770
+		tag = RUS
+		owns = 1008
+		NOT = {
+			year = 1772
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		1008 = {
+			any_pop = {
+				reduce_pop = 0.6
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000273 # Putuo Zondcheng Temple Complex complete
+	title = ev_20000273
+	desc = desc_ev_20000273
+	picture = PutuoZongcheng
+	fire_only_once = yes
+	trigger = {
+		year = 1770
+		tag = CHI
+		owns = 1613
+		NOT = {
+			year = 1772
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000274 # Gustav III declares absolute rulership
+	title = ev_20000274
+	desc = desc_ev_20000274
+	picture = monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1771
+		tag = SWE
+		NOT = {
+			government = absolute_monarchy
+		}
+		NOT = {
+			year = 1773
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		government = absolute_monarchy
+	}
+}
+#country_event = {
+#	id = 20000275 # Tea act
+#	title = ev_20000275
+#	desc = desc_ev_20000275
+##	picture = 
+#	fire_only_once = yes
+#	trigger = {
+#		year = 1772
+#		OR = {
+#			tag = ANG
+#			tag = ENG
+#		}
+#		NOT = {
+#			year = 1774
+#		}
+#	}
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	option = {
+#		name = event_option_alright
+#		treasury = 50000
+#		set_global_flag = tea_act_passed
+#	}
+#	option = {
+#		name = event_option_no
+#		treasury = -50000
+#	}
+#}
+country_event = {
+	id = 20000276 # Istanbul Technical University founded
+	title = ev_20000276
+	desc = desc_ev_20000276
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1772
+		tag = TUR
+		NOT = {
+			year = 1774
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 2
+	}
+}
+country_event = {
+	id = 20000277 # Louis XVI becomes king of France
+	title = ev_20000277
+	desc = desc_ev_20000277
+	picture = monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1773
+		tag = FRA
+		NOT = {
+			year = 1775
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+	}
+}
+country_event = {
+	id = 20000278 # Adam Smith the Wealth of Nations
+	title = ev_20000278
+	desc = desc_ev_20000278
+	picture = AdamSmith
+	fire_only_once = yes
+	trigger = {
+		year = 1775
+		OR = {
+			tag = ANG
+			tag = ENG
+		}
+		NOT = {
+			year = 1777
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000279 # Illuminati founded in Bavaria
+	title = ev_20000279
+	desc = desc_ev_20000279
+	picture = BavarianIlluminati
+	fire_only_once = yes
+	trigger = {
+		year = 1775
+		tag = BAV
+		NOT = {
+			year = 1777
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+
+country_event = {
+	id = 200002835 # League of Armed Neutrality SWE RUS DEN
+	title = ev_200002835
+	desc = desc_ev_200002835
+	picture = treaty
+	fire_only_once = yes
+	trigger = {
+		year = 1779
+		tag = RUS
+		NOT = {
+			year = 1781
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		relation = {
+			who = SWE
+			value = 400
+		}
+		relation = {
+			who = DEN
+			value = 400
+		}
+		SWE = {
+			relation = {
+				who = DEN
+				value = 400
+			}
+		}
+	}
+}
+country_event = {
+	id = 200002845 # University of M√ºnster
+	title = ev_200002845
+	desc = desc_ev_200002845
+	picture = school
+	fire_only_once = yes
+	trigger = {
+		year = 1779
+		owns = 581
+		NOT = {
+			year = 1781
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.5
+	}
+}
+country_event = {
+	id = 20000285 # Patent of Tolerance providing the freedom of worship in Habsburg
+	title = ev_20000285
+	desc = desc_ev_20000285
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1780
+		tag = AUS
+		NOT = {
+			year = 1782
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		any_pop = {
+			militancy = -3
+			consciousness = 2
+		}
+	}
+}
+country_event = {
+	id = 20000286 # Bank of North America
+	title = ev_20000286
+	desc = desc_ev_20000286
+	picture = merchants
+	fire_only_once = yes
+	trigger = {
+		year = 1780
+		OR = {
+			tag = USA
+			tag = THC
+		}
+		NOT = {
+			year = 1782
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		treasury = 50000
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000287 # Siku Quanshu completed in China
+	title = ev_20000287
+	desc = desc_ev_20000287
+	picture = asian_ruler
+	fire_only_once = yes
+	trigger = {
+		year = 1781
+		tag = CHI
+		NOT = {
+			year = 1783
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		research_points = 1500
+	}
+}
+country_event = {
+	id = 20000288 # Iceland's volcano Laki errupts, killing 1/3 pop
+	title = ev_20000288
+	desc = desc_ev_20000288
+	picture = volcano
+	fire_only_once = yes
+	trigger = {
+		year = 1782
+		owns = 252
+		NOT = {
+			year = 1784
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		252 = {
+			any_pop = {
+				reduce_pop = 0.66
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000289 # Great Meteor Passes
+	title = ev_20000289
+	desc = desc_ev_20000289
+	picture = sight
+	fire_only_once = yes
+	trigger = {
+		year = 1782
+		civilized = yes
+		NOT = {
+			year = 1784
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000291 # Joseph II suspends the Hungarian constitution, absolute rule
+	title = ev_20000291
+	desc = desc_ev_20000291
+	picture = monarchy
+	fire_only_once = yes
+	trigger = {
+		year = 1783
+		tag = AUS
+		NOT = {
+			government = absolute_monarchy
+		}
+		NOT = {
+			year = 1785
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		government = absolute_monarchy
+		any_pop = {
+			limit = {
+				culture = hungarian
+			}
+			militancy = 3
+		}
+	}
+}
+country_event = {
+	id = 20000292 # Japanese famine
+	title = ev_20000292
+	desc = desc_ev_20000292
+	picture = starving
+	fire_only_once = yes
+	trigger = {
+		year = 1783
+		tag = JAP
+		NOT = {
+			year = 1785
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			reduce_pop = 0.85
+		}
+	}
+}
+country_event = {
+	id = 20000293 # Mozart's Marriage of Figaro premier in Vienna
+	title = ev_20000293
+	desc = desc_ev_20000293
+	picture = mozart
+	fire_only_once = yes
+	trigger = {
+		year = 1785
+		tag = AUS
+		NOT = {
+			year = 1787
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000294 # Chengdu earthquake and landslide
+	title = ev_20000294
+	desc = desc_ev_20000294
+	picture = earthquakeold
+	fire_only_once = yes
+	trigger = {
+		year = 1785
+		owns = 1578
+		NOT = {
+			year = 1787
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		1578 = {
+			any_pop = {
+				reduce_pop = 0.75
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000295 # Mont Blanc climbed for the first time
+	title = ev_20000295
+	desc = desc_ev_20000295
+	picture = MontBlanc
+	fire_only_once = yes
+	trigger = {
+		year = 1785
+		OR = {
+			tag = FRA
+			tag = SWI
+			tag = AUS
+			tag = VEN
+		}
+		NOT = {
+			year = 1787
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000296 # London Monster arrested
+	title = ev_20000296
+	desc = desc_ev_20000296
+	picture = jacktheripper
+	fire_only_once = yes
+	trigger = {
+		year = 1789
+		owns = 300
+		NOT = {
+			year = 1791
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 2
+	}
+}
+country_event = {
+	id = 20000297 # Semaphore machine invented in Paris
+	title = ev_20000297
+	desc = desc_ev_20000297
+	picture = telegraph
+	fire_only_once = yes
+	trigger = {
+		year = 1790
+		tag = FRA
+		NOT = {
+			year = 1792
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.2
+	}
+}
+country_event = {
+	id = 20000298 # Brandenburg Gate complete
+	title = ev_20000298
+	desc = desc_ev_20000298
+	picture = BrandenburgGate
+	fire_only_once = yes
+	trigger = {
+		year = 1790
+		owns = 549
+		NOT = {
+			year = 1792
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 40
+		plurality = 5
+	}
+}
+country_event = {
+	id = 20000299 # First American ship reaches Japan
+	title = ev_20000299
+	desc = desc_ev_20000299
+	picture = AmericanShipJapan
+	fire_only_once = yes
+	trigger = {
+		year = 1790
+		exists = USA
+		tag = JAP
+		NOT = {
+			year = 1792
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		treasury = 20000
+		research_points = 10000
+		USA = {
+			diplomatic_influence = {
+				who = JAP
+				value = 75
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000300 # Unzen volcano errupts
+	title = ev_20000300
+	desc = desc_ev_20000300
+	picture = volcano
+	fire_only_once = yes
+	trigger = {
+		year = 1791
+		tag = JAP
+		owns = 1661
+		NOT = {
+			year = 1793
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		1661 = {
+			any_pop = {
+				reduce_pop = 0.85
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000301 # Denmark outlaws slavery
+	title = ev_20000301
+	desc = desc_ev_20000301
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1791
+		tag = DEN
+		slavery = yes_slavery
+		NOT = {
+			year = 1793
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		political_reform = no_slavery
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000302 # Niccol√≥ Paganini debuts
+	title = ev_20000302
+	desc = desc_ev_20000302
+	picture = Paganini
+	fire_only_once = yes
+	trigger = {
+		year = 1792
+		owns = 724
+		NOT = {
+			year = 1794
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000303 # Haydn composes Gott erhalte Franz den Kaiser
+	title = ev_20000303
+	desc = desc_ev_20000303
+	picture = GottErhalte
+	fire_only_once = yes
+	trigger = {
+		year = 1796
+		tag = AUS
+		NOT = {
+			year = 1798
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+		plurality = 5
+	}
+}
+country_event = {
+	id = 20000304 # Act of Union
+	title = ev_20000304
+	desc = desc_ev_20000304
+	picture = treaty
+	fire_only_once = yes
+	trigger = {
+		year = 1799
+		tag = ENG
+		exists = IRE
+		NOT = {
+			year = 1801
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		inherit = IRE
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000305 #First census in UK 
+	title = ev_20000305
+	desc = desc_ev_20000305
+	picture = EarlyCensus
+	fire_only_once = yes
+	trigger = {
+		year = 1800
+		tag = ENG
+		NOT = {
+			year = 1802
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+		
+	}
+}
+country_event = {
+	id = 20000306 # First French census
+	title = ev_20000306
+	desc = desc_ev_20000306
+	picture = EarlyCensus
+	fire_only_once = yes
+	trigger = {
+		year = 1800
+		tag = FRA
+		NOT = {
+			year = 1802
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000307 # William Wordswoth writes Upon Westminster Bridge
+	title = ev_20000307
+	desc = desc_ev_20000307
+	picture = Wordsworth
+	fire_only_once = yes
+	trigger = {
+		year = 1802
+		tag = ENG
+		NOT = {
+			year = 1804
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000308 # Haiti gains independence
+	title = ev_20000308
+	desc = desc_ev_20000308
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1803
+		owns = 2213
+		owns = 2215
+		NOT = {
+			exists = HAI
+		}
+		NOT = {
+			year = 1805
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		2213 = {
+			add_core = HAI
+		}
+		2215 = {
+			add_core = HAI
+		}
+		release = HAI
+		prestige = -5
+		casus_belli = {
+			target = HAI
+			type = make_puppet
+			months = 12
+		}
+	}
+}
+country_event = {
+	id = 20000309 # Ethnic cleansing of white people
+	title = ev_20000309
+	desc = desc_ev_20000309
+	picture = HaitiCleansing
+	fire_only_once = yes
+	trigger = {
+		year = 1803
+		tag = HAI
+		NOT = {
+			year = 1805
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		any_pop = {
+			limit = {
+				NOT = {
+					OR = {
+						culture = afro_american
+						culture = afro_caribbean
+						culture = afro_caribeno
+						culture = afro_brazilian
+						culture = afro_antillean
+						culture = akan
+						culture = bambara
+						culture = dyula
+						culture = edo
+						culture = ewe
+						culture = fon
+						culture = fulbe
+						culture = hausa
+						culture = ibibio
+						culture = ibo
+						culture = kru
+						culture = mande
+						culture = maures
+						culture = mossi
+						culture = senufo
+						culture = wolof
+						culture = tiv
+						culture = yoruba
+						culture = bakongo
+						culture = baguirmi
+						culture = fang
+						culture = kanuri
+						culture = luba
+						culture = lunda
+						culture = mongo
+						culture = sara
+						culture = teda
+						culture = african_minor
+						culture = amhara
+						culture = afar
+						culture = azande
+						culture = baganda
+						culture = beja
+						culture = dinka
+						culture = fur
+						culture = kikuyu
+						culture = luo
+						culture = maasai
+						culture = nuer
+						culture = nuba
+						culture = oromo
+						culture = ruanda
+						culture = rundi
+						culture = sidama
+						culture = somali
+						culture = sudanese
+						culture = sukuma
+						culture = swahili
+						culture = tigray
+						culture = unyamwezi
+						culture = chewa
+						culture = herero
+						culture = khoisan
+						culture = lomwe
+						culture = makua
+						culture = malagasy
+						culture = nguni
+						culture = ovimbundu
+						culture = sena
+						culture = shona
+						culture = sotho
+						culture = tonga
+						culture = tswana
+						culture = xhosa
+						culture = yao
+						culture = zulu
+					}
+				}
+			}
+			reduce_pop = 0.01
+		}
+	}
+}
+country_event = {
+	id = 20000310 # First Serbian uprising
+	title = ev_20000310
+	desc = desc_ev_20000310
+	picture = Rebellion
+	fire_only_once = yes
+	trigger = {
+		year = 1803
+		tag = TUR
+		owns = 794
+		NOT = {
+			exists = SER
+		}
+		NOT = {
+			year = 18
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		any_pop = {
+			limit = {
+				culture = serb
+			}
+			militancy = 10
+		}
+	}
+}
+country_event = {
+	id = 20000311 # Serfdom abolished in Prussia
+	title = ev_20000311
+	desc = desc_ev_20000311
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1806
+		tag = PRU
+		NOT = {
+			year = 1808
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		any_pop = {
+			limit = {
+				strata = poor
+			}
+			militancy = -3
+			consciousness = 1
+		}
+	}
+}
+country_event = {
+	id = 20000312 # Academy of Fine Arts, Munich founded
+	title = ev_20000312
+	desc = desc_ev_20000312
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1807
+		owns = 599
+		NOT = {
+			year = 1809
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000313 # Johann Gottlieb Fichte publishes his Addresses to the German Nation
+	title = ev_20000313
+	desc = desc_ev_20000313
+	picture = GermanNation
+	fire_only_once = yes
+	trigger = {
+		year = 1807
+		primary_culture = north_german
+		NOT = {
+			year = 1809
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		plurality = 15
+	}
+}
+country_event = {
+	id = 20000314 # Finland separates from Sweden, becoming a puppet of Russia
+	title = ev_20000314
+	desc = desc_ev_20000314
+	picture = treaty
+	fire_only_once = yes
+	trigger = {
+		year = 1808
+		tag = SWE
+		NOT = {
+			exists = FIN
+		}
+		NOT = {
+			year = 1810
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		release = FIN
+		RUS = {
+			create_vassal = FIN
+		}
+		prestige = -20
+	}
+}
+country_event = {
+	id = 20000315 # Bolivia declares independence from Spain, creating a junta leadership
+	title = ev_20000315
+	desc = desc_ev_20000315
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1808
+		NOT = {
+			exists = BOL
+		}
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1810
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		2321 = {
+			add_core = BOL
+		}
+		2320 = {
+			add_core = BOL
+		}
+		2319 = {
+			add_core = BOL
+		}
+		2318 = {
+			add_core = BOL
+		}
+		2317 = {
+			add_core = BOL
+		}
+		2316 = {
+			add_core = BOL
+		}
+		2315 = {
+			add_core = BOL
+		}
+		2314 = {
+			add_core = BOL
+		}
+		2313 = {
+			add_core = BOL
+		}
+		2312 = {
+			add_core = BOL
+		}
+		2311 = {
+			add_core = BOL
+		}
+		2310 = {
+			add_core = BOL
+		}
+		2309 = {
+			add_core = BOL
+		}
+		2305 = {
+			add_core = BOL
+		}
+		release = BOL
+		war = {
+			target = BOL
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		BOL = {
+			government = presidential_dictatorship
+		}
+		prestige = -10
+	}
+}
+country_event = {
+	id = 20000316 # Ecuador declares independence
+	title = ev_20000316
+	desc = desc_ev_20000316
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1808
+		NOT = {
+			exists = ECU
+		}
+		NOT = {
+			year = 1810
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		2289 = {
+			add_core = ECU
+		}
+		2288 = {
+			add_core = ECU
+		}
+		2287 = {
+			add_core = ECU
+		}
+		2285 = {
+			add_core = ECU
+		}
+		2284 = {
+			add_core = ECU
+		}
+		2283 = {
+			add_core = ECU
+		}
+		2282 = {
+			add_core = ECU
+		}
+		2281 = {
+			add_core = ECU
+		}
+		2280 = {
+			add_core = ECU
+		}
+		2279 = {
+			add_core = ECU
+		}
+		release = ECU
+		war = {
+			target = ECU
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		BOL = {
+			government = democracy
+		}
+		prestige = -10
+		badboy = -22
+	}
+}
+country_event = {
+	id = 20000317 # Royal Opera House opens in London
+	title = ev_20000317
+	desc = desc_ev_20000317
+	picture = theatre
+	fire_only_once = yes
+	trigger = {
+		year = 1808
+		owns = 300
+		NOT = {
+			year = 1810
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000318 # Venezuela declares independence, junta
+	title = ev_20000318
+	desc = desc_ev_20000318
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1809
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			exists = VNZ
+		}
+		NOT = {
+			year = 1811
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -10
+		2278 = {
+			add_core = VNZ
+		}
+		2277 = {
+			add_core = VNZ
+		}
+		2276 = {
+			add_core = VNZ
+		}
+		2275 = {
+			add_core = VNZ
+		}
+		2274 = {
+			add_core = VNZ
+		}
+		2273 = {
+			add_core = VNZ
+		}
+		2272 = {
+			add_core = VNZ
+		}
+		2271 = {
+			add_core = VNZ
+		}
+		2270 = {
+			add_core = VNZ
+		}
+		2269 = {
+			add_core = VNZ
+		}
+		2268 = {
+			add_core = VNZ
+		}
+		2267 = {
+			add_core = VNZ
+		}
+		2266 = {
+			add_core = VNZ
+		}
+		2265 = {
+			add_core = VNZ
+		}
+		2264 = {
+			add_core = VNZ
+		}
+		release = VNZ
+		war = {
+			target = VNZ
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		VNZ = {
+			government = presidential_dictatorship
+		}
+		badboy = -22
+	}
+}
+country_event = {
+	id = 20000319 # Beethoven composes F¸r Elise
+	title = ev_20000319
+	desc = desc_ev_20000319
+	picture = Beethoven
+	fire_only_once = yes
+	trigger = {
+		year = 1809
+		tag = AUS
+		NOT = {
+			year = 1811
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000320 # Mexican war for independence
+	title = ev_20000320
+	desc = desc_ev_20000320
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1809
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			exists = MEX
+		}
+		NOT = {
+			year = 1811
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -15
+		2185 = {
+			add_core = MEX
+		}
+		2184 = {
+			add_core = MEX
+		}
+		2183 = {
+			add_core = MEX
+		}
+		2182 = {
+			add_core = MEX
+		}
+		2181 = {
+			add_core = MEX
+		}
+		2180 = {
+			add_core = MEX
+		}
+		2179 = {
+			add_core = MEX
+		}
+		2178 = {
+			add_core = MEX
+		}
+		2177 = {
+			add_core = MEX
+		}
+		2176 = {
+			add_core = MEX
+		}
+		2175 = {
+			add_core = MEX
+		}
+		2174 = {
+			add_core = MEX
+		}
+		2173 = {
+			add_core = MEX
+		}
+		2172 = {
+			add_core = MEX
+		}
+		2171 = {
+			add_core = MEX
+		}
+		2170 = {
+			add_core = MEX
+		}
+		2169 = {
+			add_core = MEX
+		}
+		2168 = {
+			add_core = MEX
+		}
+		2167 = {
+			add_core = MEX
+		}
+		2166 = {
+			add_core = MEX
+		}
+		2165 = {
+			add_core = MEX
+		}
+		2164 = {
+			add_core = MEX
+		}
+		2163 = {
+			add_core = MEX
+		}
+		2162 = {
+			add_core = MEX
+		}
+		2161 = {
+			add_core = MEX
+		}
+		2160 = {
+			add_core = MEX
+		}
+		2159 = {
+			add_core = MEX
+		}
+		2158 = {
+			add_core = MEX
+		}
+		2157 = {
+			add_core = MEX
+		}
+		2156 = {
+			add_core = MEX
+		}
+		2155 = {
+			add_core = MEX
+		}
+		2154 = {
+			add_core = MEX
+		}
+		2153 = {
+			add_core = MEX
+		}
+		2152 = {
+			add_core = MEX
+		}
+		2151 = {
+			add_core = MEX
+		}
+		2150 = {
+			add_core = MEX
+		}
+		2149 = {
+			add_core = MEX
+		}
+		2148 = {
+			add_core = MEX
+		}
+		2147 = {
+			add_core = MEX
+		}
+		2146 = {
+			add_core = MEX
+		}
+		2145 = {
+			add_core = MEX
+		}
+		2144 = {
+			add_core = MEX
+		}
+		2143 = {
+			add_core = MEX
+		}
+		2142 = {
+			add_core = MEX
+		}
+		2141 = {
+			add_core = MEX
+		}
+		2140 = {
+			add_core = MEX
+		}
+		2139 = {
+			add_core = MEX
+		}
+		2138 = {
+			add_core = MEX
+		}
+		2137 = {
+			add_core = MEX
+		}
+		138 = {
+			add_core = MEX
+		}
+		137 = {
+			add_core = MEX
+		}
+		136 = {
+			add_core = MEX
+		}
+		135 = {
+			add_core = MEX
+		}
+		134 = {
+			add_core = MEX
+		}
+		133 = {
+			add_core = MEX
+		}
+		132 = {
+			add_core = MEX
+		}
+		release = MEX
+		2203 = {
+			secede_province = MEX
+		}
+		2202 = {
+			secede_province = MEX
+		}
+		2201 = {
+			secede_province = MEX
+		}
+		2200 = {
+			secede_province = MEX
+		}
+		2199 = {
+			secede_province = MEX
+		}
+		2198 = {
+			secede_province = MEX
+		}
+		2197 = {
+			secede_province = MEX
+		}
+		2196 = {
+			secede_province = MEX
+		}
+		2195 = {
+			secede_province = MEX
+		}
+		2194 = {
+			secede_province = MEX
+		}
+		2193 = {
+			secede_province = MEX
+		}
+		2192 = {
+			secede_province = MEX
+		}
+		2191 = {
+			secede_province = MEX
+		}
+		2189 = {
+			secede_province = MEX
+		}
+		2188 = {
+			secede_province = MEX
+		}
+		2187 = {
+			secede_province = MEX
+		}
+		2186 = {
+			secede_province = MEX
+		}
+		84 = {
+			secede_province = MEX
+		}
+		85 = {
+			secede_province = MEX
+		}
+		86 = {
+			secede_province = MEX
+		}
+		87 = {
+			secede_province = MEX
+		}
+		88 = {
+			secede_province = MEX
+		}
+		89 = {
+			secede_province = MEX
+		}
+		90 = {
+			secede_province = MEX
+		}
+		94 = {
+			secede_province = MEX
+		}
+		95 = {
+			secede_province = MEX
+		}
+		96 = {
+			secede_province = MEX
+		}
+		97 = {
+			secede_province = MEX
+		}
+		98 = {
+			secede_province = MEX
+		}
+		99 = {
+			secede_province = MEX
+		}
+		100 = {
+			secede_province = MEX
+		}
+		101 = {
+			secede_province = MEX
+		}
+		102 = {
+			secede_province = MEX
+		}
+		103 = {
+			secede_province = MEX
+		}
+		104 = {
+			secede_province = MEX
+		}
+		105 = {
+			secede_province = MEX
+		}
+		war = {
+			target = MEX
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		MEX = {
+			government = absolute_monarchy
+		}
+		badboy = -22
+	}
+}
+country_event = {
+	id = 20000321 # Chile's first junta, not free yet
+	title = ev_20000321
+	desc = desc_ev_20000321
+	picture = ChileJunta
+	fire_only_once = yes
+	trigger = {
+		year = 1809
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1811
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+	}
+}
+country_event = {
+	id = 20000322 # First Oktoberfest
+	title = ev_20000322
+	desc = desc_ev_20000322
+	picture = Oktoberfest
+	fire_only_once = yes
+	trigger = {
+		year = 1809
+		owns = 599
+		NOT = {
+			year = 1811
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000323 # Buenos Aires riots
+	title = ev_20000323
+	desc = desc_ev_20000323
+	picture = riot
+	fire_only_once = yes
+	trigger = {
+		year = 1810
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1812
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		2348 = {
+			any_pop = {
+				militancy = 3
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000324 # Paraguay declares independence
+	title = ev_20000324
+	desc = desc_ev_20000324
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1810
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			exists = PRG
+		}
+		NOT = {
+			year = 1812
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -10
+		2343 = {
+			add_core = PRG
+		}
+		2342 = {
+			add_core = PRG
+		}
+		2341 = {
+			add_core = PRG
+		}
+		2340 = {
+			add_core = PRG
+		}
+		2339 = {
+			add_core = PRG
+		}
+		release = PRG
+		war = {
+			target = PRG
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		PRG = {
+			government = presidential_dictatorship
+		}
+		badboy = -22
+	}
+}
+country_event = {
+	id = 20000326 # Miguel Hidalgo y Costilla executed
+	title = ev_20000326
+	desc = desc_ev_20000326
+	picture = Hidalgo
+	fire_only_once = yes
+	trigger = {
+		year = 1810
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1812
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		prestige = 5
+		MEX = {
+			war_exhaustion = 3
+		}
+	}
+}
+country_event = {
+	id = 20000327 # Argentine government declares freedom of expression
+	title = ev_20000327
+	desc = desc_ev_20000327
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1810
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1812
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -5
+	}
+}
+country_event = {
+	id = 20000328 # luddites attack wool processing factory in West Yorkshire
+	title = ev_20000328
+	desc = desc_ev_20000328
+	picture = factoryattack
+	fire_only_once = yes
+	trigger = {
+		year = 1812
+		owns = 282
+		NOT = {
+			year = 1814
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		282 = {
+			any_pop = {
+				limit = {
+					strata = poor
+				}
+				militancy = 4
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000329 # Caracas destroyed by earthquake
+	title = ev_20000329
+	desc = desc_ev_20000329
+	picture = earthquakeold
+	fire_only_once = yes
+	trigger = {
+		year = 1811
+		owns = 2264
+		NOT = {
+			year = 1813
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		2264 = {
+			any_pop = {
+				reduce_pop = 0.75
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000330 # Jean Austen's Pride and Prejudice published
+	title = ev_20000330
+	desc = desc_ev_20000330
+	picture = PrideAndPrejudice
+	fire_only_once = yes
+	trigger = {
+		year = 1812
+		owns = 300
+		NOT = {
+			year = 1814
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000331 # Argentine declares independence
+	title = ev_20000331
+	desc = desc_ev_20000331
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1812
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			exists = ARG
+		}
+		NOT = {
+			year = 1814
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -10
+		2365 = {
+			add_core = ARG
+		}
+		2364 = {
+			add_core = ARG
+		}
+		2363 = {
+			add_core = ARG
+		}
+		2362 = {
+			add_core = ARG
+		}
+		2361 = {
+			add_core = ARG
+		}
+		2360 = {
+			add_core = ARG
+		}
+		2359 = {
+			add_core = ARG
+		}
+		2358 = {
+			add_core = ARG
+		}
+		2357 = {
+			add_core = ARG
+		}
+		2356 = {
+			add_core = ARG
+		}
+		2355 = {
+			add_core = ARG
+		}
+		2354 = {
+			add_core = ARG
+		}
+		2353 = {
+			add_core = ARG
+		}
+		2352 = {
+			add_core = ARG
+		}
+		2351 = {
+			add_core = ARG
+		}
+		2350 = {
+			add_core = ARG
+		}
+		2349 = {
+			add_core = ARG
+		}
+		2348 = {
+			add_core = ARG
+		}
+		release = ARG
+		war = {
+			target = ARG
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		ARG = {
+			government = presidential_dictatorship
+		}
+		badboy = -22
+	}
+}
+country_event = {
+	id = 20000332 # Kalmar Union ends
+	title = ev_20000332
+	desc = desc_ev_20000332
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1813
+		tag = DEN
+		NOT = {
+			exists = NOR
+		}
+		NOT = {
+			year = 1815
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		release = NOR
+		SWE = {
+			create_vassal = NOR
+		}
+	}
+}
+country_event = {
+	id = 20000334 # Second Serbian Uprising
+	title = ev_20000334
+	desc = desc_ev_20000334
+	picture = rebellion
+	fire_only_once = yes
+	trigger = {
+		year = 1814
+		tag = TUR
+		owns = 794
+		NOT = {
+			exists = SER
+		}
+		NOT = {
+			year = 1816
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		release = SER
+		create_vassal = SER
+		any_pop = {
+			limit = {
+				culture = serb
+			}
+			militancy = -5
+		}
+		SER = {
+			any_pop = {
+				militancy = -10
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000335 # Chile proclaims independence
+	title = ev_20000335
+	desc = desc_ev_20000335
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1817
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			exists = CHL
+		}
+		NOT = {
+			year = 1819
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -10
+		2335 = {
+			add_core = CHL
+		}
+		2334 = {
+			add_core = CHL
+		}
+		2333 = {
+			add_core = CHL
+		}
+		2332 = {
+			add_core = CHL
+		}
+		2331 = {
+			add_core = CHL
+		}
+		2330 = {
+			add_core = CHL
+		}
+		2329 = {
+			add_core = CHL
+		}
+		2328 = {
+			add_core = CHL
+		}
+		2327 = {
+			add_core = CHL
+		}
+		2326 = {
+			add_core = CHL
+		}
+		2325 = {
+			add_core = CHL
+		}
+		2324 = {
+			add_core = CHL
+		}
+		2323 = {
+			add_core = CHL
+		}
+		2322 = {
+			add_core = CHL
+		}
+		release = CHL
+		war = {
+			target = CHL
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		CHL = {
+			government = democracy
+		}
+		badboy = -22
+	}
+}
+country_event = {
+	id = 20000336 # Flag of US adopted officially
+	title = ev_20000336
+	desc = desc_ev_20000336
+	picture = USFlag
+	fire_only_once = yes
+	trigger = {
+		year = 1817
+		tag = USA
+		NOT = {
+			year = 1819
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		plurality = 10
+	}
+}
+country_event = {
+	id = 20000337 # SimÛn Bolivar proclaims the Republic of Gran Colombia
+	title = ev_20000337
+	desc = desc_ev_20000337
+	picture = Bolivar
+	fire_only_once = yes
+	trigger = {
+		year = 1818
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1820
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -5
+		end_war = VNZ
+		VNZ = {
+			change_tag = GCO
+			prestige = 20
+		}
+			2263 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2262 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2261 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2260 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2259 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2258 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2257 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2256 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2255 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2254 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2253 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2252 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2251 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2250 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2249 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2248 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			2247 = {
+				add_core = CLM
+				add_core = GCO
+				secede_province = GCO
+			}
+			war = {
+				target = GCO
+				attacker_goal = {
+					casus_belli = conquest
+				}
+				defender_goal = {
+					casus_belli = status_quo
+				}
+			}
+			badboy = -22
+		GCO = {
+		government = presidential_dictatorship
+		inherit = ECU
+	}
+	}
+}
+country_event = {
+	id = 20000338 # Spain cedes Florida to US for renouncing claims on Texas
+	title = ev_20000338
+	desc = desc_ev_20000338
+	picture = Florida
+	fire_only_once = yes
+	trigger = {
+	OR = {
+			tag = SPA
+			tag = IBU
+		}
+		year = 1818
+		owns = 197
+		owns = 198
+		owns = 199
+		owns = 200
+		exists = USA
+		NOT = {
+			year = 1820
+		}
+		NOT = {
+		USA = {
+		owns = 197
+		owns = 198
+		owns = 199
+		owns = 200
+		}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		197 = {
+			add_core = USA
+			secede_province = USA
+		}
+		198 = {
+			add_core = USA
+			secede_province = USA
+		}
+		199 = {
+			add_core = USA
+			secede_province = USA
+		}
+		200 = {
+			add_core = USA
+			secede_province = USA
+		}
+		treasury = 100000
+		USA = {
+			treasury = -100000
+		}
+	}
+			ai_chance = {
+			factor = 100
+		}
+	option = {
+		name = event_option_no
+		relation = {
+			who = USA
+			value = -50
+		}
+	}
+			ai_chance = {
+			factor = 0
+		}
+}
+country_event = {
+	id = 20000339 # Burlington Arcade opened in London
+	title = ev_20000339
+	desc = desc_ev_20000339
+	picture = Burlington
+	fire_only_once = yes
+	trigger = {
+		year = 1818
+		owns = 300
+		NOT = {
+			year = 1820
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		300 = {
+			any_pop = {
+				limit = {
+					strata = rich
+				}
+				consciousness = -5
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000340 # Venus de Milo discovered
+	title = ev_20000340
+	desc = desc_ev_20000340
+	picture = Venus
+	fire_only_once = yes
+	trigger = {
+		year = 1819
+		owns = 845
+		NOT = {
+			year = 1821
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 40
+	}
+}
+country_event = {
+	id = 20000341 # Greek war of independence begins
+	title = ev_20000341
+	desc = desc_ev_20000341
+	picture = rebellion
+	fire_only_once = yes
+	trigger = {
+		year = 1820
+		tag = TUR
+		NOT = {
+			exists = GRE
+		}
+		NOT = {
+			year = 1822
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		release_vassal = GRE
+		prestige = -10
+	}
+}
+country_event = {
+	id = 20000342 # Peru declares independence
+	title = ev_20000342
+	desc = desc_ev_20000342
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1820
+		
+		NOT = {
+			year = 1822
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -10
+		2304 = {
+			add_core = PEU
+		}
+		2303 = {
+			add_core = PEU
+		}
+		2302 = {
+			add_core = PEU
+		}
+		2301 = {
+			add_core = PEU
+		}
+		2300 = {
+			add_core = PEU
+		}
+		2299 = {
+			add_core = PEU
+		}
+		2298 = {
+			add_core = PEU
+		}
+		2297 = {
+			add_core = PEU
+		}
+		2296 = {
+			add_core = PEU
+		}
+		2295 = {
+			add_core = PEU
+		}
+		2294 = {
+			add_core = PEU
+		}
+		2293 = {
+			add_core = PEU
+		}
+		2292 = {
+			add_core = PEU
+		}
+		2291 = {
+			add_core = PEU
+		}
+		2290 = {
+			add_core = PEU
+		}
+		2286 = {
+			add_core = PEU
+		}
+		release = PEU
+		war = {
+			target = PEU
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		badboy = -22
+		PEU = {
+			government = presidential_dictatorship
+		}
+		GCO = {
+			2287 = {
+				add_core = PEU
+			}
+			2288 = {
+				add_core = PEU
+			}
+			2289  = {
+				add_core = PEU
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000343 # Central American mini states gain authority from Mexico
+	title = ev_20000343
+	desc = desc_ev_20000343
+	picture = CentralAmerica
+	fire_only_once = yes
+	trigger = {
+		year = 1820
+		tag = MEX
+		NOT = {
+			year = 1822
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		2203 = {
+			add_core = COS
+		}
+		2202 = {
+			add_core = COS
+		}
+		2201 = {
+			add_core = COS
+		}
+		2200 = {
+			add_core = NIC
+		}
+		2199 = {
+			add_core = NIC
+		}
+		2198 = {
+			add_core = NIC
+		}
+		2197 = {
+			add_core = NIC
+		}
+		2196 = {
+			add_core = HON
+		}
+		2195 = {
+			add_core = HON
+		}
+		2194 = {
+			add_core = HON
+		}
+		2193 = {
+			add_core = HON
+		}
+		2192 = {
+			add_core = ELS
+		}
+		2191 = {
+			add_core = ELS
+		}
+		2188 = {
+			add_core = GUA
+		}
+		2187 = {
+			add_core = GUA
+		}
+		2186 = {
+			add_core = GUA
+		}
+		2182 = {
+			add_core = CHP
+			add_core = GUA
+		}
+		2181 = {
+			add_core = CHP
+		}
+	}
+}
+country_event = {
+	id = 20000344 # Panama declares independence, joins Gran Colombia
+	title = ev_20000344
+	desc = desc_ev_20000344
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1820
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1822
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		1723 = {
+			add_core = PNM
+		}
+		2208 = {
+			add_core = PNM
+		}
+		2206 = {
+			add_core = PNM
+		}
+		2205 = {
+			add_core = PNM
+		}
+		2204 = {
+			add_core = PNM
+		}
+		release = PNM
+		GCO = {
+			inherit = PNM
+		}
+	}
+}
+country_event = {
+	id = 20000345 # Dominican Republic declares independence
+	title = ev_20000345
+	desc = desc_ev_20000345
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1820
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1822
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		2214 = {
+			add_core = DOM
+		}
+		release = DOM
+		war = {
+			target = DOM
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		badboy = -22
+	}
+}
+country_event = {
+	id = 20000346 # Haiti invades Dominican Republic
+	title = ev_20000346
+	desc = desc_ev_20000346
+	picture = SlaveArmy
+	fire_only_once = yes
+	trigger = {
+		year = 1821
+		tag = HAI
+		exists = DOM
+		NOT = {
+			badboy = 28
+		}
+		NOT = {
+			year = 1823
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		war = {
+			target = DOM
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000347 # Brazil declares independence with Peter I as emperor
+	title = ev_20000347
+	desc = desc_ev_20000347
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1821
+		OR = {
+			tag = POR
+			tag = IBU
+		}
+		NOT = {
+			year = 1823
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -10
+		2600 = {
+			add_core = BRZ
+		}
+		2550 = {
+			add_core = BRZ
+		}
+		2532 = {
+			add_core = BRZ
+		}
+		2467 = {
+			add_core = BRZ
+		}
+		2466 = {
+			add_core = BRZ
+		}
+		2465 = {
+			add_core = BRZ
+		}
+		2464 = {
+			add_core = BRZ
+		}
+		2463 = {
+			add_core = BRZ
+		}
+		2462 = {
+			add_core = BRZ
+		}
+		2461 = {
+			add_core = BRZ
+		}
+		2460 = {
+			add_core = BRZ
+		}
+		2469 = {
+			add_core = BRZ
+		}
+		2468 = {
+			add_core = BRZ
+		}
+		2467 = {
+			add_core = BRZ
+		}
+		2466 = {
+			add_core = BRZ
+		}
+		2465 = {
+			add_core = BRZ
+		}
+		2464 = {
+			add_core = BRZ
+		}
+		2463 = {
+			add_core = BRZ
+		}
+		2462 = {
+			add_core = BRZ
+		}
+		2461 = {
+			add_core = BRZ
+		}
+		2460 = {
+			add_core = BRZ
+		}
+		2459 = {
+			add_core = BRZ
+		}
+		2458 = {
+			add_core = BRZ
+		}
+		2457 = {
+			add_core = BRZ
+		}
+		2456 = {
+			add_core = BRZ
+		}
+		2455 = {
+			add_core = BRZ
+		}
+		2454 = {
+			add_core = BRZ
+		}
+		2453 = {
+			add_core = BRZ
+		}
+		2452 = {
+			add_core = BRZ
+		}
+		2451 = {
+			add_core = BRZ
+		}
+		2450 = {
+			add_core = BRZ
+		}
+		2449 = {
+			add_core = BRZ
+		}
+		2448 = {
+			add_core = BRZ
+		}
+		2447 = {
+			add_core = BRZ
+		}
+		2446 = {
+			add_core = BRZ
+		}
+		2445 = {
+			add_core = BRZ
+		}
+		2444 = {
+			add_core = BRZ
+		}
+		2443 = {
+			add_core = BRZ
+		}
+		2442 = {
+			add_core = BRZ
+		}
+		2441 = {
+			add_core = BRZ
+		}
+		2440 = {
+			add_core = BRZ
+		}
+		2439 = {
+			add_core = BRZ
+		}
+		2438 = {
+			add_core = BRZ
+		}
+		2437 = {
+			add_core = BRZ
+		}
+		2436 = {
+			add_core = BRZ
+		}
+		2435 = {
+			add_core = BRZ
+		}
+		2434 = {
+			add_core = BRZ
+		}
+		2433 = {
+			add_core = BRZ
+		}
+		2432 = {
+			add_core = BRZ
+		}
+		2431 = {
+			add_core = BRZ
+		}
+		2430 = {
+			add_core = BRZ
+		}
+		2429 = {
+			add_core = BRZ
+		}
+		2428 = {
+			add_core = BRZ
+		}
+		2427 = {
+			add_core = BRZ
+		}
+		2426 = {
+			add_core = BRZ
+		}
+		2425 = {
+			add_core = BRZ
+		}
+		2424 = {
+			add_core = BRZ
+		}
+		2423 = {
+			add_core = BRZ
+		}
+		2422 = {
+			add_core = BRZ
+		}
+		2421 = {
+			add_core = BRZ
+		}
+		2419 = {
+			add_core = BRZ
+		}
+		2418 = {
+			add_core = BRZ
+		}
+		2417 = {
+			add_core = BRZ
+		}
+		2416 = {
+			add_core = BRZ
+		}
+		2415 = {
+			add_core = BRZ
+		}
+		2414 = {
+			add_core = BRZ
+		}
+		2413 = {
+			add_core = BRZ
+		}
+		2412 = {
+			add_core = BRZ
+		}
+		2411 = {
+			add_core = BRZ
+		}
+		2410 = {
+			add_core = BRZ
+		}
+		2408 = {
+			add_core = BRZ
+		}
+		2407 = {
+			add_core = BRZ
+		}
+		2406 = {
+			add_core = BRZ
+		}
+		2405 = {
+			add_core = BRZ
+		}
+		2404 = {
+			add_core = BRZ
+		}
+		2403 = {
+			add_core = BRZ
+		}
+		2402 = {
+			add_core = BRZ
+		}
+		2401 = {
+			add_core = BRZ
+		}
+		release = BRZ
+		2347 = {
+			secede_province = BRZ
+		}
+		2346 = {
+			secede_province = BRZ
+		}
+		2345 = {
+			secede_province = BRZ
+		}
+		2344 = {
+			secede_province = BRZ
+		}
+		war = {
+			target = BRZ
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		badboy = -22
+		BRZ = {
+			government = absolute_monarchy
+		}
+	}
+}
+country_event = {
+	id = 20000349 # Empire of Mexico ends, presidential democracy
+	title = ev_20000349
+	desc = desc_ev_20000349
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1822
+		tag = MEX
+		NOT = {
+			year = 1824
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		government = democracy
+	}
+	option = {
+		name = event_option_no
+		prestige = 10
+		any_pop = {
+			militancy = 4
+		}
+	}
+}
+country_event = {
+	id = 20000350 # USCA declares independence from Mexico and Spain
+	title = ev_20000350
+	desc = desc_ev_20000350
+	picture = treaty
+	fire_only_once = yes
+	trigger = {
+		year = 1822
+		tag = MEX
+		NOT = {
+			year = 1824
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		2203 = {
+			add_core = UCA
+		}
+		2202 = {
+			add_core = UCA
+		}
+		2201 = {
+			add_core = UCA
+		}
+		2200 = {
+			add_core = UCA
+		}
+		2199 = {
+			add_core = UCA
+		}
+		2198 = {
+			add_core = UCA
+		}
+		2197 = {
+			add_core = UCA
+		}
+		2196 = {
+			add_core = UCA
+		}
+		2195 = {
+			add_core = UCA
+		}
+		2194 = {
+			add_core = UCA
+		}
+		2193 = {
+			add_core = UCA
+		}
+		2192 = {
+			add_core = UCA
+		}
+		2191 = {
+			add_core = UCA
+		}
+		2189 = {
+			add_core = UCA
+		}
+		2188 = {
+			add_core = UCA
+		}
+		2187 = {
+			add_core = UCA
+		}
+		2186 = {
+			add_core = UCA
+		}
+		2182 = {
+			add_core = UCA
+		}
+		release = UCA
+		2190 = {
+			add_core = UCA
+			add_core = GUA
+		}
+		UCA = {
+			government = democracy
+		}
+	}
+}
+country_event = {
+	id = 20000351 # BolÌvar named dictator of Peru
+	title = ev_20000351
+	desc = desc_ev_20000351
+	picture = bolivar
+	fire_only_once = yes
+	trigger = {
+		year = 1822
+		tag = PEU
+		NOT = {
+			year = 1824
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000352 # Continent of New Holland renamed to Australia
+	title = ev_20000352
+	desc = desc_ev_20000352
+	picture = Australia 
+	fire_only_once = yes
+	trigger = {
+		year = 1823
+		tag = ENG
+		NOT = {
+			year = 1825
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+	}
+}
+country_event = {
+	id = 20000353 # Uruguay secedes from Brazil
+	title = ev_20000353
+	desc = desc_ev_20000353
+	picture = treaty
+	fire_only_once = yes
+	trigger = {
+		year = 1824
+		tag = BRZ
+		NOT = {
+			year = 1826
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		2347 = {
+			add_core = URU
+			remove_core = BRA
+		}
+		2346 = {
+			add_core = URU
+			remove_core = BRA
+		}
+		2345 = {
+			add_core = URU
+			remove_core = BRA
+		}
+		2344 = {
+			add_core = URU
+			remove_core = BRA
+		}
+		release = URU
+	}
+}
+country_event = {
+	id = 20000355 # First Railway opens in England
+	title = ev_20000355 
+	desc = desc_ev_20000355
+	picture = railroad
+	fire_only_once = yes
+	trigger = {
+		year = 1824
+		owns = 280
+		NOT = {
+			year = 1826
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+		280 = {
+			infrastructure = 1
+		}
+	}
+}
+country_event = {
+	id = 20000357 # Menai Suspension Bridge
+	title = ev_20000357
+	desc = desc_ev_20000357
+	picture = MenaiBridge
+	fire_only_once = yes
+	trigger = {
+		year = 1825
+		tag = ENG
+		NOT = {
+			year = 1827
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		treasury = -25000
+	}
+}
+country_event = {
+	id = 20000358 # Shikshapatri written by Swaminarayan
+	title = ev_20000358
+	desc = desc_ev_20000358
+	picture = Shikshapatri
+	fire_only_once = yes
+	trigger = {
+		year = 1825
+		owns = 1291
+		NOT = {
+			year = 1827
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000359 # Janissaries drilled in European manner
+	title = ev_20000359
+	desc = desc_ev_20000359
+	picture = sultan
+	fire_only_once = yes
+	trigger = {
+		year = 1825
+		tag = TUR
+		NOT = {
+			year = 1827
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+	}
+}
+country_event = {
+	id = 20000360 # Cisplatine War
+	title = ev_20000360
+	desc = desc_ev_20000360
+	picture = CisplatineWar
+	fire_only_once = yes
+	trigger = {
+		year = 1826
+		tag = URU
+		NOT = {
+			year = 1828
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		relation = {
+			who = ARG
+			value = 400
+		}
+		create_alliance = ARG
+		war = {
+			call_ally = yes
+		}
+		war = {
+			target = BRZ
+			attacker_goal = {
+				casus_belli = status_quo
+			}
+			defender_goal = {
+				casus_belli = conquest
+			}
+			call_ally = yes
+		}
+	}
+}
+country_event = {
+	id = 20000361 # Petrarche Poenaru invents the fountain pen
+	title = ev_20000361
+	desc = desc_ev_20000361
+	picture = PetrarchePoenaru
+	fire_only_once = yes
+	trigger = {
+		year = 1826
+		owns = 664
+		NOT = {
+			year = 1828
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000362 # Great fire of Turku
+	title = ev_20000362
+	desc = desc_ev_20000362
+	picture = cityfire
+	fire_only_once = yes
+	trigger = {
+		year = 1826
+		owns = 345
+		NOT = {
+			year = 1828
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		345 = {
+			any_pop = {
+				reduce_pop = 0.25
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000363 # Typhoon in Japan
+	title = ev_20000363
+	desc = desc_ev_20000363
+	picture = storm_coming_field
+	fire_only_once = yes
+	trigger = {
+		year = 1827
+		owns = 1664
+		NOT = {
+			year = 1829
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		1664 = {
+			any_pop = {
+				reduce_pop = 0.9
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000364 # Greece granted autonomy
+	title = ev_20000364
+	desc = desc_ev_20000364
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1828
+		tag = TUR
+		NOT = {
+			exists = GRE
+		}
+		NOT = {
+			year = 1830
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		release = GRE
+		create_vassal = GRE
+	}
+}
+country_event = {
+	id = 20000365 # Webster-Hayne debate
+	title = ev_20000365
+	desc = desc_ev_20000365
+	picture = WebsterHayne
+	fire_only_once = yes
+	trigger = {
+		year = 1829
+		tag = USA
+		NOT = {
+			year = 1831
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+	}
+}
+country_event = {
+	id = 20000366 # Ecuador separates from Gran Colombia
+	title = ev_20000366
+	desc = desc_ev_20000366
+	picture = treaty
+	fire_only_once = yes
+	trigger = {
+		year = 1829
+		tag = GCO
+		NOT = {
+			year = 1831
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		release = ECU
+	}
+}
+country_event = {
+	id = 20000367 # First constitution or Uruguay
+	title = ev_20000367
+	desc = desc_ev_20000367 
+	picture = Constitution
+	fire_only_once = yes
+	trigger = {
+		year = 1829
+		tag = URU
+		NOT = {
+			year = 1831
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 10
+		government = democracy
+	}
+}
+country_event = {
+	id = 20000368 # French Foreign Legion founded
+	title = ev_20000368
+	desc = desc_ev_20000368
+	picture = ForeignLegion
+	fire_only_once = yes
+	trigger = {
+		year = 1830
+		tag = FRA
+		NOT = {
+			year = 1832
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 20
+		plurality = 5
+	}
+}
+country_event = {
+	id = 20000369 # Bosnian revolution
+	title = ev_20000369
+	desc = desc_ev_20000369
+	picture = rebellion
+	fire_only_once = yes
+	trigger = {
+		year = 1830
+		owns = 783
+		NOT = {
+			exists = BOS
+		}
+		NOT = {
+			year = 1832
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		prestige = -10
+		release = BOS
+		war = {
+			target = BOS
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		badboy = -22
+	}
+}
+country_event = {
+	id = 20000370 # Cholera outbreak of London
+	title = ev_20000370
+	desc = desc_ev_20000370
+	picture = disease
+	fire_only_once = yes
+	trigger = {
+		year = 1831
+		owns = 300
+		NOT = {
+			year = 1833
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		300 = {
+			any_pop = {
+				reduce_pop = 0.96
+			}
+		}
+	}
+}
+country_event = {
+	id = 20000371 # Carl von Calusewitz's Vom Kriege
+	title = ev_20000371
+	desc = desc_ev_20000371
+	picture = VomKriege
+	fire_only_once = yes
+	trigger = {
+		year = 1831
+		tag = PRU
+		NOT = {
+			year = 1833
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 30
+	}
+}
+country_event = {
+	id = 20000372 # UK abolishes slavery
+	title = ev_20000372
+	desc = desc_ev_20000372
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1832
+		tag = ENG
+		slavery = yes_slavery
+		NOT = {
+			year = 1834
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		political_reform = no_slavery
+	}
+}
+country_event = {
+	id = 20000373 # Zollverein
+	title = ev_20000373
+	desc = desc_ev_20000373
+	picture = Zollverein
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1833
+		tag = PRU
+		is_greater_power = yes
+		NOT = {
+			year = 1835
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		diplomatic_influence = {
+			who = HEK
+			value = 75
+		}
+		diplomatic_influence = {
+			who = HES
+			value = 75
+		}
+		diplomatic_influence = {
+			who = NAS
+			value = 75
+		}
+		diplomatic_influence = {
+			who = WUR
+			value = 75
+		}
+		diplomatic_influence = {
+			who = BAD
+			value = 75
+		}
+		diplomatic_influence = {
+			who = BAV
+			value = 75
+		}
+		diplomatic_influence = {
+			who = ANH
+			value = 75
+		}
+		diplomatic_influence = {
+			who = MEC
+			value = 75
+		}
+		diplomatic_influence = {
+			who = SAX
+			value = 75
+		}
+		diplomatic_influence = {
+			who = COB
+			value = 75
+		}
+		diplomatic_influence = {
+			who = FRM
+			value = 75
+		}
+		diplomatic_influence = {
+			who = ANS
+			value = 75
+		}
+		diplomatic_influence = {
+			who = HAN
+			value = 75
+		}
+		diplomatic_influence = {
+			who = OLD
+			value = 75
+		}
+	}
+}
+country_event = {
+	id = 20000374 # End of Spanish Inquisition
+	title = ev_20000374
+	desc = desc_ev_20000374
+	picture = vision
+	fire_only_once = yes
+	trigger = {
+		year = 1833
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		NOT = {
+			year = 1835
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		any_pop = {
+			militancy = -2
+		}
+		prestige = 5
+	}
+}
+country_event = {
+	id = 20000375 #	Romanian language banned in Russian Romania
+	title = ev_20000375
+	desc = desc_ev_20000375
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1833
+		tag = RUS
+		NOT = {
+			year = 1835
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		any_pop = {
+			limit = {
+				culture = romanian
+			}
+			militancy = 5
+		}
+	}
+}
+country_event = {
+	id = 20000376 #	Mexican academy of languages
+	title = ev_20000376
+	desc = desc_ev_20000376
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1834
+		tag = MEX
+		NOT = {
+			year = 1836
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+		years_of_research = 0.25
+	}
+}
+country_event = {
+	id = 20000377 #	Railway in Brussels
+	title = ev_20000377
+	desc = desc_ev_20000377
+	picture = railroad
+	fire_only_once = yes
+	trigger = {
+		year = 1834
+		owns = 387
+		NOT = {
+			year = 1836
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		387 = {
+			infrastructure = 1
+		}
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000378 #	First railroad in Germany at Nuremberg
+	title = ev_20000378
+	desc = desc_ev_20000378
+	picture = railroad
+	fire_only_once = yes
+	trigger = {
+		year = 1834
+		owns = 595
+		NOT = {
+			year = 1836
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		595 = {
+			infrastructure = 1
+		}
+		prestige = 10
+	}
+}
+country_event = {
+	id = 20000379 #	Texas declares independence
+	title = ev_20000379
+	desc = desc_ev_20000379
+	picture = colonial_uprising
+	fire_only_once = yes
+	trigger = {
+		year = 1835
+		NOT = {
+			exists = TEX
+		}
+		owns = 133
+		NOT = {
+			year = 1837
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		132 = {
+			add_core = TEX
+		}
+		133 = {
+			add_core = TEX
+		}
+		134 = {
+			add_core = TEX
+		}
+		135 = {
+			add_core = TEX
+		}
+		137 = {
+			add_core = TEX
+		}
+		release = TEX
+		prestige = -5
+		MEX = {
+			136 = {
+				add_core = TEX
+			}
+			138 = {
+				add_core = TEX
+			}
+		}
+	}
+}
+
+country_event = {
+
+id = 20000380 #	Chesapeake-Leopard Affair
+title=ev_20000380
+desc=desc_ev_20000380
+picture = "Leopardchesapeake"
+fire_only_once = yes
+
+	trigger = {
+			TAG = USA
+			year = 1806
+			war = no
+			NOT = {
+			year = 1809
+		}
+		}
+
+	mean_time_to_happen = {
+		months = 3
+		}
+				
+	option = {
+		name = "We are shock!"
+		set_country_flag = Chesapeake-Leopard
+		USA = {
+		prestige = -25
+		any_pop = {
+		dominant_issue = {
+				factor = 0.1
+				value = jingoism
+			}
+		}
+	relation = { who = ENG value = -50 }
+	}
+	ENG = {
+	badboy = 5
+	}
+}
+}
+
+country_event = {
+
+id = 20000381 #	Little Belt Affair
+title=ev_20000381
+desc=desc_ev_20000381
+picture = "LittleBelt"
+fire_only_once = yes
+
+	trigger = {
+			TAG = USA
+			year = 1808
+			war = no
+			has_country_flag = Chesapeake-Leopard
+			NOT = {
+			year = 1811
+		}
+		}
+
+	mean_time_to_happen = {
+		months = 3
+		}
+
+	option = {
+		name = "Take that Brits"
+		set_country_flag = LittleBeltIncident
+		USA = {
+		badboy = 5
+		any_pop = {
+		dominant_issue = {
+				factor = 0.05
+				value = jingoism
+			}
+		}
+	relation = { who = ENG value = -50 }
+	}
+	ENG = {
+		prestige = -25
+	}
+}
+}
+
+country_event = {
+
+id = 20000384 #	War of 1812
+title=ev_20000384
+desc=desc_ev_20000384
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+			tag = USA
+			year = 1811
+			war = no
+			has_country_flag = Chesapeake-Leopard
+			has_country_flag = LittleBeltIncident
+			NOT = {
+			year = 1813
+		}
+		}
+
+	mean_time_to_happen = {
+		months = 1
+				}
+	option = {
+		name = "Let's take Canada!"
+		set_country_flag = war_of_1812
+	war = {
+			target = ENG
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 46
+			}
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 58
+			}
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 250
+				country = USA
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+			defender_goal = {
+				casus_belli = cut_down_to_size
+					}
+		}
+		any_pop = {
+			limit = { 
+			OR = {
+			is_culture_group = british
+			is_culture_group = neo_european_cultures
+			}
+			militancy = 6
+			}
+		}
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "We don't need a military adventure."
+		set_global_flag = no_war_of_1812
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+id = 20000385 #Burn the Capitol
+title=ev_20000385
+desc=desc_ev_20000385
+picture = "BurningofWashington1814"
+
+trigger = {
+	has_country_flag = War_of_1812
+	220 = {
+	controlled_by = ENG
+		}
+		
+	NOT = {
+		has_country_flag = war_of_1812_over
+		}
+		}
+
+		mean_time_to_happen = {
+		days = 1 }
+		
+		option = 
+		{
+		name = "A great victory for Britain!"
+		
+		USA = {
+		war_exhaustion = 10
+		}
+		
+		ENG = {
+		any_pop = {
+	dominant_issue = {
+	value = jingoism
+	factor = 0.75
+		}
+		}
+		}
+		}
+		}
+		
+country_event = {
+
+id = 20000386
+title = ev_20000386 #Baltimore Riots
+desc = ev_20000386
+picture = "Baltimore_riots"
+fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		has_country_flag = war_of_1812
+		owns = 219
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "Just as well."
+		USA_219 = {
+		any_pop = {
+			limit = {
+			is_culture_group = american_cultures
+			}
+			dominant_issue = {
+				value = pacifism
+				factor = 0.8
+			}
+			consciousness = 5
+			militancy = 8
+		}
+		}
+}
+}
+
+country_event = {
+
+id = 20000387
+title = ev_20000387 #Treaty of Gent. USA Wins.
+desc = ev_20000387
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		war_with = ENG
+		has_country_flag = war_of_1812
+		NOT = {
+			has_country_flag = war_of_1812_over
+			}
+
+		ENG = {
+			war_exhaustion = 50
+			}
+
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "A great victory for America!"
+		set_country_flag = war_of_1812_over
+		prestige = 20
+		
+		end_war = ENG
+
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = USA
+					region = ENG_46
+					region = ENG_58
+					province_id = 78
+				}
+			}
+			secede_province = USA
+		}
+		}
+		
+		option = {
+		name = "Free Canada."
+		prestige = 20
+		
+		end_war = ENG
+		
+			any_owned = {
+			limit = {
+				OR = {
+					is_core = CAN
+				}
+			}
+			secede_province = CAN
+		}
+		
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = USA
+					province_id = 78
+				}
+			}
+			secede_province = USA
+		}
+		
+		relation = {
+			who = FROM
+			value = 200
+		}
+		diplomatic_influence = {
+			who = FROM
+			value = 400
+		}
+	}
+}
+
+country_event = {
+
+id = 20000388
+title = ev_20000388 #Treaty of Gent. Britain Wins.
+desc = ev_20000388
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		war_with = ENG
+		has_country_flag = war_of_1812
+		war_exhaustion = 50
+		NOT = {
+			has_country_flag = war_of_1812_over
+			}
+
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "God save the King!"
+		set_country_flag = war_of_1812_over
+		badboy = 5
+
+		end_war = ENG
+		
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = CAN
+					is_core = IRO
+					province_id = 158
+					province_id = 249
+				}
+			}
+			secede_province = ENG
+		}
+		}
+}
+
+country_event = {
+
+id = 21000300
+title = ev_21000300 #First Barbaryan War
+desc = ev_21000300
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		year = 1800
+		
+		NOT = {
+			year = 1802
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "We refuse to pay high tributes to the Barbaryans!"
+		set_country_flag = first_barbaryan_war
+	war = {
+			target = MOR			
+			create_alliance = SWE
+			attacker_goal = {
+				casus_belli = humiliate
+			}		
+			defender_goal = {
+				casus_belli = repay_debts
+					}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "We don't need a military adventure."
+		set_global_flag = no_barbaryan_war
+		prestige_factor = -0.2
+		
+		treasury = -660000
+		
+		MOR = {
+		treasury = 660000
+		}
+		
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 21000301
+title = ev_21000301 #Russo-Persian War (1803ñ1813)
+desc = ev_21000301
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = RUS
+		year = 1803
+		
+		NOT = {
+			year = 1805
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Let's conquest Georgia and Azerbaijan!"
+		set_country_flag = first_russo-persian_war
+	war = {
+			target = PER
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 1106
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		
+		war = {
+			target = GEO
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "We don't need a military adventure."
+		set_country_flag = no_first_russian_persian_war
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 21000302
+title = ev_21000302 #Egyptian Revolution (1804ñ1813)
+desc = ev_21000302
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		year = 1805
+		
+		NOT = {
+			year = 1807
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Egypt is part of our Empire!"
+		set_country_flag = egyptian_revolution
+		
+		release = EGY
+		
+	war = {
+			target = EGY
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+				
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "Let them be."
+		set_global_flag = no_egyptian_revolution
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 21000303
+title = ev_21000303 #Russo-Turkish War (1806-1812)
+desc = ev_21000303
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = RUS
+		year = 1805
+		
+		NOT = {
+			year = 1807
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Let's take Moldavia!"
+		set_country_flag = russo-turkish_war
+		
+	war = {
+			target = TUR
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 676
+			}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+				
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "Let them be."
+		set_global_flag = no_russo-turkish_war
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 20000304
+title=ev_20000304 #British Invasions of Rio de la Plata
+desc=desc_ev_20000304
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+			tag = ENG
+			year = 1805
+			NOT = {
+			year = 1807
+		}
+		}
+
+	mean_time_to_happen = {
+		months = 1
+				}
+	option = {
+		name = "Let's take Rio de la Plata!"
+		set_country_flag = british_invasions_plata
+	war = {
+			target = SPA
+		
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 2339
+			}
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 2344
+			}
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 2348
+			}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "We don't need a military adventure."
+		set_global_flag = no_british_invasions_plata
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 21000305
+title = ev_21000305 #EgyptianñWahhabi War
+desc = ev_21000305
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = EGY
+		year = 1811
+		
+		NOT = {
+			year = 1813
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Crush the Saudis!"
+		set_country_flag = egyptian-wahhabi_war
+		
+		release = EGY
+		
+	war = {
+			target = NEJ
+			attacker_goal = {
+				casus_belli = humiliate
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+				
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "We do not need conflicts this time."
+		set_global_flag = no_egyptian-wahhabi_war
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 21000306
+title = ev_21000306 #Second Serbian Uprising (1815-1813)
+desc = ev_21000306
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		year = 1815
+		
+		NOT = {
+			year = 1815
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Serbia is part of our Empire!"
+		set_country_flag = first_sebian_uprising
+		
+		794 = {
+		secede_province = SER
+		}
+		
+		795 = {
+		secede_province = SER
+		}
+		
+		796 = {
+		secede_province = SER
+		}
+		
+		797 = {
+		secede_province = SER
+		}
+		
+	war = {
+			target = SER
+			create_alliance = FRA
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+					}
+					
+			SER = {
+		create_alliance = AUS
+		create_alliance = RUS
+		}
+		}
+		
+		any_pop = {
+			limit = { 
+			culture = serbian
+			militancy = 8
+			}
+		
+			ai_chance = {
+			factor = 100
+		}
+	}
+	}
+		option = {
+		name = "Let them be."
+		set_global_flag = no_second_serbian_uprising
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		794 = {
+		secede_province = SER
+		}
+		
+		795 = {
+		secede_province = SER
+		}
+		
+		796 = {
+		secede_province = SER
+		}
+		
+		797 = {
+		secede_province = SER
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 21000307
+title = ev_21000307 #Second Barbaryan War
+desc = ev_21000307
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		year = 1815
+		has_country_flag = first_barbaryan_war
+		
+		NOT = {
+			year = 1817
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Another war against the Barbaryans"
+		set_country_flag = egyptian-wahhabi_war
+		
+	war = {
+			target = TUR
+			create_alliance = NET
+			create_alliance = ENG
+			attacker_goal = {
+				casus_belli = humiliate
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+				
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "We do not need a conflict this time."
+		set_global_flag = no_second_barbaryan_war
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 21000308
+title = ev_21000308 #Colonization of Liberia (1820)
+desc = ev_21000308
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		year = 1819
+		
+		NOT = {
+			year = 1821
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "I think it is a good idea that free slaves return to Africa"
+		
+		any_pop = {
+			limit = { has_pop_culture = afro_american }
+			consciousness = 5
+		}
+				
+		1887 = {
+		add_core = LIB
+		secede_province = USA
+		}
+		
+		1888 = {
+		add_core = LIB
+		secede_province = USA
+		}
+		
+		release = LIB
+		
+		USA = {
+			create_vassal = LIB
+		}
+		
+		prestige= 10
+		
+		}
+		}
+
+
+country_event = {
+		
+id = 21000309
+title = ev_21000309 #Spanish Reconquista of Mexico (1821ñ1829)
+desc = ev_21000309
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = SPA
+			tag = IBU
+		}
+		year = 1820
+		
+		NOT = {
+			year = 1822
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Let's reconquest Mexico!"
+		set_country_flag = Spanish_reconquista_MX
+	war = {
+			target = MEX
+			attacker_goal = {
+				casus_belli = conquest
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "We don't need a military adventure."
+		set_country_flag = no_spanish-mexican_war
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 21000310
+title = ev_21000310 #Russo-Persian War (1826ñ1828)
+desc = ev_21000310
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = RUS
+		year = 1825
+		
+		NOT = {
+			year = 1827
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Let's conquest Armenia!"
+		set_country_flag = second_russo-persian_war
+	war = {
+			target = PER
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 1098
+			}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "We don't need a military adventure."
+		set_global_flag = no_second_russian-persian_war
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 21000311
+title = ev_21000311 #Belgian Revolution (1830)
+desc = ev_21000311
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = NET
+		year = 1829
+		
+		NOT = {
+			year = 1832
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Belgium is part of our Kingdom!"
+		set_country_flag = belgian_revolution
+		
+		release = BEL
+		
+	war = {
+			target = BEL
+			attacker_goal = {
+				casus_belli = conquest
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		
+			ai_chance = {
+			factor = 100
+		}
+		
+		any_pop = {
+			limit = { 
+			is_culture_group = wallonian
+			militancy = 8
+			}
+		}
+	}
+		option = {
+		name = "Let them be."
+		set_global_flag = no_belgian_revolution
+		prestige_factor = -0.2
+		
+		release = BEL
+		
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 21000312
+title = ev_21000312 #November Uprising (1830)
+desc = ev_21000312
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = RUS
+		year = 1829
+		
+		NOT = {
+			year = 1832
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Poland is part of our Empire!"
+		set_country_flag = November_uprising
+		add_country_modifier = {
+			name = nationalist_agitation
+			duration = 365
+		}
+		
+		any_pop = {
+			limit = { 
+			is_culture_group = polish
+			militancy = 10
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+id = 21000313
+title = ev_21000313 #Egyptian-Ottoman War (1831ñ33)
+desc = ev_21000313
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = EGY
+		exists = EGY
+		year = 1830
+		
+		NOT = {
+			year = 1832
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Let's take Greater Syria!"
+		set_country_flag = first_egyptian-ottoman_war
+	war = {
+			target = TUR			
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 902
+			}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		any_pop = {
+			limit = {
+			OR = {
+			is_culture_group = turkish
+			is_culture_group = misri
+			}
+			militancy = 8
+			}
+		}
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "We don't need a military adventure."
+		set_global_flag = no_egyptian-ottoman War
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 21000314
+title = ev_21000314 #French Conquest of Algeria (1830ñ1847)
+desc = ev_21000314
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		year = 1830
+		
+		NOT = {
+			year = 1832
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Let's conquest Algeria!"
+		set_country_flag = french_conquest_algeria
+	war = {
+			target = TUR
+			attacker_goal = {
+				casus_belli = acquire_substate_region
+				state_province_id = 1700
+			}
+			attacker_goal = {
+				casus_belli = acquire_substate_region
+				state_province_id = 1701
+			}
+			attacker_goal = {
+				casus_belli = acquire_substate_region
+				state_province_id = 1704
+			}
+			attacker_goal = {
+				casus_belli = acquire_substate_region
+				state_province_id = 1709
+			}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "We don't need a military adventure."
+		set_global_flag = no_french_conquest_algeria
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Napoleon loses
+country_event = {
+        id = 402000
+        title = "Defeat!"
+        desc = "Despite our most valiant efforts we have been defeated by the coalition led by the British."
+        picture = "deadnapoleon"
+        is_triggered_only = yes
+
+
+option = {
+name = "Sacre Bleu!"
+        government = prussian_constitutionalism
+        leave_alliance = NET
+        leave_alliance = SPA
+        any_owned = {
+                limit = {
+                        is_core = NET
+                                }
+                secede_province = NET
+                                }
+        any_owned = {
+                limit = {
+                        is_core = GER
+                                }
+                secede_province = PRU
+                        }
+        any_owned = {
+                limit = {
+                        is_core = SAR
+                                }
+                secede_province = SAR
+                        }
+                727 = {
+                        secede_province = AUS
+                        }
+                728 = {
+                        secede_province = AUS
+                        }
+                739 = {
+                        secede_province = AUS
+                        }
+                AUS = {
+                        inherit = ITA
+                        }
+                SIC = {
+                        all_core = { 
+                                remove_core = NAP
+                                }
+                        }
+                        # Kingdom of Naples will disappear after the Napoelonic war to prevent Napolitan nationalism
+
+
+                release = LUX
+        }
+
+
+}

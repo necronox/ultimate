@@ -1,0 +1,17 @@
+
+
+1903.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+
+
+trade_goods = cattle
+life_rating = 15
+add_core = BEN
+1960.1.1 = {
+	owner = BEN
+	controller = BEN
+	colonial = 0
+		}

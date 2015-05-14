@@ -1,0 +1,14 @@
+trade_goods = fish
+life_rating = 15
+terrain = plains
+
+1888.1.1 = {
+owner = ENG
+controller = ENG
+
+}
+
+1900.1.1 = {
+owner = NZL
+controller = NZL
+}

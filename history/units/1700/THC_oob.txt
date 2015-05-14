@@ -1,0 +1,36 @@
+army = {
+	name = "1st Army"
+	location = 223
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Dragoon"
+		type = dragoon
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+	}
+		}

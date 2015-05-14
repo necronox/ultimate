@@ -1,0 +1,24 @@
+owner = ANG
+controller = ANG
+1707.1.1 = {
+owner = ENG
+controller = ENG
+		}
+trade_goods = sugar
+life_rating = 35
+colonial = 2
+#There will be blood
+1882.1.1 = {
+	trade_goods = oil
+		}
+1946.1.1 = {
+add_core = TTB
+		}
+1961.8.31 = {
+owner = TTB
+controller = TTB
+		}
+2015.1.1 = {
+owner = ANG
+controller = ANG
+		}

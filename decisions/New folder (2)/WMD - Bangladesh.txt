@@ -1,0 +1,53 @@
+
+
+political_decisions = {
+
+	nuke_Bangladesh = {
+	picture = nuke_strikepic
+		potential = {	
+			war_with = BGL
+			nuclear_weapons = 1	
+
+
+
+				}
+		effect = {
+			badboy = 25
+			prestige = -25
+nuclear_weapons = -1
+
+			BGL = {
+				country_event = { id=666666 days=2 }
+				}
+
+				}
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				factor = 0.40
+				war_exhaustion = 25
+				}
+
+			modifier = {
+			factor = 0
+			badboy = 0.75
+				}
+			modifier = {
+				factor = 0
+				BGL = {
+				brigades_compare = 2
+					}
+					}
+			modifier = {
+			factor = -0.20
+			num_of_allies = 3
+				}
+			modifier = {
+			factor = 0.40
+			national_provinces_occupied = 40
+				}
+			}
+		}
+
+
+}

@@ -1,0 +1,17 @@
+owner = SPA
+controller = SPA
+colonial = 1
+1811.1.1 = {
+owner = MEX
+
+colonial = 0
+controller = MEX
+add_core = MEX
+		}
+
+1836.1.1 = {
+add_core = RGR
+		}
+		
+trade_goods = dye
+life_rating = 35

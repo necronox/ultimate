@@ -1,0 +1,14 @@
+owner = SPA
+controller = SPA
+add_core = BSQ
+add_core = SPA
+trade_goods = fruit
+life_rating = 35
+
+
+1861.1.1 = { railroad = 3 }
+#Basque ISA Break Off from Spain
+2018.1.1 = {
+	owner = BSQ
+	controller = BSQ
+		}

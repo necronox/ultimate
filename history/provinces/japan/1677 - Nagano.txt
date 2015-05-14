@@ -1,0 +1,20 @@
+owner = TKG
+controller = TKG
+add_core = TKG
+trade_goods = fish
+life_rating = 35
+
+
+1868.1.1 = {
+owner = JAP
+controller = JAP
+add_core = JAP
+}
+
+1930.1.1 = {
+	state_building = {
+		level = 2
+		building = automobile_factory
+		upgrade = yes
+				}
+		}

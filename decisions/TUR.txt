@@ -1,0 +1,62 @@
+political_decisions = {
+	tanzimat_reforms = {
+		potential = {
+			tag = TUR
+			NOT = {
+				has_country_flag = tanzimat_reforms_enacted
+			}
+			government = absolute_monarchy
+		}
+		
+		allow = {
+			average_militancy = 3
+			average_consciousness = 4
+		}
+		
+		effect = {
+			any_pop = {
+				limit = {
+					NOT = {
+						has_pop_culture = turkish
+					}
+				}
+				militancy = -3
+				consciousness = 1
+			}
+			set_country_flag = tanzimat_reforms_enacted
+		}
+	}
+	
+	kanun_i_esasi = {
+		potential = {
+			tag = TUR
+			NOT = {
+				has_country_flag = kanun_i_esasi_here
+			}
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			any_pop = {
+				militancy = -3
+				consciousness = 2
+			}
+			prestige = 5
+			set_country_flag = kanun_i_esasi_here
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					average_militancy = 1
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,248 @@
+
+army = {
+	name = "1st Army"
+	location = 293
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+		}
+
+navy = {
+	name = "1st Fleet"
+	location = 293
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+		}
+
+navy = {
+	name = "Royal Navy"
+	location = 2229
+	leader = {
+		name = "Sir Walter Raleigh"
+		type = sea
+		date="1604.1.1"
+		prestige = 0.25
+		personality = resourceful 
+		background = cartographer 
+		picture="sirwalterraleigh_generalpic"
+	}
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+		}

@@ -1,0 +1,27 @@
+owner = SAV
+controller = SAV
+add_core = SAV
+add_core = HRE
+add_core = ITA
+trade_goods = grain
+life_rating = 34
+1760.1.1 = {
+	owner = SAR
+controller = SAR
+add_core = SAR
+		}
+1800.1.1 = {
+	owner = FRA
+	controller = FRA
+		}
+1820.1.1 = {
+	owner = SAR
+	controller = SAR
+		}
+1861.1.1 = {
+	remove_core = ITA
+	remove_core = SAR
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+}

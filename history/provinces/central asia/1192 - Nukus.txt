@@ -1,0 +1,26 @@
+owner = KHI
+controller = KHI
+add_core = KHI
+1880.1.1 = {
+owner = RUS
+controller = RUS
+		}
+trade_goods = opium
+life_rating = 35
+
+1917.1.1 = {
+	add_core = UZB
+		}
+1992.1.1 = {
+	owner = UZB
+	controller = UZB
+	colonial = 0
+		}
+
+1936.1.1 = {
+	add_core = RUS
+		}
+
+1992.1.1 = {
+	remove_core = RUS
+		}

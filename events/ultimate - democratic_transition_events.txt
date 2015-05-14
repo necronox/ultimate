@@ -1,0 +1,719 @@
+country_event = {
+	id = 19950228
+	title = demo_trans_ev01
+	desc = demo_trans_ev01_desc
+	picture = administration
+	
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+	option = {
+		name = demo_trans_ev01_opt1
+		random_list = {
+			11 = {
+				country_event = {
+					id = 19950229
+					days = 7
+				}
+			}
+			9 = {
+				country_event = {
+					id = 19950230
+					days = 7
+				}
+			}
+		}
+	}
+	option = {
+		name = demo_trans_ev01_opt2
+		country_event = {
+			id = 19950233
+			days = 7
+		}
+	}		
+}
+country_event = {
+	id = 19950229
+	title = demo_trans_ev02a
+	desc = demo_trans_ev02a_desc
+	picture = monarchy
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	option = {
+		name = demo_trans_ev02a_opt
+		set_country_flag = king_said_yes
+	}
+}
+country_event = {
+	id = 19950230
+	title = demo_trans_ev02b
+	desc = demo_trans_ev02b_desc
+	picture = monarchy
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	option = {
+		name = demo_trans_ev02b_opt
+		set_country_flag = king_said_no
+	}
+}
+country_event = {
+	id = 19950231
+	title = demo_trans_ev03a
+	desc = demo_trans_ev03a_desc
+	picture = demonstration
+
+	trigger = {
+		has_country_flag = king_said_yes
+		average_militancy = 5
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = demo_trans_ev03a_opt1
+		add_country_modifier = {
+			name = demo_vandalism
+			duration = -1
+		}
+		set_country_flag = demo_proceed
+		clr_country_flag = king_said_yes
+	}
+	option = {
+		name = demo_trans_ev03a_opt2
+		any_pop = {
+			limit = {
+				militancy = 5
+			}
+			militancy = -3
+		}
+		add_country_modifier = {
+			name = demo_cooldown
+			duration = 1825
+		}
+		clr_country_flag = king_said_yes
+		clr_country_flag = demo_started
+		prestige_factor= -0.25
+		}
+}
+country_event = {
+	id = 19950232
+	title = demo_trans_ev03b
+	desc = demo_trans_ev03b_desc
+	picture = administration
+
+	trigger = {
+		has_country_flag = king_said_yes
+		NOT = {
+			average_militancy = 5
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = demo_trans_ev03b_opt
+		set_country_flag = demo_proceed
+		clr_country_flag = king_said_yes
+	}
+}
+country_event = {
+	id = 19950233
+	title = demo_trans_ev03c
+	desc = demo_trans_ev03c_desc
+	picture = administration
+	trigger = {
+		has_country_flag = king_said_no
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = demo_trans_ev03c_opt1
+		any_pop = {
+			limit = {
+				militancy = 5
+			}
+			militancy = -3
+		}
+		prestige_factor = -0.25
+		add_country_modifier = {
+			name = demo_cooldown
+			duration = 1825
+		}
+		clr_country_flag = king_said_no
+		clr_country_flag = demo_started
+	}
+	option = {
+		name = demo_trans_ev03c_opt2
+		random_country = {
+			limit = {
+				OR = {
+					AND = {
+						is_greater_power = yes
+						OR = {
+							government = hms_government
+							government = prussian_constitutionalism
+							government = absolute_monarchy
+						}
+					}
+					AND = {
+						brigades_compare = 1.5
+						rank = 20
+						OR = {
+							government = hms_government
+							government = prussian_constitutionalism
+							government = absolute_monarchy
+						}
+					}
+				}
+			}
+			war = {
+				target = FROM
+				attacker_goal = {
+					casus_belli = cut_down_to_size
+				}
+				defender_goal = {
+					casus_belli = status_quo
+				}
+			}
+		}	
+		set_country_flag = demo_war_for_freedom
+		clr_country_flag = king_said_no
+	}
+}
+country_event = {
+	id = 19950301
+	title = demo_trans_event_04a
+	desc = demo_trans_event_04a_desc
+	major = yes
+	trigger = {
+		has_country_flag = demo_proceed
+		NOT = {
+			has_country_modifier = demo_vandalism
+		}
+	}
+	option = {
+		name = demo_trans_ev04a_opt
+		government = democracy
+		political_reform = no_slavery
+		political_reform = universal_voting
+		political_reform = population_equal_weight
+		political_reform = proportional_representation
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = all_trade_unions
+		political_reform = secret_ballots
+		prestige_factor = 0.25
+		clr_country_flag = demo_proceed
+		clr_country_flag = demo_started
+	}
+}
+country_event = {
+	id = 19950302
+	title = demo_trans_event_04b
+	desc = demo_trans_event_04b_desc
+	picture = demonstration
+	
+	trigger = {
+		has_country_flag = demo_proceed
+		has_country_modifier = demo_vandalism
+	}
+	option = {
+		name = demo_trans_ev04b_opt1
+		set_country_flag = shot_into_crowd
+		clr_country_flag = demo_proceed
+	}
+	option = {
+		name = demo_trans_ev04b_opt2
+		set_country_flag = paid_crowd
+		clr_country_flag = demo_proceed
+	}
+}
+country_event = {
+	id = 19950401
+	title = demo_trans_event_05
+	desc = demo_trans_event_05_desc
+	picture = riot
+
+	trigger = {
+		has_country_flag = shot_into_crowd
+	}
+	option = {
+		name = demo_trans_event_05_opt
+		any_pop = {
+			militancy = 10
+		}
+		clr_country_flag = shot_into_crowd
+		prestige_factor	= -0.25
+		add_country_modifier = {
+			name = demo_cooldown
+			duration = 1825
+		}
+		clr_country_flag = demo_started
+		badboy = 5
+	}
+}
+country_event = {
+	id = 19950501
+	title = demo_trans_event_06a
+	desc = demo_trans_event_06a_desc
+	picture = riot
+	
+	trigger = {
+		has_country_flag = paid_crowd
+		average_consciousness = 5
+	}
+	option = {
+		name = demo_trans_event_06a_opt
+		money = -50000
+		any_pop = {
+			militancy = 10
+		}
+		clr_country_flag = paid_crowd
+		prestige_factor = -0.15
+		add_country_modifier = {
+			name = demo_cooldown
+			duration = 1825
+		}
+		clr_country_flag = demo_started
+	}
+}
+country_event = {
+	id = 19950502
+	title = demo_trans_event_06b
+	desc = demo_trans_event_06b_desc
+	picture = administration
+	
+	trigger = {
+		has_country_flag = paid_crowd
+		NOT = {
+			average_consciousness = 5
+		}
+	}
+	option = {
+			name = demo_trans_event_06b_opt
+			any_pop = {
+				militancy = -5
+			}
+			clr_country_flag = paid_crowd
+			remove_country_modifier = demo_vandalism
+			country_event = 19950301
+	}
+}
+country_event = {
+	id = 19950601
+	title = demo_trans_event_07
+	desc = demo_trans_event_07_desc
+	picture = propaganda
+	
+	trigger = {
+		has_country_flag = demo_war_for_freedom
+	}
+	option = {
+		name = demo_trans_event_07_opt
+		clr_country_flag = demo_war_for_freedom
+		add_country_modifier = {
+			name = demo_war_freedom_mobilization
+			duration = -1
+		}
+		set_country_flag = revolutionary_war
+	}
+}
+country_event = {
+	id = 19950602
+	title = demo_trans_event_08
+	desc = demo_trans_event_08_desc
+	picture = administration
+	
+	trigger = {
+		has_country_flag = revolutionary_war
+		war = no
+		has_recently_lost_war = no
+	}
+	option = {
+		name = demo_trans_event_08_opt
+		clr_country_flag = revoluionary_war
+		remove_country_modifier = demo_war_freedom_mobilization
+		country_event = 19950301
+		clr_country_flag = demo_started
+		clr_country_flag = revolutionary_war
+	}
+}
+country_event = {
+	id = 19950603
+	title = demo_trans_event_09
+	desc = demo_trans_event_09_desc
+	picture = monarchy
+	
+	trigger = {
+		has_country_flag = revolutionary_war
+		war = no
+		has_recently_lost_war = yes
+	}
+	option = {
+		name = demo_trans_event_09_opt
+		clr_country_flag = revoluionary_war
+		remove_country_modifier = demo_war_freedom_mobilization
+		government = absolute_monarchy
+		political_reform = none_voting
+		political_reform = appointed
+		political_reform = first_past_the_post
+		political_reform = no_meeting
+		political_reform = censored_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+		clr_country_flag = demo_started
+		clr_country_flag = revolutionary_war
+	}
+}
+country_event = {
+	id = 19900101
+	title = king_trans_event_01
+	desc = king_trans_event_01_desc
+	picture = administration
+	
+	is_triggered_only = yes
+	option = {
+		name = king_trans_event_rich
+		set_country_flag = select_rich_king
+	}
+	option = {
+		name = king_trans_event_military
+		set_country_flag = select_war_king
+	}
+	option = {
+		name = king_trans_event_people
+		set_country_flag = select_peoples_king
+	}
+}
+country_event = {
+	id = 19900102
+	title = king_trans_event_rich_low
+	desc = king_trans_event_rich_low_desc
+	trigger = {
+		has_country_flag = select_rich_king
+		NOT = {
+			militancy = 5
+		}
+	}
+	mean_time_to_happen = {
+		days = 16
+	}
+	option = {
+		name = king_trans_event_continue
+		clr_country_flag = select_rich_king
+		set_country_flag = continue_rich_king_low
+	}
+}
+country_event = {
+	id = 19900103
+	title = king_trans_event_rich_high
+	desc = king_trans_event_rich_high_desc
+	trigger = {
+		has_country_flag = select_rich_king
+		militancy = 5
+	}
+	mean_time_to_happen = {
+		days = 16
+	}
+	option = {
+		name = king_trans_event_continue
+		clr_country_flag = select_rich_king
+		random_list = {
+			1 = {
+				country_event = 19900201
+			}
+			1 = {
+				country_event = 19900202
+			}
+		}
+	}
+	option = {
+		name = king_trans_event_stop
+		clr_country_flag = select_rich_king
+		clr_country_flag = king_started
+		add_country_modifier = {
+			name = king_cooldown
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = 19900201
+	title = king_trans_event_rich_high_continue_1
+	desc = king_trans_event_rich_high_continue_1_desc
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = king_trans_event_continue
+		set_country_flag = continue_rich_king_low
+		any_pop = {
+			limit = {
+				strata = poor
+			}
+			militancy = 5
+		}
+	}
+}
+country_event = {
+	id = 19900202
+	title = king_trans_event_rich_high_continue_2
+	desc = king_trans_event_rich_high_continue_2_desc
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = king_trans_event_blast
+		government = bourgeois_dictatorship
+		political_reform = none_voting
+		political_reform = appointed
+		political_reform = first_past_the_post
+		political_reform = no_meeting
+		political_reform = censored_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+		clr_country_flag = king_started
+	}
+}
+country_event = {
+	id = 19900301
+	title = king_trans_event_rich_done
+	desc = king_trans_event_rich_done_desc
+	major = yes
+	trigger = {
+		has_country_flag = continue_rich_king_low
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = king_trans_event_great
+		government = hms_government
+		set_country_flag = rich_king
+		clr_country_flag = continue_rich_king_low
+		clr_country_flag = king_started
+	}
+}
+country_event = {
+	id = 19901102
+	title = king_trans_event_war_low
+	desc = king_trans_event_war_low_desc
+	trigger = {
+		has_country_flag = select_war_king
+		NOT = {
+			militancy = 5
+		}
+	}
+	mean_time_to_happen = {
+		days = 16
+	}
+	option = {
+		name = king_trans_event_continue
+		clr_country_flag = select_war_king
+		set_country_flag = continue_war_king_low
+	}
+}
+country_event = {
+	id = 19901103
+	title = king_trans_event_war_high
+	desc = king_trans_event_war_high_desc
+	trigger = {
+		has_country_flag = select_war_king
+		militancy = 5
+	}
+	mean_time_to_happen = {
+		days = 16
+	}
+	option = {
+		name = king_trans_event_continue
+		clr_country_flag = select_war_king
+		random_list = {
+			1 = {
+				country_event = 19901201
+			}
+			1 = {
+				country_event = 19901202
+			}
+		}
+	}
+	option = {
+		name = king_trans_event_stop
+		clr_country_flag = select_war_king
+		clr_country_flag = king_started
+		add_country_modifier = {
+			name = king_cooldown
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = 19901201
+	title = king_trans_event_war_high_continue_1
+	desc = king_trans_event_war_high_continue_1_desc
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = king_trans_event_continue
+		set_country_flag = continue_war_king_low
+		any_pop = {
+			militancy = 3
+		}
+	}
+}
+country_event = {
+	id = 19901202
+	title = king_trans_event_war_continue_2
+	desc = king_trans_event_war_continue_2_desc
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = king_trans_event_blast
+		government = presidential_dictatorship
+		political_reform = none_voting
+		political_reform = appointed
+		political_reform = first_past_the_post
+		political_reform = no_meeting
+		political_reform = censored_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+		clr_country_flag = king_started
+	}
+}
+country_event = {
+	id = 19901301
+	title = king_trans_event_war_done
+	desc = king_trans_event_war_done_desc
+	major = yes
+	trigger = {
+		has_country_flag = continue_war_king_low
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = king_trans_event_great
+		government = hms_government
+		set_country_flag = war_king
+		clr_country_flag = continue_war_king_low
+		clr_country_flag = king_started
+	}
+}
+country_event = {
+	id = 19902102
+	title = king_trans_event_peoples_low
+	desc = king_trans_event_peoples_low_desc
+	trigger = {
+		has_country_flag = select_peoples_king
+		NOT = {
+			militancy = 5
+		}
+	}
+	mean_time_to_happen = {
+		days = 16
+	}
+	option = {
+		name = king_trans_event_continue
+		clr_country_flag = select_peoples_king
+		set_country_flag = continue_peoples_king_low
+	}
+}
+country_event = {
+	id = 19902103
+	title = king_trans_event_peoples_high
+	desc = king_trans_event_peoples_high_desc
+	trigger = {
+		has_country_flag = select_peoples_king
+		militancy = 5
+	}
+	mean_time_to_happen = {
+		days = 16
+	}
+	option = {
+		name = king_trans_event_continue
+		clr_country_flag = select_peoples_king
+		random_list = {
+			1 = {
+				country_event = 19902201
+			}
+			1 = {
+				country_event = 19902202
+			}
+		}
+	}
+	option = {
+		name = king_trans_event_stop
+		clr_country_flag = select_peoples_king
+		clr_country_flag = king_started
+		add_country_modifier = {
+			name = king_cooldown
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = 19902201
+	title = king_trans_event_peoples_high_continue_1
+	desc = king_trans_event_peoples_high_continue_1_desc
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = king_trans_event_continue
+		set_country_flag = continue_peoples_king_low
+		any_pop = {
+			limit = {
+				strata = rich
+			}
+			militancy = 5
+		}
+	}
+}
+country_event = {
+	id = 19902202
+	title = king_trans_event_peoples_continue_2
+	desc = king_trans_event_peoples_continue_2_desc
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = king_trans_event_blast
+		government = presidential_dictatorship
+		political_reform = none_voting
+		political_reform = appointed
+		political_reform = first_past_the_post
+		political_reform = no_meeting
+		political_reform = censored_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+		clr_country_flag = king_started
+	}
+}
+country_event = {
+	id = 19902301
+	title = king_trans_event_peoples_done
+	desc = king_trans_event_peoples_done_desc
+	major = yes
+	trigger = {
+		has_country_flag = continue_peoples_king_low
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = king_trans_event_great
+		government = hms_government
+		set_country_flag = peoples_king
+		clr_country_flag = continue_peoples_king_low
+		clr_country_flag = king_started
+	}
+}

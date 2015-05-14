@@ -1,0 +1,19 @@
+trade_goods = fruit
+life_rating = 15
+#There will be blood
+1881.1.1 = {
+	trade_goods = oil
+		}
+
+1903.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+
+add_core = GUI
+1960.1.1 = {
+	owner = GUI
+	controller = GUI
+	colonial = 0
+		}

@@ -1,0 +1,76 @@
+name = "War of German Agression"
+
+1939.9.1 = {
+	add_attacker = GER
+	add_attacker = ITA
+	add_attacker = SLV
+	add_attacker = JAP
+	add_attacker = SXI
+	add_attacker = MCK
+	add_defender = ENG
+	add_defender = CAN
+	add_defender = NZL
+	add_defender = SAF
+	add_defender = AST
+	add_defender = FRA
+	add_defender = POL
+	add_defender = NET
+	add_defender = BEL
+	add_defender = LUX
+	add_defender = USA
+
+
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = ww2_axis_cb
+		actor = GER
+		receiver = ENG
+	}
+	war_goal = {
+		casus_belli = conquest
+		actor = GER
+		receiver = LUX
+	}
+	war_goal = {
+		casus_belli = conquest
+		actor = GER
+		receiver = NET
+	}
+	war_goal = {
+		casus_belli = conquest
+		actor = GER
+		receiver = BEL
+	}
+	war_goal = {
+		casus_belli = ww2_allies_cb
+		actor = ENG
+		receiver = GER
+	}
+
+}
+
+1945.4.1 = {
+	rem_attacker = GER
+	rem_attacker = ITA
+	rem_attacker = SLV
+	rem_attacker = JAP
+	rem_attacker = SXI
+	rem_attacker = MCK
+	rem_defender = ENG
+	rem_defender = FRA
+	rem_defender = POL
+	rem_defender = CAN
+	rem_defender = NZL
+	rem_defender = SAF
+	rem_defender = AST
+	rem_defender = NET
+	rem_defender = BEL
+	rem_defender = LUX
+	rem_defender = USA
+
+		}

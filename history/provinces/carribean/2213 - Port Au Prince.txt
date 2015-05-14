@@ -1,0 +1,18 @@
+owner = SPA
+controller = SPA
+colonial = 2
+1707.1.1 = {
+owner = FRA
+controller = FRA
+		}
+1804.1.1 = {
+owner = HAI
+controller = HAI
+add_core = HAI
+naval_base = 1
+colonial = 0
+		}
+
+trade_goods = sugar
+
+life_rating = 35

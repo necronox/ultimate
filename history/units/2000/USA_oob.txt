@@ -1,0 +1,506 @@
+CAN = {
+	value = 150
+	level = 5
+	influence_value = 50
+}
+
+KUW = {
+	value = 150
+	level = 5
+	influence_value = 50
+}
+
+QAT = {
+	value = 150
+	level = 5
+	influence_value = 50
+}
+
+BAH = {
+	value = 150
+	level = 5
+	influence_value = 50
+}
+
+EGY = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+SKA = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+ISR = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+THA = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+BEL = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+HON = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+PNM = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+PEU = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+ARG = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+HAI = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+DOM = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+PAK = {
+	value = 100
+	level = 5
+	influence_value = 50
+	military_access = yes
+}
+
+MOR = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+TUR = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+EST = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+ABU = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+SAU = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+KOS = {
+	value = 100
+	level = 5
+	influence_value = 25
+}
+
+BOS = {
+	value = 100
+	level = 5
+	influence_value = 25
+}
+
+NCN = {
+	value = 100
+	level = 5
+	influence_value = 25
+}
+
+PHI = {
+	value = 100
+	level = 5
+	influence_value = 25
+}
+
+MEX = {
+	value = 100
+	level = 5
+	influence_value = 25
+}
+
+ITA = {
+	value = 50
+	}
+
+GER = {
+	value = 100
+	military_access = yes
+	}
+
+army = {
+	name = "US Army German Station"
+	location = 536
+	regiment = {
+		name= "Infantry"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+	}
+		}
+army = {
+	name = "1st US Army"
+	location = 232
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Tank Division"
+		type = tank
+		home = 232
+	}
+	regiment = {
+		name= "Tank Division"
+		type = tank
+		home = 232
+	}
+	regiment = {
+		name= "US Fighter Squadron"
+		type = plane
+		home = 232
+	}
+			}
+
+army = {
+	name = "2nd US Army"
+	location = 205
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Tank Division"
+		type = tank
+		home = 205
+	}
+	regiment = {
+		name= "Tank Division"
+		type = tank
+		home = 205
+	}
+	regiment = {
+		name= "US Fighter Squadron"
+		type = plane
+		home = 205
+	}
+			}
+
+
+navy = {
+	name = "1st Fleet"
+	location = 233
+	ship = {
+		name= "Obama"
+		type = cruiser
+	}
+	ship = {
+		name= "Jefferson"
+		type = cruiser
+	}
+	ship = {
+		name= "Franklin"
+		type = cruiser
+	}
+	ship = {
+		name= "Bush"
+		type = cruiser
+	}
+	ship = {
+		name= "Roosevelt"
+		type = cruiser
+	}
+	ship = {
+		name= "Adams"
+		type = cruiser
+	}
+	ship = {
+		name= "Washington"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport Ship"
+		type = steam_transport
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+	ship = {
+		name= "US Carrier"
+		type = carrier
+	}
+}
+

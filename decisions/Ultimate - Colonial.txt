@@ -1,0 +1,741 @@
+political_decisions = {
+
+virginia_company = {
+	picture = virginiacompanypic
+		potential = {
+		214 = {
+			empty = yes
+			}
+		tag = ANG
+		NOT = {
+		has_global_flag = virginiacompanychartered
+			}
+				}
+		allow = {
+			money = 10000
+			}
+
+
+		effect = {
+		set_global_flag = virginiacompanychartered
+		prestige = 5
+		money = -10000
+		214 = {
+		secede_province = ANG
+			}
+				}
+			}
+
+found_quebec = {
+	picture = champlain
+		potential = {
+		65 = {
+			empty = yes
+			}
+		tag = FRA
+		NOT = {
+		has_global_flag = quebecity_founded
+			}
+				}
+		allow = {
+			money = 10000
+			}
+
+
+		effect = {
+		set_global_flag = quebecity_founded
+		prestige = 5
+		money = -10000
+		65 = {
+		secede_province = FRA
+			}
+				}
+			}
+louisiana_purchasepart1 = {
+	picture = louisianapurchasepic
+		potential = {
+		exists = USA
+		tag = FRA
+		year = 1800
+		AND = {
+		USA_144 = { #Arkansas
+			owned_by = THIS
+				}
+		USA_148 = { #Missouri
+			owned_by = THIS
+				}
+		USA_151 = { #Iowa
+			owned_by = THIS
+				}
+		USA_126 = { #Kansas
+			owned_by = THIS
+				}
+		USA_124 = { #Nebraska
+			owned_by = THIS
+				}
+		USA_121 = { #South Dakota
+			owned_by = THIS
+				}
+		USA_139 = { #Louisiana
+			owned_by = THIS
+				}
+		156 = {
+			owned_by = THIS
+				}
+		155 = {
+			owned_by = THIS
+				}
+		117 = {
+			owned_by = THIS
+				}
+		119 = {
+			owned_by = THIS
+				}
+		115 = {
+			owned_by = THIS
+				}
+		116 = {
+			owned_by = THIS
+				}
+		112 = {
+			owned_by = THIS
+				}
+		110 = {
+			owned_by = THIS
+				}
+					}
+		NOT = {
+		has_global_flag = louisiana_sold
+			}
+				}
+		allow = {
+			NOT = {
+			war_with = USA
+				}
+			}
+
+
+		effect = {
+		set_global_flag = louisiana_sold
+                USA = {
+                         country_event = 400009 
+                      }
+				}
+			}
+	forming_thirteen_colonies_1 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ANG
+				tag = ENG
+			}
+			214 = {
+			owned_by = THIS
+				}
+			213 = {
+			owned_by = THIS
+				}
+			215 = {
+			owned_by = THIS
+				}
+			212 = {
+			owned_by = THIS
+				}
+			216 = {
+			owned_by = THIS
+				}
+		}
+		allow = {
+			war = no
+			NOT = {
+				exists = COA
+			}
+		}
+		effect = {
+			213 = {
+				add_core = COA
+				}
+			215 = {
+				add_core = COA
+				}
+			212 = {
+				add_core = COA
+				}
+			211 = {
+				add_core = COA
+				}
+			216 = {
+				add_core = COA
+				}	
+			release = COA
+			create_vassal = COA
+			diplomatic_influence = {
+				who = COA
+				value = 400
+			}
+			create_alliance = COA
+			COA = {
+				prestige_factor = -1
+				add_county_modifier = {
+					name = less_immigration
+					duration = -1
+				}
+			}
+		}
+	}
+	#Giving new states from here
+	#Georgia
+	forming_thirteen_colonies_2 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+			is_our_vassal = COA
+			205 = {
+			owned_by = THIS
+				}
+			204 = {
+			owned_by = THIS
+				}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			205 = {
+				add_core = COA
+				secede_province = COA
+			}
+			204 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+#North Carolina
+	forming_thirteen_colonies_3 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+			is_our_vassal = COA
+			209 = {
+			owned_by = THIS
+				}
+			208 = {
+			owned_by = THIS
+				}
+			210 = {
+			owned_by = THIS
+				}
+			207 = {
+			owned_by = THIS
+				}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			209 = {
+				add_core = COA
+				secede_province = COA
+			}
+			208 = {
+				add_core = COA
+				secede_province = COA
+			}
+			210 = {
+				add_core = COA
+				secede_province = COA
+			}
+			207 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+#West Virginia
+	forming_thirteen_colonies_4 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+			is_our_vassal = COA
+			217 = {
+			owned_by = THIS
+				}
+			218 = {
+			owned_by = THIS
+				}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			217 = {
+				add_core = COA
+				secede_province = COA
+			}
+			218 = {
+				add_core = COA
+				secede_province = COA
+			}
+			set_global_flag = virginia_colonized
+		}
+	}
+#Maryland
+	forming_thirteen_colonies_5 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+			is_our_vassal = COA
+			219 = {
+			owned_by = THIS
+				}
+			220 = {
+			owned_by = THIS
+				}
+			221 = {
+			owned_by = THIS
+				}
+			222 = {
+			owned_by = THIS
+				}
+			has_global_flag = virginia_colonized
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			219 = {
+				add_core = COA
+				secede_province = COA
+			}
+			220 = {
+				add_core = COA
+				secede_province = COA
+			}
+			221 = {
+				add_core = COA
+				secede_province = COA
+			}
+			222 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+#Pennsylvania
+	forming_thirteen_colonies_6 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+			is_our_vassal = COA
+			223 = {
+			owned_by = THIS
+				}
+			224 = {
+			owned_by = THIS
+				}
+			225 = {
+			owned_by = THIS
+				}
+			226 = {
+			owned_by = THIS
+				}
+			227 = {
+			owned_by = THIS
+				}
+			228 = {
+			owned_by = THIS
+				}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			223 = {
+				add_core = COA
+				secede_province = COA
+			}
+			224 = {
+				add_core = COA
+				secede_province = COA
+			}
+			225 = {
+				add_core = COA
+				secede_province = COA
+			}
+			226 = {
+				add_core = COA
+				secede_province = COA
+			}
+			227 = {
+				add_core = COA
+				secede_province = COA
+			}
+			228 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+#New Jersey
+	forming_thirteen_colonies_7 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+			is_our_vassal = COA
+			229 = {
+			owned_by = THIS
+				}
+			230 = {
+			owned_by = THIS
+				}
+			231 = {
+			owned_by = THIS
+				}
+			has_global_flag = new_england_colonized
+			has_global_flag = new_england_colonized
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			229 = {
+				add_core = COA
+				secede_province = COA
+			}
+			230 = {
+				add_core = COA
+				secede_province = COA
+			}
+			231 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+#New York
+	forming_thirteen_colonies_8 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+			is_our_vassal = COA
+			232 = {
+			owned_by = THIS
+				}
+			233 = {
+			owned_by = THIS
+				}
+			234 = {
+			owned_by = THIS
+				}
+			235 = {
+			owned_by = THIS
+				}
+			240 = {
+			owned_by = THIS
+				}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			232 = {
+				add_core = COA
+				secede_province = COA
+			}
+			233 = {
+				add_core = COA
+				secede_province = COA
+			}
+			234 = {
+				add_core = COA
+				secede_province = COA
+			}
+			235 = {
+				add_core = COA
+				secede_province = COA
+			}
+			240 = {
+				add_core = COA
+				secede_province = COA
+			}
+			set_global_flag = new_york_colonized
+		}
+	}
+# Massachusetts
+	forming_thirteen_colonies_9 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+			is_our_vassal = COA
+			241 = {
+			owned_by = THIS
+				}
+			242 = {
+			owned_by = THIS
+				}
+			243 = {
+			owned_by = THIS
+				}
+			244 = {
+			owned_by = THIS
+				}
+			245 = {
+			owned_by = THIS
+				}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			241 = {
+				add_core = COA
+				secede_province = COA
+			}
+			242 = {
+				add_core = COA
+				secede_province = COA
+			}
+			243 = {
+				add_core = COA
+				secede_province = COA
+			}
+			244 = {
+				add_core = COA
+				secede_province = COA
+			}
+			245 = {
+				add_core = COA
+				secede_province = COA
+			}
+		}
+	}
+# New England
+	forming_thirteen_colonies_10 = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+			is_our_vassal = COA
+			246 = {
+			owned_by = THIS
+				}
+			247 = {
+			owned_by = THIS
+				}
+			248 = {
+			owned_by = THIS
+				}
+			249 = {
+			owned_by = THIS
+				}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			246 = {
+				add_core = COA
+				secede_province = COA
+			}
+			247 = {
+				add_core = COA
+				secede_province = COA
+			}
+			248 = {
+				add_core = COA
+				secede_province = COA
+			}
+			249 = {
+				add_core = COA
+				secede_province = COA
+			}
+			set_global_flag = new_england_colonized
+		}
+	}
+#Forming the Thirteen Colonies
+	forming_thirteen_colonies_main = {
+		picture = louisianapurchasepic
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ANG
+			}
+			exists = COA
+			is_our_vassal = COA
+			
+			205 = {
+				empty = no
+			}
+			204 = {
+				empty = no
+			}
+			209 = {
+				empty = no
+			}
+			208 = {
+				empty = no
+			}
+			210 = {
+				empty = no
+			}
+			207 = {
+				empty = no
+			}
+			217 = {
+				empty = no
+			}
+			218 = {
+				empty = no
+			}
+			221 = {
+				empty = no
+			}
+			220 = {
+				empty = no
+			}
+			222 = {
+				empty = no
+			}
+			219 = {
+				empty = no
+			}
+			227 = {
+				empty = no
+			}
+			226 = {
+				empty = no
+			}
+			225 = {
+				empty = no
+			}
+			223 = {
+				empty = no
+			}
+			224 = {
+				empty = no
+			}
+			231 = {
+				empty = no
+			}
+			230 = {
+				empty = no
+			}
+			229 = {
+				empty = no
+			}
+			240 = {
+				empty = no
+			}
+			234 = {
+				empty = no
+			}
+			232 = {
+				empty = no
+			}
+			235 = {
+				empty = no
+			}
+			233 = {
+				empty = no
+			}
+			241 = {
+				empty = no
+			}
+			245 = {
+				empty = no
+			}
+			243 = {
+				empty = no
+			}
+			242 = {
+				empty = no
+			}
+			244 = {
+				empty = no
+			}
+			246 = {
+				empty = no
+			}
+			247 = {
+				empty = no
+			}
+			248 = {
+				empty = no
+			}
+			249 = {
+				empty = no
+			}
+			228 = {
+				empty = no
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			prestige_factor = 0.1
+			COA = {
+				change_tag = THC
+			}
+			214 = {
+				secede_province = THC
+				add_core = THC
+			}
+			206 = {
+				add_core = THC
+			}
+			2555 = {
+				add_core = THC
+			}
+			THC = {
+				any_owned = {
+					remove_core = COA
+					add_core = THC
+				}
+				prestige_factor = -0.9
+			}
+			prestige_factor = 0.1
+			diplomatic_influence = {
+				who = THC
+				value = 400
+			}
+			release_vassal = THC
+		}
+	}
+}

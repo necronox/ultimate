@@ -1,0 +1,22 @@
+trade_goods = timber
+life_rating = 15
+
+1903.1.1 = {
+		owner = ENG
+		controller = ENG
+	add_core = SUD
+		colonial = 2
+		}
+
+1989.1.1 = {
+	owner = SUD
+	controller = SUD
+	add_core = SSD
+	colonial = 0
+		}
+
+2011.1.1 = {
+		owner = SSD
+	controller = SSD
+			}
+

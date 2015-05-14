@@ -1,0 +1,218 @@
+political_decisions = { # closed at the very end	
+the_april_war = {
+    picture = barbarossa
+   	 potential = {
+   		 NOT = {
+   		 war_with = RUS
+   		 has_global_flag = operation_barbarossa_done 
+ 		has_global_flag = the_april_war_done}
+   		 tag = GER
+   		 has_global_flag = WW2inprogress
+
+   			 }
+
+   	 allow = {
+   	 has_global_flag = WW2_France_Surrendered
+   		 }
+
+   	 effect = {
+    set_global_flag = the_april_war_done
+   			 war = {
+    target = YUG
+    attacker_goal = {
+   	 casus_belli = great_war_penalty_cb
+    }
+    attacker_goal = {
+   	 casus_belli = conquest
+    }
+    defender_goal = {
+   	 casus_belli = great_war_penalty_cb
+    }
+    call_ally = yes
+}
+   	 }
+
+}
+treaties_of_rome = {
+    picture = barbarossa
+   	 potential = {
+   		 NOT = {
+   		 war_with = ITA
+		 has_global_flag = treatyofrome
+   			}
+   		 tag = GER
+   		 has_global_flag = WW2inprogress
+   			}
+
+   	 allow = {
+	 has_global_flag = the_april_war_done
+	 GER = { 
+alliance_with = ITA
+   		 } #GER
+	 NOT = { 
+exists = YUG
+} #YUG
+} #allow
+
+   	 effect = {
+	set_global_flag = treatyofrome
+783 = {
+           	secede_province = CRO
+           	}
+       	784 = {
+           	secede_province = CRO
+           	}
+       	785 = {
+           	secede_province = CRO
+           	}
+       	786 = {
+           	secede_province = CRO
+           	}
+	787 = {
+           	secede_province = CRO
+           	}
+       	788 = {
+           	secede_province = CRO
+           	}
+       	789 = {
+           	secede_province = CRO
+           	}
+       	2583 = {
+           	secede_province = CRO
+           	}
+       	2582 = {
+           	secede_province = CRO
+           	}
+       	791 = {
+           	secede_province = HUN
+           	}
+       	775 = {
+           	secede_province = HUN
+           	}
+       	2538 = {
+           	secede_province = HUN
+           	}
+       	806 = {
+           	secede_province = BUL
+           	}
+       	807 = {
+           	secede_province = BUL
+           	}
+       	771 = {
+           	secede_province = GER
+           	}
+       	772 = {
+           	secede_province = CRO
+	}
+       	797 = {
+           	secede_province = CRO
+           	}
+       	779 = {
+           	secede_province = HUN
+           	}
+       	793 = {
+           	secede_province = HUN
+           	}
+       	773 = {
+           	secede_province = ITA
+           	}
+       	777 = {
+           	secede_province = CRO
+           	}
+	776 = {
+           	secede_province = CRO
+           	}
+       	794 = {
+           	secede_province = CRO
+           	}
+       	795 = {
+           	secede_province = GER
+           	}
+       	797 = {
+           	secede_province = ITA
+           	}
+       	780 = {
+           	secede_province = CRO
+           	}
+       	781 = {
+           	secede_province = CRO
+           	}
+       	782 = {
+           	secede_province = CRO
+           	}
+       	792 = {
+           	secede_province = GER
+           	}
+       	798 = {
+           	secede_province = GER
+           	}
+       	799 = {
+           	secede_province = GER
+           	}
+       	800 = {
+           	secede_province = CRO
+           	}
+       	802 = {
+           	secede_province = GER
+           	}
+       	803 = {
+           	secede_province = GER
+           	}
+       	2569 = {
+           	secede_province = CRO
+           	}
+       	2577 = {
+           	secede_province = CRO
+           	}
+       	796 = {
+           	secede_province = GER
+           	}
+       	804 = {
+           	secede_province = CRO
+           	}
+       	800 = {
+           	secede_province = ITA
+           	}
+       	774 = {
+           	secede_province = CRO
+           	}
+
+       	 }
+
+}
+
+	operation_barbarossa = {
+    picture = barbarossa
+   	 potential = {
+   		 NOT = {
+   		 war_with = RUS
+   		 has_global_flag = operation_barbarossa_done }
+   		 tag = GER
+   		 has_global_flag = WW2inprogress
+
+   			 }
+
+   	 allow = {
+	 has_global_flag = the_april_war_done
+   	 has_global_flag = WW2_France_Surrendered
+   		 }
+
+   	 effect = {
+    set_global_flag = operation_barbarossa_done
+   			 war = {
+    target = RUS
+    attacker_goal = {
+   	 casus_belli = great_war_penalty_cb
+    }
+    attacker_goal = {
+   	 casus_belli = conquest
+    }
+    defender_goal = {
+   	 casus_belli = great_war_penalty_cb
+    }
+    call_ally = yes
+}
+   	 }
+
+}
+   	} # political_decisions

@@ -1,0 +1,160 @@
+;;;;x
+ANG_conservative;Conservative Party;x
+ANG_liberal;Liberal Party;x
+ANG_liberal_2;Liberal Party;x
+ANG_socialist;Labour Party;x
+ANG_reactionary;Tory Party;x
+ANG_anarcho_liberal;Anarchist Party;x
+ANG_communist;Communist Party;x
+ANG_fascist;Fascist Party;x
+THC_conservative;Conservative Party;x
+THC_liberal;Liberal Party;x
+THC_reactionary;Tory Party;x
+COA_conservative;Conservative Party;x
+COA_liberal;Liberal Party;x
+COA_reactionary;Nationalist Party;x
+FRA_conservative_6;Consul;x
+BDB_liberal;Liberaldem. Partei;Liberaldem. Partei;Liberaldem. Partei;;Liberaldem. Partei;;;;;;;;;x;;;;
+BDB_conservative;Zentrumspartei;Zentrumspartei;Zentrumspartei;;Zentrumspartei;;;;;;;;;x;;;;
+BDB_liberal_2;Nationalliberale ;Nationalliberale ;Nationalliberale ;;Nationalliberale ;;;;;;;;;x;;;;
+BDB_liberal_3;Freisinnige Partei;Freisinnige Partei;Freisinnige Partei;;Freisinnige Partei;;;;;;;;;x;;;;
+BDB_socialist;Deutscher Arbeiterverein;Deutscher Arbeiterverein;Deutscher Arbeiterverein;;Deutscher Arbeiterverein;;;;;;;;;x;;;;
+BDB_socialist_2;Sozialdem. Arbeiterpartei ;Sozialdem. Arbeiterpartei ;Sozialdem. Arbeiterpartei ;;Sozialdem. Arbeiterpartei ;;;;;;;;;x;;;;
+BDB_socialist_3;Sozial. Arbeiterpartei ;Sozial. Arbeiterpartei ;Sozial. Arbeiterpartei ;;Sozial. Arbeiterpartei ;;;;;;;;;x;;;;
+BDB_reactionary;Nationale Partei;Nationale Partei;Nationale Partei;;Nationale Partei;;;;;;;;;x;;;;
+BDB_conservative_2;Konservative Partei;Konservative Partei;Konservative Partei;;Konservative Partei;;;;;;;;;x;;;;
+BDB_conservative_3;Christsoz. Arbeiterpartei;Christsoz. Arbeiterpartei;Christsoz. Arbeiterpartei;;Christsoz. Arbeiterpartei;;;;;;;;;x;;;;
+BDB_anarcho_liberal;Radikale Arbeiterpartei;Arbeiterpartei radical;Radikale Arbeiterpartei;;Radical Arbeiterpartei;;;;;;;;;x;;;;
+BDB_communist;Kommunistische Arbeiterpartei;Arbeiterpartei communiste;Kommunistische Arbeiterpartei;;Communist Arbeiterpartei;;;;;;;;;x;;;;
+BDB_fascist;NSBD;NSBD;NSBD;;NSBD;;;;;;;;;x;;;;
+CHP;Chiapas;;;;;Chiapas;;;;;;;;x;;;;
+CHP_ADJ;Chiapan;;;;;Chiapaneco;;;;;;;;x;;;;
+CHP_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+CHP_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;Partido Liberal;;;;;;;;x;;;;
+CHP_anarcho_liberal;Partido Federalista;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
+CHP_conservative_2;Partido Moderado Liberal;Partido Moderado Liberal;Partido Moderado Liberal;;;Partido Moderado Liberal;;;;;;;;x;;;;
+CHP_liberal_2;Partido Radical Liberal;Partido Radical Liberal;Partido Radical Liberal;;;Partido Radical Liberal;;;;;;;;x;;;;
+CHP_liberal_3;Partido Progresista;Partido Progresista;Partido Progresista;;;Partido Progresista;;;;;;;;x;;;;
+CHP_conservative_3;Partido Constitucionalista;Partido Constitucionalista;Partido Constitucionalista;;;Partido Constitucionalista;;;;;;;;x;;;;
+CHP_liberal_4;Partido Antireelecionista;Partido Antireelecionista;Partido Antireelecionista;;;Partido Antireelecionista;;;;;;;;x;;;;
+CHP_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;;Partido Imperialista;;;;;;;;x;;;;
+CHP_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
+CHP_communist;Partido Communist;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
+CHP_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+HRE_bourgeois_dictatorship;Republic of Roman Empire;x;;
+HRE_bourgeois_dictatorship_ADJ;Imperial;x;;
+HRE_absolute_monarchy;Holy Roman Empire;x;;
+HRE_absolute_monarchy_ADJ;Imperial;x;;
+HRE_hms_government;Holy Roman Empire;x;;
+HRE_hms_government_ADJ;Imperial;x;;
+HRE_democracy;Imperial Roman Confederation;x;;
+HRE_democracy_ADJ;Imperial;x;;
+HRE_proletarian_dictatorship;People's Roman Empire;x;;
+HRE_proletarian_dictatorship_ADJ;Imperial;x;;
+HRE_fascist_dictatorship;National Roman Empire;x;;
+HRE_fascist_dictatorship_ADJ;Imperial;x;;
+LOS;Los Altos;;;;;Los Altos;;;;;;;;x
+LOS_ADJ;Losaltan;;;;;Altenses;;;;;;;;x
+LOS_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOS_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOS_reactionary;Partido Nationalist;Partido nationaliste;Partido Nationalist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOS_anarcho_liberal;Partido Radical;Partido Radical;Partido Radical;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOS_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOS_communist;Partido Communist;Partido communiste;Partido Communist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+LOS_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+MAP_bourgeois_dictatorship;Upper Mapuche Tribe;x;;
+MAP_bourgeois_dictatorship_ADJ;Mapuche;x;;
+MAP_absolute_monarchy;Mapuche Chiefdom;x;;
+MAP_absolute_monarchy_ADJ;Mapuche;x;;
+MAP_hms_government;Mapuche Tribal Republic;x;;
+MAP_hms_government_ADJ;Mapuche;x;;
+MAP_democracy;Mapuche Republic;x;;
+MAP_democracy_ADJ;Mapuche;x;;
+MAP_proletarian_dictatorship;Mapuche League of the Red Star;x;;
+MAP_proletarian_dictatorship_ADJ;Mapuche;x;;
+MAP_fascist_dictatorship;Tribe of the Mapuche;x;;
+MAP_fascist_dictatorship_ADJ;Mapuche;x;;
+PAL_communist;PFLP;x
+PAL_reactionary;Hamas;x
+PAL_socialist;Fatah;x
+PAL_socialist_2;Palestinian People's Party;x
+PAL_liberal;Palestinian National Initiative;x
+PAL_conservative;Third Way;x
+PAL_communist_2;DFLP;x
+PAL_fascist;Islamic Jihad Movement in Palestine;x
+RGR_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+RGR_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;Partido Liberal;;;;;;;;x;;;;
+RGR_anarcho_liberal;Partido Federalista;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
+RGR_conservative_2;Partido Moderado Liberal;Partido Moderado Liberal;Partido Moderado Liberal;;;Partido Moderado Liberal;;;;;;;;x;;;;
+RGR_liberal_2;Partido Radical Liberal;Partido Radical Liberal;Partido Radical Liberal;;;Partido Radical Liberal;;;;;;;;x;;;;
+RGR_liberal_3;Partido Progresista;Partido Progresista;Partido Progresista;;;Partido Progresista;;;;;;;;x;;;;
+RGR_conservative_3;Partido Constitucionalista;Partido Constitucionalista;Partido Constitucionalista;;;Partido Constitucionalista;;;;;;;;x;;;;
+RGR_liberal_4;Partido Antireelecionista;Partido Antireelecionista;Partido Antireelecionista;;;Partido Antireelecionista;;;;;;;;x;;;;
+RGR_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;;Partido Imperialista;;;;;;;;x;;;;
+RGR_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
+RGR_communist;Partido Communist;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
+RGR_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+SON_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+SAT_absolute_monarchy;Satsuma;;;;;;;;;;;;;x
+SAT_prussian_constitutionalism;Satsuma;;;;;;;;;;;;;x
+SAT_hms_government;Satsuma;;;;;;;;;;;;;x
+SAT_absolute_monarchy_ADJ;Shimazu;;;;;;;;;;;;;x
+SAT_prussian_constitutionalism_ADJ;Shimazu;;;;;;;;;;;;;x
+SAT_hms_government_ADJ;Shimazu;;;;;;;;;;;;;x
+SEN_absolute_monarchy;Sendai;;;;;;;;;;;;;x
+SEN_prussian_constitutionalism;Sendai;;;;;;;;;;;;;x
+SEN_hms_government;Sendai;;;;;;;;;;;;;x
+SEN_absolute_monarchy_ADJ;Date;;;;;;;;;;;;;x
+SEN_prussian_constitutionalism_ADJ;Date;;;;;;;;;;;;;x
+SEN_hms_government_ADJ;Date;;;;;;;;;;;;;x
+SON_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;Partido Liberal;;;;;;;;x;;;;
+SON_anarcho_liberal;Partido Federalista;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
+SON_conservative_2;Partido Moderado Liberal;Partido Moderado Liberal;Partido Moderado Liberal;;;Partido Moderado Liberal;;;;;;;;x;;;;
+SON_liberal_2;Partido Radical Liberal;Partido Radical Liberal;Partido Radical Liberal;;;Partido Radical Liberal;;;;;;;;x;;;;
+SON_liberal_3;Partido Progresista;Partido Progresista;Partido Progresista;;;Partido Progresista;;;;;;;;x;;;;
+SON_conservative_3;Partido Constitucionalista;Partido Constitucionalista;Partido Constitucionalista;;;Partido Constitucionalista;;;;;;;;x;;;;
+SON_liberal_4;Partido Antireelecionista;Partido Antireelecionista;Partido Antireelecionista;;;Partido Antireelecionista;;;;;;;;x;;;;
+SON_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;;Partido Imperialista;;;;;;;;x;;;;
+SON_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
+SON_communist;Partido Communist;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
+SON_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+SVT_bourgeois_dictatorship;Republic of Vietnam;x;;
+SVT_bourgeois_dictatorship_ADJ;South Vietnamese;x;;
+SVT_democracy;Republic of Vietnam;x;;
+SVY_democracy_ADJ;South Vietnamese;x;;
+SYC_reactionary;Taxpayers Association;x
+SYC_conservative;Planters Association;x
+SYC_conservative_2;Seychelles Democratic Party;x
+SYC_liberal;Seychelles National Party;x
+SYC_socialist;League of Coloured Peoples;x
+SYC_socialist_2;Seychelles People's United Party;x
+SYC_socialist_3;Seychelles People's Progressive Front;x
+SYC_socialist_4;People's Party;x
+TKM;Turkmenistan;;;;;;;;;;;;;x
+TKM_absolute_monarchy;Salor Confederation;;;;;;;;;;;;x
+TKM_hms_government;Salor Confederation;;;;;;;;;;;;x
+TKM_prussian_constitutionalism;Salor Confederation;;;;;;;;;;;;x
+TKM_ADJ;Turkmenian;;;;;;;;;;;;;x
+TKM_conservative;Royal Faction;Faction royale;Königsfraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+TKM_liberal;The Liberal Faction;Faction libérale;Die liberale Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+TKM_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+TKM_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+TKM_socialist;The Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+TKM_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+TKM_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+YUC_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+YUC_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;Partido Liberal;;;;;;;;x;;;;
+YUC_anarcho_liberal;Partido Federalista;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
+YUC_conservative_2;Partido Moderado Liberal;Partido Moderado Liberal;Partido Moderado Liberal;;;Partido Moderado Liberal;;;;;;;;x;;;;
+YUC_liberal_2;Partido Radical Liberal;Partido Radical Liberal;Partido Radical Liberal;;;Partido Radical Liberal;;;;;;;;x;;;;
+YUC_liberal_3;Partido Progresista;Partido Progresista;Partido Progresista;;;Partido Progresista;;;;;;;;x;;;;
+YUC_conservative_3;Partido Constitucionalista;Partido Constitucionalista;Partido Constitucionalista;;;Partido Constitucionalista;;;;;;;;x;;;;
+YUC_liberal_4;Partido Antireelecionista;Partido Antireelecionista;Partido Antireelecionista;;;Partido Antireelecionista;;;;;;;;x;;;;
+YUC_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;;Partido Imperialista;;;;;;;;x;;;;
+YUC_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
+YUC_communist;Partido Communist;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
+YUC_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+YZW_absolute_monarchy_ADJ;Uesugi;;;;;;;;;;;;;x
+YZW_prussian_constitutionalism_ADJ;Uesugi;;;;;;;;;;;;;x
+YZW_hms_government_ADJ;Uesugi;;;;;;;;;;;;;x
+;;;;x

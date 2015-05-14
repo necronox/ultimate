@@ -1,0 +1,17 @@
+owner = SPA
+controller = SPA
+colonial = 2
+1804.1.1 = {
+owner = HAI
+controller = HAI
+add_core = HAI
+add_core = DOM
+colonial = 0
+		}
+
+trade_goods = sugar
+life_rating = 35
+1861.1.1 = {
+owner = DOM
+controller = DOM
+}

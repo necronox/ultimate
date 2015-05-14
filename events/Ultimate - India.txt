@@ -1,0 +1,282 @@
+#Pakistan Question UK
+country_event = {
+	id = 170501
+	title = "EVTNAME200000"
+	desc = "EVTDESC200000"
+	picture = "pakistanquestion"
+
+fire_only_once = yes
+
+trigger = {
+	NOT = {
+		has_global_flag = IndiaFreed
+		}
+	has_global_flag = IndianQuestforIndependence
+		}
+
+option = {
+name = "EVTOPTA200000"
+
+1226 = {
+add_core = PAK }
+1225 = {
+add_core = PAK }
+1224 = {
+add_core = PAK }
+1223 = {
+add_core = PAK }
+1222 = {
+add_core = PAK }
+1218 = {
+add_core = PAK }
+1230 = {
+add_core = PAK }
+1229 = {
+add_core = PAK }
+1232 = {
+add_core = PAK }
+1227 = {
+add_core = PAK }
+1228 = {
+add_core = PAK }
+1231 = {
+add_core = PAK }
+1219 = {
+add_core = PAK }
+1221 = {
+add_core = PAK }
+1220 = {
+add_core = PAK }
+1265 = {
+add_core = PAK }
+1289 = {
+add_core = PAK }
+1290 = {
+add_core = PAK }
+1288 = {
+add_core = PAK }
+
+}
+
+}
+
+#Gandhi and Indian independence
+country_event = {
+	id = 170502
+	title = "EVTNAME200001"
+	desc = "EVTDESC200001"
+	picture = "gandhipic"
+
+fire_only_once = yes
+
+trigger = {
+	NOT = {
+	has_global_flag = IndiaFreed
+	has_global_flag = IndianQuestforIndependence
+		}
+	has_country_flag = empress_of_india
+	post_colonialism = 1
+		}
+
+option = {
+name = "EVTOPTA200001"
+set_global_flag = IndianQuestforIndependence
+	any_pop = {
+	limit = {
+		OR = {
+		pop_majority_culture = assamese
+		pop_majority_culture = bengali
+		pop_majority_culture = bihari
+		pop_majority_culture = manipuri
+		pop_majority_culture = nepali
+		pop_majority_culture = oriya
+		pop_majority_culture = sinhala
+		pop_majority_culture = avadhi
+		pop_majority_culture = kanauji
+		pop_majority_culture = panjabi
+		pop_majority_culture = kashmiri
+		pop_majority_culture = gujarati
+		pop_majority_culture = marathi
+		pop_majority_culture = sindi
+		pop_majority_culture = rajput
+		pop_majority_culture = kannada
+		pop_majority_culture = malayalam
+		pop_majority_culture = tamil
+		pop_majority_culture = telegu } }
+		reduce_pop = 0.98
+		consciousness = -4.0
+		militancy = 4.0	}
+		any_pop = {
+		limit = {
+		OR = {
+		pop_majority_ideology = liberal
+		pop_majority_ideology = anarcho_liberal
+		pop_majority_ideology = socialist } }
+		consciousness = 2
+		militancy = 2 }
+		set_country_flag = gandhi_imprisoned
+}
+
+option = {
+name = "EVTOPTB200001"
+set_global_flag = IndianQuestforIndependence
+	any_pop = {
+	limit = {
+		OR = {
+		pop_majority_culture = assamese
+		pop_majority_culture = bengali
+		pop_majority_culture = bihari
+		pop_majority_culture = manipuri
+		pop_majority_culture = nepali
+		pop_majority_culture = oriya
+		pop_majority_culture = sinhala
+		pop_majority_culture = avadhi
+		pop_majority_culture = kanauji
+		pop_majority_culture = panjabi
+		pop_majority_culture = kashmiri
+		pop_majority_culture = gujarati
+		pop_majority_culture = marathi
+		pop_majority_culture = sindi
+		pop_majority_culture = rajput
+		pop_majority_culture = kannada
+		pop_majority_culture = malayalam
+		pop_majority_culture = tamil
+		pop_majority_culture = telegu } }
+	consciousness = 4.0
+	militancy = 2.0 }
+	add_country_modifier = { name = gandhimod duration = -1 }
+}
+
+
+}
+
+#Local Campaign of Civil Disobedience
+province_event = {
+	id = 170503
+	title = "EVTNAME200002"
+	desc = "EVTDESC200002"
+	picture = "colonial_factory"
+	
+	trigger = {
+	year = 1920
+	NOT = {
+	exists = HND }
+	any_pop = {
+		OR = {
+		pop_majority_culture = assamese
+		pop_majority_culture = bengali
+		pop_majority_culture = bihari
+		pop_majority_culture = manipuri
+		pop_majority_culture = nepali
+		pop_majority_culture = oriya
+		pop_majority_culture = sinhala
+		pop_majority_culture = avadhi
+		pop_majority_culture = kanauji
+		pop_majority_culture = panjabi
+		pop_majority_culture = kashmiri
+		pop_majority_culture = gujarati
+		pop_majority_culture = marathi
+		pop_majority_culture = sindi
+		pop_majority_culture = rajput
+		pop_majority_culture = kannada
+		pop_majority_culture = malayalam
+		pop_majority_culture = tamil
+		pop_majority_culture = telegu } }
+		owner = {
+		has_country_modifier = gandhimod			
+		}
+		controlled_by = owner
+	}
+	
+	mean_time_to_happen = {
+		months = 35
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 50 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 45 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 40 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 35 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 30 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 20 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 15 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 10 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { num_of_cities = 5 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA200002"		
+		state_scope = {
+			any_pop = {
+				militancy = 2
+				consciousness = 4
+			}
+			any_owned = {
+				add_province_modifier = { name = civil_disobedience duration = 365 } }
+		}
+	}
+}
+
+
+#IndiaFinish
+country_event = {
+	id = 170504
+	title = "EVTNAME170504"
+	desc = "EVTDESC170504"
+	picture = "indiamappic"
+
+fire_only_once = yes
+
+trigger = {
+	exists = HND
+	NOT = {
+	has_global_flag = IndiaFreed
+		}
+	has_global_flag = IndianQuestforIndependence
+		}
+
+option = {
+name = "EVTOPTA170504"
+set_global_flag = IndiaFreed
+clr_global_flag = IndianQuestforIndependence
+remove_country_modifier = gandhimod
+prestige = -50
+		}
+	}
+

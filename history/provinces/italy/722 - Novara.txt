@@ -1,0 +1,31 @@
+owner = SPA
+controller = SPA
+add_core = HRE
+add_core = ITA
+trade_goods = cattle
+life_rating = 35
+1713.1.1 = {
+	owner = AUS
+	controller = AUS
+		}
+1800.1.1 = {
+	owner = PIE
+	controller = PIE
+	add_core = PIE
+		}
+1812.1.1 = {
+		controller = FRA
+		owner = FRA
+		}
+
+1815.1.1 = {
+	owner = SAR
+	controller = SAR
+	add_core = SAR
+		}
+1861.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+}
+1861.1.1 = { railroad = 3 }

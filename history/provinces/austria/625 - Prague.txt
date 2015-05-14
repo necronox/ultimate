@@ -1,0 +1,58 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = BOH
+add_core = CZH
+1919.6.28 = { 
+		controller = CZH
+		owner = CZH
+		}
+trade_goods = iron
+life_rating = 35
+#state_building = {
+#	level = 1
+#	building = steel_factory
+#	upgrade = yes
+#}
+1861.1.1 = { railroad = 3 }
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+}
+1914.1.1 = {
+owner = KUK
+controller = KUK
+add_core = KUK
+}
+1939.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+
+
+
+#End of WW2
+1945.5.1 = {
+	owner = CZH
+	controller = CZH
+		}
+
+
+
+
+
+1968.1.1 = {
+	owner = CZR
+	controller = CZR
+	add_core = CZR
+		}
+
+

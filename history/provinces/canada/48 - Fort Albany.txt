@@ -1,0 +1,21 @@
+1714.1.1 = {
+owner = ENG
+controller = ENG
+colonial = 2
+		}
+
+1800.1.1 = {
+	add_core = CAN
+		}
+1880.1.1 = { 
+		controller = CAN
+		owner = CAN
+		colonial = 0
+		}
+1836.1.1 = {
+	add_core = ONT
+		}trade_goods = fish
+life_rating = 35
+2017.1.1 = {
+	fort = 5
+		}

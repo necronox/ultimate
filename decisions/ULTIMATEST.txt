@@ -1,0 +1,13 @@
+political_decisions = {
+#
+#giveupdecision = {
+#	picture = revolution
+#	potential = {
+#		NOT = {
+#		tag = ENG } }
+#	effect = {
+#		ENG = {
+#		inherit = THIS }
+#			}
+###				}
+}

@@ -1,0 +1,95 @@
+country_event = {
+	id = 2000050
+	title = french_second_empire1_title
+	desc = french_second_empire1_desc
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		year = 1851
+		NOT = {
+			year = 1870
+		}
+		tag = FRA
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = event_option_alright
+		prestige = 5
+		government = french_second_empire
+	}
+}
+
+country_event = {
+
+id = 2000051
+title = 2000051 #American settlers in Texas
+desc = 2000051
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		year = 1819
+		146 = { owned_by = USA }
+		NOT = {
+		year = 1823
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "Just as well."
+		
+		146 = {
+		any_pop = {
+			limit = { has_pop_religion = protestant }
+			dominant_issue = {
+				value = yes_slavery
+				factor = 2
+			}
+			consciousness = 5
+			move_pop = 132
+		}
+		}
+		
+		132 = {
+			add_province_modifier = {
+				name = home_of_american_texas
+				duration = 5475
+			}
+			any_pop = {
+				limit = { has_pop_culture = native_american_minor }
+				reduce_pop = 0.25
+			}
+			add_core = TEX
+		}
+	}
+}
+
+country_event = {
+	id = 2000052
+	title = french_third_republic_title
+	desc = french_third_republic_desc
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		government = french_second_empire
+		NOT = {
+			owns = 409
+		}
+		has_recently_lost_war = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = event_option_alright
+		government = democracy
+		prestige = 5
+	}
+}

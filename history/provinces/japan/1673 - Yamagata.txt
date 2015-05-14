@@ -1,0 +1,21 @@
+owner = YZW
+controller = YZW
+add_core = YZW
+add_core = TKG
+trade_goods = silk
+life_rating = 35
+
+1868.1.1 = {
+owner = JAP
+controller = JAP
+add_core = JAP
+}
+
+1960.1.1 = {
+	state_building = {
+	level = 2
+	building = electric_gear_factory
+	upgrade = yes
+}
+
+		}

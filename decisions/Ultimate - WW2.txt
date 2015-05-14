@@ -1,0 +1,102 @@
+			
+
+political_decisions = {
+
+##Italy##
+	ww2grecoitaly = {
+	picture = ww2grecoitaly
+		potential = {
+			tag = ITA
+			has_global_flag = WW2inprogress
+			NOT = { 
+			has_global_flag = italy_greece_war_done
+			war_with = GRE }
+				}
+
+
+allow = {
+
+		}
+
+
+		effect = {
+		set_global_flag = italy_greece_war_done
+		GRE = {
+		country_event = 1000007
+			}
+		}
+}
+
+
+####Japan####
+
+
+
+####Germany####
+
+	operation_barbarossa = {
+	picture = barbarossa
+		potential = {
+			NOT = {
+			war_with = RUS
+			has_global_flag = operation_barbarossa_done }
+			tag = GER
+			has_global_flag = WW2inprogress
+
+				}
+
+		allow = {
+		has_global_flag = WW2_France_Surrendered
+			}
+
+		effect = {
+	set_global_flag = operation_barbarossa_done
+				war = {
+	target = RUS
+	attacker_goal = {
+		casus_belli = great_war_penalty_cb
+	}
+	attacker_goal = {
+		casus_belli = conquest
+	}
+	defender_goal = {
+		casus_belli = great_war_penalty_cb
+	}
+	call_ally = yes
+}
+		}
+
+}
+
+####USA####
+
+	#cut_japan_war_supplies = { #out for now
+	#picture = pearlharbor
+	#	potential = {
+	#		tag = USA
+	#		year = 1941
+	#		has_global_flag = WW2inprogress
+	#		NOT = {
+	#		OR = {
+	#		has_global_flag = PearlHarborDone
+	#		JAP = {
+	#		has_country_modifier = japan_usasuppliescutmod
+	#		} } }
+#
+#				}
+#
+#		effect = {
+#		relation = {
+#		with = JAP
+#		value = -100
+#		}
+#		JAP = {
+#		add_country_modifier = { name = #japan_usasuppliescutmod duration = -1 }
+#			}
+#		
+#		}
+#}
+
+
+
+}

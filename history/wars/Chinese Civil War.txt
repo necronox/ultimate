@@ -1,0 +1,32 @@
+name = "The Chinese Civil War"
+
+1945.9.3 = {
+	add_attacker = CHI
+	add_defender = NCN
+
+
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = conquest
+		actor = CHI
+		receiver = NCN
+	}
+
+	war_goal = {
+		casus_belli = conquest
+		actor = NCN
+		receiver = CHI
+	}
+
+}
+
+1950.4.1 = {
+	rem_attacker = CHI
+	rem_defender = NCN
+
+		}

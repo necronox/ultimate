@@ -1,0 +1,32 @@
+owner = APC
+controller = APC
+add_core = APC
+1767.1.1 = {
+owner = SPA
+controller = SPA
+colonial = 1
+		}
+1811.1.1 = {
+owner = MEX
+controller = MEX
+add_core = MEX
+	colonial = 0
+		}
+trade_goods = cattle
+life_rating = 35
+1861.1.1 = {
+	controller = USA
+	owner = USA
+	add_core = USA
+	remove_core = MEX
+}
+
+
+
+
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}
+

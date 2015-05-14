@@ -1,0 +1,19 @@
+owner = SPA
+controller = SPA
+colonial = 2
+1810.1.1 = {
+owner = PEU
+controller = PEU
+add_core = PEU
+add_core = CHL
+colonial = 0
+		}
+
+trade_goods = wool
+life_rating = 35
+
+1910.1.1 = {
+		owner = CHL
+		controller = CHL
+		remove_core = PEU
+		}

@@ -1,0 +1,13 @@
+owner = SPA
+controller = SPA
+1800.1.1 = {
+add_core = CUB
+		}
+1903.1.1 = {
+owner = CUB
+controller = CUB
+colonial = 0
+		}
+trade_goods = sugar
+life_rating = 35
+colonial = 2

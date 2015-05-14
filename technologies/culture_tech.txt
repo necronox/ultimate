@@ -1,0 +1,2111 @@
+#aesthetics
+
+comparative = {
+	area = aesthetics
+	year = 99999
+	cost = 10000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+#		modifier = {
+#			factor = 0
+#			NOT = { 
+#				early_modern_philosphies = 1 
+#			} 
+#		}
+		modifier = {
+			factor = 1.05
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1860 #1840
+		}
+		modifier = {
+			factor = 2
+			year = 1870 #1850
+		}
+	}
+}
+
+historicism = {
+	area = aesthetics
+	year = 1705
+	cost = 10400
+
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+early_enlightenment = {
+	area = aesthetics
+	year = 1715
+	cost = 10800
+	
+	increase_research = 0.50
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1865
+		}
+		modifier = {
+			factor = 2
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
+		}
+	}
+}
+
+abnormalism = {
+	area = aesthetics
+	year = 1720
+	cost = 11200
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.05 #1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1870 #1860
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+	}
+}
+
+the_great_awakening = {
+	area = aesthetics
+	year = 1725
+	cost = 11600
+	education_efficiency = 0.05	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+rococo = {
+	area = aesthetics
+	year = 1730
+	cost = 12000
+	prestige = 0.025
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			not = { literacy = 0.3 }
+		}
+			}
+}
+
+enlightened_absolutism = {
+	area = aesthetics
+	year = 1735
+	cost = 12400
+
+	max_national_focus = 1
+	#colonial_life_rating = -10 
+	cb_creation_speed = 0.1
+	
+	ai_chance = {
+		factor = 1.15
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 11
+			rank = 16
+			year = 1860
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1865
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1870
+		}
+		modifier = {
+			factor = 1.5
+			total_pops = 3000000
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		
+	}	
+}
+
+early_experimental_psychology = {
+	area = aesthetics
+	year = 1740
+	cost = 12800
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.05 #1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1880 #1860
+		}
+		modifier = {
+			factor = 2
+			year = 1890 #1870
+		}
+	}
+}
+
+classicism = {
+	area = aesthetics
+	year = 1745
+	cost = 13200
+
+	prestige = 0.05
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.4  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+anarchism = {
+	area = aesthetics
+	year = 1750
+	cost = 13600
+
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+ontology = {
+	area = aesthetics
+	year = 1755
+	cost = 14000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.05 #1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1890 #1880
+		}
+		modifier = {
+			factor = 2
+			year = 1900 #1890
+		}
+	}
+}
+
+enlightenment = {
+	area = aesthetics
+	year = 1760
+	cost = 14400
+	increase_research = 0.50
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+kantianism = {
+	area = aesthetics
+	year = 1765
+	cost = 14800
+
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+
+}
+
+colonial_ambitions = {
+	area = aesthetics
+	year = 1770
+	cost = 15200
+
+	max_national_focus = 1
+	diplomatic_points = 0.25
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.3
+			total_pops = 4000000
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}	
+}
+
+downfall_of_the_old_church = {
+	area = aesthetics
+	year = 1775
+	cost = 15600
+	education_efficiency = 0.025	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+neoclassicism = {
+	area = aesthetics
+	year = 1785
+	cost = 32400
+	prestige = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			not = { literacy = 0.3 }
+		}
+			}
+}
+
+#philosophy
+
+counter_enligthenment = {
+	area = philosophy
+	year = 99999
+	cost = 16400
+	increase_research = 0.15
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 0
+			NOT = { 
+				neoclassicism = 1 
+			} 
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+freedom_and_independence = {
+	area = philosophy
+	year = 1804
+	cost = 16800
+
+	max_national_focus = 1 
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.03
+			total_pops = 5000000
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}	
+}
+
+revolutionary_ideas = {
+	area = philosophy
+	year = 1808
+	cost = 17200
+	increase_research = 0.15
+	
+ 	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+
+}
+
+the_grand_revolution = {
+	area = philosophy
+	year = 1812
+	cost = 17600
+
+	max_national_focus = 1
+	
+	ai_chance = {
+		factor = 11
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+			year = 1850
+		}
+	}
+}
+
+malthusian_thought = {
+	area = philosophy
+	year = 1816
+	cost = 18000
+	
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+
+}
+
+descriptive_psychology = {
+	area = philosophy
+	year = 1820
+	cost = 18400
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1910
+		}
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+	}
+}
+
+introspectionism = {
+	area = philosophy
+	year = 1824
+	cost = 18800
+
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.05 #1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1850 #1840
+		}
+		modifier = {
+			factor = 2
+			year = 1860 #1850
+		}
+	}
+}
+
+early_romanticistic_culture = {
+	area = philosophy
+	year = 1829
+	cost = 19200
+
+	prestige = 0.025
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			not = { literacy = 0.3 }
+		}
+			}
+}
+
+anti_clericalism = {
+	area = philosophy
+	year = 1834
+	cost = 6200
+	education_efficiency = 0.025	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+late_enlightenment_philosophy = {
+	area = philosophy
+	year = 1839
+	cost = 20000
+
+
+	increase_research = 0.50
+	
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1840
+		}
+		modifier = {
+			factor = 2
+			year = 1850
+		}
+		modifier = {
+			factor = 1.1
+			year = 1865
+		}
+		modifier = {
+			factor = 2
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
+		}
+	}
+}
+
+early_romanticism = {
+	area = philosophy
+	year = 1844
+	cost = 20400
+	increase_research = 0.15
+	
+ 	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.5 #2
+			not = { literacy = 0.2 }
+		}
+			}
+}
+
+absolute_idealism = {
+	area = philosophy
+	year = 1849
+	cost = 20800
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+romanticism = {
+	area = philosophy
+	year = 1854
+	cost = 21200
+	
+	prestige = 0.05
+
+
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1000
+			continent = north_america
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.5  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+ideological_thought = {
+	area = philosophy
+	year = 1859
+	cost = 21600
+
+	max_national_focus = 1 
+		
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 6
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			total_pops = 1000000
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1840
+		}
+		modifier = {
+			factor = 51
+			year = 1850
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+associationism = {
+	area = philosophy
+	year = 1864
+	cost = 22000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.05
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1860 #1840
+		}
+		modifier = {
+			factor = 2
+			year = 1870 #1850
+		}
+	}
+}
+
+idealism = {
+	area = philosophy
+	year = 1869
+	cost = 45200
+
+	increase_research = 0.50
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1845
+		}
+		modifier = {
+			factor = 2
+			year = 1850
+		}
+		modifier = {
+			factor = 1.1
+			year = 1865
+		}
+		modifier = {
+			factor = 2
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
+		}
+	}
+}
+
+#social_thought
+
+positivism = {
+	area = social_thought
+	year = 99999
+	cost = 22800
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 0
+			NOT = { 
+				idealism = 1 
+			} 
+		}
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+realism = {
+	area = social_thought
+	year = 1874
+	cost = 23200
+
+	prestige = 0.05
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.3  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+state_n_government = {
+	area = social_thought
+	year = 1878
+	cost = 23600
+
+	max_national_focus = 1 
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 3.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			total_pops = 2000000
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1850
+		}
+		modifier = {
+			factor = 51
+			year = 1860
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}	
+}
+
+phenomenalism = {
+	area = social_thought
+	year = 1882
+	cost = 24000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.05 #1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1870 #1860
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+	}
+}
+
+empiricism = {
+	area = social_thought
+	year = 1886
+	cost = 24400
+	
+	increase_research = 0.50
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1865
+		}
+		modifier = {
+			factor = 2
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
+		}
+	}
+}
+
+functionalism = {
+	area = social_thought
+	year = 1889
+	cost = 24800
+
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+impressionism = {
+	area = social_thought
+	year = 1892
+	cost = 25200
+
+	prestige = 0.05
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.4  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+nationalism_n_imperialism = {
+	area = social_thought
+	year = 1895
+	cost = 25600
+
+	max_national_focus = 1
+	#colonial_life_rating = -10 
+	cb_creation_speed = 0.1
+	
+	ai_chance = {
+		factor = 1.15
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 11
+			rank = 16
+			year = 1860
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1865
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1870
+		}
+		modifier = {
+			factor = 1.5
+			total_pops = 3000000
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}	
+}
+
+experimental_psychology = {
+	area = social_thought
+	year = 1898
+	cost = 26000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.05 #1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1880 #1860
+		}
+		modifier = {
+			factor = 2
+			year = 1890 #1870
+		}
+	}
+}
+
+analytic_philosophy = {
+	area = social_thought
+	year = 1901
+	cost = 26400
+
+	increase_research = 1.0
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
+		}
+	}
+}
+
+biologism = {
+	area = social_thought
+	year = 1904
+	cost = 26800
+
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+expressionism = {
+	area = social_thought
+	year = 1907
+	cost = 27200
+
+	prestige = 0.05
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.5  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+revolution_n_counterrevolution = {
+	area = social_thought
+	year = 1910
+	cost = 27600
+
+	max_national_focus = 1
+	diplomatic_points = 0.25
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.3
+			total_pops = 4000000
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}	
+}
+
+psychoanalysis = {
+	area = social_thought
+	year = 1913
+	cost = 28000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.05 #1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1890 #1880
+		}
+		modifier = {
+			factor = 2
+			year = 1900 #1890
+		}
+	}
+}
+
+phenomenology_n_hermeneutic = {
+	area = social_thought
+	year = 1916
+	cost = 28400
+
+	increase_research = 1.0
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1885
+		}
+		modifier = {
+			factor = 2
+			year = 1890
+		}
+	}
+}
+
+social_science = {
+	area = social_thought
+	year = 1918
+	cost = 58000
+
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+#political_thought
+
+mass_culture_n_the_avant_garde = {
+	area = political_thought
+	year = 99999
+	cost = 29200
+
+	prestige = 0.05
+	activate_building =  entertainment_industry
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 0
+			NOT = { 
+				social_science = 1 
+			} 
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.5  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+mass_politics = {
+	area = political_thought
+	year = 1923
+	cost = 29600
+
+	max_national_focus = 1 
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.03
+			total_pops = 5000000
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}	
+}
+
+behaviorism = {
+	area = political_thought
+	year = 1925
+	cost = 30000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1910
+		}
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+	}
+}
+
+anti__rationalism = {
+	area = political_thought
+	year = 1927
+	cost = 30400
+
+	increase_research = 1.0
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1905
+		}
+		modifier = {
+			factor = 2
+			year = 1910
+		}
+	}
+}
+
+social_alienation = {
+	area = political_thought
+	year = 1929
+	cost = 30800
+	
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+post_modernism = {
+	area = political_thought
+	year = 1931
+	cost = 31200
+
+	prestige = 0.05
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.5  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+mass_state_media = {
+	area = political_thought
+	year = 1933
+	cost = 31600
+
+	max_national_focus = 2 
+	cb_creation_speed = 0.05
+	diplomatic_points = 0.25
+
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 3.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			total_pops = 2000000
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1850
+		}
+		modifier = {
+			factor = 51
+			year = 1860
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}	
+}
+
+media_psychology = {
+	area = political_thought
+	year = 1935
+	cost = 32000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+        mobilisation_economy_impact = -0.025
+
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.05 #1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1870 #1860
+		}
+		modifier = {
+			factor = 2
+			year = 1880
+		}
+	}
+}
+
+logical_positivism = {
+	area = political_thought
+	year = 1937
+	cost = 32400
+	
+	increase_research = 0.50
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1865
+		}
+		modifier = {
+			factor = 2
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
+		}
+	}
+}
+
+individualism = {
+	area = political_thought
+	year = 1939
+	cost = 32800
+
+	colonial_migration = 0.05
+	education_efficiency = 0.25
+        plurality = 0.05
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+social_realism = {
+	area = political_thought
+	year = 1941
+	cost = 33200
+
+	prestige = 0.1
+        assimilation_rate = 0.05
+
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.3  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+post_colonialism = {
+	area = political_thought
+	year = 1943
+	cost = 33600
+
+	max_national_focus = 1 
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.03
+			total_pops = 5000000
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}	
+}
+
+existentialism = {
+	area = political_thought
+	year = 1945
+	cost = 34000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+        mobilisation_economy_impact = -0.025
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.05 #1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1880 #1860
+		}
+		modifier = {
+			factor = 2
+			year = 1890 #1870
+		}
+	}
+}
+
+computational_logic = {
+	area = political_thought
+	year = 1947
+	cost = 34400
+
+	increase_research = 1.0
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1875
+		}
+		modifier = {
+			factor = 2
+			year = 1885
+		}
+	}
+}
+
+social_determinism = {
+	area = political_thought
+	year = 1949
+	cost = 34800
+
+	colonial_migration = 0.1
+	education_efficiency = 0.25
+        plurality = 0.05
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+punk_era = {
+	area = political_thought
+	year = 1949
+	cost = 70800
+
+	prestige = 0.2
+        assimilation_rate = 0.05
+
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.5  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+#psychology
+
+international_protocol = {
+	area = psychology
+	year = 99999
+	cost = 35600
+
+	max_national_focus = 2
+	cb_creation_speed = 0.05
+	diplomatic_points = 0.25
+	
+	ai_chance = {
+		factor = 1.15
+		modifier = {
+			factor = 0
+			NOT = { 
+				punk_era = 1 
+			} 
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 11
+			rank = 16
+			year = 1860
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+			year = 1865
+		}
+		modifier = {
+			factor = 51
+			rank = 16
+			year = 1870
+		}
+		modifier = {
+			factor = 1.5
+			total_pops = 3000000
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		
+	}	
+}
+
+cognitivism = {
+	area = psychology
+	year = 1958
+	cost = 36000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1910
+		}
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+	}
+}
+
+globalisation = {
+	area = psychology
+	year = 1962
+	cost = 36400
+
+	increase_research = 1.0
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1905
+		}
+		modifier = {
+			factor = 2
+			year = 1910
+		}
+	}
+}
+
+interactionism = {
+	area = psychology
+	year = 1970
+	cost = 36800
+
+	colonial_migration = 0.1
+	education_efficiency = 0.50
+        plurality = 0.05
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+pop_generation = {
+	area = psychology
+	year = 1960
+	cost = 37200
+
+	prestige = 0.2
+        assimilation_rate = 0.05
+
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.5  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+cold_war_policy = {
+	area = psychology
+	year = 1974
+	cost = 37600
+
+	max_national_focus = 2
+	cb_creation_speed = 0.05
+	diplomatic_points = 0.25
+
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.3
+			total_pops = 4000000
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}	
+}
+
+medication = {
+	area = psychology
+	year = 1978
+	cost = 38000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1910
+		}
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+	}
+}
+
+post_structuralism = {
+	area = psychology
+	year = 1982
+	cost = 38400
+
+	increase_research = 1.0
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1885
+		}
+		modifier = {
+			factor = 2
+			year = 1890
+		}
+	}
+}
+
+consensus_reality = {
+	area = psychology
+	year = 1986
+	cost = 38800
+	
+	colonial_migration = 0.1
+	education_efficiency = 0.50
+        plurality = 0.05
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+modern_political_negotiations = {
+	area = psychology
+	year = 1990
+	cost = 39200
+
+	max_national_focus = 2
+	cb_creation_speed = 0.05
+	diplomatic_points = 0.25
+
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.03
+			total_pops = 5000000
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}	
+}
+
+humanistic_psychology = {
+	area = psychology
+	year = 1994
+	cost = 39600
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	mobilisation_economy_impact = -0.025
+
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1910
+		}
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+	}
+}
+
+neopragmatism = {
+	area = psychology
+	year = 1998
+	cost = 40000
+
+	increase_research = 1.0
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1905
+		}
+		modifier = {
+			factor = 2
+			year = 1910
+		}
+	}
+}
+
+anti_necessitarian_soc_thought = {
+	area = psychology
+	year = 2002
+	cost = 40400
+	
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 3 #6
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+utopianism = {
+	area = psychology
+	year = 2006
+	cost = 40800
+
+	prestige = 0.05
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.5  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+commodity_narcissism = {
+	area = psychology
+	year = 2010
+	cost = 41200
+
+	max_national_focus = 1 
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.03
+			total_pops = 5000000
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}	
+}
+
+professional_philosophy = {
+	area = psychology
+	year = 2014
+	cost = 41600
+
+	increase_research = 0.75
+	ai_chance = {
+		factor = 51
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1905
+		}
+		modifier = {
+			factor = 2
+			year = 1910
+		}
+	}
+}
+

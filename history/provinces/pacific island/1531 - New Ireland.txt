@@ -1,0 +1,20 @@
+trade_goods = tropical_wood
+life_rating = 15
+
+1905.1.1 = {
+	owner = GER
+	controller = GER
+	colonial = 2
+		}
+
+1920.1.1 = {
+	owner = AST
+	controller = AST
+	colonial = 2
+		}
+add_core = PNG
+1975.1.1 = {
+		owner = PNG
+	controller = PNG
+	colonial = 0
+		}

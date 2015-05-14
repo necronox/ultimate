@@ -1,0 +1,18 @@
+owner = ANG
+controller = ANG
+add_core = WSX
+1707.1.1 = {
+owner = ENG
+controller = ENG
+add_core = ENG
+	}
+add_core = ANG
+add_core = ENG
+2015.1.1 = {
+owner = ANG
+controller = ANG
+		}
+trade_goods = grain
+life_rating = 35
+fort = 1
+1861.1.1 = { railroad = 3 }

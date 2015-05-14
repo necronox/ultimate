@@ -1,0 +1,17 @@
+name = "Franco Moroccan War"
+1845.4.25 = { 
+         add_attacker = FRA
+         add_defender = MOR 
+         war_goal = { casus_belli = make_puppet 
+		actor = FRA
+		receiver = MOR
+                country = MOR
+        }
+
+
+}
+
+1847.12.31 = {
+	rem_attacker = FRA
+	rem_defender = MEX
+}

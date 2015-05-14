@@ -1,0 +1,25 @@
+political_decisions = {
+	hide_custom_decisions = {
+		potential = {
+			NOT = {	has_country_flag = hidden_decisions }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = hidden_decisions
+			set_country_flag = shown_decisions
+		}
+	}
+	show_custom_decisions = {
+		potential = {
+			has_country_flag = shown_decisions
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = hidden_decisions
+			clr_country_flag = shown_decisions
+		}
+	}
+}
+

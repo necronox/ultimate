@@ -1,0 +1,32 @@
+owner = MNG
+controller = MNG
+add_core = MNG
+
+1644.1.1 = {
+	owner = CHI
+	controller = CHI
+	add_core = CHI
+	remove_core = MNG
+		}
+
+1911.1.1 = {
+	owner = NCN	
+	controller = NCN
+	add_Core = NCN
+		}
+
+
+1950.1.1 = {
+	owner = CHI
+	controller = CHI
+		}
+#2016 Uigur Revolt
+2016.1.1 = {
+	owner = XIN
+	controller = XIN
+		}
+
+add_core = XIN
+trade_goods = cotton
+life_rating = 32
+

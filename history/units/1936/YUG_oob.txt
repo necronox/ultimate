@@ -1,0 +1,12 @@
+navy = {
+	name = "Mornarica"
+	location = 782
+ship = {
+	name = "Dubrovnik"
+	type = battleship
+		}
+ship = {
+	name = "Beograd"
+	type = battleship
+		}
+}

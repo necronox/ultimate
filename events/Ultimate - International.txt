@@ -1,0 +1,23 @@
+country_event = {
+	id = 210000
+	title = "The World Health Organisation"
+	desc = "EVTDESC210000"
+	picture = "WHOpic"
+
+trigger = {
+	has_global_flag = UNcreated
+	health_care = acceptable_health_care
+	NOT = {
+	has_global_flag = WHOcreated
+		}
+}
+	mean_time_to_happen = {
+	days = 5000
+			}
+
+	option = {
+		name = "This could prove useful"
+		prestige = 5
+		set_global_flag = WHOcreated
+		}
+			}

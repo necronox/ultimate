@@ -1,0 +1,47 @@
+owner = HRE
+controller = HRE
+add_core = ANH
+add_core = HRE
+add_core = GER
+
+1604.1.1 = { 
+	owner = ANH
+	controller = ANH
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+1704.1.1 = { 
+		controller = PRU
+		owner = PRU
+		add_core = PRU
+		}
+1812.1.1 = { 
+		controller = ANH
+		owner = ANH
+		remove_core = PRU
+		}
+
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+trade_goods = fruit
+life_rating = 40
+
+#End of WW2
+1945.5.1 = {
+	owner = DDR
+	controller = DDR
+	add_core = DDR
+		}
+
+#Fall of Berlin Wall - Reunification
+1991.1.1 = {
+		owner = GER
+	controller = GER
+	remove_core = DDR
+		}

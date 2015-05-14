@@ -1,0 +1,220 @@
+country_event = {
+
+id = 22000101
+title = "Spanish American War !" #Spanish_American War (1898)
+desc = "It's Time to punish the Arrogant Spanish !"
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		year = 1898
+		NOT = {
+			year = 1899
+			has_country_flag = american_spanish_war
+			has_country_flag = no_american_spanish_war
+			}
+
+	}
+
+	option = {
+		name = "Let's punish Spain !"
+		set_country_flag = american_spanish_war
+		
+	war = {
+			target = SPA
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 2209
+			}
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 2222
+			}
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 2517
+			}
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 1455 
+			}
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 1459
+			}
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 1463
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			
+			ai_chance = {
+			factor = 100
+			}
+	}
+	
+		option = {
+		name = "We don't need a military adventure."
+		set_country_flag = no_american_spanish_war
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 22000102
+title = "Second Italian War of Independence !" #Second Italian War of Independence (1859)
+desc = "It's Time to Liberate our fellow Italians !"
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = SAR
+		year = 1859
+		NOT = {
+			year = 1860
+			has_country_flag = italian_second_war
+			has_country_flag = no_italian_second_war
+			}
+
+	}
+
+	option = {
+		name = "Let's Liberate Italy !"
+		set_country_flag = italian_second_war
+		create_alliance = FRA
+		war = {
+			target = AUS
+			call_ally = yes
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 726
+			}
+			ai_chance = {
+			factor = 100
+			}
+	}
+		option = {
+		name = "We don't need a military adventure."
+		set_country_flag = no_italian_second_war
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 22000103
+title = "Third Italian War of Independence !" #Third Italian War of Independence (1866)
+desc = "It's Time to Liberate our fellow Italians !"
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = ITA
+		year = 1866
+		NOT = {
+			year = 1867
+			has_country_flag = italian_third_war
+			has_country_flag = no_italian_third_war
+			}
+
+	}
+
+	option = {
+		name = "Let's Liberate Venezia !"
+		set_country_flag = italian_third_war
+		create_alliance = PRU
+	war = {
+			target = AUS
+			call_ally = yes
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 729
+			}
+			ai_chance = {
+			factor = 100
+			}
+	}
+		option = {
+		name = "We don't need a military adventure."
+		set_country_flag = no_italian_third_war
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 22000104
+title = "First Italian War of Independence !" #First Italian War of Independence (1866)
+desc = "It's Time to Liberate our fellow Italians !"
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = SAR
+		year = 1848
+		NOT = {
+			year = 1849
+			has_country_flag = italian_first_war
+			has_country_flag = no_italian_first_war
+			}
+
+	}
+
+	option = {
+		name = "Let's Liberate Italy !"
+		set_country_flag = italian_first_war
+		create_alliance = PAP
+		create_alliance = SIC
+	war = {
+			target = AUS
+			call_ally = yes
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 726
+			}
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 729
+			}
+			ai_chance = {
+			factor = 100
+			}
+	}
+		option = {
+		name = "We don't need a military adventure."
+		set_country_flag = no_italian_first_war
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,22 @@
+1764.1.1 = {
+owner = SPA
+controller = SPA
+colonial = 2
+		}
+1810.1.1 = {
+owner = ENG
+controller = ENG
+add_core = ARG
+colonial = 2
+		}
+
+trade_goods = wool
+life_rating = 30
+
+1910.1.1 = {
+	add_core = ENG
+		}
+2015.1.1 = {
+owner = ANG
+controller = ANG
+		}

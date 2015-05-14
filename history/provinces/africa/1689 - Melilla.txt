@@ -1,0 +1,16 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+add_core = MOR
+trade_goods = fish
+life_rating = 35
+colonial = 2
+
+
+1956.1.1 = {
+owner = MOR
+controller = MOR
+colonial = 0
+		}
+
+

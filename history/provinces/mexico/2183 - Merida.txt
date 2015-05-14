@@ -1,0 +1,23 @@
+owner = MYA
+controller = MYA
+add_core = MYA
+colonial = 0
+1707.1.1 = {
+owner = SPA
+controller = SPA
+colonial = 2
+		}
+
+1821.1.1 = {
+owner = MEX
+
+colonial = 0 
+controller = MEX
+add_core = MEX
+		}
+1836.1.1 = {
+add_core = YUC
+		}
+
+trade_goods = grain
+life_rating = 30

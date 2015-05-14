@@ -1,0 +1,87 @@
+political_decisions = {
+	offer_east_prussia = {
+	picture = eastprussiapic
+		potential = {
+			tag = RUS
+			NOT = {
+				has_global_flag = russia_offer_eastprussia }
+			AND = {
+				695 = {
+					owned_by = RUS
+					}
+				697 = {
+					owned_by = RUS
+					}
+				}
+					}
+
+		allow = {
+			relation = { who = GER value = 100 }
+				}
+
+		effect = {
+			set_global_flag = russia_offer_eastprussia
+				}
+					}
+
+	buy_east_prussia = {
+	picture = eastprussiapic
+		potential = {
+			has_global_flag = russia_offer_eastprussia
+			AI = no
+			tag = GER
+			NOT = {
+			owns = 695
+			owns = 697
+				}
+				}
+	
+	allow = {
+	money = 600000
+	695 = {
+		owner = {
+		relation = { who = GER value = 100 }
+			}
+		}
+			}
+
+	effect = {
+	695 = {
+		owner = {
+		treasury = 600000
+			}
+		}
+	695 = {
+	secede_province = GER
+		}
+	697 = {
+	secede_province = GER
+		}
+		GER = {
+		treasury = -600000
+			}
+	546 = {
+	add_core = GER
+		}
+	679 = {
+	add_core = GER
+		}
+	680 = {
+	add_core = GER
+		}
+	591 = {
+	add_core = GER
+		}
+	690 = {
+	add_core = GER
+		}
+	693 = {
+	add_core = GER
+		}
+	696 = {
+	add_core = GER
+		}
+		}
+			}
+		
+}

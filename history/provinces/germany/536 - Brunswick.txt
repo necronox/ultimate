@@ -1,0 +1,47 @@
+owner = HRE
+controller = HRE
+add_core = BRA
+add_core = GER
+add_core = HRE
+
+1604.1.1 = { 
+	owner = BRA
+	controller = BRA
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+1704.1.1 = { 
+		controller = PRU
+		owner = PRU
+		add_core = PRU
+		}
+
+1812.1.1 = {
+owner = WES
+controller = WES
+		}
+1815.1.1 = { 
+		controller = BRA
+		owner = BRA
+		remove_core = PRU
+		}
+
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+trade_goods = fruit
+life_rating = 40
+1861.1.1 = { railroad = 3 }
+
+1910.1.1 = {
+	state_building = {
+	level = 2
+	building = barrel_factory
+	upgrade = yes
+}
+		}

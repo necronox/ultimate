@@ -1,0 +1,139 @@
+﻿#RELATIONS#
+RUS = {
+        value = -50
+        }
+GER = {
+        value = 100
+        military_access = yes
+}
+
+
+ITA = {
+        value = 100
+        military_access = yes
+}
+
+
+#IMPERIAL SPHERE#
+
+
+BHU = {
+        value = 100
+        level = 5
+        influence_value = 25
+}
+
+
+NEP = {
+        value = 100
+        level = 5
+        influence_value = 25
+}
+
+
+
+
+
+
+
+
+army = {
+        name = "British Army German Station"
+        location = 537
+        regiment = {
+                name= "Infantry"
+                type = guard
+                home = 406
+        }
+        regiment = {
+                name= "Infantry"
+                type = guard
+                home = 406
+        }
+        regiment = {
+                name= "Infantry"
+                type = guard
+                home = 406
+        }
+        regiment = {
+                name= "Infantry"
+                type = guard
+                home = 406
+        }
+        regiment = {
+                name= "Infantry"
+                type = guard
+                home = 406
+        }
+        regiment = {
+                name= "Infantry"
+                type = guard
+                home = 406
+        }
+}
+
+
+navy = {
+        name = "Royal Navy"
+        location = 299 #Plymouth Port
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+ship = {
+        name = "HMS Something"
+        type = carrier
+        }
+        }

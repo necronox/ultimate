@@ -1,0 +1,27 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = MON
+add_core = YUG
+1914.1.1 = { 
+		controller = MON
+		owner = MON
+		remove_core = TUR
+		}
+1919.6.28 = { 
+		controller = YUG
+		owner = YUG
+		remove_core = TUR
+		}
+1920.6.28 = { 
+		controller = YUG
+		owner = YUG
+		}
+trade_goods = iron
+life_rating = 35
+
+
+2006.6.3 = {
+	owner = MON
+	controller = MON
+		}

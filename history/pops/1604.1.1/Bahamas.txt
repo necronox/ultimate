@@ -1,0 +1,58 @@
+#The Bahamas Region - 23000
+#Ruled by Britain 1836
+#The Bahamas (20000/5000 POPS)
+2219 = {
+
+	slaves = {
+		culture = afro_caribbean
+		religion = animist
+		size = 4050
+	}
+
+	aristocrats = {
+		culture = english
+		religion = protestant
+		size = 15
+	}
+
+	bureaucrats = {
+		culture = english
+		religion = protestant
+		size = 5
+	}
+
+	clergymen = {
+		culture = english
+		religion = protestant
+		size = 15
+	}
+
+	artisans = {
+		culture = english
+		religion = protestant
+		size = 150
+	}
+
+	soldiers = {
+		culture = english
+		religion = protestant
+		size = 25
+	}
+
+	farmers = {
+		culture = english
+		religion = protestant
+		size = 540
+	}
+}
+#Turks & Caicos Islands (3000/750 POPS) #still a english colony
+2220 = {
+
+
+	slaves = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 550
+	}
+
+}

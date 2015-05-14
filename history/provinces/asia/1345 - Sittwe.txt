@@ -1,0 +1,26 @@
+	owner = BUR
+	controller = BUR
+
+1818.1.1 = {
+	owner = ENG #hello
+	controller = ENG #hello
+	colonial = 2
+}
+
+
+add_core = BUR
+
+1948.1.1 = {
+		owner = BUR
+		controller = BUR
+		colonial = 0
+		}
+
+
+1880.1.1 = {
+owner = ENG
+controller = ENG
+colonial = 2
+		}
+trade_goods = grain
+life_rating = 35

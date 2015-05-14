@@ -1,0 +1,60 @@
+owner = HRE
+controller = HRE
+add_core = HRE
+add_core = AUS
+
+1604.1.1 = { 
+	owner = AUS
+	controller = AUS
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+trade_goods = grain
+life_rating = 35
+
+#state_building = {
+#	level = 1
+#	building = ammunition_factory
+#	upgrade = yes
+#}
+
+1812.1.1 = {
+		controller = BAV
+		owner = BAV
+		}
+
+
+1815.1.1 = {
+		controller = AUS
+		owner = AUS
+		}
+
+
+
+1914.1.1 = {
+owner = KUK
+controller = KUK
+add_core = KUK
+}
+
+1919.6.28 = {
+owner = AUS
+controller = AUS
+remove_core = KUK
+}
+
+1938.1.1 = {
+owner = GER
+controller = GER }
+
+#End of WW2
+1945.5.1 = {
+	owner = AUS
+	controller = AUS
+		}
+
+

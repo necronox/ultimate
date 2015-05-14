@@ -1,0 +1,394 @@
+#New Zealand : 99021 + 54300 Maori
+#British in 1861
+#North Island Region (41641) + 52300 Maori
+#Auckland (24420/6105 European POPS) + (12000/3000 Maori POPs)
+2509 = {
+
+	bureaucrats = {
+		culture = british
+		religion = protestant
+		size = 2214
+	}
+
+	aristocrats = {
+		culture = british
+		religion = protestant
+		size = 22052
+	}
+
+	clergymen = {
+		culture = british
+		religion = protestant
+		size = 22062
+	}
+	
+	artisans = {
+		culture = british
+		religion = protestant
+		size = 2230
+	}
+	
+	farmers = {
+		culture = british
+		religion = protestant
+		size = 77001
+	}
+
+	farmers = {
+		culture = irish
+		religion = protestant
+		size = 44001
+	}
+
+	clergymen = {
+		culture = irish
+		religion = catholic
+		size = 22004
+	}
+	
+	farmers = {
+		culture = irish
+		religion = catholic
+		size = 33001
+	}
+
+	aristocrats = {
+		culture = maori
+		religion = protestant
+		size = 2200
+	}
+	
+	artisans = {
+		culture = maori
+		religion = protestant
+		size = 2235
+	}
+
+	farmers = {
+		culture = maori
+		religion = protestant
+		size = 2200
+	}
+	
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 2200
+	}
+	
+}
+#New Plymouth (2040/510 European POPS) + (4000/1000 Maori POPS)
+2510 = {
+
+	clergymen = {
+		culture = british
+		religion = protestant
+		size = 2200
+	}
+	
+	artisans = {
+		culture = british
+		religion = protestant
+		size = 5000
+	}
+	
+	farmers = {
+		culture = british
+		religion = protestant
+		size = 33551
+	}
+	
+	farmers = {
+		culture = irish
+		religion = catholic
+		size = 22051
+	}
+
+	farmers = {
+		culture = maori
+		religion = protestant
+		size = 26504
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 35003
+	}
+}
+#Napier (2610/650 European POPS) + (13000/3250 Maori POPS)
+2511 = {
+
+	clergymen = {
+		culture = british
+		religion = protestant
+		size = 6000
+	}
+	
+	farmers = {
+		culture = british
+		religion = protestant
+		size = 4800
+	}
+	
+	farmers = {
+		culture = irish
+		religion = protestant
+		size = 22002
+	}
+
+	artisans = {
+		culture = maori
+		religion = protestant
+		size = 3300
+	}
+
+	farmers = {
+		culture = maori
+		religion = protestant
+		size = 44503
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 4435
+	}
+}
+#Wellington (12570/3140 European POPS) +(2300/575 Maori POPs)
+2512 = {
+	clergymen = {
+		culture = british
+		religion = protestant
+		size = 4400
+	}
+	
+	artisans = {
+		culture = british
+		religion = protestant
+		size = 4400
+	}
+	
+	farmers = {
+		culture = british
+		religion = protestant
+		size = 8800
+	}
+
+	farmers = {
+		culture = irish
+		religion = catholic
+		size = 8800
+	}
+
+	farmers = {
+		culture = maori
+		religion = protestant
+		size = 7700
+	}
+	
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 3456
+	}
+}
+#Tauranga (20000/4000 Maori POPS)
+2571 = {
+	clergymen = {
+		culture = maori
+		religion = animist
+		size = 400
+	}
+
+	artisans = {
+		culture = maori
+		religion = animist
+		size = 2850
+	}
+
+	soldiers = {
+		culture = maori
+		religion = animist
+		size= 2250
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 3555
+	}
+	
+	artisans = {
+		culture = maori
+		religion = protestant
+		size = 1455
+	}
+
+	farmers = {
+		culture = maori
+		religion = protestant
+		size = 5567
+	}
+
+}
+#South Island Region (57380) +2000 Maori
+#Dunedin (28980/7245 POPS) + (400/100 Maori POPS)
+2513 = {
+	aristocrats = {
+		culture = british
+		religion = protestant
+		size = 678
+	}
+	
+	bureaucrats = {
+		culture = british
+		religion = protestant
+		size = 789
+	}
+
+	artisans = {
+		culture = british
+		religion = protestant
+		size = 456
+	}
+
+	clergymen = {
+		culture = british
+		religion = protestant
+		size = 507
+	}
+	
+	farmers = {
+		culture = british
+		religion = protestant
+		size = 89781
+	}
+
+	artisans = {
+		culture = irish
+		religion = catholic
+		size = 1052
+	}
+
+	clergymen = {
+		culture = irish
+		religion = catholic
+		size = 500
+	}
+	
+	farmers = {
+		culture = irish
+		religion = catholic
+		size = 2295
+	}
+
+	farmers = {
+		culture = maori
+		religion = protestant
+		size = 2005
+	}
+}
+#Hokitikia (2880/720 European POPS) + (400/100 Maori POPS)
+2514 = {
+	artisans = {
+		culture = british
+		religion = protestant
+		size = 335
+	}
+
+	clergymen = {
+		culture = british
+		religion = protestant
+		size = 106
+	}
+	
+	farmers = {
+		culture = british
+		religion = protestant
+		size = 8795
+	}
+	
+	farmers = {
+		culture = irish
+		religion = protestant
+		size = 5678
+	}
+
+	farmers = {
+		culture = maori
+		religion = protestant
+		size = 5677
+	}
+}
+#Christchurch (16150/4040 POPS) + (400/100 Maori POPs)
+2515 = {
+
+	artisans = {
+		culture = british
+		religion = protestant
+		size = 120
+	}
+
+	clergymen = {
+		culture = british
+		religion = protestant
+		size = 50
+	}
+	
+	farmers = {
+		culture = british
+		religion = protestant
+		size = 2985
+	}
+
+	farmers = {
+		culture = irish
+		religion = protestant
+		size = 3558
+	}
+	
+	farmers = {
+		culture = irish
+		religion = catholic
+		size = 5204
+	}
+
+	farmers = {
+		culture = maori
+		religion = protestant
+		size = 4456
+	}
+}
+#Nelson (12250/3060 POPS) + (800/200 Maori POPS)
+2516 = {
+	artisans = {
+		culture = british
+		religion = protestant
+		size = 500
+	}
+
+	clergymen = {
+		culture = british
+		religion = protestant
+		size = 400
+	}
+	
+	farmers = {
+		culture = british
+		religion = protestant
+		size = 2890
+	}
+	
+	farmers = {
+		culture = irish
+		religion = protestant
+		size = 5673
+	}
+
+	farmers = {
+		culture = maori
+		religion = protestant
+		size = 2005
+	}
+}

@@ -1,0 +1,92 @@
+political_decisions = {
+
+	embrace_old_norse = {
+		picture = paganpic
+		potential = {
+			is_culture_group = scandinavian
+			NOT = {
+			exists = PSC
+			has_country_flag = old_faith_done
+				}
+				}
+		allow = {
+			tag = SCA
+			war = no
+			}
+		effect = {
+		set_country_flag = old_faith_done
+		all_core = {
+			add_core = PSC
+				}
+			}
+		ai_will_do = {
+			factor = -10
+		}
+			}
+
+	form_rome = {
+		picture = form_romepic
+			potential = {
+			is_culture_group = italian
+			NOT = {
+			exists = RME
+			tag = PAP
+				}
+			}
+		allow = {
+			is_greater_power = yes
+			749 = {
+			owned_by = THIS
+				}
+			war = no
+			}
+		effect = {
+		capital = 749
+		change_tag = RME
+				}
+		ai_will_do = {
+			factor = -10
+		}
+			}
+	embrace_old_rome = {
+		picture = paganpic
+		potential = {
+			NOT = {
+				has_country_flag = old_faith_done
+				}
+			tag = RME
+				}
+		allow = {
+			war = no
+			}
+
+		effect = {
+			set_country_flag = old_faith_done
+				all_core = {
+			add_core = PRM
+				}
+				}
+		ai_will_do = {
+			factor = -10
+		}
+			}
+	encourage_old_faith = {
+		picture = paganpic
+		potential = {
+			OR = {
+			tag = PSC
+			tag = PRM
+				}
+			NOT = {
+			has_country_modifier = encourage_old_faith_mod
+				}
+				}
+		effect = {
+		set_country_flag = encourage_old_faith
+		add_country_modifier = { name = encourage_old_faith_mod duration = -1 }
+				}
+		ai_will_do = {
+			factor = -10
+		}
+			}
+}

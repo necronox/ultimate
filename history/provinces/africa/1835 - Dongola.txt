@@ -1,0 +1,22 @@
+owner = TUR
+controller = TUR
+1810.1.1 = {
+owner = EGY
+controller = EGY
+		}
+1889.1.1 = {
+	owner = ENG
+	controller = ENG
+	remove_core = EGY
+	add_core = SUD
+		}
+1989.1.1 = {
+	owner = SUD
+	controller = SUD
+	colonial = 0
+		}
+
+
+add_core = EGY
+trade_goods = fruit
+life_rating = 30

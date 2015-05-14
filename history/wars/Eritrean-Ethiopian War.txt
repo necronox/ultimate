@@ -1,0 +1,23 @@
+#name = "Eritrean-Ethiopian War"
+
+1998.5.6 = {
+	add_attacker = ETH
+	add_defender = ERI
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = humiliate #no CB for minor border disputes; just using this one - holo
+		actor = ETH
+		receiver = ERI
+	}
+
+}
+
+2000.5.25 = {
+	rem_attacker = ETH
+	rem_defender = ERI
+	}

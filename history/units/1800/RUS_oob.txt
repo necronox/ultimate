@@ -1,0 +1,142 @@
+﻿1800.1.1 = {
+leader = {
+                name = "Mikhaïl Koutouzov"
+                type = land
+                date="1800.1.1"
+                prestige = 0.5
+                personality = smart_p
+                background = disgraced
+                picture="russian_general_10"
+        }
+army = {
+	name = "Armee I"
+        location = 706
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 706
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 706
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 706
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 706
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 706
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 706
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 706
+        }
+}
+army = {
+	name = "Armee I"
+        location = 678
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 678
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 678
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 994
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 994
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 994
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 994
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 994
+        }
+}
+army = {
+	name = "3rd Army"
+        location = 937
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 937
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 1008
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 1008
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 1008
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 937
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 1003
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 1016
+        }
+	regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 967
+        }
+	regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 994
+        }
+}
+}

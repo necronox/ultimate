@@ -1,0 +1,12 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+trade_goods = cattle
+life_rating = 35
+1861.1.1 = { railroad = 3 }
+
+#The 2017 Inter-Independence Movement
+2018.1.1 = {
+owner = CAT
+controller = CAT
+		}

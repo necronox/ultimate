@@ -1,0 +1,571 @@
+CAN = {
+	value = 150
+	level = 5
+	influence_value = 50
+}
+
+AST = {
+	value = 150
+	level = 5
+	influence_value = 50
+}
+
+NZL = {
+	value = 150
+	level = 5
+	influence_value = 50
+}
+
+SAF = {
+	value = 100
+	level = 5
+	influence_value = 25
+}
+
+BHU = {
+	value = 100
+	level = 5
+	influence_value = 25
+}
+
+NEP = {
+	value = 100
+	level = 5
+	influence_value = 25
+}
+
+
+army = {
+	name = "British Army"
+	location = 299
+	regiment = {
+		name= "Infantry Regiment"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = guard
+	}
+	regiment = {
+		name= "Tank Regiment"
+		type = tank
+	}
+	regiment = {
+		name= "Fighter Squadron"
+		type = plane
+	}
+}
+
+army = {
+	name = "royal Highlanders Army"
+	location = 298
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry Regiment"
+		type = infantry
+	}
+	regiment = {
+		name= "Tank Regiment"
+		type = tank
+	}
+	regiment = {
+		name= "Fighter Squadron"
+		type = plane
+	}
+}
+
+navy = {
+	name = "Royal Navy"
+	location = 299 #Plymouth
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Cruiser"
+	type = cruiser
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+}

@@ -1,0 +1,20 @@
+
+province_event = {
+	id = 500001
+	title = "Grenadian Nutmeg"
+	desc = "Some nutmeg trees left behind on Grenada by travelling $COUNTRY_ADJ$ merchants have been planted by local farmers. The results have baffled everyone on the island and every plantation is now considering switching to nutmeg production."
+
+trigger = {
+		province_id = 2233
+		year = 1843
+		NOT = {
+			trade_goods = spices
+			}
+		}
+
+option = {
+name = "Well then!"
+	trade_goods = spices
+	}
+
+}	

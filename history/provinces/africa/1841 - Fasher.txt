@@ -1,0 +1,14 @@
+trade_goods = wool
+life_rating = 30
+1903.1.1 = {
+	owner = ENG
+	controller = ENG
+	add_core = SUD
+		}
+
+1989.1.1 = {
+	owner = SUD
+	controller = SUD
+	colonial = 0
+		}
+

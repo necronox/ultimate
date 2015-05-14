@@ -1,0 +1,50 @@
+#Sukhumi (72000/18000 POPS) #circassian = abkhaz
+1095 = {
+	aristocrats = {
+		culture = abkhaz
+		religion = orthodox
+		size = 125
+	}
+
+	clergymen = {
+		culture = abkhaz
+		religion = orthodox
+		size = 75
+	}
+
+	artisans = {
+		culture = abkhaz
+		religion = orthodox
+		size = 300
+	}
+
+	soldiers = {
+		culture = abkhaz
+		religion = orthodox
+		size = 75
+	}
+
+	farmers = {
+		culture = abkhaz
+		religion = orthodox
+		size = 4305
+	}
+	
+	farmers = {
+		culture = north_caucasian
+		religion = sunni
+		size = 2050
+	}
+	
+	artisans = {
+		culture = north_caucasian
+		religion = sunni
+		size = 75
+	}
+
+	soldiers = {
+		culture = north_caucasian
+		religion = sunni
+		size = 25
+
+}

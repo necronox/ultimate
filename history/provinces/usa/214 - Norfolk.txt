@@ -1,0 +1,59 @@
+##Now Jamestown
+
+colonial = 2
+1714.1.1 = {
+	owner = THC
+	controller = THC
+	add_core = THC
+	colonial = 0
+		}
+1775.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	remove_core = THC
+	naval_base = 2
+		}
+1820.1.1 = {
+		owner = USA
+	controller = USA
+	add_core = USA
+
+		}
+trade_goods = tobacco
+life_rating = 35
+1867.1.1 = { 	#AFTER CIVIL WAR
+	owner = USA	#AFTER CIVIL WAR
+
+
+	controller = USA #AFTER CIVIL WAR
+
+		}
+
+
+
+1861.1.1 = {
+	owner = CSA
+	controller = CSA
+	add_core = CSA
+}
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}
+
+
+1861.1.1 = { 
+	railroad = 3 
+	naval_base = 3
+}
+
+
+1938.1.1 = { 
+	railroad = 6 
+	naval_base = 6
+	fort = 6
+}
+
+

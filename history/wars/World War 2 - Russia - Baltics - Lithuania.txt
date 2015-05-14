@@ -1,0 +1,34 @@
+name = "Soviet Annexation of Lithuania"
+
+1939.9.1 = {
+	add_attacker = RUS
+	add_defender = LIT
+
+
+
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+
+	war_goal = {
+		casus_belli = conquest
+		actor = RUS
+		receiver = LIT
+	}
+
+	war_goal = {
+		casus_belli = status_quo
+		actor = LIT
+		receiver = RUS
+	}
+
+}
+
+1945.4.1 = {
+	rem_attacker = RUS
+	rem_defender = LIT
+
+		}

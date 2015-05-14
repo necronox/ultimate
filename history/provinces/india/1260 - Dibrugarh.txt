@@ -1,0 +1,32 @@
+	owner = MUG
+	controller = MUG
+	add_core = ASS
+1800.1.1 = {
+	owner = ENG #hello
+	controller = ENG #hello
+	colonial = 2
+}
+
+
+#Decolonisation
+1947.1.1 = {
+	owner = HND
+	controller = HND
+	colonial = 0
+		}
+
+
+
+add_core = HND
+1880.1.1 = {
+owner = ENG #hello
+controller = ENG #hello
+colonial = 2
+		}
+trade_goods = tea
+life_rating = 32
+
+#There will be blood
+1882.1.1 = {
+	trade_goods = oil
+		}

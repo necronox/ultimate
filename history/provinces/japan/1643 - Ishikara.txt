@@ -1,0 +1,19 @@
+trade_goods = fish
+life_rating = 35
+
+
+owner = AIN
+controller = AIN
+add_core = AIN
+
+
+1764.1.1 = {
+owner = TKG
+controller = TKG
+}
+
+1868.1.1 = {
+owner = JAP
+controller = JAP
+add_core = JAP
+}

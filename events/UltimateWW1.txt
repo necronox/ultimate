@@ -1,0 +1,480 @@
+### Events 98000-_____ used
+#######################################
+#                                     #
+#    Before World War One to Start    #
+#######################################
+country_event = {
+	
+	id = 98030
+	title = "Zimmermanntelegram_Event"
+	desc = "Zimmermanntelegram_DESC"
+	picture = "zimmermanntelegram"
+	
+	trigger = {
+		tag = GER
+		year = 1914
+
+		NOT = {
+		year = 1918
+		}
+
+		has_country_flag = zimmermann
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Zimmermanntelegram_1"
+		set_global_flag = zimmermann_sent
+		MEX = {
+			country_event = 98031
+		}
+		random_list = {
+			75 = {
+				ENG = {
+					country_event = 98032
+				}
+			}
+			25 = {
+			}
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+	option = {
+		name = "Zimmermanntelegram_2"
+		ai_chance = {
+			factor = 40
+		}
+	}
+		
+}
+country_event = {
+
+	id = 98031
+	title = "Zimmermannrecieved_Event"
+	desc = "Zimmermannrecieved_DESC"
+	picture = "zimmermanntelegram"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Zimmermannrecieved_1"
+		set_country_flag = zimmermann_recieved
+	}
+}
+country_event = {
+	
+	id = 98032
+	title = "Zimmermanndiscovered_Event"
+	desc = "Zimmermanndiscovered_DESC"
+	picture = "zimmermanntelegram"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Zimmermanndiscovered_1"
+		any_country = {
+			limit = {
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+			country_event = 98033
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = "Zimmermanndiscovered_2"
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+country_event = {
+	
+	id = 98033
+	title = "Zimmermannreleased_Event"
+	desc = "Zimmermannreleased_DESC"	
+	picture = "zimmermanntelegram"
+
+	is_triggered_only = yes
+		
+	option = {
+		name = "Zimmermannreleased_1"
+		set_country_flag = zimmermannangered
+		soldiers = {
+			militancy = 2
+			consciousness = 8
+		}
+		officers = {
+			militancy = 3
+			consciousness = 9
+		}
+	}
+}
+country_event = {
+	
+	id = 98034
+	title = "Zimmermanndeliberated_Event"	
+	desc = "Zimmermanndeliberated_DESC"
+	picture = "zimmermanntelegram"
+
+	trigger = {
+		tag = MEX
+		has_country_flag = zimmermann_recieved
+		NOT = {
+			has_country_flag = zimmermandeliberated
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+		modifier = {
+			factor = 4
+			government = democracy
+		}
+		modifier = {
+			factor = 2
+			government = hms_government
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				government = absolute_monarchy
+				government = presidential_dictatorship
+			}
+		}
+	}
+
+	option = {
+		name = "Zimmermanndeliberated_1"
+		create_alliance = GER
+		war = {
+			target = USA
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 103
+			}
+		}
+		set_country_flag = zimmermanndeliberated
+		GER = {
+			country_event = 98035
+		}
+		add_country_modifier = {
+			name = giving_aid
+			duration = 90
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 4
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 2
+				war_policy = pro_military
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = pacifism
+			}
+		}
+		small_arms = 1000
+		artillery = 1000
+		canned_food = 1000
+		luxury_clothes = 300
+		regular_clothes = 500
+		treasury = 30000
+	}
+	option = {
+		name = "Zimmermanndeliberated_2"
+		set_country_flag = zimmermanndeliberated
+		ai_chance = {
+			factor = 70
+		}
+		GER = {
+			country_event = 98038
+		}
+	}
+}
+country_event = {
+
+	id = 98035
+	title = "Zimmermannaccepted_Event"
+	desc = "Zimmermannaccepted_DESC"
+	picture = "Zimmermanntelegram"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Zimmermannaccepted_1"
+		add_country_modifier = {
+			name = giving_aid
+			duration = 90
+		}
+		small_arms = -1000
+		artillery = -1000
+		canned_food = -1000
+		luxury_clothes = -300
+		regular_clothes = -500
+		treasury = -30000
+	}
+}
+country_event = {
+	
+	id = 98038
+	title = "zimmermanndeclined_Event"
+	desc = "Zimmermanndeclined_DESC"
+	picture = "Zimmermanntelegram"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Zimmermanndeclined_1"
+	}
+}
+country_event = {
+
+	id = 98036
+	title = "Givingaid_Event"
+	desc = "Givingaid_DESC"
+	picture = "Alliance"
+
+	trigger = {
+		tag = GER
+		NOT = {
+			has_country_modifier = giving_aid
+		}
+		OR = {
+			MEX = { war_exhaustion = 5 }
+			MEX = { war_with = USA }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Givingaid_1"
+		small_arms = -50
+		artillery = -50
+		canned_food = -50
+		treasury = -3000
+		add_country_modifier = {
+			name = giving_aid
+			duration = 90
+		}
+		MEX = {
+			country_event = 98037
+		}
+		relation = {
+			who = MEX
+			value = 15
+		}
+	}
+}
+country_event = {
+
+	id = 98037
+	title = "Receivingaid_Event"
+	desc = "Receivingaid_DESC"
+	picture = "Alliance"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Receivingaid_1"
+		small_arms = 50
+		artillery = 50
+		canned_food = 50
+		treasury = 3000
+	}
+}
+country_event = {
+	
+	id = 98040
+	title = "Tampicoaffair_Event"
+	desc = "Tampicoaffair_DESC"
+	picture = "veracruz"
+	
+	trigger = {
+		tag = USA
+		year = 1914
+		month = 3
+		NOT = {
+			has_global_flag = veracruzgiven
+		}
+		NOT = {
+			year = 1915
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 8
+	}
+
+	option = {
+		name = "Tampicoaffair_1"
+		MEX = {
+			country_event = 98041
+		}
+	}
+}
+
+country_event = {
+	
+	id = 98041
+	title = "Tampicoresponse_Event"
+	desc = "Tampicoresponse_DESC"
+	picture = "veracruz"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Tampicoresponse_1"
+		2162 = { secede_province = USA }
+		2164 = { secede_province = USA }
+		set_global_flag = veracruzgiven
+		relation = {
+			who = USA
+			value = -200
+		}
+	}
+}
+country_event = {
+	
+	id = 98042
+	title = "Veracruzback_Event"
+	desc = "Veracruzback_DESC"
+	picture = "veracruz"
+
+	trigger = {
+		tag = USA
+		has_global_flag = veracruzgiven
+
+
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "Veracruzback_1"
+		2162 = { secede_province = MEX }
+		2164 = { secede_province = MEX }
+		badboy = 4
+		MEX = {
+			country_event = 98043
+		}
+	}
+}
+country_event = {
+	
+	id = 98043
+	title = "Veracruzreturned_Event"
+	desc = "Veracruzreturned_DESC"
+	picture = "veracruz"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Veracruzreturned_1"
+		clr_global_flag = veracruzgiven
+	}
+}
+
+#Battle of Columbus, New Mexico
+country_event = {
+	id = 98044
+	title = "EVTNAME98044"
+	desc = "EVTDESC98044"
+	picture = "columbus"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		owns = 105
+		year = 1915
+		
+		NOT = {
+		year = 1918
+		}
+
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Mexican Revolutionaries attacks Columbus!"
+		105 = {
+			state_scope = {
+				any_pop = {
+					limit = {
+						culture = mexican
+					}
+					militancy = 8
+				}
+				any_pop = {
+					limit = {
+						not = {
+							culture = mexican
+						}
+					}
+					reduce_pop = 0.1
+				}
+			}
+		}
+				relation = { who = MEX value = -200 }
+	}
+}
+
+country_event = {
+	id = 98045 #1918 flu pandemic
+	title = "EVTNAME98045"
+	desc = "EVTDESC98045"
+	picture = "epidemic"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1917
+		
+		NOT = {
+		year = 1920
+		}
+		 
+		
+		mean_time_to_happen = {
+		months = 1
+	}
+	}
+
+		option = {
+		name = "Flu Outbreak!"
+		
+		any_country = {
+				add_country_modifier = {
+				name = pandemic_influenza
+				duration = 730
+								}
+					}		
+	}
+	}

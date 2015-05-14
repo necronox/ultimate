@@ -1,0 +1,46 @@
+#warsaw_pact3
+country_event = {
+        id = 250002
+        title = "EVTNAME250002"
+        desc = "EVTDESC250002"
+        picture = "commieunderstanding"
+        is_triggered_only = yes
+
+
+option = {
+name = "EVTOPTA250002"       
+        RUS = {
+        create_vassal = CZH
+        }
+        CZH = {
+        relation = {
+        who = RUS
+        value = 100
+        }
+           
+              }
+
+                     }
+
+option = {
+name = "EVTOPTB250002"
+        CZH = {
+        prestige = -30
+        badboy = 5
+        relation = {
+        who = RUS
+        value = -100
+        }
+  
+              }
+
+        RUS = {
+        casus_belli = {
+                target = CZH
+                type = make_puppet
+                months = 36
+                       }
+              
+               }
+}
+}

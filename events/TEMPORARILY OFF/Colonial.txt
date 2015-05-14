@@ -1,0 +1,34 @@
+province_event = {
+	id = 400000 #New British colony
+	title = "New $COUNTRY_ADJ$ Colony Founded!"
+	desc = "$COUNTRY_ADJ$ settlers from $PROVINCENAME$ have successfully built a new colony in the name of $COUNTRY$"
+is_triggered_only = yes
+
+#trigger = {
+#	OR = {
+#	owned_by = ANG
+#	owned_by = ENG
+#		}
+#	continent = north_america
+#	has_empty_adjacent_province = yes
+#
+#		}
+
+	option = {
+	name = "Splendid!"
+random_empty_neighbor_province = {
+			limit = {
+	OR = {
+	is_core = CAN
+	is_core = USA
+	is_core = THC
+	is_core = ENG
+		}
+	any_neighbor_province = {
+		owned_by = THIS
+					}
+	}
+			secede_province = THIS
+							}
+			}
+				}

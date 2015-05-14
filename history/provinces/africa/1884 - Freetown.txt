@@ -1,0 +1,17 @@
+owner = ANG
+controller = ANG
+1707.1.1 = {
+naval_base = 1
+owner = ENG
+controller = ENG
+		}
+trade_goods = grain
+
+life_rating = 35
+colonial = 2
+add_core = SRL
+1960.1.1 = {
+	owner = SRL
+	controller = SRL
+	colonial = 0
+		}

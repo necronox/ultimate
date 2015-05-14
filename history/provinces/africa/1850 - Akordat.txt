@@ -1,0 +1,32 @@
+owner = TUR
+controller = TUR
+1810.1.1 = {
+owner = EGY
+controller = EGY
+		}
+	add_core = ERI
+#Rubber discovered!
+1880.1.1 = {
+	trade_goods = rubber
+		}
+1914.1.1 = {
+	owner = ITA
+	controller = ITA
+	remove_core = EGY
+		}
+
+1946.1.1 = {
+	owner = ENG
+	controller = ENG
+		}
+
+1993.1.1 = {
+	owner = ERI
+	controller = ERI
+	colonial = 0
+
+		}
+
+add_core = EGY
+trade_goods = fruit
+life_rating = 30

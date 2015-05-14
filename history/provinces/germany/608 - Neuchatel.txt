@@ -1,0 +1,15 @@
+owner = NEU
+controller = NEU
+add_core = SWI
+add_core = HRE
+add_core = PRU
+add_core = NEU
+trade_goods = coal
+life_rating = 40
+1815.1.1 = {
+	owner = SWI
+	controller = SWI
+}
+1857.1.1 = {
+	remove_core = PRU
+}

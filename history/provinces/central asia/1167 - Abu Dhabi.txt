@@ -1,0 +1,19 @@
+owner = ABU
+controller = ABU
+add_core = ABU
+#There will be blood
+1910.1.1 = {
+	trade_goods = oil
+		}
+1910.1.1 = {
+	controller = ENG 
+	owner = ENG 
+}
+trade_goods = grain
+life_rating = 35
+
+1966.1.1 = {
+	owner = ABU
+	controller = ABU
+	colonial = 0
+		}

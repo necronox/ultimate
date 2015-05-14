@@ -1,0 +1,23 @@
+owner = DEN
+controller = DEN
+add_core = SCA
+add_core = NOR
+
+1820.1.1 = {
+	controller = SWE
+	owner = SWE
+		}
+
+1905.1.1 = { 
+		controller = NOR
+		owner = NOR
+		remove_core = SWE
+		}
+trade_goods = fish
+life_rating = 35
+#state_building = {
+#	level = 1
+#	building = lumber_mill
+#	upgrade = yes
+#}
+1861.1.1 = { railroad = 2 }

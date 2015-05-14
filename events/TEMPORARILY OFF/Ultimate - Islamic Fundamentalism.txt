@@ -1,0 +1,49 @@
+# Islamic fundamentalism start
+country_event = {
+	id = 150010
+	title = "EVTNAME150010"
+	desc = "EVTDESC150010"
+		picture = "islamismeventpic"
+
+	trigger = {
+		OR = {
+		pop_majority_religion = sunni
+		pop_majority_religion = shiite
+			}
+		civilised = yes
+		year = 1960
+		NOT = {
+			has_country_flag = islamism_in_progress
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.1
+			has_global_flag = islamism_somewhere
+		}
+	}
+
+	option = {
+		name = "EVTOPTA150010"
+		add_country_modifier = {
+			name = islamic_fundamentalism_mod
+			duration = -1
+		}
+		any_pop = {
+			limit = {
+			OR = {
+				religion = sunni
+				religion = shiite }
+			}
+			militancy = 5
+			consciousness = 5
+			ideology = { factor = 0.40 value = islamist
+					}
+		}
+		set_global_flag = islamism_somewhere
+		set_country_flag = islamism_in_progress
+	}
+}
+

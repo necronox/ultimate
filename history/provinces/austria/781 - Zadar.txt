@@ -1,0 +1,44 @@
+owner = VEN
+controller = VEN
+add_core = VEN
+add_core = CRO
+
+1800.1.1 = {
+	owner = AUS
+	controller = AUS
+	add_core = AUS
+	remove_core = VEN
+		}
+1812.1.1 = {
+		controller = FRA
+		owner = FRA
+		}
+1815.1.1 = {
+		controller = AUS
+		owner = AUS
+		}
+
+
+add_core = YUG
+1914.1.1 = {
+owner = KUK
+controller = KUK
+add_core = KUK
+}
+
+1919.6.28 = { 
+		controller = YUG
+		owner = YUG
+		remove_core = KUK
+		}
+trade_goods = fruit
+life_rating = 35
+
+
+#Soviet Collapse
+1992.5.1 = {
+	owner = CRO
+	controller = CRO
+		}
+
+

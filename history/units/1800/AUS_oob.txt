@@ -1,0 +1,193 @@
+﻿1800.1.1 = {
+leader = {
+                name = "Archduke Charles"
+                type = land
+                date="1800.1.1"
+                prestige = 0.5
+                personality = efficient
+                background = old_school
+                picture="european_general_11"
+        }
+army = {
+        name = "Austrian Army I"
+        location = 730
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 619
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 619
+        }
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 619
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 623
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 624
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 625
+        }
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 625
+        }
+
+
+        regiment = {
+                name= "Artillery"
+                type = artillery
+		home = 626
+        }
+}
+army = {
+        name = "Austrian Army II"
+        location = 729
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 625
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 626
+        }
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 627
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 628
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 629
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 630
+        }
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 631
+        }
+
+
+        regiment = {
+                name= "Artillery"
+                type = artillery
+		home = 632
+        }
+}
+
+army = {
+        name = "Austrian Army III"
+        location = 619
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 633
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 634
+        }
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 635
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 636
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 637
+        }
+
+
+        regiment = {
+                name= "Infantry"
+                type = infantry
+		home = 638
+        }
+        regiment = {
+                name= "Cuirassiers"
+                type = cuirassier
+		home = 639
+        }
+
+
+        regiment = {
+                name= "Cuirassiers"
+                type = cuirassier
+		home = 640
+        }
+
+
+        regiment = {
+                name= "Hussars"
+                type = hussar
+		home = 641
+        }
+
+
+        regiment = {
+                name= "Hussars"
+                type = hussar
+		home = 642
+        }
+        regiment = {
+                name= "Artillery"
+                type = artillery
+		home = 643
+        	}
+	}
+}

@@ -1,0 +1,14 @@
+
+
+1936.1.1 = {
+	owner = THA
+	controller = THA
+	add_core = THA
+	colonial = 0
+		}
+
+owner = SIA
+controller = SIA
+add_core = SIA
+trade_goods = sugar
+life_rating = 30

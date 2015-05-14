@@ -1,0 +1,74 @@
+political_decisions = {
+	brandenburg_prussia = {
+	picture = branprupic
+		potential = {
+			tag = BDB
+			NOT = {
+			year = 1714
+				}
+					}
+		allow = {
+			war = no
+			PRU_695 = {
+				owned_by = THIS
+					}
+				}
+
+		effect = {
+			change_tag = PRU
+			PRU_695 = {
+				add_core = PRU
+					}
+			PRU_690 = {
+				add_core = PRU
+					}
+				}
+	}
+		
+
+        brandenburg_prussia2 = {
+        picture = branpic
+                potential = {
+                tag = BDB
+                prestige = 20
+                exists = PRU
+                PRU = {
+                        is_vassal = no
+                      }
+                                }
+                
+                allow = {
+                war = no
+                }
+
+                effect = {
+                change_tag = BPR
+                BPR = {
+                create_vassal = PRU
+                }
+                         }
+}
+
+        brandenburg_prussia3 = {
+        picture = branpic
+                potential = {
+                tag = BPR
+                prestige = 20
+                exists = PRU
+                PRU = {
+                        is_vassal = yes
+                      }
+                                }
+                
+                allow = {
+                war = no
+                }
+
+                effect = {
+                PRU = {
+                inherit = BPR
+                }
+                change_tag = PRU
+                         }
+}
+}

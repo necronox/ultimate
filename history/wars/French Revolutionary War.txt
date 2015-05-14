@@ -1,0 +1,44 @@
+name = "French Revolutionary War"
+
+1800.1.1 = {
+	add_attacker = ENG
+	add_attacker = AUS
+	add_attacker = RUS
+	add_attacker = BAV
+	add_attacker = POR
+	add_attacker = SWI
+	add_attacker = HRE
+	add_defender = FRA
+	add_defender = SPA
+	add_defender = NET
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = napoleon_cb
+		actor = ENG
+		receiver = FRA
+	}
+	war_goal = {
+		casus_belli = make_puppet
+		actor = FRA
+		receiver = SWI
+	}
+
+}
+
+1803.1.1 = {
+	rem_attacker = ENG
+	rem_attacker = AUS
+	rem_attacker = RUS
+	rem_attacker = BAV
+	rem_attacker = POR
+	rem_attacker = SWI
+	add_attacker = HRE
+	rem_defender = FRA
+	rem_defender = SPA
+	rem_defender = NET
+}

@@ -1,0 +1,644 @@
+political_decisions = {
+
+republic_of_ireland = {
+		potential = {
+			tag = IRE
+			owns = 263
+			NOT = {
+				has_country_flag = republic_of_ireland
+			}
+		}
+		
+		allow = {
+			year = 1949
+			NOT = {
+				government = absolute_monarchy
+				government = constitutional_monarchy
+				government = parliamentary_monarchy
+				relation = { who = ENG value = 125 }
+			}
+			prestige = 2
+		}
+		
+		effect = {
+			set_country_flag = republic_of_ireland
+			prestige = 10
+			relation = { who = ENG value = -20 }
+			relation = { who = CAN value = -20 }
+			relation = { who = HND value = 30 }
+			any_pop = {
+				limit = {
+				has_pop_culture = irish
+				}
+				consciousness = 2
+			}
+			ENG = {
+				prestige = -5
+				any_pop = {
+				limit = {
+				has_pop_culture = irish
+				}
+				militancy = 1.5
+				consciousness = 3
+				}
+			}
+			
+		}
+	}
+	
+greater_lands_of_israel = {
+picture = Greater_Israel_map
+		potential = {
+			tag = ISR
+			owns = 919
+			military = 40
+			prestige = 5
+			NOT = {
+				has_country_flag = reclaim_the_greater_lands_of_Israel
+			}
+		}
+		
+		allow = {
+			owns = 917
+			military = 80
+			prestige = 20
+			badboy = 0.3
+			NOT = {
+				badboy = 0.9
+			}
+		}
+		
+		effect = {
+			prestige = -50
+			set_country_flag = greater_lands_of_israel
+			relation = { who = EGY value = -120 }
+			relation = { who = JOR value = -120 }
+			relation = { who = LEB value = -120 }
+			relation = { who = SYR value = -120 }
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_religion = sunni
+						has_pop_religion = shiite
+						has_pop_culture = mashriqi
+						has_pop_culture = bedouin
+					}
+				}
+				consciousness = 1.5
+				militancy = 3.5
+			}
+			915 = {
+				add_core = ISR
+			}
+			909 = {
+				add_core = ISR
+			}
+			922 = {
+				add_core = ISR
+			}
+			1756 = {
+				add_core = ISR
+			}
+			1757 = {
+				add_core = ISR
+			}
+		}
+		}
+
+declare_neutrality = {
+		potential = {
+		AND = {
+			OR = {
+				TAG = SWI
+				TAG = JAP
+				TAG = COS
+			}
+			NOT = {
+				has_country_modifier = neutrality
+				}
+			}	
+		}		
+		allow = {
+			year = 1946
+			prestige = 10
+			NOT = {
+				military_score = 50 }
+			NOT = {
+				badboy = 1 }
+		
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = neutrality
+				duration = -1
+			}
+			neutrality = yes
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	abandon_neutrality = {
+		potential = {
+			has_country_modifier = neutrality
+		}
+		
+		allow = {
+			prestige = 30
+			military_score = 50	
+		}
+		
+		effect = {
+			prestige = -20
+			remove_country_modifier = neutrality
+			badboy = 5
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+			factor = 0
+				is_greater_power= no
+			}
+		}
+	}
+	
+establish_a_constitution = {
+		potential = {
+			tag = PAK
+			owns = 1288
+			OR = {
+				government = parliamentary_monarchy
+				government = democracy
+			}
+			NOT = {
+				has_country_flag = establish_a_constitution
+			}
+		}
+		
+		allow = {
+			year = 1952
+			prestige = 5
+			NOT = {
+				badboy = 0.7
+				relation = { who = ENG value = 170 }
+			}
+		}
+		
+		effect = {
+			political_reform = universal_voting
+			political_reform = all_trade_unions 
+			political_reform = appointed
+			political_reform = yes_meeting
+			political_reform = free_press
+			political_reform = secret_ballots
+			set_country_flag = establish_a_constitution
+			prestige = 10
+			relation = { who = HND value = -20 }
+			relation = { who = ENG value = -20 }
+			government = democracy
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_religion = sunni
+						has_pop_culture = bengali
+					}
+				}
+				consciousness = 1.5
+				militancy = -1.5
+			}			
+		}
+	}
+	establish_a_modern_capital = {
+		potential = {
+			tag = PAK
+			owns = 1288
+			owns = 1230
+			NOT = {
+				has_country_flag = establish_a_modern_capital
+			}
+		}
+		
+		allow = {
+			year = 1960
+			prestige = 10
+			NOT = {
+				badboy = 0.7
+			}
+		}
+		
+		effect = {
+			set_country_flag = establish_a_modern_capital
+			prestige = 15
+			relation = { who = HND value = -10 }
+			1230 = {
+				change_province_name = Islamabad
+				infrastructure = 1
+			}
+			capital = 1230
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_religion = sunni
+						has_pop_culture = bengali
+					}
+				}
+				consciousness = 1.5
+				militancy = -1.5
+			}			
+		}
+	}
+
+Propose_Treaty_of_Gorlitz = {
+picture = BM_OderNeisse
+	potential = {
+		tag = RUS
+		exists = POL
+		exists = DDR
+		is_greater_power = yes
+		not = {
+			has_global_flag = Treaty_of_Gorlitz_1
+		}
+	}
+	allow = {
+		year = 1950
+		prestige = 100
+		NOT = {
+			badboy = 0.8
+		}
+		relation = { who = POL value = 100 }
+		relation = { who = DDR value = 100 }
+		POL = {
+			vassal_of = RUS
+			is_greater_power = no
+		}
+		DDR = {
+			vassal_of = RUS
+			is_greater_power = no
+		}
+	}
+	effect = {
+		set_global_flag = Treaty_of_Gorlitz_1
+		prestige = 15
+		relation = { who = POL value = 100 }
+		relation = { who = DDR value = -50 }
+	}
+}
+
+call_geneva_convention = {
+		potential = {
+			tag = SWI
+			owns = 607
+			NOT = {
+				has_global_flag = geneva_convention_held
+			}
+		}
+		
+		allow = {
+			year = 1949
+			NOT = {
+				ideology = fascist
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = signed_the_geneva_convention
+				duration = -1
+			}
+			set_global_flag = geneva_convention_held
+			prestige = 10
+		}
+	}
+	
+repartition_of_ireland = {
+		potential = {
+			tag = ENG
+			owns = 300
+			owns = 254
+			has_global_flag = the_troubles
+			NOT = {
+				has_country_flag = repartition_of_ireland
+				ideology = fascist
+				IRE = {
+					ideology = fascist
+				}
+			}
+		}
+		
+		allow = {
+			war = no
+			relation = { who = IRE value = 50 }
+			OR = {
+				has_global_flag = the_troubles_intensify
+				AND = {
+					OR = {
+						ideology = conservative
+						ideology = anarcho_liberal
+						ideology = liberal
+					}
+					NOT = {
+						has_global_flag = anglo_irish_agreement
+						badboy = 15
+						IRE = {
+							badboy = 15
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = repartition_of_ireland
+			prestige = -10
+			relation = { who = IRE value = 25 }
+			IRE = {
+				set_country_flag = repartition_of_ireland
+			}
+			any_pop = {
+				limit = {
+					NOT = {
+						has_pop_culture = irish
+					}
+					has_pop_religion = catholic
+				}
+				consciousness = 1.5
+				militancy = 0.5
+			}
+			any_pop = {
+				scaled_consciousness = {
+					factor = 2
+					ideology = fascist
+				}
+				scaled_militancy = {
+					factor = 4
+					ideology = fascist
+				}
+			}
+			any_pop = {
+				ideology = {
+					factor = 0.04
+					value =  fascist
+				}
+			}
+		}
+	}
+	hold_festival_of_britain = {
+	picture = festival_britain
+		potential = {
+			tag = ENG
+			owns = 300
+			NOT = {
+				has_country_flag = repartition_of_ireland
+			}
+		}
+		
+		allow = {
+			year = 1951
+			NOT = {
+				year = 1952
+			}
+			prestige = 520
+			war = no
+			industrial_score = 2000
+		}
+		
+		effect = {
+			set_country_flag = hold_festival_of_britain
+			prestige = 35
+			money = -8000
+			years_of_research = 0.5
+			any_pop = {
+				consciousness = -1
+				militancy = -1
+			}	
+		}
+	}
+	return_heligoland = {
+		potential = {
+			tag = ENG
+			owns = 300
+			exists = GER
+			has_country_modifier = occupies_heligoland
+			NOT = {
+				ideology = fascist
+			}
+		}
+			
+		allow = {
+			year = 1952
+			relation = { who = GER value = 100 }
+			GER = {
+				NOT = {
+					badboy = 0.5
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 15
+			remove_country_modifier = occupies_heligoland
+			300 = {
+			secede_province = GER
+		}
+		}
+	}
+	
+	return_port_arthur = {
+		potential = {
+			tag = RUS
+			owns = 1481
+
+		}
+			
+		allow = {
+			year = 1952
+			relation = { who = CHI value = 100 }
+			CHI = {
+				NOT = {
+					badboy = 0.5
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 15
+			remove_country_modifier = occupies_port_arthur
+		}
+	}
+
+soviet_northkorea_landreform = {
+picture = soviet_northkorea_landreform
+	potential = {
+		tag = RUS
+		year = 1950
+		AND = {
+		KOR_1619 = {
+			owned_by = THIS
+				}
+		KOR_1627 = {
+			owned_by = THIS
+				}
+			}
+		NOT = {
+			OR = {
+			exists = NKA
+			has_global_flag = korea_landreform_done
+				}
+			}
+			}
+	allow = {
+			}
+
+	effect = {
+		KOR_1619 = {
+			add_core = NKA
+				}
+		KOR_1627 = {
+			add_core = NKA
+			}
+		release = NKA
+			diplomatic_influence = {
+			who = NKA
+			value = 200
+						}
+		set_global_flag = korea_landreform_done
+			}
+				}
+usa_southkorea_decision = {
+	picture = southkoreapic
+		potential = {
+			tag = USA
+			year = 1950
+			KOR_1624 = {
+				owned_by = THIS
+					}
+
+			KOR_1635 = {
+				owned_by = THIS
+					}
+			NOT = {
+				OR = {
+				exists = SKA
+				has_global_flag = southkorea_decision_done
+					}
+				}
+			}
+
+		allow = {
+				}
+	effect = {
+			KOR_1624 = {
+				add_core = SKA
+					}
+
+			KOR_1635 = {
+				add_core = SKA
+					}
+		release = SKA
+			diplomatic_influence = {
+			who = SKA
+			value = 200
+						}
+		set_global_flag = southkorea_decision_done
+		}
+	}
+
+north_korean_reunification = {
+	picture = goodoldkimpic
+		potential = {
+		tag = NKA
+		exists = SKA
+		NOT = {
+			has_global_flag = korean_war_done
+			}
+				}
+		allow = {
+				}
+		effect = {
+			set_global_flag = korean_war_done
+
+	war = {
+	target = SKA
+	attacker_goal = {
+		casus_belli = conquest
+	}
+	defender_goal = {
+		casus_belli = status_quo
+	}
+        
+				}
+			}
+		}	
+
+reach_out_to_Khrushchev = {
+picture = jfkphonecallpic
+	potential = {
+		tag = USA
+		has_global_flag = cuban_missile_crisis_IP
+			}
+	allow = {
+	}
+	effect = {
+		relation = {
+		who = RUS
+		value = 50
+			}
+		prestige = -10
+		clr_global_flag = cuban_missile_crisis_IP
+			}
+				}
+
+nuke_america_cubamissilecrisis = {
+picture = nuke_strikepic
+	potential = {
+		tag = RUS
+		has_global_flag = cuban_missile_crisis_IP
+			}
+	allow = {
+	}
+	effect = {
+		any_country = {
+		limit = {
+		OR = {
+		government = democracy
+		government = hms_government
+		government = proletarian_dictatorship
+			}
+				}
+		country_event = 666668
+				}
+		clr_global_flag = cuban_missile_crisis_IP
+				}
+		}
+
+warsawpact = {
+	picture = warsawpactpic
+	potential = {
+		tag = RUS
+		government = proletarian_dictatorship
+		year = 1955
+		NOT = {
+			has_country_flag = warsawpact_enacted
+		}
+	}
+	allow = {
+	}
+	effect = {
+		any_country = {
+			limit = {
+				government = proletarian_dictatorship
+				in_sphere = RUS
+			}
+		country_event = 250000
+		}
+		RUS = {
+			set_country_flag = warsawpact_enacted
+		}
+	}
+}
+}

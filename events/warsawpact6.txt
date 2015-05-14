@@ -1,0 +1,46 @@
+#warsaw_pact6
+country_event = {
+        id = 250005
+        title = "EVTNAME250005"
+        desc = "EVTDESC250005"
+        picture = "commieunderstanding"
+        is_triggered_only = yes
+
+
+option = {
+name = "EVTOPTA250005"
+        RUS = {
+        create_vassal = POL
+        }
+        POL = {
+        relation = {
+        who = RUS
+        value = 100
+        }
+           
+              }
+
+                     }
+
+option = {
+name = "EVTOPTB250005"
+        POL = {
+        prestige = -30
+        badboy = 5
+        relation = {
+        who = RUS
+        value = -100
+        }
+  
+              }
+
+        RUS = {
+        casus_belli = {
+                target = POL
+                type = make_puppet
+                months = 36
+                       }
+              
+               }
+}
+}

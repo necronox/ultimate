@@ -1,0 +1,46 @@
+owner = HRE
+controller = HRE
+add_core = FRM
+
+add_core = HRE
+
+add_core = GER
+
+1604.1.1 = { 
+	owner = FRM
+	controller = FRM
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+1812.1.1 = {
+	owner = FRM
+		
+		controller = FRM
+		
+		}
+
+
+
+1936.1.1 = {
+		fort = 6
+		}
+
+
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+
+
+trade_goods = fruit
+
+life_rating = 40
+
+fort = 1
+
+
+1861.1.1 = { railroad = 3 }

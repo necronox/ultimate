@@ -1,0 +1,40 @@
+	owner = BIJ
+	controller = BIJ
+	add_core = BIJ
+1700.1.1 = {	
+	owner = MUG
+	controller = MUG
+	add_core = MUG
+		}
+1763.1.1 = {
+	owner = MRT
+	controller = MRT
+	add_core = MRT
+	remove_core = MUG
+		}
+
+1818.1.1 = {
+	owner = ENG #hello
+	controller = ENG #hello
+	colonial = 2
+}
+
+
+
+#Decolonisation
+1947.1.1 = {
+	owner = HND
+	controller = HND
+	colonial = 0
+		}
+
+
+
+add_core = HND
+1880.1.1 = {
+owner = ENG #hello
+controller = ENG #hello
+colonial = 2
+		}
+trade_goods = sugar
+life_rating = 32

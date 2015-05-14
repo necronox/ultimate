@@ -1,0 +1,20 @@
+
+
+1903.1.1 = {
+		owner = POR
+		controller = POR
+		colonial = 2
+		}
+
+
+trade_goods = grain
+life_rating = 15
+
+1910.1.1 = {
+	add_core = AGL
+		}
+1975.1.1 = {
+	owner = AGL
+	controller = AGL
+	colonial = 0
+		}

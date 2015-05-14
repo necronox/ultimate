@@ -1,0 +1,12 @@
+owner = YZW
+controller = YZW
+add_core = YZW
+add_core = TKG
+trade_goods = iron
+life_rating = 35
+
+1868.1.1 = {
+owner = JAP
+controller = JAP
+add_core = JAP
+}

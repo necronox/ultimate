@@ -1,0 +1,25 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = IRQ
+
+
+1919.1.1 = {
+	owner = IRQ	
+	controller = IRQ
+	remove_core = TUR
+	remove_core = EGY
+		}
+
+#There Will Be Blood!
+1927.1.1 = {
+	trade_goods = oil
+		}
+	add_core = KUR
+2018.1.1 = {
+		owner = KUR	
+	controller = KUR
+	colonial = 0
+		}
+trade_goods = sulphur
+life_rating = 35

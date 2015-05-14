@@ -1,0 +1,606 @@
+﻿1800.1.1 = {
+army = {
+        name = "Armee I"
+        location = 572
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 425
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 425
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 425
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 426
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 427
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 428
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 429
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 430
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 431
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 432
+        }
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 433
+        }
+
+
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 434
+        }
+}
+army = {
+        name = "Armee II"
+        location = 387
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 424
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 423
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 422
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 421
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 420
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 418
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 417
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 416
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 415
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 414
+        }
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 413
+        }
+
+
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 412
+        }
+}
+army = {
+        name = "Armee III"
+        location = 388
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 411
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 410
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 409
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 408
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 407
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 406
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 405
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 404
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 403
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 402
+        }
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 401
+        }
+
+
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 400
+        }
+}
+
+
+army = {
+        name = "Armee IV"
+        location = 400
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 448
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 449
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 450
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 451
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 452
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 453
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 454
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 455
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 456
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 457
+        }
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 458
+        }
+
+
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 459
+        }
+}
+army = {
+        name = "Armee V"
+        location = 458
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 460
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 461
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 462
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 463
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 425
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 425
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 425
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 425
+		
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 425
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 425
+        }
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 425
+        }
+
+
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 425
+        }
+}
+army = {
+        name = "Grande Armee"
+        location = 720
+        leader = {
+                name = "Napoleon Bonaparte"
+                type = land
+                date="1800.1.1"
+                prestige = 1.0
+                personality = au_fait
+                background = natural_born_leader
+                picture="napoleon_generalpic"
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 455
+		
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 456
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 457
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 458
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 459
+        }
+
+
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 399
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 400
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+		home = 401
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 402
+        }
+
+
+        regiment = {
+                name= "Cavalerie"
+                type = hussar
+		home = 403
+        }
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 404
+        }
+
+
+        regiment = {
+                name= "Artillerie"
+                type = artillery
+		home = 405
+        }
+}
+army = {
+                name = "La Vieille Guarde"
+        location = 425
+        regiment = {
+                name= "Vieille Guarde"
+                type = guard
+		home = 425
+        }
+        regiment = {
+                name= "Vieille Guarde"
+                type = guard
+		home = 425
+        }
+        regiment = {
+                name= "Vieille Guarde"
+                type = guard
+		home = 425
+        }
+        regiment = {
+                name= "Vieille Guarde"
+                type = guard
+		home = 425
+        }
+                }
+
+
+navy = {
+        name = "1ere Flotte"
+        location = 418 #Caen
+        ship = {
+                name= "Ship of the Line"
+                type = manowar
+        }
+
+
+        ship = {
+                name= "Ship of the Line"
+                type = manowar
+        }
+
+
+        ship = {
+                name= "Ship of the Line"
+                type = manowar
+        }
+
+
+        ship = {
+                name= "Ship of the Line"
+                type = manowar
+        }
+
+
+        ship = {
+                name= "Ship of the Line"
+                type = manowar
+        }
+
+
+        ship = {
+                name= "Ship of the Line"
+                type = manowar
+        }
+
+
+        ship = {
+                name= "Frigate"
+                type = frigate
+        }
+
+
+        ship = {
+                name= "Frigate"
+                type = frigate
+        }
+
+
+        ship = {
+                name= "Frigate"
+                type = frigate
+        }
+        ship = {
+                name= "Frigate"
+                type = frigate
+        }
+
+
+        ship = {
+                name= "Frigate"
+                type = frigate
+        }
+        ship = {
+                name= "Frigate"
+                type = frigate
+        }
+        ship = {
+                name= "Frigate"
+                type = frigate
+        }
+        ship = {
+                name= "Frigate"
+                type = frigate
+        }
+        ship = {
+                name= "Frigate"
+                type = frigate
+        }
+
+
+}

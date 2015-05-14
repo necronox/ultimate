@@ -1,0 +1,11 @@
+owner = POR
+controller = POR
+colonial = 2
+1820.1.1 = {
+owner = BRZ
+controller = BRZ
+add_core = BRZ
+colonial = 0
+		}
+trade_goods = grain
+life_rating = 25

@@ -1,0 +1,22 @@
+owner = TUS
+controller = TUS
+add_core = TUS
+add_core = ITA
+trade_goods = grain
+life_rating = 35
+1812.1.1 = {
+		controller = FRA
+		owner = FRA
+		}
+1815.1.1 = {
+		controller = TUS
+		owner = TUS
+		}
+
+
+1861.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+}
+1861.1.1 = { railroad = 3 }

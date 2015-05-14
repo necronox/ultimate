@@ -1,0 +1,44 @@
+owner = AUS
+controller = AUS
+add_core = SAX
+add_core = AUS
+add_core = GER
+1714.1.1 = { 
+		controller = SAX
+		owner = SAX
+		}
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+trade_goods = coal
+life_rating = 40
+1836.1.1 = {
+state_building = {
+	level = 1
+	building = fabric_factory
+	upgrade = yes
+}
+}
+1910.1.1 = {
+state_building = {
+	level = 2
+	building = regular_clothes_factory
+	upgrade = yes
+	}
+}
+
+
+#End of WW2
+1945.5.1 = {
+	owner = DDR
+	controller = DDR
+	add_core = DDR
+		}
+
+#Fall of Berlin Wall - Reunification
+1991.1.1 = {
+		owner = GER
+	controller = GER
+	remove_core = DDR
+		}

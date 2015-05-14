@@ -1,0 +1,162 @@
+country_event = {
+
+	id = 666666	#Nuked!
+	title = "EVTNAME666666"
+	desc = "EVTDESC666666"
+	news = yes
+	news_desc_long = "EVTDESC666666_NEWS_LONG"
+	news_desc_medium = "EVTDESC666666_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC666666_NEWS_SHORT"
+	picture = "nuked"
+allow_multiple_instances = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA666666"
+		relation = {
+			who = FROM
+			value = -100
+		}
+		war_exhaustion = 25
+		add_country_modifier = {
+		name = nuclear_victim
+		duration = 18280
+						}  
+		random_owned = {
+			limit = {
+			OR = {
+			is_core = THIS	
+			is_capital = yes
+				}
+			NOT = {
+				has_province_modifier = ground_zero
+				}
+					}
+			set_province_flag = disease
+				any_pop = {
+				reduce_pop = 0.75
+						}
+					infrastructure  = -6
+					add_province_modifier = {
+					name = ground_zero
+					duration = 730	}
+					add_province_modifier = {
+					name = fallout
+					duration = 1825 	}
+					add_province_modifier = {
+					name = irradiated
+					duration = 18250 }    
+					add_province_modifier = {
+					name = fearofradiation
+					duration = -1 }    
+					any_neighbor_province = {
+					set_province_flag = disease
+					add_province_modifier = {
+					name = irradiated
+					duration = 18250 	}
+					add_province_modifier = {
+					name = fearofradiation
+					duration = -1 }    
+					add_province_modifier = {
+					name = fallout
+					duration = 1825 	}
+					owner = {
+							relation = {
+							who = FROM
+							value = -25
+									}	
+							}
+								}
+					}
+				}
+			}
+
+province_event = {
+
+id = 666667		#radiation spreads
+title = "EVTNAME666667"
+desc = "EVTDESC666667"
+allow_multiple_instances = no
+
+trigger = {
+		NOT = { 
+			has_province_modifier = irradiated
+			}
+	any_neighbor_province = {
+			has_province_modifier = fallout
+					}
+
+		}
+
+	mean_time_to_happen = {
+		months = 30
+					}
+	option = {
+		name = "EVTOPTA666667"
+				set_province_flag = disease
+				add_province_modifier = {
+				name = irradiated
+				duration = 18250 	}
+					add_province_modifier = {
+					name = fearofradiation
+					duration = -1 }    
+	}
+}
+
+country_event = {
+	id = 666668	#Nuked cold war
+	title = "Nuclear Attack"
+	desc = "Our worst nightmare has become reality, what we used to call the cold war has triggered a nuclear exchange between the democracies of the world and communist nations. $COUNTRY$ was not spared."
+	picture = "nuked"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Nuclear Attack"
+		war_exhaustion = 50
+		add_country_modifier = {
+		name = nuclear_victim
+		duration = 18250
+						}  
+		any_owned = {
+			set_province_flag = disease
+				any_pop = {
+				reduce_pop = 0.75
+						}
+					infrastructure  = -6
+					add_province_modifier = {
+					name = fallout
+					duration = 1825 	}
+					add_province_modifier = {
+					name = irradiated
+					duration = 18250 } 
+					add_province_modifier = {
+					name = fearofradiation
+					duration = -1 }       
+
+					}
+				}
+			}
+
+province_event = {
+
+id = 666669		#radiation cleanup
+title = "No more signs of radiation in $PROVINCENAME$"
+desc = "All radiation seem to have vanished from $PROVINCENAME$. The province is now safe to settle in again."
+allow_multiple_instances = no
+
+trigger = {
+		NOT = { 
+			has_province_modifier = irradiated
+			}
+			has_province_modifier = fearofradiation
+		}
+
+	option = {
+		name = "Good!"
+				clr_province_flag = disease
+				remove_province_modifier = fearofradiation
+
+                                }
+	            }

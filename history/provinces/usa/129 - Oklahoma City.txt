@@ -1,0 +1,30 @@
+owner = CMC
+controller = CMC
+add_core = CMC
+trade_goods = grain
+life_rating = 35
+1867.1.1 = {
+	owner = USA
+	controller = USA
+		}
+1836.1.1 = {
+	owner = USA
+	controller = USA
+		}
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}
+
+1861.1.1 = {
+	owner = CSA
+	controller = CSA
+	add_core = CSA
+	add_core = CHE
+	colonial = 0
+}
+#There will be blood
+1882.1.1 = {
+	trade_goods = oil
+		}

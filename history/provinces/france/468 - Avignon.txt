@@ -1,0 +1,17 @@
+owner = PAP
+controller = PAP
+add_core = FRA
+add_core = PAP
+
+
+trade_goods = sulphur
+life_rating = 32
+
+1800.1.1 = {
+owner = FRA
+controller = FRA
+remove_core = PAP
+
+}
+
+1861.1.1 = { railroad = 3 }

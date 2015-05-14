@@ -1,0 +1,36 @@
+;;;;x
+form_british_federation_title;The British Federation;x
+form_british_federation_desc;By granting all our white colonies the same rights and privileges as those enjoyed by British citizens and expanding direct political representation to these realms we could build the foundation of a long-lasting, intercontinental British superpower.;x
+form_british_commonwealth_title;The British Commonwealth;x
+form_british_commonwealth_desc;By granting all our colonial subjects the same rights and privileges enjoyed by British nationals we would create a working intercontinental democracy.;x
+create_british_commonwealth_title;The British Commonwealth of Nations;x
+create_british_commonwealth_desc;Creating this organisation would let us keep certain ties with our former colonies and make it easier for us to influence them.;x
+join_UN_title;Join the United Nations;x
+join_UN_desc;Joining the United Nations would both increase our international prestige and diplomatic abilities, although we will also be subject to more intense scrutiny from the international community.;x
+create_UN_title;Found the United Nations;x
+create_UN_desc;If everything goes to plan, the United Nations will be the first organisation to bind the nations of the world so tightly together and to standardise human rights across borders. Being its architect would mean holding the moral high ground for years to come but it would also mean being restrained by its idealism.;x
+british_commonwealth;Member of the British Commonwealth of Nations;x
+UNmember;Member of the United Nations;x
+UNmember_desc;We are a member of the United Nations.;x
+CB_ALLOWED_INSTALL_DEMOCRATIC_GOV_TYPE;Enforce Democratic Government;x
+install_democratic_gov_cb;Enforce Democracy;x
+install_democratic_gov_cb_desc;Forcibly remove a government and replace it with a democracy.;x
+install_democratic_gov_cb_setup;Install a democratic government. If achieved, the country will be automatically added into our sphere;x
+install_democratic_gov_cb_short;Enforce Democracy;x
+ww2_axis_cb;World War 2 - Axis;x
+ww2_axis_cb_setup;Forces the Allies to capitulate unconditionally.;x
+ww2_axis_cb_desc;If they win the Axis powers will rule the world with an iron fist.;x
+ww2_axis_cb_short;World War 2 - Axis;x
+ww2_allies_cb;World War 2 - Allies;x
+ww2_allies_cb_setup;Forces the Axis powers to capitulate unconditionally.;x
+ww2_allies_cb_desc;If they win the Allied powers will spread democracy around the world.;x
+ww2_allies_cb_short;World War 2 - Allies;x
+leave_UN_title;Leave The United Nations;x
+leave_UN_desc;We may leave the United Nations if we so desire. Of course we would be losing all membership benefits, but also its international restrictions.;x
+left_UN;We have left the United Nations;x
+left_UN_desc;We have left the United Nations.;x
+ceca_title;European Coal and Steel Community;x
+rome_treaty_eu_title;Treaty of Rome;x
+maastricht_title;Maastricht Treaty;x
+eu_leader_title;Become the leader of the EU;x
+;;;;x

@@ -1,0 +1,48 @@
+﻿GER = {
+        value = 150
+        military_access = yes
+}
+
+
+ITA = {
+        value = 100
+        military_access = yes
+}
+
+
+
+
+army = {
+        name = "French Army"
+        location = 418
+        regiment = {
+                name= "Guard Regiment"
+                type = guard
+                home = 418
+        }
+        regiment = {
+                name= "Guard Regiment"
+                type = guard
+                home = 418
+        }
+        regiment = {
+                name= "Guard Regiment"
+                type = guard
+                home = 418
+        }
+        regiment = {
+                name= "Guard Regiment"
+                type = guard
+                home = 418
+        }
+        regiment = {
+                name= "Guard Regiment"
+                type = guard
+                home = 418
+        }
+        regiment = {
+                name= "Guard Regiment"
+                type = guard
+                home = 418
+        }
+}

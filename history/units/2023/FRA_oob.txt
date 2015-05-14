@@ -1,0 +1,33 @@
+CTD = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+MLI = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+ALD = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+TUN = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+
+LEB = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+QUE = {
+	value = 100
+	level = 5
+	influence_value = 50
+}

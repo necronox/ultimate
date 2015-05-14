@@ -1,0 +1,44 @@
+specops = {
+	icon = 22
+	
+	type = land
+	sprite = Guard
+	active = yes
+	unit_type = infantry
+	primary_culture = yes
+	floating_flag = yes
+
+	#Core Abilities
+	priority = 25
+	max_strength = 0.1
+	default_organisation = 50
+	maximum_speed = 10.00
+	weighted_value = 20.0
+
+
+	#Building Costs
+	build_time = 1460
+	build_cost = {
+		small_arms = 100
+		canned_food = 100
+		liquor = 200
+		luxury_clothes = 50
+	}
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		small_arms = 0.01 #0.015
+		canned_food = 0.02 # 0.08
+		ammunition = 0.01 #0
+		liquor = 0.01
+	}
+	
+
+	#Land Abilties
+	reconnaissance = 15
+	attack = 20
+	defence = 22
+	discipline = 1.5
+	support = 0.8
+	maneuver = 10
+}

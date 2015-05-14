@@ -1,0 +1,12 @@
+owner = TOS
+controller = TOS
+add_core = TOS
+add_core = TKG
+trade_goods = fish
+life_rating = 35
+
+1868.1.1 = {
+owner = JAP
+controller = JAP
+add_core = JAP
+}

@@ -1,0 +1,30 @@
+
+
+
+owner = SIA
+controller = SIA
+add_core = SIA
+add_core = LUA
+1910.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+
+trade_goods = grain
+life_rating = 30
+
+1945.1.1 = {
+	owner = THA
+	controller = THA
+	add_core = THA
+	add_core = LAO
+	colonial = 0
+		}
+		
+1953.1.1 = {
+	owner = LAO
+	controller = LAO
+	colonial = 0
+		}
+

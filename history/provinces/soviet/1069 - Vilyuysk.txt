@@ -1,0 +1,11 @@
+1700.1.1 = {
+owner = RUS
+controller = RUS
+add_core = RUS
+		}
+trade_goods = cattle
+life_rating = 15
+1917.1.1 = { 
+		controller = RUS
+		owner = RUS
+		}

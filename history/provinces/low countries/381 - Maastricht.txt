@@ -1,0 +1,30 @@
+
+add_core = NET
+owner = SPA
+controller = SPA
+
+1713.1.1 = {
+	owner = AUS
+controller = AUS
+		}
+1800.1.1 = {
+	owner = FRA
+	controller = FRA
+		}
+1830.1.1 = {
+owner = NET
+controller = NET
+		}
+trade_goods = coal
+life_rating = 35
+#state_building = {
+#	level = 1
+#	building = canned_food_factory
+#	upgrade = yes
+#}
+#state_building = {
+#	level = 1
+#	building = liquor_distillery
+#	upgrade = yes
+#}
+1861.1.1 = { railroad = 3 }

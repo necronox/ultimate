@@ -1,0 +1,30 @@
+owner = DEN
+controller = DEN
+add_core = SXL
+add_core = DEN
+add_core = HRE
+add_core = GER
+
+1710.1.1 = {
+	owner = BRA
+	controller = BRA
+	add_core = BRA
+		}
+1800.1.1 = {
+		owner = DEN
+	controller = DEN
+		}
+1820.1.1 = {
+		owner = HOL
+	controller = HOL
+	add_core = HOL
+		}
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		add_core = GER
+		}
+trade_goods = grain
+life_rating = 40
+
+1861.1.1 = { railroad = 3 }

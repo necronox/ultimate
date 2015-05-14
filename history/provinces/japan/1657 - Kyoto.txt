@@ -1,0 +1,23 @@
+owner = JAP
+controller = JAP
+add_core = JAP
+add_core = TKG
+trade_goods = tea
+life_rating = 35
+1930.1.1 = {
+	state_building = {
+		level = 2
+		building = automobile_factory
+		upgrade = yes
+				}
+	state_building = {
+		level = 2
+		building = aeroplane_factory
+		upgrade = yes
+				}
+	state_building = {
+		level = 2
+		building = steamer_shipyard
+		upgrade = yes
+				}
+		}

@@ -1,0 +1,30 @@
+name = "The 2nd World War"
+
+1941.1.1 = { 
+	add_attacker = GER
+	add_defender = ENG
+
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = great_war_penalty_cb
+		actor = GER
+		receiver = ENG
+	}
+
+	war_goal = {
+		casus_belli = great_war_penalty_cb
+		actor = ENG
+		receiver = GER
+	}
+
+}
+
+1945.1.1 = {
+	rem_attacker = GER
+	rem_defender = ENG
+		}

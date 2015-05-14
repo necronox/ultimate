@@ -1,0 +1,20 @@
+owner = MNG
+controller = MNG
+add_core = MNG
+
+1644.1.1 = {
+	owner = CHI
+	controller = CHI
+	add_core = CHI
+	remove_core = MNG
+		}
+
+add_core = MCK
+
+1700.1.1 = {
+owner = RUS
+controller = RUS
+add_core = RUS
+		}
+trade_goods = grain
+life_rating = 35

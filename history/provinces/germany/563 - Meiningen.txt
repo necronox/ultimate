@@ -1,0 +1,42 @@
+owner = HRE
+controller = HRE
+add_core = MEI
+add_core = HRE
+add_core = GER
+
+1604.1.1 = { 
+	owner = MEI
+	controller = MEI
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+1812.1.1 = { 
+		controller = MEI
+		owner = MEI
+		}
+1871.1.1 = {
+		controller = GER
+		owner = GER
+		}
+
+trade_goods = iron
+life_rating = 40
+1861.1.1 = { railroad = 3 }
+
+#End of WW2
+1945.5.1 = {
+	owner = DDR
+	controller = DDR
+	add_core = DDR
+		}
+
+#Fall of Berlin Wall - Reunification
+1991.1.1 = {
+		owner = GER
+	controller = GER
+	remove_core = DDR
+		}

@@ -1,0 +1,32 @@
+owner = PLC
+controller = PLC
+add_core = ROM
+1700.1.1 = {
+	owner = TUR
+controller = TUR
+		}
+1800.1.1 = {
+owner = AUS
+controller = AUS
+add_core = AUS
+		}
+add_core = MOL
+
+1914.1.1 = {
+owner = KUK
+controller = KUK
+add_core = KUK
+}	
+1919.6.28 = { 
+		controller = ROM
+		owner = ROM
+		
+		}
+#add_core = UKR
+add_core = RUT
+trade_goods = cattle
+life_rating = 35
+
+2000.1.1 = {
+	remove_core = MOL
+	}

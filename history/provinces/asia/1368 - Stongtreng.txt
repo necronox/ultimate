@@ -1,0 +1,19 @@
+owner = CAM
+controller = CAM
+add_core = CAM
+1910.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+
+
+1953.1.1 = {
+	owner = CAM
+	controller = CAM
+	colonial = 0
+		}
+
+
+trade_goods = grain
+life_rating = 30

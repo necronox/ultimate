@@ -1,0 +1,467 @@
+army = {
+	name = "1st Army"
+	location = 511
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+}
+
+army = {
+	name = "2nd Army"
+	location = 509
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+}
+army = {
+	name = "3rd Army"
+	location = 487
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+}
+
+army = {
+	name = "5th Army"
+	location = 2171
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+}
+
+navy = {
+	name = "1st Fleet"
+	location = 512
+	ship = {
+		name= "Spanish Galleon"
+		type = manowar
+	}
+	ship = {
+		name= "Spanish Galleon"
+		type = manowar
+	}
+	ship = {
+		name= "Spanish Galleon"
+		type = manowar
+	}
+	ship = {
+		name= "Spanish Galleon"
+		type = manowar
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+	}
+navy = {
+	name = "2nd Fleet"
+	location = 2270
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+		}
+navy = {
+	name = "3rd Fleet"
+	location = 1462
+		ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+		}

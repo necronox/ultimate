@@ -1,0 +1,33 @@
+owner = KOR
+controller = KOR
+add_core = KOR
+2020.1.1 = {
+	owner = KOR
+	controller = KOR
+		}
+1910.1.1 = {
+	owner = JAP
+	controller = JAP
+		}
+
+
+
+1945.1.1 = {
+	owner = KOR
+	controller = KOR
+	colonial = 0
+		}
+1946.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = SKA
+		}
+1950.1.1 = {
+	owner = SKA
+	controller = SKA
+	add_core = NKA
+		}
+
+
+trade_goods = grain
+life_rating = 35

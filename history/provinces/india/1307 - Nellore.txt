@@ -1,0 +1,37 @@
+owner = GOL
+controller = GOL
+add_core = GOL
+1700.1.1 = {
+owner = MUG
+controller = MUG
+		}
+1763.1.1 = {
+owner = HYD
+controller = HYD
+		}
+add_core = HYD
+
+1818.1.1 = {
+	owner = ENG #hello
+	controller = ENG #hello
+	colonial = 2
+}
+
+
+#Decolonisation
+1947.1.1 = {
+	owner = HND
+	controller = HND
+	colonial = 0
+		}
+
+
+
+add_core = HND
+1880.1.1 = {
+owner = ENG #hello
+controller = ENG #hello
+colonial = 2
+		}
+trade_goods = grain
+life_rating = 32

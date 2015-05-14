@@ -1,0 +1,19 @@
+owner = KAG
+controller = KAG
+add_core = KAG
+add_core = TKG
+trade_goods = silk
+life_rating = 35
+
+
+1868.1.1 = {
+owner = JAP
+controller = JAP
+add_core = JAP
+}
+
+#state_building = {
+#	level = 1
+#	building = glass_factory
+#	upgrade = yes
+#}

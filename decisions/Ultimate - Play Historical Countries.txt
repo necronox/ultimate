@@ -1,0 +1,107 @@
+political_decisions = {
+	play_historical_countries = {
+		potential = {
+			NOT = { has_country_flag = historical_countries
+				has_country_flag = hidden_decisions 
+				year = 1765
+			}
+			
+		}
+		allow = {
+			
+		}
+		effect = {
+			any_country = { all_core = { remove_core = UKR
+					remove_core = RUT 
+					remove_core = ROM		
+					remove_core = HUN
+					remove_core = GRE
+					remove_core = BUL
+					remove_core = SER
+					remove_core = BOS
+					remove_core = SLO
+					remove_core = SLV
+					remove_core = CZH
+					remove_core = CRO
+					remove_core = ALB
+					remove_core = KUR
+					remove_core = BSQ
+					remove_core = CAT
+					remove_core = YUG
+					remove_core = LIT
+					remove_core = LAT
+					remove_core = EST
+					remove_core = UBD
+					remove_core = SYR
+					remove_core = GEO
+					remove_core = HND
+					remove_core = AZB
+					remove_core = IRQ
+					remove_core = LYB
+					remove_core = PHI
+					remove_core = CTD
+					remove_core = GHA
+					remove_core = SRL
+					remove_core = GUB
+					remove_core = GAM
+					remove_core = SNL
+					remove_core = SAF
+					remove_core = MOZ
+					remove_core = ZAN
+					remove_core = TZN
+					remove_core = CRN
+					remove_core = WSX
+					remove_core = IRE
+					}}
+
+			  any_owned = { remove_core = UKR
+					remove_core = RUT 
+					remove_core = ROM		
+					remove_core = HUN
+					remove_core = GRE
+					remove_core = BUL
+					remove_core = SER
+					remove_core = BOS
+					remove_core = SLO
+					remove_core = SLV
+					remove_core = CZH
+					remove_core = CRO
+					remove_core = ALB
+					remove_core = KUR
+					remove_core = BSQ
+					remove_core = CAT
+					remove_core = YUG
+					remove_core = LIT
+					remove_core = LAT
+					remove_core = EST
+					remove_core = UBD
+					remove_core = SYR
+					remove_core = GEO
+					remove_core = HND
+					remove_core = AZB
+					remove_core = IRQ
+					remove_core = LYB
+					remove_core = PHI
+					remove_core = CTD
+					remove_core = GHA
+					remove_core = SRL
+					remove_core = GUB
+					remove_core = GAM
+					remove_core = SNL
+					remove_core = SAF
+					remove_core = MOZ
+					remove_core = ZAN
+					remove_core = TZN
+					remove_core = CRN
+					remove_core = WSX
+					remove_core = IRE 
+					}
+			set_country_flag = historical_countries
+		}
+	
+		ai_will_do = {
+			factor = 0
+			}
+	}
+}
+

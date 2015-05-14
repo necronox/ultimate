@@ -1,0 +1,37 @@
+colonial = 2
+1608.1.1 = {
+owner = FRA
+controller = FRA
+colonial = 2
+naval_base = 1
+		}
+1763.1.1 = {
+owner = ENG
+controller = ENG
+	colonial = 2
+		}
+
+#French revolt
+1820.1.1 = {
+	add_core = QUE
+		}
+
+1800.1.1 = {
+	add_core = CAN
+		}
+1880.1.1 = { 
+		controller = CAN
+		owner = CAN
+		colonial = 0
+		}
+
+#2015 Quebec Independence After Referendum and Great Partition #Debate
+2015.1.1 = {
+	owner = QUE
+	controller = QUE
+	fort = 5
+		}
+
+trade_goods = grain
+
+life_rating = 35

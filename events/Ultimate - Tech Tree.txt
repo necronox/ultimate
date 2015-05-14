@@ -1,0 +1,1196 @@
+#loyal_chain_of_command Event 
+
+country_event = { 
+	id = 99100
+	title = "Loyal Chain Of Command is Discovered! " 
+	desc = "After many years of research our scientists discovered Loyal Chain of Command !" 
+	picture = Nobel_Literature
+	
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = loyal_chain_of_command_enabled 
+					}
+				NOT = { early_rifled_muskets = 1 }
+				year = 1700
+				prussian_doctrine = 1
+				}
+			}
+		
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = loyal_chain_of_command
+				set_country_flag = loyal_chain_of_command_enabled
+		}
+}
+
+#napoleonic_wars_experience Event
+
+country_event = { 
+	id = 99101
+	title = "Napoleonic Wars Experience is Discovered! " 
+	desc = "After many years of research our scientists discovered Napoleonic Wars Experience !" 
+	picture = Nobel_Literature
+		
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = napoleonic_wars_experience_enabled 
+					}
+				NOT = { post_napoleonic_thought = 1 }
+				year = 1810
+				army_command_principle = 1
+				}
+			}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = napoleonic_wars_experience
+				set_country_flag = napoleonic_wars_experience_enabled
+		}
+}
+
+#machine_guns Event
+
+country_event = { 
+	id = 99102
+	title = "Machine Guns is Discovered! " 
+	desc = "After many years of research our scientists discovered Machine Guns !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = machine_guns_enabled 
+					}
+				NOT = { late_century_logistics = 1 }
+				year = 1870
+				deep_defense_system = 1
+				}
+			}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = machine_guns
+				set_country_flag = machine_guns_enabled
+		}
+}
+
+#great_war_experience Event
+
+country_event = { 
+	id = 99103
+	title = "Great War Experience is Discovered! " 
+	desc = "After many years of research our scientists discovered Great War Experience !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = great_war_experience_enabled 
+					}
+				NOT = { modern_army_doctrine = 1 }
+				year = 1919
+				aeronautics = 1
+				}
+			}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = great_war_experience
+				set_country_flag = great_war_experience_enabled
+		}
+}
+
+#assymetric_warfare Event
+
+country_event = { 
+	id = 99104
+	title = "Assymetric Warfare is Discovered! " 
+	desc = "After many years of research our scientists discovered Assymetric Warfare !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = great_war_experience_enabled 
+					}
+				NOT = { redesigned_heavy_ordnance = 1 }
+				year = 1951
+				overhauled_military_education = 1
+				}
+			}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = assymetric_warfare
+				set_country_flag = great_war_experience_enabled
+		}
+}
+
+#early_naval_professionalism Event
+
+country_event = { 
+	id = 99105
+	title = "Early Naval Professionalism is Discovered! " 
+	desc = "After many years of research our scientists discovered Early Naval Professionalism !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = early_naval_professionalism_enabled 
+					}
+				NOT = { early_naval_design_bureaus = 1 }
+				year = 1700
+				early_naval_plans = 1
+				}
+			}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = early_naval_professionalism
+				set_country_flag = early_naval_professionalism_enabled
+		}
+}
+
+#napoleonic_naval_leadership Event
+
+country_event = { 
+	id = 99106
+	title = "Napoleonic Naval Neadership is Discovered! " 
+	desc = "After many years of research our scientists discovered Napoleonic Naval Neadership !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = napoleonic_naval_leadership_enabled 
+					}
+				NOT = { napoleonic_naval_design = 1 }
+				year = 1806
+				clipper_design = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = napoleonic_naval_leadership
+				set_country_flag = napoleonic_naval_leadership_enabled
+		}
+}
+
+#battleship_column_doctrine Event
+
+country_event = { 
+	id = 99107
+	title = "Battleship Column Doctrine is Discovered! " 
+	desc = "After many years of research our scientists discovered Battleship Column Doctrine !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = battleship_column_doctrine_enabled 
+					}
+				NOT = { naval_plans = 1 }
+				year = 1870
+				early_naval_integration = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = battleship_column_doctrine
+				set_country_flag = battleship_column_doctrine_enabled
+		}
+}
+
+#main_armament Event
+
+country_event = { 
+	id = 99108
+	title = "Main Armament is Discovered! " 
+	desc = "After many years of research our scientists discovered Main Armament !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = main_armament_enabled 
+					}
+				NOT = { pre_modern_naval_directionism = 1 }
+				year = 1918
+				blue_and_brown_water_schools = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = main_armament
+				set_country_flag = main_armament_enabled
+		}
+}
+
+#modern_naval_nco_trainingt Event
+
+country_event = { 
+	id = 99109
+	title = "Modern Naval Nco Training is Discovered! " 
+	desc = "After many years of research our scientists discovered Modern Naval Nco Training !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = modern_naval_nco_training_enabled 
+					}
+				NOT = { battleship_battle_fleet = 1 }
+				year = 1950
+				naval_statistics = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = modern_naval_nco_training
+				set_country_flag = modern_naval_nco_training_enabled
+		}
+}
+
+#commercial_revolution_ends Event
+
+country_event = { 
+	id = 99110
+	title = "Commercial Revolution Ends is Discovered! " 
+	desc = "After many years of research our scientists discovered Commercial Revolution Ends !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = commercial_revolution_ends_enabled 
+					}
+				NOT = { standard_market_regulation = 1 }
+				year = 1710
+				early_free_trade_theory = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = commercial_revolution_ends
+				set_country_flag = commercial_revolution_ends_enabled
+		}
+}
+
+#early_exchange_rates Event
+
+country_event = { 
+	id = 99111
+	title = "Early Exchange Rates is Discovered! " 
+	desc = "After many years of research our scientists discovered Early Exchange Rates !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = early_exchange_rates_enabled 
+					}
+				NOT = { 18th_banking = 1 }
+				year = 1810
+				organized_labor = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = early_exchange_rates
+				set_country_flag = early_exchange_rates_enabled
+		}
+}
+
+#central_bank_money_bill_printing Event
+
+country_event = { 
+	id = 99112
+	title = "Central Bank Money Bill Printing is Discovered! " 
+	desc = "After many years of research our scientists discovered Central Bank Money Bill Printing !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = central_bank_money_bill_printing_enabled 
+					}
+				NOT = { business_banks = 1 }
+				year = 1870
+				scientific_management = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = central_bank_money_bill_printing
+				set_country_flag = central_bank_money_bill_printing_enabled
+		}
+}
+
+#keynesian_economics Event
+
+country_event = { 
+	id = 99113
+	title = "Keynesian Economics is Discovered! " 
+	desc = "After many years of research our scientists discovered Keynesian Economics !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = keynesian_economics_enabled 
+					}
+				NOT = { government_interventionism = 1 }
+				year = 1919
+				bank_inspection_board = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = keynesian_economics
+				set_country_flag = keynesian_economics_enabled
+		}
+}
+
+#multinationals Event
+
+country_event = { 
+	id = 99114
+	title = "Multinationals is Discovered! " 
+	desc = "After many years of research our scientists discovered Multinationals !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = multinationals_enabled 
+					}
+				NOT = { oee_system = 1 }
+				year = 1950
+				globalized_economy = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = multinationals
+				set_country_flag = multinationals_enabled
+		}
+}
+
+#comparative Event
+
+country_event = { 
+	id = 99115
+	title = "Comparative is Discovered! " 
+	desc = "After many years of research our scientists discovered Comparative !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = comparative_enabled 
+					}
+				NOT = { historicism = 1 }
+				year = 1700
+				early_modern_philosphies = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = comparative
+				set_country_flag = comparative_enabled
+		}
+}
+
+#counter_enligthenment Event
+
+country_event = { 
+	id = 99116
+	title = "Counter Enligthenment is Discovered! " 
+	desc = "After many years of research our scientists discovered Counter Enligthenment !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = counter_enligthenment_enabled 
+					}
+				NOT = { freedom_and_independence = 1 }
+				year = 1800
+				neoclassicism = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = counter_enligthenment
+				set_country_flag = counter_enligthenment_enabled
+		}
+}
+
+#positivism Event
+
+country_event = { 
+	id = 99117
+	title = "Positivism is Discovered! " 
+	desc = "After many years of research our scientists discovered Positivism !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = positivism_enabled 
+					}
+				NOT = { realism = 1 }
+				year = 1870
+				idealism = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = positivism
+				set_country_flag = positivism_enabled
+		}
+}
+
+#mass_culture_n_the_avant_garde Event
+
+country_event = { 
+	id = 99118
+	title = "Mass Culture and the Avant Garde is Discovered! " 
+	desc = "After many years of research our scientists discovered Mass Culture and the Avant Garde !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = mass_culture_n_the_avant_garde_enabled 
+					}
+				NOT = { mass_politics = 1 }
+				year = 1920
+				social_science = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = mass_culture_n_the_avant_garde
+				set_country_flag = mass_culture_n_the_avant_garde_enabled
+		}
+}
+
+#international_protocol Event
+
+country_event = { 
+	id = 99119
+	title = "International Protocol is Discovered! " 
+	desc = "After many years of research our scientists discovered International Protocol !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = international_protocol_enabled 
+					}
+				NOT = { cognitivism = 1 }
+				year = 1954
+				punk_era = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = international_protocol
+				set_country_flag = international_protocol_enabled
+		}
+}
+
+#medicine Event
+
+country_event = { 
+	id = 99120
+	title = "Medicine is Discovered! " 
+	desc = "After many years of research our scientists discovered Medicine !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = medicine_enabled 
+					}
+				NOT = { coke_iron = 1 }
+				year = 1705
+				wooden_mine_railways = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = medicine
+				set_country_flag = medicine_enabled
+		}
+}
+
+#publishing_industry Event
+
+country_event = { 
+	id = 99121
+	title = "Publishing Industry is Discovered! " 
+	desc = "After many years of research our scientists discovered Publishing Industry !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = publishing_industry_enabled 
+					}
+				NOT = { advanced_experimental_railroad = 1 }
+				year = 1800
+				first_industrial_revolution_tech = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = publishing_industry
+				set_country_flag = publishing_industry_enabled
+		}
+}
+
+#iron_railroad Event
+
+country_event = { 
+	id = 99122
+	title = "Iron_Railroad is Discovered! " 
+	desc = "After many years of research our scientists discovered Iron_Railroad !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = iron_railroad_enabled 
+					}
+				NOT = { cheap_steel = 1 }
+				year = 1872
+				organic_chemistry = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = iron_railroad
+				set_country_flag = iron_railroad_enabled
+		}
+}
+
+#synthetic_polymers Event
+
+country_event = { 
+	id = 99123
+	title = "Synthetic Polymers is Discovered! " 
+	desc = "After many years of research our scientists discovered Synthetic Polymers !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = synthetic_polymers_enabled 
+					}
+				NOT = { advanced_metallurgy_&_glassblowing = 1 }
+				year = 1919
+				integral_rail_system = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = synthetic_polymers
+				set_country_flag = synthetic_polymers_enabled
+		}
+}
+
+#semiconductor_device Event
+
+country_event = { 
+	id = 99124
+	title = "Semiconductor Device is Discovered! " 
+	desc = "After many years of research our scientists discovered Semiconductor Device !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				NOT = { 
+					has_country_flag = semiconductor_device_enabled 
+					}
+				NOT = { autobahn = 1 }
+				year = 1953
+				advanced_surface_mining = 1 
+				}
+		}
+
+		option = {
+			name = "Glory to Our Scientists"
+				activate_technology = semiconductor_device
+				set_country_flag = semiconductor_device_enabled
+		}
+}
+
+# "Enlighment" Starting Technological Reforms Event
+
+country_event = { 
+	id = 99125
+	title = "Starting Technological Progress " 
+	desc = "Our Nation's Technological Progress is Outstanding !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				civilized = yes
+				year = 1604
+				NOT = { 
+					year = 1605
+					has_country_flag = enlightment_tech_reforms_enacted 
+					}
+			}
+		}
+
+		option = {
+			name = "Hurrah !"
+				set_country_flag = enlightment_tech_reforms_enacted
+				set_country_flag = empire_tech_reforms_enacted
+				set_country_flag = american_tech_reforms_enacted
+				set_country_flag = napoleon_tech_reforms_enacted
+				set_country_flag = grand_tech_reforms_enacted
+				set_country_flag = ahd_tech_reforms_enacted
+				set_country_flag = ww1_tech_reforms_enacted
+				set_country_flag = ww2_tech_reforms_enacted
+				set_country_flag = cold_tech_reforms_enacted
+				set_country_flag = millenium_tech_reforms_enacted
+				set_country_flag = future_tech_reforms_enacted
+		}
+}
+
+# "Empire" Starting Technological Reforms Event
+
+country_event = { 
+	id = 99126
+	title = "Starting Technological Progress " 
+	desc = "Our Nation's Technological Progress is Outstanding !"
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				civilized = yes
+				year = 1714
+				NOT = { 
+					year = 1715
+					has_country_flag = empire_tech_reforms_enacted
+				 	}
+			}
+		}
+
+		option = {
+			name = "Hurrah !"
+				activate_technology = ad_hoc_empire
+				set_country_flag = empire_tech_reforms_enacted
+				set_country_flag = american_tech_reforms_enacted
+				set_country_flag = napoleon_tech_reforms_enacted
+				set_country_flag = grand_tech_reforms_enacted
+				set_country_flag = ahd_tech_reforms_enacted
+				set_country_flag = ww1_tech_reforms_enacted
+				set_country_flag = ww2_tech_reforms_enacted
+				set_country_flag = cold_tech_reforms_enacted
+				set_country_flag = millenium_tech_reforms_enacted
+				set_country_flag = future_tech_reforms_enacted
+		}
+}
+
+# "American Revolution" Starting Technological Reforms Event
+
+country_event = { 
+	id = 99127
+	title = "Starting Technological Progress " 
+	desc = "Our Nation's Technological Progress is Outstanding !"
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				civilized = yes
+				year = 1764
+				NOT = { 
+					year = 1764
+					has_country_flag = american_tech_reforms_enacted
+				 	}
+			}
+		}
+
+		option = {
+			name = "Hurrah !"
+				activate_technology = ad_hoc_american
+				set_country_flag = american_tech_reforms_enacted
+				set_country_flag = napoleon_tech_reforms_enacted
+				set_country_flag = grand_tech_reforms_enacted
+				set_country_flag = ahd_tech_reforms_enacted
+				set_country_flag = ww1_tech_reforms_enacted
+				set_country_flag = ww2_tech_reforms_enacted
+				set_country_flag = cold_tech_reforms_enacted
+				set_country_flag = millenium_tech_reforms_enacted
+				set_country_flag = future_tech_reforms_enacted
+		}
+}
+
+# "Rise of Napoleon" Starting Technological Reforms Event
+
+country_event = { 
+	id = 99128
+	title = "Starting Technological Progress " 
+	desc = "Our Nation's Technological Progress is Outstanding !"
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				civilized = yes
+				year = 1800
+				standing_army = 1
+				prussian_doctrine 1
+				napoleonic_thought = 1
+				colombus_voyage = 1
+				sir_francis_drake_doctrine = 1
+				early_line_of_battle_doctrine = 1
+				colonial_doctrine = 1
+				british_doctrine = 1
+				NOT = { 
+					year = 1801
+					has_country_flag = napoleon_tech_reforms_enacted
+				 	}
+			}
+		}
+
+		option = {
+			name = "Hurrah !"
+				activate_technology = ad_hoc_napoleon
+				set_country_flag = napoleon_tech_reforms_enacted
+				set_country_flag = grand_tech_reforms_enacted
+				set_country_flag = ahd_tech_reforms_enacted
+				set_country_flag = ww1_tech_reforms_enacted
+				set_country_flag = ww2_tech_reforms_enacted
+				set_country_flag = cold_tech_reforms_enacted
+				set_country_flag = millenium_tech_reforms_enacted
+				set_country_flag = future_tech_reforms_enacted
+		}
+}
+
+# "The Grand Campaign" Starting Technological Reforms Event
+
+country_event = { 
+	id = 99129
+	title = "Starting Technological Progress " 
+	desc = "Our Nation's Technological Progress is Outstanding !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				civilized = yes
+				year = 1836
+				standing_army = 1
+				prussian_doctrine 1
+				napoleonic_thought = 1
+				post_napoleonic_thought = 1
+				colombus_voyage = 1
+				sir_francis_drake_doctrine = 1
+				early_line_of_battle_doctrine = 1
+				colonial_doctrine = 1
+				british_doctrine = 1
+				post_nelsonian_thought = 1
+				NOT = { 
+					year = 1837
+					has_country_flag = grand_tech_reforms_enacted 
+					}
+			}
+		}
+
+		option = {
+			name = "Hurrah !"
+				activate_technology = ad_hoc_grand
+				set_country_flag = grand_tech_reforms_enacted
+				set_country_flag = ahd_tech_reforms_enacted
+				set_country_flag = ww1_tech_reforms_enacted
+				set_country_flag = ww2_tech_reforms_enacted
+				set_country_flag = cold_tech_reforms_enacted
+				set_country_flag = millenium_tech_reforms_enacted
+				set_country_flag = future_tech_reforms_enacted
+		}
+}
+
+# "A House Divided" Starting Technological Reforms Event
+
+country_event = { 
+	id = 99130
+	title = "Starting Technological Progress " 
+	desc = "Our Nation's Technological Progress is Outstanding !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				civilized = yes
+				year = 1861
+				standing_army = 1
+				prussian_doctrine 1
+				napoleonic_thought = 1
+				post_napoleonic_thought = 1
+				strategic_mobility = 1
+				colombus_voyage = 1
+				sir_francis_drake_doctrine = 1
+				early_line_of_battle_doctrine = 1
+				colonial_doctrine = 1
+				british_doctrine = 1
+				post_nelsonian_thought = 1
+				late_line_of_battle_doctrine = 1
+				NOT = { 
+					year = 1862
+					has_country_flag = ahd_tech_reforms_enacted 
+					}
+			}
+		}
+
+		option = {
+			name = "Hurrah !"
+				activate_technology = ad_hoc_ahd
+				set_country_flag = ahd_tech_reforms_enacted
+				set_country_flag = ww1_tech_reforms_enacted
+				set_country_flag = ww2_tech_reforms_enacted
+				set_country_flag = cold_tech_reforms_enacted
+				set_country_flag = millenium_tech_reforms_enacted
+				set_country_flag = future_tech_reforms_enacted
+		}
+}
+
+# "The Great War" Starting Technological Reforms Event
+
+country_event = { 
+	id = 99131
+	title = "Starting Technological Progress " 
+	desc = "Our Nation's Technological Progress is Outstanding !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				civilized = yes
+				year = 1914
+				month = 8
+				standing_army = 1
+				prussian_doctrine 1
+				napoleonic_thought = 1
+				post_napoleonic_thought = 1
+				strategic_mobility = 1
+				point_defense_system = 1
+				infiltration = 1
+				hardened_field_fortification = 1 
+				colombus_voyage = 1
+				sir_francis_drake_doctrine = 1
+				early_line_of_battle_doctrine = 1
+				colonial_doctrine = 1
+				british_doctrine = 1
+				post_nelsonian_thought = 1
+				late_line_of_battle_doctrine = 1
+				battleship_column_doctrine = 1
+				NOT = { 
+					year = 1915
+					has_country_flag = ww1_tech_reforms_enacted 
+					}
+			}
+		}
+
+		option = {
+			name = "Hurrah !"
+				activate_technology = ad_hoc_ww1
+				set_country_flag = ww1_tech_reforms_enacted
+				set_country_flag = ww2_tech_reforms_enacted
+				set_country_flag = cold_tech_reforms_enacted
+				set_country_flag = millenium_tech_reforms_enacted
+				set_country_flag = future_tech_reforms_enacted
+		}
+}
+
+#WW 2 Starting Technological Reforms Event
+
+country_event = { 
+	id = 99132
+	title = "Starting Technological Progress " 
+	desc = "Our Nation's Technological Progress is Outstanding !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				civilized = yes
+				year = 1939
+				standing_army = 1
+				prussian_doctrine 1
+				napoleonic_thought = 1
+				post_napoleonic_thought = 1
+				strategic_mobility = 1
+				point_defense_system = 1
+				infiltration = 1 
+				hardened_field_fortification = 1
+				modern_army_doctrine = 1
+				border_fortification = 1
+				colombus_voyage = 1
+				sir_francis_drake_doctrine = 1
+				early_line_of_battle_doctrine = 1
+				colonial_doctrine = 1
+				british_doctrine = 1
+				post_nelsonian_thought = 1
+				late_line_of_battle_doctrine = 1
+				battleship_column_doctrine = 1
+				blue_and_brown_water_schools = 1
+				high_sea_battle_fleet = 1
+				modern_naval_doctrine = 1
+				NOT = { 
+					year = 1940
+					has_country_flag = ww2_tech_reforms_enacted
+					}
+			}
+		}
+
+		option = {
+			name = "Hurrah !"
+				activate_technology = ad_hoc_ww2
+				any_pop = { literacy = 0.3 }
+				set_country_flag = ww2_tech_reforms_enacted
+				set_country_flag = cold_tech_reforms_enacted
+				set_country_flag = millenium_tech_reforms_enacted
+				set_country_flag = future_tech_reforms_enacted
+		}
+}
+
+#"Cold War" Starting Technological Reforms Event
+
+country_event = { 
+	id = 99133
+	title = "Starting Technological Progress " 
+	desc = "Our Nation's Technological Progress is Outstanding !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				civilized = yes
+				year = 1946
+				standing_army = 1
+				prussian_doctrine 1
+				napoleonic_thought = 1
+				post_napoleonic_thought = 1
+				strategic_mobility = 1
+				point_defense_system = 1
+				infiltration = 1 
+				hardened_field_fortification = 1
+				modern_army_doctrine = 1
+				border_fortification = 1
+				main_field_operating_base = 1
+				colombus_voyage = 1
+				sir_francis_drake_doctrine = 1
+				early_line_of_battle_doctrine = 1
+				colonial_doctrine = 1
+				british_doctrine = 1
+				post_nelsonian_thought = 1
+				late_line_of_battle_doctrine = 1
+				battleship_column_doctrine = 1
+				blue_and_brown_water_schools = 1
+				high_sea_battle_fleet = 1
+				modern_naval_doctrine = 1
+				NOT = { 
+					year = 1947
+					has_country_flag = cold_tech_reforms_enacted 
+					}
+			}
+		}
+
+		option = {
+			name = "Hurrah !"
+				activate_technology = ad_hoc_cold_war
+				any_pop = { literacy = 0.4 }
+				set_country_flag = cold_tech_reforms_enacted
+				set_country_flag = millenium_tech_reforms_enacted
+				set_country_flag = future_tech_reforms_enacted
+		}
+}
+
+#"New Millenium" Starting Technological Reforms Event
+
+country_event = { 
+	id = 99134
+	title = "Starting Technological Progress " 
+	desc = "Our Nation's Technological Progress is Outstanding !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				civilized = yes
+				year = 2000
+				standing_army = 1
+				prussian_doctrine 1
+				napoleonic_thought = 1
+				post_napoleonic_thought = 1
+				strategic_mobility = 1
+				point_defense_system = 1
+				infiltration = 1 
+				hardened_field_fortification = 1
+				modern_army_doctrine = 1
+				border_fortification = 1
+				main_field_operating_base = 1
+				fire_support_base = 1
+				modern_army_base = 1
+				colombus_voyage = 1
+				sir_francis_drake_doctrine = 1
+				early_line_of_battle_doctrine = 1
+				colonial_doctrine = 1
+				british_doctrine = 1
+				post_nelsonian_thought = 1
+				late_line_of_battle_doctrine = 1
+				battleship_column_doctrine = 1
+				blue_and_brown_water_schools = 1
+				high_sea_battle_fleet = 1
+				modern_naval_doctrine = 1
+				battleship_battle_fleet = 1
+				carrier_doctrine = 1
+				NOT = { 
+					year = 2001
+					has_country_flag = millenium_tech_reforms_enacted 
+					}
+			}
+		}
+
+		option = {
+			name = "Hurrah !"
+				activate_technology = ad_hoc_millenium
+				any_pop = { literacy = 0.5 }
+				set_country_flag = millenium_tech_reforms_enacted
+				set_country_flag = future_tech_reforms_enacted
+		}
+}
+
+#"Future" Starting Technological Reforms Event
+
+country_event = { 
+	id = 99135
+	title = "Starting Technological Progress " 
+	desc = "Our Nation's Technological Progress is Outstanding !" 
+	picture = Nobel_Literature
+			
+		trigger = { 
+			AND = {
+				civilized = yes
+				year = 2023
+				standing_army = 1
+				prussian_doctrine 1
+				napoleonic_thought = 1
+				post_napoleonic_thought = 1
+				strategic_mobility = 1
+				point_defense_system = 1
+				infiltration = 1 
+				hardened_field_fortification = 1
+				modern_army_doctrine = 1
+				border_fortification = 1
+				main_field_operating_base = 1
+				fire_support_base = 1
+				modern_army_base = 1
+				colombus_voyage = 1
+				sir_francis_drake_doctrine = 1
+				early_line_of_battle_doctrine = 1
+				colonial_doctrine = 1
+				british_doctrine = 1
+				post_nelsonian_thought = 1
+				late_line_of_battle_doctrine = 1
+				battleship_column_doctrine = 1
+				blue_and_brown_water_schools = 1
+				high_sea_battle_fleet = 1
+				modern_naval_doctrine = 1
+				battleship_battle_fleet = 1
+				carrier_doctrine = 1
+				NOT = { 
+					year = 2024
+					has_country_flag = future_tech_reforms_enacted 
+					}
+			}
+		}
+
+		option = {
+			name = "Hurrah !"
+				activate_technology = ad_hoc_future
+				any_pop = { literacy = 0.6 }
+				set_country_flag = future_tech_reforms_enacted
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

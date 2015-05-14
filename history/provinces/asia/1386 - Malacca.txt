@@ -1,0 +1,30 @@
+owner = POR
+controller = POR
+add_core = JOH
+colonial = 1
+1697.1.1 = {
+	owner = NET
+controller = NET
+		}
+1827.1.1 = {
+owner = ENG
+controller = ENG
+colonial = 2
+		}
+#Rubber discovered!
+1880.1.1 = {
+	trade_goods = rubber
+		}
+trade_goods = tropical_wood
+life_rating = 30
+
+
+
+1963.1.1 = {
+	owner = MAL
+	controller = MAL
+	add_core = MAL
+	colonial = 0
+		}
+
+

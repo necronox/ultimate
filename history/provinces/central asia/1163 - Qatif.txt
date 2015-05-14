@@ -1,0 +1,16 @@
+owner = NEJ
+controller = NEJ
+add_core = NEJ
+#There will be blood
+1910.1.1 = {
+	trade_goods = oil
+		}
+1919.1.1 = {
+	controller = SAU 
+	owner = SAU
+	add_core = SAU
+colonial = 0
+
+}
+trade_goods = grain
+life_rating = 35

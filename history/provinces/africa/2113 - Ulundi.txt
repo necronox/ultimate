@@ -1,0 +1,16 @@
+owner = ZUL
+controller = ZUL
+add_core = ZUL
+add_core = SAF
+
+1910.1.1 = {
+		owner = ENG
+		controller = ENG
+		}
+
+1920.1.1 = {
+		owner = SAF
+		controller = SAF
+		}
+trade_goods = wool
+life_rating = 35

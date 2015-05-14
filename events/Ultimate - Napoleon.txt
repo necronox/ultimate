@@ -1,0 +1,57 @@
+﻿#Napoleon loses
+country_event = {
+        id = 402000
+        title = "Defeat!"
+        desc = "Despite our most valiant efforts we have been defeated by the coalition led by the British."
+        picture = "deadnapoleon"
+        is_triggered_only = yes
+
+
+option = {
+name = "Sacre Bleu!"
+        government = prussian_constitutionalism
+        leave_alliance = NET
+        leave_alliance = SPA
+        any_owned = {
+                limit = {
+                        is_core = NET
+                                }
+                secede_province = NET
+                                }
+        any_owned = {
+                limit = {
+                        is_core = GER
+                                }
+                secede_province = PRU
+                        }
+        any_owned = {
+                limit = {
+                        is_core = SAR
+                                }
+                secede_province = SAR
+                        }
+                727 = {
+                        secede_province = AUS
+                        }
+                728 = {
+                        secede_province = AUS
+                        }
+                739 = {
+                        secede_province = AUS
+                        }
+                AUS = {
+                        inherit = ITA
+                        }
+                SIC = {
+                        all_core = { 
+                                remove_core = NAP
+                                }
+                        }
+                        # Kingdom of Naples will disappear after the Napoelonic war to prevent Napolitan nationalism
+
+
+                release = LUX
+        }
+
+
+}

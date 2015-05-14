@@ -1,0 +1,16 @@
+owner = SPA
+controller = SPA
+colonial = 2
+1810.1.1 = {
+owner = BOL
+controller = BOL
+add_core = BOL
+colonial = 0
+		}
+trade_goods = tropical_wood
+life_rating = 30
+
+#Rubber discovered!
+1890.1.1 = {
+	trade_goods = rubber
+		}

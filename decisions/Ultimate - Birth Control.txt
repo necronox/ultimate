@@ -1,0 +1,83 @@
+political_decisions = {
+	birth_control_open_d = {
+		alert = no
+		potential = {
+			OR = {
+				government = proletarian_dictatorship
+				government = fascist_dictatorship
+			}
+			NOT = {
+				has_country_modifier = birth_control_cooldown
+			}
+			NOT = {
+				has_country_flag = birth_control_open
+			}
+			ai = no
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			set_country_flag = birth_control_open
+		}
+	}
+	birth_control_more_d = {
+		alert = no
+		potential = {
+			has_country_flag = birth_control_open
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = birth_control_cooldown
+				duration = 365
+			}
+			add_country_modifier = {
+				name = birth_control_more
+				duration = -1
+			}
+			remove_country_modifier = birth_control_less
+			clr_country_flag = birth_control_open
+		}
+	}
+	birth_control_less_d = {
+		alert = no
+		potential = {
+			has_country_flag = birth_control_open
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = birth_control_cooldown
+				duration = 365
+			}
+			add_country_modifier = {
+				name = birth_control_less
+				duration = -1
+			}
+			remove_country_modifier = birth_control_more
+			clr_country_flag = birth_control_open
+			}
+	}
+	birth_control_none_d = {
+		potential = {
+			has_country_flag = birth_control_open
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = birth_control_cooldown
+				duration = 365
+			}
+			remove_country_modifier = birth_control_less
+			remove_country_modifier = birth_control_more
+			clr_country_flag = birth_control_open
+		}
+	}
+}

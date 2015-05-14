@@ -1,0 +1,61 @@
+1714.1.1 = {
+	owner = THC
+	controller = THC
+	add_core = THC
+		}
+1775.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	remove_core = THC
+		}
+1820.1.1 = {
+		owner = USA
+	controller = USA
+	add_core = USA
+
+		}
+add_core = NEN
+trade_goods = fish
+life_rating = 35
+1867.1.1 = { 	#AFTER CIVIL WAR
+	owner = USA	#AFTER CIVIL WAR
+
+
+	controller = USA #AFTER CIVIL WAR
+
+		}
+
+1861.1.1 = {
+	party_loyalty = {
+		ideology = liberal
+		loyalty_value = 25
+	}}
+1861.1.1 = { railroad = 3 }
+1939.1.1 = {
+state_building = {
+	level = 4
+	building = barrel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 4
+	building = automobile_factory
+	upgrade = yes
+}
+state_building = {
+	level = 4
+	building = electric_gear_factory
+	upgrade = yes
+}
+state_building = {
+	level = 4
+	building = synthetic_oil_factory
+	upgrade = yes
+}
+state_building = {
+	level = 4
+	building = fuel_refinery
+	upgrade = yes
+}
+		}

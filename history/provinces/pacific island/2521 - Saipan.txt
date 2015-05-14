@@ -1,0 +1,23 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+trade_goods = fish
+life_rating = 30
+colonial = 2
+
+1899.1.1 = {
+	owner = GER
+	controller = GER
+	add_core = GER
+		}
+
+1930.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+		}
+1945.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+		}

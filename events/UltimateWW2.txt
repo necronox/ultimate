@@ -1,0 +1,922 @@
+
+
+
+#German troops occupy France
+country_event = {
+	id = 1000000
+	title = "EVTNAME1000000"
+	desc = "EVTDESC1000000"
+	picture = "hitlerparis"
+
+trigger = {
+	has_country_flag = WW2_Axis
+	AND = {
+	425 = {
+	controlled_by = THIS
+		}
+	FRA = {
+	war_exhaustion = 10
+		}
+			}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_global_flag = WW2_France_Surrendered
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##annex##
+option = {
+name = "EVTOPTA1000000"
+
+	end_war = FRA
+	inherit = FRA
+	prestige = 25
+	FRA = {
+	prestige = -100 }
+	set_global_flag = WW2_France_Surrendered
+	clr_global_flag = WW2_France_in_the_fight
+	any_pop = {
+	limit = {
+		culture = french }
+	militancy = 6
+	consciousness = 6
+			}
+		}
+
+##vichy##
+
+option = {
+name = "EVTOPTB1000000"
+
+	set_global_flag = WW2_France_Surrendered
+	end_war = FRA
+	FRA_420 = {
+ 	secede_province = GER }
+	FRA_418 = {
+	secede_province = GER }
+	FRA_399 = {
+	secede_province = GER }
+	FRA_435 = {
+	secede_province = GER }
+	FRA_412 = {
+	secede_province = GER }
+	FRA_411 = {
+	secede_province = GER }
+	FRA_404 = {
+	secede_province = GER }
+	FRA_425 = {
+	secede_province = GER }
+	FRA_438 = {
+	secede_province = GER }
+	FRA_442 = {
+	secede_province = GER }
+	FRA_458 = {
+	secede_province = GER }
+        create_vassal = FRA
+	prestige = 25
+	FRA = {
+	prestige = -5000
+political_reform = party_appointed
+political_reform = none_voting
+public_meetings = no_meeting
+political_reform = state_press
+political_reform = state_controlled
+political_reform = first_past_the_post
+political_reform = underground_parties }
+
+	any_pop = {
+	limit = {
+		culture = french }
+	militancy = 3
+	consciousness = 3
+			}
+		ai_chance = {
+			factor = 25
+		}
+		}
+			}
+
+##puppet##
+#option = {
+#name = "EVTOPTC1000000"
+#
+#	end_war = FRA
+#	create_vassal = FRA
+#	prestige = 25
+#	FRA = {
+#	prestige = -100 }
+#	set_global_flag = WW2_France_Surrendered
+#	clr_global_flag = WW2_France_in_the_fight
+#	any_pop = {
+#	limit = {
+#		culture = french }
+#	militancy = 3
+#	consciousness = 3
+#			}
+#		}
+#}	
+#
+#
+#Pearl Harbor receive
+country_event = {
+	id = 1000001
+	title = "Pearl Harbor"
+	desc = "Our fleet at Pearl Harbor has been attacked by the Empire of Japan!"
+	picture = "pearlharborattackpic"
+	is_triggered_only = yes
+
+
+option = {
+name = "A Date Which Will Live in Infamy"
+	create_alliance = ENG
+	any_pop = {
+	dominant_issue = {
+	value = jingoism
+	factor = 0.75
+}	}
+
+		}
+
+}	
+
+#Axis troops enter London
+country_event = {
+	id = 1000002
+	title = "Great Britain Surrenders!"
+	desc = "EVTDESC1000002"
+	picture = "nazibritainpic"
+
+trigger = {
+	has_country_flag = WW2_Axis
+	300 = {
+	controlled_by = THIS
+		}
+	ENG = {
+	war_exhaustion = 10
+		}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_global_flag = WW2_UK_Surrendered
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##annex##
+option = {
+name = "Annex the British Isles, let the British Empire dissolve"
+
+	end_war = ENG 
+	inherit = ENG 
+	prestige = 25
+	set_global_flag = WW2_UK_Surrendered
+	clr_global_flag = WW2_UK_in_the_fight
+	any_pop = {
+	limit = {
+		OR = {
+		culture = british
+		culture = english 
+		culture = welsh
+		culture = scottish  } }
+	militancy = 6
+	consciousness = 6
+			}
+		}
+
+##Put Edward VIII on Throne##
+option = {
+name = "Make Edward VIII the British King"
+
+
+	end_war = ENG
+	treasury = 200000
+	GER = {
+	create_vassal = ENG
+	end_war = ENG
+	military_access = ENG
+		}
+	prestige = 1000
+	set_global_flag = WW2_UK_Surrendered
+	clr_global_flag = WW2_UK_in_the_fight
+	ENG = {
+	treasury = -200000
+	prestige = -5000
+political_reform = party_appointed
+political_reform = none_voting
+public_meetings = no_meeting
+political_reform = state_press
+political_reform = state_controlled
+political_reform = first_past_the_post
+political_reform = underground_parties 
+	any_pop = {
+	limit = {
+		NOT = { pop_majority_ideology = fascist } }
+	militancy = 3
+	consciousness = 3
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+}
+
+}	
+
+#Warsaw Occupied
+country_event = {
+	id = 1000003
+	title = "The Collapse of Poland"
+	desc = "Warsaw has fallen!"
+	picture = "polandsplitww2pic"
+	fire_only_once = yes
+
+trigger = {
+	OR = {
+	tag = GER
+	tag = RUS }
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_global_flag = WW2_Poland_Surrendered
+		}
+	706 = {
+		OR = {
+	controlled_by = GER
+	controlled_by = RUS
+		}
+			}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+option = {
+name = "Excellent!"
+	RUS = {
+	end_war = POL
+	country_event = 1000004 }
+	GER = {
+	end_war = POL
+	country_event = 1000005 }
+	set_global_flag = WW2_Poland_Surrendered
+	clr_global_flag = WW2_Poland_in_the_fight
+
+		}
+
+}	
+
+#Warsaw OccupiedMolotov Pact's Polish Takeover Soviet
+country_event = {
+	id = 1000004
+	title = "The Collapse of Poland"
+	desc = "Following the efforts of both German and Soviet forces the territory formerly belonging to Poland will now be distributed to Germany and the Soviet Union according to the agreement between the two nations."
+	picture = "polandsplitww2pic"
+	is_triggered_only = yes
+
+option = {
+name = "Excellent!"
+	RUS_947 = {
+	secede_province = RUS }
+	RUS_707 = {
+	secede_province = RUS }
+	RUS_955 = {
+	secede_province = RUS }
+	AUS_662 = {
+	secede_province = RUS }
+	360 = {
+	secede_province = RUS }
+	707 = {
+	secede_province = RUS }
+	end_war = POL
+		}
+
+}	
+
+#Molotov Pact's Polish Takeover Nazi
+country_event = {
+	id = 1000005
+	title = "The Collapse of Poland"
+	desc = "Following the efforts of both German and Soviet forces the territory formerly belonging to Poland will now be distributed to Germany and the Soviet Union according to the agreement between the two nations."
+	picture = "polandsplitww2pic"
+	is_triggered_only = yes
+
+
+option = {
+name = "Excellent!"
+	PRU_701 = {
+	secede_province = GER }
+	PRU_690 = {
+	secede_province = GER }
+	PRU_682 = {
+	secede_province = GER }
+	AUS_702 = {
+	secede_province = GER }
+	706 = {
+	secede_province = GER }
+	708 = {
+	secede_province = GER }
+	709 = {
+	secede_province = GER }
+	711 = {
+	secede_province = GER }
+	715 = {
+	secede_province = GER }
+	RUS_710 = {
+	secede_province = GER }
+	end_war = POL
+		}
+
+}	
+
+
+#Allied Troops Enter Berlin
+country_event = {
+	id = 1000006
+	title = "Germany Surrenders!"
+	desc = "Berlin is ours and Germany is now at our mercy!"
+	picture = "berlinfallsovpic"
+
+trigger = {
+	war_with = GER
+	549 = {
+	controlled_by = THIS
+		}
+	GER = {
+		war_exhaustion = 10
+		}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_country_flag = WW2_Axis
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##Punish Jerry##
+option = {
+name = "Let's make sure this doesn't happen again"
+
+	end_war = GER
+	any_country = {
+	end_war = GER
+			}
+	create_vassal = GER
+	prestige = 1000
+	GER = {
+	release = POL
+	release = AUS
+	release = FRA
+	release = NET
+	release = BEL
+	release = LUX
+	prestige = -5000 }
+	clr_global_flag = WW2inprogress
+		}
+}
+#Italo-Greek War
+country_event = {
+	id = 1000007
+	title = "Italy Sends us An Ultimatum"
+	desc = "Italy has sent us an Ultimatum! Either we surrender to them or they declare war."
+	picture = "mussolini"
+	is_triggered_only = yes
+
+
+option = {
+name = "War it is!"
+
+	war = {
+	target = ITA
+	attacker_goal = {
+		casus_belli = status_quo
+	}
+	call_ally = yes
+	defender_goal = {
+		casus_belli = conquest
+	}
+}
+		ai_chance = {
+			factor = 25
+		}
+		}
+	option = {
+	name = "Very well, we shall surrender"
+	prestige = -25
+	ITA = {
+	create_vassal = GRE
+		}
+			}
+}
+#German troops occupy Belgium
+country_event = {
+	id = 1000008
+	title = "EVTNAME1000008"
+	desc = "EVTDESC1000008"
+	picture = "nazi_victory"
+
+trigger = {
+	has_country_flag = WW2_Axis
+	AND = {
+	387 = {
+	controlled_by = THIS
+		}
+	BEL = {
+	war_exhaustion = 5
+		}
+			}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_global_flag = WW2_Belgium_Surrendered
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##annex##
+option = {
+name = "EVTOPTA1000008"
+
+	end_war = BEL
+	inherit = BEL
+	prestige = 25
+	BEL = {
+	prestige = -100 }
+	set_global_flag = WW2_Belgium_Surrendered
+	clr_global_flag = WW2_Belgium_in_the_fight
+		ai_chance = {
+			factor = 25
+		}
+		}
+
+
+##puppet##
+option = {
+name = "EVTOPTB1000008"
+
+	end_war = BEL
+	create_vassal = BEL
+	prestige = 25
+	BEL = {
+	prestige = -100
+political_reform = party_appointed
+political_reform = none_voting
+public_meetings = no_meeting
+political_reform = state_press
+political_reform = state_controlled
+political_reform = first_past_the_post
+political_reform = underground_parties 
+ }
+	set_global_flag = WW2_Belgium_Surrendered
+	clr_global_flag = WW2_Belgium_in_the_fight
+		}
+}	
+
+#German troops occupy Holland
+country_event = {
+	id = 1000009
+	title = "EVTNAME1000009"
+	desc = "EVTDESC1000009"
+	picture = "nazi_victory"
+
+trigger = {
+	has_country_flag = WW2_Axis
+	AND = {
+	375 = {
+	controlled_by = THIS
+		}
+	NET = {
+	war_exhaustion = 5
+		}
+			}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_global_flag = WW2_Holland_Surrendered
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##annex##
+option = {
+name = "EVTOPTA1000009"
+
+	end_war = NET
+	inherit = NET
+	prestige = 25
+	BEL = {
+	prestige = -100 }
+	set_global_flag = WW2_Holland_Surrendered
+	clr_global_flag = WW2_Holland_in_the_fight
+		ai_chance = {
+			factor = 25
+		}
+		}
+
+
+##puppet##
+option = {
+name = "EVTOPTB1000009"
+
+	end_war = NET
+	create_vassal = NET
+	prestige = 25
+	BEL = {
+	prestige = -100
+political_reform = party_appointed
+political_reform = none_voting
+political_reform = no_meeting
+political_reform = state_press
+political_reform = state_controlled
+political_reform = first_past_the_post
+political_reform = underground_parties  }
+	set_global_flag = WW2_Holland_Surrendered
+	clr_global_flag = WW2_Holland_in_the_fight
+		}
+}	
+
+#German troops occupy Lux
+country_event = {
+	id = 1000010
+	title = "EVTNAME1000010"
+	desc = "EVTDESC1000010"
+	picture = "nazi_victory"
+
+trigger = {
+	has_country_flag = WW2_Axis
+	397 = {
+	controlled_by = THIS
+		}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_global_flag = WW2_Lux_Surrendered
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##annex##
+option = {
+name = "EVTOPTA1000010"
+
+	end_war = LUX
+	inherit = LUX
+	prestige = 25
+	BEL = {
+	prestige = -100 }
+	set_global_flag = WW2_Lux_Surrendered
+	clr_global_flag = WW2_Lux_in_the_fight
+		ai_chance = {
+			factor = 25
+		}
+		}
+
+
+##puppet##
+option = {
+name = "EVTOPTB1000010"
+
+	end_war = LUX
+	create_vassal = LUX
+	prestige = 25
+	LUX = {
+	prestige = -100
+political_reform = party_appointed
+political_reform = none_voting
+political_reform = no_meeting
+political_reform = state_press
+political_reform = state_controlled
+political_reform = first_past_the_post
+political_reform = underground_parties  }
+	set_global_flag = WW2_Lux_Surrendered
+	clr_global_flag = WW2_Lux_in_the_fight
+		}
+}	
+
+#Axis Victory Conference Poland
+country_event = {
+	id = 1000011
+	title = "The Fate of Poland"
+	desc = "WW2 has ended and the Axis is victorious! The fate of Poland is now in our hands. Naturally, whatever the outcome of this conference, all main territorial claims will go to the approriate axis powers."
+	picture = "defeatedpolandWW2"
+	is_triggered_only = yes
+
+	option = {
+	name = "Poland shall now be part of the Greater Reich" 
+		POL = {
+			any_owned = {
+			secede_province = GER
+					}
+			}
+			}
+
+	option = {
+	name = "Declare Poland a free nation under German tutelage"
+	
+	release_vassal = POL
+	POL = {
+political_reform = party_appointed
+political_reform = none_voting
+political_reform = no_meeting
+political_reform = state_press
+political_reform = state_controlled
+political_reform = first_past_the_post
+political_reform = underground_parties
+			}
+		}
+			}
+
+#Axis Victory Conference France
+country_event = {
+	id = 1000012
+	title = "The Fate of France"
+	desc = "WW2 has ended and the Axis is victorious! The fate of France is now in our hands. Naturally, whatever the outcome of this conference, all main territorial claims will go to the approriate axis powers."
+	picture = "hitlerparis"
+	is_triggered_only = yes
+
+	option = {
+	name = "Transfer all French political powers in Europe and overseas to Germany" 
+		FRA = {
+			any_owned = {
+			secede_province = GER
+					}
+			}
+			}
+
+	option = {
+	name = "Declare France a free nation under German tutelage"
+	
+	FRA = {
+	government = fascist_dictatorship
+		}
+	create_alliance = FRA
+		}
+			}
+
+#Axis Victory Conference UK
+country_event = {
+	id = 1000013
+	title = "The Fate of the British Empire"
+	desc = "WW2 has ended and the Axis is victorious! The fate of England and its empire are now in our hands. Naturally, whatever the outcome of this conference, all main territorial claims will go to the approriate axis powers."
+	picture = "nazibritainpic"
+	is_triggered_only = yes
+
+	option = {
+	name = "All British posessions, foreign and domestic, will now answer to the Furher" 
+		ENG = {
+			any_owned = {
+			secede_province = GER
+					}
+			}
+			}
+
+	option = {
+	name = "Put Edward VIII on the throne"
+	
+	ENG = {
+	government = fascist_dictatorship
+		}
+	create_alliance = ENG
+	relation = {
+	who = ENG
+	value = 100
+	}
+		}
+
+			}
+#Moscow occupied
+country_event = {
+	id = 1000014
+	title = "The Soviet Union Surrenders!"
+	desc = "EVTDESC1000014"
+	picture = "nazimoscow"
+
+trigger = {
+	has_country_flag = WW2_Axis
+	1008 = {
+	controlled_by = THIS
+		}
+	RUS = {
+	war_exhaustion = 25
+		}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_global_flag = WW2_UK_Surrendered
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##annex##
+option = {
+name = "Annex the USSR completely!"
+
+	end_war = RUS 
+	inherit = RUS 
+	prestige = 100
+	set_global_flag = WW2_Russia_Surrendered
+	clr_global_flag = WW2_Russia_in_the_fight
+	any_pop = {
+	limit = {
+		culture = russian
+ }
+	militancy = 6
+	consciousness = 6
+			}
+		}
+
+##Vassalise Russia##
+option = {
+name = "Vassalise Russia"
+
+
+	end_war = RUS
+	treasury = 200000
+	create_vassal = RUS
+	military_access = RUS
+	prestige = 1000
+	set_global_flag = WW2_RUS_Surrendered
+	clr_global_flag = WW2_RUS_in_the_fight
+	RUS = {
+	treasury = -200000
+	prestige = -5000
+political_reform = party_appointed
+political_reform = none_voting
+public_meetings = no_meeting
+political_reform = state_press
+political_reform = state_controlled
+political_reform = first_past_the_post
+political_reform = underground_parties 
+	any_pop = {
+	limit = {
+		NOT = { pop_majority_ideology = fascist } }
+	militancy = 3
+	consciousness = 3
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+#Washington occupied
+country_event = {
+	id = 1000015
+	title = "America Surrenders!"
+	desc = "My $MONARCHTITLE$, America has formally surrendered to us and is now at our mercy!"
+	picture = "nazimerica"
+
+trigger = {
+	has_country_flag = WW2_Axis
+	220 = {
+	controlled_by = THIS
+		}
+	USA = {
+	war_exhaustion = 20
+		}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_global_flag = WW2_USA_Surrendered
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##annex##
+option = {
+name = "Annex the USA!"
+
+	end_war = USA 
+	inherit = USA 
+	prestige = 100
+	set_global_flag = WW2_USA_Surrendered
+	clr_global_flag = WW2_USA_in_the_fight
+	any_pop = {
+	limit = {
+		OR = {
+		culture = yankee
+		culture = dixie
+			}
+ 		}
+	militancy = 6
+	consciousness = 6
+			}
+		}
+
+##Vassalise America##
+option = {
+name = "Vassalise America"
+
+
+	end_war = USA
+	treasury = 200000
+	create_vassal = USA
+	military_access = USA
+	prestige = 1000
+	set_global_flag = WW2_USA_Surrendered
+	clr_global_flag = WW2_USA_in_the_fight
+	USA = {
+	treasury = -200000
+	prestige = -5000
+political_reform = party_appointed
+political_reform = none_voting
+public_meetings = no_meeting
+political_reform = state_press
+political_reform = state_controlled
+political_reform = first_past_the_post
+political_reform = underground_parties 
+	any_pop = {
+	limit = {
+		NOT = { pop_majority_ideology = fascist } }
+	militancy = 3
+	consciousness = 3
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+}	
+#Rome occupied
+country_event = {
+	id = 1000016
+	title = "Italy Surrenders!"
+	desc = "My $MONARCHTITLE$, America has formally surrendered to us and is now at our mercy!"
+	picture = "italyliberation"
+
+trigger = {
+
+	749 = {
+	controlled_by = THIS
+		}
+	ITA = {
+	war_exhaustion = 15
+		}
+	has_global_flag = WW2inprogress
+	NOT = {
+		has_country_flag = WW2_Axis
+		has_global_flag = WW2_Italy_Surrendered
+		}
+		}
+
+mean_time_to_happen = {
+		days = 1 }
+
+##annex##
+option = {
+name = "Annex Italy!"
+
+	end_war = USA 
+	inherit = USA 
+	prestige = 100
+	set_global_flag = WW2_Italy_Surrendered
+	clr_global_flag = WW2_Italy_in_the_fight
+	any_pop = {
+	limit = {
+		OR = {
+		culture = yankee
+		culture = dixie
+			}
+ 		}
+	militancy = 6
+	consciousness = 6
+			}
+		}
+
+##Vassalise Italy##
+option = {
+name = "Vassalise Italy"
+
+
+	end_war = ITA
+	create_vassal = ITA
+	military_access = ITA
+	prestige = 100
+	set_global_flag = WW2_Italy_Surrendered
+	clr_global_flag = WW2_Italy_in_the_fight
+	ITA = {
+	prestige = -5000
+political_reform = appointed
+political_reform = universal_voting
+political_reform = yes_meeting
+political_reform = censored_press
+political_reform = non_socialist
+political_reform = first_past_the_post
+political_reform = non_secret_ballots
+		}
+
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+}	

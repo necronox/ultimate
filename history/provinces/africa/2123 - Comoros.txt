@@ -1,0 +1,13 @@
+trade_goods = fish
+life_rating = 35
+add_core = COM
+1861.1.1 = {
+	owner = FRA
+	controller = FRA
+	colonial = 2
+}
+1960.1.1 = {
+	owner = COM
+	controller = COM
+	colonial = 0
+		}

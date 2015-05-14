@@ -1,0 +1,9 @@
+owner = SPA
+controller = SPA
+1707.1.1 = {
+owner = FRA
+controller = FRA
+		}
+trade_goods = sugar
+life_rating = 35
+colonial = 2

@@ -1,0 +1,476 @@
+
+country_event = {
+	id = 400001 #Declaration of Independence part 2
+	title = "Declaration of Independence"
+	desc = "EVTDESC400001"
+	picture = "usa_declaration"
+
+	trigger = {
+		tag = THC
+		OR = {
+			war_with = ENG
+			war_with = ANG
+			is_greater_power = yes
+		}
+	}
+
+	option = {
+		name = "Our Nation Shall Be A Democratic Republic!"
+		clr_country_flag = US_revolution_ongoing
+		change_tag = USA
+		government = democracy
+		set_global_flag = merica_independent
+		remove_country_modifier = less_immigration
+		any_owned = {
+			remove_core = THC
+		}
+	}
+	option = {
+		name = "This New American Republic Needs a Strong Ruler!"
+		clr_country_flag = US_revolution_ongoing
+		change_tag = USA
+		government = presidential_dictatorship
+		set_global_flag = merica_independent
+		remove_country_modifier = less_immigration
+		any_owned = {
+			remove_core = THC
+		}
+	}
+	option = {
+		name = "I Shall Found A Mighty American Dynasty!"
+		clr_country_flag = US_revolution_ongoing
+		change_tag = USA
+		government = absolute_monarchy
+		set_global_flag = merica_independent
+		remove_country_modifier = less_immigration
+		any_owned = {
+			remove_core = THC
+		}
+	}
+}
+
+country_event = {
+	id = 400002 #boston tea party event for UK
+	title = "The Boston Tea Party"
+	desc = "EVTDESC400002"
+	picture = "boston_tea_party"
+	is_triggered_only = yes
+
+	option = {
+		name = "We must subjugate these rebellious colonials"
+		any_pop = {
+			consciousness = 1
+		}
+		THC = {
+			any_pop = {
+				consciousness = 2
+				militancy = 4
+			}
+		}
+		ENG = {
+			set_country_flag = tea_party
+		}
+	}
+	
+	option = {
+		name = "Let us make some concessions"
+		remove_country_modifier = tea_act_mod
+		remove_country_modifier = townshend_act_mod
+		any_pop = {
+			consciousness = 2
+		}
+		THC = {
+			any_pop = {
+				consciousness = 2
+			}
+			remove_country_modifier = townshend_act_mod_thc
+			remove_country_modifier = tea_act_mod_thc
+		}
+		ENG = {
+			set_country_flag = tea_party
+		}
+	}
+}
+	
+province_event = {
+	id = 400003 #slavery province
+	title = "Slavery Expansion"
+	desc = "$COUNTRY_ADJ$ landowners have found some use for slaves in $STATENAME$, therefore expanding the institution to these lands."
+	trigger = {
+		state_scope = {
+			is_slave = no
+			is_colonial = yes
+		}
+		owner = {
+			slavery = yes_slavery
+		}
+	}
+
+	option = {
+		name = "Very Well"
+		state_scope = {
+			is_slave = yes
+		}
+	}
+}
+
+country_event = {
+	id = 400004 #Declaration of Independence part 3
+	title = "Our Capital"
+	desc = "Now that we have a nation we shall need a capital. We can choose from four locations, all of which are excellent."
+	picture = "usacapitolpic"
+
+	trigger = {
+		tag = USA
+		has_global_flag = merica_independent
+		NOT = {
+			has_global_flag = merica_capital
+		}
+	}
+	option = {
+		name = "Let us stay in Philadelphia"
+		set_global_flag = merica_capital
+	}
+	option = {
+		name = "Let us build a new city along the Potomac in honour of General Washington"
+		capital = 220
+		220 = {
+			change_province_name = "Washington"
+		}
+		set_global_flag = merica_capital
+	}
+	option = {
+		name = "New York"
+		capital = 232
+		set_global_flag = merica_capital
+	}
+
+	option = {
+		name = "Boston"
+		capital = 243
+		set_global_flag = merica_capital
+	}
+}
+country_event = {
+	id = 400005 #Colonial Dispute
+	title = "Colonial Dispute"
+	desc = "EVTDESC400005"
+	picture = "colonydisputepic"
+	
+	trigger = {
+		NOT = {
+			year = 1820
+		}
+		colonial_nation = yes
+		any_neighbor_country = {
+			colonial_nation = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 0.9
+			prestige = 20
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			jingoism = 5
+		}
+		modifier = {
+			factor = 0.9
+			jingoism = 10
+		}
+		modifier = {
+			factor = 1.1
+			pacifism = 5
+		}
+		modifier = {
+			factor = 1.1
+			pacifism = 10
+		}
+		modifier = {
+			factor = 0.8
+			war_policy = jingoism
+		}
+		modifier = {
+			factor = 0.9
+			war_policy = pro_military
+		}
+		modifier = {
+			factor = 1.1
+			war_policy = anti_military
+		}
+		modifier = {
+			factor = 1.2
+			war_policy = pacifism
+		}
+		modifier = {
+			factor = 0.9
+			is_greater_power = yes
+		}
+	}
+	option = {
+		name = "$COUNTRY$ Does Not Compromise"
+		random_country = {
+			limit = {
+				colonial_nation = yes
+					NOT = {
+						tag = THIS
+					}
+			}
+			add_casus_belli = {
+				target = THIS
+				type = place_in_the_sun
+				months = 12
+			}
+			relation = {
+				who = THIS
+				value = -20
+			}
+		}
+	}
+	option = {
+		name = "Try To Calm Things Down"
+			any_pop = {
+				dominant_issue = {
+					value = jingoism
+					factor = 0.05
+				}
+				militancy = 0.5
+			}
+	}
+}
+province_event = {
+        id = 400006 #Pirates
+        title = "Pirates in $PROVINCENAME$"
+        desc = "Pirates have been spotted up and down the coast of $PROVINCENAME$. Merchants fear they may disrupt their trade."
+
+	trigger = {           
+		is_colonial = yes
+		is_overseas = yes
+		is_coastal = yes
+		NOT = {
+			year = 1800
+		}
+		crime_fighting = 0.6
+		has_province_modifier = piratesmod
+	}
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 1.4
+			NOT = {
+				crime_fighting = 0.5
+			}
+		}
+	}
+	option = {
+		name = "Bloody Pirates!"
+		add_province_modifier = { 
+			name = piratesmod
+			duration = -1
+		}
+	}
+}
+province_event = {
+        id = 400007 #Pirates defeated
+        title = "$PROVINCENAME$ Pirates Dislodged"
+        desc = "Following an increase in crackdowns on piracy by private and government agents the pirates in $PROVINCENAME$ have taken flight."
+
+	trigger = {
+		crime_fighting = 0.75
+		has_province_modifier = piratesmod
+	}
+
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 1.4
+			crime_fighting = 0.8
+		}
+	}
+	option = {
+		name = "Rats"
+		remove_province_modifier = piratesmod
+		remove_core = PIR
+	}
+}
+
+
+province_event = {
+        id = 400008 #Pirates Settle in
+        title = "Pirates Settle In $PROVINCENAME$"
+        desc = "Our inability to deal with piracy in $PROVINCENAME$ has incited some pirates to permanently settle there. Many of them now call $PROVINCENAME$ home and directly oppose our rule."
+
+	trigger = {
+		NOT = {
+			crime_fighting = 0.5
+		}
+		has_province_modifier = piratesmod
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 1.4
+			NOT = {
+				crime_fighting = 0.4
+			}
+		}
+	}
+	option = {
+		name = "Blast!"
+		add_core = PIR
+	}
+}
+
+country_event = {
+	id = 400009
+	title = "Louisiana Purchase"
+	desc = "The French are offering us to buy Louisiana. It is up to you, our leader, to decide whether or not we accept their offer."
+	picture = administration
+	is_triggered_only = yes
+
+	option = {
+	name = "We accept their offer."
+	relation = {
+		who = FRA
+		value = 50
+	}
+	prestige = 10
+	money = -50000
+	FRA = {
+		money = 50000
+	}
+	144 = {
+		secede_province = USA
+	}
+	148 = {
+		secede_province = USA
+	}
+	151 = {
+		secede_province = USA
+	}
+	126 = {
+		secede_province = USA
+	}
+	124 = {
+		secede_province = USA
+	}
+	121 = {
+		secede_province = USA
+	}
+	139 = {
+		secede_province = USA
+	}
+	140 = {
+		secede_province = USA
+	}
+    141 = {
+        secede_province = USA                        
+    }                                    
+                        142 = {                    
+                                secede_province = USA
+                                        }
+                        143 = {
+                                secede_province = USA
+                                        }
+                        145 = {
+                                secede_province = USA
+                                        }
+                        147 = {
+                                secede_province = USA
+                                        }
+                        149 = {
+                                secede_province = USA
+                                        }
+                        146 = {
+                                secede_province = USA
+                                        }
+                        150 = {
+                                secede_province = USA
+                                        }
+                        152 = {
+                                secede_province = USA
+                                        }
+                        153 = {
+                                secede_province = USA
+                                        }
+                        154 = {
+                                secede_province = USA
+                                        }
+			156 = {
+				secede_province = USA
+					}
+			155 = {
+				secede_province = USA
+					}
+			117 = {
+				secede_province = USA
+					}
+			119 = {
+				secede_province = USA
+					}
+			115 = {
+				secede_province = USA
+					}
+			116 = {
+				secede_province = USA
+					}
+                        128 = {
+                                secede_province = USA
+                                        }
+			112 = {
+				secede_province = USA
+					}
+                        127 = {
+                                secede_province = USA
+                                        }
+                        125 = {
+                                secede_province = USA
+                                        }
+                        123 = {
+                                secede_province = USA
+                                        }
+                        122 = {
+                                secede_province = USA
+                                        }
+                        120 = {
+                                secede_province = USA
+                                        }
+			110 = {
+				secede_province = USA
+					}
+				}
+   
+        option = {
+        name = "We decline."
+        relation = {
+                    who = FRA
+                    value = -50
+                  }
+        }
+	}
+country_event = {
+	id = 3000000
+	title = "Colonial Restrictions"
+	desc = "As our colonial government, through multiple means became closer to the status of the great powers our overlords, the English Government gave some laws as limitations for us, setting us back."
+	picture = administration
+	trigger = {
+		tag = COA
+		rank = 9
+		is_vassal = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "So be it."
+		prestige_factor = -0.75
+	}
+}

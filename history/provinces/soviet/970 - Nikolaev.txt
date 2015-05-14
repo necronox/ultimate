@@ -1,0 +1,21 @@
+owner = CRI
+controller = CRI
+1800.1.1 = {
+owner = RUS
+controller = RUS
+add_core = RUS
+		}
+add_core = UKR
+
+#Soviet Collapse
+1992.5.1 = {
+	owner = UKR
+	controller = UKR
+	colonial = 0
+		}
+
+
+
+
+trade_goods = fish
+life_rating = 35

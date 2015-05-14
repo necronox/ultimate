@@ -1,0 +1,630 @@
+			
+
+p			
+
+political_decisions = {
+
+1604scenariostarter = {
+	picture = spaceprogrampic
+	potential = {
+		has_global_flag = ImpossibleFlag
+			}
+
+	effect = {
+		839 = { change_province_name = "Nafplion" }
+		AUS = {
+		add_country_modifier = { name = holy_roman_emperor duration = -1 }
+				}
+		SWI = {
+		add_country_modifier = { name = hre_member = -1 }
+				}
+		SAV = {
+		add_country_modifier = { name = hre_member = -1 }
+				}
+		VEM = {
+		add_country_modifier = { name = hre_member = -1 }
+				}
+		TUS = {
+		add_country_modifier = { name = hre_member = -1 }
+				}
+		PAR = {
+		add_country_modifier = { name = hre_member = -1 }
+				}
+		MOD = {
+		add_country_modifier = { name = hre_member = -1 }
+				}
+		LUC = {
+		add_country_modifier = { name = hre_member = -1 }
+				}
+		
+			}
+		}
+
+1714scenariostarter = {
+		picture = spaceprogrampic
+	potential = {
+		has_global_flag = ImpossibleFlag
+			}
+
+	effect = {
+		set_global_flag = actofunion_done
+		set_global_flag = english_disorder_done
+			}
+		}
+1800scenariostarter = {
+			picture = spaceprogrampic
+		potential = {
+			has_global_flag = ImpossibleFlag
+				}
+		effect = {
+
+		HRE = {
+		all_core = {
+		remove_core = HRE } } 
+
+					220 = {
+		change_province_name = "Washington"
+			}
+			set_global_flag = hre_dismantled
+			USA = {
+			all_core = {
+			remove_core = THC } }	
+		AUS = {
+		remove_country_modifier = holy_roman_emperor 
+			}
+				}
+			}
+
+victorianscenariostarter = {
+		picture = spaceprogrampic
+		potential = {
+			has_global_flag = ImpossibleFlag
+				}
+		effect = {
+	
+				}
+			}
+
+WW1scenariostarter = {
+		picture = spaceprogrampic
+		potential = {
+			has_global_flag = ImpossibleFlag
+				}
+		effect = {
+		1649 = {
+		change_province_name = "Tokyo"
+			}
+		2472 = {
+		change_province_name = "Camberra"
+			}
+		BEL = {
+			all_core = {
+			remove_core = HRE } }
+		CZH = {
+			all_core = {
+			remove_core = HRE } }
+		FRA = {
+			all_core = {
+			remove_core = HRE } }
+		GER = {
+			all_core = {
+			remove_core = HRE } }
+		HUN = {
+			all_core = {
+			remove_core = HRE } }
+		ITA = {
+			all_core = {
+			remove_core = HRE } }
+	net = {
+			all_core = {
+			remove_core = HRE } }
+		SWI = {
+			all_core = {
+			remove_core = HRE } }
+		JAP = {
+			all_core = {
+			remove_core = CHO
+			remove_core = KAG
+			remove_core = RYU
+			remove_core = SAT
+			remove_core = SEN
+			remove_core = TKG
+			remove_core = TOS
+			remove_core = YZW } }
+		
+		}
+			}
+
+WW2scenariostarter = {
+	picture = spaceprogrampic
+		potential = {
+			has_global_flag = ImpossibleFlag
+				}
+
+	effect = {
+		set_global_flag = NewScenarioFlag
+		#Begin Sports
+		set_global_flag = world_cup_1930_done
+		set_global_flag = stanley_cup_first_done
+		set_global_flag = first_FA_cup_done
+		#End Sports
+		set_global_flag = victoria_crowned
+		set_global_flag = empress_of_india
+		set_global_flag = sepoy_rebellion_done
+		set_global_flag = model_colony_happened
+		set_global_flag = taiping_has_happened
+		set_global_flag = statue_of_liberty_has_been_built
+		set_global_flag = congo_conference_held
+		set_global_flag = tutankhamun_found
+		set_global_flag = yugoslavia_formed
+		set_global_flag = WW2inprogress
+		any_country = {
+		limit = {
+		OR = {
+		government = hms_government
+		government = democracy
+			}
+				}
+					add_country_modifier = {
+				name = female_suffrage
+				duration = -1
+			}
+				}
+		any_country = {
+				set_country_flag = IOCMember 
+					add_country_modifier = {
+				name = signed_the_geneva_convention
+				duration = -1
+			}
+				}
+		PLC = {
+			all_core = {
+			remove_core = PLC
+					} }
+		AUS = {
+			set_country_flag = dual_monarchy_done
+		set_country_flag = grunderzeit_we_have_done
+			}
+		TUR = {
+			set_country_flag = tanzimat_reforms_enacted
+			set_country_flag = kanun_i_esasi_here
+			}
+		CZH = {
+			all_core = {
+			remove_core = AUS
+			remove_core = BOH } }		
+		HUN = {
+			all_core = {
+			remove_core = AUS } }		
+		YUG = {
+			all_core = {
+			remove_core = AUS
+			remove_core = TUR } }
+		SPA = {
+		add_country_modifier = {
+				name = la_guardia_civil
+				duration = -1
+			}
+		set_country_flag = guardia_civil_established
+		set_country_flag = mendizabal_confiscated
+				}
+		SWE = {
+			set_country_flag = court_yard_speech_held
+			set_country_flag = hms_sverige_built
+			set_country_flag = the_vega_expedition_went
+			}
+
+		MEX = {
+			set_country_flag = we_have_tried_this_once	
+			}
+		RUS = {
+	set_country_flag = eastern_christians_up_in_here_yall
+			add_country_modifier = {
+				name = protector_of_eastern_christendom
+				duration = -1
+			}
+		set_country_flag = ems_ukaz_dispatched
+		set_country_flag = big_brother_is_watching
+			set_country_flag = the_manifesto	
+			}
+		SAF = {
+			set_country_flag = has_die_stem
+			}
+		ROM = {
+			all_core = {
+			remove_core = AUS
+			remove_core = TUR } }		
+		BUL = {
+			all_core = {
+			remove_core = AUS
+			remove_core = TUR } }	
+		ALB = {
+			all_core = {
+			remove_core = TUR } }	
+		GRE = {
+			all_core = {
+			remove_core = TUR } }				
+		POL = {
+		set_country_flag = WW2_Allies }
+		ENG = {
+					barrels = 4000
+		aeroplanes = 4000
+			add_country_modifier = {
+				name = the_yard
+				duration = -1
+			}
+			add_country_modifier = {
+				name = occupies_heligoland
+				duration = -1
+			}
+		set_country_flag = elementary_my_dear_watson
+		set_country_flag = we_are_live_from_london
+		set_country_flag = corn_laws_repealed_flag	
+		set_country_flag = WW2_Allies
+		aeroplanes = 400
+		barrels = 400
+		canned_food = 500
+		small_arms = 400
+		ammunition = 400 }
+		BRZ = {
+			set_country_flag = pedro_said_it_best
+			}
+		ARG = {
+			set_country_flag = 1420_passed
+			}
+		FRA = {
+			add_country_modifier = {
+				name = the_french_foreign_legion
+				duration = -1
+			}
+		set_country_flag = military_mission_in_japan
+		set_country_flag = palais_garnier_built
+		set_country_flag = french_foreign_legion_supported
+		set_country_flag = lambert_has_been_chartered
+		set_country_flag = merina_monarchy_is_over
+		set_country_flag = extreme_home_makeover
+		set_country_flag = WW2_Allies }
+		RUS = {
+		set_country_flag = WW2_Comintern }
+		ITA = {
+		set_country_flag = cavour_has_done_his
+		set_country_flag = italia_ulterior
+		set_country_flag = vittoriano_built
+		set_country_flag = WW2_Axis }
+		JAP = {
+		set_country_flag = WW2_Axis }
+		set_country_flag = WW2_Axis
+		set_country_flag = has_questioned_heligoland
+		great_wars_enabled = yes
+		set_global_flag = brazzaville_formed
+		set_global_flag = germania_werft_has_been_built
+		set_global_flag = great_wars_enabled
+		set_country_flag = schwabing_encircled
+		set_global_flag = congo_renamed
+		set_global_flag = the_great_trek
+		set_global_flag = piet_retief_massacre
+		set_country_flag = IOCMember 
+		set_country_flag = ems_dispatch_sent
+		set_country_flag = von_moltke
+		barrels = 4000
+		aeroplanes = 4000
+		set_global_flag = ruhr_boom_has_happened
+		set_global_flag = anaconda_plan_active
+		set_global_flag = american_civil_war_has_happened
+		USA = {
+				aeroplanes = 400
+		barrels = 400
+		canned_food = 500
+		small_arms = 400
+		ammunition = 400
+			}
+		any_country = {
+			any_pop = {
+			limit = {
+			NOT = {
+		culture = zapotec
+			culture = mayan
+			culture = nahua
+			culture = tarascan 
+			culture = quechua 
+			culture = guarani 
+			culture = aimara 
+			culture = guarani 
+			culture = amazonian 
+			culture = patagonian 
+			culture = guajiro 
+			culture = tupinamba 
+			culture = metis 
+			culture = dakota 
+			culture = cherokee 
+			culture = pueblo
+			culture = inuit 
+			culture = cree 
+			culture = navajo 
+			culture = native_american_minor
+				}
+					}
+			reduce_pop = 2
+				}
+					}
+
+			USA = {
+			add_country_modifier = {
+				name = the_homestead_act
+				duration = -1
+						}
+		set_country_flag = has_used_radical_reconstruction
+		set_country_flag = wilmot_proviso_providing
+		set_country_flag = ostend_manifesto_published
+			set_country_flag = house_gag_rule_enacted
+			set_country_flag = custers_expedition_sent
+			any_pop = {
+			limit = {
+			NOT = {
+			culture = zapotec
+			culture = mayan
+			culture = nahua
+			culture = tarascan 
+			culture = quechua 
+			culture = guarani 
+			culture = aimara 
+			culture = guarani 
+			culture = amazonian 
+			culture = patagonian 
+			culture = guajiro 
+			culture = tupinamba 
+			culture = metis 
+			culture = dakota 
+			culture = cherokee 
+			culture = pueblo
+			culture = inuit 
+			culture = cree 
+			culture = navajo 
+			culture = native_american_minor
+				}
+					}
+			reduce_pop = 3
+				}
+					}
+			EGY_921 = {
+			any_pop = {
+			limit = {
+			culture = ashkenazi 
+				}
+			reduce_pop = 15
+				}
+				}
+			
+			}
+		}
+
+	CWscenariostarter = {
+	picture = spaceprogrampic
+		potential = {
+			has_global_flag = ImpossibleFlag
+				}
+
+		effect = {
+			clr_global_flag = WW2inprogress
+				add_country_modifier = {
+				name = UNmember
+				duration = -1
+								}
+			POL = {
+			clr_country_flag = WW2_Allies
+			all_core = {
+			remove_core = GER
+			remove_core = PRU
+			remove_core = RUS } }
+			UKR = {
+			all_core = {
+			remove_core = POL } }	
+			FIN = {
+			all_core = {
+			remove_core = SWE
+			remove_core = RUS } }	
+			SLO = {
+			all_core = {
+			remove_core = AUS
+			remove_core = ITA } }	
+			CRO = {
+			all_core = {
+			remove_core = AUS
+			remove_core = ITA } }	
+
+			413 = {
+			add_core = FRA
+			}
+				
+			ENG = {
+			clr_country_flag = WW2_Allies }
+			FRA = {
+			clr_country_flag = WW2_Allies
+			all_core = {
+			remove_core = GER } }
+			RUS = {
+			clr_country_flag = WW2_Comintern }
+			ITA = {
+			clr_country_flag = WW2_Axis }
+			JAP = {
+			clr_country_flag = WW2_Axis }
+			clr_country_flag = WW2_Axis
+			any_country = {
+				add_country_modifier = {
+				name = UNmember
+				duration = -1
+								}
+					}
+				}
+					}
+
+	WoTscenariostarter = {
+	picture = spaceprogrampic
+		potential = {
+			has_global_flag = ImpossibleFlag
+				}
+
+		effect = {
+			set_global_flag = disney_done
+			set_global_flag = nintendo_done
+			set_global_flag = korean_war_done
+			set_global_flag = korea_landreform_done
+			set_global_flag = southkorea_decision_done
+			set_global_flag = LandedOnMoon
+			set_global_flag = IndiaFreed
+			set_global_flag = ElvisDead
+			set_global_flag = BeatlesDone
+			set_global_flag = war_on_terror_happened
+			RUS = {
+			nuclear_weapons = 2000
+				}
+			ENG = {
+			nuclear_weapons = 500
+				}
+			FRA = {
+			nuclear_weapons = 600
+				}
+			CHI = {
+			nuclear_weapons = 400
+				}
+			HND = {
+			nuclear_weapons = 100
+				any_pop = {
+					reduce_pop = 4
+						}
+				}
+			ISR = {
+			nuclear_weapons = 50
+				}
+			EST = {
+			all_core = {
+			remove_core = RUS } }	
+			LIT = {
+			all_core = {
+			remove_core = RUS } }	
+			LAT = {
+			all_core = {
+			remove_core = RUS } }	
+			BYE = {
+			all_core = {
+			remove_core = RUS
+			remove_core = POL } }	
+			UKR = {
+			all_core = {
+			remove_core = RUS } }	
+			MOL = {
+			all_core = {
+			remove_core = RUS } }	
+			SLV = {
+			all_core = {
+			remove_core = HUN } }	
+			KAZ = {
+			all_core = {
+			remove_core = RUS } }	
+			GEO = {
+			all_core = {
+			remove_core = RUS } }	
+			ARM = {
+			all_core = {
+			remove_core = RUS } }	
+			AZB = {
+			all_core = {
+			remove_core = RUS } }	
+			BGL = {
+			all_core = {
+			remove_core = HND } }	
+			PAK = {
+			all_core = {
+			remove_core = HND }
+			nuclear_weapons = 50 }	
+			MAC = {
+			all_core = {
+			remove_core = SER } }	
+			AFG = {
+			all_core = {
+			remove_core = HND } }	
+
+
+			371 = {
+			remove_core = GER
+			}
+			
+
+		USA = {
+		nuclear_weapons = 2000
+		country_event = 500000 }
+
+			#Chernobyl
+			959 = {
+				add_province_modifier = { name = irradiated duration = 9125 }
+					add_province_modifier = {
+					name = fearofradiation
+					duration = -1 }    
+				set_province_flag = disease
+				}
+
+any_country = {
+			any_pop = {
+			limit = {
+			NOT = {
+			culture = french
+			culture = zapotec
+			culture = mayan
+			culture = nahua
+			culture = tarascan 
+			culture = quechua 
+			culture = guarani 
+			culture = aimara 
+			culture = guarani 
+			culture = amazonian 
+			culture = patagonian 
+			culture = guajiro 
+			culture = tupinamba 
+			culture = metis 
+			culture = dakota 
+			culture = cherokee 
+			culture = pueblo
+			culture = inuit 
+			culture = cree 
+			culture = navajo 
+			culture = native_american_minor
+				}
+					}
+			reduce_pop = 2
+				}
+					}
+
+				}
+					}
+
+	2023ScenarioStarter = {
+	picture = spaceprogrampic
+		potential = {
+			has_global_flag = ImpossibleFlag
+				}
+
+		effect = {
+			#Fukushima
+			1669 = {
+				add_province_modifier = { name = irradiated duration = 13870 }
+					add_province_modifier = {
+					name = fearofradiation
+					duration = -1 }    
+				set_province_flag = disease
+				}
+				#Terrorist Attack vs US
+			220 = {
+				any_pop = {
+					reduce_pop = 0.25
+						}
+				add_province_modifier = { name = irradiated duration = 13870 }
+					add_province_modifier = {
+					name = fearofradiation
+					duration = -1 }    
+				set_province_flag = disease
+				}
+
+				}
+					}
+}
+

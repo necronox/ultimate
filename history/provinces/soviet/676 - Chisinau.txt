@@ -1,0 +1,36 @@
+owner = PLC
+controller = PLC
+1700.1.1 = {
+	owner = TUR
+	controller = TUR
+		}
+1820.1.1 = {
+owner = RUS
+controller = RUS
+add_core = RUS
+		}
+add_core = MOL
+add_core = ROM
+trade_goods = fruit
+life_rating = 35
+1919.1.1 = {
+	owner = ROM
+	controller = ROM
+		}
+
+#End of WW2
+1945.5.1 = {
+	owner = RUS
+	controller = RUS
+		}
+
+
+
+#Soviet Collapse
+1992.5.1 = {
+	owner = MOL
+	controller = MOL
+	add_core = ROM
+		}
+
+

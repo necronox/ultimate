@@ -1,0 +1,33 @@
+	owner = CHE
+	controller = CHE
+	add_core = CHE
+1800.1.1 = {
+owner = USA
+controller = USA
+add_core = USA
+add_core = ALA
+colonial = 0
+		}
+trade_goods = iron
+life_rating = 35
+1867.1.1 = {
+	owner = USA
+	controller = USA
+		}
+1861.1.1 = {
+	controller = CSA
+	owner = CSA
+	add_core = CSA
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+}
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}
+
+1861.1.1 = { railroad = 3 }

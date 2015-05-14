@@ -1,0 +1,40 @@
+MAC = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+KAZ = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+UZB = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+KYR = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+TAJ = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+UKR = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+BYE = {
+	value = 100
+	level = 5
+	influence_value = 50
+}
+SYR = {
+	value = 100
+	level = 5
+	influence_value = 50
+}

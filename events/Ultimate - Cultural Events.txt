@@ -1,0 +1,860 @@
+﻿###JAPANESE EVENTS###
+
+
+#Nintendo
+country_event = {
+        id = 200500
+        title = EVTNAME200500
+        desc = EVTDESC200500
+        picture = nintendopic
+        fire_only_once = yes
+
+
+
+
+        trigger = {
+                        year = 1970
+                        tag = JAP
+                        produces = entertainment_goods
+
+
+                        NOT = {
+                                has_global_flag = nintendo_done
+                                }
+                        }
+
+
+        option = {
+        name = EVTOPTA200500
+                prestige = 20
+                set_global_flag = nintendo_done
+                        }
+}
+###AMERICAN EVENTS###
+
+
+#Elvis
+country_event = {
+        id = 200600
+        title = EVTNAME200600
+        desc = EVTDESC200600
+        picture = elvis
+        fire_only_once = yes
+
+
+trigger = {
+        year = 1956
+        OR = {
+        tag = USA
+        tag = CSA }
+        OR = {
+        government = hms_government
+        government = democracy }
+        NOT = {
+        has_global_flag = ElvisDead
+                }
+                }
+
+
+option = {
+name = EVTOPTA200600
+
+
+        prestige = 25
+        badboy = -5
+        any_pop = {
+        consciousness = 2
+        militancy = -1 }
+                }        
+
+
+option = {
+name = EVTOPTB200600
+
+
+        prestige = -10
+        badboy = 2
+        any_pop = {
+        consciousness = 1
+        militancy = 2 }
+                }
+}        
+
+
+#Elvis death
+country_event = {
+        id = 200601
+        title = EVTNAME200601
+        desc = EVTDESC200601
+        picture = deadelvis
+        fire_only_once = yes
+
+
+trigger = {
+        year = 1977
+        OR = {
+        tag = USA
+        tag = CSA }
+        OR = {
+        government = hms_government
+        government = democracy }
+        NOT = {
+        has_global_flag = ElvisDead
+                }
+                }
+
+
+option = {
+name = EVTOPTA200601
+        set_global_flag = ElvisDead
+        prestige = 5
+        any_pop = {
+        consciousness = 0.25 }
+                }        
+}
+
+
+
+
+#Clinton-Lewinsky Blowscandal
+country_event = {
+        id = 200602
+        title = EVTNAME200602
+        desc = EVTDESC200602
+        picture = lewinsky
+        fire_only_once = yes
+
+
+
+
+        trigger = {
+                        year = 1998
+                        tag = USA
+                        government = democracy
+                        NOT = {
+                        year = 2001
+                                }
+                        }
+
+
+        mean_time_to_happen = {
+                        months = 4
+                                        }
+
+
+        option = {
+        name = EVTOPTA200602
+                prestige = -10
+                        }
+}
+
+
+
+
+        
+
+
+#Crook Nixon
+country_event = {
+        id = 200604
+        title = EVTNAME200604
+        desc = EVTDESC200604
+        picture = crooknixon
+        fire_only_once = yes
+
+
+
+
+        trigger = {
+                        year = 1970
+                        NOT = {
+                                year = 1980
+                                }
+                        tag = USA
+                        government = democracy
+                        }
+
+
+        mean_time_to_happen = {
+                        months = 20
+                                        }
+
+
+        option = {
+        name = EVTOPTA200604
+                election = yes
+                any_pop = {
+                consciousness = 1.5
+                militancy = 1.5
+                                }
+                
+                        }
+}
+
+
+#Martin-Zimmerman
+country_event = {
+        id = 200605
+        title = EVTNAME200605
+        desc = EVTDESC200605
+        picture = trayvonzimmermancasepic
+        fire_only_once = yes
+
+
+
+
+        trigger = {
+                        year = 2012
+                        tag = USA
+                        }
+
+
+        mean_time_to_happen = {
+                        months = 9
+                                        }
+
+
+        option = {
+        name = EVTOPTA200605
+                any_pop = {
+                        limit = {
+                                OR = {
+                                pop_majority_ideology = anarcho_liberal
+                                pop_majority_ideology = liberal
+                                pop_majority_ideology = socialist
+                                pop_majority_ideology = communist
+                                culture = afro_american } }
+                consciousness = 3
+                militancy = 3
+                                }
+                
+                        }
+        option = {
+        name = EVTOPTB200605
+                any_pop = {
+                        limit = {
+                                NOT = {
+                                OR = {
+                                pop_majority_ideology = anarcho_liberal
+                                pop_majority_ideology = liberal
+                                pop_majority_ideology = socialist
+                                pop_majority_ideology = communist
+                                culture = afro_american } }
+                                         }
+                consciousness = 1.5
+                militancy = 1.5
+                                }
+                        political_reform = population_equal_weight
+                
+                        }
+}
+
+
+#Walt Disney
+country_event = {
+        id = 200606
+        title = EVTNAME200606
+        desc = EVTDESC200606
+        picture = disneypic
+        fire_only_once = yes
+
+
+        trigger = {
+                        year = 1920
+                        tag = USA
+                        government = democracy
+                        NOT = {
+                                has_global_flag = disney_done
+                                }
+                        }
+
+
+        mean_time_to_happen = {
+                        months = 20
+                                        }
+
+
+        option = {
+        name = EVTOPTA200606
+                prestige = 25
+                set_global_flag = disney_done
+                
+                        }
+}
+
+
+#Coca Cola
+country_event = {
+        id = 200607
+        title = EVTNAME200607
+        desc = EVTDESC200607
+        picture = cocacola
+        fire_only_once = yes
+
+
+        trigger = {
+                        year = 1880
+                        NOT = {
+                        year = 1910
+                                }
+                        OR = {
+                        tag = USA
+                        tag = CSA
+                        }
+					}
+
+
+        mean_time_to_happen = {
+                        months = 20
+                                        }
+
+
+        option = {
+        name = EVTOPTA200607
+                prestige = 10
+                
+                        }
+}
+
+
+###BRITISH EVENTS###
+
+
+#James Bond
+country_event = {
+        id = 200700
+        title = EVTNAME200700
+        desc = EVTDESC200700
+        picture = jamesbondpic
+        fire_only_once = yes
+
+
+
+
+        trigger = {
+                        year = 1950
+                        OR = {
+                        tag = ENG
+                        tag = BRI
+                        tag = ANG
+                        }
+                        government = hms_government
+                        NOT = {
+                        year = 1980
+                                }
+                                }
+
+
+        mean_time_to_happen = {
+                        months = 20
+                                        }
+
+
+        option = {
+        name = EVTOPTA200700
+                any_pop = {
+                consciousness = 1
+                militancy = -2
+dominant_issue = {
+        value = jingoism
+        factor = 0.1
+                                }
+                                }
+                
+                        }
+}
+
+
+#Winston Churchill 
+country_event = {
+        id = 200701
+        title = EVTNAME200701
+        desc = EVTDESC200701
+        picture = churchillyoung
+        fire_only_once = yes
+
+
+trigger = {
+                year = 1890
+                OR = {
+                tag = ENG
+                tag = ANG
+                tag = BRC
+                tag = BRI 
+                }
+                not = {
+                has_global_flag = NewScenarioFlag }
+                }
+
+
+mean_time_to_happen = {
+                months = 4
+                                }
+        
+
+
+option = {
+name = EVTOPTA200701
+                prestige = 5
+}
+}
+
+
+#The Beatles
+country_event = {
+        id = 200702
+        title = EVTNAME200702
+        desc = EVTDESC200702
+        picture = beatles
+        fire_only_once = yes
+
+
+trigger = {
+        year = 1964
+        OR = {
+        tag = ENG
+        tag = ANG
+        tag = BRI
+        tag = BRC }
+        OR = {
+        government = hms_government
+        government = democracy }
+        NOT = {
+        year = 1980
+                }
+                }
+
+
+option = {
+name = EVTOPTA200702
+
+
+        prestige = 25
+        badboy = -5
+        any_pop = {
+        consciousness = 2
+        militancy = -1 }
+                }        
+
+
+option = {
+name = EVTOPTB200702
+
+
+        prestige = -10
+        badboy = 2
+        any_pop = {
+        consciousness = 1
+        militancy = 2 }
+                }
+}        
+
+
+        
+#Oka Crisis
+country_event = {
+        id = 200703
+        title = EVTNAME200703
+        desc = EVTDESC200703
+        picture = okapic
+        fire_only_once = yes
+
+
+
+
+        trigger = {
+                        year = 1990
+                        owns = 58
+                        NOT = {
+                                year = 1999
+                                }
+                        }
+
+
+        mean_time_to_happen = {
+                        months = 20
+                                        }
+
+
+        option = {
+        name = EVTOPTA200703
+                any_pop = {
+                limit = {
+                OR = {
+                culture = native_american_minor
+                culture = cree
+                culture = metis
+                culture = inuit }  }
+                consciousness = 2
+                militancy = 6
+                reduce_pop = 0.9
+                                }
+                
+                        }
+        option = {
+        name = EVTOPTB200703
+                any_pop = {
+                limit = {
+                OR = {
+                culture = native_american_minor
+                culture = cree
+                culture = metis
+                culture = inuit } }
+                consciousness = 6
+                militancy = 2
+
+
+                                }
+                
+                        }
+}
+
+
+#Diefenbaker
+country_event = {
+        id = 200704
+        title = EVTNAME200704
+        desc = EVTDESC200704
+        picture = diefpic
+        fire_only_once = yes
+
+
+
+
+        trigger = {
+                        year = 1957
+                        tag = CAN
+                        NOT = {
+                        year = 1980
+                                }
+                                }
+
+
+        mean_time_to_happen = {
+                        months = 10
+                                        }
+
+
+        option = {
+        name = EVTOPTA200704
+                prestige = 15
+                relation = {
+        who = USA
+        value = -50
+}
+                
+                        }
+}
+
+
+
+
+##John Lennon killed##
+country_event = {
+
+
+id = 200706
+title = EVTNAME200706
+desc = EVTDESC200706
+picture = lennon
+        fire_only_once = yes
+
+
+trigger = {
+        year = 1982
+        NOT = {
+                year = 1999
+                }
+        owns = 232 }
+
+
+option = {
+name = EVTOPTA200706
+        any_pop = {
+        militancy = 1
+        consciousness = 1 }
+                }
+}
+
+
+###FRENCH EVENTS###
+
+
+#De Gaulle
+country_event = {
+        id = 200800
+        title = EVTNAME200800
+        desc = EVTDESC200800
+        picture = degaulle
+        fire_only_once = yes
+
+
+trigger = {
+                year = 1925
+                tag = FRA
+                NOT = {
+                has_global_flag = NewScenarioFlag
+                        }
+                }
+
+
+mean_time_to_happen = {
+                months = 4
+                                }
+        
+
+
+option = {
+name = EVTOPTA200800
+                prestige = 5
+}
+}
+
+
+###GERMAN EVENTS###
+
+
+#Hitler and Fascist Germany
+country_event = {
+        id = 200900
+        title = EVTNAME200900
+        desc = EVTDESC200900
+        picture = hitler
+        fire_only_once = yes
+
+
+trigger = {
+                year = 1919
+                OR = {
+                tag = GER
+                tag = PRU
+                tag = NGF }
+                NOT = {
+                OR = {
+                year = 1933
+                government = fascist_dictatorship } }
+                }
+
+
+
+
+option = {
+name = EVTOPTA200900
+                any_pop = {
+scaled_consciousness = {
+        factor = 5
+        ideology = fascist
+}
+scaled_militancy = {
+        factor = 5
+        ideology = fascist
+}
+        }
+}
+}
+#Moskau
+country_event = {
+        id = 200901
+		title = "Dschinghis Khan?"
+        desc = "A new band which is rising to popularity has made a song that is about Russia and its glory. Oh well, Moskau! Moskau!"
+        picture = DschinghisKhan
+        fire_only_once = yes
+
+
+	trigger = {
+		year = 1979                
+		OR = {
+			tag = GER
+			tag = PRU
+			tag = NGF 
+		}
+		NOT = {
+			OR = {
+				year = 1979
+				government = democracy
+			}
+		}               
+		NOT = {
+			has_global_flag = moskau_done
+		}
+	}
+
+
+        option = {
+			name = EVTOPTA200901
+			prestige = 10
+			set_global_flag = moskau_done
+		}
+
+option = {
+	name = "Damned militants!"
+	set_global_flag = moskau_done
+    }
+}
+
+
+
+
+###CULTURAL PRODUCT EVENTS###
+
+
+
+
+#Victoria 2 Game
+country_event = {
+        id = 201000
+        title = EVTNAME201000
+        desc = EVTDESC201000
+        picture = victoria2game
+        fire_only_once = yes
+
+
+trigger = {
+        year = 2000
+        NOT = {
+        year = 2015
+        has_global_flag = victoria2game_done
+                }
+        big_producer = entertainment_goods
+        invention = video_games
+                }
+
+
+mean_time_to_happen = {
+                months = 4
+                                }
+
+
+option = {
+name = EVTOPTA201000
+
+
+        prestige = 5
+        any_pop = {
+        consciousness = 0.25 }
+        set_global_flag = victoria2game_done
+                }
+
+
+}
+
+
+#Call of duty
+country_event = {
+        id = 201001
+        title = EVTNAME201001
+        desc = EVTDESC201001
+        picture = codeventpic
+        fire_only_once = yes
+
+
+trigger = {
+        year = 2004
+        NOT = {
+        year = 2015
+                }
+        big_producer = entertainment_goods
+        invention = video_games
+                }
+
+
+mean_time_to_happen = {
+                months = 4
+                                }
+        
+
+
+option = {
+name = EVTOPTA201001
+        prestige = 10
+        any_pop = {
+                consciousness = -2
+                militancy = -2
+                dominant_issue = {
+        value = jingoism
+        factor = 0.05        }
+                        }
+                        }
+}
+
+
+#Grand Theft Auto
+country_event = {
+        id = 201002
+        title = EVTNAME201002
+        desc = EVTDESC201002
+        picture = gtaevent
+        fire_only_once = yes
+
+
+trigger = {
+        year = 2000
+        NOT = {
+        year = 2015
+                }
+        big_producer = entertainment_goods
+        invention = video_games
+                }
+
+
+mean_time_to_happen = {
+                months = 4
+                                }
+        
+
+
+option = {
+name = EVTOPTA201002
+        prestige = 25
+        any_pop = {
+                consciousness = 2
+                ideology = {
+                        factor = 0.05
+                        value = liberal
+                                }
+                        }
+                        }
+option = {
+name = EVTOPTB201002
+        prestige = -10
+        any_pop = {
+                limit = {
+                OR = {
+                pop_majority_ideology = liberal
+                pop_majority_ideology = socialist
+                pop_majority_ideology = anarcho_liberal
+                        }
+                                }
+                militancy = 1
+                        }
+                        }
+}
+
+
+#Super Mario Bros.
+country_event = {
+        id = 201003
+        title = "Super Marios Bros."
+        desc = "Video game developers in $COUNTRY$ have come up with a strange game with walking mushroom men, a plumber hero and his lizard nemesis. Despite its strange setting, or perhaps because of it, Super Mario was an immediate hit and has sold many units."
+        picture = mariopic
+        fire_only_once = yes
+
+
+trigger = {
+        big_producer = entertainment_goods
+        invention = video_games
+                }
+
+
+mean_time_to_happen = {
+                months = 4
+                                }
+        
+
+
+option = {
+name = "Wa-hoo!"
+        prestige = 25
+                        }
+
+}

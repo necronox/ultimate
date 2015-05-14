@@ -1,0 +1,20 @@
+owner = AUS
+controller = AUS
+add_core = GER
+1760.1.1 = {
+	owner = PRU
+	controller = PRU
+	add_core = PRU
+		}
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+1919.1.1 = { 
+		controller = POL
+		owner = POL
+		}
+add_core = POL
+trade_goods = coal
+life_rating = 40
+1861.1.1 = { railroad = 3 }

@@ -1,0 +1,27 @@
+owner = OMA
+controller = OMA
+add_core = OMA
+add_core = ZAN
+
+
+1903.1.1 = {
+		owner = ENG
+		controller = ENG
+		colonial = 2
+		}
+
+
+trade_goods = fish
+life_rating = 35
+1861.1.1 = {
+	owner = ZAN
+	controller = ZAN
+	remove_core = OMA
+}
+
+	add_core = TZN
+1960.1.1 = {
+	owner = TZN
+	controller = TZN
+	colonial = 0
+		}

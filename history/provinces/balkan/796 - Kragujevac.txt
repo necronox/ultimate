@@ -1,0 +1,27 @@
+owner = TUR
+controller = TUR
+add_core = SER
+add_core = YUG
+1830.1.1 = {
+	owner = SER
+controller = SER
+		}
+1919.6.28 = { 
+		controller = YUG
+		owner = YUG
+		remove_core = KUK
+		}
+trade_goods = coal
+life_rating = 35
+
+
+#Breakup of Yugoslav
+1991.6.25 = {
+	owner = YUG
+	controller = YUG
+		}
+
+2006.6.3 = {
+	owner = SER
+	controller = SER
+		}

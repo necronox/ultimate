@@ -1,0 +1,27 @@
+country_event = {
+        id = 100000030
+        title = "EVTNAME100000030"
+        desc = "EVTDESC100000030"
+        picture = "Pol_Lit"
+	 trigger = {
+		tag = PLC
+		NOT = {
+			owns = 363
+			owns = 360
+			owns = 361
+			owns = 362
+			owns = 364
+			owns = 365
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA100000030"
+		change_tag = POL
+		prestige = -100
+	}
+}
+		

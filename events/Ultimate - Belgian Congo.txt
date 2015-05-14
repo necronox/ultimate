@@ -1,0 +1,40 @@
+country_event = {
+
+id = 22000114
+title = "Congo is a Belgian Colony !" #Congo is a Belgian Colony ! (1908)
+desc = "The Great Powers decided that Belgium should own Congo !"
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = BEL
+		year = 1908
+		NOT = {
+			year = 1909
+			has_country_flag = belgian_congo
+		}
+	}
+
+	option = {
+		name = "Let's Expand to the African Continent !"
+		set_country_flag = belgian_congo
+		1982 = { secede_province = BEL }
+		1983 = { secede_province = BEL }
+		1984 = { secede_province = BEL }
+		1985 = { secede_province = BEL }
+		1986 = { secede_province = BEL }
+		1987 = { secede_province = BEL }
+		1988 = { secede_province = BEL }
+		1989 = { secede_province = BEL }
+		1990 = { secede_province = BEL }
+		1991 = { secede_province = BEL }
+		1992 = { secede_province = BEL }
+		1993 = { secede_province = BEL }
+		1994 = { secede_province = BEL }
+		1995 = { secede_province = BEL }
+		1996 = { secede_province = BEL }
+		1997 = { secede_province = BEL }
+		1998 = { secede_province = BEL }
+	}
+}
+

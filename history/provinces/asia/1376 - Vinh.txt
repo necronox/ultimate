@@ -1,0 +1,18 @@
+owner = DAI
+controller = DAI
+add_core = DAI
+1910.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+
+
+1976.1.1 = {
+		owner = DAI
+		controller = DAI
+		colonial = 0
+		}
+
+trade_goods = spices
+life_rating = 30

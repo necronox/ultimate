@@ -1,0 +1,118 @@
+scientists =
+	{
+		factor = 0.01
+		modifier = {
+			factor = -1000
+			NOT = {
+			year = 1860
+				}
+			}
+		group = {
+			modifier = {
+				factor = 0.25
+				literacy = 0.7
+			}
+			modifier = {
+				factor = 0.25
+				literacy = 0.8
+			}
+		}
+		group = {
+			modifier = {
+				factor = 2
+				education_spending = 0.1
+			}
+			modifier = {
+				factor = 2
+				education_spending = 0.2
+			}
+			modifier = {
+				factor = 2
+				education_spending = 0.3
+			}
+			modifier = {
+				factor = 2
+				education_spending = 0.4
+			}
+			modifier = {
+				factor = 2
+				education_spending = 0.5
+			}
+			modifier = {
+				factor = 2
+				education_spending = 0.6
+			}
+			modifier = {
+				factor = 2
+				education_spending = 0.7
+			}
+			modifier = {
+				factor = 2
+				education_spending = 0.8
+			}
+			modifier = {
+				factor = 2
+				education_spending = 0.9
+			}
+			modifier = {
+				factor = 2
+				education_spending =0.99
+			}
+		}
+		group = {		
+			modifier = {
+				factor = -2
+				scientists = 0.004
+			}
+			modifier = {
+				factor = -2
+				scientists = 0.0008
+			}
+			modifier = {
+				factor = -2
+				scientists = 0.0012
+			}			
+			modifier = {
+				factor = -2
+				scientists = 0.0016
+			}			
+			modifier = {
+				factor = -2
+				scientists = 0.002
+			}			
+			modifier = {
+				factor = -2
+				scientists = 0.0024
+			}			
+			modifier = {
+				factor = -2
+				scientists = 0.0028
+			}			
+			modifier = {
+				factor = -2
+				scientists = 0.0032
+			}			
+			modifier = {
+				factor = -2
+				scientists = 0.0036
+			}			
+			modifier = {
+				factor = -100
+				scientists = 0.01
+			}						
+		}
+		modifier = {
+		factor = -100
+		NOT = {
+		year = 1900
+			}
+				}
+		modifier = {
+		factor = -100
+		country = {
+		NOT = {
+		civilized = yes
+			}
+				}
+				}
+	}

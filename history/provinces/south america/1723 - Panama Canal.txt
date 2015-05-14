@@ -1,0 +1,28 @@
+owner = SPA
+controller = SPA
+colonial = 2
+1810.1.1 = {
+owner = CLM
+controller = CLM
+add_core = CLM
+colonial = 0
+		}
+1790.1.1 = {
+	add_core = PNM
+		}
+1903.1.1 = {
+owner = USA
+controller = USA
+province_flag = panama_canal
+		}
+1790.1.1 = {
+	add_core = GCO
+		}
+trade_goods = fruit
+life_rating = 30
+1861.1.1 = { railroad = 2 }
+
+1965.1.1 = {
+	owner = PNM
+	controller = PNM
+	}	

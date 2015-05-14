@@ -1,0 +1,21 @@
+owner = PAR
+controller = PAR
+add_core = PAR
+add_core = ITA
+trade_goods = iron
+life_rating = 35
+
+1812.1.1 = {
+		controller = FRA
+		owner = FRA
+		}
+1815.1.1 = {
+		controller = PAR
+		owner = PAR
+		}
+1861.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+}
+1861.1.1 = { railroad = 3 }

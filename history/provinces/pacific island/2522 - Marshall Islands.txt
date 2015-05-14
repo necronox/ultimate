@@ -1,0 +1,21 @@
+trade_goods = fish
+life_rating = 15
+1914.1.1 = {
+	owner = GER
+	controller = GER
+		}
+1919.1.1 = {
+	owner = JAP
+	controller = JAP
+		}
+1945.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = MAS
+		}
+
+1979.1.1 = {
+	owner = MAS
+	controller = MAS
+	colonial = 0
+}

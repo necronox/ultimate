@@ -1,0 +1,14 @@
+owner = SPA
+controller = SPA
+colonial = 1
+1811.1.1 = {
+owner = MEX
+controller = MEX
+add_core = MEX
+colonial = 0
+		}
+1836.1.1 = {
+add_core = SON
+}
+trade_goods = cattle
+life_rating = 35

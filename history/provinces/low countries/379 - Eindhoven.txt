@@ -1,0 +1,14 @@
+owner = NET
+controller = NET
+add_core = NET
+add_core = HRE
+1810.1.1 = {
+owner = FRA
+controller = FRA
+		}
+1815.1.1 = {
+owner = NET
+controller = NET
+		}
+trade_goods = coal
+life_rating = 35

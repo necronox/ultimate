@@ -1,0 +1,26 @@
+trade_goods = fish
+life_rating = 15
+
+1888.1.1 = {
+		owner = GER
+		controller = GER
+		colonial = 2
+		}
+
+1914.1.1 = {
+		owner = AST
+		controller = AST
+		
+		}
+		
+1946.1.1 = {
+	owner = ENG
+	controller = ENG
+	add_core = NAU
+}
+
+1966.1.1 = {
+	owner = NAU
+	controller = NAU
+	colonial = 0
+}

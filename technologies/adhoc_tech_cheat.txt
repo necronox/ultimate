@@ -1,0 +1,35 @@
+#ad_hoc
+
+ad_hoc_colonial_points = {
+	area = ww2_era
+	year = 99999
+	cost = 0
+	unciv_military = yes
+	colonial_points = 50
+}
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				

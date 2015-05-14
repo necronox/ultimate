@@ -1,0 +1,17 @@
+#Rubber discovered!
+1880.1.1 = {
+	trade_goods = rubber
+		}
+
+1936.1.1 = {
+	owner = THA
+	controller = THA
+	add_core = THA
+	colonial = 0
+		}
+
+owner = SIA
+controller = SIA
+add_core = SIA
+trade_goods = timber
+life_rating = 30

@@ -1,0 +1,57 @@
+political_decisions = {
+	central_plan = {
+		potential = {
+			government = proletarian_dictatorship
+		}
+		allow = {
+			NOT = {
+			has_country_modifier = five_year_plan
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = five_year_plan
+				duration = 1825
+			}
+		}
+	}
+	the_peoples_republic = {
+		potential = {
+			NOT = {
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = absolute_monarchy
+			government = socialist_republic
+			}	
+				is_ideology_enabled = socialist
+		}
+		
+		allow = {
+			upper_house = {
+				ideology = socialist
+				value = 0.75
+			}
+			militancy = 4
+		}
+		
+		effect = {
+			prestige = 5
+			government = socialist_republic
+			political_reform = no_slavery
+			political_reform = party_appointed
+			political_reform = none_voting
+			political_reform = first_past_the_post
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = state_controlled
+			political_reform = underground_only
+				poor_strata = {
+				militancy = -3
+					}
+				rich_strata = {
+				militancy = 3
+					}
+		}
+	}
+}
+

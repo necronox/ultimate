@@ -1,0 +1,52 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = RUT
+add_core = SLV
+
+1914.1.1 = {
+owner = KUK
+controller = KUK
+add_core = KUK
+}
+
+1919.6.28 = { 
+		controller = HUN
+		owner = HUN
+		remove_core = AUS
+		remove_core = KUK
+		}
+		
+1920.1.10 = { 
+		controller = CZH
+		owner = CZH
+		}
+		
+1939.3.15 = { 
+		controller = HUN
+		owner = HUN
+		add_core = RUS
+		}
+
+		
+#End of WW2
+1945.5.1 = {
+	owner = RUS
+	controller = RUS
+		}
+
+#Soviet Collapse
+1992.5.1 = {
+	owner = UKR
+	controller = UKR
+		}
+
+1992.1.1 = {
+	remove_core = RUS
+		}
+
+add_core = HUN
+add_core = CZH
+
+trade_goods = coal
+life_rating = 35

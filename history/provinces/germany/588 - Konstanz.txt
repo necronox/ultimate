@@ -1,0 +1,29 @@
+owner = HRE
+controller = HRE
+add_core = MOD
+add_core = HRE
+add_core = GER
+
+1604.1.1 = { 
+	owner = AUS
+	controller = AUS
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+1812.1.1 = {
+owner = BAD
+controller = BAD
+add_core = BAD
+		}
+
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+
+trade_goods = timber
+life_rating = 40

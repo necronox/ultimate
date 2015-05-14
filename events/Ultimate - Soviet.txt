@@ -1,0 +1,35 @@
+country_event = {
+
+id = 22000115
+title = "Eastern Europe is Communist !" #Eastern Europe is Communist ! (1946)
+desc = "The Eastern Europe Communist Countries are Rightfully our Puppets !"
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = RUS
+		year = 1946
+		NOT = {
+			year = 1947
+			has_country_flag = eastern_europe_puppets
+		}
+	}
+
+	option = {
+		name = "Let's Take what is Ours !"
+		set_country_flag = eastern_europe_puppets
+		create_vassal = POL
+		create_vassal = CZH
+		create_vassal = HUN
+		create_vassal = ROM
+		create_vassal = BUL
+	}
+	option = {
+		name = "Never Mind !"
+		set_country_flag = eastern_europe_puppets
+		ai_chance = {
+			factor = 1.00
+		}
+	}
+}
+

@@ -1,0 +1,11 @@
+owner = POR
+controller = POR
+trade_goods = tobacco
+life_rating = 35
+colonial = 2
+	add_core = MOZ
+1960.1.1 = {
+	owner = MOZ
+	controller = MOZ
+	colonial = 0
+		}

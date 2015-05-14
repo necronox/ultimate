@@ -1,0 +1,32 @@
+owner = PLC
+controller = PLC
+add_core = PRU
+add_core = PLC
+add_core = GER
+
+1714.1.1 = {
+	add_core = PRU
+	owner = PRU
+	controller = PRU
+		}
+1812.1.1 = {
+	owner = POL
+	controller = POL
+		}
+1815.1.1 = {
+	owner = PRU
+	controller = PRU
+		}
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+1919.1.1 = { 
+		controller = POL
+		owner = POL
+		}
+add_core = POL
+add_core = PLC
+trade_goods = grain
+life_rating = 40
+1861.1.1 = { railroad = 3 }

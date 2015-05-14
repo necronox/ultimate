@@ -1,0 +1,16 @@
+;;;;x
+birth_control_cooldown;Birth control can't be changed.;x;;
+birth_control_cooldown_desc;We can only change our birth control after one year.;x;;
+birth_control_more;Higher Birth Rate;x;;
+birth_control_more-desc;We chose to control our birth rate to be higher than normal.;x;;
+birth_control_less;Lower Birth Rate;x;;
+birth_control_less_desc;We chose to control our birth rate to be lower than normal.;x;;
+birth_control_more_d_title;Set the birth rate to high;x;;
+birth_control_more_d_desc;Select this decision to make the citizens of our country be more productive regarding population growth, making it faster and giving the country a boost in workforce.;x;;
+birth_control_less_d_title;Set the birth rate to low;x;;
+birth_control_less_d_desc;Select this decision to slow the population growth of our country down by creating policies that discriminate against families with multiple children. This will slow our population growth down, but it will make people's life easier, lowering their overall life needs.;x;;
+birth_control_none_d_title;Remove population growth altering effects;x;;
+birth_control_none_d_desc;This shall remove all effects on population growth and we shall return to a more stable and natural population growth level. This shall be unchanged for at least a year.;x;;
+birth_control_open_d_title;Alter Birth Rate;x;;
+birth_control_open_d_desc;As a communist or fascist dictatorship we have the complete control of our country, including the birth rates through certain reforms and laws. We could make use of it, of course only if we want to.;x;;
+;;;;x

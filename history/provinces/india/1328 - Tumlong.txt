@@ -1,0 +1,24 @@
+owner = SIK
+controller = SIK
+add_core = SIK
+
+
+#Decolonisation
+1947.1.1 = {
+	owner = HND
+	controller = HND
+	colonial = 0
+		}
+
+
+
+add_core = HND
+
+1910.1.1 = {
+owner = ENG
+controller = ENG
+		}
+
+
+trade_goods = wool
+life_rating = 25

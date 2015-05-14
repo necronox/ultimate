@@ -1,0 +1,26 @@
+owner = ATJ
+controller = ATJ
+add_core = ATJ
+1836.1.1 = {
+	owner = NET
+	controller = NET
+	colonial = 2
+		}
+#There will be blood
+1882.1.1 = {
+	trade_goods = oil
+		}
+
+
+1935.1.1 = {
+	add_core= IDO
+		}
+1970.1.1 = {
+	owner = IDO
+	controller = IDO
+	add_core = IDO
+	colonial = 0
+		}
+
+trade_goods = grain
+life_rating = 30

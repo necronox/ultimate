@@ -1,0 +1,18 @@
+owner = MOR
+controller = MOR
+add_core = MOR
+1881.1.1 = {
+	owner = FRA
+	controller = FRA
+		}
+trade_goods = wool
+life_rating = 35
+
+
+1956.1.1 = {
+owner = MOR
+controller = MOR
+colonial = 0
+		}
+
+

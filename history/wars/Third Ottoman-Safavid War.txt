@@ -1,0 +1,30 @@
+name = "Third Ottoman-Safavid War"
+
+1603.1.1 = { 
+	add_attacker = PER
+	add_defender = TUR
+
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = acquire_state
+		actor = PER
+		receiver = TUR
+		state_province_id = 1090
+	}
+	war_goal = {
+		casus_belli = acquire_state
+		actor = PER
+		receiver = TUR
+		state_province_id = 1048
+	}
+}
+
+1618.1.1 = {
+	rem_attacker = PER
+	rem_defender = TUR
+		}

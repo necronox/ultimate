@@ -1,0 +1,23 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = IRQ
+add_core = KUW
+
+
+1919.1.1 = {
+	owner = ENG
+	controller = ENG
+	remove_core = TUR
+		}
+trade_goods = fruit
+life_rating = 35
+1960.1.1 = {
+	owner = KUW
+	controller = KUW
+	remove_core = TUR
+	colonial = 0
+		}
+2020.1.1 = {
+	add_core = UIR
+		}

@@ -1,0 +1,16 @@
+owner = SPA
+controller = SPA
+add_core = PHI
+1898.1.1 = { 
+		owner = USA
+		controller = USA
+		}
+1946.1.1 = { 
+		owner = PHI
+		controller = PHI
+		colonial = 0
+		}
+
+trade_goods = fruit
+life_rating = 30
+colonial = 2

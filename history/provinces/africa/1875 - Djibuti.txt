@@ -1,0 +1,14 @@
+trade_goods = cattle
+life_rating = 15
+
+1903.1.1 = {
+	owner = FRA
+	controller = FRA
+	colonial = 2
+		}
+1977.1.1 = {
+	owner = DJI
+	controller = DJI
+	add_core = DJI
+	colonial = 0
+		}

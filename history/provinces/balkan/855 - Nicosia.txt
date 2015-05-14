@@ -1,0 +1,19 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = CYP
+add_core = GRE
+
+1910.1.1 = {
+	owner = ENG
+	controller = ENG
+		}
+
+trade_goods = fruit
+life_rating = 35
+
+1980.1.1 = {
+		owner = CYP
+		controller = CYP
+		remove_core = TUR
+		}

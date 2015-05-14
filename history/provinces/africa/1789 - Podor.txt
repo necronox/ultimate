@@ -1,0 +1,11 @@
+owner = FRA
+controller = FRA
+trade_goods = fruit
+life_rating = 30
+colonial = 2
+add_core = SNL
+1960.1.1 = {
+	owner = SNL
+	controller = SNL
+	colonial = 0
+		}

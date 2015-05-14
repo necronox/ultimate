@@ -1,0 +1,14 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+add_core = EQG
+trade_goods = wool
+life_rating = 35
+colonial = 2
+
+1960.1.1 = {
+	owner = EQG
+	controller = EQG
+	colonial = 0
+	remove_core = SPA
+		}

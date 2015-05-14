@@ -1,0 +1,19 @@
+owner = NET
+controller = NET
+1800.1.1 = {
+owner = ENG
+controller = ENG
+		}
+trade_goods = fruit
+life_rating = 30
+colonial = 2
+1861.1.1 = { railroad = 1 }
+
+1946.1.1 = {
+add_core = GUY
+		}
+
+1966.5.26 = {
+owner = GUY
+controller = GUY
+		}

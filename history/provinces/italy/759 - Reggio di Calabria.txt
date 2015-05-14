@@ -1,0 +1,32 @@
+owner = SPA
+controller = SPA
+add_core = SIC
+add_core = ITA
+1714.1.1 = {
+	controller = AUS
+	owner = AUS
+		}
+
+1734.1.1 = {
+	owner = SIC
+	controller = SIC
+	add_core = NAP
+		}
+add_core = ITA
+1812.1.1 = {
+	owner = NAP
+	controller = NAP
+		}
+
+1815.1.1 = {
+	owner = SIC
+	controller = SIC
+		}
+
+trade_goods = fish
+life_rating = 35
+1861.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+}

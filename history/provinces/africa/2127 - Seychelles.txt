@@ -1,0 +1,43 @@
+trade_goods = fish
+life_rating = 35
+terrain = plains
+
+1756.11.1 = {
+	owner = FRA
+	controller = FRA
+	colonial = 1
+}
+
+1790.1.1 = {
+    owner = FRA
+    controller = REB        #Seyshelles under Quincy
+	add_core = PIR
+    colonial = 1
+}
+     
+1811.4.1 = {
+    owner = ENG
+    controller = ENG
+	remove_core = PIR
+    colonial = 1
+}
+     
+1903.1.1 = {
+    owner = ENG
+    controller = ENG
+    colonial = 2
+}
+     
+1937.1.1 = {
+    owner = ENG
+    controller = ENG
+    add_core = SYC
+    colonial = 2
+}
+                   
+1976.6.29 = {
+    owner = SYC
+    controller = SYC
+	colonial = 0
+}
+

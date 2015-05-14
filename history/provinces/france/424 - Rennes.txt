@@ -1,0 +1,13 @@
+owner = FRA
+controller = FRA
+add_core = BRY
+add_core = FRA
+trade_goods = grain
+life_rating = 35
+1861.1.1 = { railroad = 3 }
+
+#Breton ISA Break off from France
+2018.1.1 = {
+owner = BRY
+controller = BRY
+		}

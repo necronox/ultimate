@@ -1,0 +1,2228 @@
+country_event = {
+
+id = 26000000
+title = 2600000 #Greek Civil War
+desc = 2600000
+picture = "greek_civil_war"
+fire_only_once = yes
+
+trigger = {
+		tag = GRE
+		year = 1945
+		NOT = {
+		year = 1947
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "Those commies!"
+		
+		add_country_modifier = {
+			name = nationalist_agitation
+			duration = 365
+		}
+		
+		any_pop = {
+			limit = { culture = greek }
+				scaled_militancy = {
+				ideology = communist
+				factor = 5
+			}
+			militancy = 8
+		}
+	}
+}
+
+country_event = {
+
+id = 26000001
+title = ev_26000001 #Roswell Incident
+desc = ev_26000001
+picture = "roswell"
+fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		year = 1946
+		
+		NOT = {
+			year = 1948
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	
+	option = {
+	
+	name = "We capture a flying saucer!"
+	
+	prestige = 50
+	
+	}
+}
+	
+country_event = {
+
+id = 26000002
+title = ev_26000002 #Indochina War (1945-1975)
+desc = ev_26000002
+picture = "legionnaire-indochina"
+fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		year = 1945
+		war = no
+		or = {
+			owns = 1369
+			owns = 1370
+			owns = 1372
+			owns = 1373
+			owns = 1374
+			owns = 1375
+			owns = 1376
+			owns = 1377
+			owns = 1378
+			owns = 1379
+			owns = 1380
+			owns = 1381
+			owns = 1382
+			owns = 1383
+			owns = 1364
+			owns = 1366
+			owns = 1367
+			owns = 1368
+			owns = 1361
+			owns = 1362
+			owns = 1363
+			owns = 1356
+			owns = 1357
+			owns = 1360
+		}
+		
+		NOT = {
+			year = 1947
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Indochina is our Colony!"
+		set_country_flag = indochina_war
+		
+		release = DAI
+		release = CAM
+		release = LAO
+		
+		random_country = {
+			limit = {
+				tag = DAI
+				exists = yes
+			}
+			war = {
+				target = FRA
+				attacker_goal = {
+					casus_belli = status_quo
+				}		
+				defender_goal = {
+					casus_belli = conquest
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				tag = CAM
+				exists = yes
+			}
+			war = {
+				target = FRA
+				attacker_goal = {
+					casus_belli = status_quo
+				}		
+				defender_goal = {
+					casus_belli = conquest
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				tag = LAO
+				exists = yes
+			}
+			war = {
+				target = FRA
+				attacker_goal = {
+					casus_belli = status_quo
+				}		
+				defender_goal = {
+					casus_belli = conquest
+				}
+			}
+		}
+	}
+			ai_chance = {
+			factor = 100
+		}
+	}
+		option = {
+		name = "Let them be."
+		set_global_flag = no_indochina_war
+		prestige_factor = -0.2
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		release = DAI
+		release = CAM
+		release = LAO
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 26000003
+title = ev_26000003 #State of Israel Begins (1948)
+desc = ev_26000003
+picture = "independeceIsrael"
+fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		year = 1947
+		war = no
+		
+		NOT = {
+			year = 1949
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Let the jews return to their ancestral home!"
+		set_global_flag = creation_of_israel
+		
+		release = ISR
+		
+		917 = {
+		secede_province = JOR
+		}
+		
+		918 = {
+		secede_province = JOR
+		}
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+		option = {
+		name = "No."
+		set_global_flag = no_state_israel
+		prestige_factor = -0.2
+		any_pop = {
+			limit = { has_pop_culture = jewish }
+			consciousness = 5
+			militancy = 10
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}	
+	}
+
+country_event = {
+
+id = 26000004
+title = ev_26000004 #War of Independence of Israel (1948)
+desc = ev_26000004
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = EGY
+		has_global_flag = creation_of_israel
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Palestine is arab!"
+		set_global_flag = war_independence_israel
+		
+		war = {
+			target = ISR
+			create_alliance = IRQ
+			create_alliance = SAU
+			create_alliance = SYR
+			create_alliance = LEB
+			create_alliance = JOR
+			call_ally = yes
+			attacker_goal = {
+				casus_belli = conquest
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+	}
+	}
+	
+country_event = {
+
+id = 26000005
+title = ev_26000005 #Partition of India
+desc = ev_26000005
+picture = "partition_of_India"
+fire_only_once = yes
+
+trigger = {
+		tag = ENG
+		year = 1946
+		
+		NOT = {
+			year = 1948
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "We lost the jewel of the crown."
+		set_country_flag = partition_of_india
+
+	release = PAK
+	release = HND
+	
+	1256 = {
+		secede_province = PAK
+		}
+		
+	1257 = {
+		secede_province = PAK
+		}
+
+	}
+	ai_chance = {
+			factor = 100
+		}
+	
+	option = {
+		name = "Not yet."
+	
+		country_event = 170502
+	}
+	ai_chance = {
+			factor = 0
+		}
+}
+
+country_event = {
+
+id = 26000006
+title = ev_26000006 #Partition of Korea
+desc = ev_26000006
+picture = "korean_partition"
+fire_only_once = yes
+
+trigger = {
+		year = 1948
+		
+		NOT = {
+			year = 1950
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Divide Korea!"
+		set_global_flag = partition_korea
+
+		release = NKA
+		release = SKA
+		
+		NKA = {
+		create_alliance = RUS
+		create_alliance = CHI
+		}
+		
+		SKA = {
+		create_alliance = USA
+		}
+		
+		USA = {
+		diplomatic_influence = {
+		who = SKA
+		value = 400
+		}
+		}
+		
+		RUS = {
+		diplomatic_influence = {
+		who = NKA
+		value = 400
+		}
+		}
+	}
+	}
+
+country_event = {
+
+id = 26000007
+title = ev_26000007 #Korean War
+desc = ev_26000007
+picture = "korean_war"
+fire_only_once = yes
+
+trigger = {
+		tag = NKA
+		year = 1949
+		
+		NOT = {
+			year = 1951
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Unificate Korea under our glorius leader Kim!"
+		set_country_flag = korean_war
+
+		war = {
+			target = SKA
+			create_alliance = CHN
+			create_alliance = RUS
+			call_ally = yes
+			attacker_goal = {
+				casus_belli = conquest
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		
+		SKA =
+		{
+		create_alliance = USA
+		create_alliance = ENG
+		create_alliance = CAN
+		create_alliance = FRA
+		create_alliance = AUS
+		create_alliance = TUR
+		create_alliance = GRE
+		create_alliance = NCN
+		create_alliance = BEL
+		create_alliance = PHI
+		create_alliance = COL
+		}
+	}
+	}
+	
+country_event = {
+
+id = 26000008
+title = ev_2600008 #UK cedes Newfoundland to Canada
+desc = ev_2600008
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = ENG
+		year = 1949
+		month = 4
+		
+			ENG = {
+			OR = {
+				owns = 74
+				owns = 75
+				owns = 76
+				owns = 2625
+			}
+		}
+		NOT = {
+			year = 1951
+			}
+	}
+		
+		
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "People has spoken and they want to join to Canadian Confederation!"
+
+		inherit = NEW
+		change_tag = CAN
+		
+		relation = {
+		who = CAN
+		value = 25
+				}
+		ai_chance = {
+			factor = 0.90
+		}
+	}
+	
+	option = {
+		name = "Enforce return to responsible government"
+		ENG = {
+			limit = {
+				NOT = {
+					exists = NEW
+				}
+			}
+			prestige = -10
+			relation = { who = CAN value = -20 }
+			release_vassal = NEW
+		}
+		any_owned = {
+				limit = {
+						is_core = NEW
+				}
+				any_pop = {
+					consciousness = 2
+					militancy = 1
+				}
+			}
+		NEW = {
+			capital = 74
+		}
+		ai_chance = {
+			factor = 0.03
+		}
+	}
+	
+	option = {
+		name = "Enforce continuation of direct rule"
+		ENG = {
+			prestige = -30
+			relation = { who = CAN value = -35 }
+		any_owned = {
+				limit = {
+						is_core = NEW
+				}
+				any_pop = {
+					consciousness = 3
+					militancy = 3
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0.07
+		}	
+	}
+	}
+
+country_event = {
+	id = 26000009  # Libya Independence
+	title = ev_2600009
+	desc = ev_2600009
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = FRA
+		}
+		OR = {
+			AND = {
+				year = 1951
+				month = 11
+			}
+			year = 1952
+		}
+		NOT = {
+			OR = {
+				has_country_flag = libya_formed
+				has_country_flag = libya_not_formed
+		}		
+	}
+		
+	mean_time_to_happen = { days = 25 }
+
+	option = {
+		name = "Form Libya"
+		set_global_flag = libya_formed	
+		release = TRI
+		prestige = 30
+		LIB = {
+			capital = 1731
+		}
+		set_country_flag = libya_formed
+	}
+	option = {
+		name = "Not form Libya"
+		set_global_flag = libya_not_formed	
+		prestige = -60
+		badboy = 5
+		set_country_flag = libya_not_formed
+	}
+}
+}
+
+country_event = {
+
+id = 26000010
+title = ev_2600010 #Broz Tito takes the power
+desc = ev_2600010
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = YUG
+		year = 1952
+		
+		NOT = {
+			year = 1954
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Yugoslavia does not need the USSR!"
+		set_country_flag = tito_1952
+		
+		ruling_party_ideology = socialist
+		government = socialist_republic
+		
+		relation = {
+		who = RUS
+		value = -50
+				}
+	}
+	}
+	
+country_event = {
+
+id = 26000011
+title = ev_260011 #South Vietnam secession and becomes under US influence
+desc = ev_2600011
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		year = 1954
+		
+		NOT = {
+			year = 1956
+			}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+		option = {
+		name = "We all stand against communism."
+		set_country_flag = south_vietnam
+		
+		1377 = {
+		secede_province = SVT
+		}
+		1378 = {
+		secede_province = SVT
+		}
+		1379 = {
+		secede_province = SVT
+		}
+		1380 = {
+		secede_province = SVT
+		}
+		1381 = {
+		secede_province = SVT
+		}
+		1382 = {
+		secede_province = SVT
+		}
+		1383 = {
+		secede_province = SVT
+		}
+		
+		USA = {
+		diplomatic_influence = {
+		who = SVT
+		value = 400
+		}
+		}
+	}
+}
+
+country_event = {
+
+id = 26000012
+title = ev_260012 #Cuban Revolution Begins
+desc = ev_2600012
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = CUB
+		year = 1956
+		
+		NOT = {
+			year = 1958
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "¡Viva Cuba Libre!"
+		set_country_flag = cuban_revolution
+		
+	any_pop = {
+		limit = { is_primary_culture = yes }
+			scaled_consciousness = {
+				factor = 5
+				ideology = communist
+			}
+			scaled_militancy = {
+				factor = 5
+				ideology = communist
+			}
+		}
+		
+	}
+	}
+
+
+country_event = {
+
+id = 26000013
+title = ev_260013 #Fidel Castro takes the Power
+desc = ev_2600013
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = CUB
+		year = 1958
+		has_country_flag = cuban_revolution
+		
+		NOT = {
+			year = 1960
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Our revolution is socialist!"
+		set_country_flag = fidel_1958
+		
+		government = proletarian_dictatorship
+		ruling_party_ideology = communist
+		
+		relation = {
+		who = USA
+		value = -50
+				}
+				
+		RUS = {
+		diplomatic_influence = {
+		who = CUB
+		value = 400
+		}
+		
+	}
+}
+}
+
+country_event = {
+
+id = 26000014
+title = ev_260014 #Sino-Soviet Split
+desc = ev_2600014
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = CHI
+		year = 1956
+		
+		NOT = {
+			year = 1958
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "China does not need the USSR!"
+		set_country_flag = sino-soviet_split
+	
+	prestige = 50
+	
+	RUS = {
+	release_vassal = CHI
+
+	diplomatic_influence = {
+		who = CHI
+		value = -400
+		}
+	
+	CHI = {
+		relation = -100
+		}
+	}
+	}
+	}
+
+country_event = {
+
+id = 26000015
+title = ev_26000015 #Martin Luther King speech in Washington DC
+desc = ev_26000015
+picture = "Washington_1963"
+fire_only_once = yes
+
+trigger = {
+		tag = USA
+		year = 1964
+		
+		NOT = {
+			year = 1966
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "I have a dream."
+		
+		any_pop = {
+			scaled_militancy = {
+				issue = pacifism
+				factor = 2
+			}
+			dominant_issue = {
+				factor = 0.03
+				value = anti_military
+			}
+	}
+}
+}
+
+country_event = {
+
+id = 26000016
+title = ev_26000016 #Gulf Tokin Incident
+desc = ev_26000016
+picture = "Tonkingunboats"
+fire_only_once = yes
+
+trigger = {
+		tag = USA
+		year = 1964
+		exists = SVT
+		
+		NOT = {
+			year = 1966
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Punish them!"
+		
+		DAI = {
+		relation = -200
+		}
+		
+		USA = {
+		country_event = 26000017
+		}
+
+}
+}
+
+country_event = {
+
+id = 26000017
+title = ev_26000017 #Vietnam war begins
+desc = ev_26000017
+picture = "US_Army_Saigon_1965"
+
+is_triggered_only = yes
+
+	option = {
+		name = "If the french could not we can!"
+		
+		set_global_flag = vietnam_war
+		
+		USA = {
+			war = {
+			target = DAI
+			create_alliance = SVT
+			call_ally = yes
+			attacker_goal = {
+				casus_belli = install_democratic_gov_cb
+			}		
+			defender_goal = {
+				casus_belli = adquire_all_cores
+					}
+		}
+		}
+}
+}
+
+country_event = {
+
+id = 26000018
+title = ev_26000018 #Chinese Cultural Revolution
+desc = ev_26000018
+picture = "Cultural_Revolution_poster"
+fire_only_once = yes
+
+trigger = {
+		tag = CHI
+		year = 1965
+		government = proletarian_dictatorship
+		
+		NOT = {
+			year = 1967
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "We will pursue the counterrevolutionaries!"
+		
+		add_country_modifier = {
+			name = commie_purged
+			duration = 1095
+		}
+		
+		any_pop = {
+			scaled_militancy = {
+				issue = communism
+				factor = 2
+			}
+			dominant_issue = {
+				factor = 0.09
+				value = communism
+			}
+	}
+}
+}
+
+country_event = {
+
+id = 26000019
+title = ev_26000019 #Prague Spring (1968)
+desc = ev_26000019
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = CZH
+		year = 1967
+		
+		NOT = {
+			year = 1969
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Socialism with human face is possible."
+		set_global_flag = prague_spring
+
+		ruling_party_ideology = socialist
+		government = democracy
+		
+		prestige = 10
+		
+		RUS = {
+		country_event = 26000020
+		}
+	}
+}
+	
+country_event = {
+
+id = 26000020
+title = ev_26000020 #Russia Reacts to Prague Spring (1968)
+desc = ev_26000020
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = RUS
+		has_global_flag = prague_spring
+		
+		NOT = {
+		year = 1970
+		}
+	}
+
+	option = {
+		name = "We cannot tolerate this."
+		
+		prestige = -10	
+		
+		CHZ = {
+		relation = -25
+		}
+	}
+}
+
+country_event = {
+
+id = 26000021
+title = ev_26000021 #Six days war
+desc = ev_26000021
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = ISR
+		year = 1966
+		
+		NOT = {
+			year = 1968
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Let's take Sinai Peninsula!"
+		set_country_flag = 6_days_war
+
+		war = {
+			target = EGY
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 1757
+			}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		
+	}
+	}
+
+country_event = {
+
+id = 26000022
+title = ev_26000022 #Varsovia Pact Invades Czechoslovakia (1968)
+desc = ev_26000022
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = RUS
+		year = 1967
+		has_global_flag = prague_spring
+		
+		NOT = {
+			year = 1969
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "I warn you!"
+		
+		war = {
+			target = CZH
+			call_ally = yes
+			attacker_goal = {
+				casus_belli = install_communist_gov_cb
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		
+	}
+	}	
+
+country_event = {
+
+id = 26000003
+title = ev_26000023 #May 1968 in France
+desc = ev_26000023
+picture = ""
+
+fire_only_once = yes
+
+trigger = {
+		tag = FRA
+		year = 1967
+		
+		NOT = {
+			year = 1970
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+	
+	name = "May 68: the beginning of a prolonged struggle."
+	add_country_modifier = {
+			name = nationalist_agitation
+			duration = 365
+		}
+	
+	any_pop = {
+			scaled_militancy = {
+				issue = socialism
+				factor = 3
+			}
+			scaled_militancy = {
+				issue = pacifism
+				factor = 3
+			}
+			dominant_issue = {
+				factor = 0.05
+				value = anti_military
+			}
+	}
+	prestige = -25
+	
+	}
+}
+
+country_event = {
+
+id = 26000024
+title = ev_26000024 #Tlatelolco Massacre
+desc = ev_26000024
+picture = ""
+
+fire_only_once = yes
+
+trigger = {
+		tag = MEX
+		year = 1967
+		
+		NOT = {
+			year = 1969
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+	name = "even_option_blast"
+	add_country_modifier = {
+			name = nationalist_agitation
+			duration = 365
+		}
+	
+	any_pop = {
+			scaled_militancy = {
+				issue = free_press
+				factor = 5
+			}
+			scaled_militancy = {
+				issue = pacifism
+				factor = 5
+			}
+			dominant_issue = {
+				factor = 0.05
+				value = anti_military
+			}
+	}
+	
+	2172 = {
+			any_pop = {
+				reduce_pop = 0.03
+			}
+		}
+		prestige = -25
+		}
+}
+	
+country_event = {
+
+id = 26000025
+title = ev_26000025 #Woodstrock Festival
+desc = ev_26000025
+picture = "woodstock"
+fire_only_once = yes
+
+trigger = {
+		tag = USA
+		year = 1968
+		
+		NOT = {
+			year = 1970
+			}
+
+	}
+
+	option = {
+		name = "Make love not war."
+		
+		any_pop = {
+			scaled_militancy = {
+				issue = pacifism
+				factor = 3
+			}
+			dominant_issue = {
+				factor = 0.05
+				value = anti_military
+			}
+	}
+}
+}
+	
+country_event = {
+id = 26000026
+title = ev_26000026 #Laos Intervention
+desc = ev_26000026
+picture = ""
+fire_only_once = yes
+
+
+trigger = {
+		tag = USA
+		year = 1970
+		war_with = DAI
+		
+		NOT = {
+			year = 1972
+			}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "Stop help North Vietnam."
+	
+		war = {
+			target = LAO
+			create_alliance = SVT
+			call_ally = yes
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+}
+}
+
+country_event = {
+id = 26000027
+title = ev_26000027 #Watergate Scandal
+desc = ev_26000027
+picture = "Nixon-depart"
+fire_only_once = yes
+
+
+trigger = {
+		tag = USA
+		year = 1971
+		
+		NOT = {
+			year = 1973
+			}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "Bye Nixon!"
+		
+		prestige = -50
+		
+		}
+}
+
+
+country_event = {
+
+id = 26000028
+title = ev_26000028 #Angola declares Independence and civil war begins
+desc = ev_26000028
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = POR
+		year = 1974
+		
+		NOT = {
+			year = 1976
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	release = AGL
+
+	option = {
+		name = ""
+		set_global_flag = angola_independence
+
+		AGL = {
+		
+		add_country_modifier = {
+			name = nationalist_agitation
+			duration = 9825
+		}
+		
+		any_pop = {
+		scaled_consciousness = {
+				factor = 3
+				ideology = communist
+			}
+			scaled_militancy = {
+				factor = 3
+				ideology = communist
+			}
+			militancy = 8
+			}
+			
+	}
+			CUB = {
+			country_event = 26000029
+			}
+	}
+	}
+	
+country_event = {
+
+id = 260000029
+title = ev_26000029 #Cuban Intervention in Angola Civil War
+desc = ev_26000029
+picture = ""
+
+is_triggered_only = yes
+
+	option = {
+		name = "Our comrades in Angola needs help!"
+
+		CUB = {
+		war = {
+			target = AGL
+			attacker_goal = {
+				casus_belli = install_communist_gov_cb
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		}
+	}
+	}
+	
+country_event = {
+
+id = 26000030
+title = ev_26000030 #Yom Kipur War
+desc = ev_26000030
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = EGY
+		year = 1972
+		
+		NOT = {
+			year = 1974
+			}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Recover Palestine and Sinai Peninsula!"
+		set_country_flag = yom_kipur_war
+
+		war = {
+			target = ISR
+			create_alliance = SYR
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 1757
+			}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}	
+	}
+	}
+	
+country_event = {
+
+id = 26000032
+title = ev_26000032 #Chilean coup d'état (1973)
+desc = ev_26000032
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = CHL
+		year = 1972
+		
+		NOT = {
+			year = 1974
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Augusto Pinochet takes the power!"
+		set_country_flag = pinochet_1973
+
+		ruling_party_ideology = liberal
+		government = bourgeois_dictatorship
+		
+		trade_unions=non_socialist
+		
+	}
+	}
+	
+country_event = {
+
+id = 26000033
+title = ev_26000033 #Soviet Invasion of Afghanistan
+desc = ev_26000033
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = RUS
+		year = 1978
+		
+		NOT = {
+			year = 1980
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Let's take Afghanistan under our influence!"
+		set_country_flag = soviet-afghan_war
+
+		war = {
+			target = AFG
+			attacker_goal = {
+				casus_belli = install_communist_gov_cb
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		
+	}
+	}
+
+country_event = {
+
+id = 26000034
+title = ev_26000034 #Iranian Revolution
+desc = ev_260000034
+picture = "iran_1979"
+fire_only_once = yes
+
+trigger = {
+		tag = CUB
+		year = 1978
+		
+		NOT = {
+			year = 1980
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Down with the Shah!"
+		set_global_flag = iranian_revolution
+		
+		add_country_modifier = {
+			name = islamic_fundamentalism_mod
+			duration = 625
+		}
+		
+	any_pop = {
+			scaled_consciousness = {
+				factor = 6
+				ideology = reactionary
+			}
+			scaled_militancy = {
+				factor = 6
+				ideology = reactionary
+			}
+		}
+		
+	}
+	}
+	
+country_event = {
+
+id = 26000035
+title = ev_26000035 #Ayatolah Khomeini takes the power
+desc = ev_26000035
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = PER
+		has_global_flag = iranian_revolution
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "Long Live to Ayatolah Khomeini!"
+		set_country_flag = iranian_revolution
+
+		government = theocratic_dictatorship
+		
+		USA = {
+		relation = -100
+		}
+		
+	}
+	}
+
+country_event = {
+
+id = 26000036
+title = ev_26000036 #Iran-Iraq War
+desc = ev_26000036
+picture = "War_in_the_gulf"
+fire_only_once = yes
+
+trigger = {
+		tag = IRQ
+		year = 1979
+		
+		NOT = {
+			year = 1981
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "We need to control Shatt al-Arab region!"
+		set_country_flag = iraq-iran_war
+
+		war = {
+			target = PER
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 1132
+			}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+	}
+}
+
+
+country_event = {
+
+id = 26000037
+title = ev_26000037 #Argentina takes Falkland Islands
+desc = ev_26000037
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = ARG
+		year = 1981
+		
+		NOT = {
+			year = 1983
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+	set_global_flag = falklands_arg
+	
+	name = "They are called Malvinas."
+	
+	2131 = {
+		secede_province = ARG
+		}
+		
+	2133 = {
+		secede_province = ARG
+		}
+		
+		ENG = {
+		relation = -200
+		prestige = -50
+		}
+		}
+}
+
+country_event = {
+
+id = 26000038
+title = ev_26000038 #Falklands War
+desc = ev_26000038
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = ENG
+		year = 1981
+		has_global_flag = falklands_war
+		
+		NOT = {
+			year = 1983
+			}
+
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Falklands are British!"
+		set_global_flag = falklands_war
+
+		war = {
+			target = ARG
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 2131
+			}
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 2133
+			}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		}
+}
+
+country_event = {
+
+id = 26000039
+title = ev_26000039 #US invades Panama
+desc = ev_26000039
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = USA
+		year = 1988
+		has_global_flag = panama_invasion
+		
+		NOT = {
+			year = 1990
+			}
+
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Noriega!"
+		set_global_flag = panama_invasion
+
+		war = {
+			target = PNM
+			attacker_goal = {
+				casus_belli = install_democratic_gov_cb
+			}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		}
+
+}
+
+
+country_event = {
+	id = 26000040 # Mexico City destroyed by earthquake
+	title = ev_20000040
+	desc = desc_ev_2000040
+	picture = earthquakeold
+	fire_only_once = yes
+	trigger = {
+		year = 1984
+		NOT = {
+			year = 1986
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_blast
+		2172 = {
+			any_pop = {
+				reduce_pop = 0.09
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 26000041 #Comet Halley
+	title = ev_26000041
+	desc = desc_ev_26000041
+	picture = sight
+	fire_only_once = yes
+	trigger = {
+		year = 1985
+		NOT = {
+			year = 1987
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_great
+		prestige = 5
+	}
+}
+
+country_event = {
+
+id = 26000042
+title = ev_26000042 #Perestroika and Glasnot begins
+desc = ev_26000042
+picture = "perestroika"
+fire_only_once = yes
+
+trigger = {
+		tag = RUS
+		year = 1987
+		
+		NOT = {
+			year = 1989
+			}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Some reforms are necessary!"
+		
+		set_global_flag = perestroika_glasnot_1989
+		
+		public_meetings=yes_meeting
+		press_rights=censored_press
+		
+		any_pop = {
+		limit = { has_pop_culture = russian }
+			consciousness = 6
+			}
+		}
+	}
+	
+country_event = {
+
+id = 26000043
+title = ev_26000043 #Revolutions of 1989
+desc = ev_26000043
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		year = 1988
+		continent = europe
+		
+		OR = {
+		government = proletarian_dictatorship
+		government = socialist_republic
+		}
+		
+		NOT = {
+			year = 1990
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Tear down this wall!"
+		add_country_modifier = {
+			name = nationalist_agitation
+			duration = 1095
+		}
+		set_global_flag = revolution_1989
+		
+		any_pop = {
+		limit = {
+		OR = {
+	pop_majority_ideology = liberal
+	pop_majority_ideology = conservative
+	pop_majority_ideology = anarcho_liberal
+		}
+			}
+	consciousness = 6
+	militancy = 6
+		}		
+	}
+	}
+	
+country_event = {
+
+id = 26000044
+title = ev_26000044 #Tiananmen Square protests of 1989
+desc = ev_26000044
+picture = "tankman"
+fire_only_once = yes
+
+trigger = {
+
+		tag = CHI
+		year = 1988
+		
+		government = proletarian_dictatorship
+		
+		NOT = {
+			year = 1990
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Freedom!"
+		add_country_modifier = {
+			name = nationalist_agitation
+			duration = 1095
+		}
+		set_global_flag = tiananmen_square
+		
+		1612 = {
+		any_pop = {
+		limit = {
+		OR = {
+	pop_majority_ideology = liberal
+	pop_majority_ideology = conservative
+	pop_majority_ideology = anarcho_liberal
+		}
+			}
+			scaled_militancy = {
+				issue = free_press
+				factor = 10
+			}
+			scaled_militancy = {
+				issue = pacifism
+				factor = 10
+			}
+			dominant_issue = {
+				factor = 0.09
+				value = anti_military
+			}
+	consciousness = 6
+	militancy = 6
+		}		
+	}
+	}
+	}
+	
+country_event = {
+id = 26000045
+title = ev_26000045 #German Reunification
+desc = ev_26000045
+picture = "one_germany"
+fire_only_once = yes
+mayor = yes
+
+trigger = {
+		tag = GER
+		year = 1988
+		
+		exists = DDR
+		
+		DDR = {
+		is_greater_power = no
+		
+			NOT = {
+		pop_majority_ideology = communist
+		}
+		
+		}
+		
+		NOT = {
+			year = 1990
+			}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "The wall is gone!"
+		
+		inherit = DDR
+		
+		change_tag = GER
+	}
+	ai_chance = {
+			factor = 0.90
+		}
+	
+	option = {
+		name = "Reunification will be gradual."
+		
+		GER = {
+			create_vassal = DDR
+		}
+		
+	}
+	ai_chance = {
+			factor = 0.09
+		}
+		option = {
+		name = "No. We are two diferent countries."
+	}
+	
+	ai_chance = {
+			factor = 0.01
+		}
+}
+	
+country_event = {
+
+id = 26000046
+title = ev_26000046 #Iraq attacks Kuwait
+desc = ev_26000046
+picture = "kuwait1990"
+fire_only_once = yes
+
+trigger = {
+		tag = IRQ
+		year = 1989
+		
+		NOT = {
+			year = 1991
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Kuwait is part of Iraq!"
+		set_global_flag = kuwait_invasion
+
+		war = {
+			target = KUW
+			attacker_goal = {
+				casus_belli = conquest
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		
+	}
+	}
+
+
+country_event = {
+id = 26000047
+title = ev_26000047 #War of Gulf (1990)
+desc = ev_26000047
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = USA
+		year = 1989
+		
+		IRQ = {
+		owns = 935
+		}
+		
+		NOT = {
+			year = 1992
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Let's Liberate Kuwait from Saddam!"
+		set_global_flag = war_of_gulf
+
+		war = {
+			target = IRQ
+			create_alliance = ENG
+			create_alliance = CAN
+			create_alliance = FRA
+			create_alliance = TUR
+			
+			call_ally = yes
+			attacker_goal = {
+				casus_belli = liberate_country
+				country = KUW
+			}
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+					}
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+	}
+}
+	
+country_event = {
+
+id = 26000048
+title = ev_26000048 #Breakup of Yugoslavia begins
+desc = ev_26000048
+picture = ""
+fire_only_once = yes
+
+trigger = {
+		tag = YUG
+		year = 1990
+		
+		NOT = {
+			year = 1992
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Remember Tito!"
+		set_global_flag = yugolavia_breakup
+		add_country_modifier = {
+			name = nationalist_agitation
+			duration = 1825
+		}
+
+		limit = { is_primary_culture = no }
+		
+		consciousness = 6
+		militancy = 6
+		
+		remove_accepted_culture = croat
+		remove_accepted_culture = slovene
+		remove_accepted_culture = bosniak
+		
+		release = SLO
+		release = BOS
+		release = CRO
+		
+		war = {
+			target = SLO
+		
+			attacker_goal = {
+				casus_belli = civil_war
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		war = {
+			target = BOS
+		
+			attacker_goal = {
+				casus_belli = civil_war
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		war = {
+			target = CRO
+		
+			attacker_goal = {
+				casus_belli = civil_war
+			}		
+			defender_goal = {
+				casus_belli = status_quo
+					}
+		}
+		
+	}
+	}
+
+country_event = {
+
+id = 26000049
+title = ev_26000049 #Dissolution USSR
+desc = ev_26000049
+picture = ""
+mayor = yes
+fire_only_once = yes
+
+trigger = {
+		tag = RUS
+		year = 1991
+		
+		NOT = {
+			year = 1993
+			}
+
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "Is this the end?"
+		
+		set_global_flag = USSR_dissolution
+		
+		government = democracy
+		ruling_party_ideology = conservative
+		
+		upper_house_composition = party_appointed
+		vote_franschise = wealth_voting
+		public_meetings = yes_meeting
+		press_rights = censored_press
+		trade_unions = state_controlled
+		voting_system = first_past_the_post
+		political_parties = underground_parties
+		
+		release = ARM
+		release = AZB
+		release = BYE
+		release = GEO
+		release = KAZ
+		release = KYR
+		release = LAT
+		release = MOL
+		release = TAJ
+		release = TRM
+		release = UKR
+		release = UZB
+	}
+	}

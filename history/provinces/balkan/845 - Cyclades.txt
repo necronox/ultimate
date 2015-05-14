@@ -1,0 +1,20 @@
+owner = TUR
+controller = TUR
+add_core = GRE
+1830.1.1 = {
+	owner = GRE
+	controller = GRE
+		}
+1919.6.28 = { 
+		controller = GRE
+		owner = GRE
+		}
+trade_goods = fish
+life_rating = 35
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = steamer_shipyard
+		upgrade = yes
+	}
+}

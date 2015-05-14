@@ -1,0 +1,10 @@
+owner = PER
+controller = PER
+add_core = PER
+trade_goods = grain
+life_rating = 35
+
+#There will be blood
+1882.1.1 = {
+	trade_goods = oil
+		}

@@ -1,0 +1,11 @@
+owner = SPA
+controller = SPA
+add_core = FRA
+add_core = HRE
+trade_goods = coal
+life_rating = 30
+1700.1.1 = {
+	owner = FRA
+controller = FRA
+		}
+1861.1.1 = { railroad = 3 }

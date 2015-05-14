@@ -1,0 +1,45 @@
+political_decisions = {
+	democratic_transition_d = {
+		potential = {
+			government = hms_government
+			NOT = {
+				has_country_modifier = demo_cooldown
+			}
+			NOT = {
+				has_country_flag = demo_started
+			}
+		}
+		allow = {
+			vote_franschise = universal_voting
+			public_meetings = yes_meeting
+			press_rights = free_press
+			trade_unions = all_trade_unions
+			war = no
+		}
+		effect = {
+			country_event = 19950228
+			set_country_flag = demo_started
+		}
+	}
+	monarchy_transition_d = {
+		potential = {
+			government = democracy
+			NOT = {
+				has_country_modifier = king_cooldown
+			}
+			NOT = {
+				has_country_flag = king_started
+			}
+			upper_house_composition = appointed
+			vote_franschise = wealth_weighted_voting
+		}
+		allow = {
+			
+			war = no
+		}
+		effect = {
+			country_event = 19900101
+			set_country_flag = king_started
+		}
+	}
+}

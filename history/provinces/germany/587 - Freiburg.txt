@@ -1,0 +1,30 @@
+owner = HRE
+controller = HRE
+add_core = MOD
+add_core = HRE
+
+1604.1.1 = { 
+	owner = AUS
+	controller = AUS
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+1800.1.1 = {
+owner = BAD
+controller = BAD
+add_core = BAD
+		}
+
+add_core = GER
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+
+trade_goods = fruit
+life_rating = 40
+1861.1.1 = { railroad = 3 }

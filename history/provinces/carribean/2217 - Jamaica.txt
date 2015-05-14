@@ -1,0 +1,20 @@
+owner = SPA
+controller = SPA
+1707.1.1 = {
+owner = ENG
+controller = ENG
+		}
+trade_goods = sugar
+life_rating = 35
+colonial = 2
+1861.1.1 = {
+add_core = JAM
+ railroad = 2 }
+
+
+
+1962.1.1 = {
+	owner = JAM
+	controller = JAM
+	colonial = 0
+		}

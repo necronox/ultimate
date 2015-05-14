@@ -1,0 +1,46 @@
+#warsaw_pact4
+country_event = {
+        id = 250003
+        title = "EVTNAME250003"
+        desc = "EVTDESC250003"
+        picture = "commieunderstanding"
+        is_triggered_only = yes
+
+
+option = {
+name = "EVTOPTA250003"        
+        RUS = {
+        create_vassal = DDR
+        }
+        DDR = {
+        relation = {
+        who = RUS
+        value = 100
+        }
+           
+              }
+
+                     }
+
+option = {
+name = "EVTOPTB250003"
+        DDR = {
+        prestige = -30
+        badboy = 5
+        relation = {
+        who = RUS
+        value = -100
+        }
+  
+              }
+
+        RUS = {
+        casus_belli = {
+                target = DDR
+                type = make_puppet
+                months = 36
+                       }
+              
+               }
+}
+}

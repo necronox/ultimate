@@ -1,0 +1,27 @@
+
+#Rubber discovered!
+1880.1.1 = {
+	trade_goods = rubber
+		}
+
+1910.1.1 = {
+	owner = NET
+	controller = NET
+	colonial = 2
+		}
+
+1935.1.1 = {
+	add_core= IDO
+		}
+1970.1.1 = {
+	owner = IDO
+	controller = IDO
+	add_core = IDO
+	colonial = 0
+		}
+
+owner = ATJ
+controller = ATJ
+add_core = ATJ
+trade_goods = tobacco
+life_rating = 30

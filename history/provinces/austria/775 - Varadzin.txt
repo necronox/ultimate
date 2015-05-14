@@ -1,0 +1,33 @@
+owner = TUR
+controller = TUR
+add_core = AUS
+1700.1.1 = {
+	controller = AUS
+	owner = AUS
+		}
+add_core = CRO
+add_core = HUN
+1914.1.1 = {
+owner = KUK
+controller = KUK
+add_core = KUK
+}	
+1919.6.28 = { 
+		controller = YUG
+		owner = YUG
+		remove_core = KUK
+		}
+add_core = YUG
+
+trade_goods = wool
+life_rating = 35
+1861.1.1 = { railroad = 2 }
+
+
+#Soviet Collapse
+1992.5.1 = {
+	owner = CRO
+	controller = CRO
+		}
+
+

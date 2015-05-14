@@ -1,0 +1,36 @@
+name = "The Long War"
+
+1593.7.29 = { 
+	add_attacker = TUR
+	add_defender = AUS
+	add_defender = WAL
+	add_defender = MOL
+
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = acquire_state
+		actor = TUR
+		receiver = AUS
+		state_province_id = 619
+	}
+
+	war_goal = {
+		casus_belli = liberate_country
+		actor = AUS
+		receiver = TUR
+		country = HUN
+	}
+
+}
+
+1606.11.11 = {
+	rem_attacker = TUR
+	rem_defender = AUS
+	rem_defender = WAL
+	rem_defender = MOL
+		}

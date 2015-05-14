@@ -1,0 +1,46 @@
+free_and_fair  = {
+	trigger = {
+		OR = {
+			government = hms_government
+			government = democracy
+		}
+	}
+	icon = 11
+	global_pop_militancy_modifier = -0.025
+}
+rich_king = {
+	trigger = {
+		OR = {
+			government = hms_government
+			government = prussian_constitutionalism
+			government = absolute_monarchy
+		}
+		has_country_flag = rich_king
+	}
+	tax_efficiency = 0.05
+	rgo_output = 0.025
+}
+war_king = {
+	trigger = {
+		OR = {
+			government = hms_government
+			government = prussian_constitutionalism
+			government = absolute_monarchy
+		}
+		has_country_flag = war_king
+	}
+	land_organisation = 0.05
+	leadership_modifier = 0.05
+}
+peoples_king = {
+	trigger = {
+		OR = {
+			government = hms_government
+			government = prussian_constitutionalism
+			government = absolute_monarchy
+		}
+		has_country_flag = peoples_king
+	}
+	ruling_party_support = 0.05
+	global_pop_militancy_modifier = -0.02
+}

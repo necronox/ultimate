@@ -1,0 +1,24 @@
+
+
+1903.1.1 = {
+		owner = GER
+		controller = GER
+		colonial = 2
+		}
+
+1936.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+
+
+trade_goods = coffee
+life_rating = 15
+
+add_core = CMR
+1960.1.1 = {
+	owner = CMR
+	controller = CMR
+	colonial = 0
+		}

@@ -1,0 +1,113 @@
+
+navy = {
+	name = "Regia Marina"
+	location = 749
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "U-Boat"
+	type = submarine
+	}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Battleship"
+	type = battleship
+		}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+ship = {
+	name = "Transport Ship"
+	type = steam_transport
+	}
+}

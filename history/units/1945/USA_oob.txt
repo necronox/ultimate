@@ -1,0 +1,266 @@
+#RELATIONS#
+RUS = {
+	value = -50
+	}
+#US SPHERE#
+CAN = {
+	value = 150
+	level = 5
+	influence_value = 50
+}
+
+BEL = {
+	value = 200
+	level = 5
+	influence_value = 50
+	military_access = yes
+	}
+NET = {
+	value = 200
+	level = 5
+	influence_value = 50
+	military_access = yes
+	}
+PHI = {
+	value = 100
+	level = 5
+	influence_value = 25
+}
+
+MEX = {
+	value = 100
+	level = 5
+	influence_value = 25
+}
+NCN = {
+	value = 100
+	level = 5
+	influence_value = 50
+	military_access = yes
+	}
+
+ITA = {
+	value = 100
+	level = 5
+	influence_value = 50
+	military_access = yes
+	}
+
+GER = {
+	value = 100
+	level = 5
+	influence_value = 50
+	military_access = yes
+	}
+
+AUS = {
+	value = 100
+	level = 5
+	influence_value = 50
+	military_access = yes
+	}
+
+army = {
+	name = "US Army German Station"
+	location = 536
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 249
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 249
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 249
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 249
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 249
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 249
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 249
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 249
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 249
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 249
+	}
+		}
+
+army = {
+	name = "1st US Army"
+	location = 232
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 232
+	}
+	regiment = {
+		name= "Tank Division"
+		type = tank
+		home = 232
+	}
+	regiment = {
+		name= "Tank Division"
+		type = tank
+		home = 232
+	}
+	regiment = {
+		name= "US Fighter Squadron"
+		type = plane
+		home = 232
+	}
+			}
+
+army = {
+	name = "2nd US Army"
+	location = 205
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Guard"
+		type = guard
+		home = 205
+	}
+	regiment = {
+		name= "Tank Division"
+		type = tank
+		home = 205
+	}
+	regiment = {
+		name= "Tank Division"
+		type = tank
+		home = 205
+	}
+	regiment = {
+		name= "US Fighter Squadron"
+		type = plane
+		home = 205
+	}
+			}
+
+navy = {
+	name = "1st Fleet"
+	location = 233
+	ship = {
+		name= "Obama"
+		type = cruiser
+	}
+}
+

@@ -1,0 +1,14 @@
+
+1903.1.1 = {
+		owner = SPA
+		controller = SPA
+		}
+
+trade_goods = timber
+life_rating = 15
+add_core = EQG
+1960.1.1 = {
+	owner = EQG
+	controller = EQG
+	colonial = 0
+		}

@@ -1,0 +1,17 @@
+trade_goods = fish
+life_rating = 15
+
+
+1920.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 2
+		}
+1957.1.1 = {
+	owner = AST
+	controller = AST
+	add_core = AST
+	colonial = 0
+		}
+
+

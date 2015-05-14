@@ -1,0 +1,33 @@
+owner = SPA
+controller = SPA
+add_core = SAR
+add_core = SDA
+add_core = ITA
+1714.1.1 = {
+	owner = AUS
+	controller = AUS
+		}
+1724.1.1 = {
+owner = SAR
+controller = SAR
+		}
+1800.1.1 = {
+owner = SDA
+controller = SDA
+		}
+1815.1.1 = {
+owner = SAR
+controller = SAR
+		}
+trade_goods = grain
+life_rating = 35
+1861.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+}
+#Sardinian ISA break off from Italy
+2018.1.1 = {
+owner = SDA
+controller = SDA
+		}

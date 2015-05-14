@@ -1,0 +1,937 @@
+
+
+##1604 Puppets
+
+#Crimea-Otto
+vassal = {
+	first = TUR
+	second = CRI
+	start_date = 1603.5.1
+	end_date = 1764.1.1
+		}
+vassal = {
+	first = TUR
+	second = BYZ
+	start_date = 1603.5.1
+	end_date = 1821.1.1
+		}
+#RUS-Crimea
+vassal = {
+	first = RUS
+	second = CRI
+	start_date = 1764.1.1
+	end_date = 1800.1.1
+		}
+
+#Polish Commonwealth-Prussia
+vassal = {
+	first = PLC
+	second = PRU
+	start_date = 1603.5.1
+	end_date = 1704.1.1
+		}
+
+#Great Britain and the Thirteen Colonies
+vassal = {
+	first = ENG
+	second = THC
+	start_date = 1707.1.1
+	end_date = 1775.1.1
+		}
+
+#United Crowns of Britain
+vassal = {
+	first = ANG
+	second = SCO
+	start_date = 1603.5.1
+	end_date = 1707.1.1
+		}
+
+#Spanish-Portuguese Union
+vassal = {
+	first = SPA
+	second = POR
+	start_date = 1603.5.1
+	end_date = 1641.1.1
+		}
+		
+#Holy Roman Empire
+substate = {
+	first = HRE
+	second = SWI
+	start_date = 1551.1.1
+	end_date = 1648.1.1
+		}
+
+substate = {
+	first = HRE
+	second = SAV
+	start_date = 1551.1.1
+	end_date = 1648.1.1
+		}
+		
+substate = {
+	first = HRE
+	second = TUS
+	start_date = 1551.1.1
+	end_date = 1648.1.1
+		}
+		
+substate = {
+	first = HRE
+	second = PAR
+	start_date = 1551.1.1
+	end_date = 1648.1.1
+		}
+		
+substate = {
+	first = HRE
+	second = MOD
+	start_date = 1551.1.1
+	end_date = 1648.1.1
+		}
+		
+substate = {
+	first = HRE
+	second = LUC
+	start_date = 1551.1.1
+	end_date = 1648.1.1
+		}
+		
+#Ottoman Eyalets
+substate = {
+	first = TUR
+	second = TUN
+	start_date = 1574.1.1
+	end_date = 1705.1.1
+		}
+substate = {
+	first = TUR
+	second = ALD
+	start_date = 1517.1.1
+	end_date = 1830.1.1
+		}
+substate = {
+	first = TUR
+	second = TRI
+	start_date = 1551.1.1
+	end_date = 1911.1.1
+		}
+
+
+####Napoleonic Era####
+vassal = {
+	first = FRA
+	second = NET
+	start_date = 1800.1.1
+	end_date = 1820.1.1
+		}
+vassal = {
+	first = FRA
+	second = ITA
+	start_date = 1800.1.1
+	end_date = 1820.1.1
+		}
+vassal = {
+	first = FRA
+	second = SPA
+	start_date = 1800.1.1
+	end_date = 1812.1.1
+		}
+vassal = {
+	first = RUS
+	second = ION
+	start_date = 1799.11.9
+	end_date = 1815.1.1
+}
+
+#China substates
+#substate = {
+#	first = CHI
+#	second = GXI
+#	start_date = 1603.5.1
+#	end_date = 1934.1.1
+#}
+#substate = {
+#	first = CHI
+#	second = MCK
+#	start_date = 1603.5.1
+#	end_date = 1934.1.1
+#}
+#substate = {
+#	first = CHI
+#	second = XIN
+#	start_date = 1603.5.1
+#	end_date = 1934.1.1
+#}
+#substate = {
+#	first = CHI
+#	second = YNN
+#	start_date = 1603.5.1
+#	end_date = 1934.1.1
+#}
+#substate = {
+#	first = CHI
+#	second = XBI
+#	start_date = 1603.5.1
+#	end_date = 1934.1.1
+#}
+#substate = {
+#	first = CHI
+#	second = MGL
+#	start_date = 1603.5.1
+#	end_date = 1911.1.1
+#}
+#vassal = {
+#	first = CHI
+#	second = TIB
+#	start_date = 1603.5.1
+#	end_date = 1911.1.1
+#}
+
+substate = {
+	first = NCN
+	second = MGL
+	start_date = 1911.1.1
+	end_date = 1934.1.1
+}
+vassal = {
+	first = NCN
+	second = TIB
+	start_date = 1911.1.1
+	end_date = 1934.1.1
+}
+
+#vassal = {
+#	first = CHI
+#	second = KOR
+#	start_date = 1836.1.1
+#	end_date = 1895.5.17 #Treaty of Shimonoseki
+#}
+
+###Shogunate Japan###
+#Tokugawa substates
+substate = {
+	first = TKG
+	second = SEN
+	start_date = 1603.5.1
+	end_date = 1868.1.1
+}
+substate = {
+	first = TKG
+	second = YZW
+	start_date = 1603.5.1
+	end_date = 1868.1.1
+}
+substate = {
+	first = TKG
+	second = KAG
+	start_date = 1603.5.1
+	end_date = 1868.1.1
+}
+substate = {
+	first = TKG
+	second = TOS
+	start_date = 1603.5.1
+	end_date = 1868.1.1
+}
+substate = {
+	first = TKG
+	second = CHO
+	start_date = 1603.5.1
+	end_date = 1868.1.1
+}
+substate = {
+	first = TKG
+	second = SAT
+	start_date = 1603.5.1
+	end_date = 1868.1.1
+}
+substate = {
+	first = TKG
+	second = JAP
+	start_date = 1603.5.1
+	end_date = 1868.1.1
+}
+
+# Denmark-Holstein
+vassal = {
+	first = DEN
+	second = HOL
+	start_date = 1773.1.1
+	end_date = 1864.10.30
+}
+
+# NET-LUX
+vassal = {
+	first = NET
+	second = LUX
+	start_date = 1815.1.1
+	end_date = 1890.11.23
+}
+
+# USA-Liberia
+vassal = {
+	first = USA
+	second = LIB
+	start_date = 1822.1.1
+	end_date = 1847.7.26
+}
+
+# United Kingdom-Hanover
+vassal = {
+	first = ENG
+	second = HAN
+	start_date = 1814.10.1
+	end_date = 1837.1.1
+}
+
+# United Kingdom-Ionian Islands
+vassal = {
+	first = ENG
+	second = ION
+	start_date = 1815.11.9
+	end_date = 1864.1.1
+}
+
+# Ottoman Empire-Wallachia
+vassal = {
+	first = TUR
+	second = WAL
+	start_date = 1836.1.1
+	end_date = 1859.1.24	# Reunification of Wallachia and Moldavia
+}
+
+# Ottoman Empire-Moldavia
+vassal = {
+	first = TUR
+	second = MOL
+	start_date = 1836.1.1
+	end_date = 1859.1.24	# Reunification of Wallachia and Moldavia
+}
+
+#######################
+#        INDIA        #
+#######################
+
+# United Kingdom-Awadh
+vassal = {
+	first = ENG
+	second = AWA
+	start_date = 1801.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Bastar
+vassal = {
+	first = ENG
+	second = BAS
+	start_date = 1836.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Beroda
+vassal = {
+	first = ENG
+	second = BER
+	start_date = 1802.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Bikaner
+vassal = {
+	first = ENG
+	second = BIK
+	start_date = 1818.5.9
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Bhopal
+vassal = {
+	first = ENG
+	second = BHO
+	start_date = 1818.2.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Bundelkhand
+vassal = {
+	first = ENG
+	second = BUN
+	start_date = 1817.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Hyderabad
+vassal = {
+	first = ENG
+	second = HYD
+	start_date = 1798.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Indore
+vassal = {
+	first = ENG
+	second = IND
+	start_date = 1818.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Jaipur
+vassal = {
+	first = ENG
+	second = JAI
+	start_date = 1818.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Jaisalmer
+vassal = {
+	first = ENG
+	second = JAS
+	start_date = 1818.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Jodhpur
+vassal = {
+	first = ENG
+	second = JOD
+	start_date = 1818.1.1
+	end_date = 1889.1.1
+}
+
+#vassal = {
+#	first = PAN
+#	second = KAS
+#	start_date = 1780.1.1
+#	end_date = 1949.1.1
+#}
+
+# United Kingdom-Mewar
+vassal = {
+	first = ENG
+	second = MEW
+	start_date = 1818.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Mysore
+vassal = {
+	first = ENG
+	second = MYS
+	start_date = 1799.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Nagpur
+vassal = {
+	first = ENG
+	second = NAG
+	start_date = 1816.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Orissa
+vassal = {
+	first = ENG
+	second = ORI
+	start_date = 1803.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Travancore
+vassal = {
+	first = ENG
+	second = TRA
+	start_date = 1795.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Gwalior
+vassal = {
+	first = ENG
+	second = GWA
+	start_date = 1836.1.1
+	end_date = 1889.1.1
+}
+
+# United Kingdom-Kutch
+vassal = {
+	first = ENG
+	second = KUT
+	start_date = 1815.1.1
+	end_date = 1889.1.1
+}
+
+# Dai Nam-Cambodia
+vassal = {
+	first = DAI
+	second = CAM
+	start_date = 1807.1.1
+	end_date = 1861.1.1
+}
+
+
+#########1861
+# Siam - Cambodia
+vassal = {
+	first = SIA
+	second = CAM
+	start_date = 1861.1.1
+	end_date = 1936.1.1
+}
+
+# UK - KAS
+vassal = {
+	first = ENG
+	second = KAS
+	start_date = 1861.1.1
+	end_date = 1936.1.1
+}
+
+# OE - Hejaz 
+vassal = {
+	first = TUR
+	second = HDJ
+	start_date = 1861.1.1
+	end_date = 1936.1.1
+}
+
+####USA####
+
+vassal = {
+	first = USA
+	second = PUE
+		start_date = 1889.1.1
+		end_date = 99999.1.1
+		}
+
+####WORLD WAR 1####
+
+##British Empire##
+
+# UK - Yemen
+vassal = {
+	first = ENG
+	second = YEM
+	start_date = 1903.1.1
+	end_date = 1950.1.1
+}
+
+# UK - Bhutan
+vassal = {
+	first = ENG
+	second = BHU
+	start_date = 1903.1.1
+	end_date = 1950.1.1
+}
+
+# UK - Nepal
+vassal = {
+	first = ENG
+	second = NEP
+	start_date = 1903.1.1
+	end_date = 1950.1.1
+}
+
+##US Puppets##
+
+vassal = {
+	first = USA
+	second = CUB
+	start_date = 1903.1.1
+	end_date = 1946.1.1
+}
+
+####WORLD WAR 2####
+
+##British Empire##
+
+# UK - Newfoundland
+vassal = {
+	first = ENG
+	second = NEW
+	start_date = 1903.1.1
+	end_date = 1946.1.1
+}
+
+# UK - Iraq
+vassal = {
+	first = ENG
+	second = IRQ
+	start_date = 1903.1.1
+	end_date = 1947.1.1
+}
+
+# UK - Oman
+vassal = {
+	first = ENG
+	second = OMA
+	start_date = 1903.1.1
+	end_date = 1950.1.1
+}
+
+# UK - Egypt
+vassal = {
+	first = ENG
+	second = EGY
+	start_date = 1903.1.1
+	end_date = 1954.1.1
+}
+##Japanese Empire##
+
+vassal = {
+	first = JAP
+	second = KOR
+	start_date = 1910.1.1
+	end_date = 1945.1.1
+}
+
+#vassal = {
+#	first = JAP
+#	second = NCN
+#	start_date = 1895.1.1
+#	end_date = 1938.1.1
+#}
+
+vassal = {
+	first = JAP
+	second = MCK
+	start_date = 1923.1.1
+	end_date = 1945.1.1
+}
+
+vassal = {
+	first = JAP
+	second = SXI
+	start_date = 1923.1.1
+	end_date = 1945.1.1
+}
+
+####Cold War####
+
+##US Puppets##
+
+vassal = {
+	first = USA
+	second = JAP
+	start_date = 1945.5.1
+	end_date = 1970.1.1
+}
+
+vassal = {
+	first = USA
+	second = GER
+	start_date = 1945.5.1
+	end_date = 1949.1.1
+}
+
+##USSR Puppets##
+
+
+vassal = {
+	first = RUS
+	second = DDR
+	start_date = 1945.5.1
+	end_date = 1949.1.1
+}
+
+vassal = {
+	first = RUS
+	second = MGL
+	start_date = 1945.5.1
+	end_date = 1949.1.1
+}
+
+##MODERN##
+
+#Abkhazia-Russia
+vassal = {
+	first = RUS
+	second = ABK
+	start_date = 1992.1.1
+	end_date = 9999.1.1
+		}
+
+
+
+#Denmark-Greenland
+vassal = {
+	first = DEN
+	second = GRL
+	start_date = 1979.1.1
+	end_date = 9999.1.1
+		}
+
+#Israeli-Palestinian Situation
+vassal = {
+	first = ISR
+	second = PAL
+	start_date = 1973.1.1
+	end_date = 2050.1.1
+		}
+
+vassal = {
+	first = USA
+	second = MIC
+	start_date = 1979.1.1
+	end_date = 9999.1.1
+		}
+
+vassal = {
+	first = USA
+	second = PAU
+	start_date = 1994.1.1
+	end_date = 9999.1.1
+		}
+
+vassal = {
+	first = USA
+	second = MAS
+	start_date = 1979.1.1
+	end_date = 9999.1.1
+		}
+
+
+#China semi-autonomous states following uprising
+vassal = {
+	first = CHI
+	second = TIB
+	start_date = 2016.1.1
+	end_date = 3000.1.1
+}
+
+vassal = {
+	first = CHI
+	second = XIN
+	start_date = 2016.1.1
+	end_date = 3000.1.1
+}
+
+vassal = {
+	first = CHI
+	second = HNG
+	start_date = 1997.1.1
+	end_date = 3000.1.1
+}
+vassal = {
+	first = CHI
+	second = MCU
+	start_date = 1999.1.1
+	end_date = 3000.1.1
+}
+
+######################
+#added by justrubbish#
+######################
+
+###############
+#Enlightenment#
+###############
+
+#Miscellaneous
+
+vassal = {
+	first = SWI
+	second = NEU
+	start_date = 1603.1.1
+	end_date = 1707.1.1
+}
+
+########
+#Empire#
+########
+
+#Miscellaneous
+
+vassal = {
+	first = PRU
+	second = NEU
+	start_date = 1607.1.1
+	end_date = 1806.1.1
+}
+
+################
+#Napoleonic Era#
+################
+
+#Italy
+vassal = {
+	first = FRA
+	second = PIE
+	start_date = 1800.1.1
+	end_date = 1802.9.11
+}
+vassal = {
+	first = FRA
+	second = GEN
+	start_date = 1800.1.1
+	end_date = 1805.1.1
+}
+vassal = {
+	first = FRA
+	second = PAR
+	start_date = 1800.1.1
+	end_date = 1805.1.1
+}
+
+#Confederation of the Rhine
+vassal = {
+	first = FRA
+	second = BAV
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = WUR
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = HZP
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = BAD
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = FRM
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = GHB
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = NAS
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = HES
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = LIP
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = WES
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = SAX
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = WUZ
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = MEC
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = COB
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = MEI
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = WEI
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = ANH
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+
+#Miscellaneous
+
+vassal = {
+	first = FRA
+	second = SWI
+	start_date = 1801.1.1
+	end_date = 1815.1.1
+}
+
+vassal = {
+	first = FRA
+	second = POL
+	start_date = 1807.1.1
+	end_date = 1815.1.1
+}
+
+vassal = {
+	first = FRA
+	second = DZG
+	start_date = 1807.1.1
+	end_date = 1815.1.1
+}
+vassal = {
+	first = FRA
+	second = NAP
+	start_date = 1806.1.1
+	end_date = 1815.1.1
+}
+
+vassal = {
+	first = FRA
+	second = NEU
+	start_date = 1807.1.1
+	end_date = 1815.1.1
+}
+
+substate = {
+	first = RUS
+	second = FIN
+	start_date = 1809.1.1
+	end_date = 1917.12.6
+}
+
+################
+#Victorian Era #
+################
+
+#Miscellaneous
+vassal = {
+	first = RUS
+	second = POL
+	start_date = 1815.1.1
+	end_date = 1863.1.1
+}

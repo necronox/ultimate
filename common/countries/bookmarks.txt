@@ -1,0 +1,111 @@
+bookmark =
+{
+	name = "MYSTRAS_NAME"
+	desc = "MYSTRAS_DESC"
+	date = 1603.5.30
+	cameraX = 2950 
+	cameraY = 1550
+}
+
+
+
+bookmark =
+{
+	name = "Enlightenment"
+	desc = "BM_ENLIGHTDESC"
+	date = 1604.1.1
+	cameraX = 2950 
+	cameraY = 1550
+}
+
+bookmark =
+{
+	name = "Empire"
+	desc = "BM_EMPDESC"
+	date = 1714.1.1
+	cameraX = 2950 
+	cameraY = 1550
+}
+
+bookmark =
+{
+	name = "AMWI_NAME"
+	desc = "AMWI_DESC"
+	date = 1764.1.1
+	cameraX = 1400 
+	cameraY = 1600
+}
+
+bookmark =
+{
+	name = "Rise of Napoleon"
+	desc = "BM_NAPODESC"
+	date = 1800.1.1
+	cameraX = 2950 
+	cameraY = 1550
+}
+
+
+
+bookmark =
+{
+	name = "GC_NAME"
+	desc = "GC_DESC"
+	date = 1836.1.1
+	cameraX = 2950 
+	cameraY = 1550
+}
+
+bookmark =
+{
+	name = "ACW_NAME"
+	desc = "ACW_DESC"
+	date = 1861.7.1
+	cameraX = 1270 
+	cameraY = 1450
+}
+
+bookmark =
+{
+	name = "WW1_NAME"
+	desc = "WW1_DESC"
+	date = 1914.8.20
+	cameraX = 2950 
+	cameraY = 1550
+}
+
+bookmark =
+{
+	name = "WW2_NAME"
+	desc = "WW2_DESC"
+	date = 1939.9.1
+	cameraX = 3000 
+	cameraY = 1600
+}
+
+bookmark =
+{
+	name = "CWB_NAME"
+	desc = "CWB_DESC"
+	date = 1946.5.6
+	cameraX = 3000 
+	cameraY = 1600
+}
+
+bookmark =
+{
+	name = "MOD_NAME"
+	desc = "MOD_DESC"
+	date = 2000.1.1
+	cameraX = 1400 
+	cameraY = 1600
+}
+
+bookmark =
+{
+	name = "FUT_NAME"
+	desc = "FUT_DESC"
+	date = 2023.1.1
+	cameraX = 3000 
+	cameraY = 1600
+}

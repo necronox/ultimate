@@ -1,0 +1,14 @@
+owner = DEN
+controller = DEN
+add_core = DEN
+add_core = SCA
+	add_core = GRL
+trade_goods = fish
+life_rating = 35
+colonial = 2
+
+1979.1.1 = {
+	owner = GRL
+	controller = GRL
+	colonial = 0
+		}

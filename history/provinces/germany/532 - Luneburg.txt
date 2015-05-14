@@ -1,0 +1,43 @@
+owner = HRE
+controller = HRE
+add_core = HAN
+add_core = HRE
+add_core = GER
+
+1604.1.1 = { 
+	owner = HAN
+	controller = HAN
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+1710.1.1 = {
+	controller = BRA
+	owner = BRA
+	add_core = BRA
+		}
+
+1800.1.1 = {
+	controller = HAN
+	owner = HAN
+	add_core = HAN
+		}
+1812.1.1 = {
+owner = WES
+controller = WES
+		}
+1815.1.1 = {
+owner = HAN
+controller = HAN
+		}
+
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+trade_goods = cattle
+life_rating = 40
+1861.1.1 = { railroad = 3 }

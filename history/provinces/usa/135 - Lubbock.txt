@@ -1,0 +1,40 @@
+owner = CMC
+controller = CMC
+add_core = CMC
+
+1836.1.1 = {
+owner = MEX
+controller = MEX
+add_core = TEX
+add_core = MEX
+colonial = 0
+		}
+
+trade_goods = sulphur
+life_rating = 35
+1867.1.1 = {
+	owner = USA
+	controller = USA
+		}
+
+1914.1.1 = {
+add_core = MEX
+		}
+		
+1919.1.1 = {
+remove_core = MEX
+		}
+		
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}
+
+1861.1.1 = {
+	controller = CSA
+	owner = CSA
+	add_core = CSA
+	add_core = USA
+	remove_core = MEX
+}

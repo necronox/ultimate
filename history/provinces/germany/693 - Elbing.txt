@@ -1,0 +1,27 @@
+owner = PLC
+controller = PLC
+add_core = PRU
+add_core = PLC
+add_core = GER
+
+1714.1.1 = {
+	add_core = PRU
+	owner = PRU
+	controller = PRU
+		}
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+add_core = POL
+add_core = PLC
+trade_goods = cattle
+life_rating = 40
+1861.1.1 = { railroad = 3 }
+
+#End of WW2
+1945.5.1 = {
+	owner = POL
+	controller = POL
+	add_core = POL
+		}

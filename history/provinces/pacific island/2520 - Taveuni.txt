@@ -1,0 +1,11 @@
+trade_goods = fish
+life_rating = 15
+add_core = FIJ
+1874.1.1 = {
+	owner = ENG
+	controller = ENG
+		}
+1970.1.1 = {
+	owner = FIJ
+	controller FIJ
+		}

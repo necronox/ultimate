@@ -1,0 +1,19 @@
+﻿owner = ANG
+controller = ANG
+1707.1.1 = {
+owner = ENG
+controller = ENG
+add_core = ENG
+add_core = ESX
+    }
+add_core = ANG
+add_core = ENG
+2015.1.1 = {
+owner = ANG
+controller = ANG
+            }
+trade_goods = coal
+life_rating = 35
+1861.1.1 = {
+    railroad = 3
+}

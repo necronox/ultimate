@@ -1,0 +1,14 @@
+trade_goods = grain
+life_rating = 15
+
+1903.1.1 = {
+		owner = ENG
+		controller = ENG
+		colonial = 2
+		}
+add_core = SRL
+1960.1.1 = {
+	owner = SRL
+	controller = SRL
+	colonial = 0
+		}

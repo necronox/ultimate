@@ -1,0 +1,44 @@
+1700.1.1 = {
+owner = FRA
+controller = FRA
+	colonial = 2
+	}
+1764.1.1 = {
+owner = SPA
+controller = SPA
+colonial = 2
+		}
+1800.1.1 = {
+owner = FRA
+controller = FRA
+colonial = 2
+		}
+1803.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	colonial = 0
+		}
+add_core = CHE
+trade_goods = grain
+life_rating = 35
+1867.1.1 = {
+	owner = USA
+	controller = USA
+		}
+1861.1.1 = {
+	controller = CSA
+	owner = CSA
+	add_core = CSA
+	remove_core = CHE
+}
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}
+
+1920.1.1 = { 
+	railroad = 5
+	colonial = 0
+}

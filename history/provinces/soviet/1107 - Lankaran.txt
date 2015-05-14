@@ -1,0 +1,23 @@
+owner = PER
+controller = PER
+
+1836.1.1 = {
+owner = RUS
+controller = RUS
+add_core = RUS
+		}
+add_core = AZB
+trade_goods = grain
+life_rating = 35
+#There will be blood
+1874.1.1 = {
+	trade_goods = oil
+		}
+
+1992.1.1 = {
+		owner = AZB
+		controller = AZB
+		colonial = 0
+		}
+
+

@@ -1,0 +1,14 @@
+owner = NET
+controller = NET
+trade_goods = grain
+life_rating = 30
+colonial = 2
+
+1946.1.1= {
+add_core = SUR
+}
+
+1975.11.25 = {
+owner = SUR
+controller = SUR
+}

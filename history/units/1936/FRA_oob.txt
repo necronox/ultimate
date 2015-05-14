@@ -1,0 +1,267 @@
+army = {
+	name = "Le French Great Army"
+	location = 418
+	regiment = {
+		name= "Le home army"
+		type = guard
+		home = 418
+	}
+	regiment = {
+		name= "Le home army"
+		type = guard
+		home = 418
+	}
+	regiment = {
+		name= "Le home army"
+		type = guard
+		home = 418
+	}
+	regiment = {
+		name= "Le home army"
+		type = guard
+		home = 418
+	}
+	regiment = {
+		name= "Le home army"
+		type = guard
+		home = 418
+	}
+	regiment = {
+		name= "Le home army"
+		type = guard
+		home = 418
+	}
+}
+
+army = {
+	name = "1er armée"
+	leader = {
+		name = "Louis"
+		type = land
+		personality = aggressive
+		background = school_of_offense
+		date="1939.1.1"
+			}
+	location = 425
+	regiment = {
+		name= "Engineer Regiment"
+		type = engineer
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+}
+
+army = {
+	name = "2em armée"
+	leader = {
+		name = "Philip Petrain"
+		type = land
+		personality = aggressive
+		background = school_of_offense
+		date="1939.1.1"
+			}
+	location = 426
+	regiment = {
+		name= "Engineer Regiment"
+		type = engineer
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+}
+
+army = {
+	name = "3em armée"
+	location = 472
+	regiment = {
+		name= "Engineer Regiment"
+		type = engineer
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+	regiment = {
+		name= "Regiment D'infantrie"
+		type = infantry
+	}
+}

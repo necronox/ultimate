@@ -1,0 +1,18 @@
+#CrashTest
+country_event = {
+ 	id = 5000010
+ 	title = "Crash Test"
+ 	desc = "Crash Test"
+ 	picture = "windsor"
+is_triggered_only = yes
+ 
+ option = {
+ name = "OK"
+any_pop = {
+
+militancy = 8
+consciousness = 8
+		} 
+ 	}
+ 
+ }	

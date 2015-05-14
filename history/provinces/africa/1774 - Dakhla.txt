@@ -1,0 +1,16 @@
+trade_goods = wool
+life_rating = 10
+1903.1.1 = {
+	owner = SPA
+	controller = SPA
+		}
+
+
+1956.1.1 = {
+add_core = MOR
+	owner = MOR
+	controller = MOR
+	colonial = 0
+		}
+
+

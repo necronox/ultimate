@@ -1,0 +1,2018 @@
+# Decolonisation Start
+country_event = {
+	id = 150000
+	title = "EVTNAME150000"
+	desc = "EVTDESC150000"
+		picture = "decolonisation"
+
+	trigger = {
+		year = 1947
+		civilized = yes
+		colonial_nation = yes
+		NOT = {
+			tag = BRC
+			OR = {
+				has_country_flag = 					decolonisation_in_progress
+			has_country_flag = had_decolonisation
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+	}
+
+	option = {
+		name = "EVTOPTA150000"
+		add_country_modifier = {
+			name = global_colonial_agitation
+			duration = -1
+		}
+		any_pop = {
+			limit = {
+				location = {
+					is_colonial = yes
+				}
+			}
+			militancy = 6
+			consciousness = 6
+		}
+		set_global_flag = decolonisation_somewhere
+		set_country_flag = decolonisation_in_progress
+	}
+}
+
+# Suez Crisis
+country_event = {
+	id = 150001
+	title = "EVTNAME150001"
+	desc = "EVTDESC150001"
+		picture = "Expansion"
+
+	trigger = {
+		has_country_flag = decolonisation_in_progress
+		NOT = {
+			has_country_flag = had_suezcrisis
+		}
+		OR = {
+		1755 = { owner = { in_sphere = THIS } }
+		owns = 1755 }
+	}
+
+	mean_time_to_happen = {
+		months = 40
+	}
+
+	option = {
+		name = "EVTOPTA150001"
+	release_vassal = EGY
+	prestige = -50
+	1755 = {
+		secede_province = EGY
+			}
+	diplomatic_influence = {
+				who = EGY
+				value = -100
+						}
+			relation = {
+				who = EGY
+				value = 50
+			}
+		
+	}
+	option = {
+		name = "EVTOPTB150001"
+		release_vassal = EGY
+		war = {
+			target = EGY
+			attacker_goal = {
+				casus_belli = add_to_sphere
+			}
+			
+			defender_goal = {
+				casus_belli = humiliate
+			}
+	}
+
+	}
+}
+
+####END OF DECOLONISATION - NO MORE COLONIES####
+
+country_event = {
+	id = 150002
+	title = "EVTNAME150002"
+	desc = "EVTDESC150002"
+		picture = "decolonisation"
+
+	trigger = {
+			NOT = {
+				has_country_flag = had_decolonisation
+				any_state = {
+				is_colonial = yes
+				}
+			}
+			has_country_flag = decolonisation_in_progress
+	}
+
+		option = {
+		name = "EVTOPTA150002"
+			add_country_modifier = {
+			name = post_colonial_nationmod
+			duration = 91250 }
+			remove_country_modifier = global_colonial_agitation
+			set_country_flag = had_decolonisation
+			clr_country_flag = decolonisation_in_progress
+			}
+	}
+
+#African cores
+#Angola
+country_event = {
+	id = 3000001
+	title = african_independence_title_1
+	desc = african_independence_desc_1
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1999
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1999 = {
+			add_core = AGL
+		}
+		2000 = {
+			add_core = AGL
+		}
+		1999 = {
+			add_core = AGL
+		}
+		2000 = {
+			add_core = AGL
+		}
+		2001 = {
+			add_core = AGL
+		}
+		2002 = {
+			add_core = AGL
+		}
+		2003 = {
+			add_core = AGL
+		}
+		2004 = {
+			add_core = AGL
+		}
+		2005 = {
+			add_core = AGL
+		}
+		2006 = {
+			add_core = AGL
+		}
+		2007 = {
+			add_core = AGL
+		}
+		2008 = {
+			add_core = AGL
+		}
+		2009 = {
+			add_core = AGL
+		}
+		2010 = {
+			add_core = AGL
+		}
+		2011 = {
+			add_core = AGL
+		}
+	}
+}
+#Benin
+country_event = {
+	id = 3000002
+	title = african_independence_title_2
+	desc = african_independence_desc_2
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1919
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1919 = {
+			add_core = BEN
+		}
+		2020 = {
+			add_core = BEN
+		}
+		1921 = {
+			add_core = BEN
+		}
+		2022 = {
+			add_core = BEN
+		}
+	}
+}
+#Burundi
+country_event = {
+	id = 3000003
+	title = african_independence_title_3
+	desc = african_independence_desc_3
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2035
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2035 = {
+			add_core = BRD
+		}
+	}
+}
+#Botswana
+country_event = {
+	id = 3000004
+	title = african_independence_title_4
+	desc = african_independence_desc_4
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2075
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2075 = {
+			add_core = BTS
+		}
+		2076 = {
+			add_core = BTS
+		}
+		2077 = {
+			add_core = BTS
+		}
+	}
+}
+#Central African Republic
+country_event = {
+	id = 3000005
+	title = african_independence_title_5
+	desc = african_independence_desc_5
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1965
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1965 = {
+			add_core = CAR
+		}
+		1966 = {
+			add_core = CAR
+		}
+		1967 = {
+			add_core = CAR
+		}
+		1968 = {
+			add_core = CAR
+		}
+		1969 = {
+			add_core = CAR
+		}
+		1970 = {
+			add_core = CAR
+		}
+		1971 = {
+			add_core = CAR
+		}
+	}
+}
+#Chad
+country_event = {
+	id = 3000006
+	title = african_independence_title_6
+	desc = african_independence_desc_6
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1818
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1818 = {
+			add_core = CHD
+		}
+		1819 = {
+			add_core = CHD
+		}
+		1820 = {
+			add_core = CHD
+		}
+		1821 = {
+			add_core = CHD
+		}
+		1822 = {
+			add_core = CHD
+		}
+		1823 = {
+			add_core = CHD
+		}
+		1824 = {
+			add_core = CHD
+		}
+		1825 = {
+			add_core = CHD
+		}
+		1826 = {
+			add_core = CHD
+		}
+	}
+}
+#Cameroon
+country_event = {
+	id = 3000007
+	title = african_independence_title_7
+	desc = african_independence_desc_7
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1959
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1959 = {
+			add_core = CMR
+		}
+		1960 = {
+			add_core = CMR
+		}
+		1961 = {
+			add_core = CMR
+		}
+		1962 = {
+			add_core = CMR
+		}
+		1963 = {
+			add_core = CMR
+		}
+		1964 = {
+			add_core = CMR
+		}
+	}
+}
+#Comoros
+country_event = {
+	id = 3000008
+	title = african_independence_title_8
+	desc = african_independence_desc_8
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2123
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2123 = {
+			add_core = COM
+		}
+	}
+}
+#Ivory Coast
+country_event = {
+	id = 3000009
+	title = african_independence_title_9
+	desc = african_independence_desc_9
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1892
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1892 = {
+			add_core = CTD
+		}
+		1893 = {
+			add_core = CTD
+		}
+		1894 = {
+			add_core = CTD
+		}
+		1895 = {
+			add_core = CTD
+		}
+		1896 = {
+			add_core = CTD
+		}
+		1897 = {
+			add_core = CTD
+		}
+		1898 = {
+			add_core = CTD
+		}
+		1899 = {
+			add_core = CTD
+		}
+		1900 = {
+			add_core = CTD
+		}
+	}
+}
+#Djibouti
+country_event = {
+	id = 3000010
+	title = african_independence_title_10
+	desc = african_independence_desc_10
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1875
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1875 = {
+			add_core = DJI
+		}
+	}
+}
+#Eritrea
+country_event = {
+	id = 3000011
+	title = african_independence_title_11
+	desc = african_independence_desc_11
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1848
+		year = 1990
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = event_option_alright
+		1848 = {
+			add_core = ERI
+		}
+		1849 = {
+			add_core = ERI
+		}
+		1850 = {
+			add_core = ERI
+		}
+		1851 = {
+			add_core = ERI
+		}
+	}
+}
+#Equatorial Guinea 
+country_event = {
+	id = 3000012
+	title = african_independence_title_12
+	desc = african_independence_desc_12
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1972
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1972 = {
+			add_core = EQG
+		}
+		1973 = {
+			add_core = EQG
+		}
+	}
+}
+#Fatso
+country_event = {
+	id = 3000013
+	title = african_independence_title_13
+	desc = african_independence_desc_13
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1901
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1901 = {
+			add_core = FAT
+		}
+		1902 = {
+			add_core = FAT
+		}
+		1903 = {
+			add_core = FAT
+		}
+		1904 = {
+			add_core = FAT
+		}
+		1905 = {
+			add_core = FAT
+		}
+		1906 = {
+			add_core = FAT
+		}
+	}
+}
+#Gabon
+country_event = {
+	id = 3000014
+	title = african_independence_title_14
+	desc = african_independence_desc_14
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1972
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1972 = {
+			add_core = GAB
+		}
+		1973 = {
+			add_core = GAB
+		}
+		1974 = {
+			add_core = GAB
+		}
+		1975 = {
+			add_core = GAB
+		}
+		1976 = {
+			add_core = GAB
+		}
+	}
+}
+#Gambia
+country_event = {
+	id = 3000015
+	title = african_independence_title_15
+	desc = african_independence_desc_15
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1785
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1785 = {
+			add_core = GAM
+		}
+	}
+}
+#Ghana
+country_event = {
+	id = 3000016
+	title = african_independence_title_16
+	desc = african_independence_desc_16
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1907
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1907 = {
+			add_core = GHA
+		}
+		1908 = {
+			add_core = GHA
+		}
+		1909 = {
+			add_core = GHA
+		}
+		1910 = {
+			add_core = GHA
+		}
+		1911 = {
+			add_core = GHA
+		}
+		1912 = {
+			add_core = GHA
+		}
+		1913 = {
+			add_core = GHA
+		}
+	}
+}
+#Kenya
+country_event = {
+	id = 3000017
+	title = african_independence_title_17
+	desc = african_independence_desc_17
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2024
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2024 = {
+			add_core = KNA
+		}
+		2025 = {
+			add_core = KNA
+		}
+		2026 = {
+			add_core = KNA
+		}
+		2027 = {
+			add_core = KNA
+		}
+		2028 = {
+			add_core = KNA
+		}
+		2029 = {
+			add_core = KNA
+		}
+		2030 = {
+			add_core = KNA
+		}
+		2031 = {
+			add_core = KNA
+		}
+		2032 = {
+			add_core = KNA
+		}
+	}
+}
+#Lesotho
+country_event = {
+	id = 3000018
+	title = african_independence_title_18
+	desc = african_independence_desc_18
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2104
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2104 = {
+			add_core = LES
+		}
+	}
+}
+#Mauritania
+country_event = {
+	id = 3000019
+	title = african_independence_title_19
+	desc = african_independence_desc_19
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1775
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1775 = {
+			add_core = MAU
+		}
+		1776 = {
+			add_core = MAU
+		}
+		1777 = {
+			add_core = MAU
+		}
+		1778 = {
+			add_core = MAU
+		}
+		1779 = {
+			add_core = MAU
+		}
+		1780 = {
+			add_core = MAU
+		}
+		1781 = {
+			add_core = MAU
+		}
+		1782 = {
+			add_core = MAU
+		}
+	}
+}
+#Mali
+country_event = {
+	id = 3000020
+	title = african_independence_title_20
+	desc = african_independence_desc_20
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1794
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1794 = {
+			add_core = MLI
+		}
+		1795 = {
+			add_core = MLI
+		}
+		1796 = {
+			add_core = MLI
+		}
+		1797 = {
+			add_core = MLI
+		}
+		1798 = {
+			add_core = MLI
+		}
+		1799 = {
+			add_core = MLI
+		}
+		1800 = {
+			add_core = MLI
+		}
+		1801 = {
+			add_core = MLI
+		}
+		1802 = {
+			add_core = MLI
+		}
+		1803 = {
+			add_core = MLI
+		}
+		1804 = {
+			add_core = MLI
+		}
+		1805 = {
+			add_core = MLI
+		}
+		1806 = {
+			add_core = MLI
+		}
+		1807 = {
+			add_core = MLI
+		}
+	}
+}
+#Mozamique
+country_event = {
+	id = 3000021
+	title = african_independence_title_21
+	desc = african_independence_desc_21
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2049
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2049 = {
+			add_core = MOZ
+		}
+		2050 = {
+			add_core = MOZ
+		}
+		2051 = {
+			add_core = MOZ
+		}
+		2052 = {
+			add_core = MOZ
+		}
+		2053 = {
+			add_core = MOZ
+		}
+		2054 = {
+			add_core = MOZ
+		}
+		2055 = {
+			add_core = MOZ
+		}
+		2056 = {
+			add_core = MOZ
+		}
+		2057 = {
+			add_core = MOZ
+		}
+		2058 = {
+			add_core = MOZ
+		}
+		2059 = {
+			add_core = MOZ
+		}
+		2060 = {
+			add_core = MOZ
+		}
+		2061 = {
+			add_core = MOZ
+		}
+		2062 = {
+			add_core = MOZ
+		}
+		2063 = {
+			add_core = MOZ
+		}
+		2064 = {
+			add_core = MOZ
+		}
+		2065 = {
+			add_core = MOZ
+		}
+	}
+}
+#Malawi
+country_event = {
+	id = 3000022
+	title = african_independence_title_22
+	desc = african_independence_desc_22
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2019
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2019 = {
+			add_core = MWI
+		}
+	}
+}
+#Nigeria
+country_event = {
+	id = 3000023
+	title = african_independence_title_23
+	desc = african_independence_desc_23
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1941
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1923 = {
+			add_core = NGA
+		}
+		1924 = {
+			add_core = NGA
+		}
+		1925 = {
+			add_core = NGA
+		}
+		1926 = {
+			add_core = NGA
+		}
+		1927 = {
+			add_core = NGA
+		}
+		1928 = {
+			add_core = NGA
+		}
+		1929 = {
+			add_core = NGA
+		}
+		1930 = {
+			add_core = NGA
+		}
+		1931 = {
+			add_core = NGA
+		}
+		1932 = {
+			add_core = NGA
+		}
+		1933 = {
+			add_core = NGA
+		}
+		1934 = {
+			add_core = NGA
+		}
+		1935 = {
+			add_core = NGA
+		}
+		1936 = {
+			add_core = NGA
+		}
+		1937 = {
+			add_core = NGA
+		}
+		1938 = {
+			add_core = NGA
+		}
+		1939 = {
+			add_core = NGA
+		}
+		1940 = {
+			add_core = NGA
+		}
+		1941 = {
+			add_core = NGA
+		}
+		1942 = {
+			add_core = NGA
+		}
+		1943 = {
+			add_core = NGA
+		}
+		1944 = {
+			add_core = NGA
+		}
+		1945 = {
+			add_core = NGA
+		}
+		1946 = {
+			add_core = NGA
+		}
+		1947 = {
+			add_core = NGA
+		}
+		1948 = {
+			add_core = NGA
+		}
+		1949 = {
+			add_core = NGA
+		}
+		1950 = {
+			add_core = NGA
+		}
+		1951 = {
+			add_core = NGA
+		}
+		1952 = {
+			add_core = NGA
+		}
+		1953 = {
+			add_core = NGA
+		}
+	}
+}
+#Niger
+country_event = {
+	id = 3000024
+	title = african_independence_title_24
+	desc = african_independence_desc_24
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1808
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1808 = {
+			add_core = NGR
+		}
+		1809 = {
+			add_core = NGR
+		}
+		1810 = {
+			add_core = NGR
+		}
+		1811 = {
+			add_core = NGR
+		}
+		1812 = {
+			add_core = NGR
+		}
+		1813 = {
+			add_core = NGR
+		}
+		1814 = {
+			add_core = NGR
+		}
+		1815 = {
+			add_core = NGR
+		}
+		1816 = {
+			add_core = NGR
+		}
+		1817 = {
+			add_core = NGR
+		}
+	}
+}
+#Namibia
+country_event = {
+	id = 3000025
+	title = african_independence_title_25
+	desc = african_independence_desc_25
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2078
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2078 = {
+			add_core = NMB
+		}
+		2079 = {
+			add_core = NMB
+		}
+		2080 = {
+			add_core = NMB
+		}
+		2081 = {
+			add_core = NMB
+		}
+		2082 = {
+			add_core = NMB
+		}
+		2083 = {
+			add_core = NMB
+		}
+		2084 = {
+			add_core = NMB
+		}
+		2085 = {
+			add_core = NMB
+		}
+		2086 = {
+			add_core = NMB
+		}
+	}
+}
+#Republic of Congo
+country_event = {
+	id = 3000026
+	title = african_independence_title_26
+	desc = african_independence_desc_26
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1977
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1977 = {
+			add_core = ROC
+		}
+		1978 = {
+			add_core = ROC
+		}
+		1979 = {
+			add_core = ROC
+		}
+		1980 = {
+			add_core = ROC
+		}
+	}
+}
+#Congo Free State
+country_event = {
+	id = 3000040
+	title = african_independence_title_26
+	desc = african_independence_desc_26
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1982
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1982 = {
+			add_core = CNG
+		}
+		1983 = {
+			add_core = CNG
+		}
+		1984 = {
+			add_core = CNG
+		}
+		1985 = {
+			add_core = CNG
+		}
+		1986 = {
+			add_core = CNG
+		}
+		1987 = {
+			add_core = CNG
+		}
+		1988 = {
+			add_core = CNG
+		}
+		1989 = {
+			add_core = CNG
+		}
+		1990 = {
+			add_core = CNG
+		}
+		1991 = {
+			add_core = CNG
+		}
+		1992 = {
+			add_core = CNG
+		}
+		1993 = {
+			add_core = CNG
+		}
+		1994 = {
+			add_core = CNG
+		}
+		1995 = {
+			add_core = CNG
+		}
+		1996 = {
+			add_core = CNG
+		}
+		1997 = {
+			add_core = CNG
+		}
+		1998 = {
+			add_core = CNG
+		}
+	}
+}
+#Rwanda
+country_event = {
+	id = 3000027
+	title = african_independence_title_27
+	desc = african_independence_desc_27
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2034
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2034 = {
+			add_core = RWA
+		}
+	}
+}
+#Senegal
+country_event = {
+	id = 3000028
+	title = african_independence_title_28
+	desc = african_independence_desc_28
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1783
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1783 = {
+			add_core = SNL
+		}
+		1784 = {
+			add_core = SNL
+		}
+		1785 = {
+			add_core = SNL
+		}
+		1786 = {
+			add_core = SNL
+		}
+		1787 = {
+			add_core = SNL
+		}
+		1788 = {
+			add_core = SNL
+		}
+		1789 = {
+			add_core = SNL
+		}
+		1790 = {
+			add_core = SNL
+		}
+		1791 = {
+			add_core = SNL
+		}
+		1792 = {
+			add_core = SNL
+		}
+		1793 = {
+			add_core = SNL
+		}
+	}
+}
+#Somalia
+country_event = {
+	id = 3000029
+	title = african_independence_title_29
+	desc = african_independence_desc_29
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1868
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1868 = {
+			add_core = SOM
+		}
+		1869 = {
+			add_core = SOM
+		}
+		1870 = {
+			add_core = SOM
+		}
+		1871 = {
+			add_core = SOM
+		}
+		1872 = {
+			add_core = SOM
+		}
+		1873 = {
+			add_core = SOM
+		}
+		1874 = {
+			add_core = SOM
+		}
+	}
+}
+#Sierra Leone
+country_event = {
+	id = 3000030
+	title = african_independence_title_30
+	desc = african_independence_desc_30
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1884
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1884 = {
+			add_core = SRL
+		}
+		1885 = {
+			add_core = SRL
+		}
+		1886 = {
+			add_core = SRL
+		}
+	}
+}
+#South Sudan
+country_event = {
+	id = 3000031
+	title = african_independence_title_31
+	desc = african_independence_desc_31
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1846
+		year = 2000
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = event_option_alright
+		1843 = {
+			add_core = SSD
+		}
+		1844 = {
+			add_core = SSD
+		}
+		1845 = {
+			add_core = SSD
+		}
+		1846 = {
+			add_core = SSD
+		}
+		1847 = {
+			add_core = SSD
+		}
+	}
+}
+#Sao Tome Principe
+country_event = {
+	id = 3000032
+	title = african_independence_title_32
+	desc = african_independence_desc_32
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1954
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1954 = {
+			add_core = STP
+		}
+	}
+}
+#Sudan
+country_event = {
+	id = 3000033
+	title = african_independence_title_33
+	desc = african_independence_desc_33
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1827
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1827 = {
+			add_core = SUD
+		}
+		1828 = {
+			add_core = SUD
+		}
+		1829 = {
+			add_core = SUD
+		}
+		1830 = {
+			add_core = SUD
+		}
+		1831 = {
+			add_core = SUD
+		}
+		1832 = {
+			add_core = SUD
+		}
+		1833 = {
+			add_core = SUD
+		}
+		1834 = {
+			add_core = SUD
+		}
+		1835 = {
+			add_core = SUD
+		}
+		1836 = {
+			add_core = SUD
+		}
+		1837 = {
+			add_core = SUD
+		}
+		1838 = {
+			add_core = SUD
+		}
+		1839 = {
+			add_core = SUD
+		}
+		1840 = {
+			add_core = SUD
+		}
+		1841 = {
+			add_core = SUD
+		}
+		1842 = {
+			add_core = SUD
+		}
+		1843 = {
+			add_core = SUD
+		}
+		1844 = {
+			add_core = SUD
+		}
+		1845 = {
+			add_core = SUD
+		}
+		1846 = {
+			add_core = SUD
+		}
+		1847 = {
+			add_core = SUD
+		}
+	}
+}
+#Swaziland
+country_event = {
+	id = 3000034
+	title = african_independence_title_34
+	desc = african_independence_desc_34
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2114
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2114 = {
+			add_core = SWZ
+		}
+	}
+}
+#Togo
+country_event = {
+	id = 3000035
+	title = african_independence_title_35
+	desc = african_independence_desc_35
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 1914
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		1914 = {
+			add_core = TOG
+		}
+		1915 = {
+			add_core = TOG
+		}
+		1916 = {
+			add_core = TOG
+		}
+		1917 = {
+			add_core = TOG
+		}
+		1918 = {
+			add_core = TOG
+		}
+	}
+}
+#Tanzania
+country_event = {
+	id = 3000036
+	title = african_independence_title_36
+	desc = african_independence_desc_36
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2045
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2036 = {
+			add_core = TZN
+		}
+		2037 = {
+			add_core = TZN
+		}
+		2038 = {
+			add_core = TZN
+		}
+		2039 = {
+			add_core = TZN
+		}
+		2040 = {
+			add_core = TZN
+		}
+		2041 = {
+			add_core = TZN
+		}
+		2042 = {
+			add_core = TZN
+		}
+		2043 = {
+			add_core = TZN
+		}
+		2044 = {
+			add_core = TZN
+		}
+		2045 = {
+			add_core = TZN
+		}
+		2046 = {
+			add_core = TZN
+		}
+		2047 = {
+			add_core = TZN
+		}
+		2048 = {
+			add_core = TZN
+		}
+	}
+}
+#Uganda
+country_event = {
+	id = 3000037
+	title = african_independence_title_37
+	desc = african_independence_desc_37
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2019
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2019 = {
+			add_core = UGA
+		}
+		2020 = {
+			add_core = UGA
+		}
+		2021 = {
+			add_core = UGA
+		}
+		2022 = {
+			add_core = UGA
+		}
+	}
+}
+#Zambia
+country_event = {
+	id = 3000038
+	title = african_independence_title_38
+	desc = african_independence_desc_38
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2012
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2012 = {
+			add_core = ZAM
+		}
+		2013 = {
+			add_core = ZAM
+		}
+		2014 = {
+			add_core = ZAM
+		}
+		2015 = {
+			add_core = ZAM
+		}
+		2016 = {
+			add_core = ZAM
+		}
+		2017 = {
+			add_core = ZAM
+		}
+		2018 = {
+			add_core = ZAM
+		}
+	}
+}
+#Zimbabwe
+country_event = {
+	id = 3000039
+	title = african_independence_title_39
+	desc = african_independence_desc_39
+	picture = administration
+	fire_only_once = yes
+	trigger = {
+		owns = 2068
+		year = 1947
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.1
+			has_global_flag = decolonisation_somewhere
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = decolonisation_in_progress
+		}
+	}
+	option = {
+		name = event_option_alright
+		2068 = {
+			add_core = ZIM
+		}
+		2069 = {
+			add_core = ZIM
+		}
+		2070 = {
+			add_core = ZIM
+		}
+		2071 = {
+			add_core = ZIM
+		}
+		2072 = {
+			add_core = ZIM
+		}
+		2073 = {
+			add_core = ZIM
+		}
+	}
+}

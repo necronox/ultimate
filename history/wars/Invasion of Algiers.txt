@@ -1,0 +1,16 @@
+#name = "Invasion of Algiers"
+
+1836.1.1 = {
+       add_attacker =FRA
+       add_defender =ALD
+       war_goal = {
+		casus_belli = conquest 
+		actor = FRA
+		receiver = ALD
+	}
+}
+
+1847.12.31 = {
+	rem_attacker = FRA
+	rem_defender = ALD
+}

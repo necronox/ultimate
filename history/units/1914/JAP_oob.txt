@@ -1,0 +1,467 @@
+navy = {
+	name = "Imperial Battle Fleet"
+	location = 1649
+	leader = {
+		name = "Togoç Heihachirou Saneyoshi"
+		type = sea
+		date="1914.1.1"
+		personality = daring
+		background = brave
+		picture="asian_admiral_4"
+	}
+	ship = {
+		name= "IJN Mikasa" 
+		type = battleship
+	}
+		ship = {
+		name= "IJN Kyoto" 
+		type = battleship
+	}
+		ship = {
+		name= "IJN Empire" 
+		type = battleship
+	}
+		ship = {
+		name= "IJN Taiwan" 
+		type = battleship
+	}
+		ship = {
+		name= "IJN Hiroshima" 
+		type = battleship
+	}	ship = {
+		name= "IJN Nagasaki" 
+		type = battleship
+	}
+		ship = {
+		name= "IJN Katana" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Shogunate" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Samurai" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Korea" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Chitose" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Okinawa" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Mitsubishi" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Kubali Khan" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Honshu" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Akagi" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Akaru" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Yamamato" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Seymour" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Tongo" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Seoul" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Pyongyang" 
+		type = cruiser
+	}
+		ship = {
+		name= "IJN Sh≈çkaku" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Rontor" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Imperius" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Lertide" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Shoeshone" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Kilthra" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Siam" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Pacific" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Nevus" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Shamefur" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Display" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Opium" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Hirohito" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Maximite" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Showjo" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Doctus" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Miritar" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Ninjare" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Shogun" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Emperor" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Boxi" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Invincible" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Ikugara Ashwa" 
+		type = destroyer
+	}
+		ship = {
+		name= "IJN Tinshae" 
+		type = destroyer
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+		ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+}

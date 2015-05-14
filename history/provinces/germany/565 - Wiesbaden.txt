@@ -1,0 +1,38 @@
+owner = HRE
+controller = HRE
+add_core = NAS
+
+add_core = HRE
+
+add_core = GER
+
+1604.1.1 = { 
+	owner = NAS
+	controller = NAS
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+1812.1.1 = { 
+	controller = NAS
+		
+		owner = NAS
+		
+		}
+
+
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+
+
+trade_goods = fruit
+
+life_rating = 40
+
+
+1861.1.1 = { railroad = 3 }

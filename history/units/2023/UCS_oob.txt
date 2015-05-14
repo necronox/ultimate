@@ -1,0 +1,129 @@
+army = {
+	name = "1st Army"
+	location = 211
+	regiment = {
+		name= "Infantry"
+		type = guard
+		
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+	}
+	regiment = {
+		name= "Tank Division"
+		type = tank
+		
+	}
+	regiment = {
+		name= "Tank Division"
+		type = tank
+		
+	}
+	regiment = {
+		name= "Fighter Squadron"
+		type = plane
+		
+	}
+	regiment = {
+		name= "Fighter Squadron"
+		type = plane
+		
+	}
+			}
+army = {
+	name = "2nd Army"
+	location = 132
+	regiment = {
+		name= "Infantry"
+		type = guard
+		
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+		
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+	}
+	regiment = {
+		name= "Infantry"
+		type = guard
+	}
+	regiment = {
+		name= "Tank Division"
+		type = tank
+		
+	}
+	regiment = {
+		name= "Fighter Squadron"
+		type = plane
+		
+	}
+	regiment = {
+		name= "Bomber Squadron"
+		type = bomber
+		
+	}
+			}
+
+navy = {
+	name = "1st Fleet"
+	location = 205
+	ship = {
+		name= "Battleship"
+		type = battleship
+	}
+	ship = {
+		name= "Battleship"
+		type = battleship
+	}
+	ship = {
+		name= "Battleship"
+		type = battleship
+	}
+	ship = {
+		name= "Battleship"
+		type = battleship
+	}
+	ship = {
+		name= "Battleship"
+		type = battleship
+	}
+	ship = {
+		name= "Battleship"
+		type = battleship
+	}
+
+		}

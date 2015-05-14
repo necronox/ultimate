@@ -1,0 +1,26 @@
+owner = TUS
+controller = TUS
+add_core = TUS
+add_core = ITA
+trade_goods = fruit
+life_rating = 35
+#state_building = {
+#	level = 1
+#	building = glass_factory
+#	upgrade = yes
+#}
+
+1812.1.1 = {
+		controller = FRA
+		owner = FRA
+		}
+1815.1.1 = {
+		controller = TUS
+		owner = TUS
+		}
+1861.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+}
+1861.1.1 = { railroad = 3 }

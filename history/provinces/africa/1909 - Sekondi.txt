@@ -1,0 +1,20 @@
+owner = NET
+controller = NET
+
+
+1903.1.1 = {
+		owner = ENG
+		controller = ENG
+		colonial = 2
+		}
+
+
+trade_goods = cattle
+life_rating = 35
+colonial = 2
+add_core = GHA
+1960.1.1 = {
+	owner = GHA
+	controller = GHA
+	colonial = 0
+		}

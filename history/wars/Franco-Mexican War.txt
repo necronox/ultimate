@@ -1,0 +1,17 @@
+#name = "Franco-Mexican War"
+1861.7.1 = { 
+          add_attacker = FRA
+          add_defender = MEX
+          war_goal = { casus_belli = make_puppet 
+		actor = FRA
+                receiver = MEX
+                country = MEX
+        }
+
+
+}
+
+1867.6.19 = {
+	rem_attacker = FRA
+	rem_defender = MEX
+}

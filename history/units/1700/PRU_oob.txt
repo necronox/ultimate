@@ -1,0 +1,108 @@
+army = {
+	name = "1st Army"
+	location = 549
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Cuirassier"
+		type = cuirassier
+	}
+	regiment = {
+		name= "Dragoon"
+		type = dragoon
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+	}
+		}
+army = {
+	name = "2nd Army"
+	location = 695
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry"
+		type = infantry
+	}
+	regiment = {
+		name= "Cuirassier"
+		type = cuirassier
+	}
+	regiment = {
+		name= "Cuirassier"
+		type = cuirassier
+	}
+	regiment = {
+		name= "Dragoon"
+		type = dragoon
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+		type = artillery
+	}
+		}

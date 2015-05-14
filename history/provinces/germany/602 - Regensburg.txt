@@ -1,0 +1,26 @@
+owner = HRE
+controller = HRE
+add_core = BAV
+add_core = HRE
+add_core = GER
+
+1604.1.1 = { 
+	owner = BAV
+	controller = BAV
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+1714.1.1 = { 
+		controller = BAV
+		owner = BAV
+		}
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+trade_goods = coal
+life_rating = 40

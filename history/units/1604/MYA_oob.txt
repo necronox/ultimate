@@ -1,0 +1,10 @@
+army = {
+	name = "Mayan Army"
+	location = 2183
+	regiment = {
+		name= "Mayan Warriors"
+		type = irregular
+		home = 2183
+	}
+}
+

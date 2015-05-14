@@ -1,0 +1,35 @@
+province_event = {
+
+      id = 900001            #african slavery
+      title = "EVTNAME900001"
+      desc = "EVTDESC900001"
+      allow_multiple_instances = no
+      trigger = {
+              continent = africa
+               is_slave = no
+			}
+
+      mean_time_to_happen = {
+              months = 2400
+                 }
+
+      option = {
+        name = "EVTOPTA900001"
+                state_scope = {
+                        is_slave = yes
+                                }
+                
+                poor_strata = {
+                            militancy = 2
+                            consciousness = 1
+                                }
+
+                }
+
+      option = {
+        name = "EVTOPTB900001"
+                poor_strata = {
+                            militancy = -2
+                }
+                       }
+	}

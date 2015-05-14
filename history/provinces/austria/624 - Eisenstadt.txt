@@ -1,0 +1,30 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+trade_goods = grain
+life_rating = 35
+1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+owner = KUK
+controller = KUK
+add_core = KUK
+}
+
+1919.6.28 = {
+owner = AUS
+controller = AUS
+remove_core = KUK
+}
+
+1938.1.1 = {
+owner = GER
+controller = GER }
+
+
+#End of WW2
+1945.5.1 = {
+	owner = AUS
+	controller = AUS
+		}
+
+

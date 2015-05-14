@@ -1,0 +1,97 @@
+political_decisions = {
+
+	tea_act = {
+	picture = tea_act
+		potential = {
+			tag = ENG
+			THC = {
+			vassal_of = ENG
+				}
+			NOT = {
+			has_global_flag = tea_act_done
+				}
+				}
+
+	allow = {
+		has_global_flag = townshend_act_done
+			}
+
+	effect = {  
+			treasury = 5000
+			set_global_flag = tea_act_done
+			add_country_modifier = { 
+				name = tea_act_mod
+				duration = -1 }
+			THC = {
+			add_country_modifier = { 
+				name = tea_act_mod_thc
+				duration = -1 }
+				}
+			relation = {
+			who = THC
+			value = -20
+				}
+			}
+		}
+
+	townshend_act = {
+	picture = tea_act
+		potential = {
+		tag = ENG
+			THC = {
+			vassal_of = ENG
+				}
+			NOT = {
+			has_global_flag = townshend_act_done
+				}
+			}
+		allow = {
+		}
+	
+		effect = {
+			add_country_modifier = { 
+			name = townshend_act_mod
+			duration = -1
+							 }
+			THC = {
+			add_country_modifier = 
+				{ 
+					name = townshend_act_mod_thc
+					duration = -1
+				 }
+				}
+				set_global_flag = townshend_act_done
+			}
+		}
+
+	tea_party = {
+	picture = tea_party
+		potential = {
+			tag = THC
+			has_global_flag = tea_act_done
+			vassal_of = ENG
+			NOT = {
+			has_global_flag = boston_tea_party_done
+				}
+				}
+
+	allow = {
+		NOT = {
+		relation = { who = ENG  value = 50 }
+			}
+			}
+
+	effect = {
+			relation = {
+	who = ENG
+	value = -50
+			}
+			ENG = {
+				treasury = -10000
+				country_event = 400002
+			}
+			set_global_flag = boston_tea_party_done
+			}
+			}
+		
+}

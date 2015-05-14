@@ -1,0 +1,51 @@
+name = "The World War"
+
+1914.1.1 = {
+	add_attacker = GER
+	add_attacker = KUK
+	add_attacker = TUR
+	add_attacker = BUL
+	add_defender = ENG
+	add_defender = FRA
+	add_defender = RUS
+	add_defender = ITA
+	add_defender = BEL
+	add_defender = SER
+	add_defender = CAN
+	add_defender = JAP
+
+
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = great_war_penalty_cb
+		actor = GER
+		receiver = FRA
+	}
+
+	war_goal = {
+		casus_belli = great_war_penalty_cb
+		actor = FRA
+		receiver = GER
+	}
+
+}
+
+1918.4.1 = {
+	rem_attacker = GER
+	rem_attacker = KUK
+	rem_attacker = TUR
+	add_attacker = BUL
+	rem_defender = ENG
+	rem_defender = FRA
+	rem_defender = RUS
+	rem_defender = ITA
+	rem_defender = BEL
+	rem_defender = SER
+	rem_defender = CAN
+	rem_defender = JAP
+		}

@@ -1,0 +1,28 @@
+owner = MUG
+controller = MUG
+
+1818.1.1 = {
+owner = JAS
+controller = JAS
+		}
+add_core = JAS
+
+
+#Decolonisation
+1947.1.1 = {
+	owner = PAK
+	controller = PAK
+	add_core = PAK
+	colonial = 0
+		}
+
+
+
+add_core = HND
+1880.1.1 = {
+owner = ENG #hello
+controller = ENG #hello
+colonial = 2
+		}
+trade_goods = wool
+life_rating = 32

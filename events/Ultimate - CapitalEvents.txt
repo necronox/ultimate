@@ -1,0 +1,99 @@
+country_event = {
+	id = 1990228
+	title = "Decentralisation?"
+	desc = "Somehow our capital has been moved from its original position. Should we move it back?"
+	
+trigger = {
+	tag = FRA
+	NOT = {
+		has_country_flag = capital_done
+	}
+	NOT = {
+		capital = 425
+	}
+}
+option = {
+	name = "Of course, who would move away from the beautiful city of Paris?"
+	capital = 425
+	set_country_flag = capital_done
+	ai_chance = {
+		factor = 25
+	}
+}
+option = {
+	name = "It is just fine in $CAPITAL$, we always hated Paris anyways..."
+	set_country_flag = capital_done
+}
+}
+country_event = {
+	id = 1990229
+	title = "Decentralisation?"
+	desc = "Somehow our capital has been moved from its original position. Should we move it back?"
+	
+trigger = {
+	tag = ENG
+	NOT = {
+		capital = 300
+	}
+}
+option = {
+	name = "Of course, who would move away from the beautiful city of London?"
+	capital = 300
+	set_country_flag = capital_done
+	ai_chance = {
+		factor = 25
+	}
+}
+option = {
+	name = "It is just fine in $CAPITAL$, we always hated London anyways..."
+	set_country_flag = capital_done
+}
+}
+country_event = {
+	id = 1990230
+	title = "Decentralisation?"
+	desc = "Somehow our capital has been moved from its original position. Should we move it back?"
+	
+trigger = {
+	tag = AUS
+	NOT = {
+		capital = 619
+	}
+}
+option = {
+	name = "Of course, who would move away from the beautiful city of Vienna?"
+	capital = 619
+	set_country_flag = capital_done
+	ai_chance = {
+		factor = 25
+	}
+}
+option = {
+	name = "It is just fine in $CAPITAL$, we always hated Vienna anyways..."
+	set_country_flag = capital_done
+}
+}
+country_event = {
+	id = 1990231
+	title = "Decentralisation?"
+	desc = "Somehow our capital has been moved from its original position. Should we move it back?"
+	
+trigger = {
+	tag = RUS
+	NOT = {
+		capital = 1008
+	}
+}
+option = {
+	name = "Of course, who would move away from the beautiful city of Moscow?"
+	capital = 1008
+	set_country_flag = capital_done
+	ai_chance = {
+		factor = 25
+	}
+}
+option = {
+	name = "It is just fine in $CAPITAL$, we always hated Moscow anyways..."
+	set_country_flag = capital_done
+}
+}

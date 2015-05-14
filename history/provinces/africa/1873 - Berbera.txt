@@ -1,0 +1,17 @@
+trade_goods = cotton
+life_rating = 15
+
+1903.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 2
+	add_core = SOM
+		}
+
+1960.1.1 = {
+		owner = SOM
+		controller = SOM
+		add_core = SOM
+		colonial = 0
+		}
+

@@ -1,0 +1,16 @@
+owner = SPA
+controller = SPA
+colonial = 2
+1810.1.1 = {
+owner = PEU
+controller = PEU
+add_core = PEU
+colonial = 0
+		}
+trade_goods = wool
+life_rating = 35
+
+#There will be blood
+1915.1.1 = {
+	trade_goods = oil
+		}

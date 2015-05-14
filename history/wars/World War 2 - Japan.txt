@@ -1,0 +1,36 @@
+name = "Japanese Invasion of China"
+
+1937.9.3 = {
+	add_attacker = JAP
+	add_attacker = SXI
+	add_attacker = MCK
+	add_defender = NCN
+
+
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = conquest
+		actor = JAP
+		receiver = NCN
+	}
+
+	war_goal = {
+		casus_belli = status_quo
+		actor = NCN
+		receiver = JAP
+	}
+
+}
+
+1945.4.1 = {
+	rem_attacker = JAP
+	rem_attacker = SXI
+	rem_attacker = MCK
+	rem_defender = NCN
+
+		}

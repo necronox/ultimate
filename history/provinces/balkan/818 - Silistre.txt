@@ -1,0 +1,17 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = BUL
+1914.6.28 = { 
+		controller = ROM
+		owner = ROM
+		remove_core = TUR
+		}
+add_core = ROM 
+trade_goods = grain
+life_rating = 35
+
+1946.1.1 = { 
+		controller = BUL
+		owner = BUL
+		}

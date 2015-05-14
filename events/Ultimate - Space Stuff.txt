@@ -1,0 +1,487 @@
+## Space Race to land a man on the Moon
+country_event = {
+
+	id =  170000 # Land a man on the moon
+
+	trigger = {
+		not = { has_global_flag = LandedOnMoon }
+		not = { has_country_flag = NoGoToMoon }
+		not = { has_country_flag = YesGoToMoonAgain }
+		not = { has_country_flag = YesGoToMoon }
+		not = { has_country_flag = YesGoToMoonThird }
+		is_greater_power = yes # Nation is a great power
+		invention = manned_space_flight
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.6
+			year = 1950
+		}
+		modifier = {
+			factor = 0.6
+			year = 1955
+		}
+		modifier = {
+			factor = 0.6
+			year = 1960
+		}
+	}
+
+	title = "EVTNAME170000"
+	desc = "EVTDESC170000"
+	picture = "spacelook"
+	
+
+	option = {
+		name = "EVTOPTA170000" # Support the mission
+		ai_chance = { factor = 25 }
+		money = -100000
+		set_country_flag = YesGoToMoon
+	}
+	option = {
+		name = "EVTOPTB170000" # Consider the idea later
+		ai_chance = { factor = 45 }
+		prestige = -10
+	}
+	option = {
+		name = "EVTOPTC170000" # Reject the idea
+		ai_chance = { factor = 30 }
+		set_country_flag = NoGoToMoon
+		prestige = -50
+	}
+}
+
+country_event = {
+	
+	id = 170001 # First attempt fails, try again?
+	
+	trigger = {
+		has_country_flag = YesGoToMoon
+		not = { has_global_flag = LandedOnMoon }
+		not = { has_country_flag = NoGoToMoon }
+		year = 1960
+	}
+	
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.6
+			year = 1962
+		}
+		modifier = {
+			factor = 0.6
+			year = 1964
+		}
+		modifier = {
+			factor = 0.6
+			year = 1966
+		}
+	}
+
+	title = "EVTNAME170001"
+	desc = "EVTDESC170001"
+	picture = "spacefailpic"
+
+	option = {
+		name = "EVTOPTA170001" # Fund second attempt
+		ai_chance = { factor = 60 }
+		money = -50000
+		set_country_flag = YesGoToMoonAgain
+		clr_country_flag = YesGoToMoon
+	}
+	option = {
+		name = "EVTOPTB170001" # Reject second attempt
+		ai_chance = { factor = 40 }
+		clr_country_flag = YesGoToMoon
+		set_country_flag = NoGoToMoon
+		prestige = -200
+	}
+}
+
+country_event = {
+
+	id = 170002 # Our Mission to the Moon is lost
+
+	trigger = {
+		has_country_flag = YesGoToMoonAgain
+		not = { has_global_flag = LandedOnMoon }
+		not = { has_country_flag = NoGoToMoon }
+		year = 1966 # Will happen sometime after 1966
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+
+		modifier = {
+			factor = 0.3
+			year = 1873
+		}
+		modifier = {
+			factor = 0.6
+			year = 1874
+		}
+		modifier = {
+			factor = 0.8
+			year = 1877
+		}
+	}
+
+	title = "EVTNAME170002"
+	desc = "EVTDESC170002"
+	picture = "spacefail2pic"
+
+	option = {
+		name = "EVTOPTA170002" # Fund third attempt
+		ai_chance = { factor = 60 }
+		money = -50000
+		set_country_flag = YesGoToMoonThird
+		clr_country_flag = YesGoToMoonAgain
+	}
+	option = {
+		name = "EVTOPTB170002" # Reject second attempt
+		ai_chance = { factor = 40 }
+		clr_country_flag = YesGoToMoonAgain
+		set_country_flag = NoGoToMoon
+		prestige = -25
+	}
+}
+
+country_event = {
+
+	id = 170003 # LANDED ON MOON!
+	news = yes
+	news_desc_long = "EVTDESC170003_NEWS_LONG"
+	news_desc_medium = "EVTDESC170003_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC170003_NEWS_SHORT"
+
+	trigger = {
+		or = {
+			has_country_flag = YesGoToMoonAgain
+			has_country_flag = YesGoToMoonThird
+		}
+		not = { has_global_flag = LandedOnMoon }
+		not = { has_country_flag = NoGoToMoon }
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+
+		modifier = {
+			factor = 0.4
+			year = 1968
+		}
+		modifier = {
+			factor = 0.7
+			year = 1970
+		}
+		modifier = {
+			factor = 0.9
+			year = 1972
+		}
+	}
+
+	title = "EVTNAME170003"
+	desc = "EVTDESC170003"
+	picture = "landedonmoonpic"
+
+	option = {
+		name = "EVTOPTA170003" # Success
+		prestige = 1000
+		years_of_research = 1
+		set_global_flag = LandedOnMoon
+		clr_country_flag = YesGoToMoonAgain
+		clr_country_flag = YesGoToMoonThird
+	}
+}
+
+####Space Colonies Events####
+
+###First Moon Colony Founded Coloniser###
+country_event = {
+	id = 170004
+	title = "EVTNAME170004"
+	desc = "EVTDESC170004"
+	picture = "mooncolonypic"
+	trigger = {
+				any_owned_province = {
+		has_building = lunar_colony }
+		NOT = { has_global_flag = moonsettled }
+			}
+
+	mean_time_to_happen =  {
+		days = 5
+	}
+
+	option = {
+		name = "EVTOPTA170004"
+		prestige = 75
+		any_pop = {
+		consciousness = -1 }
+		set_global_flag = moonsettled
+		any_country = {
+			limit = {
+			NOT = { tag = THIS } }
+			country_event = 170005 }
+
+	}
+}
+
+###First Moon Colony Founded Others###
+country_event = {
+	id = 170005
+	title = "EVTNAME170005"
+	desc = "EVTDESC170005"
+	picture = "mooncolonypic"
+	is_triggered_only = yes
+
+
+	option = {
+		name = "EVTOPTA170005" #
+		any_pop = {
+		consciousness = 1 }
+
+	}
+}
+
+###First Mars Colony Founded Coloniser###
+country_event = {
+	id = 170006
+	title = "EVTNAME170006"
+	desc = "EVTDESC170006"
+	picture = "marscolonypic"
+	trigger = {
+		any_owned_province = {
+		has_building = martian_colony }
+		NOT = { has_global_flag = marssettled }
+	}
+
+	mean_time_to_happen =  {
+		days = 5
+	}
+
+	option = {
+		name = "EVTOPTA170006"
+		prestige = 100
+		any_pop = {
+		consciousness = -1 }
+		set_global_flag = marssettled
+		any_country = {
+			limit = {
+			NOT = { 
+			tag = THIS } 
+				}
+			country_event = 170007 }
+
+	}
+}
+
+###First Mars Colony Founded Others###
+country_event = {
+	id = 170007
+	title = "EVTNAME170007"
+	desc = "EVTDESC170007"
+	picture = "marscolonypic"
+	is_triggered_only = yes
+
+
+	option = {
+		name = "EVTOPTA170007" #
+		any_pop = {
+		consciousness = 1 }
+
+	}
+}
+
+
+###Moon Incident###
+country_event = {
+	id = 170010
+	title = "EVTNAME170010"
+	desc = "EVTDESC170010"
+	picture = "mooncolonydisasterpic"
+	trigger = {
+		produces = lunar_goods
+		NOT = { has_global_flag = freedmoon }
+	}
+
+	mean_time_to_happen =  {
+		months = 40
+	}
+
+	option = {
+		name = "EVTOPTA170010" #
+		any_pop = {
+			limit = {
+			type = spacecolonists }
+			reduce_pop = 0.98 }
+		money = -40000
+
+	}
+	option = {
+		name = "EVTOPTB170010" #
+		any_pop = {
+			limit = {
+			type = spacecolonists }
+			reduce_pop = 0.94 }
+		prestige = -10
+
+	}
+}
+
+###Mars Incident###
+country_event = {
+	id = 170011
+	title = "EVTNAME170011"
+	desc = "EVTDESC170011"
+	picture = "marsdisasterpic"
+	trigger = {
+		produces = martian_goods
+		NOT = { has_global_flag = freedmars }
+	}
+
+	mean_time_to_happen =  {
+		months = 40
+	}
+
+	option = {
+		name = "EVTOPTA170011" #
+		any_pop = {
+			limit = {
+			type = spacecolonists }
+			reduce_pop = 0.98 }
+		money = -80000
+
+	}
+	option = {
+		name = "EVTOPTB170011" #
+		any_pop = {
+			limit = {
+			type = spacecolonists }
+			reduce_pop = 0.94
+			militancy = 2
+			consciousness = 2 }
+		prestige = -10
+
+	}
+}
+
+###Moon Dispute###
+country_event = {
+	id = 170012
+	title = "EVTNAME170012"
+	desc = "EVTDESC170012"
+	picture = "moontroublepic"
+	trigger = {
+		produces = lunar_goods
+		NOT = {
+		has_global_flag = freedmoon }
+	}
+
+	mean_time_to_happen =  {
+		months = 95
+	}
+
+	option = {
+		name = "EVTOPTA170012" #
+		random_country = {
+			limit = {
+				is_greater_power = yes
+				NOT = {
+					tag = THIS
+					relation = {
+						who = THIS
+						value = 40
+					}
+				}
+			}
+			add_casus_belli = {
+				target = THIS
+				type = moon_colony_dispute
+				months = 3
+			}
+			relation = {
+				who = THIS
+				value = -20
+			}
+		}
+
+	}
+	option = {
+		name = "EVTOPTB170012" #
+		any_pop = {
+			limit = {
+			type = spacecolonists
+				}
+			militancy = 1
+			consciousness = 1 }
+			scaled_militancy = {
+			issue = jingoism
+				factor = 4
+			}
+		prestige = -10
+
+	}
+}
+
+###Mars Dispute###
+country_event = {
+	id = 170013
+	title = "EVTNAME170013"
+	desc = "EVTDESC170013"
+	picture = "marstroublepic"
+	trigger = {
+		produces = martian_goods
+		NOT = {
+		has_global_flag = freedmars }
+	}
+
+	mean_time_to_happen =  {
+		months = 95
+	}
+
+	option = {
+		name = "EVTOPTA170013" #
+		random_country = {
+			limit = {
+				is_greater_power = yes
+				NOT = {
+					tag = THIS
+					relation = {
+						who = THIS
+						value = 40
+					}
+				}
+			}
+			add_casus_belli = {
+				target = THIS
+				type = mars_colony_dispute
+				months = 3
+			}
+			relation = {
+				who = THIS
+				value = -20
+			}
+		}
+
+	}
+	option = {
+		name = "EVTOPTB170013" #
+		any_pop = {
+			limit = {
+			type = spacecolonists
+				}
+			militancy = 1
+			consciousness = 1 }
+			scaled_militancy = {
+			issue = jingoism
+				factor = 4
+			}
+		prestige = -10
+
+	}
+}
+

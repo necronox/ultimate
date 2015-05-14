@@ -1,0 +1,17 @@
+political_decisions = {
+	colonial_points = {
+		potential = {
+			NOT = {	has_country_flag = hidden_decisions }
+		}
+		allow = {
+			
+		}
+		effect = {
+			country_event = 22000110
+		}
+		ai_will_do = {
+			factor = 0
+			}
+	}
+}
+

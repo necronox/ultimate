@@ -1,0 +1,52 @@
+sprite = 13
+color = { 21 23 88 }
+strata = middle
+can_work_factory = yes
+research_points = 3
+research_optimum = 0.01
+
+
+rebel =
+{
+	cavalry = 0.2
+	artillery = 0.01
+	cuirassier = 0.05
+	dragoon = 0.05
+	guard = 0.15
+	hussar = 0.05
+	infantry = 0.3
+	irregular = 0
+}
+
+luxury_needs = {
+	entertainment_goods = 1.0
+	opium = 1.0
+	luxury_clothes = 1
+	luxury_furniture = 1
+	telephones = 2.5
+	automobiles = 1.0
+	wine = 10
+	radio = 1.0
+	fuel = 0.2
+	coffee = 2
+}
+
+everyday_needs = {
+	coal = 1
+	liquor = 5
+	regular_clothes = 5
+	furniture = 4
+	paper = 5
+	glass = 1
+	tobacco = 3
+	tea = 5
+}
+
+life_needs = {
+	cattle = 0.75
+	wool =  1
+	fish =  1
+	fruit =  1
+	grain =  2.5
+}
+

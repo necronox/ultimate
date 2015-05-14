@@ -1,0 +1,94 @@
+space_colony_template = {
+	efficiency = {
+		cement = 0.5 #if no cement, work at 75% efficiency cost = 16.0
+		machine_parts = 0.05 # was 0.01 cost = 36.5		# 9.825/day/level for both
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = -2.5
+	}
+	
+	employees = {		
+		{ 
+			poptype = spacecolonists 
+			effect = output
+			effect_multiplier = 1.5
+			amount = 0.2
+		}
+		}
+	type = factory
+	workforce = 10000 
+}
+
+nuclearfacility_template = {
+	efficiency = {
+		iron = 2.3 #if no cement, work at 75% efficiency #cost = 16.0
+		machine_parts = 0.05 # was 0.01 cost = 36.5 		#9.825/day/level for both
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = -2.5
+	}
+	
+	employees = {		
+		{ 
+			poptype = clerks
+			effect = throughput
+			amount = 0.8
+		}		
+	
+	}
+	type = factory
+	workforce = 10000 
+}
+
+
+#martian_colony = {     #only to maintain buildings and equipment
+	template = space_colony_template
+	input_goods = { 
+		machine_parts = 0.02 		
+		fuel = 0.01
+		electric_gear = 2 		
+	}
+	output_goods = martian_goods
+	value = 2
+
+}
+
+lunar_colony = {       
+	template = space_colony_template
+	input_goods = { 
+		machine_parts = 0.02 		
+		fuel = 0.01
+		electric_gear = 2 		
+	}
+	output_goods = lunar_goods
+	value = 2		
+
+}   
+
+nuclear_weapons_factory = {       
+	template = nuclearfacility_template
+	input_goods = {
+		machine_parts = 5	#38.69
+		electric_gear = 5	#32
+		rare_metals = 20  		#7
+		explosives = 35
+	}
+	output_goods = nuclear_weapons
+	value = 0.1			#100
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.25
+	}
+	bonus = {
+		trigger = { has_building = electric_gear_factory }
+		value = 0.25
+	}
+}

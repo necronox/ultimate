@@ -1,0 +1,26 @@
+owner = TUR
+controller = TUR
+add_core = AUS
+1700.1.1 = {
+	controller = AUS
+	owner = AUS
+		}
+add_core = HUN
+1914.1.1 = {
+owner = KUK
+controller = KUK
+add_core = KUK
+}	
+1919.6.28 = { 
+		controller = HUN
+		owner = HUN
+		}
+trade_goods = cattle
+life_rating = 35
+fort = 1
+#state_building = {
+#	level = 1
+#	building = canned_food_factory
+#	upgrade = yes
+#}
+1861.1.1 = { railroad = 3 }

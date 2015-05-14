@@ -1,0 +1,412 @@
+#Tunguska Meteor Strike
+country_event = {
+	id = 21500
+	title = "EVTNAME21500"
+	desc = "EVTDESC21500"
+	news = yes
+	news_desc_long = "EVTDESC21500_NEWS_LONG"
+	news_desc_medium = "EVTDESC21500_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC21500_NEWS_SHORT"
+	picture = "destroyed_forest"
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		NOT = {
+		has_global_flag = NewScenarioFlag }
+		year = 1908
+		owns = 2694
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	option = {
+		name = "EVTOPTA21500"
+		2694 = {
+			any_pop = {
+				reduce_pop = 0.90
+			}
+			life_rating = -10
+		}
+	}
+}
+
+#Krakatoa Explodes
+country_event = {
+	id = 21510
+	title = "EVTNAME21510"
+	desc = "EVTDESC21510"
+	news = yes
+	news_desc_long = "EVTDESC21510_NEWS_LONG"
+	news_desc_medium = "EVTDESC21510_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC21510_NEWS_SHORT"
+	picture = "pelee"
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		NOT = {
+		has_global_flag = NewScenarioFlag }
+		year = 1883
+		owns = 1414
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	option = {
+		name = "EVTOPTA21510"
+		1414 = {
+			any_pop = {
+				reduce_pop = 0.8
+			}
+			life_rating = -10
+		}
+	}
+}
+
+# San Francisco Earthquake
+country_event = {
+	id = 21520
+	title = "EVTNAME21520"
+	desc = "EVTDESC21520"
+	news = yes
+	news_desc_long = "EVTDESC21520_NEWS_LONG"
+	news_desc_medium = "EVTDESC21520_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC21520_NEWS_SHORT"
+	picture = "earthquake"
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		NOT = {
+		has_global_flag = NewScenarioFlag }
+		year = 1906
+		owns = 84
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	option = {
+		name = "EVTOPTA21520"
+		84 = {
+			any_pop = {
+				reduce_pop = 0.90
+			}
+		}
+	}
+}
+
+# Canarian Mega-Tsunami Starts
+country_event = {
+	id = 21600
+	title = "EVTNAME21600"
+	desc = "EVTDESC21600"
+	news = yes
+	news_desc_long = "EVTDESC21600_NEWS_LONG"
+	news_desc_medium = "EVTDESC21600_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC21600_NEWS_SHORT"
+	picture = "bigwavedisaster"
+    fires_only_once = yes
+
+
+	trigger = {
+		owns = 2136
+	}
+
+	mean_time_to_happen = {
+		years = 800
+	}
+
+	option = {
+		name = "EVTOPTA21600"
+		2136 = {
+			any_pop = { reduce_pop = 0.05 }
+			life_rating = -5
+			}
+    	any_owned = {
+			limit = {
+			OR = {
+				continent = europe
+				continent = north_america
+					}
+				is_coastal = yes
+						}
+				any_pop = {
+				reduce_pop = 0.90
+					}
+                }
+		any_country = {
+		country_event = { id=21610 days=1 }
+		}
+	}
+}
+
+# Canarian Mega-Tsunami 
+country_event = {
+	id = 21610
+	title = "EVTNAME21610"
+	desc = "EVTDESC21610"
+	picture = "bigwavedisaster"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA21610"
+		any_owned = {
+			limit = {
+			OR = {
+				continent = europe
+				continent = north_america
+					}
+				is_coastal = yes
+						}
+				any_pop = {
+				reduce_pop = 0.90
+					}
+			add_province_modifier = {
+				name = province_flooded
+				duration = 62
+							}
+		}
+	}
+}
+
+# Tornadoes North America
+province_event = {
+	id = 21700
+	title = "Tornadoes Devastate $PROVINCENAME$"
+	desc = "EVTDESC21700"
+
+
+	trigger = {
+		month = 2
+		NOT = {
+			month = 7
+			}
+		NOT = {
+			has_province_modifier = tornado_devastation 
+			terrain = mountain
+			}
+		OR = {
+		region = TEX_132
+		region = MEX_103
+		region = USA_139
+		region = USA_194
+		region = USA_196
+		region = USA_201
+		region = USA_200
+		region = USA_188
+		region = USA_185
+		region = USA_170
+		region = USA_178
+		region = USA_176
+		region = USA_162
+		region = USA_168
+		region = MEX_103
+		region = USA_106
+		region = USA_111
+		region = USA_116
+		region = ENG_22
+		region = ENG_30
+		region = ENG_36
+		region = USA_118
+		region = USA_121
+		region = USA_124
+		region = USA_126
+		region = USA_129
+		region = USA_144
+		region = USA_148
+		region = USA_151
+		region = USA_162
+			}
+
+			}
+
+	mean_time_to_happen = {
+		days = 5000
+	}
+
+	option = {
+		name = "EVTOPTA21700"
+		add_province_modifier = { name = tornado_devastation duration = 120 }
+		treasury = -1000
+	}
+	option = {
+		name = "EVTOPTB21700"
+		add_province_modifier = { name = tornado_devastation duration = 365 }
+		any_pop = {
+		militancy = 0.50
+		consciousness = 0.50
+				}
+	}
+}
+
+# Hurricanes Atlantic
+province_event = {
+	id = 21701
+	title = "$PROVINCENAME$ in Hurricane Path"
+	desc = "$PROVINCENAME$ was struck by violent winds and a powerful surge as a Hurricane passed over the province. Many are feared dead and the settlements in the area are still being flooded."
+
+
+	trigger = {
+		month = 5
+		NOT = {
+			month = 11
+			}
+		NOT = {
+			has_province_modifier = province_flooded 
+			}
+		OR = {
+		region = ENG_2228
+		region = ENG_2224
+		region = HAI_2213
+		region = SPA_2209
+		region = ENG_203
+		region = USA_200
+		region = USA_196
+		region = USA_194
+		region = USA_139
+			}
+
+			}
+
+	mean_time_to_happen = {
+		days = 5000
+	}
+
+	option = {
+		name = "Send help"
+		add_province_modifier = { name = province_flooded duration = 120 }
+		treasury = -2000
+		any_pop = {
+		reduce_pop = 0.99
+				}
+	}
+	option = {
+		name = "Wish them luck"
+		add_province_modifier = { name = province_flooded duration = 365 }
+		any_pop = {
+		reduce_pop = 0.98
+		militancy = 0.50
+		consciousness = 0.50
+				}
+	}
+}
+
+
+##Large Asteroid Strike Earth DISABLED FOR NOW##
+#country_event = {
+#	id = 660000
+#	title = "EVTNAME660000"
+#	desc = "EVTDESC660000"
+#	news = yes
+#	news_desc_long = "EVTDESC660000_NEWS_LONG"
+##	news_desc_medium = "EVTDESC660000_NEWS_MEDIUM"
+#	news_desc_short = "EVTDESC660000_NEWS_SHORT"
+#	picture = "bigasteroidcrash"
+#	allow_multiple_instances = no
+#
+#    trigger = {
+ #       year = 1836
+#                }
+ #       
+#        mean_time_to_happen = {
+#            years = 10000
+#		modifier = {
+#			factor = -10
+#			NOT = { year = 2015 }
+#		}
+#					}
+#
+#	option = {
+#		name = "EVTOPTA660000"
+#		any_owned = {
+#			any_pop = {
+#			reduce_pop = 0.40
+#					}
+#				infrastructure  = -6	
+#				}
+#				any_country = {
+#		country_event = { id=660010 days=1 }
+#				}
+#			}
+#		}
+#
+#####Large Asteroid Strike Earth part 2######
+country_event = {
+	id = 660010
+	title = "EVTNAME660010"
+	desc = "EVTDESC660010"
+	picture = "bigasteroidcrash"
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA660010"
+		any_owned = {
+			any_pop = {
+			reduce_pop = 0.25
+					}
+				infrastructure  = -6
+			}	
+		}
+	}
+
+#Castaway Rescued
+country_event = {
+	id = 660020
+	title = "EVTNAME660020"
+	desc = "EVTDESC660020"
+	news = yes
+	news_desc_long = "EVTDESC660020_NEWS_LONG"
+	news_desc_medium = "EVTDESC660020_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC660020_NEWS_SHORT"
+	picture = "castawaypic"
+
+	trigger = {
+		year = 1604
+	}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+
+	option = {
+		name = "EVTOPTA660020"
+		prestige = 5
+	}
+}
+
+#Volcano
+#country_event = {
+#	id = 660030
+#	title = "EVTNAME660030"
+#	desc = "EVTDESC660030"
+#	news = yes
+#	news_desc_long = "EVTDESC660030_NEWS_LONG"
+#	news_desc_medium = "EVTDESC660030_NEWS_MEDIUM"
+#	news_desc_short = "EVTDESC660030_NEWS_SHORT"
+#	picture = "volcano"
+#
+#	trigger = {
+#		year = 1836
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 600
+#	}
+#
+#	option = {
+#		name = "EVTOPTA660030"
+#		prestige = 5
+#	}
+#}
+

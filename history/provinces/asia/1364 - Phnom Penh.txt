@@ -1,0 +1,24 @@
+owner = CAM
+controller = CAM
+add_core = CAM
+
+#Rubber discovered!
+1880.1.1 = {
+	trade_goods = rubber
+		}
+1910.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+
+
+1953.1.1 = {
+	owner = CAM
+	controller = CAM
+	colonial = 0
+		}
+
+
+trade_goods = tropical_wood
+life_rating = 30

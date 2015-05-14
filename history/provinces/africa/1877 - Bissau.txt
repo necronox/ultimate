@@ -1,0 +1,13 @@
+owner = POR
+controller = POR
+trade_goods = grain
+life_rating = 35
+colonial = 2
+
+
+add_core = GUB
+1960.1.1 = {
+	owner = GUB
+	controller = GUB
+	colonial = 0
+		}

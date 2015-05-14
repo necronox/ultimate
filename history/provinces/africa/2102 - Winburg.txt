@@ -1,0 +1,19 @@
+1820.1.1 = {
+owner = ORA
+controller = ORA
+add_core = ORA
+1800.1.1 = {
+add_core = SAF
+		}
+
+1910.1.1 = {
+		owner = ENG
+		controller = ENG
+		}
+
+1920.1.1 = {
+		owner = SAF
+		controller = SAF
+		}
+trade_goods = coal
+life_rating = 35

@@ -1,0 +1,31 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = BOS
+add_core = YUG
+1914.1.1 = { 
+		controller = KUK
+		owner = KUK
+		add_core = KUK
+		remove_core = TUR
+		}
+1919.6.28 = { 
+		controller = YUG
+		owner = YUG
+		remove_core = KUK
+		}
+add_core = SER
+trade_goods = fruit
+life_rating = 35
+
+
+#Soviet Collapse
+1992.5.1 = {
+	owner = BOS
+	controller = BOS
+	remove_core = TUR
+	remove_core = SER
+	remove_core = KUK
+		}
+
+

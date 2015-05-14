@@ -1,0 +1,11 @@
+owner = SPA
+controller = SPA
+add_core = FRA
+add_core = CAT
+trade_goods = grain
+life_rating = 31
+
+1700.1.1 = {
+	owner = FRA
+controller = FRA
+		}

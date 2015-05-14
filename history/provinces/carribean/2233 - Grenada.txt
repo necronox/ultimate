@@ -1,0 +1,16 @@
+owner = ANG
+controller = ANG
+1707.1.1 = {
+owner = ENG
+controller = ENG
+		}
+1860.1.1 = {
+	trade_goods = spices
+		}
+trade_goods = sugar
+life_rating = 35
+colonial = 2
+2015.1.1 = {
+owner = ANG
+controller = ANG
+		}

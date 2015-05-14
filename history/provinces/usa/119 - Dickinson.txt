@@ -1,0 +1,32 @@
+1764.1.1 = {
+	owner = SPA
+	controller = SPA
+	colonial = 1
+		}
+1800.1.1 = {
+		owner = FRA
+	controller = FRA
+	colonial = 1
+		}
+#Louisiana Purchase
+1803.1.1 = {
+		owner = USA
+	controller = USA
+	colonial = 1
+		}
+1836.1.1 = {
+	colonial = 0
+	add_core = USA
+		}
+trade_goods = cattle
+life_rating = 35
+1867.1.1 = {
+	owner = USA
+	controller = USA
+		}
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}
+

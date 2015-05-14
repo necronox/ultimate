@@ -1,0 +1,29 @@
+owner = MLT
+controller = MLT
+add_core = MLT
+1820.1.1 = {
+owner = ENG
+controller = ENG
+add_core = ENG
+colonial = 2
+		}
+1700.1.1 = {
+naval_base = 1
+	}
+trade_goods = fish
+life_rating = 35
+
+1861.1.1 = { 
+	naval_base = 2 #Valetta
+}
+
+1936.1.1 = { 
+	naval_base = 5 #Valetta
+}
+#Maltese Independence
+1964.1.1 = {
+owner = MLT
+controller = MLT
+remove_core = ENG
+colonial = 0
+		}

@@ -1,0 +1,18 @@
+owner = SWI
+controller = SWI
+add_core = SWI
+add_core = HRE
+1700.1.1 = {
+owner = SWI
+controller = SWI
+}
+1812.1.1 = {
+		controller = FRA
+		owner = FRA
+		}
+1815.1.1 = {
+		controller = SWI
+		owner = SWI
+		}
+trade_goods = coal
+life_rating = 40

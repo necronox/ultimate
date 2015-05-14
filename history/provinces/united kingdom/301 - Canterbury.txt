@@ -1,0 +1,23 @@
+owner = ANG
+controller = ANG
+1707.1.1 = {
+owner = ENG
+controller = ENG
+add_core = ENG
+	}
+add_core = ANG
+add_core = ENG
+2015.1.1 = {
+owner = ANG
+controller = ANG
+		}
+trade_goods = coal
+life_rating = 35
+1700.1.1 = {
+naval_base = 1
+	} #Chatham
+fort = 1
+1861.1.1 = { 
+	railroad = 3 
+#	naval_base = 3 #Chatham
+}

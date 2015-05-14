@@ -1,0 +1,379 @@
+country_event = {
+	id = 19800001
+	title = startup_event_name
+	desc = startup_event_desc
+	picture = administration
+	
+	trigger = {
+		NOT = {
+			has_country_flag = startupeventfired
+		}
+		civilized = yes
+		NOT = {
+			year = 1800
+		}
+		NOT = {
+			government = theocratic_dictatorship
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = startup_event_option
+		political_reform = tolerated_minority
+		political_reform = feudal_conscription
+		political_reform = only_noble_citizenship
+		social_reform = completely_banned
+		social_reform = outlawed_hs
+		social_reform = legal_child
+		social_reform = patriarchal_female
+		set_country_flag = startupeventfired
+	}
+}
+country_event = {
+	id = 19800002
+	title = startup_event_name
+	desc = startup_event_desc
+	picture = administration
+	
+	trigger = {
+		NOT = {
+			has_country_flag = startupeventfired
+		}
+		civilized = no
+		OR = {
+			is_culture_group = arab
+			is_culture_group = south_asian
+			is_culture_group = southeast_asian
+			is_culture_group = east_asian
+		}
+		NOT = {
+			government = theocratic_dictatorship
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = startup_event_option
+		political_reform = tolerated_minority
+		political_reform = feudal_conscription
+		political_reform = only_noble_citizenship
+		social_reform = completely_banned
+		social_reform = outlawed_hs
+		social_reform = legal_child
+		social_reform = patriarchal_female
+		set_country_flag = startupeventfired
+	}
+}
+country_event = {
+	id = 19800003
+	title = startup_event_name
+	desc = startup_event_desc
+	picture = administration
+	
+	trigger = {
+		NOT = {
+			has_country_flag = startupeventfired
+		}
+		civilized = no
+		NOT = {
+			OR = {
+				is_culture_group = arab
+				is_culture_group = south_asian
+				is_culture_group = southeast_asian
+				is_culture_group = east_asian
+			}
+		}
+		NOT = {
+			government = theocratic_dictatorship
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = startup_event_option
+		political_reform = intolerance_against_min
+		political_reform = no_conscription
+		political_reform = no_citizenship
+		social_reform = no_regulations
+		social_reform = outlawed_hs
+		social_reform = legal_child
+		social_reform = patriarchal_female
+		set_country_flag = startupeventfired
+	}
+}
+country_event = {
+	id = 19800004
+	title = startup_event_name
+	desc = startup_event_desc
+	picture = administration
+	
+	trigger = {
+		NOT = {
+			has_country_flag = startupeventfired
+		}
+		civilized = yes
+		year = 1800
+		NOT = {
+			year = 1900
+		}
+		NOT = {
+			government = theocratic_dictatorship
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = startup_event_option
+		political_reform = tolerated_minority
+		political_reform = mandatory_military_service
+		political_reform = no_minority_citizenship
+		social_reform = completely_banned
+		social_reform = outlawed_hs
+		social_reform = restricted_child
+		social_reform = cheap_work_female
+		set_country_flag = startupeventfired
+	}
+}
+country_event = {
+	id = 19800005
+	title = startup_event_name
+	desc = startup_event_desc
+	picture = administration
+	
+	trigger = {
+		NOT = {
+			has_country_flag = startupeventfired
+		}
+		civilized = yes
+		year = 1901
+		war = no
+		NOT = {
+			year = 1999
+		}
+		NOT = {
+			government = theocratic_dictatorship
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+		}
+		
+		NOT = {
+		is_culture_group = latin_american
+		}
+		
+		NOT = {
+		continent = africa
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = startup_event_option
+		political_reform = tolerated_minority
+		political_reform = mandatory_military_service
+		political_reform = universal_citizenship
+		social_reform = completely_banned
+		social_reform = outlawed_hs
+		social_reform = illegal_child
+		social_reform = workplace_discrimination_female
+		set_country_flag = startupeventfired
+	}
+}
+country_event = {
+	id = 19800006
+	title = startup_event_name
+	desc = startup_event_desc
+	picture = administration
+	
+	trigger = {
+		NOT = {
+			has_country_flag = startupeventfired
+		}
+		civilized = yes
+		year = 2000
+		NOT = {
+			government = theocratic_dictatorship
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = startup_event_option
+		political_reform = tolerated_minority
+		political_reform = voluntary_conscription
+		political_reform = universal_citizenship
+		social_reform = only_registrated
+		social_reform = accepted_hs
+		social_reform = illegal_child
+		social_reform = workplace_discrimination_female
+		set_country_flag = startupeventfired
+	}
+}
+country_event = {
+	id = 19800007
+	title = startup_event_name
+	desc = startup_event_desc
+	picture = administration
+	
+	trigger = {
+		NOT = {
+			has_country_flag = startupeventfired
+		}
+		civilized = yes
+		government = theocratic_dictatorship
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = startup_event_option
+		political_reform = intolerance_against_min
+		political_reform = total_conscription
+		political_reform = no_minority_citizenship
+		social_reform = no_automatic_no_reg
+		social_reform = outlawed_hs
+		social_reform = restricted_child
+		social_reform = patriarchal_female
+		set_country_flag = startupeventfired
+	}
+}
+country_event = {
+	id = 19800008
+	title = startup_event_name
+	desc = startup_event_desc
+	picture = administration
+	
+	trigger = {
+		NOT = {
+			has_country_flag = startupeventfired
+		}
+		civilized = yes
+		government = proletarian_dictatorship
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = startup_event_option
+		political_reform = tolerated_minority
+		political_reform = total_conscription
+		political_reform = universal_citizenship
+		social_reform = completely_banned
+		social_reform = outlawed_hs
+		social_reform = illegal_child
+		social_reform = wartime_female
+		set_country_flag = startupeventfired
+	}
+}
+country_event = {
+	id = 19800009
+	title = startup_event_name
+	desc = startup_event_desc
+	picture = administration
+	
+	trigger = {
+		NOT = {
+			has_country_flag = startupeventfired
+		}
+		civilized = yes
+		government = presidential_dictatorship
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = startup_event_option
+		political_reform = tolerated_minority
+		political_reform = mandatory_military_service
+		political_reform = universal_citizenship
+		social_reform = completely_banned
+		social_reform = outlawed_hs
+		social_reform = restricted_child
+		social_reform = workplace_discrimination_female
+		set_country_flag = startupeventfired
+	}
+}
+country_event = {
+	id = 19800010
+	title = startup_event_name
+	desc = startup_event_desc
+	picture = administration
+	
+	trigger = {
+		NOT = {
+			has_country_flag = startupeventfired
+		}
+		civilized = yes
+		government = bourgeois_dictatorship
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = startup_event_option
+		political_reform = tolerated_minority
+		political_reform = total_conscription
+		political_reform = universal_citizenship
+		social_reform = completely_banned
+		social_reform = accepted_hs
+		social_reform = illegal_child
+		social_reform = career_female
+		set_country_flag = startupeventfired
+	}
+}
+country_event = {
+	id = 19800011
+	title = startup_event_name
+	desc = startup_event_desc
+	picture = administration
+	
+	trigger = {
+		NOT = {
+			has_country_flag = startupeventfired
+		}
+		civilized = yes
+		government = fascist_dictatorship
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = startup_event_option
+		political_reform = forced_assimilation
+		political_reform = total_conscription
+		political_reform = no_minority_citizenship
+		social_reform = completely_banned
+		social_reform = outlawed_hs
+		social_reform = illegal_child
+		social_reform = wartime_female
+		set_country_flag = startupeventfired
+	}
+}

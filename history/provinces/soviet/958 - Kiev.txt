@@ -1,0 +1,27 @@
+owner = PLC
+controller = PLC
+
+1800.1.1 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+		}
+add_core = UKR
+
+#Soviet Collapse
+1992.5.1 = {
+	owner = UKR
+	controller = UKR
+		}
+
+
+
+
+add_core = PLC
+trade_goods = grain
+life_rating = 35
+#state_building = {
+#	level = 1
+#	building = glass_factory
+#	upgrade = yes
+#}

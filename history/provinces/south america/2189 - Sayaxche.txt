@@ -1,0 +1,26 @@
+owner = MYA
+controller = MYA
+add_core = MYA
+colonial = 0
+1707.1.1 = {
+owner = SPA
+controller = SPA
+colonial = 2
+		}
+
+1810.1.1 = {
+owner = UCA
+controller = UCA
+add_core = UCA
+add_core = GUA
+colonial = 0
+		}
+
+
+
+trade_goods = timber
+life_rating = 30
+1861.1.1 = {
+	owner = GUA
+	controller = GUA
+}

@@ -1,0 +1,54 @@
+owner = PLC
+controller = PLC
+1700.1.1 = {
+	owner = TUR
+controller = TUR
+		}
+1800.1.1 = {
+owner = AUS
+controller = AUS
+add_core = AUS
+		}
+#add_core = UKR
+add_core = MOL
+add_core = RUT
+add_core = ROM
+1914.1.1 = {
+owner = KUK
+controller = KUK
+add_core = KUK
+}	
+1919.6.28 = { 
+		controller = ROM
+		owner = ROM
+		}
+
+1936.1.1 = {
+	add_core = RUS
+	}
+
+trade_goods = fruit
+life_rating = 35
+
+
+#End of WW2
+1945.5.1 = {
+	owner = RUS
+	controller = RUS
+		}
+
+#Soviet Collapse
+1992.5.1 = {
+	owner = UKR
+	controller = UKR
+	add_core = ROM
+	remove_core = MOL
+		}
+
+1992.1.1 = {
+	remove_core = RUS
+		}
+
+
+
+

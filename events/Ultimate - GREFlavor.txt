@@ -1,0 +1,176 @@
+country_event = {
+
+id = 22000105
+title = "Greek Independence War !" #Greek Independence War (1821)
+desc = "It's Time for the Greek people to claim their Independence !"
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		year = 1821
+		NOT = {
+			exists = GRE
+			year = 1822
+			has_country_flag = greek_independence_war
+			has_country_flag = no_greek_independence_war
+			}
+
+	}
+
+	option = {
+		name = "Let's punish the Greeks !"
+		set_country_flag = greek_independence_war
+		GRE_826 = { secede_province = GRE }
+		GRE_837 = { secede_province = GRE }
+		845 = { secede_province = GRE }
+		GRE = { government = democracy }
+		GRE = { prestige = -220 }
+		GRE = { capital = 834 }
+		
+	war = {
+			target = GRE
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+			
+			ai_chance = {
+			factor = 100
+			}
+	}
+	
+		option = {
+		name = "We don't need a military adventure."
+		set_country_flag = no_greek_independence_war
+		prestige_factor = -0.2
+		GRE_826 = { secede_province = GRE }
+		GRE_837 = { secede_province = GRE }
+		845 = { secede_province = GRE }
+		GRE = { government = democracy }
+		GRE = { prestige = -220 }
+		GRE = { capital = 834 }
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+id = 22000106
+title = "Kingdom of Greece !" #Kingdom of Greece (1832)
+desc = "Greece becomes Independent !"
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		year = 1832
+		NOT = {
+			exists = GRE
+			year = 1833
+			has_country_flag = greek_independence
+			}
+
+	}
+
+	option = {
+		name = "We have no option but to recognize Greek Independence !"
+		set_country_flag = greek_independence
+		GRE_826 = { secede_province = GRE }
+		GRE_837 = { secede_province = GRE }
+		845 = { secede_province = GRE }
+		GRE = { prestige = -220 }
+		GRE = { capital = 834 }
+		
+		any_pop = {
+			consciousness = 1
+			militancy = 1
+		}
+	}
+}
+
+country_event = {
+
+id = 22000107
+title = "Kingdom of Greece !" #Kingdom of Greece (1832)
+desc = "Othon becomes Greece's Monarch !"
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = GRE
+		year = 1832
+		NOT = {
+			year = 1833
+			has_country_flag = othon
+			}
+
+	}
+
+	option = {
+		name = "We welcome Our new ruler !"
+		set_country_flag = othon
+		government = absolute_monarchy 
+	}
+}
+
+
+country_event = {
+
+id = 22000108
+title = "Greek Military junta !" #Greek Military junta (1967)
+desc = "Greek Military Officers Ceized Power !"
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = GRE
+		year = 1967
+		NOT = {
+			government = fascist_dictatorship
+			year = 1968
+			has_country_flag = greek_military_junta
+			}
+
+	}
+
+	option = {
+		name = "The Military Officers Ceized Power !"
+		set_country_flag = greek_military_junta
+		government = fascist_dictatorship 
+		
+	}
+}
+
+
+country_event = {
+
+id = 22000109
+title = "Restoration of Democracy !" #Restoration of Democracy (1974)
+desc = "Democracy is Back in our Country !"
+picture = ""
+fire_only_once = yes
+
+	trigger = {
+		tag = GRE
+		year = 1974
+		NOT = {
+			government = democracy
+			year = 1975
+			has_country_flag = greek_restoration_democracy
+			}
+
+	}
+
+	option = {
+		name = "Democracy is Back !"
+		set_country_flag = greek_restoration_democracy
+		government = democracy 
+		
+	}
+}

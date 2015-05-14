@@ -1,0 +1,23 @@
+1836.1.1 = {
+owner = RUS
+controller = RUS
+colonial = 2
+		}
+trade_goods = fish
+life_rating = 20
+
+1867.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+		}
+
+
+1938.1.1 = { 
+	railroad = 6 
+	naval_base = 6
+	fort = 6
+	colonial = 0
+}
+
+

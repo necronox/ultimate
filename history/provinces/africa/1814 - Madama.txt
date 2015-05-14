@@ -1,0 +1,16 @@
+trade_goods = wool
+life_rating = 10
+
+1903.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+1845.1.1 = {
+	add_core = NGR
+		}
+1960.1.1 = {
+	owner = NGR
+	controller = NGR
+	colonial = 0
+		}

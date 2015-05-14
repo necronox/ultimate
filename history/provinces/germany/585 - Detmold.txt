@@ -1,0 +1,45 @@
+owner = HRE
+controller = HRE
+
+add_core = LIP
+
+add_core = HRE
+
+add_core = GER
+
+1604.1.1 = { 
+	owner = LIP
+	controller = LIP
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+
+1800.1.1 = { 
+	controller = PRU		
+		owner = PRU		
+		add_core = PRU		
+		}
+1812.1.1 = { 
+	controller = LIP
+		
+		owner = LIP
+		
+		remove_core = PRU		
+		}
+
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+
+
+trade_goods = coal
+
+life_rating = 40
+
+
+1861.1.1 = { railroad = 3 }

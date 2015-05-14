@@ -1,0 +1,142 @@
+political_decisions = {
+	act_of_union = {
+	picture = actofunionpic
+		potential = {
+			tag = ANG
+			year = 1707
+			NOT = {
+				has_global_flag = actofunion_done
+				exists = ENG
+				}
+			is_our_vassal = SCO
+					}
+
+		allow = {
+			OR = {
+			government = hms_government
+			government = absolute_monarchy
+				}
+			}
+
+		effect = {
+			set_global_flag = actofunion_done
+			inherit = SCO
+			change_tag = ENG
+				}
+					}
+	restore_charlesII = {
+	picture = charlesIIpic
+		potential = {
+			tag = ANG
+			year = 1665
+			government = bourgeois_dictatorship
+			NOT = {
+				has_country_flag = charlesII
+				}
+					}
+		allow = {
+		}
+		effect = {
+			set_country_flag = charlesII
+			government = absolute_monarchy
+			prestige = 5
+				}
+					}
+
+	1604_london_treaty = {
+	picture = london1604pic
+		potential = {
+			tag = ANG
+			year = 1604
+			NOT = { year = 1605 }
+			month = 7
+			war = yes
+			NOT = {
+				has_country_flag = 1604_london_treaty
+				}
+					}
+		allow = {
+		}
+		effect = {
+			set_country_flag = 1604_london_treaty
+			prestige = 5
+	      		any_country = {	
+				limit = {
+				 tag = SPA
+				 war_with = THIS
+				}
+		  		end_war = THIS
+			}
+				}
+					}
+
+	invite_williamIII = {
+	picture = williamIIIpic
+		potential = {
+			tag = ANG
+			year = 1688
+			has_country_flag = kingjamesII
+			NOT = {
+				has_country_flag = williamIII
+				}
+					}
+		allow = {
+		}
+		effect = {
+			set_country_flag = williamIII
+			government = hms_government
+			prestige = 5
+				}
+					}
+	ulster_plantation = {
+		picture = ulsterplantationpic
+			potential = {
+				NOT = {
+					has_country_flag = does_ulsterplant
+					year = 1714
+					}
+				tag = ANG
+					}
+			allow = {
+			}
+			effect = {
+			set_country_flag = does_ulsterplant
+			ENG_254 = {
+				add_province_modifier = { name = ulster_plantation_mod duration = -1 }
+					}
+				}
+			}
+form_united_kingdom = {
+	picture = actofunionpic
+		potential = {
+			NOT = {
+				exists = ENG
+				}
+			is_culture_group = british
+			culture_has_union_tag = yes
+		}
+		
+		allow = {
+			prestige = 45
+			war = no
+			cultural_union = {
+				all_core = {
+						owned_by = THIS
+						}
+					}
+				}
+		effect = {
+			prestige = 20
+			change_tag = culture
+			add_accepted_culture = union
+			add_accepted_culture = scottish
+			add_accepted_culture = welsh
+
+				}
+		ai_will_do = {
+			factor = 1
+				}
+	}	
+
+
+	}

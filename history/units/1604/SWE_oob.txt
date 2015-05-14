@@ -1,0 +1,72 @@
+army = {
+	name = "1st Army"
+	location = 349
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Irregular Infantry"
+		type = irregular
+	}
+	regiment = {
+		name= "Cavalry"
+		type = cavalry
+	}
+		}
+navy = {
+	name = "1st Fleet"
+	location = 322
+	ship = {
+	name = "Frigate"
+	type = frigate
+		}
+	ship = {
+	name = "Frigate"
+	type = frigate
+		}
+	ship = {
+	name = "Frigate"
+	type = frigate
+		}
+	ship = {
+	name = "Frigate"
+	type = frigate
+		}
+	ship = {
+	name = "Frigate"
+	type = frigate
+		}
+	ship = {
+	name = "Frigate"
+	type = frigate
+		}
+	ship = {
+	name = "Frigate"
+	type = frigate
+		}
+	ship = {
+	name = "Frigate"
+	type = frigate
+		}
+	ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+	ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+	ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+	ship = {
+	name = "Transport Ship"
+	type = clipper_transport
+		}
+			}

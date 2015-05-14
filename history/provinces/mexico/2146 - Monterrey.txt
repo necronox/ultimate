@@ -1,0 +1,25 @@
+owner = SPA
+controller = SPA
+colonial = 1
+1811.1.1 = {
+owner = MEX
+
+colonial = 0
+controller = MEX
+add_core = MEX
+		}
+1836.1.1 = {
+add_core = RGR
+		}
+
+1900.1.1 = {
+railroad = 2
+building = steel_factory
+}
+		
+1906.1.1 = {
+building = cement_factory
+		}		
+
+trade_goods = grain
+life_rating = 35

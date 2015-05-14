@@ -1,0 +1,15 @@
+trade_goods = wool
+life_rating = 10
+1903.1.1 = {
+	owner = FRA
+	controller = FRA
+		}
+
+1835.1.1 = {
+	add_core = MAU
+		}
+
+1960.1.1 = {
+	owner = MAU
+	controller = MAU
+		}

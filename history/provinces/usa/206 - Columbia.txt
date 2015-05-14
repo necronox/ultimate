@@ -1,0 +1,42 @@
+	owner = CHE
+	controller = CHE
+	add_core = CHE
+1714.1.1 = {
+	owner = THC
+	controller = THC
+	add_core = THC
+colonial = 0
+		}
+1775.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	remove_core = THC
+		}
+1820.1.1 = {
+		owner = USA
+	controller = USA
+	add_core = USA
+
+		}
+trade_goods = cotton
+life_rating = 35
+1867.1.1 = { 	#AFTER CIVIL WAR
+	owner = USA	#AFTER CIVIL WAR
+
+
+	controller = USA #AFTER CIVIL WAR
+
+		}
+1861.1.1 = {
+	controller = CSA
+	owner = CSA
+	add_core = CSA
+}
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}
+
+1861.1.1 = { railroad = 3 }

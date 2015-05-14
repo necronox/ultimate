@@ -1,0 +1,13 @@
+1836.1.1 = {
+	owner = POR
+	controller = POR
+	colonial = 2
+		}
+add_core = ETM
+trade_goods = spices
+life_rating = 30
+1960.1.1 = {
+	owner = ETM
+	controller = ETM
+	colonial = 0
+		}

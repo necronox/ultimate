@@ -1,0 +1,16 @@
+owner = SPA
+controller = SPA
+colonial = 1
+1811.1.1 = {
+owner = MEX
+
+colonial = 0
+controller = MEX
+add_core = MEX
+		}trade_goods = grain
+life_rating = 35
+naval_base = 1
+#There will be blood
+1882.1.1 = {
+	trade_goods = oil
+		}

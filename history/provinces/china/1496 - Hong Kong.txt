@@ -1,0 +1,41 @@
+owner = MNG
+controller = MNG
+add_core = MNG
+
+1644.1.1 = {
+	owner = CHI
+	controller = CHI
+	add_core = CHI
+	remove_core = MNG
+		}
+
+1937.1.1 = {
+	owner = ENG	
+	controller = ENG
+	add_core = NCN
+		}
+1945.1.1 = {
+	owner = ENG	
+	controller = ENG
+		}
+1999.1.1 = {
+	owner = HNG	
+	controller = HNG
+	remove_core = ENG
+		}
+
+trade_goods = tea
+life_rating = 32
+1861.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 2
+	add_core = HNG
+}
+
+1861.1.1 = { 
+	fort = 1
+	naval_base = 1
+}
+
+

@@ -1,0 +1,54 @@
+1764.1.1 = {
+owner = SPA
+controller = SPA
+colonial = 1
+		}
+1836.1.1 = {
+owner = TEX
+controller = TEX
+add_core = TEX
+colonial = 0
+		}
+#There will be blood
+1875.1.1 = {
+	trade_goods = oil
+		}
+
+trade_goods = cattle
+life_rating = 35
+1867.1.1 = {
+	owner = USA
+	controller = USA
+		}
+1861.1.1 = {
+owner = USA
+controller = USA
+add_core = USA
+}
+
+
+
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}
+
+1861.1.1 = {
+	controller = CSA
+	owner = CSA
+	add_core = CSA
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 2 }
+1930.1.1 = {
+state_building = {
+	level = 2
+	building = aeroplane_factory
+	upgrade = yes
+}
+}

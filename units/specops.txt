@@ -1,0 +1,49 @@
+specops = {
+	icon = 22
+	
+	type = land
+	sprite = SpecOps
+	active = no
+	unit_type = special
+	primary_culture = yes
+	floating_flag = yes
+
+	#Core Abilities
+	priority = 16
+	max_strength = 3
+	default_organisation = 50
+	maximum_speed = 10.00
+	weighted_value = 15.0
+
+
+	#Building Costs
+	build_time = 1460
+	build_cost = {
+		small_arms = 100
+		canned_food = 100
+		liquor = 200
+		luxury_clothes = 50
+		telephone = 50
+		explosives = 50
+	}
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		small_arms = 0.01 #0.015
+		explosives = 0.01
+		telephone = 0.01
+		canned_food = 0.02 # 0.08
+		ammunition = 0.01 #0
+		liquor = 0.01
+	}
+	
+
+	#Land Abilties
+	reconnaissance = 15
+	attack = 20
+	defence = 22
+	discipline = 1.5
+	support = 0.0
+	maneuver = 10
+	siege = 1.2
+}

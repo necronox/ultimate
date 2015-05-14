@@ -1,0 +1,30 @@
+1604.1.1 = {
+	owner = SPA
+	controller = SPA
+	colonial = 2
+		}
+1819.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	colonial = 0
+		}
+trade_goods = cotton
+life_rating = 35
+1867.1.1 = {
+	owner = USA
+	controller = USA
+		}
+is_slave = yes
+1861.1.1 = {
+
+	controller = CSA
+	owner = CSA
+	add_core = CSA
+	railroad = 3 
+}
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}

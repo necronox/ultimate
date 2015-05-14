@@ -1,0 +1,36 @@
+owner = HRE
+controller = HRE
+add_core = PMR
+add_core = GER
+add_core = HRE
+
+1604.1.1 = { 
+	owner = PMR
+	controller = PMR
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+1700.1.1 = {
+	controller = PRU
+	owner = PRU
+	add_core = PRU
+		}
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		}
+
+trade_goods = grain
+life_rating = 40
+1861.1.1 = { railroad = 3 }
+
+#End of WW2
+1945.5.1 = {
+	owner = POL
+	controller = POL
+	add_core = POL
+		}

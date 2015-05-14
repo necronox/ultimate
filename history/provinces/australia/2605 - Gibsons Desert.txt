@@ -1,0 +1,9 @@
+add_core = AST
+
+1910.1.1 = {
+	owner = AST
+	controller = AST
+colonial = 0
+		}
+trade_goods = grain
+life_rating = 15

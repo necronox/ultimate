@@ -1,0 +1,61 @@
+owner = HRE
+controller = HRE
+add_core = HAM
+
+add_core = DEN
+
+add_core = HRE
+
+add_core = GER
+
+1604.1.1 = { 
+	owner = HAM
+	controller = HAM
+	}
+
+1604.1.2 = { 
+	owner = HRE
+	controller = HRE
+	}
+
+1812.1.1 = {
+		controller = FRA
+		owner = FRA
+		}
+
+1815.1.1 = { 
+	controller = HAM
+		
+		owner = HAM
+		
+		}
+
+
+
+1836.1.1 = { 
+	controller = HAM
+		
+		owner = HAM
+		
+		}
+
+
+1871.1.1 = { 
+		controller = GER
+		owner = GER
+		add_core = GER
+		}
+
+
+trade_goods = fruit
+
+life_rating = 40
+
+naval_base = 1
+
+1936.1.1 = {
+		naval_base = 6
+		}
+
+
+1861.1.1 = { railroad = 3 }

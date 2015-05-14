@@ -1,0 +1,28 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = ALB
+#There will be blood
+1917.1.1 = {
+	trade_goods = oil
+		}
+1914.1.1 = {
+	owner = ALB
+	controller = ALB
+	remove_core = TUR
+		}
+1935.1.1 = {
+	owner = ITA
+	controller = ITA
+		}
+trade_goods = grain
+life_rating = 35
+
+
+#End of WW2
+1945.5.1 = {
+	owner = ALB
+	controller = ALB
+		}
+
+

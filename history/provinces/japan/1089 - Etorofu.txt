@@ -1,0 +1,15 @@
+add_core = AIN
+add_core = RUS
+add_core = JAP
+
+trade_goods = fish
+life_rating = 20
+1914.1.1 = { 
+		controller = JAP
+		owner = JAP
+		colonial = 1
+		}
+1946.1.1 = { 
+		controller = RUS
+		owner = RUS
+		}

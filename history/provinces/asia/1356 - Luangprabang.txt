@@ -1,0 +1,23 @@
+owner = LUA
+controller = LUA
+add_core = LUA
+1910.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+
+trade_goods = tropical_wood
+life_rating = 30
+
+1945.1.1 = {
+	add_core = LAO
+	colonial = 0
+		}
+		
+1953.1.1 = {
+	owner = LAO
+	controller = LAO
+	colonial = 0
+		}
+

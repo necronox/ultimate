@@ -1,0 +1,97 @@
+country_event = {
+	id = 100000000
+	title = "EVTNAME100000000"
+        desc = "EVTDESC100000000"
+	major = yes
+	
+	trigger = {
+		tag = POL
+		year = 1830
+		vassal_of = RUS
+		not = {
+			year = 1834
+			has_country_flag = polish_november_uprising_happend
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+	name = "EVTOPTA100000000"
+	set_country_flag = polish_november_uprising_happend
+		war = {
+		target = RUS
+		attacker_goal = {
+			casus_belli = become_independent
+		}
+		call_ally = yes
+		}
+	}
+}
+
+country_event = {
+	id = 100000010
+	title = "EVTNAME100000010"
+        desc = "EVTDESC100000010"
+	major = yes
+	
+	trigger = {
+		tag = POL
+		year = 1862
+		vassal_of = RUS
+		not = {
+			year = 1865
+			has_country_flag = polish_january_uprising_happend
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+	name = "EVTOPTA100000010"
+	set_country_flag = polish_january_uprising_happend
+	random_country = {
+		limit = {
+			tag = RUS
+		}
+		release_vassal = POL
+	}
+	war = {
+		target = RUS
+		attacker_goal = {
+			casus_belli = restore_plc_cb
+		}
+		defender_goal = {
+			casus_belli = conquest
+		}
+		call_ally = yes
+		}
+	}
+}
+
+country_event = {
+	id = 100000020
+	title = "EVTNAME100000020"
+        desc = "EVTDESC100000020"
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+	name = "EVTOPTA100000020"
+
+	random_country = {
+		limit = {
+			tag = POL
+		}
+		change_tag = PLC
+	}
+	any_owned = {
+        	limit = {
+                        is_core = PLC
+                }
+                secede_province = PLC
+        }
+}

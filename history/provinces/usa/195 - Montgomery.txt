@@ -1,0 +1,41 @@
+owner = CRK
+controller = CRK
+add_core = CRK
+1800.1.1 = {
+owner = USA
+controller = USA
+add_core = USA
+add_core = ALA
+colonial = 2
+		}
+1820.1.1 = {
+	colonial = 0
+		}
+trade_goods = cotton
+life_rating = 35
+1867.1.1 = {
+	owner = USA
+	controller = USA
+		}
+
+party_loyalty = {
+	ideology = conservative
+	loyalty_value = 15
+}
+
+1861.1.1 = {
+	party_loyalty = {
+	ideology = conservative
+	loyalty_value = 20
+}
+	controller = CSA
+	owner = CSA
+	add_core = CSA
+}
+2019.1.1 = {
+	owner = UCS	
+	controller = UCS
+	add_core = UCS
+		}
+
+1861.1.1 = { railroad = 3 }

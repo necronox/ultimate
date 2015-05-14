@@ -1,0 +1,24 @@
+
+
+1903.1.1 = {
+		owner = ENG
+		controller = ENG
+		colonial = 2
+		}
+
+
+trade_goods = grain
+life_rating = 15
+1861.1.1 = {
+	owner = ZAN
+	controller = ZAN
+	life_rating = 30
+	add_core = ZAN
+}
+
+	add_core = TZN
+1960.1.1 = {
+	owner = TZN
+	controller = TZN
+	colonial = 0
+		}

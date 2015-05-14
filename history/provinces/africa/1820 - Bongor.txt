@@ -1,0 +1,16 @@
+trade_goods = grain
+life_rating = 15
+
+1903.1.1 = {
+		owner = FRA
+		controller = FRA
+		colonial = 2
+		}
+1845.1.1 = {
+	add_core = CHD
+		}
+1960.1.1 = {
+	owner = CHD
+	controller = CHD
+	colonial = 0
+		}

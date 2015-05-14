@@ -1,0 +1,17 @@
+political_decisions = {
+	play_harder_game = {
+		potential = {
+			NOT = {	has_country_flag = hidden_decisions }
+		}
+		allow = {
+			
+		}
+		effect = {
+			activate_technology = ad_hoc_hard_game
+		}
+		ai_will_do = {
+			factor = 0
+			}
+	}
+}
+

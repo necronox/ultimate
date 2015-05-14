@@ -1,0 +1,50 @@
+1714.1.1 = {
+	owner = THC
+	controller = THC
+	add_core = THC
+		}
+1775.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	remove_core = THC
+		}
+1820.1.1 = {
+naval_base = 1
+
+		}
+
+trade_goods = fish
+
+life_rating = 35
+1867.1.1 = { 	#AFTER CIVIL WAR
+	owner = USA	#AFTER CIVIL WAR
+
+
+	controller = USA #AFTER CIVIL WAR
+
+		}
+#state_building = {
+#	level = 1
+#	building = canned_food_factory
+#	upgrade = yes
+#}
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = steamer_shipyard
+		upgrade = yes
+	}
+}
+1861.1.1 = { 
+	railroad = 3 
+}
+
+
+1938.1.1 = { 
+	railroad = 6 
+	naval_base = 6
+	fort = 6
+}
+
+

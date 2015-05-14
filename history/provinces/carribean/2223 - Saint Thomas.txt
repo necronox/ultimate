@@ -1,0 +1,13 @@
+owner = SPA
+controller = SPA
+1666.1.1 = {
+owner = DEN
+controller = DEN
+		}
+1917.1.1 = {
+owner = USA
+controller = USA
+		}
+trade_goods = sugar
+life_rating = 35
+colonial = 2

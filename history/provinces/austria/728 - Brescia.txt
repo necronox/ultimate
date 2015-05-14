@@ -1,0 +1,31 @@
+owner = VEN
+controller = VEN
+1800.1.1 = {
+	owner = ITA
+	controller = ITA
+		}
+1812.1.1 = {
+		controller = ITA
+		owner = ITA
+		}
+
+
+1815.1.1 = {
+		controller = AUS
+		owner = AUS
+		}
+
+
+add_core = LOM
+add_core = ITA
+1914.1.1 = { 
+		controller = ITA
+		owner = ITA
+		}
+trade_goods = silk
+life_rating = 35
+1861.1.1 = {
+	owner = ITA
+	controller = ITA
+}
+1861.1.1 = { railroad = 3 }

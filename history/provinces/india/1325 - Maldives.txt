@@ -1,0 +1,28 @@
+owner = MLD
+controller = MLD
+add_core = MLD
+1860.1.1 = {
+owner = ENG
+controller = ENG
+colonial = 2
+}
+
+#Decolonisation
+1947.1.1 = {
+	owner = MLD
+	controller = MLD
+	remove_core = HND
+	colonial = 0
+		}
+
+
+
+add_core = HND
+1880.1.1 = {
+owner = ENG #hello
+controller = ENG #hello
+colonial = 2
+		}
+trade_goods = fish
+life_rating = 32
+

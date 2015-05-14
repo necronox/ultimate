@@ -1,0 +1,17 @@
+owner = TUR
+controller = TUR
+1810.1.1 = {
+owner = HDJ
+controller = HDJ
+		}
+add_core = HDJ
+
+1919.1.1 = {
+	controller = SAU 
+	owner = SAU
+	add_core = SAU
+colonial = 0
+
+}
+trade_goods = grain
+life_rating = 35

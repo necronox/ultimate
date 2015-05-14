@@ -1,0 +1,111 @@
+1800.1.1 = {
+	army = { 
+	name = "Imperial Army I"
+        location = 585
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+		home = 585
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+        }
+	regiment = {
+		name = "Imperial Artillery I"
+		type = artillery
+	}
+}
+	army = { 
+	name = "Imperial Army II"
+        location = 591
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+        }
+	regiment = {
+		name = "Imperial Artillery I"
+		type = artillery
+	}
+}
+	army = { 
+	name = "Imperial Army III"
+        location = 564
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Infanterie"
+                type = infantry
+        }
+        regiment = {
+                name= "Cavalerie"
+                type = cuirassier
+        }
+	regiment = {
+		name = "Imperial Artillery I"
+		type = artillery
+	}
+}
+}

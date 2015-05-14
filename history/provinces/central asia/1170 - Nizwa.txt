@@ -1,0 +1,10 @@
+owner = OMA
+controller = OMA
+add_core = OMA
+trade_goods = opium
+life_rating = 35
+
+#There will be blood
+1910.1.1 = {
+	trade_goods = oil
+		}

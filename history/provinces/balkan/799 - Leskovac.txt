@@ -1,0 +1,26 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = SER
+add_core = YUG
+1914.1.1 = { 
+		controller = SER
+		owner = SER
+		remove_core = TUR
+		}
+1919.6.28 = { 
+		controller = YUG
+		owner = YUG
+		remove_core = KUK
+		}
+trade_goods = timber
+life_rating = 35
+
+
+#Yugoslavia Breakup
+2006.3.6 = {
+	owner = SER
+	controller = SER
+		}
+
+
