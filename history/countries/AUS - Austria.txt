@@ -433,6 +433,9 @@ puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 	}
 
+1805.12.26 = { set_global_flag = hre_dismantled
+        }
+
 1830.1.1 = {
 oob = "AUS_oob.txt"
 plurality = 0
