@@ -707,7 +707,7 @@ trigger = {
 	}
 
 	option = {
-		name = "¡Viva Cuba Libre!"
+		name = "Â¡Viva Cuba Libre!"
 		set_country_flag = cuban_revolution
 		
 	any_pop = {
@@ -1437,7 +1437,7 @@ trigger = {
 country_event = {
 
 id = 26000032
-title = ev_26000032 #Chilean coup d'état (1973)
+title = ev_26000032 #Chilean coup d'Ã©tat (1973)
 desc = ev_26000032
 picture = ""
 fire_only_once = yes
@@ -1645,7 +1645,7 @@ trigger = {
 	}
 	
 	option = {
-	set_global_flag = falklands_arg
+	set_global_flag = falkland_arg
 	
 	name = "They are called Malvinas."
 	
@@ -1675,7 +1675,7 @@ fire_only_once = yes
 trigger = {
 		tag = ENG
 		year = 1981
-		has_global_flag = falklands_war
+		has_global_flag = falkland_arg
 		
 		NOT = {
 			year = 1983
@@ -1689,7 +1689,7 @@ trigger = {
 
 	option = {
 		name = "Falklands are British!"
-		set_global_flag = falklands_war
+		set_global_flag = falkland_war
 
 		war = {
 			target = ARG
