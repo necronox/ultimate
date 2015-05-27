@@ -7,6 +7,7 @@ country_event = {
 	trigger = {
 		government = revolutionary_republic
 		is_vassal = no
+                    }
 
 	mean_time_to_happen = {
 			months = 1
@@ -30,6 +31,7 @@ country_event = {
 		}
 		government = napoleonic_empire
 		is_vassal = no
+                    }
 
 	mean_time_to_happen = {
 			months = 1
@@ -52,6 +54,7 @@ country_event = {
 		tag = FRA
 		year = 1821
 		government = napoleonic_empire
+                    }
 	mean_time_to_happen = {
 			months = 1
 	}

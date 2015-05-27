@@ -14,12 +14,10 @@ fire_only_once = yes
 			year = 1604
 			has_country_flag = mystras_name
 			}
-	}
+	            }
 
 	option = {
 		name = "Glory to our Emperor !"
 		839 = { change_province_name = "Mystras" }
-		}
-	}
-}
-
+		   }
+	            }

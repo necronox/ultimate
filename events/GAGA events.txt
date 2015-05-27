@@ -29,10 +29,10 @@
 # 999133 - All Power To El Presidente!        #
 # 999134 - The Bourgeois Is Victorious!	      #
 ###############################################
-ULTIMATE MOD
+#ULTIMATE MOD
 #REMOVED 999112 & 999113
 ###############################################
-# 999100 - Wartime Radicalisation  
+# 999100 - Wartime Radicalisation
 country_event = {
 	id = 999100
 	title = "EVTNAME999100"

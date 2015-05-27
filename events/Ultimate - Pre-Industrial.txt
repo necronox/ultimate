@@ -565,50 +565,50 @@ province_event = {
 			}
 		}
 	}
-country_event = {
-	id = 401016
-	picture = "shakespearepic1"
-	title = "First Folio Published"
-	desc = "Though released post-humously and not put together by Shakespeare himself, the First Folio containing his written plays is already lauded as a marvel celebrating and enriching the English language and culture."
-	trigger = {
-		year = 1623
-		tag = ANG
-		NOT = {
-			has_country_flag = firstfoliopublished
-			year = 1700
-			}
-		}
-	option = {
-		name = "To be or not to be, that is the question..."
-		prestige = 50
-		set_country_flag = firstfoliopublished
-		any_pop = {
-			limit = {
-			culture = english
-				}
-			consciousness = 2
-			}
-		}
-	}
-country_event = {
-	id = 401017
-	picture = "shakespearepic2"
-	title = "Shakespeare is Dead"
-	desc = "The master playwright William Shakespeare has died today at the age of 52. His plays have touched a great many, including nobility, and the man has secured his place as one of the great figures of the Elizabethan era and English Renaissance."
-	trigger = {
-		year = 1616
-		tag = ANG
-		NOT = {
-			has_country_flag = shakespeare_dead
-			year = 1700
-			}
-		}
-	option = {
-		name = "Alas, I knew him Horatio"
-		set_country_flag = shakespeare_dead
-		prestige = 10
-		}
-	}	
+#country_event = {
+#	id = 401016
+#	picture = "shakespearepic1"
+#	title = "First Folio Published"
+#	desc = "Though released post-humously and not put together by Shakespeare himself, the First Folio containing his written plays is already lauded as a marvel celebrating and enriching the English language and culture."
+#	trigger = {
+#		year = 1623
+#		tag = ANG
+#		NOT = {
+#			has_country_flag = firstfoliopublished
+#			year = 1700
+#			}
+#		}
+#	option = {
+#		name = "To be or not to be, that is the question..."
+#		prestige = 50
+#		set_country_flag = firstfoliopublished
+#		any_pop = {
+#			limit = {
+#			culture = english
+#				}
+#			consciousness = 2
+#			}
+#		}
+#	}
+#country_event = {
+#	id = 401017
+#	picture = "shakespearepic2"
+#	title = "Shakespeare is Dead"
+#	desc = "The master playwright William Shakespeare has died today at the age of 52. His plays have touched a great many, including nobility, and the man has secured his place as one of the great figures of the Elizabethan era and English Renaissance."
+#	trigger = {
+#		year = 1616
+#		tag = ANG
+#		NOT = {
+#			has_country_flag = shakespeare_dead
+#			year = 1700
+#			}
+#		}
+#	option = {
+#		name = "Alas, I knew him Horatio"
+#		set_country_flag = shakespeare_dead
+#		prestige = 10
+#		}
+#	}	
 
 country_event = {
 	id = 401018 #Pre-industrial civs
@@ -669,27 +669,27 @@ country_event = {
 		years_of_research = 0.5
 	}
 }
-country_event = {
-	id = 20000001 #Shakespeare's first performance
-	title = ev_20000001
-	desc = desc_ev_20000001
-	picture = shakespearepic2
-	fire_only_once = yes
-	trigger = {
-		year = 1603
-		owns = 300
-		NOT = {
-			year = 1605
-		}
-	}
-	mean_time_to_happen = {
-		months = 6
-	}
-	option = {
-		name = event_option_great
-		prestige = 10
-	}
-}
+#country_event = {
+#	id = 20000001 #Shakespeare's first performance
+#	title = ev_20000001
+#	desc = desc_ev_20000001
+#	picture = shakespearepic2
+#	fire_only_once = yes
+#	trigger = {
+#		year = 1603
+#		owns = 300
+#		NOT = {
+#			year = 1605
+#		}
+#	}
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	option = {
+#		name = event_option_great
+#		prestige = 10
+#	}
+#}
 country_event = {
 	id = 20000002 #Table Alphabeticall
 	title = ev_20000002
@@ -10583,7 +10583,7 @@ fire_only_once = yes
 				
 	option = {
 		name = "We are shock!"
-		set_country_flag = Chesapeake-Leopard
+		set_country_flag = Chesapeake_Leopard
 		USA = {
 		prestige = -25
 		any_pop = {
@@ -10612,7 +10612,7 @@ fire_only_once = yes
 			TAG = USA
 			year = 1808
 			war = no
-			has_country_flag = Chesapeake-Leopard
+			has_country_flag = Chesapeake_Leopard
 			NOT = {
 			year = 1811
 		}
@@ -10653,7 +10653,7 @@ fire_only_once = yes
 			tag = USA
 			year = 1811
 			war = no
-			has_country_flag = Chesapeake-Leopard
+			has_country_flag = Chesapeake_Leopard
 			has_country_flag = LittleBeltIncident
 			NOT = {
 			year = 1813
@@ -11003,7 +11003,7 @@ fire_only_once = yes
 
 	option = {
 		name = "Let's conquest Georgia and Azerbaijan!"
-		set_country_flag = first_russo-persian_war
+		set_country_flag = first_russo_persian_war
 	war = {
 			target = PER
 			attacker_goal = {
@@ -11125,7 +11125,7 @@ fire_only_once = yes
 
 	option = {
 		name = "Let's take Moldavia!"
-		set_country_flag = russo-turkish_war
+		set_country_flag = russo_turkish_war
 		
 	war = {
 			target = TUR
@@ -11144,7 +11144,7 @@ fire_only_once = yes
 	}
 		option = {
 		name = "Let them be."
-		set_global_flag = no_russo-turkish_war
+		set_global_flag = no_russo_turkish_war
 		prestige_factor = -0.2
 		any_pop = {
 			consciousness = 1
@@ -11239,7 +11239,7 @@ fire_only_once = yes
 
 	option = {
 		name = "Crush the Saudis!"
-		set_country_flag = egyptian-wahhabi_war
+		set_country_flag = egyptian_wahhabi_war
 		
 		release = EGY
 		
@@ -11260,7 +11260,7 @@ fire_only_once = yes
 	}
 		option = {
 		name = "We do not need conflicts this time."
-		set_global_flag = no_egyptian-wahhabi_war
+		set_global_flag = no_egyptian_wahhabi_war
 		prestige_factor = -0.2
 		any_pop = {
 			consciousness = 1
@@ -11396,7 +11396,7 @@ fire_only_once = yes
 
 	option = {
 		name = "Another war against the Barbaryans"
-		set_country_flag = egyptian-wahhabi_war
+		set_country_flag = egyptian_wahhabi_war
 		
 	war = {
 			target = TUR
@@ -11525,7 +11525,7 @@ fire_only_once = yes
 	}
 		option = {
 		name = "We don't need a military adventure."
-		set_country_flag = no_spanish-mexican_war
+		set_country_flag = no_spanish_mexican_war
 		prestige_factor = -0.2
 		any_pop = {
 			consciousness = 1
@@ -11561,7 +11561,7 @@ fire_only_once = yes
 
 	option = {
 		name = "Let's conquest Armenia!"
-		set_country_flag = second_russo-persian_war
+		set_country_flag = second_russo_persian_war
 	war = {
 			target = PER
 			attacker_goal = {
@@ -11579,7 +11579,7 @@ fire_only_once = yes
 	}
 		option = {
 		name = "We don't need a military adventure."
-		set_global_flag = no_second_russian-persian_war
+		set_global_flag = no_second_russian_persian_war
 		prestige_factor = -0.2
 		any_pop = {
 			consciousness = 1
@@ -11722,7 +11722,7 @@ fire_only_once = yes
 
 	option = {
 		name = "Let's take Greater Syria!"
-		set_country_flag = first_egyptian-ottoman_war
+		set_country_flag = first_egyptian_ottoman_war
 	war = {
 			target = TUR			
 			attacker_goal = {
@@ -11748,7 +11748,7 @@ fire_only_once = yes
 	}
 		option = {
 		name = "We don't need a military adventure."
-		set_global_flag = no_egyptian-ottoman War
+		set_global_flag = no_egyptian_ottoman_war
 		prestige_factor = -0.2
 		any_pop = {
 			consciousness = 1

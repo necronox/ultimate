@@ -175,7 +175,6 @@ fire_only_once = yes
 			ai_chance = {
 			factor = 100
 		}
-	}
 		option = {
 		name = "Let them be."
 		set_global_flag = no_indochina_war

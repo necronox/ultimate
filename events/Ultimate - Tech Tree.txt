@@ -765,7 +765,7 @@ country_event = {
 				civilized = yes
 				year = 1800
 				standing_army = 1
-				prussian_doctrine 1
+				prussian_doctrine = 1
 				napoleonic_thought = 1
 				colombus_voyage = 1
 				sir_francis_drake_doctrine = 1
@@ -806,7 +806,7 @@ country_event = {
 				civilized = yes
 				year = 1836
 				standing_army = 1
-				prussian_doctrine 1
+				prussian_doctrine = 1
 				napoleonic_thought = 1
 				post_napoleonic_thought = 1
 				colombus_voyage = 1
@@ -848,7 +848,7 @@ country_event = {
 				civilized = yes
 				year = 1861
 				standing_army = 1
-				prussian_doctrine 1
+				prussian_doctrine = 1
 				napoleonic_thought = 1
 				post_napoleonic_thought = 1
 				strategic_mobility = 1
@@ -892,7 +892,7 @@ country_event = {
 				year = 1914
 				month = 8
 				standing_army = 1
-				prussian_doctrine 1
+				prussian_doctrine = 1
 				napoleonic_thought = 1
 				post_napoleonic_thought = 1
 				strategic_mobility = 1
@@ -938,7 +938,7 @@ country_event = {
 				civilized = yes
 				year = 1939
 				standing_army = 1
-				prussian_doctrine 1
+				prussian_doctrine = 1
 				napoleonic_thought = 1
 				post_napoleonic_thought = 1
 				strategic_mobility = 1
@@ -989,7 +989,7 @@ country_event = {
 				civilized = yes
 				year = 1946
 				standing_army = 1
-				prussian_doctrine 1
+				prussian_doctrine = 1
 				napoleonic_thought = 1
 				post_napoleonic_thought = 1
 				strategic_mobility = 1
@@ -1040,7 +1040,7 @@ country_event = {
 				civilized = yes
 				year = 2000
 				standing_army = 1
-				prussian_doctrine 1
+				prussian_doctrine = 1
 				napoleonic_thought = 1
 				post_napoleonic_thought = 1
 				strategic_mobility = 1
@@ -1094,7 +1094,7 @@ country_event = {
 				civilized = yes
 				year = 2023
 				standing_army = 1
-				prussian_doctrine 1
+				prussian_doctrine = 1
 				napoleonic_thought = 1
 				post_napoleonic_thought = 1
 				strategic_mobility = 1
@@ -1133,56 +1133,6 @@ country_event = {
 				set_country_flag = future_tech_reforms_enacted
 		}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
