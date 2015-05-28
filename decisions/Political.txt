@@ -82,7 +82,6 @@ political_decisions = {
 				duration = -1
 			}
 		}
-	}
 	
 	enact_female_suffrage = {
 		potential = {
