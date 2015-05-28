@@ -11,45 +11,45 @@ country_event = {
 		NOT = {
 			has_global_flag = american_civil_war_has_happened
 		}
-		has_country_flag = john_browns_raid
-		has_country_flag = dred_scott_decision
+                year = 1829
 		upper_house = {
 			ideology = liberal
 			value = 0.4
 		}
 	}
-	
 	immediate = { clr_country_flag = the_slavery_debate }
 	immediate = {
 		CSA = {
 			set_country_flag = the_slavery_debate
 		}
 	}
-	
 	mean_time_to_happen = {
 		months = 1
 		modifier = {
-			factor = 20
+			factor = 60
 			NOT = {
 				year = 1845
 			}
 		}
 		modifier = {
-			factor = 10
+			factor = 30
 			year = 1845
 			NOT = {
 				year = 1855
 			}
 		}
 		modifier = {
-			factor = 5
+			factor = 15
 			year = 1855
 			NOT = {
 				year = 1860
 			}
 		}
+                modifier = {
+                        factor = .66
+                        has_country_flag = john_browns_raid
+                              }
 	}
-	
 	option = {
 		name = "EVTOPTA16000"
 		any_pop = {
@@ -107,7 +107,6 @@ country_event = {
 		clr_country_flag = the_slavery_debate
 		CSA = { set_country_flag = the_slavery_debate }
 	}
-	
 	option = {
 		name = "EVTOPTB16000"
 		any_pop = {
@@ -138,7 +137,6 @@ country_event = {
 			leadership = 80
 		}
 		capital = 220
-		
 		change_tag_no_core_switch = CSA
 		USA = {
 			war = {
@@ -152,7 +150,6 @@ country_event = {
 			}
 		}
 		set_global_flag = american_civil_war_has_happened
-	
 		clr_country_flag = the_slavery_debate
 		CSA = { set_country_flag = the_slavery_debate }
 	}
