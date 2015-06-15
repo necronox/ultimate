@@ -5,7 +5,7 @@ We hope to create a comprehensive experience for all possible start dates and as
 Features:
 
 
-    New start dates from 1603 to 2023, with many in between (such as WW2)
+    New start dates: 1604, 1714, 1764, 1800, 1812, 1914, 1939, 1946, 2000, and 2023
     New slavery system
     New piracy system
     Many new countries
@@ -15,36 +15,40 @@ Credits:
 
 Ed - Mod founder, former developer and former leader
 
-    Current Developers
-    napoleonb1974
-    cesarcurado
-    justrubish
+Current Developer: Palisight
 
-    Former Developers
-    The Pink Panzer  
-    Mr Zero 
-    Robert Graff 
-    Qulbut 
-    Kaiser Wilhelm 
-    Jon 
-    Shams Tabrizi 
-    PG Stan 
-    Iason Topo 
-    Hate Clan 
-    holomanga
-    bencebence
-    jezbob
-    fancyliving
-    Vnanimus
-    rudwolf
-  
-    
-    Credits to:
-- Rylock for the Great Wars system and content from New Nations Mod
-- RenatoDS for the new map textures
-- EGaffney for the big flag frames
-- Nuukov for the Politburo minimod
-- GAGA minimod by GAGA extrem
-- World War 1 by flame7926
-- Pop Demand mod team for POD content
-- Pop Migration Mod by Sgt. Grumbles
+Credits:
+Ed - Mod founder, former developer and former leader
+
+Fomrmer Developers
+Benzebence
+Cearcurado
+Fancyliving
+0Hate Clan
+Holomagna
+Iason Topo
+Jezbob
+Jon
+Just Rubish
+Kaiser Wilhelm
+Mr. Zero
+Napoleonb1974
+PG Stan
+Pink Panzer
+Qulbut
+Robert Graff
+Rudwolf
+Shams Tabrizi
+Vnanimus
+
+Dimonius for providing mod fixes
+El_Primeministere for content from Kaiserreich
+EGaffney for the big flag frames
+flame7926 for World War 1
+GAGA minimod by GAGA extrem
+Nuukov for the Politburo minimod
+Pop Demand mod team for POD content
+RedWalrus for content from 1700 mod
+RenatoDS for the new map textures
+Rylock for the Great Wars system and content from New Nations Mod
+Sgt. Grumbles for Pop Migration Mod
