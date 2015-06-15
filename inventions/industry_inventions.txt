@@ -772,6 +772,7 @@ artillery_production = {
 			artillery = 0.05 
 	}
 }
+}
 #clean_coal
 pit_coal = {
 	limit = { clean_coal = 1 }

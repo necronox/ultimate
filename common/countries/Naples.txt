@@ -184,6 +184,3 @@ unit_names = {
                 Aretusa Cerere Corona Leona Minerva Pallade "Santa Lucia" Sibilla Sirena Venere
         }
 }
-
-
-[a]Replaced SIC with the right tag (NAP) for the political parties

@@ -42,7 +42,8 @@ upper_house = {
         socialist = 0
         communist = 0
 }
-
+1604.8.31 = { 
+}
 1700.1.1 = {
 standing_army = 1
 late_medieval_warfare = 1
@@ -129,7 +130,6 @@ early_water_pump = 1
 cementation_steel = 1
 wooden_mine_railways = 1 #until this for 1700
 		}
-
 1750.1.1 = {
 standing_army = 1
 late_medieval_warfare = 1
@@ -259,12 +259,9 @@ conservation_of_mass = 1
 coke_pig_iron = 1
 textile_machinery = 1 #until this for 1750
 		}
-
-
 1780.1.1 = {
 literacy = 0.20
                 }
-
 1800.1.1 = {
 oob = "1800/AUS_oob.txt"
 standing_army = 1
@@ -432,10 +429,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 	}
-
-1805.12.26 = { set_global_flag = hre_dismantled
-        }
-
+1806.8.6 = { set_global_flag = hre_dismantled }
 1830.1.1 = {
 oob = "AUS_oob.txt"
 plurality = 0
@@ -632,7 +626,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1
@@ -895,7 +889,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1
@@ -1202,7 +1196,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1
@@ -1578,7 +1572,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1
@@ -1978,7 +1972,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1
@@ -2449,7 +2443,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1
@@ -2934,7 +2928,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1

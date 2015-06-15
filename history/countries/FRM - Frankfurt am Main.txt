@@ -2,9 +2,9 @@ capital = 564
 primary_culture = north_german
 religion = protestant
 government = democracy
-plurality = 25.0
+plurality = 0
 nationalvalue = nv_order
-literacy = 0.8
+literacy = 0.09
 civilized = yes
 prestige = 1
 
@@ -30,14 +30,13 @@ school_reforms = no_schools
 ruling_party = FRM_conservative_2
 upper_house = {
 	fascist = 0
-	liberal = 35
-	conservative = 55
-	reactionary = 10
+	liberal = 0
+	conservative = 100
+	reactionary = 0
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
-
 1700.1.1 = {
 standing_army = 1
 late_medieval_warfare = 1
@@ -421,8 +420,6 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 		}
-
-
 1830.1.1 = {
 # Technologies
 late_medieval_warfare = 1
@@ -615,7 +612,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1
@@ -861,7 +858,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1

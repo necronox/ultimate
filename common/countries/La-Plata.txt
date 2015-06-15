@@ -1,4 +1,4 @@
-color = { 117  170  219 }
+﻿color = { 117  170  219 }
 graphical_culture = SouthAmericanGC
 
 party = {
@@ -104,7 +104,7 @@ unit_names = {
 		"ARA Yrigoyen"
 	}
 	ironclad = {
-		"ARA Almirante Brown" "ARA Bouchard" "ARA Campichuelo" "ARA Cepeda" "ARA De las Heras" "ARA Federacion" "ARA Huamita "ARA Independencia" "ARA Juiter" "ARA Lavalle"
+		"ARA Almirante Brown" "ARA Bouchard" "ARA Campichuelo" "ARA Cepeda" "ARA De las Heras" "ARA Federacion" "ARA Huamita" "ARA Independencia" "ARA Juiter" "ARA Lavalle"
 		"ARA Libertad" "ARA Marte" "ARA Mercurio" "ARA Neptuno" "ARA Pavon" "ARA Pluton" "ARA Salado" "ARA Salta" "ARA Suipacha" "ARA Thomas"
 	}
 	manowar = {
@@ -121,7 +121,7 @@ unit_names = {
 	}
 	monitor = {
 		"ARA El Plata" "ARA Formosa" "ARA Gran Chaco" "ARA La Pampa" "ARA Lago Argentino" "ARA Los Andes" "ARA Mesopotamia" "ARA Posadas" "ARA Rawson" "ARA Resistencia"
-		"ARA San Fernando del Valle" "ARA San Miguel" "ARA San Salvador" "ARA Santa Rosa" "ARA Sirena" "ARA Somuncur・ "ARA Tetis" "ARA Trit" "ARA Viedma" "ARA Vulcano"
+		"ARA San Fernando del Valle" "ARA San Miguel" "ARA San Salvador" "ARA Santa Rosa" "ARA Sirena" "ARA Somuncur" "ARA Tetis" "ARA Trit" "ARA Viedma" "ARA Vulcano"
 	}
 	clipper_transport = { 
 	}
@@ -129,6 +129,6 @@ unit_names = {
 	}
 	commerce_raider = {
 		"ARA Bermejo" "ARA Catamarca" "ARA Constitucion" "ARA Cordoba" "ARA Corrientes" "ARA Jujuy" "ARA La Plata" "ARA La Rioja" "ARA Mendoza"
-		"ARA Misiones" "ARA Paran・ "ARA Pilcomayo" "ARA Rosario" "ARA San Juan" "ARA San Luis" "ARA Santa Cruz" "ARA Sol Argentino" "ARA Uruguay"
+		"ARA Misiones" "ARA Paran" "ARA Pilcomayo" "ARA Rosario" "ARA San Juan" "ARA San Luis" "ARA Santa Cruz" "ARA Sol Argentino" "ARA Uruguay"
 	}
 }

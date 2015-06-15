@@ -27,7 +27,7 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
 
-1970.11.1 {
+1970.11.1 = {
 ruling_party = SYC_conservative_2
 last_election = 1979.4.1
 upper_house = {
@@ -40,7 +40,7 @@ upper_house = {
 	communist = 0
 }}
 
-1974.4.1 {
+1974.4.1 = {
 ruling_party = SYC_conservative_2
 last_election = 1979.4.1
 upper_house = {
@@ -53,7 +53,7 @@ upper_house = {
 	communist = 0
 }}
 
-1979.6.26 {
+1979.6.26 = {
 government = proletarian_dictatorship
 ruling_party = SYC_socialist_3
 last_election = 1979.6.26
@@ -67,7 +67,7 @@ upper_house = {
 	communist = 0
 }}
 
-1984.6.17 {
+1984.6.17 = {
 ruling_party = SYC_socialist_3
 last_election = 1984.6.17
 upper_house = {
@@ -80,7 +80,7 @@ upper_house = {
 	communist = 0
 }}
 
-1989.6.1 {
+1989.6.1 = {
 ruling_party = SYC_socialist_3
 last_election = 1989.6.1
 upper_house = {
@@ -93,7 +93,7 @@ upper_house = {
 	communist = 0
 }}
 
-1993.7.23 {
+1993.7.23 = {
 government = democracy
 ruling_party = SYC_socialist_3
 last_election = 1993.7.23
@@ -107,7 +107,7 @@ upper_house = {
 	communist = 0
 }}
 
-1998.3.22 {
+1998.3.22 = {
 ruling_party = SYC_socialist_3
 last_election = 1998.3.22
 upper_house = {
@@ -120,7 +120,7 @@ upper_house = {
 	communist = 0
 }}
 
-2001.8.2 {
+2001.8.2 = {
 ruling_party = SYC_socialist_3
 last_election = 2001.8.2
 upper_house = {
@@ -133,7 +133,7 @@ upper_house = {
 	communist = 0
 }}
 
-2006.7.30 {
+2006.7.30 = {
 ruling_party = SYC_socialist_3
 last_election = 2006.7.30
 upper_house = {
@@ -146,7 +146,7 @@ upper_house = {
 	communist = 0
 }}
 
-2011.3.21 {
+2011.3.21 = {
 ruling_party = SYC_socialist_4
 last_election = 2011.3.21
 upper_house = {
@@ -513,7 +513,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1
@@ -981,7 +981,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1
@@ -1468,7 +1468,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1

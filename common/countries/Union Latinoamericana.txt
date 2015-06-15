@@ -122,11 +122,11 @@ unit_names = {
 	}
 	clipper_transport = {
 		Audaz Cuencana Darwin Indestructible Ingapirca "Lago Agrio" Marina Orellana Portoviejo
-		"San Gregorio" "San Jose "San Miguel" "Santa Maria" Santiago "Santo Domingo" Tena Veloz
+		"San Gregorio" "San Jose" "San Miguel" "Santa Maria" Santiago "Santo Domingo" Tena Veloz
 	}
 	steam_transport = { 
 		Audaz Cuencana Darwin Indestructible Ingapirca "Lago Agrio" Marina Orellana Portoviejo
-		"San Gregorio" "San Jose "San Miguel" "Santa Maria" Santiago "Santo Domingo" Tena Veloz
+		"San Gregorio" "San Jose" "San Miguel" "Santa Maria" Santiago "Santo Domingo" Tena Veloz
 	}
 	commerce_raider = {
 		Atacazo Babahoyo Cayambe Filocorrales Ibarra Machala Puyo Reventador

@@ -2,9 +2,9 @@ capital = 744
 primary_culture = north_italian
 religion = catholic
 government = absolute_monarchy
-plurality = 25.0
+plurality = 0
 nationalvalue = nv_order
-literacy = 0.45
+literacy = 0.09
 civilized = yes
 prestige = 5
 
@@ -32,13 +32,13 @@ ruling_party = TUS_reactionary
 upper_house = {
 	fascist = 0
 	liberal = 0
-	conservative = 85
-	reactionary = 15
+	conservative = 100
+	reactionary = 0
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
-
+add_country_modifier = { name = hre_member duration = -1 }
 1700.1.1 = {
 standing_army = 1
 late_medieval_warfare = 1
@@ -255,7 +255,7 @@ conservation_of_mass = 1
 coke_pig_iron = 1
 textile_machinery = 1 #until this for 1750
 		}
-
+1797.10.18 = { remove_country_modifier = hre_member }
 1800.1.1 = {
 standing_army = 1
 late_medieval_warfare = 1
@@ -616,7 +616,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1
@@ -856,7 +856,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1

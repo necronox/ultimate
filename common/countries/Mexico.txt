@@ -142,7 +142,7 @@ war_policy = anti_military
 }
 
 party = {
-name = "MEX_communist" Partido Comunista Mexicano
+name = "MEX_communist"
 start_date = 1919.1.1
 end_date = 1981.1.1
 

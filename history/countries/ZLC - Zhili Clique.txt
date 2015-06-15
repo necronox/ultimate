@@ -2,14 +2,14 @@
 
 #========================= H E A D E R =========================
 
-capital = 
+capital = 1612
 primary_culture = beifaren
 culture = nanfaren
 religion = mahayana
 government = presidential_dictatorship
 plurality = 0
 nationalvalue = nv_order
-literacy = 0,04
+literacy = 0.04
 prestige = 0
 schools = traditional_academic
 oob = "ANC.txt"
@@ -461,7 +461,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1

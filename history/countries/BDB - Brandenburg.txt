@@ -5,8 +5,8 @@ religion = protestant
 government = absolute_monarchy
 plurality = 0
 nationalvalue = nv_order
-literacy = 0.1
-non_state_culture_literacy = 0.25
+literacy = 0.09
+non_state_culture_literacy = 0
 civilized = yes
 
 # Political reforms
@@ -31,14 +31,13 @@ school_reforms = low_schools
 ruling_party = BDB_conservative
 upper_house = {
 	fascist = 0
-	liberal = 35
-	conservative = 55
-	reactionary = 10
+	liberal = 0
+	conservative = 100
+	reactionary = 0
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
-
 1700.1.1 = {
 standing_army = 1
 late_medieval_warfare = 1
@@ -619,7 +618,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
 publishing_industry = 1
-advanced_experimental_railroad 1
+advanced_experimental_railroad = 1
 conservation_of_energy = 1
 mechanized_mining = 1
 practical_steam_engine = 1
