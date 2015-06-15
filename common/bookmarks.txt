@@ -9,17 +9,18 @@ bookmark =
 
 bookmark =
 {
-	name = "Enlightenment"
+	name = "Enlightenment HRE NEW !!!"
 	desc = "BM_ENLIGHTDESC"
-	date = 1604.1.1
+	date = 1604.8.30
 	cameraX = 2950 
 	cameraY = 1550
 }
+
 bookmark =
 {
-	name = "Enlightenment HRE NEW !!!"
+	name = "Enlightenment"
 	desc = "BM_ENLIGHTDESC"
-	date = 1604.1.2
+	date = 1604.8.31
 	cameraX = 2950 
 	cameraY = 1550
 }
@@ -59,8 +60,6 @@ bookmark =
 	cameraX = 2950 
 	cameraY = 1550
 }
-
-
 
 bookmark =
 {
