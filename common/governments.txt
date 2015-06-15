@@ -17,7 +17,14 @@ french_second_empire = {
 	appoint_ruling_party = no
 	flagType = republic
 }
-
+theocracy =
+{
+	conservative = yes
+	
+	election = no
+	appoint_ruling_party = yes
+	flagType = monarchy
+}
 theocratic_dictatorship =
 {
 	#which ideology of parties.
