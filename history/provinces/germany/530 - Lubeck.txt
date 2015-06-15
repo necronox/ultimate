@@ -1,39 +1,29 @@
-owner = DEN
+owner = HRE
 
-controller = DEN
-
+controller = HRE
 add_core = LUB
-
-add_core = DEN
-
 add_core = HRE
 
 add_core = GER
+naval_base = 1
+trade_goods = fish
 
-1836.1.1 = { 
+life_rating = 40
+
+
+1604.8.31 = { 
 	controller = LUB
 		
 		owner = LUB
 		
 		}
-
+1806.8.6 = { remove_core = HRE }
+1861.1.1 = { railroad = 3 }
 
 1871.1.1 = { 
 		controller = GER
 		owner = GER
-		add_core = GER
 		}
-
-
-trade_goods = fish
-
-life_rating = 40
-
-naval_base = 1
-
 1936.1.1 = {
 		naval_base = 6
 		}
-
-
-1861.1.1 = { railroad = 3 }

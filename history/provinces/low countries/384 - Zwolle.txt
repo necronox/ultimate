@@ -2,11 +2,15 @@ owner = NET
 controller = NET
 add_core = NET
 add_core = HRE
-1810.1.1 = {
+trade_goods = fish
+life_rating = 35
+
+1806.8.6 = { remove_core = HRE }
+1810.7.9 = {
 owner = FRA
 controller = FRA
 		}
-1815.1.1 = {
+1813.11.21 = {
 owner = NET
 controller = NET
 		}

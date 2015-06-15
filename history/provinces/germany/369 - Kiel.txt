@@ -1,36 +1,29 @@
-owner = DEN
+owner = HRE
  
-controller = DEN 
-
-add_core = HOL
- 
-add_core = DEN 
-
+controller = HRE
 add_core = HRE 
-
 add_core = GER
-
-1871.1.1 = {
-		controller = GER
-		owner = GER
-		
-		}
-
-
 trade_goods = cattle
+naval_base = 1
 
 life_rating = 40
 
-naval_base = 1
 
-1936.1.1 = {
-		naval_base = 6
-		}
+1604.8.31 = {
 
-
-
-1861.1.1 = { railroad = 3 }
-
+                owner = HOL
+ 
+                controller = HOL
+                add_core = HOL
+ 
+                 }
+1773.5.21 = {
+                owner = SCH
+ 
+                controller = SCH
+                 }
+1844.9.18 = { railroad = 1 }
+1806.8.6 = { remove_core = HRE }
 1861.1.1 = {
 	
 	state_building = {
@@ -41,10 +34,16 @@ naval_base = 1
  
 		upgrade = yes
 	
-	}
-
-}
-
+	                   }
+             }
+1871.1.1 = {
+		controller = GER
+		owner = GER
+		}
+1899.5.31 = { railroad = 3 }
+1936.1.1 = {
+		naval_base = 6
+		}
 1939.1.1 = {
 	state_building = {
 		level = 3

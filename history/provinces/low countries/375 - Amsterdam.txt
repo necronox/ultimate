@@ -1,9 +1,16 @@
 owner = NET
+
 controller = NET
+
 add_core = NET
+
+
 add_core = HRE
 trade_goods = cattle
+
 life_rating = 35
+
+
 #state_building = {
 #	level = 1
 #	building = fabric_factory
@@ -24,6 +31,7 @@ life_rating = 35
 		upgrade = yes
 	}
 }
+1806.8.6 = { remove_core = HRE }
 1810.1.1 = {
 owner = FRA
 controller = FRA

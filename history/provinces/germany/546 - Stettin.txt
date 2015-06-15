@@ -1,43 +1,30 @@
 owner = HRE
 controller = HRE
-add_core = PMR
 add_core = GER
 add_core = HRE
+add_core = PMR
+naval_base = 1
+trade_goods = fish
+life_rating = 40
 
-1604.1.1 = { 
+1604.8.31 = { 
 	owner = PMR
 	controller = PMR
 	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1700.1.1 = {
-	controller = SWE
-	owner = SWE
-		}
-1800.1.1 = {
+1637.3.10 = { add_core = BDB }
+1701.1.18 = {
+        add_core = PRU
+        remove_core = BDB
+                }
+1720.1.21 = {
 	owner = PRU
 	controller = PRU
-	add_core = PRU
 		}
-
-1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
-trade_goods = fish
-life_rating = 40
-naval_base = 1
-
-1936.1.1 = {
-		naval_base = 6
-		}
-
-
+1806.8.6 = { remove_core = HRE }
+1806.10.29 = { controller = FRA }
+1813.12.5 = { controller = PRU }
 1861.1.1 = {
+        railroad = 3
 	state_building = {
 		level = 1
 		building = canned_food_factory
@@ -49,8 +36,11 @@ naval_base = 1
 		upgrade = yes
 	}
 }
-1861.1.1 = { railroad = 3 }
-
+1871.1.1 = { 
+	owner = GER
+        controller = GER
+		}
+1936.1.1 = { naval_base = 6 }
 1939.1.1 = {
 	state_building = {
 		level = 1
@@ -63,9 +53,9 @@ naval_base = 1
 		upgrade = yes
 	}
 }
-
 #End of WW2
-1945.5.1 = {
+1945.4.26 = { controller = RUS }
+1945.7.5 = {
 	owner = POL
 	controller = POL
 	add_core = POL

@@ -2,31 +2,25 @@ owner = HRE
 controller = HRE
 add_core = LIE
 add_core = HRE
-
-1604.1.1 = { 
-	owner = LIE
-	controller = LIE
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1800.1.1 = {
-	owner = FRA
-controller = FRA
-		}
-1830.1.1 = {
-	owner = BEL
-controller = BEL
-		}
-
 add_core = BEL
 add_core = NET
 add_core = WLL
 trade_goods = coal
 life_rating = 35
+
+1604.8.31 = { 
+	owner = LIE
+	controller = LIE
+	}
+1800.1.1 = {
+	owner = FRA
+        controller = FRA
+		}
+1806.8.6 = { remove_core = HRE }
+1830.1.1 = {
+	owner = BEL
+        controller = BEL
+		}
 1861.1.1 = { railroad = 3 }
 #Walloon ISA Break Off from Belgium
 2018.1.1 = {

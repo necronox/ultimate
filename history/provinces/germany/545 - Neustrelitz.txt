@@ -1,40 +1,31 @@
 owner = HRE
 controller = HRE
-add_core = MEC
-add_core = HRE
 add_core = GER
-
-1604.1.1 = { 
-	owner = MEC
-	controller = MEC
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1714.1.1 = { 
-		controller = MEC
-		owner = MEC
-		}
-1871.1.1 = {
-		controller = GER
-		owner = GER
-		}
+add_core = HRE
+add_core = MEC
 trade_goods = grain
 life_rating = 40
 
-#End of WW2
-1945.5.1 = {
-	owner = DDR
-	controller = DDR
-	add_core = DDR
+1604.8.31 = { 
+	owner = MEC
+	controller = MEC
+	}
+1806.8.6 = { remove_core = HRE }
+1871.1.1 = {
+        owner = GER
+        controller = GER
 		}
-
+#End of WW2
+1945.4.30 = { controller = RUS }
+1945.5.8 = { owner = RUS }
+1949.10.7 = {
+	        owner = DDR
+	        controller = DDR
+	        add_core = DDR
+		}
 #Fall of Berlin Wall - Reunification
-1991.1.1 = {
+1990.10.3 = {
 		owner = GER
-	controller = GER
-	remove_core = DDR
+	        controller = GER
+	        remove_core = DDR
 		}

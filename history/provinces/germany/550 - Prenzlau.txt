@@ -3,40 +3,35 @@ controller = HRE
 add_core = BDB
 add_core = GER
 add_core = HRE
+trade_goods = cattle
+life_rating = 40
 
-1604.1.1 = { 
+1604.8.31 = { 
 	owner = BDB
 	controller = BDB
 	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1700.1.1 = {
+1701.1.18 = {
 	owner = PRU
 	controller = PRU
 	add_core = PRU
 	remove_core = BDB
 		}
+1806.8.6 = { remove_core = HRE }
 1871.1.1 = { 
-		controller = GER
-		owner = GER
+	owner = GER
+        controller = GER
 		}
-trade_goods = cattle
-life_rating = 40
-
 #End of WW2
-1945.5.1 = {
+1945.4.25 = { controller = RUS }
+1945.5.8 = { owner = RUS }
+1949.10.7 = {
 	owner = DDR
 	controller = DDR
 	add_core = DDR
 		}
-
 #Fall of Berlin Wall - Reunification
-1991.1.1 = {
-		owner = GER
+1990.10.3 = {
+        owner = GER
 	controller = GER
 	remove_core = DDR
 		}

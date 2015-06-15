@@ -1,43 +1,32 @@
 owner = HRE
 controller = HRE
-add_core = HAN
 add_core = HRE
 add_core = GER
+add_core = LUN
+trade_goods = cattle
+life_rating = 40
 
-1604.1.1 = { 
-	owner = HAN
-	controller = HAN
+1604.8.31 = { 
+	owner = LUN
+	controller = LUN
 	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1710.1.1 = {
-	controller = BRA
-	owner = BRA
-	add_core = BRA
-		}
-
-1800.1.1 = {
+1705.8.28 = {
 	controller = HAN
 	owner = HAN
 	add_core = HAN
+        remove_core = LUN
 		}
+1806.8.6 = { remove_core = HRE }
 1812.1.1 = {
-owner = WES
-controller = WES
+        owner = WES
+        controller = WES
 		}
 1815.1.1 = {
-owner = HAN
-controller = HAN
+        owner = HAN
+        controller = HAN
 		}
-
+1861.1.1 = { railroad = 3 }
 1871.1.1 = { 
 		controller = GER
 		owner = GER
 		}
-trade_goods = cattle
-life_rating = 40
-1861.1.1 = { railroad = 3 }

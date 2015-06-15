@@ -1,31 +1,25 @@
-1600.1.1 = {
-	owner = BYZ
-	controller = BYZ
-	add_core = BYZ
-	}
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+trade_goods = fruit
+life_rating = 35
 
-1604.1.1 = { 
+1604.8.30 = {
 	owner = TUR
 	controller = TUR
 	add_core = GRE
 	remove_core = BYZ
-	}	
-
-1700.1.1 = {
-	owner = VEN
+	        }	
+1687.9.1 = {
+        owner = VEN
 	controller = VEN
 		}
-1724.1.1 = {
-	owner = TUR
+1715.7.20 = {
+        owner = TUR
 	controller = TUR
 		}
-1830.1.1 = {
+1821.10.5 = {
 	owner = GRE
 	controller = GRE
 		}
-1919.6.28 = { 
-		controller = GRE
-		owner = GRE
-		}
-trade_goods = fruit
-life_rating = 35
+

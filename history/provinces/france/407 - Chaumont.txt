@@ -1,11 +1,22 @@
 owner = FRA
+
 controller = FRA
+
 add_core = FRA
+
 add_core = HRE
-1714.1.1 = {
-	owner = FRA
-controller = FRA
-		}
+
 trade_goods = iron
+
 life_rating = 30
+
+1714.1.1 = {
+	
+            owner = FRA
+            
+controller = FRA
+
+            }
+
+1806.8.6 = { remove_core = HRE }
 1861.1.1 = { railroad = 3 }

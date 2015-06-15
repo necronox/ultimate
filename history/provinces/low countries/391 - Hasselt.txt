@@ -1,24 +1,25 @@
 owner = SPA
 controller = SPA
 add_core = HRE
-1713.1.1 = {
-	owner = AUS
-controller = AUS
-		}
-1800.1.1 = {
-	owner = FRA
-	controller = FRA
-		}
-1830.1.1 = {
-	owner = BEL
-controller = BEL
-		}
-
 add_core = BEL
 add_core = NET
 add_core = FLA
 trade_goods = coal
 life_rating = 35
+
+1713.1.1 = {
+	owner = AUS
+        controller = AUS
+		}
+1800.1.1 = {
+	owner = FRA
+	controller = FRA
+		}
+1806.8.6 = { remove_core = HRE }
+1830.1.1 = {
+	owner = BEL
+        controller = BEL
+		}
 1861.1.1 = { railroad = 3 }
 #Flemish ISA Break Off from Belgium
 2018.1.1 = {

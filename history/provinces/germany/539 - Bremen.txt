@@ -3,52 +3,28 @@ controller = HRE
 add_core = BRE
 add_core = GER
 add_core = HRE
+naval_base = 1
+trade_goods = fish
+life_rating = 40
 
-1604.1.1 = { 
+1604.8.31 = { 
 	owner = BRE
 	controller = BRE
 	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1710.1.1 = {
-	owner = SWE
-	controller = SWE
-		}
-1720.1.1 = {
-	owner = BRE
-controller = BRE
-		}
-
-1800.1.1 = {
-	owner = HAN
-	controller = HAN
-	add_core = HAN
-		}
-1812.1.1 = {
+1806.8.6 = { remove_core = HRE }
+1811.1.1 = {
 		controller = FRA
 		owner = FRA
 		}
-1815.1.1 = {
+1813.10.19 = {
 	owner = BRE
 	controller = BRE
-	remove_core = HAN
 		}
-
+1861.1.1 = { railroad = 3 }
 1871.1.1 = { 
 		controller = GER
 		owner = GER
 		}
-trade_goods = fish
-life_rating = 40
-naval_base = 1
-
 1936.1.1 = {
 		naval_base = 6
 		}
-
-
-1861.1.1 = { railroad = 3 }

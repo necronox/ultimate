@@ -3,35 +3,37 @@ controller = HRE
 add_core = BRE
 add_core = GER
 add_core = HRE
+trade_goods = cattle
+life_rating = 40
 
-1604.1.1 = { 
-	owner = BRE
-	controller = BRE
+1604.8.31 = { 
+	        owner = BRE
+	        controller = BRE
 	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
+1648.10.24 = { 
+	        owner = VER
+	        controller = VER
 	}
-
-1714.1.1 = {
-owner = HAN
-controller = HAN
-add_core = HAN
+1712.9.7 = { controller = DEN }
+1719.11.9 = {
+                owner = HAN
+                controller = HAN
+                add_core = HAN
 		}
-
-1812.1.1 = {
-		controller = FRA
-		owner = FRA
+1806.8.6 = { remove_core = HRE }
+1807.7.9 = {
+        owner = WES
+        controller = WES
 		}
-1815.1.1 = {
-		controller = HAN
-		owner = HAN
+1811.1.1 = {
+        owner = FRA
+        controller = FRA
 		}
-
+1815.7.9 = {
+        owner = HAN
+        controller = HAN
+		}
 1871.1.1 = { 
 		controller = GER
 		owner = GER
 		}
-trade_goods = cattle
-life_rating = 40

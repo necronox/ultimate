@@ -2,25 +2,20 @@ owner = HRE
 controller = HRE
 add_core = ALS
 add_core = HRE
+add_core = GER
+trade_goods = grain
+life_rating = 33
 
-1604.1.1 = { 
+1604.8.31 = { 
 	owner = ALS
 	controller = ALS
 	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
 1670.1.1 = {
 owner = FRA
 controller = FRA
 add_core = FRA
 		}
-add_core = GER
-trade_goods = grain
-life_rating = 33
+1806.8.6 = { remove_core = HRE }
 1861.1.1 = { railroad = 3 }
 1870.1.1 = {
 	owner = GER
@@ -28,7 +23,7 @@ life_rating = 33
 		}
 1918.1.1 = {
 		owner = FRA
-	controller = FRA
+	        controller = FRA
 		}
 1936.1.1 = {
 		fort = 6

@@ -1,35 +1,33 @@
 owner = HRE
 controller = HRE
-add_core = CLG
-add_core = MUN
 add_core = HRE
 add_core = GER
+add_core = MUN
+add_core = OSN
+trade_goods = grain
+life_rating = 40
 
-1604.1.1 = { 
-	owner = CLG
-	controller = CLG
+1604.8.31 = { 
+	owner = OSN
+	controller = OSN
 	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1812.1.1 = {
-		controller = FRA
-		owner = FRA
-		}
-
-1815.1.1 = {
+1803.2.25 = {
 	owner = HAN
 	controller = HAN
 	add_core = HAN
+        remove_core = OSN
 		}
-
+1806.8.6 = { remove_core = HRE }
+1807.7.9 = {
+        owner = WES
+        controller = WES
+		}
+1815.7.9 = {
+        owner = HAN
+        controller = HAN
+		}
+1861.1.1 = { railroad = 3 }
 1871.1.1 = { 
 		controller = GER
 		owner = GER
 		}
-trade_goods = grain
-life_rating = 40
-1861.1.1 = { railroad = 3 }

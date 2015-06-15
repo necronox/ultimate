@@ -1,40 +1,35 @@
 owner = HRE
 controller = HRE
-add_core = HRE
 add_core = BRA
+add_core = HRE
 add_core = GER
-
-1604.1.1 = { 
-	owner = HAN
-	controller = HAN
-	}
-
-1604.1.2 = { 
-	owner = HRE
-	controller = HRE
-	}
-
-1710.1.1 = {
-	owner = HAN
-controller = HAN
-add_core = HAN
-		}
-
-1812.1.1 = {
-owner = WES
-controller = WES
-		}
-1815.1.1 = {
-owner = HAN
-controller = HAN
-		}
-
-1871.1.1 = { 
-		controller = GER
-		owner = GER
-		}
 trade_goods = fruit
 life_rating = 40
+
+1604.8.31 = { 
+	owner = BRA
+	controller = BRA
+	}
+1635.5.30 = {
+        owner = HAN
+	controller = HAN
+        add_core = HAN
+        remove_core = BRA
+                }
+1806.8.6 = { remove_core = HRE }
+1807.7.9 = {
+        owner = WES
+        controller = WES
+		}
+1815.7.9 = {
+        owner = HAN
+        controller = HAN
+		}
+1861.1.1 = { railroad = 3 }
+1871.1.1 = { 
+	controller = GER
+	owner = GER
+		}
 #state_building = {
 #	level = 1
 #	building = canned_food_factory
@@ -45,4 +40,3 @@ life_rating = 40
 #	building = liquor_distillery
 #	upgrade = yes
 #}
-1861.1.1 = { railroad = 3 }
