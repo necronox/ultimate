@@ -2,7 +2,7 @@ color = { 90  52  1 }
 graphical_culture = Generic
 
 party = {
-	name = "GENERIC_conservative"
+	name = "SUR_conservative"
 	start_date = 1800.1.1
 	end_date = 2511.1.1
 
@@ -15,7 +15,7 @@ party = {
 	war_policy = pro_military
 }
 party = {
-	name = "GENERIC_liberal"
+	name = "SUR_liberal"
 	start_date = 1800.1.1
 	end_date = 2511.1.1
 
@@ -29,7 +29,7 @@ party = {
 }
 
 party = {
-	name = "GENERIC_reactionary"
+	name = "SUR_reactionary"
 	start_date = 1800.1.1
 	end_date = 2511.1.1
 
@@ -43,7 +43,7 @@ party = {
 }
 
 party = {
-	name = "GENERIC_anarcho_liberal"
+	name = "SUR_anarcho_liberal"
 	start_date = 1800.1.1
 	end_date = 2511.1.1
 
@@ -57,7 +57,7 @@ party = {
 }
 
 party = {
-	name = "GENERIC_socialist"
+	name = "SUR_socialist"
 	start_date = 1800.1.1
 	end_date = 2511.1.1
 
@@ -71,7 +71,7 @@ party = {
 }
 
 party = {
-	name = "GENERIC_communist"
+	name = "SUR_communist"
 	start_date = 1800.1.1
 	end_date = 2511.1.1
 
@@ -85,7 +85,7 @@ party = {
 }
 
 party = {
-	name = "GENERIC_fascist"
+	name = "SUR_fascist"
 	start_date = 1800.1.1
 	end_date = 2511.1.1
 

@@ -25,3 +25,4 @@
 1866.6.30 = {
 	rem_attacker = TPG
 	rem_defender = CHI
+	}

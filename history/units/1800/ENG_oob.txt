@@ -570,3 +570,5 @@ navy = {
                 name= "Frigate"
                 type = frigate
         }
+}
+}

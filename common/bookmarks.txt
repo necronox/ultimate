@@ -9,8 +9,8 @@ bookmark =
 
 bookmark =
 {
-	name = "Enlightenment HRE NEW !!!"
-	desc = "BM_ENLIGHTDESC"
+	name = "GCHRE_NAME"
+	desc = "GC_DESC"
 	date = 1604.8.30
 	cameraX = 2950 
 	cameraY = 1550
@@ -18,8 +18,8 @@ bookmark =
 
 bookmark =
 {
-	name = "Enlightenment"
-	desc = "BM_ENLIGHTDESC"
+	name = "GC_NAME"
+	desc = "GC_DESC"
 	date = 1604.8.31
 	cameraX = 2950 
 	cameraY = 1550
@@ -27,7 +27,7 @@ bookmark =
 
 bookmark =
 {
-	name = "Empire"
+	name = "BM_EMPNAME"
 	desc = "BM_EMPDESC"
 	date = 1714.1.1
 	cameraX = 2950 
@@ -45,7 +45,7 @@ bookmark =
 
 bookmark =
 {
-	name = "Rise of Napoleon"
+	name = "BM_NAPONAME"
 	desc = "BM_NAPODESC"
 	date = 1800.1.1
 	cameraX = 2950 
@@ -54,8 +54,8 @@ bookmark =
 
 bookmark =
 {
-	name = "Napoleon's Europe NEW !!!"
-	desc = "BM_NAPODESC"
+	name = "NAPEUR_NAME"
+	desc = "NAPEUR_DESC"
 	date = 1812.1.1
 	cameraX = 2950 
 	cameraY = 1550
@@ -63,8 +63,8 @@ bookmark =
 
 bookmark =
 {
-	name = "GC_NAME"
-	desc = "GC_DESC"
+	name = "VICERA_NAME"
+	desc = "VICERA_DESC"
 	date = 1836.1.1
 	cameraX = 2950 
 	cameraY = 1550

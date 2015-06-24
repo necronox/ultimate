@@ -30,3 +30,4 @@ name = "Soviet Annexation of Estonia"
 
 	rem_defender = EST
 		}
+}

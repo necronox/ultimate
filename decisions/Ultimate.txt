@@ -649,12 +649,10 @@ political_decisions = {
 	create_space_agency = {
 	picture = spaceprogrampic
 		potential = {
-			has_global_flag = ImpossibleFlag
 			rocket_science = 1
 			NOT = {
 				has_country_flag = space_agency_operational }
 				}
-
 		effect = {
 			set_country_flag = space_agency_operational
 			prestige = 10
@@ -666,7 +664,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = space_agency_operational
 				}
-
+		allow = { money = 100000}
 		effect = {
 			treasury = -100000
 			capital_scope = {
@@ -686,7 +684,7 @@ political_decisions = {
 			NOT = {
 			has_country_modifier = mars_mission_mod }
 				}
-
+        allow = { money = 1000000}
 		effect = {
 			add_country_modifier = { name = mars_mission_mod duration = -1 }
 			treasury = -1000000
@@ -700,7 +698,7 @@ political_decisions = {
 			NOT = {
 			has_country_modifier = moon_mission_mod }
 				}
-
+        allow = { money = 1000000}
 		effect = {
 			add_country_modifier = { name = moon_mission_mod duration = -1 }
 			treasury = -1000000

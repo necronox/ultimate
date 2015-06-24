@@ -41,6 +41,13 @@ CHP_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;
 CHP_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
 CHP_communist;Partido Communist;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
 CHP_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+GUY_anarcho_liberal;Unity Party of Guyana;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
+GUY_communist;People's Progressive Party;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
+GUY_conservative;Conservative Party;Partido Moderado Liberal;Partido Moderado Liberal;;;Partido Moderado Liberal;;;;;;;;x;;;;
+GUY_fascist;Fascist Party;NSBD;NSBD;;NSBD;;;;;;;;;x;;;;
+GUY_liberal;The United Force;Partido Antireelecionista;Partido Antireelecionista;;;Partido Antireelecionista;;;;;;;;x;;;;
+GUY_reactionary;Radical Party;Partido Imperialista;Partido Imperialista;;;Partido Imperialista;;;;;;;;x;;;;
+GUY_socialist;Working People's Alliance;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
 HRE_bourgeois_dictatorship;Republic of Roman Empire;x;;
 HRE_bourgeois_dictatorship_ADJ;Imperial;x;;
 HRE_absolute_monarchy;Holy Roman Empire;x;;
@@ -94,6 +101,13 @@ RGR_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;
 RGR_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
 RGR_communist;Partido Communist;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
 RGR_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+RYU_anarcho_liberal;Libertarian Party;;;;;;;;;;;;;x
+RYU_communist;United Workers Party;;;;;;;;;;;;;x
+RYU_conservative;National Party;;;;;;;;;;;;;x
+RYU_fascist;National-Socialist Party;;;;;;;;;;;;;x
+RYU_liberal;Liberal Party;;;;;;;;;;;;;x
+RYU_reactionary;Monarchist Party;;;;;;;;;;;;;x
+RYU_socialist;Social-Democratic Pary;;;;;;;;;;;;;x
 SON_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
 SAT_absolute_monarchy;Satsuma;;;;;;;;;;;;;x
 SAT_prussian_constitutionalism;Satsuma;;;;;;;;;;;;;x
@@ -118,6 +132,13 @@ SON_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;
 SON_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
 SON_communist;Partido Communist;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
 SON_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+SUR_anarcho_liberal;Libertarian Partij;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
+SUR_communist;Kommunistische Partij van Suriname;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
+SUR_conservative;Nieuw Front voor Democratie en Ontwikkeling;Partido Moderado Liberal;Partido Moderado Liberal;;;Partido Moderado Liberal;;;;;;;;x;;;;
+SUR_fascist;Fascist Partij;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+SUR_liberal;Nationale Democratische Partij;Partido Liberal;Partido Liberal;;;Partido Liberal;;;;;;;;x;;;;
+SUR_reactionary;Radicaal Partij;Partido Imperialista;Partido Imperialista;;;Partido Imperialista;;;;;;;;x;;;;
+SUR_socialist;Progressieve Arbeiders-en Landbouwersunie;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
 SVT_bourgeois_dictatorship;Republic of Vietnam;x;;
 SVT_bourgeois_dictatorship_ADJ;South Vietnamese;x;;
 SVT_democracy;Republic of Vietnam;x;;
@@ -142,6 +163,13 @@ TKM_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;
 TKM_socialist;The Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 TKM_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 TKM_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+TTB_anarcho_liberal;Butler Party;Butler Party;Butler Party;;;;;;;;;;;x
+TTB_communist;Worker's Party;Worker's Party;Worker's Party;;;;;;;;;;;x
+TTB_conservative;Conservative Party;Conservative Party;Conservative Party;;;;;;;;;;;x
+TTB_fascist;Fascist Party;Fascist Party;Fascist Party;;;;;;;;;;;x
+TTB_liberal;Citizens' Alliance;Citizens' Alliance;Citizens' Alliance;;;;;;;;;;;x
+TTB_reactionary;National Party;National Party;National Party;;;;;;;;;;;x
+TTB_socialist;People's Partnership;People's Partnership;People's Partnership;;;;;;;;;;;x
 YUC_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
 YUC_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;Partido Liberal;;;;;;;;x;;;;
 YUC_anarcho_liberal;Partido Federalista;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;

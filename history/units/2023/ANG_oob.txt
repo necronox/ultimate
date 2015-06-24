@@ -37,3 +37,4 @@ army = {
 		name= "1st SAS"
 		type = specops
 	}
+}

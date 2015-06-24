@@ -1,12 +1,21 @@
-;;;;x
-napoleon_cb_short;Restore French Monarchy;x
-napoleon_cb_setup;The French revolution is a monster that must be repelled. The Bourbons must be restored to their rightful place as rulers of France before the revolution spreads to our own lands!;x
-slavery_cb;Liberate Slaves;x
-slavery_cb_desc;Force a government to abolish the slave trade and the practice of slavery as a whole.;x
-slavery_cb_setup;Liberate the slaves. If achieved this will liberate all the slaves in the target country.;x
-slavery_cb_short;Liberate Slaves;x
-lebensraum_cb;Lebensraum;x
-lebensraum_cb_desc;Completely annex a country in order to increase our population's living space;x
+;;;;x,
+status_quo;Status Quo;;;;;;;;;;;;;x,
+NORMAL_WAR_ALL_CORES_NAME;$ORDER$War of $FIRST$ Liberation;;;;;;;;;;;;;x,
+AGRESSION_WAR_ALL_CORES_NAME;$ORDER$War of $FIRST$ Liberation;;;;;;;;;;;;;x,
+acquire_all_cores;Acquire All Cores;;;;;;;;;;;;;x,
+acquire_all_cores_short;Acquire all cores from $RECIPIENT$;;;;;;;;;;;;;x,
+acquire_all_cores_setup;Acquire all core provinces from $RECIPIENT$;;;;;;;;;;;;;x,
+acquire_all_cores_desc;Acquire all enemy §Ystates§W where we have §Ycore provinces§W;;;;;;;;;;;;;x,
+napoleon_cb;Restore the House of Bourbon and dismantle the Napoleonic Empire;x,
+napoleon_cb_short;Restore the House of Bourbon and dismantle the Napoleonic Empire;x,
+napoleon_cb_setup;The French revolution is a monster that must be repelled. The Bourbons must be restored to their rightful place as rulers of France before the revolution spreads to our own lands!;x,
+napoleon_cb_desc;Restore the House of Bourbon and dismantle the Napoleonic Empire;x,
+slavery_cb;Liberate Slaves;x,
+slavery_cb_desc;Force a government to abolish the slave trade and the practice of slavery as a whole.;x,
+slavery_cb_setup;Liberate the slaves. If achieved this will liberate all the slaves in the target country.;x,
+slavery_cb_short;Liberate Slaves;x,
+lebensraum_cb;Lebensraum;x,
+lebensraum_cb_desc;Completely annex a country in order to increase our population's living space;x,
 lebensraum_cb_setup;Annex an entire nation. If achieved, our population's living space will vastly increase;x
-lebensraum_cb_short;Lebensraum;x
-;;;;x
+lebensraum_cb_short;Lebensraum;x,
+;;;;x,
