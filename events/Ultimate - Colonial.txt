@@ -9,7 +9,7 @@ country_event = {
 		tag = THC
 		OR = {
 			war_with = ENG
-			war_with = ANG
+			war_with = ENL
 			is_greater_power = yes
 		}
 	}

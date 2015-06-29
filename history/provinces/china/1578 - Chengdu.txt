@@ -12,9 +12,9 @@ add_core = MNG
 add_core = YNN
 
 1911.1.1 = { 
-		owner = NCN
-		controller = NCN
-		add_core = NCN
+		owner = KMT
+		controller = KMT
+		add_core = KMT
 		}
 
 

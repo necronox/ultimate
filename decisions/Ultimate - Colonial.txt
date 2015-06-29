@@ -6,7 +6,7 @@ virginia_company = {
 		214 = {
 			empty = yes
 			}
-		tag = ANG
+		tag = ENL
 		NOT = {
 		has_global_flag = virginiacompanychartered
 			}
@@ -21,7 +21,7 @@ virginia_company = {
 		prestige = 5
 		money = -10000
 		214 = {
-		secede_province = ANG
+		secede_province = ENL
 			}
 				}
 			}
@@ -126,7 +126,7 @@ louisiana_purchasepart1 = {
 		picture = louisianapurchasepic
 		potential = {
 			OR = {
-				tag = ANG
+				tag = ENL
 				tag = ENG
 			}
 			214 = {
@@ -190,7 +190,7 @@ louisiana_purchasepart1 = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ANG
+				tag = ENL
 			}
 			exists = COA
 			is_our_vassal = COA
@@ -221,7 +221,7 @@ louisiana_purchasepart1 = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ANG
+				tag = ENL
 			}
 			exists = COA
 			is_our_vassal = COA
@@ -266,7 +266,7 @@ louisiana_purchasepart1 = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ANG
+				tag = ENL
 			}
 			exists = COA
 			is_our_vassal = COA
@@ -298,7 +298,7 @@ louisiana_purchasepart1 = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ANG
+				tag = ENL
 			}
 			exists = COA
 			is_our_vassal = COA
@@ -344,7 +344,7 @@ louisiana_purchasepart1 = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ANG
+				tag = ENL
 			}
 			exists = COA
 			is_our_vassal = COA
@@ -403,7 +403,7 @@ louisiana_purchasepart1 = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ANG
+				tag = ENL
 			}
 			exists = COA
 			is_our_vassal = COA
@@ -443,7 +443,7 @@ louisiana_purchasepart1 = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ANG
+				tag = ENL
 			}
 			exists = COA
 			is_our_vassal = COA
@@ -496,7 +496,7 @@ louisiana_purchasepart1 = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ANG
+				tag = ENL
 			}
 			exists = COA
 			is_our_vassal = COA
@@ -548,7 +548,7 @@ louisiana_purchasepart1 = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ANG
+				tag = ENL
 			}
 			exists = COA
 			is_our_vassal = COA
@@ -594,7 +594,7 @@ louisiana_purchasepart1 = {
 		potential = {
 			OR = {
 				tag = ENG
-				tag = ANG
+				tag = ENL
 			}
 			exists = COA
 			is_our_vassal = COA

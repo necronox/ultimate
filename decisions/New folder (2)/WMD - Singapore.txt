@@ -5,7 +5,7 @@ political_decisions = {
 	nuke_sng = {
 	picture = nuke_strikepic
 		potential = {	
-			war_with = SNG
+			war_with = SGP
 			nuclear_weapons = 1	
 
 
@@ -16,7 +16,7 @@ political_decisions = {
 			prestige = -25
 nuclear_weapons = -1
 
-			SNG = {
+			SGP = {
 				country_event = { id=666666 days=2 }
 				}
 
@@ -34,7 +34,7 @@ nuclear_weapons = -1
 				}
 			modifier = {
 				factor = 0
-				SNG = {
+				SGP = {
 				brigades_compare = 2
 					}
 					}

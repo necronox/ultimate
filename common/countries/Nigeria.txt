@@ -2,7 +2,7 @@ color = { 45 183 105 }
 graphical_culture = AfricanGC
 
 party = {
-	name = "NGA_conservative"
+	name = "NGR_conservative"
 	start_date = 1800.1.1
 	end_date = 99999.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "NGA_liberal"
+	name = "NGR_liberal"
 	start_date = 1800.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "NGA_reactionary"
+	name = "NGR_reactionary"
 	start_date = 1800.1.1
 	end_date = 99999.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "NGA_conservative_2"
+	name = "NGR_conservative_2"
 	start_date = 1907.1.1
 	end_date = 1952.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "NGA_liberal_2"
+	name = "NGR_liberal_2"
 	start_date = 1907.1.1
 	end_date = 99999.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "NGA_anarcho_liberal"
+	name = "NGR_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "NGA_socialist"
+	name = "NGR_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -100,7 +100,7 @@ party = {
 }
 
 party = {
-	name = "NGA_communist"
+	name = "NGR_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -114,7 +114,7 @@ party = {
 }
 
 party = {
-	name = "NGA_fascist"
+	name = "NGR_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 
@@ -146,7 +146,7 @@ unit_names = {
 	}
 	frigate = {
 		Akram Atif Ayman Bahir Fadil Fath Firas Fawwaz Ghalib Hakim Humam Jabbar Jawhar Kamal Khalid 
-		MaNGA Mamun Majid Mufid Mukhtar Muntasir Qudamat Rashad Sa'ad Tahir Thabit Wafiq Yusuf Zahir Zafir 
+		MaNGR Mamun Majid Mufid Mukhtar Muntasir Qudamat Rashad Sa'ad Tahir Thabit Wafiq Yusuf Zahir Zafir 
 	}
 	monitor = {
 		"Badr al-Din" "Diya al-Din" "Baha al-Din" "Imad al-Din" "Jamal al-Din" "Lutf al-Din" "Najm al-Din" "Sayf al-Din" 

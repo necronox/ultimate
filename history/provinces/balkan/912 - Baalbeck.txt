@@ -6,7 +6,7 @@ controller = EGY
 add_core = EGY
 		}
 
-add_core = LEB
+add_core = LBN
 
 1919.1.1 = {
 	owner = FRA
@@ -27,8 +27,8 @@ life_rating = 35
 
 
 1946.1.1 = {
-	owner = LEB
-	controller = LEB
+	owner = LBN
+	controller = LBN
 		}
 
 2018.1.1 = {

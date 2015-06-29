@@ -10,6 +10,6 @@ life_rating = 30
 		}
 
 2015.1.1 = {
-	owner = ANG
-	controller ANG
+	owner = ENL
+	controller ENL
 		}

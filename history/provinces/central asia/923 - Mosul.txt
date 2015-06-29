@@ -15,10 +15,10 @@ add_core = IRQ
 1927.1.1 = {
 	trade_goods = oil
 		}
-	add_core = KUR
+	add_core = KDS
 2018.1.1 = {
-		owner = KUR	
-	controller = KUR
+		owner = KDS	
+	controller = KDS
 	colonial = 0
 		}
 trade_goods = sulphur

@@ -336,7 +336,7 @@ country_event = {
                         OR = {
                         tag = ENG
                         tag = BRI
-                        tag = ANG
+                        tag = ENL
                         }
                         government = hms_government
                         NOT = {
@@ -378,7 +378,7 @@ trigger = {
                 year = 1890
                 OR = {
                 tag = ENG
-                tag = ANG
+                tag = ENL
                 tag = BRC
                 tag = BRI 
                 }
@@ -413,7 +413,7 @@ trigger = {
         year = 1964
         OR = {
         tag = ENG
-        tag = ANG
+        tag = ENL
         tag = BRI
         tag = BRC }
         OR = {

@@ -2,7 +2,7 @@ color = { 94  117  55 }
 graphical_culture = Generic
 
 party = {
-	name = "Bloc Québécois"
+	name = "CAN_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "Monarchist League of Canada"
+	name = "CAN_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "NEFAC"
+	name = "CAN_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "Marxist Leninist Party"
+	name = "CAN_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "Communist Party of Canada"
+	name = "CAN_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "Naional Unity Party"
+	name = "CAN_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 

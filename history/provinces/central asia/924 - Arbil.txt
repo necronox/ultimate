@@ -10,10 +10,10 @@ add_core = IRQ
 	remove_core = TUR
 	remove_core = EGY
 		}
-	add_core = KUR
+	add_core = KDS
 2018.1.1 = {
-		owner = KUR	
-	controller = KUR
+		owner = KDS	
+	controller = KDS
 	colonial = 0
 		}
 trade_goods = wool

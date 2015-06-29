@@ -1,5 +1,5 @@
-owner = ANG
-controller = ANG
+owner = ENL
+controller = ENL
 1707.1.1 = {
 owner = ENG
 controller = ENG
@@ -8,9 +8,9 @@ trade_goods = fruit
 life_rating = 30
 colonial = 2
 
-add_core = GAM
+add_core = GMB
 1960.1.1 = {
-	owner = GAM
-	controller = GAM
+	owner = GMB
+	controller = GMB
 	colonial = 0
 		}

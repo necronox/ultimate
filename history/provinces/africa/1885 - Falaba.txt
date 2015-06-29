@@ -6,9 +6,9 @@ life_rating = 15
 		controller = ENG
 		colonial = 2
 		}
-add_core = SRL
+add_core = SLE
 1960.1.1 = {
-	owner = SRL
-	controller = SRL
+	owner = SLE
+	controller = SLE
 	colonial = 0
 		}

@@ -12,7 +12,7 @@ add_core = MNG
 1937.1.1 = {
 	owner = ENG	
 	controller = ENG
-	add_core = NCN
+	add_core = KMT
 		}
 1945.1.1 = {
 	owner = ENG	

@@ -4,7 +4,7 @@ name = "Japanese Invasion of China"
 	add_attacker = JAP
 	add_attacker = SXI
 	add_attacker = MCK
-	add_defender = NCN
+	add_defender = KMT
 
 
 	
@@ -16,12 +16,12 @@ name = "Japanese Invasion of China"
 	war_goal = {
 		casus_belli = conquest
 		actor = JAP
-		receiver = NCN
+		receiver = KMT
 	}
 
 	war_goal = {
 		casus_belli = status_quo
-		actor = NCN
+		actor = KMT
 		receiver = JAP
 	}
 
@@ -31,6 +31,6 @@ name = "Japanese Invasion of China"
 	rem_attacker = JAP
 	rem_attacker = SXI
 	rem_attacker = MCK
-	rem_defender = NCN
+	rem_defender = KMT
 
 		}

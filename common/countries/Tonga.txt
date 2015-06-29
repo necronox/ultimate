@@ -9,9 +9,9 @@ graphical_culture = Generic
 #========================= P A R T I E S =========================
 
 party = {
-name = "TNG_conservative_92"
-start_date = 1700.1.1
-end_date = 2000.1.1
+name = "TGA_conservative"
+start_date = 1600.1.1
+end_date = 3000.1.1
 ideology = conservative
 economic_policy = interventionism
 trade_policy = protectionism
@@ -20,9 +20,9 @@ citizenship_policy = limited_citizenship
 war_policy = pro_military
 }
 party = {
-name = "TNG_liberal_79"
-start_date = 1750.1.1
-end_date = 2000.1.1
+name = "TGA_liberal"
+start_date = 1628.1.1
+end_date = 3000.1.1
 ideology = liberal
 economic_policy = laissez_faire
 trade_policy = free_trade
@@ -31,9 +31,9 @@ citizenship_policy = limited_citizenship
 war_policy = anti_military
 }
 party = {
-name = "TNG_liberal_87"
-start_date = 1800.1.1
-end_date = 2000.1.1
+name = "TGA_liberal_2"
+start_date = 1628.1.1
+end_date = 3000.1.1
 ideology = liberal
 economic_policy = laissez_faire
 trade_policy = free_trade
@@ -42,9 +42,9 @@ citizenship_policy = limited_citizenship
 war_policy = pro_military
 }
 party = {
-name = "TNG_socialist_85"
-start_date = 1750.1.1
-end_date = 2000.1.1
+name = "TGA_socialist"
+start_date = 1848.1.1
+end_date = 3000.1.1
 ideology = socialist
 economic_policy = state_capitalism
 trade_policy = free_trade
@@ -53,9 +53,9 @@ citizenship_policy = full_citizenship
 war_policy = anti_military
 }
 party = {
-name = "TNG_socialist_99"
-start_date = 1800.1.1
-end_date = 2000.1.1
+name = "TGA_socialist_2"
+start_date = 1848.1.1
+end_date = 3000.1.1
 ideology = socialist
 economic_policy = state_capitalism
 trade_policy = protectionism
@@ -64,9 +64,9 @@ citizenship_policy = limited_citizenship
 war_policy = pro_military
 }
 party = {
-name = "TNG_reactionary_84"
-start_date = 1700.1.1
-end_date = 2000.1.1
+name = "TGA_reactionary"
+start_date = 1600.1.1
+end_date = 3000.1.1
 ideology = reactionary
 economic_policy = state_capitalism
 trade_policy = protectionism
@@ -75,9 +75,9 @@ citizenship_policy = residency
 war_policy = jingoism
 }
 party = {
-name = "TNG_anarcho_liberal_93"
-start_date = 1850.1.1
-end_date = 2000.1.1
+name = "TGA_anarcho_liberal"
+start_date = 1628.1.1
+end_date = 3000.1.1
 ideology = anarcho_liberal
 economic_policy = laissez_faire
 trade_policy = free_trade
@@ -86,9 +86,9 @@ citizenship_policy = full_citizenship
 war_policy = pro_military
 }
 party = {
-name = "TNG_communist_86"
-start_date = 1850.1.1
-end_date = 2000.1.1
+name = "TGA_communist"
+start_date = 1848.1.1
+end_date = 3000.1.1
 ideology = communist
 economic_policy = planned_economy
 trade_policy = protectionism
@@ -97,9 +97,9 @@ citizenship_policy = full_citizenship
 war_policy = pro_military
 }
 party = {
-name = "TNG_fascist_72"
-start_date = 1850.1.1
-end_date = 2000.1.1
+name = "TGA_fascist"
+start_date = 1900.1.1
+end_date = 3000.1.1
 ideology = fascist
 economic_policy = state_capitalism
 trade_policy = protectionism
@@ -119,7 +119,4 @@ clipper_transport = {}
 steam_transport = {}
 commerce_raider = {}
 }
-
-
-#========================= Vic_Nation_Establisher by Diamond.David =========================
 

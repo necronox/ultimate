@@ -28,10 +28,10 @@ life_rating = 35
 	remove_core = OMA
 }
 1835.1.1 = {
-	add_core = TZN
+	add_core = TNZ
 		}
 1960.1.1 = {
-	owner = TZN
-	controller = TZN
+	owner = TNZ
+	controller = TNZ
 	colonial = 0
 		}

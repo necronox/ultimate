@@ -2,7 +2,7 @@ color = { 118  99  151 }
 graphical_culture = FrenchGC
 
 party = {
-	name = "BRY_reactionary"
+	name = "BRT_reactionary"
 	start_date = 1600.1.1
 	end_date = 1883.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "BRY_liberal"
+	name = "BRT_liberal"
 	start_date = 1600.1.1
 	end_date = 1870.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "BRY_conservative"
+	name = "BRT_conservative"
 	start_date = 99999.1.1
 	end_date = 1870.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "BRY_socialist"
+	name = "BRT_socialist"
 	start_date = 99999.1.1
 	end_date = 1870.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "BRY_liberal_2"
+	name = "BRT_liberal_2"
 	start_date = 1848.1.1
 	end_date = 1870.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "BRY_conservative_2"
+	name = "BRT_conservative_2"
 	start_date = 1600.1.1
 	end_date = 1870.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "BRY_conservative_3"
+	name = "BRT_conservative_3"
 	start_date = 1848.1.1
 	end_date = 1894.1.1
 
@@ -100,7 +100,7 @@ party = {
 }
 
 party = {
-	name = "BRY_conservative_4"
+	name = "BRT_conservative_4"
 	start_date = 1870.1.1
 	end_date = 1894.1.1
 
@@ -114,7 +114,7 @@ party = {
 }
 
 party = {
-	name = "BRY_liberal_3"
+	name = "BRT_liberal_3"
 	start_date = 1870.1.1
 	end_date = 99999.1.1
 
@@ -128,7 +128,7 @@ party = {
 }
 
 party = {
-	name = "BRY_anarcho_liberal"
+	name = "BRT_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -142,7 +142,7 @@ party = {
 }
 
 party = {
-	name = "BRY_socialist_2"
+	name = "BRT_socialist_2"
 	start_date = 1848.1.1
 	end_date = 1905.1.1
 
@@ -156,7 +156,7 @@ party = {
 }
 
 party = {
-	name = "BRY_communist"
+	name = "BRT_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -170,7 +170,7 @@ party = {
 }
 
 party = {
-	name = "BRY_conservative_5"
+	name = "BRT_conservative_5"
 	start_date = 1894.1.1
 	end_date = 99999.1.1
 
@@ -184,7 +184,7 @@ party = {
 }
 
 party = {
-	name = "BRY_reactionary_2"
+	name = "BRT_reactionary_2"
 	start_date = 1883.1.1
 	end_date = 99999.1.1
 
@@ -198,7 +198,7 @@ party = {
 }
 
 party = {
-	name = "BRY_socialist_3"
+	name = "BRT_socialist_3"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 
@@ -212,7 +212,7 @@ party = {
 }
 
 party = {
-	name = "BRY_fascist"
+	name = "BRT_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 
@@ -233,7 +233,7 @@ unit_names = {
 		"Formidable" "Hoche" "Marceau" "Magenta" "Neptune" "Brennus" "Charles Martel" "Carnot"
 		"Jauréguiberry" "Masséna" "Bouvet" "Charlemagne" "Saint Louis" "Gaulois" "Henri IV"
 		"Iéna" "Suffren" "République" "Patrie" "Démocratie" "Justice" "Liberté" "Verité"
-		"Danton" "Diderot" "Mirabeau" "Vergniaud" "Voltaire" "Condorcet" "Courbet" "BRYnce"
+		"Danton" "Diderot" "Mirabeau" "Vergniaud" "Voltaire" "Condorcet" "Courbet" "BRTnce"
 		"Jean Bart" "Paris" "Fleurus" "Bretagne" "Lorraine" "Provence" "Bearn" "Flandre"
 		"Gascoigne" "Languedoc" "Normandie" "Guyenne" "Champagne" "Auvergne" "Lille" "Lyon"
 		"Orleans" "La Rochelle" "Bourdeaux"

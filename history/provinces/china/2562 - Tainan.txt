@@ -12,13 +12,13 @@ add_core = MNG
 1914.1.1 = {
 	owner = JAP	
 	controller = JAP
-	add_core = NCN
+	add_core = KMT
 		}
 
 
 1945.1.1 = {
-	owner = NCN	
-	controller = NCN
+	owner = KMT	
+	controller = KMT
 		}
 
 trade_goods = tea

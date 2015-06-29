@@ -269,7 +269,7 @@ british = {
 	english = {
 		color = { 213 51 51}
 		radicalism = 5
-		primary = ANG
+		primary = ENL
 		first_names = { Albert Alexander Alfred Archibald Arthur Augustus Benjamin Bernard Charles Colbert
 		Colin Cyril David Donald Douglas Edmund Edward Fairfax Ferdinand Francis
 		Frederick Geoffrey George Graham Henrey Herbert Horatio Hubert Hugh Ian
@@ -309,7 +309,7 @@ british = {
 	welsh = { 
 		color = { 255 193 37 }
 		radicalism = 10
-		primary = WLS
+		primary = WHA
 		first_names = { Alexander Arthur Brian Cathal Christopher Con Daniel Denis Desmond Éamon 
 		Edward Ernes Evan Fionán Frank George Harry Iwan Jack James John Joseph
 		Kevin Liam Morgan Michael Owain Peter Richard Rhys Robert Séan Sion Thomas William }
@@ -805,7 +805,7 @@ levantine = {
 	}
 	macedonian = {
 		color = {255 0 0}
-		primary = MAC
+		primary = MCD
 		first_names = { Adamantios Alexandros Anastasios Andreas Antonios Aristidis Athanasios Augustinos Benizelos Charalambos
 		Charilaos Dimitrios Diomidis Eleftherios Emmanouil Epameinontas Evripidis Gennaios Georgios Ilias
 		Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis

@@ -13,7 +13,7 @@ country_event = {
 	trigger = {
 		OR = {
 		tag = ENG
-		tag = ANG
+		tag = ENL
 			}
 		year = 1838
 		OR = {

@@ -4,9 +4,9 @@ trade_goods = sugar
 life_rating = 35
 colonial = 2
 
-add_core = PUE
+add_core = PRI
 1889.1.1 = {
-	owner = PUE
-	controller = PUE
+	owner = PRI
+	controller = PRI
 	colonial = 0
 		}

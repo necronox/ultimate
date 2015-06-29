@@ -1,175 +1,175 @@
-#;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-### countrys                                    ##;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-AFS;American Freestate;;;;;;;;;;;;;x
-AFS_ADJ;German-American;;;;;;;;;;;;;x
-AFS_absolute_monarchy;Kingdom of New Austria;;;;;;;;;;;;;x
-AFS_prussian_constitutionalism;Kingdom of New Austria;;;;;;;;;;;;;x
-AFS_hms_government;Kingdom of New Austria;;;;;;;;;;;;;x
-AFS_fascist_dictatorship;New Germany;;;;;;;;;;;;;x
-AFS_proletarian_dictatorship;North American Workers Federation;;;;;;;;;;;;;x
-CGP;Congress Poland;;;;;;;;;;;;;x
-CGP;Polish;;;;;;;;;;;;;x
-FRA_napoleonic_empire;French Empire;;;;;;;;;;;;;x
-ITA_revolutionary_republic;Cisalpine Republic;;;;;;;;;;;;;x
-GEN_revolutionary_republic;Ligurian Republic;;;;;;;;;;;;;x
-NET_revolutionary_republic;Batavian Republic;;;;;;;;;;;;;x
-SWI_revolutionary_republic;Helvetic Republic;;;;;;;;;;;;;x
-RHR;Rhodanic Republic;;;;;;;;;;;;;x
-RHR_ADJ;Rhodanic;;;;;;;;;;;;;x
-PIE;Piemont;;;;;;;;;;;;;x
-PIE_ADJ;Piemontian;;;;;;;;;;;;;x
-PIE_revolutionary_republic;Subalpine Republic;;;;;;;;;;;;;x
-GHB;Berg;;;;;;;;;;;;;x
-GHB_ADJ;Bergian;;;;;;;;;;;;;x
-GHB_absolute_monarchy;Grand Duchy of Berg;;;;;;;;;;;;;x
-GHB_prussian_constitutionalism;Grand Duchy of Berg;;;;;;;;;;;;;x
-GHB_hms_government;Grand Duchy of Berg;;;;;;;;;;;;;x
-HZP;Hohenzollern Principalitys;;;;;;;;;;;;;x
-HZP;Hohenzollernsch;;;;;;;;;;;;;x
-HZP_proletarian_dictatorship;Hohenzollern lands;;;;;;;;;;;;;x
-HZP_presidential_dictatorship;Hohenzollern lands;;;;;;;;;;;;;x
-HZP_bourgeois_dictatorship;Hohenzollern lands;;;;;;;;;;;;;x
-HZP_fascist_dictatorship;German Nation of the Hohenzollern lands;;;;;;;;;;;;;x
-HZP_democracy;Hohenzollern lands;;;;;;;;;;;;;x
-HZP_socialist_republic;Hohenzollern lands;;;;;;;;;;;;;x
-WES;Westphalia;;;;;;;;;;;;;x
-WES_ADJ;Westphalian;;;;;;;;;;;;;x
-WES_absolute_monarchy;Kingdom of Westphalia;;;;;;;;;;;;;x
-WES_prussian_constitutionalism;Kingdom of Westphalia;;;;;;;;;;;;;x
-NEU;Neuchâtel;;;;;;;;;;;;;x
-NEU_ADJ;Neuchtalian;;;;;;;;;;;;;x
-NEU_absolute_monarchy;Principality of Neuchâtel;;;;;;;;;;;;;x
-NEU_prussian_constitutionalism;Principality of Neuchâtel;;;;;;;;;;;;;x
-NEU_hms_government;Principality of Neuchâtel;;;;;;;;;;;;;x
-POL_napoleonic_empire;Duchy of Warsaw;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-### events                                      ##;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-cores_of_the_afs_title;Vice Kingdom New Austria;;;;;;;;;;;;;x
-cores_of_the_afs_desc;We organized the Kingdom of New Austria;;;;;;;;;;;;;x
-become_a_freestate_title;Become a Freestate;;;;;;;;;;;;;x
-become_a_freestate_desc;Without the emperor on our back, we should become a democracy.;;;;;;;;;;;;;x
-allamerica_title;Allamerica;;;;;;;;;;;;;x
-allamerica_desc;Since we ware seen as a Great Power we should rule over North America, instad of the European colonial Powers.;;;;;;;;;;;;;x
-annex_genoa_title;Annexion of the Ligurian Republic;;;;;;;;;;;;;x
-annex_genoa_desc;In 1804 France annexed, its former ally;;;;;;;;;;;;;x
-protectorat_wallis_title;Le protectorat des Wallis;;;;;;;;;;;;;x
-protectorat_wallis_desc;The puppet Helvetic Republic served Napoleon's purposes well for some time until it became ridden with inner strife and disputes and became unstable. The inner crisis in the Helvetic Republic became especially tangible by 1802. At the very same time, Napoleon felt great need to secure the passages to Italy and stabilise connections between France and Italy. Therefore the old idea of Rhodanic Republic became revitalized. This time, Napoleon simply made the whole canton of Valais into the Rhodanic Republic, fully independent of the Helvetic Republic which had still a few months to live. Thus Napoleon's hands were free and he had got a sure method of securing a safe passage into Italy.;;;;;;;;;;;;;x
-annex_piedmont_title;Annex the Subalpine Republic;;;;;;;;;;;;;x
-annex_piedmont_desc;Piedmont was the main part of the Kingdom of Sardinia which, despite its name, had its core on the mainland. The kingdom suffered a first French invasion in 1796, which led to the Treaty of Paris and the loss of Savoy and Nice. After a second invasion in 1798, King Charles Emmanuel IV escaped to Rome, but he never agreed to sign a new peace treaty, approving a final arrangement of its continental territories according to international law. After the great Battle of Marengo in 1800, Piedmont was still under military occupation when on 4 June 1802, Charles Emmanuel abdicated in favor of his brother Victor Emmanuel I, who was in Cagliari under British naval protection. Napoleon took this pretext to declare the forfeiture of the old sovereignty over Piedmont, which was annexed to France in September 1802 as the départements of Doire, Marengo, Pô (briefly named "Éridan", after Eridanos), Sesia, Stura, and Tanaro, whereas Novara (as the department of Agogna) went to Republican Italy.;;;;;;;;;;;X
-annex_parma_title;Annex the Duchy of Parma;;;;;;;;;;;;;x
-annex_parma_desc;In 1796, the duchy was occupied by French troops under Napoleon Bonaparte, and the political situation of the State became extremely confused. Duke Ferdinand maintained his throne under French military governors until the Treaty of Aranjuez of 1801, when a general agreement between the House of Bourbon and Napoleon formally decided the cession of the duchy to France in exchange for Tuscany, but the Duke lasted in Parma until he died in 1802, maybe by poisoning. However, Napoleon was undecided about the future of the duchy, aspiring to a total engagement of the Bourbons in the European wars as his allies. Even if French laws and administration was gradually introduced, the formal annexation to the French Empire was declared only in 1808 after the outbreak of the conflict against Bourbonic Spain. The duchy was reformed as the département of Taro.;;;;;;;;;;;;;x
-annex_wallis_title;Annex the Rhodanic Republic;;;;;;;;;;;;;x
-annex_wallis_desc;In 1810 Napoleon declared this ephemeral state a part of the French empire under the name of Department of the Simplon. In 1810 the Rhodanic Republic was annexed by Napoleonic France as the department of Simplon.;;;;;;;;;;;;;x
-new_allies_title;New Allies;;;;;;;;;;;;;x
-new_allies_desc;In 1805, after the Reichsdepputationshauptschluss, Napoleon made alliances with the south german states Bavaria, Baden and Württemberg.
-war_of_the_third_coalition_title;War of the Third Coalition;;;;;;;;;;;;;x
-war_of_the_third_coalition_desc;The War of the Third Coalition was a European conflict spanning the years 1803 to 1806. During the war France and its client states under Napoleon I defeated an alliance of the Holy Roman Empire led by Austria, Russia, and others.;;;;;;;;;;;;;x
-war_of_the_fours_coalition_title;War of the Fourth Coalition;;;;;;;;;;;;;x
-war_of_the_fours_coalition_desc;The Fourth Coalition against Napoleon's French Empire was defeated in a war spanning 1806–1807. Coalition partners included Prussia, Russia, Saxony, Sweden, and Great Britain.Many members of the coalition had previously been fighting France as part of the Third Coalition, and there was no intervening period of general peace. In 1806, Prussia joined a renewed coalition, fearing the rise in French power after the defeat of Austria and establishment of the French-sponsored Confederation of the Rhine. Prussia and Russia mobilized for a fresh campaign, and Prussian troops massed in Saxony.;;;;;;;;;;;;;x
-become_poland_title;Become Poland;;;;;;;;;;;;;x
-become_poland_desc;Now that we are Independent, we should claim the territory, thats rightfully ours.;;;;;;;;;;;;;x
-wrv_title;Weimar Constitution;;;;;;;;;;;;;x
-wrv_desc;The German people united in its tribes and inspired with the will to renew and strengthen the Reich in liberty and justice, to serve internal and external tranquility, and to promote social progress, has adopted this Constitution.;;;;;;;;;;;;;x
-EVTNAME402010;Reichsdeputationshauptschluss;;;;;;;;;;;;;x
-EVTDESC402010;The mediatization brought about a massive change to the political map of Germany. Literally hundreds of states were eliminated, with only around forty surviving. A number of the surviving states made significant territorial gains (most notably Baden, Bavaria, and Hesse-Darmstadt); and Baden, Hesse-Kassel, and Württemberg gained status by being made electorates (to replace three that had been lost in the changes). Of the imperial cities, only Augsburg, Bremen, Frankfurt am Main, Hamburg, Lübeck, and Nuremberg survived as independent entities.;;;;;;;;;;;;;x
-EVTOPTA402010;Reform the Empire;;;;;;;;;;;;;x
-EVTNAME402020;The revolution is victorius once more;;;;;;;;;;;;;x
-EVTDESC402020;Napoleon ist no longer the Emperor of the French;;;;;;;;;;;;;x
-EVTOPTA402020;Viva la revolution;;;;;;;;;;;;;x
-EVTNAME402040;Peace of Pressburg;;;;;;;;;;;;;x
-EVTDESC402040;The fourth Peace of Pressburg was signed on 26 December 1805 between France and Austria as a consequence of the Austrian defeats by France at Ulm and Austerlitz. Beyond the clauses establishing "peace and amity" and the Austrian withdrawal from the Third Coalition, the treaty also took substantial European territories from Austria. The gains of the previous treaties of Campo Formio and Lunéville were reiterated and Austrian holdings in Italy and Bavaria were ceded to France. Certain Austrian holdings in Germany were passed to French allies: the King of Bavaria, the King of Württemberg, and the Elector of Baden. The most notable territorial exchanges concerned the Tyrol and Vorarlberg which went to Bavaria, and Venetia, Istria, and Dalmatia which were incorporated in the Kingdom of Italy, of which Napoleon had become king earlier that year. Augsburg was ceded to Bavaria. As a minor compensation, Austria received the Electorate of Salzburg.;;;;;;;;;;;;;x
-EVTOPTA402040;Finally Peace!;;;;;;;;;;;;;x
-EVTNAME402050;Das Reich ist nicht mehr!;;;;;;;;;;;;;x
-EVTDESC402050;The Empire was formally dissolved on 6 August 1806, when the last Holy Roman Emperor Francis II abdicated, following a military defeat by the French under Napoleon at Austerlitz (see Treaty of Pressburg). Napoleon reorganized much of the Empire into the Confederation of the Rhine, a French satellite. Francis' House of Habsburg-Lorraine survived the demise of the Empire, continuing to reign as Emperors of Austria and Kings of Hungary until the Habsburg empire's final dissolution in 1918 in the aftermath of World War I.;;;;;;;;;;;;;x
-EVTOPTA402050;This is not the way it should have ended.;;;;;;;;;;;;;x
-EVTNAME402070;Napoleon dissolves the Holy Roman Empire;;;;;;;;;;;;;x
-EVTDESC402070;Since Napoleon has occupied most of the Holy Roman Empire, many former meber States have left the Empire and joind the Confederation of the Rhine. Although, the Emperor remains formally in power.;;;;;;;;;;;;;x
-EVTOPTA402070;What a shame!;;;;;;;;;;;;;x
-EVTNAME402080;Treaties of Tilsit;;;;;;;;;;;;;x
-EVTDESC402080;The Treaties of Tilsit were two agreements signed by Napoleon I of France in the town of Tilsit in July, 1807 in the aftermath of his victory at Friedland. The first was signed on 7 July, between Tsar Alexander I of Russia and Napoleon I of France, when they met on a raft in the middle of the Neman River. The second was signed with Prussia on 9 July. The treaties was made at the expense of the Prussian king, who had already agreed to a truce on 25 June after the Grande Armée had pursued him to the easternmost frontier of his realm, and in Tilsit ceded about half of his pre-war territories.;;;;;;;;;;;;;x
-EVTOPTA402080;So shall it be.;;;;;;;;;;;;;x
-EVTDESC403000;Nepoleon defeated us, but it seems to be a fair peace, at least for us. The Emperor of the French, offert us a "light peace", if we give him free hand in Prussia and become a part of the "Continental Blockade";;;;;;;;;;;;;x
-EVTNAME402090;Treaty of London;;;;;;;;;;;;;x
-EVTDESC402090;Napoleon has invaded the english homeland and beated our defenses. Now, we are forced to make peace with France. The Treaty of London demands, that we secede Wessex, Wales, the Channel Islands and Gibraltar to France;;;;;;;;;;;;;x
-EVTOPTA402090;We will take revenge.;;;;;;;;;;;;;x
-EVTOPTA403000;I like this Treaty.;;;;;;;;;;;;;x
-EVTNAME403040;Now its your time to decide!;;;;;;;;;;;;;x
-EVTDESC403040;Are you want to play, a mostly scripted version of the Coalitions Wars, or do you prefer free play?;;;;;;;;;;;;;x
-EVTOPTA403040;The scripted version sounds intresting.;;;;;;;;;;;;;x
-EVTOPTB403040;Go away with your scripts, this is a sandbox game!;;;;;;;;;;;;;x
-EVTNAME403050;Our beloved Emperor is dead!;;;;;;;;;;;;;x
-EVTDESC403050;After 22 years of his rain, as First Konsul of the Republic, as well as as Emperor of the French, Napoleon I. died in his Palace in Paris. Without any achievements of its own, the new Emperor Napoléon François, proclaimed as Napoleon II. had to make certain admission to the Bourgeoisie.;;;;;;;;;;;;;x
-EVTOPTA403050;So this is the end, of the Napoleonic Era?;;;;;;;;;;;;;x
-EVTNAME100000000;Polish November Uprising;;;;;;;;;;;;;x
-EVTDESC100000000;The armed struggle began when a group of conspirators led by a young cadet from the Warsaw officers' school, Piotr Wysocki, took arms from their garrison on 29 November 1830 and attacked the Belweder Palace, the main seat of the Grand Duke. The final spark that ignited Warsaw was a Russian plan to use the Polish Army to suppress France's July Revolution and the Belgian Revolution, in clear violation of the Polish constitution. The rebels managed to enter the Belweder, but Grand Duke Constantine had escaped in women's clothing. The rebels then turned to the main city arsenal, capturing it after a brief struggle. The following day, armed Polish civilians forced the Russian troops to withdraw north of Warsaw. This incident is sometimes called the Warsaw Uprising or the November Night.;;;;;;;;;;;;;x
-EVTOPTA100000000;Let the Uprising begin!;;;;;;;;;;;;;x
-EVTNAME100000010;Polish January Uprising;;;;;;;;;;;;;x
-EVTDESC100000010;The uprising broke out at a moment when general quiet prevailed in Europe, and though there was a public outcry in support of the Poles, powers such as France, Britain and Austria were unwilling to disturb the calm. The potential revolutionary leaders did not have sufficient means to arm and equip the groups of young men who were hiding in forests to escape Alexander Wielopolski's order of conscription into the Russian army. Altogether about 10,000 men rallied around the revolutionary banner; they were recruited chiefly from the ranks of the city working classes and minor clerks, although there was also a considerable admixture of the younger sons of the poor szlachta and a number of priests of lower rank.;;;;;;;;;;;;;x
-EVTOPTA100000010;Let the Uprising begin!;;;;;;;;;;;;;x
-EVTNAME200000000;Are you an AI?;;;;;;;;;;;;;x
-EVTDESC200000000;This event, ist for AI eyes only and should never be visible for the player. :) This event, will break the alliances with any, not fascist or communist country, you maby allied with. If you are not an AI, please choose, Option 2, at least if you dont want to be spamd by this event.;;;;;;;;;;;;;x
-EVTOPTA200000000;Yes, break alliance.;;;;;;;;;;;;;x
-EVTOPTB200000000;No, i am not an AI. I need a failsave!;;;;;;;;;;;;;x
-EVTNAME100000030;Lithuania is gone!;;;;;;;;;;;;;x
-EVTDESC100000030;Than its Poland agianst the World!;;;;;;;;;;;;;x
-EVTOPTA100000030;So shall it be.;;;;;;;;;;;;;x
-EVTNAME300000000;The Hohenzollern Lands;;;;;;;;;;;;;x
-EVTDESC300000000;The Province of Hohenzollern was a de facto province of the Kingdom of Prussia. It was created in 1850 by joining the principalities of Hohenzollern-Sigmaringen and Hohenzollern-Hechingen after both formerly independently ruling Catholic princely lines of the House of Hohenzollern had handed over their sovereignty to Prussia, ruled by the Protestant Hohenzollern branch.;;;;;;;;;;;;;x
-EVTOPTA300000000;Wellcome in Prussia;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-### partys                                      ##;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-AFS_conservative;Fürstentreue Fraktion;;;;;;;;;;;;;x
-AFS_conservative_2;Autonomisten Fraktion;;;;;;;;;;;;;x
-AFS_reactionary;Vaterlandsfraktion;;;;;;;;;;;;;x
-AFS_socialist;Sozialdemokratische Partei;;;;;;;;;;;;;x
-AFS_liberal;Republikanische Fraktion;;;;;;;;;;;;;x
-AFS_conservative_3;Heimatlich konservative Partei;;;;;;;;;;;;;x
-AFS_conservative_4;Heimatlich konservative Partei;;;;;;;;;;;;;x
-AFS_socialist_2;Sozialdemokratische Unabhängigkeitspartei;;;;;;;;;;;;;x
-AFS_reactionary_2;Heimattreue Volkspartei;;;;;;;;;;;;;x
-AFS_conservative_5;Heimatlich Konservative Partei;;;;;;;;;;;;;x
-AFS_conservative_6;Republikanische Partei;;;;;;;;;;;;;x
-AFS_liberal_2;Freiheitlich Demokraten;;;;;;;;;;;;;x
-AFS_communist;Nordamerikanischer Arbeiterbund;;;;;;;;;;;;;x
-AFS_socialist_3;Freiheitliche Soziale Volkspartei;;;;;;;;;;;;;x
-AFS_anarcho_liberal;Amerikanische Freiheitspartei;;;;;;;;;;;;;x
-AFS_fascist;Alldeutsche Arbeiterfornt Amerikas;;;;;;;;;;;;;x
-REH_liberal;Palamentarier;;;;;;;;;;;;;x
-REH_conservative_2;Kaisertreue Fraktion;;;;;;;;;;;;;x
-REH_reactionary;Fürstentreue Fraktion;;;;;;;;;;;;;x
-REH_conservative_3;Konservative Fraktion;;;;;;;;;;;;;x
-REH_conservative_4;Konservative Partei;;;;;;;;;;;;;x
-REH_conservative_;Christlichdemokratische Volkspartei;;;;;;;;;;;;;x
-REH_conservative_5;Christlich-Konservative Partei;;;;;;;;;;;;;x
-REH_reactionary_2;Deutschnationale Fraktion;;;;;;;;;;;;;x
-REH_reactionary_3;Vaterlandspartei;;;;;;;;;;;;;x
-REH_liberal_2;Liberalisten;;;;;;;;;;;;;x
-REH_liberal_3;Demokratische Freiheitspartei;;;;;;;;;;;;;x
-REH_liberal_4;Demokratische Freiheitspartei;;;;;;;;;;;;;x
-REH_liberal_5;Deutschliberale Partei;;;;;;;;;;;;;x
-REH_socialist;Sozialistische Volkspartei;;;;;;;;;;;;;x
-REH_socialist_2;Sozialistischer Arbeiterverein;;;;;;;;;;;;;x
-REH_socialist_3;Sozialistische Arbeiterpartei;;;;;;;;;;;;;x
-REH_socialist_4;Sozialdemokratische Arbeiterpartei;;;;;;;;;;;;;x
-REH_socialist_5;Freie Sozialistische Partei;;;;;;;;;;;;;x
-REH_communist;Kommunistische Arbeiterpartei;;;;;;;;;;;;;x
-REH_fascist;Deutschsoziale Arbeiter- und Heimatpartei;;;;;;;;;;;;;x
-REH_anarcho_liberal;Radikal Liberale;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-### regions                                     ##;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-PRU_693;Süd-Ostpreußen;;;;;;;;;;;;;x
-RUS_715;Lesser Poland;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-### governments                                 ##;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-napoleonic_empire;Napoleonic Absolutism;;;;;;;;;;;;;x
-revolutionary_republic;Revolutionary Republic;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-### provinces                                   ##;;;;;;;;;;;;;x
-##################################################;;;;;;;;;;;;;x
-3249;Crumlaw;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+### countrys                                    ##;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS;American Freestate;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_ADJ;German-American;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_absolute_monarchy;Kingdom of New Austria;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_prussian_constitutionalism;Kingdom of New Austria;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_hms_government;Kingdom of New Austria;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_fascist_dictatorship;New Germany;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_proletarian_dictatorship;North American Workers Federation;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+CGP;Congress Poland;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+CGP;Polish;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+FRA_napoleonic_empire;French Empire;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+ITA_revolutionary_republic;Cisalpine Republic;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+GEN_revolutionary_republic;Ligurian Republic;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+NET_revolutionary_republic;Batavian Republic;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+SWI_revolutionary_republic;Helvetic Republic;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+RHR;Rhodanic Republic;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+RHR_ADJ;Rhodanic;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+PIE;Piemont;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+PIE_ADJ;Piemontian;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+PIE_revolutionary_republic;Subalpine Republic;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+GHB;Berg;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+GHB_ADJ;Bergian;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+GHB_absolute_monarchy;Grand Duchy of Berg;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+GHB_prussian_constitutionalism;Grand Duchy of Berg;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+GHB_hms_government;Grand Duchy of Berg;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+SGR;Hohenzollern;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+SGR_ADJ;Hohenzollernsch;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+SGR_proletarian_dictatorship;Hohenzollern Ländereien;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+SGR_presidential_dictatorship;Hohenzollern Ländereien;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+SGR_bourgeois_dictatorship;Hohenzollern Ländereien;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+SGR_fascist_dictatorship;Deutsch Nation von der Hohenzollern Ländereien;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+SGR_democracy;Hohenzollern Ländereien;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+SGR_socialist_republic;Hohenzollern Ländereien;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+WES;Westphalia;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+WES_ADJ;Westphalian;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+WES_absolute_monarchy;Kingdom of Westphalia;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+WES_prussian_constitutionalism;Kingdom of Westphalia;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+NEU;Neuchâtel;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+NEU_ADJ;Neuchtalian;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+NEU_absolute_monarchy;Principality of Neuchâtel;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+NEU_prussian_constitutionalism;Principality of Neuchâtel;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+NEU_hms_government;Principality of Neuchâtel;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+POL_napoleonic_empire;Duchy of Warsaw;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+### events                                      ##;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+cores_of_the_afs_title;Vice Kingdom New Austria;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+cores_of_the_afs_desc;We organized the Kingdom of New Austria;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+become_a_freestate_title;Become a Freestate;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+become_a_freestate_desc;Without the emperor on our back, we should become a democracy.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,
+allamerica_title;Allamerica;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+allamerica_desc;Since we ware seen as a Great Power we should rule over North America, instad of the European colonial Powers.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,
+annex_genoa_title;Annexion of the Ligurian Republic;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+annex_genoa_desc;In 1804 France annexed, its former ally;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,
+protectorat_wallis_title;Le protectorat des Wallis;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+protectorat_wallis_desc;The puppet Helvetic Republic served Napoleon's purposes well for some time until it became ridden with inner strife and disputes and became unstable. The inner crisis in the Helvetic Republic became especially tangible by 1802. At the very same time, Napoleon felt great need to secure the passages to Italy and stabilise connections between France and Italy. Therefore the old idea of Rhodanic Republic became revitalized. This time, Napoleon simply made the whole canton of Valais into the Rhodanic Republic, fully independent of the Helvetic Republic which had still a few months to live. Thus Napoleon's hands were free and he had got a sure method of securing a safe passage into Italy.;;;;;;;;;;;;;x,,,,,,,,,,,,,,
+annex_piedmont_title;Annex the Subalpine Republic;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+annex_piedmont_desc;Piedmont was the main part of the Kingdom of Sardinia which, despite its name, had its core on the mainland. The kingdom suffered a first French invasion in 1796, which led to the Treaty of Paris and the loss of Savoy and Nice. After a second invasion in 1798, King Charles Emmanuel IV escaped to Rome, but he never agreed to sign a new peace treaty, approving a final arrangement of its continental territories according to international law. After the great Battle of Marengo in 1800, Piedmont was still under military occupation when on 4 June 1802, Charles Emmanuel abdicated in favor of his brother Victor Emmanuel I, who was in Cagliari under British naval protection. Napoleon took this pretext to declare the forfeiture of the old sovereignty over Piedmont, which was annexed to France in September 1802 as the départements of Doire, Marengo," Pô (briefly named ""Éridan""", after Eridanos), Sesia, Stura, and Tanaro, whereas Novara (as the department of Agogna) went to Republican Italy.;;;;;;;;;;;X
+annex_parma_title;Annex the Duchy of Parma;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+annex_parma_desc;In 1796, the duchy was occupied by French troops under Napoleon Bonaparte, and the political situation of the State became extremely confused. Duke Ferdinand maintained his throne under French military governors until the Treaty of Aranjuez of 1801, when a general agreement between the House of Bourbon and Napoleon formally decided the cession of the duchy to France in exchange for Tuscany, but the Duke lasted in Parma until he died in 1802, maybe by poisoning. However, Napoleon was undecided about the future of the duchy, aspiring to a total engagement of the Bourbons in the European wars as his allies. Even if French laws and administration was gradually introduced, the formal annexation to the French Empire was declared only in 1808 after the outbreak of the conflict against Bourbonic Spain. The duchy was reformed as the département of Taro.;;;;;;;;;;;;;x,,,,,,,,,
+annex_wallis_title;Annex the Rhodanic Republic;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+annex_wallis_desc;In 1810 Napoleon declared this ephemeral state a part of the French empire under the name of Department of the Simplon. In 1810 the Rhodanic Republic was annexed by Napoleonic France as the department of Simplon.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+new_allies_title;New Allies;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+new_allies_desc;In 1805, after the Reichsdepputationshauptschluss, Napoleon made alliances with the south german states Bavaria, Baden and Württemberg.,,,,,,,,,,,,,,
+war_of_the_third_coalition_title;War of the Third Coalition;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+war_of_the_third_coalition_desc;The War of the Third Coalition was a European conflict spanning the years 1803 to 1806. During the war France and its client states under Napoleon I defeated an alliance of the Holy Roman Empire led by Austria, Russia, and others.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+war_of_the_fours_coalition_title;War of the Fourth Coalition;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+war_of_the_fours_coalition_desc;The Fourth Coalition against Napoleon's French Empire was defeated in a war spanning 1806–1807. Coalition partners included Prussia, Russia, Saxony, Sweden, and Great Britain.Many members of the coalition had previously been fighting France as part of the Third Coalition, and there was no intervening period of general peace. In 1806, Prussia joined a renewed coalition, fearing the rise in French power after the defeat of Austria and establishment of the French-sponsored Confederation of the Rhine. Prussia and Russia mobilized for a fresh campaign, and Prussian troops massed in Saxony.;;;;;;;;;;;;;x,,,,,,,,,
+become_poland_title;Become Poland;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+become_poland_desc;Now that we are Independent, we should claim the territory, thats rightfully ours.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+wrv_title;Weimar Constitution;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+wrv_desc;The German people united in its tribes and inspired with the will to renew and strengthen the Reich in liberty and justice, to serve internal and external tranquility, and to promote social progress, has adopted this Constitution.;;;;;;;;;;;;;x,,,,,,,,,,,,,,
+EVTNAME402010;Reichsdeputationshauptschluss;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC402010;The mediatization brought about a massive change to the political map of Germany. Literally hundreds of states were eliminated, with only around forty surviving. A number of the surviving states made significant territorial gains (most notably Baden, Bavaria, and Hesse-Darmstadt); and Baden, Hesse-Kassel, and Württemberg gained status by being made electorates (to replace three that had been lost in the changes). Of the imperial cities, only Augsburg, Bremen, Frankfurt am Main, Hamburg, Lübeck, and Nuremberg survived as independent entities.;;;;;;;;;;;;;x,,,,,,
+EVTOPTA402010;Reform the Empire;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTNAME402020;The revolution is victorius once more;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC402020;Napoleon ist no longer the Emperor of the French;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTOPTA402020;Viva la revolution;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTNAME402040;Peace of Pressburg;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+"EVTDESC402040;The fourth Peace of Pressburg was signed on 26 December 1805 between France and Austria as a consequence of the Austrian defeats by France at Ulm and Austerlitz. Beyond the clauses establishing ""peace and amity"" and the Austrian withdrawal from the Third Coalition", the treaty also took substantial European territories from Austria. The gains of the previous treaties of Campo Formio and Lunéville were reiterated and Austrian holdings in Italy and Bavaria were ceded to France. Certain Austrian holdings in Germany were passed to French allies: the King of Bavaria, the King of Württemberg, and the Elector of Baden. The most notable territorial exchanges concerned the Tyrol and Vorarlberg which went to Bavaria, and Venetia, Istria, and Dalmatia which were incorporated in the Kingdom of Italy, of which Napoleon had become king earlier that year. Augsburg was ceded to Bavaria. As a minor compensation, Austria received the Electorate of Salzburg.;;;;;;;;;;;;;x,,,,,,,,,
+EVTOPTA402040;Finally Peace!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTNAME402050;Das Reich ist nicht mehr!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC402050;The Empire was formally dissolved on 6 August 1806, when the last Holy Roman Emperor Francis II abdicated, following a military defeat by the French under Napoleon at Austerlitz (see Treaty of Pressburg). Napoleon reorganized much of the Empire into the Confederation of the Rhine, a French satellite. Francis' House of Habsburg-Lorraine survived the demise of the Empire, continuing to reign as Emperors of Austria and Kings of Hungary until the Habsburg empire's final dissolution in 1918 in the aftermath of World War I.;;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTOPTA402050;This is not the way it should have ended.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTNAME402070;Napoleon dissolves the Holy Roman Empire;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC402070;Since Napoleon has occupied most of the Holy Roman Empire, many former meber States have left the Empire and joind the Confederation of the Rhine. Although, the Emperor remains formally in power.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+EVTOPTA402070;What a shame!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTNAME402080;Treaties of Tilsit;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC402080;The Treaties of Tilsit were two agreements signed by Napoleon I of France in the town of Tilsit in July, 1807 in the aftermath of his victory at Friedland. The first was signed on 7 July, between Tsar Alexander I of Russia and Napoleon I of France, when they met on a raft in the middle of the Neman River. The second was signed with Prussia on 9 July. The treaties was made at the expense of the Prussian king, who had already agreed to a truce on 25 June after the Grande Armée had pursued him to the easternmost frontier of his realm, and in Tilsit ceded about half of his pre-war territories.;;;;;;;;;;;;;x,,,,,,,,,,,,
+EVTOPTA402080;So shall it be.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC403000;Nepoleon defeated us, but it seems to be a fair peace, at least for us. The Emperor of the French," offert us a ""light peace"""," if we give him free hand in Prussia and become a part of the ""Continental Blockade"";;;;;;;;;;;;;x",,,,,,,,,,,,,
+EVTNAME402090;Treaty of London;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC402090;Napoleon has invaded the english homeland and beated our defenses. Now, we are forced to make peace with France. The Treaty of London demands, that we secede Wessex, Wales, the Channel Islands and Gibraltar to France;;;;;;;;;;;;;x,,,,,,,,,,,,,
+EVTOPTA402090;We will take revenge.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTOPTA403000;I like this Treaty.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTNAME403040;Now its your time to decide!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC403040;Are you want to play, a mostly scripted version of the Coalitions Wars, or do you prefer free play?;;;;;;;;;;;;;x,,,,,,,,,,,,,,,
+EVTOPTA403040;The scripted version sounds intresting.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTOPTB403040;Go away with your scripts, this is a sandbox game!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,
+EVTNAME403050;Our beloved Emperor is dead!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC403050;After 22 years of his rain, as First Konsul of the Republic, as well as as Emperor of the French, Napoleon I. died in his Palace in Paris. Without any achievements of its own, the new Emperor Napoléon François, proclaimed as Napoleon II. had to make certain admission to the Bourgeoisie.;;;;;;;;;;;;;x,,,,,,,,,,,,
+EVTOPTA403050;So this is the end, of the Napoleonic Era?;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,
+EVTNAME100000000;Polish November Uprising;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC100000000;The armed struggle began when a group of conspirators led by a young cadet from the Warsaw officers' school, Piotr Wysocki, took arms from their garrison on 29 November 1830 and attacked the Belweder Palace, the main seat of the Grand Duke. The final spark that ignited Warsaw was a Russian plan to use the Polish Army to suppress France's July Revolution and the Belgian Revolution, in clear violation of the Polish constitution. The rebels managed to enter the Belweder, but Grand Duke Constantine had escaped in women's clothing. The rebels then turned to the main city arsenal, capturing it after a brief struggle. The following day, armed Polish civilians forced the Russian troops to withdraw north of Warsaw. This incident is sometimes called the Warsaw Uprising or the November Night.;;;;;;;;;;;;;x,,,,,,,,,,
+EVTOPTA100000000;Let the Uprising begin!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTNAME100000010;Polish January Uprising;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC100000010;The uprising broke out at a moment when general quiet prevailed in Europe, and though there was a public outcry in support of the Poles, powers such as France, Britain and Austria were unwilling to disturb the calm. The potential revolutionary leaders did not have sufficient means to arm and equip the groups of young men who were hiding in forests to escape Alexander Wielopolski's order of conscription into the Russian army. Altogether about 10,000 men rallied around the revolutionary banner; they were recruited chiefly from the ranks of the city working classes and minor clerks, although there was also a considerable admixture of the younger sons of the poor szlachta and a number of priests of lower rank.;;;;;;;;;;;;;x,,,,,,,,,,,,
+EVTOPTA100000010;Let the Uprising begin!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTNAME200000000;Are you an AI?;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC200000000;This event, ist for AI eyes only and should never be visible for the player. :) This event, will break the alliances with any, not fascist or communist country, you maby allied with. If you are not an AI, please choose, Option 2, at least if you dont want to be spamd by this event.;;;;;;;;;;;;;x,,,,,,,,,,
+EVTOPTA200000000;Yes, break alliance.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,
+EVTOPTB200000000;No, i am not an AI. I need a failsave!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,
+EVTNAME100000030;Lithuania is gone!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC100000030;Than its Poland agianst the World!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTOPTA100000030;So shall it be.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTNAME300000000;The Hohenzollern Lands;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+EVTDESC300000000;The Province of Hohenzollern was a de facto province of the Kingdom of Prussia. It was created in 1850 by joining the principalities of Hohenzollern-Sigmaringen and Hohenzollern-Hechingen after both formerly independently ruling Catholic princely lines of the House of Hohenzollern had handed over their sovereignty to Prussia, ruled by the Protestant Hohenzollern branch.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,
+EVTOPTA300000000;Wellcome in Prussia;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+### partys                                      ##;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_conservative;Fürstentreue Fraktion;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_conservative_2;Autonomisten Fraktion;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_reactionary;Vaterlandsfraktion;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_socialist;Sozialdemokratische Partei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_liberal;Republikanische Fraktion;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_conservative_3;Heimatlich konservative Partei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_conservative_4;Heimatlich konservative Partei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_socialist_2;Sozialdemokratische Unabhängigkeitspartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_reactionary_2;Heimattreue Volkspartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_conservative_5;Heimatlich Konservative Partei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_conservative_6;Republikanische Partei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_liberal_2;Freiheitlich Demokraten;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_communist;Nordamerikanischer Arbeiterbund;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_socialist_3;Freiheitliche Soziale Volkspartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_anarcho_liberal;Amerikanische Freiheitspartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+AFS_fascist;Alldeutsche Arbeiterfornt Amerikas;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_liberal;Palamentarier;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_conservative_2;Kaisertreue Fraktion;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_reactionary;Fürstentreue Fraktion;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_conservative_3;Konservative Fraktion;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_conservative_4;Konservative Partei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_conservative_;Christlichdemokratische Volkspartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_conservative_5;Christlich-Konservative Partei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_reactionary_2;Deutschnationale Fraktion;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_reactionary_3;Vaterlandspartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_liberal_2;Liberalisten;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_liberal_3;Demokratische Freiheitspartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_liberal_4;Demokratische Freiheitspartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_liberal_5;Deutschliberale Partei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_socialist;Sozialistische Volkspartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_socialist_2;Sozialistischer Arbeiterverein;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_socialist_3;Sozialistische Arbeiterpartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_socialist_4;Sozialdemokratische Arbeiterpartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_socialist_5;Freie Sozialistische Partei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_communist;Kommunistische Arbeiterpartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_fascist;Deutschsoziale Arbeiter- und Heimatpartei;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+REH_anarcho_liberal;Radikal Liberale;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+### regions                                     ##;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+PRU_693;Süd-Ostpreußen;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+RUS_715;Lesser Poland;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+### governments                                 ##;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+napoleonic_empire;Napoleonic Absolutism;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+revolutionary_republic;Revolutionary Republic;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+### provinces                                   ##;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+##################################################;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,
+3249;Crumlaw;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,

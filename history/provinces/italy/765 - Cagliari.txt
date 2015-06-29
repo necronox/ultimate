@@ -1,7 +1,7 @@
 owner = SPA
 controller = SPA
 add_core = SAR
-add_core = SDA
+add_core = SRD
 add_core = ITA
 1714.1.1 = {
 	owner = AUS
@@ -12,8 +12,8 @@ owner = SAR
 controller = SAR
 		}
 1800.1.1 = {
-owner = SDA
-controller = SDA
+owner = SRD
+controller = SRD
 		}
 1815.1.1 = {
 owner = SAR
@@ -39,6 +39,6 @@ life_rating = 35
 }
 #Sardinian ISA break off from Italy
 2018.1.1 = {
-owner = SDA
-controller = SDA
+owner = SRD
+controller = SRD
 		}

@@ -24,7 +24,7 @@ union = {
 
 # England-Scotland (James I and his descendants)
 union = {
-	first = ANG
+	first = ENL
 	second = SCO
 	start_date = 1600.1.1
 	end_date = 1707.1.1

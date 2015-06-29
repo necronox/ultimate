@@ -1,0 +1,11 @@
+    FRA = {
+            value = 25
+    }
+     
+    ENG = {
+            value = 25
+    }
+     
+    ENL = {
+            value = 25
+    }

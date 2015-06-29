@@ -4,7 +4,7 @@
 		owner = FRA
 		controller = FRA
 		colonial = 2
-		add_core = ROC
+		add_core = CGO
 		}
 
 
@@ -13,7 +13,7 @@ life_rating = 15
 
 
 1960.1.1 = {
-	owner = ROC
-	controller = ROC
+	owner = CGO
+	controller = CGO
 	colonial = 0
 		}

@@ -9,7 +9,7 @@ country_event = {
 		not = {
 			has_country_flag = inherited_hohenzollern
 		}
-		HZP = {
+		SGR = {
 			in_sphere = THIS
 		}
 	}
@@ -18,7 +18,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTA300000000"
-		inherit = HZP
+		inherit = SGR
 		594 = {
 			add_core = PRU
 		}

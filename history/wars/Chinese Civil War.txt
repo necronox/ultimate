@@ -2,7 +2,7 @@ name = "The Chinese Civil War"
 
 1945.9.3 = {
 	add_attacker = CHI
-	add_defender = NCN
+	add_defender = KMT
 
 
 	
@@ -14,12 +14,12 @@ name = "The Chinese Civil War"
 	war_goal = {
 		casus_belli = conquest
 		actor = CHI
-		receiver = NCN
+		receiver = KMT
 	}
 
 	war_goal = {
 		casus_belli = conquest
-		actor = NCN
+		actor = KMT
 		receiver = CHI
 	}
 
@@ -27,6 +27,6 @@ name = "The Chinese Civil War"
 
 1950.4.1 = {
 	rem_attacker = CHI
-	rem_defender = NCN
+	rem_defender = KMT
 
 		}

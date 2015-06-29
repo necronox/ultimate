@@ -2,7 +2,7 @@ color = { 119 148 81 }
 graphical_culture = MiddleEasternGC
 
 party = {
-	name = "TRM_conservative"
+	name = "TKM_conservative"
 	start_date = 1800.1.1
 	end_date = 99999.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "TRM_liberal"
+	name = "TKM_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "TRM_reactionary"
+	name = "TKM_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "TRM_anarcho_liberal"
+	name = "TKM_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "TRM_socialist"
+	name = "TKM_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "TRM_communist"
+	name = "TKM_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "TRM_fascist"
+	name = "TKM_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 

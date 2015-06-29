@@ -2,7 +2,7 @@
 
 political_decisions = {
 
-	nuke_KNA = {
+	nuke_KNY = {
 	picture = nuke_strikepic
 		potential = {	
 			war_with = KOK
@@ -16,7 +16,7 @@ political_decisions = {
 			prestige = -25
 nuclear_weapons = -1
 
-			KNA = {
+			KNY = {
 				country_event = { id=666666 days=2 }
 				}
 
@@ -34,7 +34,7 @@ nuclear_weapons = -1
 				}
 			modifier = {
 				factor = 0
-				KNA = {
+				KNY = {
 				brigades_compare = 2
 					}
 					}

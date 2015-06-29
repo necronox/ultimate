@@ -11,8 +11,8 @@ fort = 1
 trade_goods = fish
 life_rating = 35
 2015.1.1 = {
-owner = ANG
-controller = ANG
+owner = ENL
+controller = ENL
 		}
 
 2023.1.1 = {

@@ -10,9 +10,9 @@
 trade_goods = cattle
 life_rating = 15
 
-add_core = CTD
+add_core = IVC
 1960.1.1 = {
-	owner = CTD
-	controller = CTD
+	owner = IVC
+	controller = IVC
 	colonial = 0
 		}

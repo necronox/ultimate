@@ -21,7 +21,7 @@ NET = {
 	influence_value = 50
 	military_access = yes
 	}
-PHI = {
+PHL = {
 	value = 100
 	level = 5
 	influence_value = 25
@@ -32,7 +32,7 @@ MEX = {
 	level = 5
 	influence_value = 25
 }
-NCN = {
+KMT = {
 	value = 100
 	level = 5
 	influence_value = 50

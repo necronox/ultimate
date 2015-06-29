@@ -1,4 +1,4 @@
-1836.1.1 = {
+INO.1.1 = {
 	owner = NET
 	controller = NET
 	colonial = 2
@@ -6,12 +6,12 @@
 
 
 1935.1.1 = {
-	add_core= IDO
+	add_core= INO
 		}
 1970.1.1 = {
-	owner = IDO
-	controller = IDO
-	add_core = IDO
+	owner = INO
+	controller = INO
+	add_core = INO
 	colonial = 0
 		}
 

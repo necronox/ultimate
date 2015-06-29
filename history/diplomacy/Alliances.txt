@@ -7,7 +7,7 @@ alliance = {
 	end_date = "1713.1.1"
 		}
 alliance = {
-	first = "ANG"
+	first = "ENL"
 	second = "NET"
 	start_date = "1604.1.1"
 	end_date = "1713.1.1"
@@ -161,7 +161,7 @@ end_date="2018.1.1"
 
 alliance=
 	{
-		first="ANG"
+		first="ENL"
 		second="CAN"
 		start_date="2015.1.1"
 end_date="2100.1.1"

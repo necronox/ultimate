@@ -1,4 +1,4 @@
-CTD = {
+IVC = {
 	value = 100
 	level = 5
 	influence_value = 50
@@ -21,7 +21,7 @@ TUN = {
 	influence_value = 50
 }
 
-LEB = {
+LBN = {
 	value = 100
 	level = 5
 	influence_value = 50

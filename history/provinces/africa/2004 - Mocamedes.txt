@@ -4,10 +4,10 @@ trade_goods = fish
 life_rating = 35
 colonial = 2
 1910.1.1 = {
-	add_core = AGL
+	add_core = ANG
 		}
 1975.1.1 = {
-	owner = AGL
-	controller = AGL
+	owner = ANG
+	controller = ANG
 	colonial = 0
 		}

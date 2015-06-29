@@ -10,9 +10,9 @@
 trade_goods = tea
 life_rating = 15
 
-	add_core = KNA
+	add_core = KNY
 1960.1.1 = {
-	owner = KNA
-	controller = KNA
+	owner = KNY
+	controller = KNY
 	colonial = 0
 		}

@@ -2,7 +2,7 @@ color = { 12 156 239 }
 graphical_culture = AfricanGC
 
 party = {
-	name = "TZN_liberal"
+	name = "TNZ_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "TZN_conservative"
+	name = "TNZ_conservative"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "TZN_socialist"
+	name = "TNZ_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "TZN_reactionary"
+	name = "TNZ_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "TZN_anarcho_liberal"
+	name = "TNZ_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "TZN_communist"
+	name = "TNZ_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "TZN_fascist"
+	name = "TNZ_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 

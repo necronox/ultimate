@@ -1,9 +1,9 @@
 owner = SPA
 controller = SPA
-add_core = PHI
+add_core = PHL
 1917.1.1 = { 
-		owner = PHI
-		controller = PHI
+		owner = PHL
+		controller = PHL
 		colonial = 0
 		}
 

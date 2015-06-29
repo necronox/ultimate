@@ -2,7 +2,7 @@ color = { 53 78 97 }
 graphical_culture = MiddleEasternGC
 
 party = {
-name = "PAL_reactionary"
+name = "PLS_reactionary"
 start_date = 1604.1.1
 end_date = 9999.1.1
 
@@ -17,7 +17,7 @@ war_policy = jingoism
 }
 
 party = {
-name = "PAL_liberal"
+name = "PLS_liberal"
 start_date = 1604.1.1
 end_date = 9999.1.1
 
@@ -32,7 +32,7 @@ war_policy = anti_military
 }
 
 party = {
-name = "PAL_conservative"
+name = "PLS_conservative"
 start_date = 1604.1.1
 end_date = 9999.1.1
 
@@ -47,7 +47,7 @@ war_policy = anti_military
 }
 
 party = {
-name = "PAL_anarcho_liberal"
+name = "PLS_anarcho_liberal"
 start_date = 9999.1.1
 end_date = 9999.1.1
 
@@ -62,7 +62,7 @@ war_policy = pro_military
 }
 
 party = {
-name = "PAL_socialist"
+name = "PLS_socialist"
 start_date = 1604.1.1
 end_date = 9999.1.1
 
@@ -77,7 +77,7 @@ war_policy = anti_military
 }
 
 party = {
-name = "PAL_socialist_2"
+name = "PLS_socialist_2"
 start_date = 1604.1.1
 end_date = 9999.1.1
 
@@ -92,7 +92,7 @@ war_policy = anti_military
 }
 
 party = {
-name = "PAL_communist_2"
+name = "PLS_communist_2"
 start_date = 1604.1.1
 end_date = 9999.1.1
 
@@ -107,7 +107,7 @@ war_policy = pro_military
 }
 
 party = {
-name = "PAL_communist"
+name = "PLS_communist"
 start_date = 1604.1.1
 end_date = 9999.1.1
 
@@ -122,7 +122,7 @@ war_policy = pro_military
 }
 
 party = {
-name = "PAL_fascist"
+name = "PLS_fascist"
 start_date = 1604.1.1
 end_date = 9999.1.1
 

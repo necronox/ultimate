@@ -6,15 +6,15 @@ add_core = SOK
 		owner = ENG
 		controller = ENG
 		colonial = 2
-		add_core = NGA
+		add_core = NGR
 		}
 
 trade_goods = cotton
 life_rating = 35
 
 1960.1.1 = {
-	owner = NGA
-	controller = NGA
+	owner = NGR
+	controller = NGR
 	colonial = 0
 
 		}

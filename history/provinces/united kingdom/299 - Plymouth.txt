@@ -1,5 +1,5 @@
-owner = ANG
-controller = ANG
+owner = ENL
+controller = ENL
 add_core = WSX
 add_core = CRN
 1707.1.1 = {
@@ -7,11 +7,11 @@ owner = ENG
 controller = ENG
 add_core = ENG
 	}
-add_core = ANG
+add_core = ENL
 add_core = ENG
 2015.1.1 = {
-owner = ANG
-controller = ANG
+owner = ENL
+controller = ENL
 		}
 trade_goods = fish
 life_rating = 35

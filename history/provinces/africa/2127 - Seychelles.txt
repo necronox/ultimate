@@ -31,13 +31,13 @@ terrain = plains
 1937.1.1 = {
     owner = ENG
     controller = ENG
-    add_core = SYC
+    add_core = SEY
     colonial = 2
 }
                    
 1976.6.29 = {
-    owner = SYC
-    controller = SYC
+    owner = SEY
+    controller = SEY
 	colonial = 0
 }
 

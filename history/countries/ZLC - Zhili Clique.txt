@@ -12,12 +12,12 @@ nationalvalue = nv_order
 literacy = 0.04
 prestige = 0
 schools = traditional_academic
-oob = "ANC.txt"
+oob = "HUI.txt"
 
 
 #========================= H O U S E - O F - L O R D S =========================
 
-ruling_party = ANC_liberal_87
+ruling_party = HUI_liberal_87
 upper_house = {
 fascist = 0
 reactionary = 0

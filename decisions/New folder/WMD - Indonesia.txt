@@ -2,10 +2,10 @@
 
 political_decisions = {
 
-	nuke_IDO = {
+	nuke_INO = {
 	picture = nuke_strikepic
 		potential = {	
-			war_with = IDO
+			war_with = INO
 			nuclear_weapons = 1	
 
 
@@ -16,7 +16,7 @@ political_decisions = {
 			prestige = -25
 nuclear_weapons = -1
 
-			IDO = {
+			INO = {
 				country_event = { id=666666 days=2 }
 				}
 
@@ -34,7 +34,7 @@ nuclear_weapons = -1
 				}
 			modifier = {
 				factor = 0
-				IDO = {
+				INO = {
 				brigades_compare = 2
 					}
 					}

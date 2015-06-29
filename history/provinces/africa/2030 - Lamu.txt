@@ -19,9 +19,9 @@ life_rating = 35
 	remove_core = OMA
 }
 
-	add_core = KNA
+	add_core = KNY
 1960.1.1 = {
-	owner = KNA
-	controller = KNA
+	owner = KNY
+	controller = KNY
 	colonial = 0
 		}

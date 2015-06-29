@@ -15,7 +15,7 @@ GHA = {
 	influence_value = 50
 }
 
-SRL = {
+SLE = {
 	value = 100
 	level = 5
 	influence_value = 50
@@ -52,13 +52,13 @@ NZL = {
 	influence_value = 50
 }
 
-KNA = {
+KNY = {
 	value = 100
 	level = 5
 	influence_value = 50
 }
 
-SNG = {
+SGP = {
 	value = 100
 	level = 5
 	influence_value = 50

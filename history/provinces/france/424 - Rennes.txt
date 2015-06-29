@@ -1,6 +1,6 @@
 owner = FRA
 controller = FRA
-add_core = BRY
+add_core = BRT
 add_core = FRA
 trade_goods = grain
 life_rating = 35
@@ -8,6 +8,6 @@ life_rating = 35
 
 #Breton ISA Break off from France
 2018.1.1 = {
-owner = BRY
-controller = BRY
+owner = BRT
+controller = BRT
 		}

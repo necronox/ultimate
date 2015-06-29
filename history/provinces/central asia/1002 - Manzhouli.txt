@@ -14,9 +14,9 @@ trade_goods = cattle
 life_rating = 35
 
 1911.1.1 = {
-	owner = NCN
-	controller = NCN
-	add_core = NCN
+	owner = KMT
+	controller = KMT
+	add_core = KMT
 	}
 
 1931.1.1 = {
@@ -27,5 +27,5 @@ life_rating = 35
 1945.1.1 = {
 	owner = CHI
 	controller = CHI
-	add_core = NCN
+	add_core = KMT
 		}

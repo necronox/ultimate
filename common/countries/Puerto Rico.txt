@@ -2,7 +2,7 @@ color = { 0 125 121 }
 graphical_culture = Generic
 
 party = {
-	name = "PUE_reactionary"
+	name = "PRI_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "PUE_liberal"
+	name = "PRI_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "PUE_conservative"
+	name = "PRI_conservative"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -45,7 +45,7 @@ party = {
 
 
 party = {
-	name = "PUE_anarcho_liberal"
+	name = "PRI_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -59,7 +59,7 @@ party = {
 }
 
 party = {
-	name = "PUE_socialist"
+	name = "PRI_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -73,7 +73,7 @@ party = {
 }
 
 party = {
-	name = "PUE_communist"
+	name = "PRI_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -87,7 +87,7 @@ party = {
 }
 
 party = {
-	name = "PUE_fascist"
+	name = "PRI_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 

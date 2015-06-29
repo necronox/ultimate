@@ -2,7 +2,7 @@ color = { 117  146  167	}
 graphical_culture = Generic
 
 party = {
-	name = "SDA_reactionary"
+	name = "SRD_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "SDA_conservative"
+	name = "SRD_conservative"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "SDA_liberal"
+	name = "SRD_liberal"
 	start_date = 1600.1.1
 	end_date = 1890.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "SDA_liberal_2"
+	name = "SRD_liberal_2"
 	start_date = 1890.1.1
 	end_date = 99999.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "SDA_socialist"
+	name = "SRD_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "SDA_conservative_2"
+	name = "SRD_conservative_2"
 	start_date = 99999.1.1
 	end_date = 99999.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "SDA_anarcho_liberal"
+	name = "SRD_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -100,7 +100,7 @@ party = {
 }
 
 party = {
-	name = "SDA_communist"
+	name = "SRD_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -114,7 +114,7 @@ party = {
 }
 
 party = {
-	name = "SDA_fascist"
+	name = "SRD_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 
@@ -129,7 +129,7 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		"Alfonso I" "Duca di Calabria" "Duca di Castro" "Duca di Noto" "Due SDAilie" "Ferdinando III" Reale Regina "Regno di Napoli" "Regno di SDAilia"
+		"Alfonso I" "Duca di Calabria" "Duca di Castro" "Duca di Noto" "Due SRDilie" "Ferdinando III" Reale Regina "Regno di Napoli" "Regno di SRDilia"
 	}
 	ironclad = {
 		Archimede "Conte dell'Aquila" "Conte di Bari" "Conte di Girgenti" "Conte di Lecce" "Conte di Trani" "Conte di Trapani" "Duca delle Puglie" "Ferdinando I" "Principe di Capua"
@@ -153,6 +153,6 @@ unit_names = {
 	steam_transport = { 
 	}
 	commerce_raider = {
-		Aretusa Cerere SDAona Leona Minerva Pallade "Santa Lucia" Sibilla Sirena Venere
+		Aretusa Cerere SRDona Leona Minerva Pallade "Santa Lucia" Sibilla Sirena Venere
 	}
 }

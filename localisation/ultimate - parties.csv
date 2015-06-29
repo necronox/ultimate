@@ -1,12 +1,12 @@
 ;;;;x
-ANG_conservative;Conservative Party;x
-ANG_liberal;Liberal Party;x
-ANG_liberal_2;Liberal Party;x
-ANG_socialist;Labour Party;x
-ANG_reactionary;Tory Party;x
-ANG_anarcho_liberal;Anarchist Party;x
-ANG_communist;Communist Party;x
-ANG_fascist;Fascist Party;x
+ENL_conservative;Conservative Party;x
+ENL_liberal;Liberal Party;x
+ENL_liberal_2;Liberal Party;x
+ENL_socialist;Labour Party;x
+ENL_reactionary;Tory Party;x
+ENL_anarcho_liberal;Anarchist Party;x
+ENL_communist;Communist Party;x
+ENL_fascist;Fascist Party;x
 THC_conservative;Conservative Party;x
 THC_liberal;Liberal Party;x
 THC_reactionary;Tory Party;x
@@ -27,6 +27,13 @@ BDB_conservative_3;Christsoz. Arbeiterpartei;Christsoz. Arbeiterpartei;Christsoz
 BDB_anarcho_liberal;Radikale Arbeiterpartei;Arbeiterpartei radical;Radikale Arbeiterpartei;;Radical Arbeiterpartei;;;;;;;;;x;;;;
 BDB_communist;Kommunistische Arbeiterpartei;Arbeiterpartei communiste;Kommunistische Arbeiterpartei;;Communist Arbeiterpartei;;;;;;;;;x;;;;
 BDB_fascist;NSBD;NSBD;NSBD;;NSBD;;;;;;;;;x;;;;
+BLZ_anarcho_liberal;Libertarian Party;Arbeiterpartei radical;Radikale Arbeiterpartei;;Radical Arbeiterpartei;;;;;;;;;x;;;;
+BLZ_communist;Communist Party;Arbeiterpartei communiste;Kommunistische Arbeiterpartei;;Communist Arbeiterpartei;;;;;;;;;x;;;;
+BLZ_conservative;United Democratic Party;Zentrumspartei;Zentrumspartei;;Zentrumspartei;;;;;;;;;x;;;;
+BLZ_fascist;Fascist Party;NSBD;NSBD;;NSBD;;;;;;;;;x;;;;
+BLZ_liberal;People's United Party;Liberaldem. Partei;Liberaldem. Partei;;Liberaldem. Partei;;;;;;;;;x;;;;
+BLZ_reactionary;Radical Party;Nationale Partei;Nationale Partei;;Nationale Partei;;;;;;;;;x;;;;
+BLZ_socialist;Socialist Party;Deutscher Arbeiterverein;Deutscher Arbeiterverein;;Deutscher Arbeiterverein;;;;;;;;;x;;;;
 CHP;Chiapas;;;;;Chiapas;;;;;;;;x;;;;
 CHP_ADJ;Chiapan;;;;;Chiapaneco;;;;;;;;x;;;;
 CHP_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
@@ -41,6 +48,26 @@ CHP_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;
 CHP_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
 CHP_communist;Partido Communist;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
 CHP_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+CLV_anarcho_liberal;Libertarian Führer;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
+CLV_communist;Kommunistische Führer;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
+CLV_conservative;Konservative Führer;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+CLV_fascist;Faschisten Führer;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+CLV_liberal;Liberale Führer;Partido Progresista;Partido Progresista;;;Partido Progresista;;;;;;;;x;;;;
+CLV_reactionary;Radikal Führer;Partido Imperialista;Partido Imperialista;;;Partido Imperialista;;;;;;;;x;;;;
+CLV_socialist;Sozialistische Führer;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
+DDR_anarcho_liberal;Libertarian Partei;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
+DDR_conservative;Konservative Partei;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+DDR_conservative_2;Konservative Partei;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+DDR_conservative_3;Christlich-soziale Partei;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+DDR_communist;Kommunistische Partei;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
+DDR_fascist;Patriot Partei;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+DDR_liberal;Liberale Partei;Partido Progresista;Partido Progresista;;;Partido Progresista;;;;;;;;x;;;;
+DDR_liberal_2;Nationalliberale Partei;Partido Progresista;Partido Progresista;;;Partido Progresista;;;;;;;;x;;;;
+DDR_liberal_3;Freisinnige Partei;Partido Progresista;Partido Progresista;;;Partido Progresista;;;;;;;;x;;;;
+DDR_reactionary;Volks Partei;Partido Imperialista;Partido Imperialista;;;Partido Imperialista;;;;;;;;x;;;;
+DDR_socialist;Arbeiterpartei;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
+DDR_socialist_2;Sozialdemokratische Arbeiterpartei;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
+DDR_socialist_3;Sozialistische Arbeiterpartei;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
 GUY_anarcho_liberal;Unity Party of Guyana;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
 GUY_communist;People's Progressive Party;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
 GUY_conservative;Conservative Party;Partido Moderado Liberal;Partido Moderado Liberal;;;Partido Moderado Liberal;;;;;;;;x;;;;
@@ -60,6 +87,14 @@ HRE_proletarian_dictatorship;People's Roman Empire;x;;
 HRE_proletarian_dictatorship_ADJ;Imperial;x;;
 HRE_fascist_dictatorship;National Roman Empire;x;;
 HRE_fascist_dictatorship_ADJ;Imperial;x;;
+KWT_anarcho_liberal;Libertarian Party;Partido Radical;Partido Radical;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KWT_communist;Communist Party;Partido communiste;Partido Communist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KWT_conservative;Conservative Party;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+KWT_conservative_2;Conservative Party;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+KWT_fascist;Fascist Party;Partido fasciste;Partido Fascist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KWT_liberal;Liberal Party;Partido Liberal;Partido Liberal;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KWT_reactionary;Radical Party;Partido nationaliste;Partido Nationalist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KWT_socialist;Labour Party;Partido socialiste;Partido Socialist;;;;;;;;;;;;x;;;;;;;;;;;;;;
 LOS;Los Altos;;;;;Los Altos;;;;;;;;x
 LOS_ADJ;Losaltan;;;;;Altenses;;;;;;;;x
 LOS_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -69,6 +104,31 @@ LOS_anarcho_liberal;Partido Radical;Partido Radical;Partido Radical;;;;;;;;;;;;x
 LOS_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;;;;;;;;;;x;;;;;;;;;;;;;;
 LOS_communist;Partido Communist;Partido communiste;Partido Communist;;;;;;;;;;;;x;;;;;;;;;;;;;;
 LOS_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KDS_anarcho_liberal;Terakkipeweran;;;;;;;;;;;;;x
+KDS_communist;Komala;;;;;;;;;;;;;x
+KDS_conservative;Meclis-i Mîran;;;;;;;;;;;;;x
+KDS_conservative_2;Partiya Kurdistanê;;;;;;;;;;;;;x
+KDS_fascist;Jiyanewe;;;;;;;;;;;;;x
+KDS_liberal;Azadi;;;;;;;;;;;;;x
+KDS_liberal_2;Hêvî;;;;;;;;;;;;;x
+KDS_liberal_3;Yeketî Nistîman;;;;;;;;;;;;;x
+KDS_reactionary;Meclis-i Mesayih;;;;;;;;;;;;;x
+KDS_reactionary_2;Bizutnawai Islami;;;;;;;;;;;;;x
+KDS_socialist;Partiya Karkerên;;;;;;;;;;;;;x
+KDS_socialist_2;Partiya Zahmatkesan;;;;;;;;;;;;;x
+KMT_anarcho_liberal;Republicans;Républicains;Republikaner;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KMT_communist;Communist Party;Parti communiste chinois;Kommunistische Partei Chinas;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KMT_conservative;Imperial Faction;Faction impériale;Kaiserliche Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KMT_conservative_2;Zhiqiang;Zhiqiang;Zhiqiang;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KMT_conservative_3;Chiang Kai-shek;Kuomintang Chiang;Kuomintang Chiang;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KMT_conservative_4;Conservatives;Kuomintang Chiang;Kuomintang Chiang;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KMT_fascist;Fascists;Fascistes;Faschisten;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KMT_liberal;Reformers;Réformateurs;Reformer;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KMT_liberal_2;Sun Yat-sen;Kuomintang Sun;Kuomintang Sun;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KMT_liberal_3;Feng Yuxiang;Feng Yuxiang;Feng Yuxiang;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KMT_reactionary;Conservatives;Conservateurs;Konservative;;;;;;;;;;;;x;;;;;;;;;;;;;;
+KMT_reactionary_2;Yang Hucheng;;;;;;;;;;;;x
+KMT_socialist;Socialists;Socialistes;Sozialisten;;;;;;;;;;;;x;;;;;;;;;;;;;;
 MAP_bourgeois_dictatorship;Upper Mapuche Tribe;x;;
 MAP_bourgeois_dictatorship_ADJ;Mapuche;x;;
 MAP_absolute_monarchy;Mapuche Chiefdom;x;;
@@ -81,14 +141,31 @@ MAP_proletarian_dictatorship;Mapuche League of the Red Star;x;;
 MAP_proletarian_dictatorship_ADJ;Mapuche;x;;
 MAP_fascist_dictatorship;Tribe of the Mapuche;x;;
 MAP_fascist_dictatorship_ADJ;Mapuche;x;;
-PAL_communist;PFLP;x
-PAL_reactionary;Hamas;x
-PAL_socialist;Fatah;x
-PAL_socialist_2;Palestinian People's Party;x
-PAL_liberal;Palestinian National Initiative;x
-PAL_conservative;Third Way;x
-PAL_communist_2;DFLP;x
-PAL_fascist;Islamic Jihad Movement in Palestine;x
+PAK_anarcho_liberal;Awami National;;;;;;;;;;;;;;;;;;x;;;;
+PAK_communist;Pakistan People's Party;;;;;;;;;;;;;;;;;;x;;;;
+PAK_conservative;Jamaat-e-Islami Pakistan;;;;;;;;;;;;;;;;;;x;;;;
+PAK_fascist;Jamaat Ahle Sunnat;;;;;;;;;;;;;;;;;;x;;;;
+PAK_liberal;Pakistan Tehreek-e-Insaf;;;;;;;;;;;;;;;;;;x;;;;
+PAK_liberal_2;Muttahida Qaumi;;;;;;;;;;;;;;;;;;x;;;;
+PAK_reactionary;Jamiat Ulema-e-Islam;;;;;;;;;;;;;;;;;;x;;;;
+PAK_socialist;Pakistan Awami Tehreek;;;;;;;;;;;;;;;;;;x;;;;
+PAK_socialist_2;Kull Pakistan Kissan;;;;;;;;;;;;;;;;;;x;;;;
+PLS_communist;PFLP;x
+PLS_reactionary;Hamas;x
+PLS_socialist;Fatah;x
+PLS_socialist_2;Palestinian People's Party;x
+PLS_liberal;Palestinian National Initiative;x
+PLS_conservative;Third Way;x
+PLS_communist_2;DFLP;x
+PLS_fascist;Islamic Jihad Movement in Palestine;x
+PER_anarcho_liberal;Bazaari Faction;;;;;;;;;;;;x
+PER_communist;Tudeh Party of Iran;;;;;;;;;;;;;x
+PER_conservative;Shahist Faction;;;;;;;;;;;;;x
+PER_fascist;SUMKA;;;;;;;;;;;;;x
+PER_liberal;Constitutionalist Party;;;;;;;;;;;;;x
+PER_liberal_2;National Front;;;;;;;;;;;;;x
+PER_reactionary;Ulama Faction;;;;;;;;;;;;;x
+PER_socialist;Hizb-e Socialyist;;;;;;;;;;;;;x
 RGR_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
 RGR_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;Partido Liberal;;;;;;;;x;;;;
 RGR_anarcho_liberal;Partido Federalista;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
@@ -108,6 +185,13 @@ RYU_fascist;National-Socialist Party;;;;;;;;;;;;;x
 RYU_liberal;Liberal Party;;;;;;;;;;;;;x
 RYU_reactionary;Monarchist Party;;;;;;;;;;;;;x
 RYU_socialist;Social-Democratic Pary;;;;;;;;;;;;;x
+SGR_anarcho_liberal;Libertarian Führer;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
+SGR_communist;Kommunistische Führer;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
+SGR_conservative;Konservative Führer;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
+SGR_fascist;Faschisten Führer;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+SGR_liberal;Liberale Führer;Partido Progresista;Partido Progresista;;;Partido Progresista;;;;;;;;x;;;;
+SGR_reactionary;Radikal Führer;Partido Imperialista;Partido Imperialista;;;Partido Imperialista;;;;;;;;x;;;;
+SGR_socialist;Sozialistische Führer;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
 SON_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
 SAT_absolute_monarchy;Satsuma;;;;;;;;;;;;;x
 SAT_prussian_constitutionalism;Satsuma;;;;;;;;;;;;;x
@@ -132,6 +216,13 @@ SON_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;
 SON_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
 SON_communist;Partido Communist;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
 SON_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;Partido Fascista;;;;;;;;x;;;;
+SRI_anarcho_liberal;Eksath Jathika Pakshaya;;;;;;;;;;;;x
+SRI_communist;Left liberation Front;;;;;;;;;;;;x
+SRI_conservative;United National Front;;;;;;;;;;;;x
+SRI_fascist;Tamil National Alliance;;;;;;;;;;;;x
+SRI_liberal;Prajathantravadhi Pakshaya;;;;;;;;;;;;x
+SRI_reactionary;Jathika Hela Urumaya;;;;;;;;;;;;x
+SRI_socialist;Mahajana Eksath Peramuna;;;;;;;;;;;;x
 SUR_anarcho_liberal;Libertarian Partij;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;
 SUR_communist;Kommunistische Partij van Suriname;Partido communiste;Partido Communist;;;Partido Comunista;;;;;;;;x;;;;
 SUR_conservative;Nieuw Front voor Democratie en Ontwikkeling;Partido Moderado Liberal;Partido Moderado Liberal;;;Partido Moderado Liberal;;;;;;;;x;;;;
@@ -143,14 +234,23 @@ SVT_bourgeois_dictatorship;Republic of Vietnam;x;;
 SVT_bourgeois_dictatorship_ADJ;South Vietnamese;x;;
 SVT_democracy;Republic of Vietnam;x;;
 SVY_democracy_ADJ;South Vietnamese;x;;
-SYC_reactionary;Taxpayers Association;x
-SYC_conservative;Planters Association;x
-SYC_conservative_2;Seychelles Democratic Party;x
-SYC_liberal;Seychelles National Party;x
-SYC_socialist;League of Coloured Peoples;x
-SYC_socialist_2;Seychelles People's United Party;x
-SYC_socialist_3;Seychelles People's Progressive Front;x
-SYC_socialist_4;People's Party;x
+SEY_reactionary;Taxpayers Association;x
+SEY_conservative;Planters Association;x
+SEY_conservative_2;Seychelles Democratic Party;x
+SEY_liberal;Seychelles National Party;x
+SEY_socialist;League of Coloured Peoples;x
+SEY_socialist_2;Seychelles People's United Party;x
+SEY_socialist_3;Seychelles People's Progressive Front;x
+SEY_socialist_4;People's Party;x
+TGA_anarcho_liberal;Libertarian Party;Radical Liberals;Radical Liberals;;;;;;;;;;;x;
+TGA_communist;Communist Party;Communists;Communists;;;;;;;;;;;x;
+TGA_conservative;Conservative Party;Conservatives;Conservatives;;;;;;;;;;;x;
+TGA_fascist;Fascist Party;Fascists;Fascists;;;;;;;;;;;x;
+TGA_liberal;Liberal Party;Liberals;Liberals;;;;;;;;;;;x;
+TGA_liberal_2;National Liberal Party;National Liberals;National Liberals;;;;;;;;;;;x;
+TGA_reactionary;Monarchist Party;Monarchy Leadership;Monarchy Leadership;;;;;;;;;;;x;
+TGA_socialist;Socialist Party;Socialists;Socialists;;;;;;;;;;;x;
+TGA_socialist_2;National Socialist Party;National Socialists;National Socialists;;;;;;;;;;;x;
 TKM;Turkmenistan;;;;;;;;;;;;;x
 TKM_absolute_monarchy;Salor Confederation;;;;;;;;;;;;x
 TKM_hms_government;Salor Confederation;;;;;;;;;;;;x
@@ -170,6 +270,26 @@ TTB_fascist;Fascist Party;Fascist Party;Fascist Party;;;;;;;;;;;x
 TTB_liberal;Citizens' Alliance;Citizens' Alliance;Citizens' Alliance;;;;;;;;;;;x
 TTB_reactionary;National Party;National Party;National Party;;;;;;;;;;;x
 TTB_socialist;People's Partnership;People's Partnership;People's Partnership;;;;;;;;;;;x
+UIR_anarcho_liberal;Libertarian Party;Arbeiterpartei radical;Radikale Arbeiterpartei;;Radical Arbeiterpartei;;;;;;;;;x;;;;
+UIR_communist;Communist Party;Arbeiterpartei communiste;Kommunistische Arbeiterpartei;;Communist Arbeiterpartei;;;;;;;;;x;;;;
+UIR_conservative;Conservative Party;Conservative Party;Conservative Party;;;;;;;;;;;x
+UIR_fascist;Fascist Party;NSDP;NSDP;;NSDP;;;;;;;;;x;;;;
+UIR_liberal;Liberal Party;Liberaldem. Partei;Liberaldem. Partei;;Liberaldem. Partei;;;;;;;;;x;;;;
+UIR_reactionary;Radical Party;National Party;National Party;;;;;;;;;;;x
+UIR_socialist;Socialist Party;Deutscher Arbeiterverein;Deutscher Arbeiterverein;;Deutscher Arbeiterverein;;;;;;;;;x;;;;
+WES_anarcho_liberal;Libertarian Partei;Arbeiterpartei radical;Radikale Arbeiterpartei;;Radical Arbeiterpartei;;;;;;;;;x;;;;
+WES_communist;Kommunistische Partei;Arbeiterpartei communiste;Kommunistische Arbeiterpartei;;Communist Arbeiterpartei;;;;;;;;;x;;;;
+WES_conservative;Zentrumspartei;Zentrumspartei;Zentrumspartei;;Zentrumspartei;;;;;;;;;x;;;;
+WES_conservative_2;Konservative Partei;Christsoz. Arbeiterpartei;Christsoz. Arbeiterpartei;;Christsoz. Arbeiterpartei;;;;;;;;;x;;;;
+WES_conservative_3;Christlich-soziale Partei;Christsoz. Arbeiterpartei;Christsoz. Arbeiterpartei;;Christsoz. Arbeiterpartei;;;;;;;;;x;;;;
+WES_fascist;Nationalsozialistische Westfalen Arbeiterpartei;NSDP;NSDP;;NSDP;;;;;;;;;x;;;;
+WES_liberal;Liberal-Demokratische Partei;Liberaldem. Partei;Liberaldem. Partei;;Liberaldem. Partei;;;;;;;;;x;;;;
+WES_liberal_2;Nationalliberale Partei;Nationalliberale ;Nationalliberale ;;Nationalliberale ;;;;;;;;;x;;;;
+WES_liberal_3;Freisinnige Partei;Freisinnige Partei;Freisinnige Partei;;Freisinnige Partei;;;;;;;;;x;;;;
+WES_reactionary;Nationale Partei;Nationale Partei;Nationale Partei;;Nationale Partei;;;;;;;;;x;;;;
+WES_socialist;Deutscher Arbeiterverein;Deutscher Arbeiterverein;Deutscher Arbeiterverein;;Deutscher Arbeiterverein;;;;;;;;;x;;;;
+WES_socialist_2;Sozialdemokratische Arbeiterpartei;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
+WES_socialist_3;Sozialistische Arbeiterpartei;Partido socialiste;Partido Socialist;;;Partido Socialista;;;;;;;;x;;;;
 YUC_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;Partido Conservador;;;;;;;;x;;;;
 YUC_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;Partido Liberal;;;;;;;;x;;;;
 YUC_anarcho_liberal;Partido Federalista;Partido Federalista;Partido Federalista;;;Partido Federalista;;;;;;;;x;;;;

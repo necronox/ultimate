@@ -693,10 +693,10 @@ political_decisions = {
 			KAL_1221 = {
 				add_core = DUR
 			}
-			PAN_1224 = {
+			PNJ_1224 = {
 				add_core = DUR
 			}
-			PAN_1227 = {
+			PNJ_1227 = {
 				add_core = DUR
 			}
 		}
@@ -813,7 +813,7 @@ political_decisions = {
 			primary_culture = maghrebi
 			
 			NOT = {
-				exists = MGR
+				exists = MGH
 			}
 		}
 		
@@ -828,42 +828,42 @@ political_decisions = {
 		
 		effect = {
 			prestige = 20
-			change_tag = MGR
+			change_tag = MGH
 			add_accepted_culture = maghrebi		
 			add_accepted_culture = berber
 	
 			MOR_1693 = {
-				add_core = MGR
+				add_core = MGH
 			}		
 			MOR_1683 = {
-				add_core = MGR	
+				add_core = MGH	
 			}
 			FRA_1700  = {
-				add_core = MGR
+				add_core = MGH
 			}
 			MOR_1696 = {
-				add_core = MGR			
+				add_core = MGH			
 			}			
 			ALD_1704 = {
-				add_core = MGR
+				add_core = MGH
 			}
 			ALD_1708 = {
-				add_core = MGR
+				add_core = MGH
 			}
 			TRI_1739 = {
-				add_core = MGR			
+				add_core = MGH			
 			}			
 			FRA_1780 = {
-				add_core = MGR
+				add_core = MGH
 			}
 			FRA_1775 = {
-				add_core = MGR
+				add_core = MGH
 			}
 			SPA_513 = {
-				add_core = MGR
+				add_core = MGH
 			}
 			SPA_512 = {
-				add_core = MGR
+				add_core = MGH
 			}
 			
 		}
@@ -877,7 +877,7 @@ political_decisions = {
 			is_culture_group = southeast_asian
 			
 			NOT = {
-				exists = IDO
+				exists = INO
 			}
 		}
 		
@@ -885,7 +885,7 @@ political_decisions = {
 			is_greater_power = yes
 			prestige = 45
 			war = no
-			IDO = {
+			INO = {
 				all_core = {
 					OR = {
 						owned_by = THIS
@@ -899,7 +899,7 @@ political_decisions = {
 		
 		effect = {
 			prestige = 13
-			change_tag = IDO
+			change_tag = INO
 			capital = 1413
 			add_accepted_culture = javan
 			add_accepted_culture = malay
@@ -920,7 +920,7 @@ political_decisions = {
 				limit = {
 					is_culture_group = indonesian
 				}
-				add_core = IDO
+				add_core = INO
 			}
 			
 		}
@@ -1356,7 +1356,7 @@ political_decisions = {
 				tag = TUR
 			}
 			NOT = {
-				exists = CAU
+				exists = TCA
 			}
 		}
 		
@@ -1399,7 +1399,7 @@ political_decisions = {
 			
 		effect = {
 			prestige = 20
-			change_tag = CAU
+			change_tag = TCA
 			capital = 1090
 			add_accepted_culture = georgian
 			add_accepted_culture = armenian
@@ -1432,7 +1432,7 @@ political_decisions = {
 			is_culture_group = iranian_turanian
 			
 			NOT = {
-				exists = TRK
+				exists = TKS
 			}
 		}
 		
@@ -1490,7 +1490,7 @@ political_decisions = {
 		
 		effect = {
 			prestige = 20
-			change_tag = TRK
+			change_tag = TKS
 			capital = 1204
 			add_accepted_culture = turkmen
 			add_accepted_culture = tajik

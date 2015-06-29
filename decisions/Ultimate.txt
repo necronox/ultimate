@@ -2,7 +2,7 @@
 
 political_decisions = {
 
-####MASS ATROCITIES####
+####MASS ATCGOITIES####
 
 	genocide = {
 	picture = holocaust_pic
@@ -483,7 +483,7 @@ political_decisions = {
 				OR = {
 				tag = RUS
 				tag = ENG
-				tag = ANG	
+				tag = ENL	
 					}
 						}
 					}

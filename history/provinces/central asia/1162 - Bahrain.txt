@@ -1,7 +1,7 @@
 owner = ABU
 controller = ABU
 add_core = ABU
-add_core = BAH
+add_core = BHR
 1919.1.1 = {
 	controller = ENG 
 	owner = ENG 
@@ -9,7 +9,7 @@ add_core = BAH
 trade_goods = grain
 life_rating = 35
 1971.1.1 = {
-	controller = BAH 
-	owner = BAH 
+	controller = BHR 
+	owner = BHR 
 	colonial = 0
 }

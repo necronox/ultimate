@@ -5,7 +5,7 @@ add_core = EGY
 owner = EGY
 controller = EGY
 		}
-add_core = KUR
+add_core = KDS
 add_core = TUR
 trade_goods = wool
 life_rating = 35

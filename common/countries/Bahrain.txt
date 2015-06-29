@@ -2,7 +2,7 @@ color = { 82 94 154 }
 graphical_culture = MiddleEasternGC
 
 party = {
-	name = "BAH_conservative"
+	name = "BHR_conservative"
 	start_date = 1600.1.1
 	end_date = 1892.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "BAH_conservative_2"
+	name = "BHR_conservative_2"
 	start_date = 1892.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "BAH_liberal"
+	name = "BHR_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "BAH_reactionary"
+	name = "BHR_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "BAH_anarcho_liberal"
+	name = "BHR_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "BAH_socialist"
+	name = "BHR_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "BAH_communist"
+	name = "BHR_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -100,7 +100,7 @@ party = {
 }
 
 party = {
-	name = "BAH_fascist"
+	name = "BHR_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 
@@ -122,7 +122,7 @@ unit_names = {
 		"Safi al-Din" "Salah al-Din" "Siraj al-Din"
 	}
 	manowar = {
-		Zubara Muharraq Manama Dawha "BAH Dhabi" Dubayy Al-Shariqa Ajman
+		Zubara Muharraq Manama Dawha "BHR Dhabi" Dubayy Al-Shariqa Ajman
 	}
 	cruiser = {
 		"Abd al-Aziz" "Abd al-Hadi" "Abd al-Haqq" "Abd al-Jalil" "Abd al-Latif" 

@@ -2,7 +2,7 @@ color = { 255 139 37 }
 graphical_culture = AfricanGC
 
 party = {
-	name = "SNL_liberal"
+	name = "SNG_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "SNL_conservative"
+	name = "SNG_conservative"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "SNL_socialist"
+	name = "SNG_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "SNL_reactionary"
+	name = "SNG_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "SNL_anarcho_liberal"
+	name = "SNG_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "SNL_communist"
+	name = "SNG_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "SNL_fascist"
+	name = "SNG_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 

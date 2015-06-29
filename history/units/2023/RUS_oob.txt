@@ -1,4 +1,4 @@
-MAC = {
+MCD = {
 	value = 100
 	level = 5
 	influence_value = 50

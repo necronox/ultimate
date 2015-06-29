@@ -3147,7 +3147,7 @@ english_parliarebels = {
 		
 		modifier = {
 			factor = 0
-			country = { NOT = { tag = ANG}}
+			country = { NOT = { tag = ENL}}
 		}
 		modifier = {
 			factor = 0
@@ -3182,7 +3182,7 @@ english_parliarebels = {
 		modifier = {
 			factor = 1.015
 			country = {
-				tag =  ANG
+				tag =  ENL
 			}
 		} 
 

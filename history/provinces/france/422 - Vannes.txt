@@ -1,12 +1,12 @@
 owner = FRA
 controller = FRA
 add_core = FRA
-add_core = BRY
+add_core = BRT
 trade_goods = fish
 life_rating = 32
 
 #Breton ISA Break off from France
 2018.1.1 = {
-owner = BRY
-controller = BRY
+owner = BRT
+controller = BRT
 		}

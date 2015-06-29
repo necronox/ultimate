@@ -2,7 +2,7 @@ color = { 250  220  220 }
 graphical_culture = EuropeanGC
 
 party = {
-	name = "GRL_liberal"
+	name = "GRN_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "GRL_conservative"
+	name = "GRN_conservative"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "GRL_socialist"
+	name = "GRN_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -46,7 +46,7 @@ party = {
 
 
 party = {
-	name = "GRL_anarcho_liberal"
+	name = "GRN_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -60,7 +60,7 @@ party = {
 }
 
 party = {
-	name = "GRL_communist"
+	name = "GRN_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -74,7 +74,7 @@ party = {
 }
 
 party = {
-	name = "GRL_fascist"
+	name = "GRN_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 

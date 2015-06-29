@@ -11,7 +11,7 @@ controller = EGY
 	owner = ENG
 	controller = ENG
 	add_core = ISR
-	add_core = PAL
+	add_core = PLS
 	remove_core = TUR
 	remove_core = EGY
 		}
@@ -31,6 +31,6 @@ life_rating = 35
 }
 
 1970.1.1 = {
-	controller = PAL 
-	owner = PAL 
+	controller = PLS 
+	owner = PLS 
 }

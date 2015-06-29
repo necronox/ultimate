@@ -2,7 +2,7 @@ color = { 255 11 11 }
 graphical_culture = AfricanGC
 
 party = {
-	name = "MWI_liberal"
+	name = "MLW_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "MWI_conservative"
+	name = "MLW_conservative"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "MWI_socialist"
+	name = "MLW_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "MWI_reactionary"
+	name = "MLW_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "MWI_anarcho_liberal"
+	name = "MLW_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "MWI_communist"
+	name = "MLW_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "MWI_fascist"
+	name = "MLW_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 

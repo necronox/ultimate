@@ -5,7 +5,7 @@ political_decisions = {
 	nuke_maghreb = {
 	picture = nuke_strikepic
 		potential = {	
-			war_with = MGR
+			war_with = MGH
 			nuclear_weapons = 1	
 
 
@@ -16,7 +16,7 @@ political_decisions = {
 			prestige = -25
 nuclear_weapons = -1
 
-			MGR = {
+			MGH = {
 				country_event = { id=666666 days=7 }
 				}
 
@@ -37,7 +37,7 @@ nuclear_weapons = -1
 				}
 			modifier = {
 				factor = 0.40
-				MGR = {
+				MGH = {
 				brigades_compare = 2
 					}
 					}

@@ -12,11 +12,11 @@ life_rating = 35
 		}
 
 1917.1.1 = {
-	add_core = TRM
+	add_core = TKM
 		}
 1992.1.1 = {
-	owner = TRM
-	controller = TRM
+	owner = TKM
+	controller = TKM
 	colonial = 0
 		}
 

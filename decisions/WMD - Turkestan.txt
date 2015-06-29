@@ -5,7 +5,7 @@ political_decisions = {
 	nuke_turkestan = {
 	picture = nuke_strikepic
 		potential = {	
-			war_with = TRK
+			war_with = TKS
 			nuclear_weapons = 1	
 
 
@@ -16,7 +16,7 @@ political_decisions = {
 			prestige = -25
 nuclear_weapons = -1
 
-			TRK = {
+			TKS = {
 				country_event = { id=666666 days=2 }
 				}
 
@@ -34,7 +34,7 @@ nuclear_weapons = -1
 				}
 			modifier = {
 				factor = 0.40
-				TRK = {
+				TKS = {
 				brigades_compare = 2
 					}
 					}

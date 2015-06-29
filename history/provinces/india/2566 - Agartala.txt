@@ -1,6 +1,6 @@
 	owner = MUG
 	controller = MUG
-	add_core = ASS
+	add_core = ASM
 
 1800.1.1 = {
 	owner = ENG #hello

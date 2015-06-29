@@ -2,7 +2,7 @@ owner = TUR
 controller = TUR
 add_core = TUR
 add_core = IRQ
-add_core = KUW
+add_core = KWT
 
 
 1919.1.1 = {
@@ -13,8 +13,8 @@ add_core = KUW
 trade_goods = fruit
 life_rating = 35
 1960.1.1 = {
-	owner = KUW
-	controller = KUW
+	owner = KWT
+	controller = KWT
 	remove_core = TUR
 	colonial = 0
 		}

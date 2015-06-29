@@ -4,7 +4,7 @@ CAN = {
 	influence_value = 50
 }
 
-KUW = {
+KWT = {
 	value = 150
 	level = 5
 	influence_value = 50
@@ -16,7 +16,7 @@ QAT = {
 	influence_value = 50
 }
 
-BAH = {
+BHR = {
 	value = 150
 	level = 5
 	influence_value = 50
@@ -137,13 +137,13 @@ BOS = {
 	influence_value = 25
 }
 
-NCN = {
+KMT = {
 	value = 100
 	level = 5
 	influence_value = 25
 }
 
-PHI = {
+PHL = {
 	value = 100
 	level = 5
 	influence_value = 25

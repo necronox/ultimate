@@ -50,7 +50,7 @@ political_decisions = {
 		HEK = {
 		add_country_modifier = { name = hre_member duration = -1 }
 				}
-                HES = {
+        HES = {
 		add_country_modifier = { name = hre_member duration = -1 }
 				}
 		HOL = {
@@ -68,13 +68,13 @@ political_decisions = {
 		LUC = {
 		add_country_modifier = { name = hre_member duration = -1 }
 				}
-                LUN = {
+        LUN = {
 		add_country_modifier = { name = hre_member duration = -1 }
 				}
 		MEC = {
 		add_country_modifier = { name = hre_member duration = -1 }
 				}
-                MOD = {
+        MOD = {
 		add_country_modifier = { name = hre_member duration = -1 }
 				}
 		NAS = {
@@ -95,15 +95,18 @@ political_decisions = {
 		PLT = {
 		add_country_modifier = { name = hre_member duration = -1 }
 				}
-                PMR = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		SAV = {
+        PMR = {
 		add_country_modifier = { name = hre_member duration = -1 }
 				}
 		SAX = {
 		add_country_modifier = { name = hre_member duration = -1 }
 				}
+		SGR = {
+		add_country_modifier = { name = hre_member duration = -1 }
+				}
+		SVY = {
+		add_country_modifier = { name = hre_member duration = -1 }
+				}		
 		SWI = {
 		add_country_modifier = { name = hre_member duration = -1 }
 				}
@@ -613,7 +616,7 @@ WW2scenariostarter = {
 			all_core = {
 			remove_core = HND }
 			nuclear_weapons = 50 }	
-			MAC = {
+			MCD = {
 			all_core = {
 			remove_core = SER } }	
 			AFG = {

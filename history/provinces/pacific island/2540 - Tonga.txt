@@ -1,6 +1,6 @@
 trade_goods = fish
 life_rating = 15
-add_core = TNG
+add_core = TGA
 
 1900.1.1 = {
 owner = ENG
@@ -9,8 +9,8 @@ controller = ENG
 }
 
 1970.1.1 = {
-owner = TNG
-controller = TNG
+owner = TGA
+controller = TGA
 colonial = 0
 
 }

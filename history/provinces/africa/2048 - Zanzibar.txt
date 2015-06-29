@@ -2,7 +2,7 @@ owner = OMA
 controller = OMA
 add_core = OMA
 add_core = ZAN
-add_core = TZN
+add_core = TNZ
 
 1903.1.1 = {
 		owner = ENG
@@ -20,8 +20,8 @@ life_rating = 35
 }
 
 1960.1.1 = {
-		owner = TZN
-		controller = TZN
+		owner = TNZ
+		controller = TNZ
 		colonial = 0
 remove_core = OMA
 		}

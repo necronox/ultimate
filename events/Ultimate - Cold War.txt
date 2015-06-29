@@ -276,7 +276,7 @@ fire_only_once = yes
 			create_alliance = IRQ
 			create_alliance = SAU
 			create_alliance = SYR
-			create_alliance = LEB
+			create_alliance = LBN
 			create_alliance = JOR
 			call_ally = yes
 			attacker_goal = {
@@ -442,9 +442,9 @@ trigger = {
 		create_alliance = AUS
 		create_alliance = TUR
 		create_alliance = GRE
-		create_alliance = NCN
+		create_alliance = KMT
 		create_alliance = BEL
-		create_alliance = PHI
+		create_alliance = PHL
 		create_alliance = COL
 		}
 	}
@@ -1337,13 +1337,13 @@ trigger = {
 		months = 6
 	}
 	
-	release = AGL
+	release = ANG
 
 	option = {
 		name = ""
 		set_global_flag = angola_independence
 
-		AGL = {
+		ANG = {
 		
 		add_country_modifier = {
 			name = nationalist_agitation
@@ -1383,7 +1383,7 @@ is_triggered_only = yes
 
 		CUB = {
 		war = {
-			target = AGL
+			target = ANG
 			attacker_goal = {
 				casus_belli = install_communist_gov_cb
 			}		
@@ -2031,7 +2031,7 @@ trigger = {
 		set_global_flag = kuwait_invasion
 
 		war = {
-			target = KUW
+			target = KWT
 			attacker_goal = {
 				casus_belli = conquest
 			}		
@@ -2083,7 +2083,7 @@ trigger = {
 			call_ally = yes
 			attacker_goal = {
 				casus_belli = liberate_country
-				country = KUW
+				country = KWT
 			}
 			attacker_goal = {
 				casus_belli = cut_down_to_size
@@ -2220,7 +2220,7 @@ trigger = {
 		release = LAT
 		release = MOL
 		release = TAJ
-		release = TRM
+		release = TKM
 		release = UKR
 		release = UZB
 	}

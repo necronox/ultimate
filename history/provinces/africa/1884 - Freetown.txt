@@ -1,5 +1,5 @@
-owner = ANG
-controller = ANG
+owner = ENL
+controller = ENL
 1707.1.1 = {
 naval_base = 1
 owner = ENG
@@ -9,9 +9,9 @@ trade_goods = grain
 
 life_rating = 35
 colonial = 2
-add_core = SRL
+add_core = SLE
 1960.1.1 = {
-	owner = SRL
-	controller = SRL
+	owner = SLE
+	controller = SLE
 	colonial = 0
 		}

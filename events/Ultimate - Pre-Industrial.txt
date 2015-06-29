@@ -74,7 +74,7 @@ country_event = {
 	desc = "EVTDESC401003"
 	picture = "ecwbattlepic"
 		trigger = {
-			tag = ANG
+			tag = ENL
 			is_our_vassal = SCO
 			has_country_flag = kingcharlesI
 			NOT = {
@@ -93,7 +93,7 @@ country_event = {
 				leave_alliance = SCO
 				SCO = {
 				war = {
-					target = ANG
+					target = ENL
 					attacker_goal = {
 					casus_belli = become_independent
 								}
@@ -108,7 +108,7 @@ country_event = {
 	desc = "His son Charles will now become King of England, Scotland and Ireland."
 	picture = "kingcharlespic"
 		trigger = {
-			tag = ANG
+			tag = ENL
 			year = 1625
 			NOT = {
 				has_global_flag = english_disorder_done
@@ -149,7 +149,7 @@ country_event = {
 	picture = "jamesIIpic"
 		trigger = {
 			has_country_flag = charlesII
-			tag = ANG
+			tag = ENL
 			year = 1685
 			NOT = {
 				year = 1700
@@ -173,7 +173,7 @@ country_event = {
 	desc = "We have successfully defeated the parliamentarians, they now know better than to question your rule!"
 	picture = "ecwbattlepic"
 		trigger = {
-			tag = ANG
+			tag = ENL
 			government = absolute_monarchy
 				year = 1675
 				has_country_flag = english_cw
@@ -199,7 +199,7 @@ country_event = {
 	desc = "The English Parliament has grown to be a perennial problem to our claim to absolute divine rule."
 	picture = "englishparliamentpic"
 		trigger = {
-			tag = ANG
+			tag = ENL
 			government = absolute_monarchy
 				year = 1610
 			NOT = {
@@ -239,9 +239,9 @@ province_event = {
 	id = 401010
 	
 	trigger = {
-		is_core = ANG
+		is_core = ENL
 		owner = {
-		tag = ANG
+		tag = ENL
 		government = absolute_monarchy
 		has_country_flag = english_cw
 				}
@@ -571,7 +571,7 @@ province_event = {
 #	desc = "Though released post-humously and not put together by Shakespeare himself, the First Folio containing his written plays is already lauded as a marvel celebrating and enriching the English language and culture."
 #	trigger = {
 #		year = 1623
-#		tag = ANG
+#		tag = ENL
 #		NOT = {
 #			has_country_flag = firstfoliopublished
 #			year = 1700
@@ -596,7 +596,7 @@ province_event = {
 #	desc = "The master playwright William Shakespeare has died today at the age of 52. His plays have touched a great many, including nobility, and the man has secured his place as one of the great figures of the Elizabethan era and English Renaissance."
 #	trigger = {
 #		year = 1616
-#		tag = ANG
+#		tag = ENL
 #		NOT = {
 #			has_country_flag = shakespeare_dead
 #			year = 1700
@@ -699,7 +699,7 @@ country_event = {
 		year = 1603
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1605
@@ -768,7 +768,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		has_global_flag = ire_vassalized
 	}
@@ -810,7 +810,7 @@ country_event = {
 		tag = IRE
 		OR = {
 			vassal_of = ENG
-			vassal_of = ANG
+			vassal_of = ENL
 		}
 		NOT = {
 			year = 1606
@@ -860,7 +860,7 @@ country_event = {
 	trigger = {
 		year = 1604
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -926,7 +926,7 @@ country_event = {
 #		year = 1605
 #		OR = {
 #			tag = ENG
-#			tag = ANG
+#			tag = ENL
 #		}
 #		money = 50000
 #		NOT = {
@@ -940,7 +940,7 @@ country_event = {
 #		name = event_option_great
 #		treasury = -50000
 #		211 = {
-#			secede_province = ANG
+#			secede_province = ENL
 #		}
 #	}
 #}
@@ -953,7 +953,7 @@ country_event = {
 	trigger = {
 		year = 1605
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -1506,7 +1506,7 @@ country_event = {
 #	trigger = {
 #		year = 1615
 #		OR = {
-#			tag = ANG
+#			tag = ENL
 #			tag = ENG
 #		}
 #		NOT = {
@@ -1914,7 +1914,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		year = 1629
-		tag = ANG
+		tag = ENL
 		NOT = {
 			exists = ENG
 		}
@@ -1939,7 +1939,7 @@ country_event = {
 		year = 1629
 		tag = ENG
 		NOT = {
-			exists = ANG
+			exists = ENL
 		}
 		NOT = {
 			year = 1631
@@ -2091,7 +2091,7 @@ country_event = {
 		year = 1632
 		OR = {
 			tag = IRE
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1634
@@ -2224,7 +2224,7 @@ country_event = {
 	trigger = {
 		year = 1635
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -2669,7 +2669,7 @@ country_event = {
 	trigger = {
 		year = 1655
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -2739,7 +2739,7 @@ country_event = {
 		year = 1656
 		OR = {	
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1658
@@ -2803,7 +2803,7 @@ country_event = {
 		year = 1658
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1660
@@ -2892,7 +2892,7 @@ country_event = {
 		year = 1661
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1663
@@ -2938,7 +2938,7 @@ country_event = {
 		year = 1662
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1664
@@ -2961,7 +2961,7 @@ country_event = {
 	trigger = {
 		year = 1662
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -3006,7 +3006,7 @@ country_event = {
 		year = 1663
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		not = {
 			year = 1665
@@ -3074,7 +3074,7 @@ country_event = {
 		year = 1664
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1666
@@ -3149,7 +3149,7 @@ country_event = {
 		has_country_flag = capital_salisbury
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1667
@@ -3265,7 +3265,7 @@ country_event = {
 	trigger = {
 		year = 1666
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 	}
@@ -3484,7 +3484,7 @@ country_event = {
 		year = 1672
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1674
@@ -3529,7 +3529,7 @@ country_event = {
 	trigger = {
 		year = 1674
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		owns = 300
@@ -3828,7 +3828,7 @@ country_event = {
 		year = 1682
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1684
@@ -3898,7 +3898,7 @@ country_event = {
 		year = 1684
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 	}
 	mean_time_to_happen = {
@@ -4041,7 +4041,7 @@ country_event = {
 	trigger = {
 		year = 1692
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -4087,7 +4087,7 @@ country_event = {
 		year = 1693
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 	}
 	mean_time_to_happen = {
@@ -4108,7 +4108,7 @@ country_event = {
 	trigger = {
 		year = 1693
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -4132,7 +4132,7 @@ country_event = {
 	trigger = {
 		year = 1694
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 	}
@@ -4154,7 +4154,7 @@ country_event = {
 	trigger = {
 		year = 1694
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -4306,7 +4306,7 @@ country_event = {
 		year = 1697
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1699
@@ -4382,7 +4382,7 @@ country_event = {
 		year = 1698
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1700
@@ -4487,7 +4487,7 @@ country_event = {
 	trigger = {
 		year = 1700
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -4705,7 +4705,7 @@ country_event = {
 		year = 1706
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		exists = SCO
 		NOT = {
@@ -4730,7 +4730,7 @@ country_event = {
 	trigger = {
 		year = 1705
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -4894,7 +4894,7 @@ country_event = {
 	trigger = {
 		year = 1709
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -4963,7 +4963,7 @@ country_event = {
 	trigger = {
 		year = 1713
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		exists = HAN
@@ -4989,7 +4989,7 @@ country_event = {
 		year = 1714
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 			tag = SWE
 			tag = FIN
 		}
@@ -5013,7 +5013,7 @@ country_event = {
 	trigger = {
 		year = 1714
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -5242,7 +5242,7 @@ country_event = {
 	trigger = {
 		year = 1718
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -5514,7 +5514,7 @@ country_event = {
 	trigger = {
 		year = 1724
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 			tag = SCO
 		}
@@ -5562,7 +5562,7 @@ country_event = {
 	trigger = {
 		year = 1725
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -5586,7 +5586,7 @@ country_event = {
 	trigger = {
 		year = 1726
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -5709,7 +5709,7 @@ country_event = {
 		year = 1731
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1733
@@ -5780,7 +5780,7 @@ country_event = {
 	trigger = {
 		year = 1736
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -5979,7 +5979,7 @@ country_event = {
 	trigger = {
 		year = 1739
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -6093,7 +6093,7 @@ country_event = {
 		year = 1743
 		OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 		}
 		NOT = {
 			year = 1745
@@ -6117,7 +6117,7 @@ country_event = {
 	trigger = {
 		year = 1746
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -6282,7 +6282,7 @@ country_event = {
 	trigger = {
 		year = 1749
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 			tag = FRA
 		}
@@ -6504,7 +6504,7 @@ country_event = {
 	trigger = {
 		year = 1758
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -6672,7 +6672,7 @@ country_event = {
 	trigger = {
 		year = 1767
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		owns = 300
@@ -6698,7 +6698,7 @@ country_event = {
 	trigger = {
 		year = 1768
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {
@@ -6819,7 +6819,7 @@ country_event = {
 #	trigger = {
 #		year = 1772
 #		OR = {
-#			tag = ANG
+#			tag = ENL
 #			tag = ENG
 #		}
 #		NOT = {
@@ -6890,7 +6890,7 @@ country_event = {
 	trigger = {
 		year = 1775
 		OR = {
-			tag = ANG
+			tag = ENL
 			tag = ENG
 		}
 		NOT = {

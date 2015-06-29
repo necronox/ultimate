@@ -2,7 +2,7 @@ political_decisions = {
 	act_of_union = {
 	picture = actofunionpic
 		potential = {
-			tag = ANG
+			tag = ENL
 			year = 1707
 			NOT = {
 				has_global_flag = actofunion_done
@@ -27,7 +27,7 @@ political_decisions = {
 	restore_charlesII = {
 	picture = charlesIIpic
 		potential = {
-			tag = ANG
+			tag = ENL
 			year = 1665
 			government = bourgeois_dictatorship
 			NOT = {
@@ -46,7 +46,7 @@ political_decisions = {
 	1604_london_treaty = {
 	picture = london1604pic
 		potential = {
-			tag = ANG
+			tag = ENL
 			year = 1604
 			NOT = { year = 1605 }
 			month = 7
@@ -73,7 +73,7 @@ political_decisions = {
 	invite_williamIII = {
 	picture = williamIIIpic
 		potential = {
-			tag = ANG
+			tag = ENL
 			year = 1688
 			has_country_flag = kingjamesII
 			NOT = {
@@ -95,7 +95,7 @@ political_decisions = {
 					has_country_flag = does_ulsterplant
 					year = 1714
 					}
-				tag = ANG
+				tag = ENL
 					}
 			allow = {
 			}

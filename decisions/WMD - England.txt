@@ -1,11 +1,11 @@
 
 
 political_decisions = {
-	nuke_ANG = {
+	nuke_ENL = {
 	picture = nuke_strikepic
 		potential = {
             nuclear_weapons = 1
-			war_with = ANG 
+			war_with = ENL 
 
 				}
 		effect = {
@@ -13,7 +13,7 @@ political_decisions = {
 			prestige = -25
 nuclear_weapons = -1
 
-			ANG = {
+			ENL = {
 				country_event = { id=666666 days=2 }
 				}
 
@@ -31,7 +31,7 @@ nuclear_weapons = -1
 				}
 			modifier = {
 				factor = 0.40
-				ANG = {
+				ENL = {
 				brigades_compare = 2
 					}
 					}

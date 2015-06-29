@@ -10,10 +10,10 @@ add_core = ITA
 1734.1.1 = {
 	owner = SIC
 	controller = SIC
-		}add_core = SCL
+		}add_core = SYC
 1812.1.1 = {
-	owner = SCL
-	controller = SCL
+	owner = SYC
+	controller = SYC
 		}
 
 1815.1.1 = {
@@ -32,6 +32,6 @@ life_rating = 35
 }
 #Sicilian ISA Breaks Off From Italy
 2018.1.1 = {
-	owner = SCL
-	controller = SCL
+	owner = SYC
+	controller = SYC
 		}

@@ -8,7 +8,7 @@ life_rating = 32
 1967.1.1 = {
 	remove_core = POR	
 	add_core = CHI
-	add_core = NCN
+	add_core = KMT
 	add_core = MCU
 	colonial = 0
 		}
@@ -16,7 +16,7 @@ life_rating = 32
 	owner = MCU
 	controller = MCU
 	add_core = CHI
-	add_core = NCN
+	add_core = KMT
 	add_core = MCU
 	colonial = 0
 		}

@@ -156,49 +156,49 @@ country_event = {
 	option = {
 		name = event_option_alright
 		1999 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2000 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		1999 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2000 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2001 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2002 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2003 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2004 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2005 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2006 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2007 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2008 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2009 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2010 = {
-			add_core = AGL
+			add_core = ANG
 		}
 		2011 = {
-			add_core = AGL
+			add_core = ANG
 		}
 	}
 }
@@ -294,13 +294,13 @@ country_event = {
 	option = {
 		name = event_option_alright
 		2075 = {
-			add_core = BTS
+			add_core = TSW
 		}
 		2076 = {
-			add_core = BTS
+			add_core = TSW
 		}
 		2077 = {
-			add_core = BTS
+			add_core = TSW
 		}
 	}
 }
@@ -502,31 +502,31 @@ country_event = {
 	option = {
 		name = event_option_alright
 		1892 = {
-			add_core = CTD
+			add_core = IVC
 		}
 		1893 = {
-			add_core = CTD
+			add_core = IVC
 		}
 		1894 = {
-			add_core = CTD
+			add_core = IVC
 		}
 		1895 = {
-			add_core = CTD
+			add_core = IVC
 		}
 		1896 = {
-			add_core = CTD
+			add_core = IVC
 		}
 		1897 = {
-			add_core = CTD
+			add_core = IVC
 		}
 		1898 = {
-			add_core = CTD
+			add_core = IVC
 		}
 		1899 = {
-			add_core = CTD
+			add_core = IVC
 		}
 		1900 = {
-			add_core = CTD
+			add_core = IVC
 		}
 	}
 }
@@ -731,7 +731,7 @@ country_event = {
 	option = {
 		name = event_option_alright
 		1785 = {
-			add_core = GAM
+			add_core = GMB
 		}
 	}
 }
@@ -807,31 +807,31 @@ country_event = {
 	option = {
 		name = event_option_alright
 		2024 = {
-			add_core = KNA
+			add_core = KNY
 		}
 		2025 = {
-			add_core = KNA
+			add_core = KNY
 		}
 		2026 = {
-			add_core = KNA
+			add_core = KNY
 		}
 		2027 = {
-			add_core = KNA
+			add_core = KNY
 		}
 		2028 = {
-			add_core = KNA
+			add_core = KNY
 		}
 		2029 = {
-			add_core = KNA
+			add_core = KNY
 		}
 		2030 = {
-			add_core = KNA
+			add_core = KNY
 		}
 		2031 = {
-			add_core = KNA
+			add_core = KNY
 		}
 		2032 = {
-			add_core = KNA
+			add_core = KNY
 		}
 	}
 }
@@ -1084,7 +1084,7 @@ country_event = {
 	option = {
 		name = event_option_alright
 		2019 = {
-			add_core = MWI
+			add_core = MLW
 		}
 	}
 }
@@ -1113,97 +1113,97 @@ country_event = {
 	option = {
 		name = event_option_alright
 		1923 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1924 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1925 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1926 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1927 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1928 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1929 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1930 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1931 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1932 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1933 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1934 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1935 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1936 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1937 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1938 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1939 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1940 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1941 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1942 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1943 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1944 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1945 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1946 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1947 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1948 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1949 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1950 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1951 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1952 = {
-			add_core = NGA
+			add_core = NGR
 		}
 		1953 = {
-			add_core = NGA
+			add_core = NGR
 		}
 	}
 }
@@ -1232,34 +1232,34 @@ country_event = {
 	option = {
 		name = event_option_alright
 		1808 = {
-			add_core = NGR
+			add_core = NIG
 		}
 		1809 = {
-			add_core = NGR
+			add_core = NIG
 		}
 		1810 = {
-			add_core = NGR
+			add_core = NIG
 		}
 		1811 = {
-			add_core = NGR
+			add_core = NIG
 		}
 		1812 = {
-			add_core = NGR
+			add_core = NIG
 		}
 		1813 = {
-			add_core = NGR
+			add_core = NIG
 		}
 		1814 = {
-			add_core = NGR
+			add_core = NIG
 		}
 		1815 = {
-			add_core = NGR
+			add_core = NIG
 		}
 		1816 = {
-			add_core = NGR
+			add_core = NIG
 		}
 		1817 = {
-			add_core = NGR
+			add_core = NIG
 		}
 	}
 }
@@ -1341,16 +1341,16 @@ country_event = {
 	option = {
 		name = event_option_alright
 		1977 = {
-			add_core = ROC
+			add_core = CGO
 		}
 		1978 = {
-			add_core = ROC
+			add_core = CGO
 		}
 		1979 = {
-			add_core = ROC
+			add_core = CGO
 		}
 		1980 = {
-			add_core = ROC
+			add_core = CGO
 		}
 	}
 }
@@ -1485,37 +1485,37 @@ country_event = {
 	option = {
 		name = event_option_alright
 		1783 = {
-			add_core = SNL
+			add_core = SNG
 		}
 		1784 = {
-			add_core = SNL
+			add_core = SNG
 		}
 		1785 = {
-			add_core = SNL
+			add_core = SNG
 		}
 		1786 = {
-			add_core = SNL
+			add_core = SNG
 		}
 		1787 = {
-			add_core = SNL
+			add_core = SNG
 		}
 		1788 = {
-			add_core = SNL
+			add_core = SNG
 		}
 		1789 = {
-			add_core = SNL
+			add_core = SNG
 		}
 		1790 = {
-			add_core = SNL
+			add_core = SNG
 		}
 		1791 = {
-			add_core = SNL
+			add_core = SNG
 		}
 		1792 = {
-			add_core = SNL
+			add_core = SNG
 		}
 		1793 = {
-			add_core = SNL
+			add_core = SNG
 		}
 	}
 }
@@ -1591,13 +1591,13 @@ country_event = {
 	option = {
 		name = event_option_alright
 		1884 = {
-			add_core = SRL
+			add_core = SLE
 		}
 		1885 = {
-			add_core = SRL
+			add_core = SLE
 		}
 		1886 = {
-			add_core = SRL
+			add_core = SLE
 		}
 	}
 }
@@ -1847,43 +1847,43 @@ country_event = {
 	option = {
 		name = event_option_alright
 		2036 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2037 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2038 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2039 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2040 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2041 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2042 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2043 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2044 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2045 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2046 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2047 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 		2048 = {
-			add_core = TZN
+			add_core = TNZ
 		}
 	}
 }

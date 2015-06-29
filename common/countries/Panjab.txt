@@ -2,7 +2,7 @@ color = { 255  87  127 }
 graphical_culture = IndianGC
 
 party = {
-	name = "PAN_conservative"
+	name = "PNJ_conservative"
 	start_date = 1800.1.1
 	end_date = 99999.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "PAN_liberal"
+	name = "PNJ_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "PAN_reactionary"
+	name = "PNJ_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "PAN_anarcho_liberal"
+	name = "PNJ_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "PAN_socialist"
+	name = "PNJ_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "PAN_communist"
+	name = "PNJ_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "PAN_fascist"
+	name = "PNJ_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 

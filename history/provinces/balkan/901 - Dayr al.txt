@@ -18,9 +18,9 @@ life_rating = 35
 	controller = SYR
 	colonial = 0
 		}
-	add_core = KUR
+	add_core = KDS
 2018.1.1 = {
-		owner = KUR	
-	controller = KUR
+		owner = KDS	
+	controller = KDS
 	colonial = 0
 		}

@@ -1,5 +1,3 @@
-
-
 ##1604 Puppets
 
 #Crimea-Otto
@@ -41,7 +39,7 @@ vassal = {
 
 #United Crowns of Britain
 vassal = {
-	first = ANG
+	first = ENL
 	second = SCO
 	start_date = 1603.5.1
 	end_date = 1707.1.1
@@ -65,7 +63,7 @@ substate = {
 
 substate = {
 	first = HRE
-	second = SAV
+	second = SVY
 	start_date = 1551.1.1
 	end_date = 1648.1.1
 		}
@@ -190,13 +188,13 @@ vassal = {
 #}
 
 substate = {
-	first = NCN
+	first = KMT
 	second = MGL
 	start_date = 1911.1.1
 	end_date = 1934.1.1
 }
 vassal = {
-	first = NCN
+	first = KMT
 	second = TIB
 	start_date = 1911.1.1
 	end_date = 1934.1.1
@@ -403,7 +401,7 @@ vassal = {
 }
 
 #vassal = {
-#	first = PAN
+#	first = PNJ
 #	second = KAS
 #	start_date = 1780.1.1
 #	end_date = 1949.1.1
@@ -503,7 +501,7 @@ vassal = {
 
 vassal = {
 	first = USA
-	second = PUE
+	second = PRI
 		start_date = 1889.1.1
 		end_date = 99999.1.1
 		}
@@ -591,7 +589,7 @@ vassal = {
 
 #vassal = {
 #	first = JAP
-#	second = NCN
+#	second = KMT
 #	start_date = 1895.1.1
 #	end_date = 1938.1.1
 #}
@@ -660,7 +658,7 @@ vassal = {
 #Denmark-Greenland
 vassal = {
 	first = DEN
-	second = GRL
+	second = GRN
 	start_date = 1979.1.1
 	end_date = 9999.1.1
 		}
@@ -668,7 +666,7 @@ vassal = {
 #Israeli-Palestinian Situation
 vassal = {
 	first = ISR
-	second = PAL
+	second = PLS
 	start_date = 1973.1.1
 	end_date = 2050.1.1
 		}
@@ -792,7 +790,7 @@ vassal = {
 }
 vassal = {
 	first = FRA
-	second = HZP
+	second = SGR
 	start_date = 1806.1.1
 	end_date = 1815.1.1
 }

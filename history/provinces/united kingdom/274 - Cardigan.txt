@@ -1,15 +1,15 @@
-owner = ANG
-controller = ANG
+owner = ENL
+controller = ENL
 1707.1.1 = {
 owner = ENG
 controller = ENG
 add_core = ENG
 	}
-add_core = WLS
+add_core = WHA
 add_core = ENG
 2015.1.1 = {
-owner = WLS
-controller = WLS
+owner = WHA
+controller = WHA
 		}
 trade_goods = iron
 life_rating = 35

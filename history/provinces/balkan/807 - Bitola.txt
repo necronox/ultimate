@@ -5,7 +5,7 @@ add_core = BUL
 1914.1.1 = { 
 		controller = SER
 		owner = SER
-	add_core = MAC
+	add_core = MCD
 	remove_core = TUR
 		}
 add_core = SER
@@ -19,8 +19,8 @@ add_core = YUG
 		remove_core = BUL
 		}
 1992.1.1 = {
-	controller = MAC
-	owner = MAC
+	controller = MCD
+	owner = MCD
 		}
 trade_goods = timber
 life_rating = 35

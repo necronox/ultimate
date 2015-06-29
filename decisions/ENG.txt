@@ -31,7 +31,7 @@ political_decisions = {
 		potential = {
 			OR = {
 			tag = ENG
-			tag = ANG
+			tag = ENL
 				}
 			has_global_flag = victoria_crowned
 			OR = {

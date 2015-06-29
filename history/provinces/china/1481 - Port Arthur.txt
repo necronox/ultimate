@@ -12,7 +12,7 @@ add_core = MNG
 1914.1.1 = {
 	owner = JAP	
 	controller = JAP
-	add_Core = NCN
+	add_Core = KMT
 		}
 
 1946.1.1 = {

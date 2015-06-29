@@ -2,10 +2,10 @@
 
 political_decisions = {
 
-	nuke_LEB = {
+	nuke_LBN = {
 	picture = nuke_strikepic
 		potential = {	
-			war_with = LEB
+			war_with = LBN
 			nuclear_weapons = 1	
 
 
@@ -16,7 +16,7 @@ political_decisions = {
 			prestige = -25
 nuclear_weapons = -1
 
-			LEB = {
+			LBN = {
 				country_event = { id=666666 days=2 }
 				}
 
@@ -34,7 +34,7 @@ nuclear_weapons = -1
 				}
 			modifier = {
 				factor = 0
-				LEB = {
+				LBN = {
 				brigades_compare = 2
 					}
 					}

@@ -2,7 +2,7 @@
     graphical_culture = AfricanGC
      
     party = {
-			name = "SYC_reactionary" #Taxpayers Association
+			name = "SEY_reactionary" #Taxpayers Association
 			start_date = 1918.11.11
 			end_date = 1964.1.1
 		
@@ -16,7 +16,7 @@
 	}
 	
 	party = {
-            name = "SYC_conservative" #Planters Association
+            name = "SEY_conservative" #Planters Association
             start_date = 1964.1.1
             end_date = 1964.1.1
      
@@ -30,7 +30,7 @@
     }
 	
 	party = {
-            name = "SYC_conservative_2" #Seychelles Democratic Party
+            name = "SEY_conservative_2" #Seychelles Democratic Party
             start_date = 1964.1.1
             end_date = 99999.1.1
      
@@ -44,7 +44,7 @@
     }
      
     party = {
-            name = "SYC_liberal" #Seychelles National Party
+            name = "SEY_liberal" #Seychelles National Party
             start_date = 1994.1.1
             end_date = 99999.1.1
      
@@ -58,7 +58,7 @@
     }
     
 	party = {
-            name = "SYC_socialist" #League of Coloured Peoples
+            name = "SEY_socialist" #League of Coloured Peoples
             start_date = 1937.1.1
             end_date = 1964.1.1
      
@@ -72,7 +72,7 @@
     }
 	
 	party = {
-            name = "SYC_socialist_2" #Seychelles People's United Party
+            name = "SEY_socialist_2" #Seychelles People's United Party
             start_date = 1964.1.1
             end_date = 1977.1.1
      
@@ -86,7 +86,7 @@
     }
 	
     party = {
-            name = "SYC_socialist_3" #Seychelles People's Progressive Front
+            name = "SEY_socialist_3" #Seychelles People's Progressive Front
             start_date = 1977.1.1
             end_date = 2009.6.1
      
@@ -100,7 +100,7 @@
     }
      
     party = {
-            name = "SYC_socialist_4" #People's Party
+            name = "SEY_socialist_4" #People's Party
             start_date = 2009.6.1
             end_date = 99999.1.1
      

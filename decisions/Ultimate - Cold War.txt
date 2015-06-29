@@ -73,7 +73,7 @@ picture = Greater_Israel_map
 			set_country_flag = greater_lands_of_israel
 			relation = { who = EGY value = -120 }
 			relation = { who = JOR value = -120 }
-			relation = { who = LEB value = -120 }
+			relation = { who = LBN value = -120 }
 			relation = { who = SYR value = -120 }
 			any_pop = {
 				limit = {

@@ -26,9 +26,9 @@ life_rating = 35
 		colonial = 2
 		}
 
-	add_core = TZN
+	add_core = TNZ
 1960.1.1 = {
-	owner = TZN
-	controller = TZN
+	owner = TNZ
+	controller = TNZ
 	colonial = 0
 		}

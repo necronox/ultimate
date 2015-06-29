@@ -2,7 +2,7 @@ color = { 106  178  46 }
 graphical_culture = Generic
 
 party = {
-	name = "COR_reactionary"
+	name = "CRS_reactionary"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -16,7 +16,7 @@ party = {
 }
 
 party = {
-	name = "COR_conservative"
+	name = "CRS_conservative"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -30,7 +30,7 @@ party = {
 }
 
 party = {
-	name = "COR_liberal"
+	name = "CRS_liberal"
 	start_date = 1600.1.1
 	end_date = 1890.1.1
 
@@ -44,7 +44,7 @@ party = {
 }
 
 party = {
-	name = "COR_liberal_2"
+	name = "CRS_liberal_2"
 	start_date = 1890.1.1
 	end_date = 99999.1.1
 
@@ -58,7 +58,7 @@ party = {
 }
 
 party = {
-	name = "COR_socialist"
+	name = "CRS_socialist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -72,7 +72,7 @@ party = {
 }
 
 party = {
-	name = "COR_conservative_2"
+	name = "CRS_conservative_2"
 	start_date = 99999.1.1
 	end_date = 99999.1.1
 
@@ -86,7 +86,7 @@ party = {
 }
 
 party = {
-	name = "COR_anarcho_liberal"
+	name = "CRS_anarcho_liberal"
 	start_date = 1600.1.1
 	end_date = 99999.1.1
 
@@ -100,7 +100,7 @@ party = {
 }
 
 party = {
-	name = "COR_communist"
+	name = "CRS_communist"
 	start_date = 1848.1.1
 	end_date = 99999.1.1
 
@@ -114,7 +114,7 @@ party = {
 }
 
 party = {
-	name = "COR_fascist"
+	name = "CRS_fascist"
 	start_date = 1905.1.1
 	end_date = 99999.1.1
 
@@ -129,7 +129,7 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		"Alfonso I" "Duca di Calabria" "Duca di Castro" "Duca di Noto" "Due CORilie" "Ferdinando III" Reale Regina "Regno di Napoli" "Regno di CORilia"
+		"Alfonso I" "Duca di Calabria" "Duca di Castro" "Duca di Noto" "Due CRSilie" "Ferdinando III" Reale Regina "Regno di Napoli" "Regno di CRSilia"
 	}
 	ironclad = {
 		Archimede "Conte dell'Aquila" "Conte di Bari" "Conte di Girgenti" "Conte di Lecce" "Conte di Trani" "Conte di Trapani" "Duca delle Puglie" "Ferdinando I" "Principe di Capua"

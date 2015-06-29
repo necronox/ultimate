@@ -7,9 +7,9 @@ life_rating = 15
 		colonial = 2
 		}
 
-add_core = GUI
+add_core = GNE
 1960.1.1 = {
-	owner = GUI
-	controller = GUI
+	owner = GNE
+	controller = GNE
 	colonial = 0
 		}

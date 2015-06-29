@@ -1,221 +1,221 @@
-;;;;x
-quantum_physics;Quantum Physics;x;;
-computerisation;Computerisation;x;;
-multinationals;Multinational Corporations;x;;
-naval_power_projection;Naval Power Projection;x;;
-internet;The Internet;x;;
-macro_engineering;Macro-Engineering;x;;
-macro_engineering_desc;Macro-Engineering;x;;
-synthetic_graphite;Synthetic Graphite;x;;
-synthetic_graphite_desc;Synthetic Graphite;x;;
-medication;Medication;x;;
-medication_desc;Medication;x;;
-post_colonialism;Post-Colonialism;x;;
-post_colonialism_desc;Post-Colonialism;x;;
-selfish_gene;The Selfish Gene;x;;
-selfish_gene_desc;The Selfish Gene;x;;
-globalisation;Globalisation;x;;
-globalisation_desc;Globalisation;x;;
-post_modernism;Postmodernism;x;;
-post_modernism_desc;Postmodernism;x;;
-digital_currency;Digital Currency;x;;
-digital_currency_desc;Digital Currency;x;;
-submersible_naval_assets;Submersible Naval Assets;x;;
-submersible_naval_assets_desc;Submersible Naval Assets;x;;
-global_communications;Global Communications;x;;
-global_communications_desc;Global Communications;x;;
-rocket_science;Rocket Science;x;;
-rocket_science_desc;Rocket Science;x;;
-assymetric_warfare;Assymetric Warfare;x;;
-assymetric_warfare_desc;Assymetric Warfare;x;;
-digital_revolution;Digital Revolution;x;;
-digital_revolution_desc;Digital Revolution;x;;
-robotics;Robotics;x;;
-robotics_desc;Robotics;x;;
-secret_of_atom;The Secret of the Atom;x;;
-secret_of_atom_desc;The Secret of the Atom;x;;
-atom_bomb;The Atom Bomb;x;;
+;;;;;;;x,
+quantum_physics;Quantum Physics;x;;,
+computerisation;Computerisation;x;;,
+multinationals;Multinational Corporations;x;;,
+naval_power_projection;Naval Power Projection;x;;,
+internet;The Internet;x;;,
+macro_engineering;Macro-Engineering;x;;,
+macro_engineering_desc;Macro-Engineering;x;;,
+synthetic_graphite;Synthetic Graphite;x;;,
+synthetic_graphite_desc;Synthetic Graphite;x;;,
+medication;Medication;x;;,
+medication_desc;Medication;x;;,
+post_colonialism;Post-Colonialism;x;;,
+post_colonialism_desc;Post-Colonialism;x;;,
+selfish_gene;The Selfish Gene;x;;,
+selfish_gene_desc;The Selfish Gene;x;;,
+globalisation;Globalisation;x;;,
+globalisation_desc;Globalisation;x;;,
+post_modernism;Postmodernism;x;;,
+post_modernism_desc;Postmodernism;x;;,
+digital_currency;Digital Currency;x;;,
+digital_currency_desc;Digital Currency;x;;,
+submersible_naval_assets;Submersible Naval Assets;x;;,
+submersible_naval_assets_desc;Submersible Naval Assets;x;;,
+global_communications;Global Communications;x;;,
+global_communications_desc;Global Communications;x;;,
+rocket_science;Rocket Science;x;;,
+rocket_science_desc;Rocket Science;x;;,
+assymetric_warfare;Assymetric Warfare;x;;,
+assymetric_warfare_desc;Assymetric Warfare;x;;,
+digital_revolution;Digital Revolution;x;;,
+digital_revolution_desc;Digital Revolution;x;;,
+robotics;Robotics;x;;,
+robotics_desc;Robotics;x;;,
+secret_of_atom;The Secret of the Atom;x;;,
+secret_of_atom_desc;The Secret of the Atom;x;;,
+atom_bomb;The Atom Bomb;x;;,
 atom_bomb_desc;I am become death, the destroyer of worlds;x;;
-space_colonisation;Space Colonisation;x;;
-lunar_colonisation;Colonisation of the Moon;x;;
+space_colonisation;Space Colonisation;x;;,
+lunar_colonisation;Colonisation of the Moon;x;;,
 lunar_colonisation_desc;Although long dreamed of, it has only recently been remarked that the colonisation of the Moon could be within the realm of possibility.;x;;
-martian_colonisation;Colonisation of Mars;x;;
+martian_colonisation;Colonisation of Mars;x;;,
 martian_colonisation_desc;Although long dreamed of, it has only recently been remarked that the colonisation of the red planet could be within the realm of possibility.;x;;
-manned_space_flight;Manned Space Missions;x;;
-privateering;Privateering;x;;
-maritime_tradition;Maritime Tradition;x;;
-video_games;Video Games;x;;
-earlycannon;Early Cannons;x;;
-blackpowderforts;Black Powder Forts;x;;
-placeholder1;Placeholder;x;;
-monetarism;Monetarism;x;;
-placeholder3;Placeholder;x;;
-pre_industrial_school;Pre-Industrial School;x;;
-theory_tech;All Techs: 1604 - 1699;x;;
-jacobean_era;Army;x;;
-caroline_era;Navy;x;;
-georgian_era;Commerce;x;;
-edwardian_era;Culture;x;;
-elizabethan_era;Industry;x;;
-post_renaissance_tech;Post Renaissance Technology;x;;
-birth_of_science_tech;The Birth of Science;x;;
-scientific_revolution_tech;The Scientific Revolution;x;;
-early_agricultural_reforms_tech;Early Agricultural Revolution;x;;
-agricultural_revolution_tech;The Agricultural Revolution;x;;
-dawn_of_industrial_revolution_tech;Dawn of the Industrialization;x;;
-first_industrial_revolution_tech;The First Industrial Revolution;x;;
-late_medieval_warfare;Post Medieval Warfare;x;;
-early_military_revolution;Early Military Revolution;x;;
-flintlock_muskets;Flintlock Technology;x;;
-military_revolution;The Military Revolution;x;;
-era_of_mass_armies;Era of Mass Armies;x;;
-early_modern_warfare;Early Modern Warfare;x;;
-napoleonic_warfare;Napoleonic Warfare;x;;
-late_renaissance;Late Renaissance;x;;
-mannerism;Mannerism;x;;
-early_baroque;Early Baroque;x;;
-high_baroque;High Baroque;x;;
-rococo;Rococo;x;;
-neoclassicism;Neoclassicism;x;;
-early_romanticistic_culture;Early Romanticism;x;;
-late_reformation;Post Reformation;x;;
-counter_reformation;Counter Reformation;x;;
-inquisitions_tech;Inquisition;x;;
-jesuit_movements_tech;Jesuit Movement;x;;
-the_great_awakening;The Great Awakening;x;;
-downfall_of_the_old_church;Downfall of the Old Church;x;;
-anti_clericalism;Anti Clericalism;x;;
-late_renaissance_philosophies;Late Renaissance Philosophies;x;;
-age_of_rationalism;Age of Rationalism;x;;
-early_modern_philosphies;Early Modern Philosophies;x;;
-enlightenment;The Enlightenment;x;;
-counter_enligthenment;Counter Enlightenment;x;;
-revolutionary_ideas;Revolutionary Ideals;x;;
-early_romanticism;Ideals of the Early Romanticism;x;;
-missile_defense_system;Missile Defense System;x;;
-human_augmentation;Military Augmentation;x;;
-precisision_guided_artillery;Precision Guided Artillery;x;;
-drone_warfare;Drone Warfare;x;;
-AI_ground_leadership;AI Ground Leadership;x;;
-international_monetary_funds;International Monetary Funds;x;;
-external_debt;External Debts;x;;
-new_keynesian_economics;Neokeynesian Economics;x;;
-globalized_economy;Globalized Economy;x;;
-robotisation;Robotisation;x;;
-utopianism;Utopianism;x;;
-professional_philosophy;Professional Philosophers;x;;
-anti_necessitarian_soc_thought;Anti Necessitarianism;x;;
-commodity_narcissism;Commodity Narcissism;x;;
-cognitivism;Cognitivism;x;;
-green_power;Green Electricity;x;;
-carrier_doctrine;Carrier Group Doctrine;x;;
-nuclear_powered_ships;Nuclear Powered Ships;x;;
-naval_superstructures;Naval Superstructures;x;;
-satellite_communications;Satellite Communications;x;;
-automatized_ship_command;Automatized Ship Command;x;;
-first_telescope;Early Telescope;x;;
-food_manufactories;Food Processing Manufactories;x;;
-cement_manufactories;Construction Offices;x;;
-knitting_machine;Knitting Machine;x;;
-microscope;The Microscope;x;;
-water_thermometer;Early Thermometer;x;;
-steam_jacks;Steam Jacks;x;;
-barometer;Barometer;x;;
-early_lumber_mills;Early Lumber Mills;x;;
-heliocentrism;Heliocentrism;x;;
-steam_pump;Early Steam Pump;x;;
-pocket_watch;The Pocket Watch;x;;
-binary_system;The Binary System;x;;
-seed_drill;Seed Drill;x;;
-four_course_crop_rotation;Four Course Crop Rotation;x;;
-dutch_plow;The Dutch Plow;x;;
-enclosure_invention;Enclosures;x;;
-selective_breeding;Selective Breedings;x;;
-first_steam_engine;Early Steam Engine;x;;
-spinning_mule;Spinning Mule;x;;
-vertical_spinning_loom;Vertical Spinning Loom;x;;
-modern_cement_factory;Modern Cement Factory;x;;
-sheet_glass;Sheet Glass;x;;
-early_telegraph_invention;Early Telegraph;x;;
-early_cannons;Early Cannons;x;;
-matchlock_arquebuse;Matchlock Arquebuse;x;;
-conquering_the_seven_seas;Conquering the Seven Seas;x;;
-decline_of_plate_armor;Decline of the Plate Armor;x;;
-mixed_armies;Mixed Armies;x;;
-grenadier_invention;Grenadiers;x;;
-early_flintlock_musketeers;Early Flintlock Musketeers;x;;
-firearmed_cavalry;Firearmed Cavalry;x;;
-ranks_and_companies;Ranks and Companies;x;;
-combined_forces;Combined Forces;x;;
-refeudalization_of_armies;Refeudalization of the Armies;x;;
-mercenary_corps;Mercenary Corps;x;;
-bayonet_invention;The Bayonet;x;;
-levee_en_masse_invention;Levee en Masse;x;;
-conscription_invention;Early Conscription;x;;
-grande_armee_invention;Grande Armee;x;;
-total_blockade_invention;Total Blockade;x;;
-forced_march_invention;Forced March;x;;
-antiquity_invention;Rediscovered Antiquity;x;;
-renaissance_clothing;Renaissance Fashion;x;;
-modern_arch_invention;The Modern Arch;x;;
-mannerist_sculpture;Mannerist Decoration;x;;
-mannerist_construction;Mannerist Construction;x;;
-early_baroque_construction;Early Baroque Construction;x;;
-early_baroque_fine_arts;Early Baroque Fine Arts;x;;
-early_baroque_music_n_literature;Early Baroque Music and Literature;x;;
-high_baroque_construction;High Baroque Construction;x;;
-high_baroque_fine_arts;High Baroque Fine Arts;x;;
-high_baroque_music_n_literature;High Baroque Music and Literature;x;;
-rococo_construction;Rococo Construction;x;;
-rococo_fine_arts;Rococo Fine Arts;x;;
-neoclassicist_construction;Neoclassicist Construction;x;;
-neoclassicist_music_n_literature;Neoclassicist Music and Literature;x;;
-early_romantistic_construction;Architecture of the Early Romanticism;x;;
-early_romantistic_fine_arts;Fine Arts of the Early Romanticism;x;;
-early_romantistic_music_n_literature;Music and Literature of the Early Romanticism;x;;
-native_language_schools;National Schools;x;;
-native_language_books;Translated Books;x;;
-reformation_of_the_church;Reformation of the Church;x;;
-roman_christian_universities;Roman Christian Universities;x;;
-inquisition_invention;The Inquisition;x;;
-jesuit_missions;Jesuit Missions;x;;
-jesuit_schools;Jesuit Schools;x;;
-revivalism;Revivalism;x;;
-pietism;Pietism;x;;
-methodism;Methodism;x;;
-deism;Deism;x;;
-early_anti_clericalism;Early Anti-Clericalism;x;;
-secular_public_schools;Secular Public Schools;x;;
-atheism_invention;Atheism;x;;
-empiricism_invention;Empiricism;x;;
-rationalism_invention;Rationalism;x;;
-esoteric_traditions_invention;Esoteric Traditions;x;;
-humanism_invention;Humanism;x;;
-material_reality_invention;Material Reality;x;;
-metaphysics_invention;Metaphysics;x;;
-psyschology_of_reason_invention;Psychology of Reason;x;;
-modern_ethics_invention;Modern Ethics;x;;
-epistemology_invention;Epistemology;x;;
-encyclopaedia_invention;Encyclopaedia;x;;
-salons_invention;Salons;x;;
-bill_of_rights_invention;Bills of Rights;x;;
-vitalism_invention;Vitalism;x;;
-relativism_invention;Relativism;x;;
-nation_states_invention;Nation States;x;;
-springtime_of_nations_invention;The Springtime of Nations;x;;
-early_idealism_invention;Early Idealism;x;;
-utilitarianism_invention;Utilitarianism;x;;
-early_colonialism;Early Colonialism;x;;
-post_nelsonian_thought;Early Colonialism;x;;
-post_nelsonian_thought_desc;Early Colonialism;x;;
-post_napoleonic_thought;Fort Construction;x;;
-post_napoleonic_thought;Fort Construction;x;;
-third_generation_tank_engines;Third Generation Tank Engines;x;;
-third_generation_tank_engines_desc;Third Generation Tank Engines;x;;
-polymerase_chain_reaction;Polymerase Chain Reaction;x;;
-polymerase_chain_reaction_desc;Polymerase Chain Reaction;x;;
-high_temperature_superconductivity;High Temperature Superconductivity;x;;
-high_temperature_superconductivity_desc;High Temperature Superconductivity;x;;
-large_hadron_collider;The Large Hadron Collider;x;;
-large_hadron_collider_desc;The Large Hadron Collider;x;;
-;;;;x
+manned_space_flight;Manned Space Missions;x;;,
+privateering;Privateering;x;;,
+maritime_tradition;Maritime Tradition;x;;,
+video_games;Video Games;x;;,
+earlycannon;Early Cannons;x;;,
+blackpowderforts;Black Powder Forts;x;;,
+placeholder1;Placeholder;x;;,
+monetarism;Monetarism;x;;,
+placeholder3;Placeholder;x;;,
+pre_industrial_school;Pre-Industrial School;x;;,
+theory_tech;All Techs: 1604 - 1699;x;;,
+jacobean_era;Army;x;;,
+caroline_era;Navy;x;;,
+georgian_era;Commerce;x;;,
+edwardian_era;Culture;x;;,
+elizabethan_era;Industry;x;;,
+post_renaissance_tech;Post Renaissance Technology;x;;,
+birth_of_science_tech;The Birth of Science;x;;,
+scientific_revolution_tech;The Scientific Revolution;x;;,
+early_agricultural_reforms_tech;Early Agricultural Revolution;x;;,
+agricultural_revolution_tech;The Agricultural Revolution;x;;,
+dawn_of_industrial_revolution_tech;Dawn of the Industrialization;x;;,
+first_industrial_revolution_tech;The First Industrial Revolution;x;;,
+late_medieval_warfare;Post Medieval Warfare;x;;,
+early_military_revolution;Early Military Revolution;x;;,
+flintlock_muskets;Flintlock Technology;x;;,
+military_revolution;The Military Revolution;x;;,
+era_of_mass_armies;Era of Mass Armies;x;;,
+early_modern_warfare;Early Modern Warfare;x;;,
+napoleonic_warfare;Napoleonic Warfare;x;;,
+late_renaissance;Late Renaissance;x;;,
+mannerism;Mannerism;x;;,
+early_baroque;Early Baroque;x;;,
+high_baroque;High Baroque;x;;,
+rococo;Rococo;x;;,
+neoclassicism;Neoclassicism;x;;,
+early_romanticistic_culture;Early Romanticism;x;;,
+late_reformation;Post Reformation;x;;,
+counter_reformation;Counter Reformation;x;;,
+inquisitions_tech;Inquisition;x;;,
+jesuit_movements_tech;Jesuit Movement;x;;,
+the_great_awakening;The Great Awakening;x;;,
+downfall_of_the_old_church;Downfall of the Old Church;x;;,
+anti_clericalism;Anti Clericalism;x;;,
+late_renaissance_philosophies;Late Renaissance Philosophies;x;;,
+age_of_rationalism;Age of Rationalism;x;;,
+early_modern_philosphies;Early Modern Philosophies;x;;,
+enlightenment;The Enlightenment;x;;,
+counter_enligthenment;Counter Enlightenment;x;;,
+revolutionary_ideas;Revolutionary Ideals;x;;,
+early_romanticism;Ideals of the Early Romanticism;x;;,
+missile_defense_system;Missile Defense System;x;;,
+human_augmentation;Military Augmentation;x;;,
+precisision_guided_artillery;Precision Guided Artillery;x;;,
+drone_warfare;Drone Warfare;x;;,
+AI_ground_leadership;AI Ground Leadership;x;;,
+international_monetary_funds;International Monetary Funds;x;;,
+external_debt;External Debts;x;;,
+new_keynesian_economics;Neokeynesian Economics;x;;,
+globalized_economy;Globalized Economy;x;;,
+robotisation;Robotisation;x;;,
+utopianism;Utopianism;x;;,
+professional_philosophy;Professional Philosophers;x;;,
+anti_necessitarian_soc_thought;Anti Necessitarianism;x;;,
+commodity_narcissism;Commodity Narcissism;x;;,
+cognitivism;Cognitivism;x;;,
+green_power;Green Electricity;x;;,
+carrier_doctrine;Carrier Group Doctrine;x;;,
+nuclear_powered_ships;Nuclear Powered Ships;x;;,
+naval_superstructures;Naval Superstructures;x;;,
+satellite_communications;Satellite Communications;x;;,
+automatized_ship_command;Automatized Ship Command;x;;,
+first_telescope;Early Telescope;x;;,
+food_manufactories;Food Processing Manufactories;x;;,
+cement_manufactories;Construction Offices;x;;,
+knitting_machine;Knitting Machine;x;;,
+microscope;The Microscope;x;;,
+water_thermometer;Early Thermometer;x;;,
+steam_jacks;Steam Jacks;x;;,
+barometer;Barometer;x;;,
+early_lumber_mills;Early Lumber Mills;x;;,
+heliocentrism;Heliocentrism;x;;,
+steam_pump;Early Steam Pump;x;;,
+pocket_watch;The Pocket Watch;x;;,
+binary_system;The Binary System;x;;,
+seed_drill;Seed Drill;x;;,
+four_course_crop_rotation;Four Course Crop Rotation;x;;,
+dutch_plow;The Dutch Plow;x;;,
+enclosure_invention;Enclosures;x;;,
+selective_breeding;Selective Breedings;x;;,
+first_steam_engine;Early Steam Engine;x;;,
+spinning_mule;Spinning Mule;x;;,
+vertical_spinning_loom;Vertical Spinning Loom;x;;,
+modern_cement_factory;Modern Cement Factory;x;;,
+sheet_glass;Sheet Glass;x;;,
+early_telegraph_invention;Early Telegraph;x;;,
+early_cannons;Early Cannons;x;;,
+matchlock_arquebuse;Matchlock Arquebuse;x;;,
+conquering_the_seven_seas;Conquering the Seven Seas;x;;,
+decline_of_plate_armor;Decline of the Plate Armor;x;;,
+mixed_armies;Mixed Armies;x;;,
+grenadier_invention;Grenadiers;x;;,
+early_flintlock_musketeers;Early Flintlock Musketeers;x;;,
+firearmed_cavalry;Firearmed Cavalry;x;;,
+ranks_and_companies;Ranks and Companies;x;;,
+combined_forces;Combined Forces;x;;,
+refeudalization_of_armies;Refeudalization of the Armies;x;;,
+mercenary_corps;Mercenary Corps;x;;,
+bayonet_invention;The Bayonet;x;;,
+levee_en_masse_invention;Levee en Masse;x;;,
+conscription_invention;Early Conscription;x;;,
+grande_armee_invention;Grande Armee;x;;,
+total_blockade_invention;Total Blockade;x;;,
+forced_march_invention;Forced March;x;;,
+antiquity_invention;Rediscovered Antiquity;x;;,
+renaissance_clothing;Renaissance Fashion;x;;,
+modern_arch_invention;The Modern Arch;x;;,
+mannerist_sculpture;Mannerist Decoration;x;;,
+mannerist_construction;Mannerist Construction;x;;,
+early_baroque_construction;Early Baroque Construction;x;;,
+early_baroque_fine_arts;Early Baroque Fine Arts;x;;,
+early_baroque_music_n_literature;Early Baroque Music and Literature;x;;,
+high_baroque_construction;High Baroque Construction;x;;,
+high_baroque_fine_arts;High Baroque Fine Arts;x;;,
+high_baroque_music_n_literature;High Baroque Music and Literature;x;;,
+rococo_construction;Rococo Construction;x;;,
+rococo_fine_arts;Rococo Fine Arts;x;;,
+neoclassicist_construction;Neoclassicist Construction;x;;,
+neoclassicist_music_n_literature;Neoclassicist Music and Literature;x;;,
+early_romantistic_construction;Architecture of the Early Romanticism;x;;,
+early_romantistic_fine_arts;Fine Arts of the Early Romanticism;x;;,
+early_romantistic_music_n_literature;Music and Literature of the Early Romanticism;x;;,
+native_language_schools;National Schools;x;;,
+native_language_books;Translated Books;x;;,
+reformation_of_the_church;Reformation of the Church;x;;,
+roman_christian_universities;Roman Christian Universities;x;;,
+inquisition_invention;The Inquisition;x;;,
+jesuit_missions;Jesuit Missions;x;;,
+jesuit_schools;Jesuit Schools;x;;,
+revivalism;Revivalism;x;;,
+pietism;Pietism;x;;,
+methodism;Methodism;x;;,
+deism;Deism;x;;,
+early_anti_clericalism;Early Anti-Clericalism;x;;,
+secular_public_schools;Secular Public Schools;x;;,
+atheism_invention;Atheism;x;;,
+empiricism_invention;Empiricism;x;;,
+rationalism_invention;Rationalism;x;;,
+esoteric_traditions_invention;Esoteric Traditions;x;;,
+humanism_invention;Humanism;x;;,
+material_reality_invention;Material Reality;x;;,
+metaphysics_invention;Metaphysics;x;;,
+psyschology_of_reason_invention;Psychology of Reason;x;;,
+modern_ethics_invention;Modern Ethics;x;;,
+epistemology_invention;Epistemology;x;;,
+encyclopaedia_invention;Encyclopaedia;x;;,
+salons_invention;Salons;x;;,
+bill_of_rights_invention;Bills of Rights;x;;,
+vitalism_invention;Vitalism;x;;,
+relativism_invention;Relativism;x;;,
+nation_states_invention;Nation States;x;;,
+springtime_of_nations_invention;The Springtime of Nations;x;;,
+early_idealism_invention;Early Idealism;x;;,
+utilitarianism_invention;Utilitarianism;x;;,
+early_colonialism;Early Colonialism;x;;,
+post_nelsonian_thought;Early Colonialism;x;;,
+post_nelsonian_thought_desc;Early Colonialism;x;;,
+post_napoleonic_thought;Fort Construction;x;;,
+post_napoleonic_thought;Fort Construction;x;;,
+third_generation_tank_engines;Third Generation Tank Engines;x;;,
+third_generation_tank_engines_desc;Third Generation Tank Engines;x;;,
+polymerase_chain_reaction;Polymerase Chain Reaction;x;;,
+polymerase_chain_reaction_desc;Polymerase Chain Reaction;x;;,
+high_temperature_superconductivity;High Temperature Superconductivity;x;;,
+high_temperature_superconductivity_desc;High Temperature Superconductivity;x;;,
+large_hadron_collider;The Large Hadron Collider;x;;,
+large_hadron_collider_desc;The Large Hadron Collider;x;;,
+;;;;x,

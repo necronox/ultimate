@@ -2,10 +2,10 @@ owner = MUG
 controller = MUG
 
 1818.1.1 = {
-owner = PAN
-controller = PAN
+owner = PNJ
+controller = PNJ
 		}
-add_core = PAN
+add_core = PNJ
 add_core = AFG
 trade_goods = grain
 life_rating = 35

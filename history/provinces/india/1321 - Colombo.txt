@@ -18,12 +18,12 @@ controller = ENG
 
 1946.1.1 = {
 remove_core = HND
-add_core = SRK
+add_core = SRI
 }
 
 1948.1.1 = {
-	owner = SRK
-	controller = SRK
+	owner = SRI
+	controller = SRI
 	colonial = 0
 }
 

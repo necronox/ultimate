@@ -248,7 +248,7 @@ DEN = {
 	level = 4
 	influence_value = 25
 
-}HZP = {
+}SGR = {
 
 	value = 125
 
