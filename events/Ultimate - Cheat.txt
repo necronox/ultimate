@@ -6,11 +6,113 @@ desc = "Colonial Power !"
 picture = ""
 is_triggered_only = yes
 
-	trigger = {
-	}
+	trigger = {}
 
 	option = {
 		name = "We Get Free Colonial Points !"
 		activate_technology = ad_hoc_colonial_points
 	}
 }
+country_event = {
+
+id = 220001100
+title = "True primary" 
+desc = "Our country set true culture"
+picture = ""
+fire_only_once = yes
+is_triggered_only = yes
+
+	trigger = { tag = CRI }
+
+	option = {
+		name = "We Tatar Country"
+		primary_culture = tatar
+	}
+}
+country_event = {
+    id = 32600
+    title = "Èäåîëîãè÷åñêèå òå÷åíèÿ"
+    desc = "..."
+    picture = "Fascist"
+	is_triggered_only = yes
+    
+    trigger = { owner = { ai = no } }
+
+    option = {
+        name = "Ôàøèñòû"
+            any_pop = {
+                ideology = {
+                    value = fascist
+                    factor = 0.25
+            }
+        }
+    }
+    option = {
+        name = "Ñîöèàëèñòû"
+            any_pop = {
+                ideology = {
+                    value = socialist
+                    factor = 0.25
+            }
+        }
+    }
+    option = {
+        name = "Êîíñåðâàòîðû"
+        add_accepted_culture = north_german
+    }
+    option = {
+        name = "Ðåàêöèîíåðû"
+            any_pop = {
+                ideology = {
+                    value = reactionary
+                    factor = 0.25
+            }
+        }
+    }
+    option = {
+        name = "Êîììóíèñòû"
+            any_pop = {
+                ideology = {
+                    value = communist
+                    factor = 0.25
+            }
+        }
+    }
+    option = {
+        name = "Ëèáåðàëû"
+            any_pop = {
+                ideology = {
+                    value = liberal
+                    factor = 0.25
+            }
+        }
+    }
+    option = {
+        name = "ÄÀ ÑÓÊÀ!"
+        any_owned = { remove_core = FRA }
+        any_owned = { remove_core = HRE }
+        any_owned = { add_core = LOR }
+        }
+    option = {
+			926 = { change_province_name = Babylon }
+			prestige = 50
+}
+	option = {
+		name = "The capital shall remain in Atlanta."
+        capital = 201
+        1657 = { remove_province_modifier = gateway_to_harbor } 
+		201 = {
+			life_rating = 10
+			add_province_modifier = {
+			name = gateway_to_harbor
+			duration = -1
+			}
+		}
+		ai_chance = { factor = 0 }
+	}
+	option = { HAN = { inherit = HRE } }
+	option = {
+		name = "The capital shall remain in America."
+                capital = 201
+	}
+    }

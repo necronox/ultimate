@@ -2,24 +2,21 @@ owner = PLC
 controller = PLC
 add_core = MOL
 add_core = ROM
-1700.1.1 = {
-owner = TUR
-controller = TUR
-		}
-1820.1.1 = {
-	owner = MOL
-controller = MOL
-
-		}
 trade_goods = fruit
 life_rating = 35
 
+1700.1.1 = {
+    owner = TUR
+    controller = TUR
+		}
+1820.1.1 = {
+	owner = MOL
+    controller = MOL
+		}
 1861.1.1 = {
 	controller = ROM
 	owner = ROM
-	a
 }
-
 2000.1.1 = {
 	remove_core = MOL
 	}

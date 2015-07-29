@@ -2,7 +2,7 @@
 
 political_decisions = {
 
-	nuke_boer = {
+	nuke_BOE = {
 	picture = nuke_strikepic
 		potential = {	
 			war_with = BOE

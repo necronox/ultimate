@@ -60,7 +60,7 @@ country_event = {
 				limit = {
 				is_core = THIS
 					}
-				add_core = REH
+				add_core = HRE
 				}
 			}
 		}
@@ -722,7 +722,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		year = 1604
 		NOT = {
@@ -1043,7 +1043,7 @@ country_event = {
 		owns = 2172
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1608
@@ -2324,7 +2324,7 @@ country_event = {
 			year = 1641
 		}
 		NOT = {
-			exists = IBU
+			exists = IBR
 		}
 	}
 	mean_time_to_happen = {
@@ -2350,7 +2350,7 @@ country_event = {
 			year = 1641
 		}
 		NOT = {
-			exists = IBU
+			exists = IBR
 		}
 	}
 	option = {
@@ -4185,7 +4185,7 @@ country_event = {
 		owns = 199
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1696
@@ -4212,7 +4212,7 @@ country_event = {
 		year = 1695
 		OR = {
 			tag = POR
-			tag = IBU
+			tag = IBR
 		}
 		owns = 525
 		NOT = {
@@ -4871,7 +4871,7 @@ country_event = {
 		year = 1708
 		OR = {
 			tag = POR
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1710
@@ -5162,7 +5162,7 @@ country_event = {
 		year = 1716
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1718
@@ -5288,7 +5288,7 @@ country_event = {
 		year = 1719
 		OR = {
 			tag = POR
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1721
@@ -6429,7 +6429,7 @@ country_event = {
 		year = 1754
 		OR = {
 			tag = POR
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1756
@@ -7776,7 +7776,7 @@ country_event = {
 		}
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1810
@@ -7943,7 +7943,7 @@ country_event = {
 		year = 1809
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			exists = VNZ
@@ -8050,7 +8050,7 @@ country_event = {
 		year = 1809
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			exists = MEX
@@ -8367,7 +8367,7 @@ country_event = {
 		year = 1809
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1811
@@ -8411,7 +8411,7 @@ country_event = {
 		year = 1810
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1812
@@ -8439,7 +8439,7 @@ country_event = {
 		year = 1810
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			exists = PRG
@@ -8495,7 +8495,7 @@ country_event = {
 		year = 1810
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1812
@@ -8522,7 +8522,7 @@ country_event = {
 		year = 1810
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1812
@@ -8620,7 +8620,7 @@ country_event = {
 		year = 1812
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			exists = ARG
@@ -8779,7 +8779,7 @@ country_event = {
 		year = 1817
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			exists = CHL
@@ -8884,7 +8884,7 @@ country_event = {
 		year = 1818
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1820
@@ -9011,7 +9011,7 @@ country_event = {
 	trigger = {
 	OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		year = 1818
 		owns = 197
@@ -9325,7 +9325,7 @@ country_event = {
 		year = 1820
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1822
@@ -9367,7 +9367,7 @@ country_event = {
 		year = 1820
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1822
@@ -9437,7 +9437,7 @@ country_event = {
 		year = 1821
 		OR = {
 			tag = POR
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1823
@@ -10397,7 +10397,7 @@ country_event = {
 		year = 1833
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		NOT = {
 			year = 1835
@@ -11491,7 +11491,7 @@ fire_only_once = yes
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		year = 1820
 		

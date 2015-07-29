@@ -1,7 +1,8 @@
 capital = 283
-primary_culture = british
+primary_culture = english
+culture = scottish
 religion = protestant
-government = fascist_dictatorship
+government = absolute_monarchy
 plurality = 25.0
 nationalvalue = nv_order
 literacy = 0.90
@@ -30,15 +31,15 @@ pensions = no_pensions
 school_reforms = no_schools
 
 
-ruling_party = ENG_fascist
+ruling_party = NRT_conservative
 upper_house = {
-  fascist = 63
+  fascist = 0
   liberal = 12
-  conservative = 8
+  conservative = 71
   reactionary = 13
   anarcho_liberal = 4
   socialist = 0
-  communist = 1
+  communist = 0
 }
 
 
@@ -487,7 +488,31 @@ late_high_pressure_engine = 1
 early_electricity = 1
 early_railroad = 1
 cheap_iron = 1 #until this for 1860
+}
 
-#Inventions
- 
+1939.1.1 = {
+government = fascist_dictatorship
+ruling_party = NRT_fascist
+upper_house = {
+  fascist = 63
+  liberal = 12
+  conservative = 8
+  reactionary = 13
+  anarcho_liberal = 4
+  socialist = 0
+  communist = 1
+}
+}
+1949.1.1 = {
+government = democracy
+ruling_party = NRT_conservative
+upper_house = {
+  fascist = 0
+  liberal = 71
+  conservative = 12
+  reactionary = 0
+  anarcho_liberal = 4
+  socialist = 13
+  communist = 0
+}
 }

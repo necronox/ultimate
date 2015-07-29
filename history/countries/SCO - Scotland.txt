@@ -1,6 +1,5 @@
 capital = 269
 primary_culture = scottish
-culture = british
 religion = protestant
 government = absolute_monarchy
 plurality = 0

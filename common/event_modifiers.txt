@@ -71,21 +71,22 @@ national_tragedy = {
 ##### CIVILIZATION AND GUNBOATS #####
 western_influences = {
 	global_pop_militancy_modifier = 0.1
-	global_pop_consciousness_modifier = 0.05
+	global_pop_consciousness_modifier = 0.1
 	research_points_modifier = 0.2
 	icon = 10
 }
 
 uncivilized_isolationism = {
+	global_pop_consciousness_modifier = -0.1
 	global_pop_militancy_modifier = -0.1
-	global_pop_consciousness_modifier = -0.05
 	research_points_modifier = -0.2
+	prestige = -0.01
 	icon = 10
 }
 
 western_presence = {
 	pop_militancy_modifier = 0.1
-	research_points_modifier = 0.01
+	research_points_modifier = 0.02
 	icon = 9
 }
 
@@ -115,7 +116,7 @@ dissatisfied_workers = {
 }
 
 naval_school = {
-	research_points_modifier = 0.01
+	research_points_modifier = 0.05
 	icon = 17
 }
 
@@ -142,6 +143,7 @@ colonial_exploitation = {
 
 colonial_museum_of_natural_history = {
 	research_points_modifier = 0.02
+	prestige = 0.01
 	icon = 5
 }
 
@@ -173,8 +175,15 @@ loyal_askaris = {
 }
 
 muhammad_alis_reforms = {
-	research_points_modifier = 0.5
-	pop_consciousness_modifier = 0.05
+	research_points_modifier = -0.6
+	org_regain = 0.2
+	land_organisation = 0.2
+	mobilisation_size = 0.16
+	war_exhaustion = -0.2
+	tax_efficiency = 0.05
+	mobilisation_economy_impact = -0.25
+	global_pop_consciousness_modifier = 0.1
+	global_pop_militancy_modifier = 0.05
 	icon = 5
 }
 
@@ -290,7 +299,7 @@ sayings_of_the_dutch = {
 
 european_military_mission = {
 	research_points_modifier = 0.02
-	pop_militancy_modifier = 0.1
+	pop_militancy_modifier = 0.05
 	icon = 17
 }
 
@@ -306,13 +315,14 @@ military_reform = {
 }
 
 educational_reform = {
-	research_points_modifier = 0.05
-	pop_militancy_modifier = 0.07
+	research_points_modifier = 0.10
+	global_pop_consciousness_modifier = 0.07
 	icon = 5
 }
 
 legation_quarter = {
 	pop_militancy_modifier = 0.03
+	research_points_modifier = 0.05
 	icon = 8
 }
 
@@ -1260,9 +1270,9 @@ sakoku = {
 }
 
 rangaku = {
-	research_points_modifier = 0.2
+	prestige = 0.01
+	research_points_modifier = 0.1
 	global_pop_militancy_modifier = -0.05
-	global_pop_consciousness_modifier = 0.05
 	icon = 5
 }
 
@@ -1399,7 +1409,7 @@ tea_act_mod = {
 ####Pre-Industrial####
 primitivemod = {
 	icon = 6
-	research_points_modifier = -0.6
+	research_points_modifier = -1
 		}
 holy_roman_emperor = {
 	icon = 27

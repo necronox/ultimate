@@ -2,8 +2,8 @@
 graphical_culture = SouthAmericanGC
 
 party = {
-	name = "LAP_anarcho_liberal"
-	start_date = 1604.1.1
+	name = "LPL_anarcho_liberal"
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = anarcho_liberal
@@ -16,8 +16,8 @@ party = {
 }
 
 party = {
-	name = "LAP_conservative"
-	start_date = 1604.1.1
+	name = "LPL_conservative"
+	start_date = 1600.1.1
 	end_date = 99999.1.1
 
 	ideology = conservative
@@ -30,8 +30,8 @@ party = {
 }
 
 party = {
-	name = "LAP_liberal"
-	start_date = 1604.1.1
+	name = "LPL_liberal"
+	start_date = 1628.1.1
 	end_date = 99999.1.1
 
 	ideology = liberal
@@ -44,8 +44,8 @@ party = {
 }
 
 party = {
-	name = "LAP_reactionary"
-	start_date = 1604.1.1
+	name = "LPL_reactionary"
+	start_date = 1600.1.1
 	end_date = 99999.1.1
 
 	ideology = reactionary
@@ -58,8 +58,8 @@ party = {
 }
 
 party = {
-	name = "LAP_socialist"
-	start_date = 1604.1.1
+	name = "LPL_socialist"
+	start_date = 1848.1.1
 	end_date = 99999.1.1
 
 	ideology = socialist
@@ -72,8 +72,8 @@ party = {
 }
 
 party = {
-	name = "LAP_communist"
-	start_date = 1604.1.1
+	name = "LPL_communist"
+	start_date = 1848.1.1
 	end_date = 99999.1.1
 
 	ideology = communist
@@ -86,8 +86,8 @@ party = {
 }
 
 party = {
-	name = "LAP_fascist"
-	start_date = 1604.1.1
+	name = "LPL_fascist"
+	start_date = 1905.1.1
 	end_date = 99999.1.1
 
 	ideology = fascist

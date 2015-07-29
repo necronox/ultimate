@@ -1,7 +1,8 @@
-add_core = RUS
 trade_goods = cattle
 life_rating = 15
+
 1914.1.1 = { 
-		controller = RUS
 		owner = RUS
+		controller = RUS
+		add_core = RUS
 		}

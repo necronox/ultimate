@@ -1,15 +1,12 @@
 political_decisions = {
 	play_historical_countries = {
 		potential = {
-			NOT = { has_country_flag = historical_countries
-				has_country_flag = hidden_decisions 
-				year = 1765
+		has_country_flag = shown_decisions
+		NOT = { has_country_flag = historical_countries
+		year = 1765
 			}
-			
 		}
-		allow = {
-			
-		}
+		allow = {}
 		effect = {
 			any_country = { all_core = { remove_core = UKR
 					remove_core = RUT 
@@ -99,9 +96,7 @@ political_decisions = {
 			set_country_flag = historical_countries
 		}
 	
-		ai_will_do = {
-			factor = 0
-			}
+		ai_will_do = { factor = 0 }
 	}
 }
 

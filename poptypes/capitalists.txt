@@ -2242,68 +2242,62 @@ issues =
 	}
 
 	no_slavery = {
-		factor = 1
-	modifier = {
-		factor = -100
-		NOT = {
-			year = 1760
-			}
-		}.5
+		factor = 1.2
 		modifier = {
-			factor = 0 
-			country = {
-				slavery = no_slavery
+			factor = 0
+			OR = {
+				NOT = { is_next_reform = no_slavery }
+				country = { civilized = no }
+				NOT = { consciousness = 5 }
+				}
 			}
-		}
+			
 		modifier = {
-			factor = 0.5
-			state_scope = {
-				is_slave = yes
+			factor = 1.4
+			pop_majority_ideology = liberal
+			} 
+		
+		modifier = {
+			factor = 0.9
+			pop_majority_ideology = reactionary
 			}
-		}	
+		
 		modifier = {
 			factor = 1.1
-			life_needs = 1.0
-			everyday_needs = 1.0
-		}
-		modifier = {
-			factor = 1.1
-			life_needs = 1.0
-			everyday_needs = 1.0
-			luxury_needs = 0.5
-		}
-		modifier = {
-			factor = 1.1
-			life_needs = 1.0
-			everyday_needs = 1.0
-			luxury_needs = 1.0
-		}
+			OR = {
+				nationalvalue = nv_equality
+				nationalvalue = nv_liberty
+				}
+			}
+		
 		modifier = {
 			factor = 1.5
-			state_scope = {
-				is_slave = no
+			OR = {
+				pop_majority_ideology = communist
+				pop_majority_ideology = socialist
+				pop_majority_ideology = anarcho_liberal
+				location = { continent = europe }
 			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			literacy = 0.4
 			consciousness = 6
 		}
 		modifier = {
 			factor = 1.5
-			state_scope = {
-				is_slave = no
-			}
+			literacy = 0.5
 			consciousness = 7
 		}
 		modifier = {
 			factor = 1.5
-			state_scope = {
-				is_slave = no
-			}
+			literacy = 0.6
 			consciousness = 8
 		}
 		modifier = {
 			factor = 3
-			state_scope = {
-				is_slave = no
-			}
+			literacy = 0.7
 			consciousness = 9
 		}
 	}

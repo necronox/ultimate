@@ -3,7 +3,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = SPA
-				tag = IBU
+				tag = IBR
 			}
 			OR = {
 				government = absolute_monarchy
@@ -36,7 +36,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = SPA
-				tag = IBU
+				tag = IBR
 			}
 			NOT = {
 				has_country_flag = mendizabal_confiscated

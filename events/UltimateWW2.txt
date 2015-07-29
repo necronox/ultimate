@@ -1,6 +1,3 @@
-
-
-
 #German troops occupy France
 country_event = {
 	id = 1000000
@@ -123,8 +120,8 @@ political_reform = underground_parties }
 #Pearl Harbor receive
 country_event = {
 	id = 1000001
-	title = "Pearl Harbor"
-	desc = "Our fleet at Pearl Harbor has been attacked by the Empire of Japan!"
+	title = "pearl_harbor_title"
+	desc = "pearl_harbor_desc"
 	picture = "pearlharborattackpic"
 	is_triggered_only = yes
 
@@ -690,81 +687,460 @@ country_event = {
 		}
 
 			}
-#Moscow occupied
+#The Soviet Union Surrenders
 country_event = {
 	id = 1000014
-	title = "The Soviet Union Surrenders!"
+	title = "EVTNAME1000014"
 	desc = "EVTDESC1000014"
 	picture = "nazimoscow"
 
 trigger = {
 	has_country_flag = WW2_Axis
-	1008 = {
-	controlled_by = THIS
-		}
-	RUS = {
-	war_exhaustion = 25
-		}
+	NOT = { 994 = { controlled_by = RUS } }
+	1008 = { controlled_by = THIS }
+	NOT = { 1039 = { controlled_by = RUS } }
+	RUS = { war_exhaustion = 25 }
 	has_global_flag = WW2inprogress
-	NOT = {
-		has_global_flag = WW2_UK_Surrendered
-		}
 		}
 
-mean_time_to_happen = {
-		days = 1 }
+mean_time_to_happen = { days = 1 }
 
-##annex##
 option = {
-name = "Annex the USSR completely!"
-
-	end_war = RUS 
-	inherit = RUS 
-	prestige = 100
-	set_global_flag = WW2_Russia_Surrendered
-	clr_global_flag = WW2_Russia_in_the_fight
-	any_pop = {
-	limit = {
-		culture = russian
- }
-	militancy = 6
-	consciousness = 6
+name = "Annex European land, give Finland Karelia and Kola."
+ 
+        badboy = 10
+        end_war = RUS
+        RUS = {
+                any_owned = {
+                        limit = { continent = europe }
+                        secede_province = GER
+                                }
+				any_owned = {
+                        limit = { is_core = JAP }
+                        secede_province = JAP }
+                }
+        2589 = { secede_province = GER }
+        set_global_flag = rus_europe_taken_finland
+       
+        any_owned = {
+                limit = { is_core = FIN }
+                                secede_province = FIN
+                                        }
+        2587 = { secede_province = FIN
+                         add_core = FIN }
+        983 = { secede_province = FIN
+                         add_core = FIN }
+        984 = { secede_province = FIN
+                        add_core = FIN }
+        2588 = { secede_province = FIN
+                        add_core = FIN }
+        988 = { secede_province = FIN
+                        add_core = FIN}
+        995 = { secede_province = FIN
+                        add_core = FIN}
+                       
+        POL = {
+        all_core = {
+        limit = { is_core = RUS }
+        remove_core = RUS } }
+       
+        relation = {
+        who = FIN
+        value = 300
+}
+        diplomatic_influence = {
+        who = FIN
+        value = 50
+}        
+        prestige = 600
+        set_global_flag = WW2_Russia_Surrendered
+        clr_global_flag = WW2_Russia_in_the_fight
+        any_pop = {
+        limit = { culture = russian }
+        militancy = 6
+        consciousness = 6
+                        }
+                       
+                        ai_chance = {
+						factor = 100
+						modifier = {
+				        factor = 0
+						NOT = { FIN = { alliance_with = THIS } }
 			}
-		}
-
-##Vassalise Russia##
+                       
+                       
+                }
+				}
 option = {
-name = "Vassalise Russia"
-
-
-	end_war = RUS
-	treasury = 200000
-	create_vassal = RUS
-	military_access = RUS
-	prestige = 1000
-	set_global_flag = WW2_RUS_Surrendered
-	clr_global_flag = WW2_RUS_in_the_fight
-	RUS = {
-	treasury = -200000
-	prestige = -5000
+name = "Annex European land."
+badboy = 10
+        end_war = RUS
+        RUS = {
+                any_owned = {
+                        limit = { continent = europe }
+                        secede_province = GER
+                                }
+                }
+        2589 = {
+        secede_province = GER }
+        set_global_flag = rus_europe_taken
+       
+        RUS = { any_owned = {
+                        limit = {
+                        is_core = JAP }
+                        secede_province = JAP } }
+               
+                 
+        prestige = 400
+        set_global_flag = WW2_Russia_Surrendered
+        clr_global_flag = WW2_Russia_in_the_fight
+        any_pop = {
+        limit = {
+                culture = russian
+                }
+        militancy = 6
+        consciousness = 6
+                        }
+						ai_chance = {
+						factor = 100
+						modifier = {
+				        factor = 0
+						FIN = { alliance_with = THIS }
+			}
+                       
+                       
+                }     
+                }
+option = {
+name = "Vassalise Russia."
+ 
+        badboy = 10
+        end_war = RUS
+        treasury = 200000
+        create_vassal = RUS
+        military_access = RUS
+        prestige = 500
+        set_global_flag = WW2_RUS_Surrendered
+        clr_global_flag = WW2_RUS_in_the_fight
+        RUS = {
+        treasury = -200000
+        prestige = -1000
 political_reform = party_appointed
 political_reform = none_voting
 public_meetings = no_meeting
 political_reform = state_press
 political_reform = state_controlled
 political_reform = first_past_the_post
-political_reform = underground_parties 
-	any_pop = {
-	limit = {
-		NOT = { pop_majority_ideology = fascist } }
-	militancy = 3
-	consciousness = 3
-			}
-		}
-		ai_chance = {
-			factor = 25
-		}
-	}
+political_reform = underground_parties
+        any_pop = {
+        limit = {
+                NOT = { pop_majority_ideology = fascist } }
+        militancy = 3
+        consciousness = 3
+                        }
+                }
+        RUS = { any_owned = {
+                        limit = {
+                        is_core = FIN }
+                        secede_province = FIN } }
+                       
+        RUS = { any_owned = {
+                        limit = {
+                        is_core = JAP }
+                        secede_province = JAP } }
+                POL = {
+        all_core = {
+        limit = { is_core = RUS }
+        remove_core = RUS } }
+       
+        RUS = {
+        release = UKR
+        release = BYE
+        release = EST
+        release = LAT
+        release = LIT
+        release = KAZ
+        release = UZB
+        release = KYR
+        release = TRM
+        release = TAJ
+        release = GEO
+        release = ARM
+        release = AZB
+        }
+       
+        create_vassal = UKR
+        create_vassal = BYE
+        create_vassal = EST
+        create_vassal = LAT
+        create_vassal = LIT
+        create_vassal = KAZ
+        create_vassal = UZB
+        create_vassal = KYR
+        create_vassal = TRM
+        create_vassal = TAJ
+        create_vassal = GEO
+        create_vassal = ARM
+        create_vassal = AZB
+       
+	   UKR = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        UKR = { government = fascist_dictatorship }
+       
+        BYE = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        BYE = { government = fascist_dictatorship }
+       
+        EST = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        EST = { government = fascist_dictatorship }
+       
+        LAT = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        LAT = { government = fascist_dictatorship }
+       
+        LIT = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        LIT = { government = fascist_dictatorship }
+       
+        KAZ = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        KAZ = { government = fascist_dictatorship }
+       
+        UZB = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        UZB = { government = fascist_dictatorship }
+       
+        KYR = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        KYR = { government = fascist_dictatorship }
+       
+        TRM = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        TRM = { government = fascist_dictatorship }
+       
+        TAJ = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        TAJ = { government = fascist_dictatorship }
+       
+        GEO = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        GEO = { government = fascist_dictatorship }
+       
+        ARM = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        ARM = { government = fascist_dictatorship }
+       
+        AZB = { political_reform = party_appointed
+        political_reform = none_voting
+        public_meetings = no_meeting
+        political_reform = state_press
+        political_reform = state_controlled
+        political_reform = first_past_the_post
+        political_reform = underground_parties }
+        AZB = { government = fascist_dictatorship }
+       
+        relation = {
+        who = UKR
+        value = 300
+}
+        diplomatic_influence = {
+        who = UKR
+        value = 100
+}      
+        relation = {
+        who = BYE
+        value = 300
+}
+        diplomatic_influence = {
+        who = BYE
+        value = 100
+}      
+        relation = {
+        who = EST
+        value = 300
+}
+        diplomatic_influence = {
+        who = EST
+        value = 100
+}      
+ 
+        relation = {
+        who = LAT
+        value = 300
+}
+        diplomatic_influence = {
+        who = LAT
+        value = 100
+}      
+       
+        relation = {
+        who = LIT
+        value = 300
+}
+        diplomatic_influence = {
+        who = LIT
+        value = 100
+}              
+       
+        relation = {
+        who = KAZ
+        value = 300
+}
+        diplomatic_influence = {
+        who = KAZ
+        value = 100
+}      
+        relation = {
+        who = UZB
+        value = 300
+}
+        diplomatic_influence = {
+        who = UZB
+        value = 100
+}      
+        relation = {
+        who = KYR
+        value = 300
+}
+        diplomatic_influence = {
+        who = KYR
+        value = 100
+}      
+        relation = {
+        who = TRM
+        value = 300
+}
+        diplomatic_influence = {
+        who = TRM
+        value = 100
+}      
+        relation = {
+        who = TAJ
+        value = 300
+}
+        diplomatic_influence = {
+        who = TAJ
+        value = 100
+}      
+        relation = {
+        who = GEO
+        value = 300
+}
+        diplomatic_influence = {
+        who = GEO
+        value = 100
+}
+        relation = {
+        who = ARM
+        value = 300
+}
+        diplomatic_influence = {
+        who = ARM
+        value = 100
+}
+        relation = {
+        who = AZB
+        value = 300
+}
+        diplomatic_influence = {
+        who = AZB
+        value = 100
+}
+	   
+	   
+UKR = { prestige = -1000 }
+BYE = { prestige = -1000 }
+EST = { prestige = -1000 }
+LAT = { prestige = -1000 }
+LIT = { prestige = -1000 }
+KAZ = { prestige = -1000 }
+KYR = { prestige = -1000 }
+TRM = { prestige = -1000 }
+TAJ = { prestige = -1000 }
+GEO = { prestige = -1000 }
+ARM = { prestige = -1000 }
+AZB = { prestige = -1000 }
+       
+        RUS = { any_owned = {
+                limit = {
+                 is_core = POL
+                 }
+                 secede_province = GER } }
+       
+        RUS = {
+all_core = {
+limit = { NOT = { owned_by = RUS } }
+remove_core = RUS }
+}
+ 
+ 
+ 
+964 = { add_core = RUS }
+967 = { add_core = RUS }
+966 = { add_core = RUS }
+1088 = { add_core = RUS }
+}
 }
 #Washington occupied
 country_event = {

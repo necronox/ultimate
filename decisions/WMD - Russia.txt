@@ -1,6 +1,6 @@
 political_decisions = {
 
-	nuke_Russia = {
+	nuke_RUS = {
 	picture = nuke_strikepic
 		potential = {	
 			war_with = RUS

@@ -2,10 +2,10 @@
 
 political_decisions = {
 
-	nuke_iberia = {
+	nuke_IBR = {
 	picture = nuke_strikepic
 		potential = {	
-			war_with = IBU
+			war_with = IBR
 			nuclear_weapons = 1	
 
 
@@ -16,7 +16,7 @@ political_decisions = {
 			prestige = -25
 nuclear_weapons = -1
 
-			IBU = {
+			IBR = {
 				country_event = { id=666666 days=2 }
 				}
 
@@ -34,7 +34,7 @@ nuclear_weapons = -1
 				}
 			modifier = {
 				factor = 0.40
-				IBU = {
+				IBR = {
 				brigades_compare = 2
 					}
 					}

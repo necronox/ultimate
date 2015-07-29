@@ -1,0 +1,17 @@
+catholic_rebels_title;Catholic Rebels;;;;;;x;;,,
+catholic_rebels_name;Catholic Rebels;;;;;;x;;,,
+catholic_rebels_desc;Catholic rebels are Catholics who, feeling oppressed by the Protestant majority, have risen up to protect their religion.;;;;;;x;;
+catholic_rebels_army;$COUNTRY_ADJ$ Catholic Rebels;;;;;;x;;,,
+indian_nationalists_name;Indian Nationalists;;;;;;x;;;;;;;;;,,
+indian_nationalists_desc;Indian Nationalists have for goal the liberation and union of all of India.;;;;;;x;;;;;;;;;,,
+protestant_rebels_title;Protestant Rebels;;;;;;x;;,,
+protestant_rebels_name;Protestant Rebels;;;;;;x;;,,
+protestant_rebels_desc;Protestant rebels are Protestants who, feeling oppressed by the Catholic majority, have risen up to protect their religion.;;;;;;x;;
+protestant_rebels_army;$COUNTRY_ADJ$ Protestant Rebels;;;;;;x;;,,
+slave_rebels_name;Slave Rebels;;;;;;x;;,,
+slave_rebels_desc;Rebellious slaves seek freedom from slavery for themselves and their kind. They have had enough of servitude and will fight to the death to achieve their goal.;;;;;;x;;,,
+slave_rebels_army;Slave Rebels;;;;;;x;;,,
+sunni_islamist_rebels_title;Sunni Islamists;;;;;;x;;;;;;;;;,,
+sunni_islamist_rebels_name;$COUNTRY$ Sunni Islamists;;;;;;x;;;;;;;;;,,
+sunni_islamist_rebels_desc;Sunni Islamists are zealous jihadis who wage war on those they see as a threat to their religion. They seek to convert others to their cause by force.;;;;;;x;;;;;;;;;,,
+sunni_islamist_rebels_army;$COUNTRY_ADJ$ Sunni Islamists;;;;;;x;;;;;;;;;,,

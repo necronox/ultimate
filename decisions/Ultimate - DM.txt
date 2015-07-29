@@ -1,0 +1,125 @@
+political_decisions = {
+	try_annex_st = {
+		potential = {
+		has_country_flag = shown_decisions
+		NOT = { has_global_flag = try_annex_st }
+		NOT = { year = 1700 }	
+		NOT = { tag = FRA }
+		77 = { owned_by = FRA }
+		}
+		allow = { money = 10000 }
+		effect = {
+		set_global_flag = try_annex_st
+		badboy = 5
+		money = -10000
+		77 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 0 }
+	}
+	try_annex_bermuda = {
+		potential = {
+		has_country_flag = shown_decisions
+		NOT = { has_global_flag = try_annex_bermuda }
+		NOT = { year = 1700 }	
+		NOT = { tag = ENL }
+		203 = { owned_by = ENL }
+		}
+		allow = { money = 10000 }
+		effect = {
+		set_global_flag = try_annex_bermuda
+		badboy = 5
+		money = -10000
+		203 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 0 }
+	}
+		try_annex_belize = {
+		potential = {
+		has_country_flag = shown_decisions
+		NOT = { has_global_flag = try_annex_belize }
+		NOT = { year = 1700 }
+        NOT = { tag = ENL }
+		2190 = { owned_by = ENL }
+		}
+		allow = { money = 10000 }
+		effect = {
+		set_global_flag = try_annex_belize
+		badboy = 5
+		money = -10000
+		2190 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 0 }
+	}
+	try_annex_eng_antiles = {
+		potential = {
+		has_country_flag = shown_decisions
+		NOT = { has_global_flag = try_eng_antiles }
+		NOT = { year = 1700 }
+		NOT = { tag = ENL }
+		2237 = { owned_by = ENL }
+		2238 = { owned_by = ENL }	
+		2233 = { owned_by = ENL }	
+		2409 = { owned_by = ENL }
+		2229 = { owned_by = ENL }	
+		2224 = { owned_by = ENL }
+		2226 = { owned_by = ENL }
+		}
+		allow = { money = 100000 }
+		effect = {
+		set_global_flag = try_eng_antiles
+		badboy = 10
+		money = -100000
+		2237 = { secede_province = THIS }
+		2238 = { secede_province = THIS }
+		2233 = { secede_province = THIS }
+		2409 = { secede_province = THIS }
+		2229 = { secede_province = THIS }
+		2224 = { secede_province = THIS }
+		2226 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 0 }
+	}
+	try_annex_fra_antiles = {
+		potential = {
+		has_country_flag = shown_decisions
+		NOT = { has_global_flag = try_fra_antiles }
+		NOT = { year = 1700 }
+		NOT = { tag = FRA }
+		2232 = { owned_by = FRA }
+		2228 = { owned_by = FRA }	
+		2231 = { owned_by = FRA }
+		}
+		allow = { money = 100000 }
+		effect = {
+		set_global_flag = try_fra_antiles
+		badboy = 10
+		money = -100000
+		2232 = { secede_province = THIS }
+		2228 = { secede_province = THIS }
+		2231 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 0 }
+	}
+	try_annex_dutch_zuli = {
+		potential = {
+		has_country_flag = shown_decisions
+		NOT = { has_global_flag = try_dutch_zuli }
+		NOT = { year = 1700 }
+		NOT = { tag = NET }
+		2235 = { owned_by = NET }
+		2234 = { owned_by = NET }	
+		2236 = { owned_by = NET }
+		}
+		allow = { money = 100000 }
+		effect = {
+		set_global_flag = try_dutch_zuli
+		badboy = 5
+		money = -100000
+		2235 = { secede_province = THIS }
+		2234 = { secede_province = THIS }
+		2236 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+}

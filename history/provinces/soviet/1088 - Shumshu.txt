@@ -1,15 +1,21 @@
 add_core = AIN
-add_core = RUS
 add_core = JAP
-
 trade_goods = coal
-life_rating = 20
-1914.1.1 = { 
+life_rating = 15
+
+1855.2.7 = { 
+        owner = RUS
+        controller = RUS
+        add_core = RUS
+		colonial = 1
+        }
+1875.8.22 = { 
+        owner = JAP
 		controller = JAP
-		owner = JAP
 		colonial = 0
 		}
-1946.1.1 = { 
-		controller = RUS
-		owner = RUS
+1945.8.23 = { controller = RUS }
+1951.9.8 = {
+        owner = RUS
+		remove_core = JAP
 		}

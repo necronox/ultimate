@@ -960,7 +960,7 @@
 	}
 
 	aristocrats = {
-		culture = kashubian
+		culture = western_slavic
 		religion = catholic
 		size = 247.2
 	}	
@@ -972,7 +972,7 @@
 	}
 	
 	clergymen = {
-		culture = kashubian
+		culture = western_slavic
 		religion = catholic
 		size = 128.235
 	}
@@ -984,7 +984,7 @@
 	}
 	
 	artisans = {
-		culture = kashubian
+		culture = western_slavic
 		religion = catholic
 		size = 695.25
 	}
@@ -996,7 +996,7 @@
 	}
 
 	soldiers = {
-		culture = kashubian
+		culture = western_slavic
 		religion = catholic
 		size = 142.14
 	}
@@ -1008,7 +1008,7 @@
 	}
 	
 	farmers = {
-		culture = kashubian
+		culture = western_slavic
 		religion = catholic
 		size = 12784.875
 	}

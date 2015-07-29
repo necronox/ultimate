@@ -1,17 +1,17 @@
 owner = ENL
 controller = ENL
+add_core = ENG
+add_core = ENL
+add_core = NRT
+trade_goods = coal
+life_rating = 35
+
 1707.1.1 = {
 owner = ENG
 controller = ENG
-add_core = ENG
-add_core = NRT
 	}
-add_core = ENL
-add_core = ENG
+1861.1.1 = { railroad = 3 }
 2015.1.1 = {
 owner = ENL
 controller = ENL
 		}
-trade_goods = coal
-life_rating = 35
-1861.1.1 = { railroad = 3 }

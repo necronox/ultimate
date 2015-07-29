@@ -7,9 +7,9 @@ controller = HDJ
 add_core = HDJ
 
 1919.1.1 = {
-	controller = SAU 
-	owner = SAU
-	add_core = SAU
+	controller = ARA 
+	owner = ARA
+	add_core = ARA
 colonial = 0
 
 }

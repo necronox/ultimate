@@ -2887,13 +2887,12 @@ main_field_operating_base = {
 		}
 	}
 }
-nuclear_weaponry = {
+ _weaponry = {
 	area = military_science
 	year = 1945
 	cost = 34400
 	unciv_military = yes
 	diplomatic_points = 0.50
-    factory_goods_output = { tropical_wood = 0.05 }
 	
 	ai_chance = {
 		factor = 1.1

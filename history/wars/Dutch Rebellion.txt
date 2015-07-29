@@ -1,6 +1,7 @@
 name = "The Dutch Rebellion"
 
 1603.5.1 = {
+	add_attacker = ENL
 	add_attacker = NET
 
 	add_defender = SPA

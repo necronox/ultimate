@@ -2,7 +2,7 @@
 
 political_decisions = {
 
-	nuke_maghreb = {
+	nuke_MGH = {
 	picture = nuke_strikepic
 		potential = {	
 			war_with = MGH

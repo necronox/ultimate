@@ -27,7 +27,7 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
-ruling_party = BAY_conservative_2
+ruling_party = BAV_conservative_2
 upper_house = {
 	fascist = 0
 	liberal = 0

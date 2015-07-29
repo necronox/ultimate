@@ -2,10 +2,10 @@
 
 political_decisions = {
 
-	nuke_laplata = {
+	nuke_LPL = {
 	picture = nuke_strikepic
 		potential = {	
-			war_with = LAP
+			war_with = LPL
 			nuclear_weapons = 1	
 
 
@@ -16,7 +16,7 @@ political_decisions = {
 			prestige = -25
 nuclear_weapons = -1
 
-			LAP = {
+			LPL = {
 				country_event = { id=666666 days=2 }
 				}
 
@@ -34,7 +34,7 @@ nuclear_weapons = -1
 				}
 			modifier = {
 				factor = 0.40
-				LAP = {
+				LPL = {
 				brigades_compare = 2
 					}
 					}

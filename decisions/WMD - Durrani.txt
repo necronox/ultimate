@@ -2,7 +2,7 @@
 
 political_decisions = {
 
-	nuke_durrani = {
+	nuke_DUR = {
 	picture = nuke_strikepic
 		potential = {	
 			war_with = DUR

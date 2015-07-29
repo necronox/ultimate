@@ -9,7 +9,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		year = 1837
 		NOT = {
@@ -129,7 +129,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		year = 1851
 		owns = 2209 #Havana
@@ -174,7 +174,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		year = 1851
 		owns = 2209 #Havana
@@ -247,7 +247,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		year = 1907
 		expressionism = 1
@@ -291,7 +291,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		year = 1854
 		government = hms_government
@@ -406,7 +406,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = IBU
+			tag = IBR
 		}
 		year = 1842
 		NOT = {

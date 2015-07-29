@@ -1,24 +1,21 @@
-1820.1.1 = {
+trade_goods = grain
+life_rating = 35
+
+1902.5.31 = {
 owner = TRN
 controller = TRN
-add_core = TRN
-1800.1.1 = {
 add_core = SAF
+add_Core = SWZ
+add_core = TRN
 		}
-
 1910.1.1 = {
 		owner = ENG
 		controller = ENG
 		}
-
-add_Core = SWZ
 1920.1.1 = {
 		owner = SAF
 		controller = SAF
 		}
-trade_goods = grain
-life_rating = 35
-
 1960.1.1 = {
 	owner = SWZ
 	controller = SWZ

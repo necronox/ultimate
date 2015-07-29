@@ -1,6 +1,6 @@
 political_decisions = {
 
-	nuke_rom = {
+	nuke_ROM = {
 	picture = nuke_strikepic
 		potential = {	
 			war_with = ROM

@@ -1,11 +1,12 @@
-1820.1.1 = {
+trade_goods = wool
+life_rating = 35
+
+1848.2.3 = {
 owner = ORA
 controller = ORA
 add_core = ORA
-1800.1.1 = {
 add_core = SAF
-		}
-
+}
 1910.1.1 = {
 		owner = ENG
 		controller = ENG
@@ -15,5 +16,3 @@ add_core = SAF
 		owner = SAF
 		controller = SAF
 		}
-trade_goods = wool
-life_rating = 35

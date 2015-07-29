@@ -1,20 +1,20 @@
 owner = SPA
 controller = SPA
-add_core = SIC
 add_core = ITA
+add_core = SIC
+trade_goods = fish
+naval_base = 1
+life_rating = 35
+
 1714.1.1 = {
 	controller = AUS
 	owner = AUS
 		}
-
 1734.1.1 = {
 	owner = SIC
 	controller = SIC
 		add_core = NAP
 		}
-trade_goods = fish
-life_rating = 35
-naval_base = 1
 #state_building = {
 #	level = 1
 #	building = glass_factory
@@ -24,12 +24,10 @@ naval_base = 1
 	owner = NAP
 	controller = NAP
 		}
-
 1815.1.1 = {
 	owner = SIC
 	controller = SIC
 		}
-
 1861.1.1 = {
 	controller = ITA
 	owner = ITA
@@ -71,9 +69,10 @@ state_building = {
 	level = 2
 	building = electric_gear_factory
 	upgrade = yes
-
+}
 state_building = {
 	level = 2
 	building = automobile_factory
 	upgrade = yes
-}	}
+}
+}

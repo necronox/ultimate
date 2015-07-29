@@ -704,7 +704,7 @@
 	soldiers = {
 		culture = english
 		religion = protestant
-		size  6640
+		size = 6640
 	}
 
 	labourers = {

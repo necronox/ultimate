@@ -54,6 +54,7 @@ hard_ai = {
 	leadership_modifier = 0.5
 	global_pop_militancy_modifier = -0.02
 	factory_output = 0.10
+	war_exhaustion = -0.1
 }
 
 very_hard_ai = {
@@ -212,7 +213,7 @@ average_literacy = {
 }
 
 plurality = { 
-	research_points_modifier = 0.02
+	research_points_modifier = 0.01
 }
 
 generalised_debt_default = {

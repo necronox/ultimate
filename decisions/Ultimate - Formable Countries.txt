@@ -1,65 +1,33 @@
 political_decisions = {
 	form_iberia_spa = {
 		picture = iberian_union
-		potential = {
-			tag = SPA
-		}
+		potential = { tag = SPA }
 		allow = {
-			all_core = {
-				owned_by = THIS
-			}
-			OR = {
-				POR = {
-					all_core = {
-						owned_by = THIS
-					}
-				}
-				is_our_vassal = POR
-			}
-			OR = {
-				owns = 517
-				POR = {
-					owns = 517
-				}
-			}
+			all_core = { owned_by = THIS }
+			POR = { all_core = { owned_by = THIS } }
+			owns = 517
 			prestige = 60
 			is_greater_power = yes
 		}
 		effect = {
 			inherit = POR
-			change_tag = IBU
+			change_tag = IBR
 			prestige = 15
 		}
 	}
 	form_iberia_por = {
 		picture = iberian_union
-		potential = {
-			tag = POR
-		}
+		potential = { tag = POR }
 		allow = {
-			all_core = {
-				owned_by = THIS
-			}
-			OR = {
-				SPA = {
-					all_core = {
-						owned_by = THIS
-					}
-				}
-				is_our_vassal = SPA
-			}
-			OR = {
-				owns = 517
-				SPA = {
-					owns = 517
-				}
-			}
+			all_core = { owned_by = THIS }
+			SPA = { all_core = { owned_by = THIS } }
+			owns = 517
 			prestige = 60
 			is_greater_power = yes
 		}
 		effect = {
 			inherit = SPA
-			change_tag = IBU
+			change_tag = IBR
 			prestige = 15
 		}
 	}
@@ -1108,7 +1076,7 @@ political_decisions = {
 		potential = {			
 			primary_culture = platinean
 			NOT = {
-				exists = LAP				
+				exists = LPL				
 			}
 		}
 		
@@ -1171,124 +1139,124 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
-			change_tag = LAP
+			change_tag = LPL
 			add_accepted_culture = south_andean
 			ARG_2369 = {
-				add_core = LAP
+				add_core = LPL
 			}		
 			ARG_2387 = {
-				add_core = LAP	
+				add_core = LPL	
 			}
 			ARG_2393 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2364 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2379 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2357 = {
-				add_core = LAP
+				add_core = LPL
 			}
             ARG_2363 = {
-				add_core = LAP	
+				add_core = LPL	
 			}
 			ARG_2355 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2391 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2398 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2360 = {
-				add_core = LAP
+				add_core = LPL
 			}	
 			ARG_2366 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2376 = {
-				add_core = LAP
+				add_core = LPL
 			}	
 			ARG_2348 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2372 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2374 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2385 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2383 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2389 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			ARG_2396 = {
-				add_core = LAP
+				add_core = LPL
 			}	
 			ARG_2400 = {
-				add_core = LAP
+				add_core = LPL
 			}		
 			PRG_2338 = {
-				add_core = LAP	
+				add_core = LPL	
 			}
 			PRG_2343 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			URU_2344 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			CHL_2332 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			CHL_2324 = {
-				add_core = LAP
+				add_core = LPL
 			}
             CHL_2328 = {
-				add_core = LAP	
+				add_core = LPL	
 			}
 			CHL_2323 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			CHL_2325 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			CHL_2330 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			CHL_2333 = {
-				add_core = LAP
+				add_core = LPL
 			}	
 			BOL_2321 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			BOL_2317 = {
-				add_core = LAP
+				add_core = LPL
 			}	
 			BOL_2314 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			BOL_2309 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			BRZ_2467 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			2550 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			2549 = {
-				add_core = LAP
+				add_core = LPL
 			}
 			2420 = {
-				add_core = LAP
+				add_core = LPL
 			}
 		}
 
@@ -1349,7 +1317,7 @@ political_decisions = {
 		}
 	}
 	
-	form_caucas = {
+	form_transcaucasia = {
 		potential = {
 			is_culture_group = turko_semitic
 			NOT = {

@@ -1,13 +1,14 @@
-owner = DEN
-controller = DEN
 add_core = DEN
-add_core = SCA
-	add_core = GRN
+add_core = GRN
 trade_goods = fish
 life_rating = 35
-colonial = 2
 
-1979.1.1 = {
+1756.5.1 = {
+	owner = DEN
+	controller = DEN
+	colonial = 2
+		}
+1979.5.1 = {
 	owner = GRN
 	controller = GRN
 	colonial = 0

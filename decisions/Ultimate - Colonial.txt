@@ -24,6 +24,13 @@ virginia_company = {
 		secede_province = ENL
 			}
 				}
+		ai_will_do = {
+	    factor = 1
+	    modifier = {
+	 	factor = 0
+	 	NOT = { year = 1607 }
+	}
+}
 			}
 
 found_quebec = {
@@ -50,7 +57,79 @@ found_quebec = {
 		secede_province = FRA
 			}
 				}
+		ai_will_do = {
+	    factor = 1
+	    modifier = {
+	 	factor = 0
+	 	NOT = { year = 1608 }
+	}
+}		
+				
 			}
+new_netherlands = {
+	picture = newnetherlandspic
+		potential = {
+		232 = {
+			empty = yes
+			}
+		tag = NET
+		NOT = {
+		has_global_flag = new_netherlands_founded
+			}
+				}
+		allow = {
+			money = 10000
+			}
+
+
+		effect = {
+		set_global_flag = new_netherlands_founded
+		prestige = 5
+		money = -10000
+		232 = {
+		secede_province = NET
+			}
+				}
+		ai_will_do = {
+	    factor = 1
+	    modifier = {
+	 	factor = 0
+	 	NOT = { year = 1624 }
+	}
+}
+			}
+new_sweden = {
+	picture = newswedenpic
+		potential = {
+		222 = {
+			empty = yes
+			}
+		tag = SWE
+		NOT = {
+		has_global_flag = new_sweden_founded
+			}
+				}
+		allow = {
+			money = 10000
+			}
+
+
+		effect = {
+		set_global_flag = new_sweden_founded
+		prestige = 5
+		money = -10000
+		222 = {
+		secede_province = SWE
+			}
+				}
+		ai_will_do = {
+	    factor = 1
+	    modifier = {
+	 	factor = 0
+	 	NOT = { year = 1638 }
+	}
+}
+			}	
 louisiana_purchasepart1 = {
 	picture = louisianapurchasepic
 		potential = {

@@ -83,7 +83,7 @@ army = {
 }
 
 army = {
-	name = "Lybian infantry division"
+	name = "Libyan infantry division"
 	leader = {
 		name = "Ugo Cavallero"
 		type = land

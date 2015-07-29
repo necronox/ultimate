@@ -1,8 +1,6 @@
 political_decisions = {
 	international_apology = {
-		potential = {
-			NOT = {	has_country_flag = hidden_decisions }
-		}
+		potential = { has_country_flag = shown_decisions }
 		allow = {
 			war = no
 			prestige = 30
@@ -11,9 +9,6 @@ political_decisions = {
 			prestige = -30
 			badboy = -10
 		}
-		ai_will_do = {
-			factor = 0
-			}
+		ai_will_do = { factor = 0 }
 	}
 }
-

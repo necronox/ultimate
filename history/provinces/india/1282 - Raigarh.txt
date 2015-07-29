@@ -1,6 +1,9 @@
 owner = GWD
 controller = GWD
 add_core = GWD
+trade_goods = grain
+life_rating = 32
+
 1700.1.1 = {
 	owner = MUG
 	controller = MUG
@@ -8,33 +11,26 @@ add_core = GWD
 		}
 1763.1.1 = {
 	owner = MRT
-	controller MRT
+	controller = MRT
 	add_core = MRT
 	remove_core = MUG
 		}
 1818.1.1 = {
 owner = BUN
 controller = BUN
+add_core = NAG
 remove_core = GWD
 remove_core = MRT
 		}
-add_core = NAG
-
-
 #Decolonisation
 1947.1.1 = {
 	owner = HND
 	controller = HND
+	add_core = HND
 	colonial = 0
 		}
-
-
-
-add_core = HND
 1880.1.1 = {
 owner = ENG #hello
 controller = ENG #hello
 colonial = 2
 		}
-trade_goods = grain
-life_rating = 32

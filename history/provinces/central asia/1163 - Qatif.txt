@@ -6,9 +6,9 @@ add_core = NEJ
 	trade_goods = oil
 		}
 1919.1.1 = {
-	controller = SAU 
-	owner = SAU
-	add_core = SAU
+	controller = ARA 
+	owner = ARA
+	add_core = ARA
 colonial = 0
 
 }

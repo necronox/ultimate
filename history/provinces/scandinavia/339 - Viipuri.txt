@@ -1,25 +1,29 @@
 owner = SWE
 controller = SWE
 add_core = FIN
-1809.1.1 = {
-	owner = FIN
-	controller = FIN
+add_core = SWE
+trade_goods = timber
+life_rating = 35
+
+1710.6.24 = { controller = RUS }
+1721.9.10 = {
+	owner = RUS
 	add_core = RUS
 		}
-
+1812.1.4 = {
+	owner = FIN
+	controller = FIN
+		}
 1917.12.6 = { 
 		remove_core = SWE
 		}
-trade_goods = timber
-life_rating = 35
 #state_building = {
 #	level = 1
 #	building = lumber_mill
 #	upgrade = yes
 #}
-
 #End of WW2
-1945.5.1 = {
+1944.9.19 = {
 	owner = RUS
 	controller = RUS
 		}

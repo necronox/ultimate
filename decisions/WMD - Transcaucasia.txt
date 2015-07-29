@@ -2,7 +2,7 @@
 
 political_decisions = {
 
-	nuke_caucasus = {
+	nuke_TCA = {
 	picture = nuke_strikepic
 		potential = {	
 			war_with = TCA

@@ -4,9 +4,6 @@ political_decisions = {
 	form_arabia = {
 
 		potential = {
-			NOT = {
-			tag = SAU
-				}
 			ARA = { exists = no }
 			is_culture_group = arab
 		}
