@@ -1,7 +1,13 @@
+owner = IRO
+controller = IRO
+add_core = IRO
+trade_goods = cotton
+life_rating = 35
+
 1700.1.1 = {
 owner = FRA
 controller = FRA
-	colonial = 1
+colonial = 1
 	}
 1763.1.1 = {
 	owner = THC
@@ -15,13 +21,5 @@ controller = USA
 add_core = USA
 colonial = 2
 		}
-1820.1.1 = {
-	colonial = 0
-		}
-trade_goods = cotton
-life_rating = 35
-1867.1.1 = {
-	owner = USA
-	controller = USA
-		}
+1820.1.1 = { colonial = 0 }
 1861.1.1 = { railroad = 3 }

@@ -83,7 +83,7 @@ bookmark =
 {
 	name = "WW1_NAME"
 	desc = "WW1_DESC"
-	date = 1914.8.20
+	date = 1914.7.28
 	cameraX = 2950 
 	cameraY = 1550
 }

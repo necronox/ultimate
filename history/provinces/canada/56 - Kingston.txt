@@ -1,25 +1,20 @@
 owner = WYA
 controller = WYA
 add_core = WYA
+trade_goods = grain
+life_rating = 35
+
 1800.1.1 = {
 owner = ENG
 controller = ENG
-	colonial = 2
+colonial = 2
+add_core = CAN
 		}
-
-1800.1.1 = {
-	add_core = CAN
-		}
+1836.1.1 = { add_core = ONT }
+1861.1.1 = { railroad = 3 }
 1880.1.1 = { 
 		controller = CAN
 		owner = CAN
 		colonial = 0
 		}
-1836.1.1 = {
-	add_core = ONT
-		}trade_goods = grain
-life_rating = 35
-1861.1.1 = { railroad = 3 }
-2017.1.1 = {
-	fort = 5
-		}
+2017.1.1 = { fort = 5 }

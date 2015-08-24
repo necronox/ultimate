@@ -261,3 +261,64 @@ political_decisions = {
 	}
 	
 }
+soviet_afghani_agreements = {
+		potential = {
+		NOT = {
+				has_country_flag = soviets_influenced_afghanistan
+			}
+			tag = RUS
+			exists = AFG
+			year = 1919
+		}
+		
+		allow = {
+		is_greater_power = yes
+			ideological_thought = 1
+		AFG = {
+				is_greater_power = no
+				OR = {
+					in_sphere = RUS
+					NOT = { part_of_sphere = yes }
+				}
+			}
+			
+		}
+		
+		effect = {
+			diplomatic_influence = {
+				who = AFG
+				value = 150
+			}
+			relation = {
+				who = AFG
+				value = 200
+			}
+			create_alliance = AFG
+			create_vassal = AFG
+			set_country_flag = soviets_influenced_afghanistan
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	komitet_gosudarstvennoy_bezopasnosti = {
+		potential = {
+			government = proletarian_dictatorship
+			tag = RUS
+			year = 1951
+				NOT = {
+					has_country_flag = kgb_operating
+				}
+			}
+		
+		effect = {
+			add_country_modifier = {name = secret_service duration = -1}
+			set_country_flag = kgb_operating
+		}
+				
+		ai_will_do = {
+			factor = 1
+		}
+	}

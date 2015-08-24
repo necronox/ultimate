@@ -3,8 +3,9 @@ controller = SWE
 add_core = SWE
 add_core = SCA
 trade_goods = coal
-life_rating = 35
 naval_base = 1
+life_rating = 40
+
 #state_building = {
 #	level = 1
 #	building = steel_factory

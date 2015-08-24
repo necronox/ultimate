@@ -2123,6 +2123,117 @@ country_event = {
 		}
 	}
 }
+#Indian Act
+country_event = {
+	id = 44304
+	title = "The Indian Act"
+	desc = "The Indian Act was an act passed by the Government of Canada in 1876 to force natives onto reserves away from Canadian society. This forced many natives to convert culture and religion in order to find a better life."
+	picture = "Metis"
 	
+	fire_only_once = yes
 	
+	trigger = {
+		tag = CAN
+		year = 1876
+		NOT = {
+			year = 2000
+		}
+	}
+	
+	option = {
+		name = "Enact the Indian Act."
+		set_country_flag = indian_act_enacted
+		any_pop = {
+			limit = {
+				has_pop_culture = cree
+				has_pop_culture = native_american_minor
+				has_pop_culture = metis
+			}
+			militancy = 5
+			consciousness = 5
+			add_country_modifier = {
+				name = indian_reserves
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = "The natives have already suffered too much!"
+		any_pop = {
+			limit = {
+				has_pop_culture = cree
+				has_pop_culture = native_american_minor
+				has_pop_culture = metis
+			}
+			militancy = -5
+			consciousness = -5
+		}
+	}
+}
+
+#Residential Schools
+country_event = {
+	id = 44305
+	title = "The Residential School System"
+	desc = "The Residential School System was a system built for native children in which they were assimilated in. It was to rid the Indian out of the child. Many children died of depression and physical, sexual and phsychological abuse."
+	picture = "angry_natives"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CAN
+		year = 1890
+		NOT = {
+			year = 2000
+		}
+		has_country_flag = indian_act_enacted
+	}
+	
+	option = {
+		name = "Rid the Indian inside the child."
+		set_country_flag = residential_school_allowed
+		any_pop = {
+			limit = {
+				has_pop_culture = cree
+				has_pop_culture = native_american_minor
+				has_pop_culture = metis
+			}
+			militancy = 10
+			consciousness = 10
+			add_country_modifier = {
+				name = residential_school_system
+				duration = -1
+			}
+		}
+	}
+}
+
+#End of The Residential School System
+country_event = {
+	id = 44306
+	title = "The End of The Residential School System"
+	desc = "The public has become conscious of the irrational treatment of the Indians in our country. The last residential school was closed in 1996. It is now time for us to apoligize for our predecessors past and ammend the Indian Act."
+	picture = "Slaves"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CAN
+		year = 1990
+		NOT = {
+			year = 2000
+		}
+		has_country_flag = residential_school_allowed
+	}
+	
+	option = {
+		name = "Compensate all who were once affected."
 		
+		clr_country_flag = residential_school_allowed
+		clr_country_flag = indian_act_enacted
+		
+		remove_country_modifier = residential_school_system
+		remove_country_modifier = indian_reserves
+	}
+}		

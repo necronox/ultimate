@@ -1,3 +1,9 @@
+owner = WYA
+controller = WYA
+add_core = WYA
+trade_goods = fish
+life_rating = 15
+
 1642.1.1 = {
 owner = FRA
 controller = FRA
@@ -6,25 +12,17 @@ colonial = 2
 1763.1.1 = {
 owner = ENG
 controller = ENG
-	colonial = 2
+colonial = 2
 		}
-
 1800.1.1 = {
 	add_core = CAN
+	add_core = NEW
 		}
 1880.1.1 = { 
 		controller = CAN
 		owner = CAN
 		colonial = 0
 		}
-
-1800.1.1 = {
-	add_core = NEW
-		}
-
-trade_goods = fish
-life_rating = 35
-colonial = 2
 1910.1.1 = {
 	owner = NEW
 	controller = NEW
@@ -32,5 +30,4 @@ colonial = 2
 1964.1.1 = {
 		owner = CAN	
 		controller = CAN
-		colonial = 0
 		}

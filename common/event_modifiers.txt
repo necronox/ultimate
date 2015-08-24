@@ -1619,3 +1619,64 @@ usa_draft = {
 	prestige = -0.02
 	icon = 15
 }
+### Chineese Events ###
+three_five_anti_campaigns = {
+	factory_output = -0.30
+	tax_efficiency = -0.10
+	rich_income_modifier = -0.50
+	icon = 14
+}
+
+great_leap_forward = {
+	population_growth = -0.75
+	farm_RGO_eff = -1
+	farm_RGO_size = -1
+	mine_RGO_eff = -1
+	icon = 18
+}
+
+cultural_revolution = {
+	global_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.02
+	poor_income_modifier = -0.50
+	middle_income_modifier = -0.25
+	rich_income_modifier = -0.25
+	population_growth = -0.50
+	icon = 12
+}
+
+decollectivization_of_agriculture = {
+	farm_RGO_size = -2
+	farm_RGO_eff = 0.25
+}
+
+chinese_economic_boom = {
+	tax_efficiency = 0.01
+	factory_output = 0.05
+	factory_throughput = 0.10
+	icon = 11
+}
+
+### Cold War ###
+secret_service = {
+	global_pop_militancy_modifier = -0.03
+	global_pop_consciousness_modifier = -0.03
+	icon = 15
+}
+
+secret_service_job = {
+	pop_militancy_modifier = -0.05
+	pop_consciousness_modifier = -0.05
+	icon = 15
+}
+
+### Canada ###
+indian_reserves = {
+	assimilation_rate = 0.20
+	icon = 16
+}
+
+residential_school_system = {
+	assimilation_rate = 0.50
+	icon = 16
+}

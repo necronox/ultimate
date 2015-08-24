@@ -1,6 +1,7 @@
 capital = 46
 primary_culture = cree
 culture = native_american_minor
+culture = inuit
 religion = animist
 government = democracy
 plurality = 5.0

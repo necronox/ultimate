@@ -41,6 +41,7 @@ political_decisions = {
 				tag = KUK
 				tag = FRA
 			}
+			NOT = { year = 1919 }
 		}
 		allow = {
 			has_country_flag = partmob_allowed
@@ -64,6 +65,7 @@ political_decisions = {
 				tag = KUK
 				tag = FRA
 			}
+			NOT = { year = 1919 }
 		}
 		allow = {
 			has_country_modifier = partmob
@@ -83,6 +85,7 @@ political_decisions = {
 		alert = yes
 		potential = {
 			tag = RUS
+			NOT = { year = 1919 }
 		}
 		allow = {
 			year = 1914

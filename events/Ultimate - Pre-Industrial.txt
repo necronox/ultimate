@@ -77,16 +77,9 @@ country_event = {
 			tag = ENL
 			is_our_vassal = SCO
 			has_country_flag = kingcharlesI
-			NOT = {
-				year = 1700
-			}
-			NOT = {
-				has_country_flag = bishop_revolted
-			}
+			NOT = { has_country_flag = bishop_revolted }
 		}
-		mean_time_to_happen = {
-				months = 1
-						}
+		mean_time_to_happen = { months = 168 }
 		option = {
 			name = "Let's march North!"
 				set_country_flag = bishop_revolted
@@ -94,9 +87,7 @@ country_event = {
 				SCO = {
 				war = {
 					target = ENL
-					attacker_goal = {
-					casus_belli = become_independent
-								}
+					attacker_goal = { casus_belli = become_independent }
 					}
 						}
 				}
@@ -114,12 +105,12 @@ country_event = {
 				has_global_flag = english_disorder_done
 				year = 1700
 				has_country_flag = kingcharlesI
+				has_country_flag = charlesII
+				has_country_flag = kingjamesII
 				}
 			}
 
-		mean_time_to_happen = {
-				days = 20
-						}
+		mean_time_to_happen = { months = 3 }
 		option = {
 			name = "God Save The King!"
 				prestige = 2
@@ -139,6 +130,7 @@ country_event = {
 				prestige = -5
 				set_global_flag = english_disorder_done
 				remove_country_modifier = english_cw_mod
+				clr_country_flag = kingcharlesI
 				}
 			}
 #King Charles II Dies
@@ -157,13 +149,12 @@ country_event = {
 				}
 			}
 
-		mean_time_to_happen = {
-				days = 20
-						}
+		mean_time_to_happen = { months = 1 }
 		option = {
 			name = "God Save The King!"
 				prestige = 2
 				set_country_flag = kingjamesII
+				clr_country_flag = charlesII
 				}
 			}
 #Parliamentarians defeated
@@ -177,14 +168,10 @@ country_event = {
 			government = absolute_monarchy
 				year = 1675
 				has_country_flag = english_cw
-			NOT = {
-				has_global_flag = english_disorder_done
-				}
+			NOT = { has_global_flag = english_disorder_done }
 			}
 
-		mean_time_to_happen = {
-				months = 5
-						}
+		mean_time_to_happen = { months = 5 }
 		option = {
 			clr_country_flag = english_cw
 			name = "That'll teach them!"
@@ -201,16 +188,16 @@ country_event = {
 		trigger = {
 			tag = ENL
 			government = absolute_monarchy
-				year = 1610
+			has_country_flag = kingcharlesI
+			year = 1631
+			war = yes
 			NOT = {
 				has_country_flag = english_cw
 				has_global_flag = english_disorder_done
 				}
 			}
 
-		mean_time_to_happen = {
-				months = 5
-						}
+		mean_time_to_happen = { months = 5 }
 		option = {
 			name = "I Am The King!"
 				prestige = -10
@@ -246,23 +233,38 @@ province_event = {
 		has_country_flag = english_cw
 				}
 		is_colonial = no
-		NOT = {
-			has_global_flag = english_disorder_done
-			}
+		NOT = { has_global_flag = english_disorder_done }
 	}
-	mean_time_to_happen = {
-		months = 120
-		modifier = {
-			factor = 0.9
-			year = 1630
-				}
-	}
+	mean_time_to_happen = { months = 108 }
 	option = {
 		name = "Such Nonsense!"
 		any_pop = {
 			militancy = 2
 			consciousness = 2
 		}
+	}
+}
+#Alternate English Civil War Ending if the King Gives into Parliamentarian Demands
+country_event = {
+	title = "Parliamentarians Satisfied with the enactment of the English Bill of Rights"
+	desc = "The king has enacted a Bill of Rights, which requires regular Parliments, free elections, and freedom of speech in Parliment. The Parlliamentarians consider these arangements acceptable, and this bloody civil war can end now."
+	id = 401020
+	
+	trigger = {
+            tag = ENL
+			OR = {
+			government = prussian_constitutionalism
+			government = hms_government
+			government = democracy
+			}
+			has_country_flag = english_cw
+			NOT = { year = 1700 }
+	}
+	mean_time_to_happen = { months = 1 }
+	option = {
+		name = "At least the war is over"
+        prestige = -5
+		remove_country_modifier = english_cw_mod
 	}
 }
 #Native Population Decimated

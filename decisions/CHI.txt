@@ -1,0 +1,25 @@
+political_decisions = {
+	
+	economic_reforms = {
+		potential = {
+			tag = CHI
+			year = 1978
+			NOT = { 
+				has_country_flag = chineese_economic_reforms
+			}
+			government = proletarian_dictatorship
+		}
+		
+		effect = {
+			set_country_flag = chineese_economic_reforms
+			add_country_modifier = {
+				name = china_economic_reforms 
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

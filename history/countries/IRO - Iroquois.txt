@@ -1,12 +1,11 @@
 capital = 239
-primary_culture = cree
-culture = native_american_minor
+primary_culture = native_american_minor
+culture = cree
 religion = animist
 government = democracy
 plurality = 5.0
 nationalvalue = nv_liberty
 literacy = 0.17
-
 
 # Political reforms
 slavery = no_slavery

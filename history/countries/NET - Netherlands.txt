@@ -7,7 +7,7 @@ plurality = 0
 nationalvalue = nv_order
 literacy = 0.1
 civilized = yes
-
+oob ="/1604/NET_oob.txt"
 
 # Political reforms
 slavery = yes_slavery
@@ -19,7 +19,6 @@ trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = underground_parties
 
-
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
@@ -28,7 +27,6 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
-
 
 ruling_party = HOL_conservative
 upper_house = {
@@ -41,9 +39,9 @@ upper_house = {
         communist = 0
 }
 
-1604.1.1 = {
-oob ="/1604/NET_oob.txt"
-}
+# Starting Consciousness
+consciousness = 0
+nonstate_consciousness = 0
 
 1700.1.1 = {
 standing_army = 1
@@ -433,7 +431,6 @@ puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
                 }
 
-
 1830.1.1 = {
 government = prussian_constitutionalism
 prestige = 10
@@ -638,33 +635,14 @@ mechanical_production = 1
 clean_coal = 1 #until this for 1830
 		}
 
-
-
-# Starting Consciousness
-consciousness = 3
-nonstate_consciousness = 1
-
-
-oob = "NET_oob.txt"
-
-
-1839.1.1 = {
-        decision = sign_treaty_of_london
-}
-
-
-1861.1.1 = {
-        oob = "/1861/NET_oob.txt"
-}
-
-
+1839.1.1 = { decision = sign_treaty_of_london }
 
 1861.1.1 = {
 government = hms_government
 ruling_party = HOL_liberal
 plurality = 60
 literacy = 0.82
-
+oob = "/1861/NET_oob.txt"
 
 # Political reforms
 slavery = yes_slavery
@@ -676,7 +654,6 @@ trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = secret_ballots
 
-
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
@@ -685,7 +662,6 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = acceptable_schools 
-
 
 # Technologies
 standing_army = 1
@@ -914,16 +890,10 @@ late_high_pressure_engine = 1
 early_electricity = 1
 early_railroad = 1
 cheap_iron = 1 #until this for 1860
-
-#Inventions
-
 }
 
-
 1914.1.1 = {
-
 # Technologies
-
 standing_army = 1
 late_medieval_warfare = 1
 early_muskets = 1
@@ -1240,10 +1210,7 @@ shift_work = 1
 electric_furnace = 1 #until this for 1913
 	}
 
-
-
 1936.1.1 = {
-
 slavery = no_slavery
 
 # Technologies
@@ -1623,12 +1590,7 @@ advanced_limited_access_roads = 1
 natural_gas_power_station = 1 #until this for 1937
 	}
 
-
-
-
-
 1945.1.1 = {
-
 #Technologies
 
 standing_army = 1
@@ -2025,13 +1987,9 @@ advanced_sub-surface_mining = 1
 street_road = 1
 secret_of_atom = 1 #until this for 1945
 	}
-
-
-
-
-
+	
 1999.1.1 = {
-
+ruling_party = NET_socialist
 #Technologies
 
 standing_army = 1
@@ -2507,10 +2465,6 @@ superhighways = 1
 renewable_energy = 1
 quantum_physics = 1 #until this for 2000
 	}
-
-
-
-
 
 2022.1.1 = {
 
@@ -2998,7 +2952,3 @@ high_speed_rail = 1
 synthetic_graphite = 1
 green_power = 1 #until this for 2023
 	}
-
-
-
-

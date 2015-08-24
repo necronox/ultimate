@@ -4,9 +4,16 @@ political_decisions = {
 		potential = { tag = SPA }
 		allow = {
 			all_core = { owned_by = THIS }
-			POR = { all_core = { owned_by = THIS } }
-			owns = 517
-			prestige = 60
+			OR = {
+				POR = { all_core = { owned_by = THIS } }
+				is_our_vassal = POR
+			}
+			OR = {
+				owns = 517
+				POR = { owns = 517 }
+			}
+			prestige = 160
+			year = 1650
 			is_greater_power = yes
 		}
 		effect = {
@@ -20,9 +27,16 @@ political_decisions = {
 		potential = { tag = POR }
 		allow = {
 			all_core = { owned_by = THIS }
-			SPA = { all_core = { owned_by = THIS } }
-			owns = 517
-			prestige = 60
+			OR = {
+				SPA = { all_core = { owned_by = THIS } }
+				is_our_vassal = SPA
+			}
+			OR = {
+				owns = 517
+				SPA = { owns = 517 }
+			}
+			prestige = 160
+			year = 1650
 			is_greater_power = yes
 		}
 		effect = {

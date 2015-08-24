@@ -1,21 +1,23 @@
 name = "The Dutch Rebellion"
-
 1603.5.1 = {
 	add_attacker = ENL
 	add_attacker = NET
-
 	add_defender = SPA
 	add_defender = POR
-
 	war_goal = {
 		casus_belli = conquest
 		actor = SPA
 		receiver = NET
 	}
-
 	war_goal = {
 		casus_belli = become_independent
 		actor = NET
 		receiver = SPA
 	}
 }
+1609.4.9 = {
+	rem_attacker = ENL
+	rem_attacker = NET
+	rem_defender = SPA
+	rem_defender = POR
+		}

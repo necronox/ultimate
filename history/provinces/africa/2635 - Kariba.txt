@@ -1,16 +1,12 @@
-
+add_core = ZIM
+trade_goods = grain
+life_rating = 10
 
 1903.1.1 = {
 		owner = ENG
 		controller = ENG
 		colonial = 2
 		}
-
-
-trade_goods = grain
-life_rating = 15
-
-add_core = ZIM
 1960.1.1 = {
 	owner = ZIM
 	controller = ZIM

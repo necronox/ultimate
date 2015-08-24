@@ -1,12 +1,11 @@
+trade_goods = timber
+life_rating = 20
+
 1836.1.1 = {
 owner = RUS
 controller = RUS
 colonial = 2
 		}
-trade_goods = timber
-life_rating = 20
-
-
 1867.1.1 = {
 	owner = USA
 	controller = USA

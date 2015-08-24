@@ -1,4 +1,3 @@
-
 province_event = {
 	id = 500001
 	title = "Grenadian Nutmeg"
@@ -7,14 +6,13 @@ province_event = {
 trigger = {
 		province_id = 2233
 		year = 1843
-		NOT = {
-			trade_goods = spices
-			}
+		NOT = { trade_goods = spices }
 		}
+
+mean_time_to_happen = { months = 8 }
 
 option = {
 name = "Well then!"
 	trade_goods = spices
 	}
-
-}	
+}

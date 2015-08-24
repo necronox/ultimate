@@ -3,13 +3,22 @@ controller = RUS
 add_core = RUS
 trade_goods = grain
 life_rating = 35
-1800.1.1 = {
-naval_base = 2
-		}
+
+1617.5.12 = {
+owner = SWE
+controller = SWE
+add_core = SWE
+remove_core = RUS
+}
+1703.2.27 = {
+owner = RUS
+controller = RUS
+add_core = RUS
 fort = 1
-1836.1.1 = {
-railroad = 1
-		}
+}
+1721.9.10 = { remove_core = SWE }
+1800.1.1 = { naval_base = 2 }
+1836.1.1 = { railroad = 1 }
 #state_building = {
 #	level = 1
 #	building = lumber_mill
@@ -36,8 +45,6 @@ railroad = 1
 		building = small_arms_factory
 		upgrade = yes
 	} 
-}
-1861.1.1 = {
 	railroad = 2
 	fort = 2
 }

@@ -10,8 +10,6 @@ political_decisions = {
 			any_owned = { any_pop = { reduce_pop = 0.7 }}
 			set_country_flag = population_reduction_decision
 		}
-	
 		ai_will_do = { factor = 0 }
 	}
 }
-

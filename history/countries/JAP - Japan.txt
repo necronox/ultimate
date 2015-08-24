@@ -1,11 +1,11 @@
-capital = 1649
+capital = 1657
 primary_culture = japanese
-culture = ainu
 religion = shinto
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.40
+oob = "JAP_oob.txt"
 
 ruling_party = NIP_reactionary_2
 upper_house = {
@@ -64,14 +64,8 @@ early_modern_philosphies = 1
 private_banks = 1
 	}
 
-oob = "JAP_oob.txt"
 1861.1.1 = {
-	oob = "/1861/JAP_oob.txt"
-}
-
-1861.1.1 = {
-
-civilized = yes
+oob = "/1861/JAP_oob.txt"
 
 # Technologies
 standing_army = 1
@@ -300,7 +294,6 @@ late_high_pressure_engine = 1
 early_electricity = 1
 early_railroad = 1
 cheap_iron = 1 #until this for 1860
-
 }
 
 slavery = no_slavery
@@ -321,27 +314,17 @@ pensions = no_pensions
 school_reforms = no_schools
 
 1868.10.23 = {
+capital = 1649
 government = hms_government
-
 }
 
-1871.1.1 = {
-decision = iwakura_mission
-}
+1871.1.1 = { decision = iwakura_mission }
 
-1876.2.26 = {
-decision = fukoku_kyohei
-}
+1876.2.26 = { decision = fukoku_kyohei }
 
-1890.10.29 = {
-decision = meiji_constitution
-}
+1890.10.29 = { decision = meiji_constitution }
 
-
-
-1910.1.1 = {
-civilized = yes
-}
+1910.1.1 = { civilized = yes }
 
 1914.1.1 = {
 oob = "/1914/JAP_oob.txt"
@@ -665,8 +648,6 @@ advanced_steel_railroad = 1
 shift_work = 1
 electric_furnace = 1 #until this for 1913
 	}
-
-
 
 1936.1.1 = {
 
@@ -1081,14 +1062,11 @@ advanced_limited_access_roads = 1
 natural_gas_power_station = 1 #until this for 1937
 	}
 
-
-
 1945.5.1 = {
 	government = hms_government
 	prestige = 0
 	oob = "/1945/JAP_oob.txt"
-ruling_party = NIP_liberal
-
+    ruling_party = NIP_liberal
 
 upper_house = {
 	fascist = 0
@@ -1119,12 +1097,7 @@ unemployment_subsidies = low_subsidies
 pensions = good_pensions 
 school_reforms = good_schools
 
- }
-
-
-
-
-
+}
 
 1945.1.1 = {
 
@@ -1523,11 +1496,7 @@ electronic_circuit = 1
 advanced_sub-surface_mining = 1
 street_road = 1
 secret_of_atom = 1 #until this for 1945
-	}
-
-
-
-
+}
 
 1999.1.1 = {
 
@@ -2005,11 +1974,7 @@ modern_mining_&_glassblowing = 1
 superhighways = 1
 renewable_energy = 1
 quantum_physics = 1 #until this for 2000
-	}
-
-
-
-
+}
 
 2022.1.1 = {
 
@@ -2496,8 +2461,4 @@ robotics = 1
 high_speed_rail = 1
 synthetic_graphite = 1
 green_power = 1 #until this for 2023
-	}
-
-
-
-
+}

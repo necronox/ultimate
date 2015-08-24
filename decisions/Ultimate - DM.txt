@@ -3,15 +3,16 @@ political_decisions = {
 		potential = {
 		has_country_flag = shown_decisions
 		NOT = { has_global_flag = try_annex_st }
-		NOT = { year = 1700 }	
+		is_greater_power = yes
+		NOT = { year = 1650 }	
 		NOT = { tag = FRA }
 		77 = { owned_by = FRA }
 		}
-		allow = { money = 10000 }
+		allow = { money = 1000000 }
 		effect = {
 		set_global_flag = try_annex_st
 		badboy = 5
-		money = -10000
+		money = -1000000
 		77 = { secede_province = THIS }
 		}
 		ai_will_do = { factor = 0 }
@@ -20,15 +21,16 @@ political_decisions = {
 		potential = {
 		has_country_flag = shown_decisions
 		NOT = { has_global_flag = try_annex_bermuda }
-		NOT = { year = 1700 }	
+		is_greater_power = yes
+		NOT = { year = 1650 }	
 		NOT = { tag = ENL }
 		203 = { owned_by = ENL }
 		}
-		allow = { money = 10000 }
+		allow = { money = 1000000 }
 		effect = {
 		set_global_flag = try_annex_bermuda
 		badboy = 5
-		money = -10000
+		money = -1000000
 		203 = { secede_province = THIS }
 		}
 		ai_will_do = { factor = 0 }
@@ -37,15 +39,16 @@ political_decisions = {
 		potential = {
 		has_country_flag = shown_decisions
 		NOT = { has_global_flag = try_annex_belize }
-		NOT = { year = 1700 }
+		is_greater_power = yes
+		NOT = { year = 1650 }
         NOT = { tag = ENL }
 		2190 = { owned_by = ENL }
 		}
-		allow = { money = 10000 }
+		allow = { money = 1000000 }
 		effect = {
 		set_global_flag = try_annex_belize
 		badboy = 5
-		money = -10000
+		money = -1000000
 		2190 = { secede_province = THIS }
 		}
 		ai_will_do = { factor = 0 }
@@ -54,7 +57,8 @@ political_decisions = {
 		potential = {
 		has_country_flag = shown_decisions
 		NOT = { has_global_flag = try_eng_antiles }
-		NOT = { year = 1700 }
+		is_greater_power = yes
+		NOT = { year = 1650 }
 		NOT = { tag = ENL }
 		2237 = { owned_by = ENL }
 		2238 = { owned_by = ENL }	
@@ -64,11 +68,11 @@ political_decisions = {
 		2224 = { owned_by = ENL }
 		2226 = { owned_by = ENL }
 		}
-		allow = { money = 100000 }
+		allow = { money = 1000000 }
 		effect = {
 		set_global_flag = try_eng_antiles
 		badboy = 10
-		money = -100000
+		money = -1000000
 		2237 = { secede_province = THIS }
 		2238 = { secede_province = THIS }
 		2233 = { secede_province = THIS }
@@ -83,17 +87,18 @@ political_decisions = {
 		potential = {
 		has_country_flag = shown_decisions
 		NOT = { has_global_flag = try_fra_antiles }
-		NOT = { year = 1700 }
+		is_greater_power = yes
+		NOT = { year = 1650 }
 		NOT = { tag = FRA }
 		2232 = { owned_by = FRA }
 		2228 = { owned_by = FRA }	
 		2231 = { owned_by = FRA }
 		}
-		allow = { money = 100000 }
+		allow = { money = 1000000 }
 		effect = {
 		set_global_flag = try_fra_antiles
 		badboy = 10
-		money = -100000
+		money = -1000000
 		2232 = { secede_province = THIS }
 		2228 = { secede_province = THIS }
 		2231 = { secede_province = THIS }
@@ -104,22 +109,22 @@ political_decisions = {
 		potential = {
 		has_country_flag = shown_decisions
 		NOT = { has_global_flag = try_dutch_zuli }
-		NOT = { year = 1700 }
+		is_greater_power = yes
+		NOT = { year = 1650 }
 		NOT = { tag = NET }
 		2235 = { owned_by = NET }
 		2234 = { owned_by = NET }	
 		2236 = { owned_by = NET }
 		}
-		allow = { money = 100000 }
+		allow = { money = 1000000 }
 		effect = {
 		set_global_flag = try_dutch_zuli
 		badboy = 5
-		money = -100000
+		money = -1000000
 		2235 = { secede_province = THIS }
 		2234 = { secede_province = THIS }
 		2236 = { secede_province = THIS }
 		}
 		ai_will_do = { factor = 0 }
 	}
-	
 }

@@ -1,3 +1,9 @@
+owner = WYA
+controller = WYA
+add_core = WYA
+trade_goods = timber
+life_rating = 10
+
 1642.1.1 = {
 owner = FRA
 controller = FRA
@@ -6,22 +12,13 @@ colonial = 2
 1713.1.1 = {
 owner = ENG
 controller = ENG
-	colonial = 2
+colonial = 2
 		}
-
-1800.1.1 = {
-	add_core = CAN
-		}
+1800.1.1 = { add_core = CAN }
+#French revolt
+1820.1.1 = { add_core = QUE }		
 1880.1.1 = { 
 		controller = CAN
 		owner = CAN
 		colonial = 0
 		}
-
-#French revolt
-1820.1.1 = {
-	add_core = QUE
-		}
-trade_goods = timber
-life_rating = 35
-colonial = 2

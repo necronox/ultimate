@@ -1,14 +1,12 @@
-1700.1.1 = {
+trade_goods = wool
+life_rating = 30
+
+1861.1.1 = {
 owner = RUS
 controller = RUS
 add_core = RUS
 		}
-trade_goods = wool
-life_rating = 35
-
-1917.1.1 = {
-	add_core = KAZ
-		}
+1917.1.1 = { add_core = KAZ }
 1992.1.1 = {
 	owner = KAZ
 	controller = KAZ

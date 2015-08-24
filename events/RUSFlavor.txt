@@ -474,3 +474,56 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = 80002
+	title = "The collapse of the Soviet Intelligence Agencies"
+	desc = "With the collapse of the Soviet Union comes the collapse of the intelligence agencies working for her"
+	picture = "Police"
+		
+	trigger = {
+		tag = RUS
+		OR = {
+			government = hms_government
+			government = democracy
+			government = prussian_constitutionalism
+		}
+		has_country_flag = kgb_operating
+	}
+	option = {
+		name = "Burn the building down"
+		remove_country_modifier = secret_service
+		clr_country_flag = kgb_operating
+	}
+}
+
+province_event = {
+	id = 80003
+	title = "Secret Service kills counter revolutionists."
+	desc = "The secret service has killed off some of the counter revolutionaries in a region within the USSR"
+	picture = "Police"
+	
+	trigger = {
+		tag = RUS
+		government = proletarian_dictatorship
+		has_country_flag = kgb_operating
+		NOT = {
+			 year = 1954
+		}
+		average_militancy = 0.5
+	}
+	
+	option = {
+		name = "They are doing their job."
+		limit = {
+			is_colonial = no
+		}
+		any_pop = {
+			militancy = -3
+			consciousness = -3
+		}
+		add_province_modifier = {
+			name = secret_service_job
+			duration = 365
+		}
+	}
+ }

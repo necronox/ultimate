@@ -1,20 +1,5 @@
 country_event = {
 
-id = 22000110
-title = "Colonial Power !" 
-desc = "Colonial Power !"
-picture = ""
-is_triggered_only = yes
-
-	trigger = {}
-
-	option = {
-		name = "We Get Free Colonial Points !"
-		activate_technology = ad_hoc_colonial_points
-	}
-}
-country_event = {
-
 id = 220001100
 title = "True primary" 
 desc = "Our country set true culture"

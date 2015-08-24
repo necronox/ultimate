@@ -183,3 +183,170 @@ country_event = {
 		civilized = yes
 	}
 }
+country_event = {
+	id = 90905
+	title = "The Three and Five Anti Campaigns."
+	desc = "The Three and Five Anti-Campaigns were a series of campaigns conducted by Mao's communist party in China to get rid of the Chinese capitalists conducting business within China due to the Korean War."
+	picture = "Workers"
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHI
+		year = 1952
+		government = proletarian_dictatorship
+	}
+
+	option = {
+		name = "Rid China of these filths."
+		add_country_modifier = {
+			name = three_five_anti_campaigns 
+			duration = -1
+		}
+		capitalists = {
+			militancy = 5
+			consciousness = 5
+		}
+		set_country_flag = three_five_anti_campaigns
+	}
+}
+
+country_event = {
+	id = 90906
+	title = "The Great Leap Forward."
+	desc = "The Great Leap Forward was a experiment from 1958 to 1962 to rapidly transform China from an agrarian economy to a industrialized one. The experiment resulted between 18 to 40 million people starving to death."
+	picture = "Childlabor"
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHI
+		year = 1958
+		government = proletarian_dictatorship
+		has_country_flag = three_five_anti_campaigns
+	}
+
+	option = {
+		name = "Let us fail our ambitions!"
+		add_country_modifier = {
+			name = great_leap_forward 
+			duration = -1
+		}
+		set_country_flag = china_great_leap_forward
+		clr_country_flag = three_five_anti_campaigns
+	}
+}
+
+country_event = {
+	id = 90907
+	title = "The Cultural Revolution."
+	desc = "The Cultural Revolution in China sought to preserve the communist ideology into the people living in China as well as eliminating any last signs of capitalism. This experiment resulted in the country being setback into large quantities of poverty."
+	picture = "Poor"
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHI
+		year = 1966
+		government = proletarian_dictatorship
+		has_country_flag = china_great_leap_forward
+	}
+
+	option = {
+		name = "This is what happens when we go too far..."
+		add_country_modifier = {
+			name = cultural_revolution 
+			duration = -1
+		}
+		set_country_flag = china_cultural_revolution
+		clr_country_flag = china_great_leap_forward
+	}
+}
+
+country_event = {
+	id = 90908
+	title = "The Economic Reforms of 1978."
+	desc = "Deng's economic reforms can be seen as a step for China to become a super power as the economy will significantly increase, but the process will have to be split into two distinct parts."
+	picture = "Workers"
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHI
+		year = 1978
+		government = proletarian_dictatorship
+		has_country_flag = china_cultural_revolution
+	}
+
+	option = {
+		name = "If it helps to bring the country to a better part of the world, we'll do it!"
+		remove_country_modifier = cultural_revolution
+		remove_country_modifier = great_leap_forward
+		remove_country_modifier = three_five_anti_campaigns
+		set_country_flag = china_reforms_started
+		clr_country_flag = china_cultural_revolution
+	}
+}
+
+country_event = {
+	id = 90909
+	title = "Phase one of the economic reforms."
+	desc = "Deng's economic reforms start with the de-collectivization of agriculture in order to get a larger workforce for the industries."
+	picture = "Workers"
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHI
+		year = 1978
+		government = proletarian_dictatorship
+		has_country_flag = china_reforms_started
+	}
+
+	option = {
+		name = "Take the first step to a modernized economy."
+		add_country_modifier = {
+			name = decollectivization_of_agriculture
+			duration = 2555
+		}
+		set_country_flag = china_economy_switch
+		clr_country_flag = china_reforms_started
+	}
+}
+
+country_event = {
+	id = 90911
+	title = "Phase two of the economic reforms."
+	desc = "Phase two of the reforms allows us to create a socialist economy with Chinese characteristics."
+	picture = "stocks"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CHI
+		government = proletarian_dictatorship
+		year = 1985
+		has_country_flag = china_economy_switch
+	}
+	
+	option = {
+		name = "Open the market to foreign investment!"
+		add_country_modifier = {
+			name = chinese_economic_boom
+			duration = 5475
+		}
+		government = socialist_republic
+		political_reform = no_slavery
+		political_reform = no_voting
+		political_reform = appointed
+		political_reform = proportional_representation
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = state_controlled
+		political_reform = only_underground
+		prestige_factor = 0.25
+
+		set_country_flag = china_reforms_done
+		clr_country_flag = china_economy_switch
+	}
+}

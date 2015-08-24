@@ -3,131 +3,57 @@ political_decisions = {
 1604scenariostarter = {
 	picture = spaceprogrampic
 	potential = { has_global_flag = ImpossibleFlag }
-
 	effect = {
-		AUS = {
-		add_country_modifier = { name = holy_roman_emperor duration = -1 }
-				}
-		AAC = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		ALS = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		ANH = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		AUG = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		BAD = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		BAV = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		BDB = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		BRE = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		CLG = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		CLV = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		FRM = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		GEN = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		HAM = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		HEK = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-        HES = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		HOL = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		LIP = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		LOR = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		LUB = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		LUC = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-        LUN = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		MEC = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-        MOD = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		NAS = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		NEU = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		OLD = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		OSN = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		PAR = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		PLT = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-        PMR = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		SAX = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		SGR = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		SVY = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}		
-		SWI = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		SXL = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		TRR = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		TUS = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-                VER = {
-                add_country_modifier = { name = hre_member duration = -1 }
-				}
-                WEI = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
-		WUR = {
-		add_country_modifier = { name = hre_member duration = -1 }
-				}
+		AUS = { add_country_modifier = { name = holy_roman_emperor duration = -1 } }
+		AAC = { add_country_modifier = { name = hre_member duration = -1 } }
+		ALS = { add_country_modifier = { name = hre_member duration = -1 } }
+		ANH = { add_country_modifier = { name = hre_member duration = -1 } }
+		ANS = { add_country_modifier = { name = hre_member duration = -1 } }
+		AUG = { add_country_modifier = { name = hre_member duration = -1 } }
+		BAD = { add_country_modifier = { name = hre_member duration = -1 } }
+		BAV = { add_country_modifier = { name = hre_member duration = -1 } }
+		BDB = { add_country_modifier = { name = hre_member duration = -1 } }
+		BOH = { add_country_modifier = { name = hre_member duration = -1 } }
+		BRA = { add_country_modifier = { name = hre_member duration = -1 } }
+		BRE = { add_country_modifier = { name = hre_member duration = -1 } }
+		CLG = { add_country_modifier = { name = hre_member duration = -1 } }
+		CLV = { add_country_modifier = { name = hre_member duration = -1 } }
+		EMD = { add_country_modifier = { name = hre_member duration = -1 } }
+		FRM = { add_country_modifier = { name = hre_member duration = -1 } }
+		GHB = { add_country_modifier = { name = hre_member duration = -1 } }
+		HAM = { add_country_modifier = { name = hre_member duration = -1 } }
+		HAN = { add_country_modifier = { name = hre_member duration = -1 } }
+		HEK = { add_country_modifier = { name = hre_member duration = -1 } }
+		HES = { add_country_modifier = { name = hre_member duration = -1 } }
+		HOL = { add_country_modifier = { name = hre_member duration = -1 } }
+		LIE = { add_country_modifier = { name = hre_member duration = -1 } }
+		LIP = { add_country_modifier = { name = hre_member duration = -1 } }
+		LOR = { add_country_modifier = { name = hre_member duration = -1 } }
+		LUB = { add_country_modifier = { name = hre_member duration = -1 } }
+		LUN = { add_country_modifier = { name = hre_member duration = -1 } }
+		LUX = { add_country_modifier = { name = hre_member duration = -1 } }
+		MEC = { add_country_modifier = { name = hre_member duration = -1 } }
+		MEI = { add_country_modifier = { name = hre_member duration = -1 } }
+		MOD = { add_country_modifier = { name = hre_member duration = -1 } }
+		MUN = { add_country_modifier = { name = hre_member duration = -1 } }
+		NAS = { add_country_modifier = { name = hre_member duration = -1 } }
+		NEU = { add_country_modifier = { name = hre_member duration = -1 } }
+		OLD = { add_country_modifier = { name = hre_member duration = -1 } }
+		OSN = { add_country_modifier = { name = hre_member duration = -1 } }
+		PAR = { add_country_modifier = { name = hre_member duration = -1 } }
+		PLT = { add_country_modifier = { name = hre_member duration = -1 } }
+		PMR = { add_country_modifier = { name = hre_member duration = -1 } }
+		SAX = { add_country_modifier = { name = hre_member duration = -1 } }
+		SGR = { add_country_modifier = { name = hre_member duration = -1 } }
+		SVY = { add_country_modifier = { name = hre_member duration = -1 } }
+		SWI = { add_country_modifier = { name = hre_member duration = -1 } }
+		SXL = { add_country_modifier = { name = hre_member duration = -1 } }
+		TRR = { add_country_modifier = { name = hre_member duration = -1 } }
+		TUS = { add_country_modifier = { name = hre_member duration = -1 } }
+		VER = { add_country_modifier = { name = hre_member duration = -1 } }
+		WEI = { add_country_modifier = { name = hre_member duration = -1 } }
+		WUR = { add_country_modifier = { name = hre_member duration = -1 } }
+		WUZ = { add_country_modifier = { name = hre_member duration = -1 } }
 			}
 		}
 1800scenariostarter = {

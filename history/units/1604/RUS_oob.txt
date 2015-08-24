@@ -1,6 +1,6 @@
 army = {
 	name = "1st Army"
-	location = 994
+	location = 1003
 	regiment = {
 		name= "Irregular Infantry"
 		type = irregular
@@ -80,7 +80,7 @@ army = {
 		}
 navy = {
 	name = "1st Fleet"
-	location = 994
+	location = 981
 	ship = {
 	name = "Frigate"
 	type = frigate

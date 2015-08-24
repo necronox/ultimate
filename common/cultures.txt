@@ -1397,7 +1397,7 @@ south_asian = {
 	}
 	
 	kashmiri = {
-		color = {170 88 200}
+		color = {255 0 128}
 		first_names = { Atta Sher Muhammad Abdullah Vakil Kifayat Rahmatullah Mir Mirza Juma Mulla Mirdad Madad Azad Haji Karimdad
 			
 		}
