@@ -15,12 +15,12 @@ Credits:
 
 Ed - Mod founder, former developer and former leader
 
-Current Developer: Palisight
+Current Developers: Palisight and UniversalRed
 
 Credits:
 Ed - Mod founder, former developer and former leader
 
-Fomrmer Developers
+Former Developers
 Benzebence
 Cearcurado
 Fancyliving
@@ -41,6 +41,7 @@ Rudwolf
 Shams Tabrizi
 Vnanimus
 
+Arkhometha for content from the Historical Project Mod
 Dimonius for providing mod fixes
 El_Primeministere for content from Kaiserreich
 EGaffney for the big flag frames
