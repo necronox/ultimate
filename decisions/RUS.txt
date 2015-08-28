@@ -38,14 +38,10 @@ political_decisions = {
 	establish_the_sovnarkom = {
 		potential = {
 			tag = RUS
-			NOT = {
-				has_country_flag = big_brother_is_watching
-			}
+			NOT = { has_country_flag = big_brother_is_watching }
 			government = proletarian_dictatorship
 		}
-		allow = {
-			mass_politics = 1
-		}
+		allow = { mass_politics = 1 }
 		
 		effect = {
 			any_pop = {
@@ -65,15 +61,11 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			government = absolute_monarchy
-			NOT = {
-				has_country_flag = the_manifesto
-			}
+			NOT = { has_country_flag = the_manifesto }
 			nationalism_n_imperialism = 1
 		}
 		
-		allow = {
-			revolution_n_counterrevolution = 1
-		}
+		allow = { revolution_n_counterrevolution = 1 }
 		
 		effect = {
 			prestige = 5
@@ -89,27 +81,19 @@ political_decisions = {
 	promulgate_the_ems_ukaz = {
 		potential = {
 			tag = RUS
-			NOT = {
-				has_country_flag = ems_ukaz_dispatched
-			}
+			NOT = { has_country_flag = ems_ukaz_dispatched }
 			government = absolute_monarchy
 			owns = 958
 			phenomenalism = 1
 			exists = GER
-			GER = {
-				owns = 570
-			}
+			GER = { owns = 570 }
 		}
 		
-		allow = {
-			biologism = 1
-		}
+		allow = { biologism = 1 }
 		
 		effect = {
 			any_pop = {
-				limit = {
-					has_pop_culture = ukrainian
-				}
+				limit = { has_pop_culture = ukrainian }
 				militancy = 3
 				consciousness = -2
 			}
@@ -122,9 +106,7 @@ political_decisions = {
 			tag = RUS
 			is_greater_power = yes
 			government = absolute_monarchy
-			NOT = {
-				has_country_flag = eastern_christians_up_in_here_yall
-			}
+			NOT = { has_country_flag = eastern_christians_up_in_here_yall }
 			exists = TUR
 			TUR = {
 				government = absolute_monarchy
@@ -139,9 +121,7 @@ political_decisions = {
 					value = 0
 				}
 			}
-			TUR = {
-				average_militancy = 3
-			}
+			TUR = { average_militancy = 3 }
 		}
 		
 		effect = {
@@ -152,12 +132,8 @@ political_decisions = {
 			}
 			any_greater_power = {
 				limit = {
-					NOT = {
-						tag = TUR
-					}
-					capital_scope = {
-						continent = europe
-					}
+					NOT = { tag = TUR }
+					capital_scope = { continent = europe }
 				}
 				country_event = { id=19030 days=0 }
 			}
@@ -167,8 +143,7 @@ political_decisions = {
 	peking_convention = {
 		potential = {
 			tag = RUS
-			MCK = {
-					owns = 1082 }
+			MCK = { owns = 1082 }
 			NOT = {
 				has_country_flag = peking_convention
 				war_with = MCK
@@ -179,21 +154,13 @@ political_decisions = {
 			}
 		}
 		
-		allow = {
-			is_greater_power = yes
-		}
+		allow = { is_greater_power = yes }
 		
 		effect = {
-			CHI_1082 = {
-				add_core = RUS
-			}
-			1469 = {
-				add_core = RUS
-			}
+			CHI_1082 = { add_core = RUS }
+			1469 = { add_core = RUS }
 			set_country_flag = peking_convention			
-			MCK = {
-				country_event = { id=80000 days=0 }
-			}
+			MCK = { country_event = { id=80000 days=0 } }
 			prestige = 2
 		}
 	}
@@ -206,33 +173,19 @@ political_decisions = {
 		owns = 2617
 		owns = 1083
         owns = 1082
-		NOT = {
-				has_global_flag = russian_vladivostok
-			}
+		NOT = { has_global_flag = russian_vladivostok }
 		}
 		
-		allow = {
-			prestige = 10
-		}
+		allow = { prestige = 10 }
 		
 		effect = {
-			1085 = {
-				change_province_name = "Blagoveshchensk"
-			}
-			1084 = {
-				change_province_name = "Nikolayevsk-na-amure"
-			}
-			1083 = {
-				change_province_name = "Khabarovsk"
-			}
-			2617 = {
-				change_province_name = "Pashkovo"
-			}
+			1085 = { change_province_name = "Blagoveshchensk" }
+			1084 = { change_province_name = "Nikolayevsk-na-amure" }
+			1083 = { change_province_name = "Khabarovsk" }
+			2617 = { change_province_name = "Pashkovo" }
 			1082 = {
 				change_province_name = "Vladivostok"
-				state_scope = {
-					change_region_name = "Primorye"
-				}
+				state_scope = { change_region_name = "Primorye" }
 			}
 			prestige = 5
 			set_global_flag = russian_vladivostok
@@ -247,28 +200,24 @@ political_decisions = {
 			capital = 994
 		}
 		
-		allow = {
-			owns = 1008 # Moscow
-		}
+		allow = { owns = 1008 } # Moscow 
 		
 		effect = {
 			capital = 1008
 			prestige = 5
 		}
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
-	
-}
-soviet_afghani_agreements = {
+soviet_afghani = {
 		potential = {
-		NOT = {
-				has_country_flag = soviets_influenced_afghanistan
-			}
+		NOT = { has_country_flag = soviets_influenced_afghanistan }
 			tag = RUS
 			exists = AFG
 			year = 1919
+			AND = {
+			RUS = { ideology = communist }
+			AFG = { ideology = communist }
+			}
 		}
 		
 		allow = {
@@ -298,9 +247,7 @@ soviet_afghani_agreements = {
 			set_country_flag = soviets_influenced_afghanistan
 		}
 		
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
 	}
 	
 	komitet_gosudarstvennoy_bezopasnosti = {
@@ -308,9 +255,7 @@ soviet_afghani_agreements = {
 			government = proletarian_dictatorship
 			tag = RUS
 			year = 1951
-				NOT = {
-					has_country_flag = kgb_operating
-				}
+				NOT = { has_country_flag = kgb_operating }
 			}
 		
 		effect = {
@@ -318,7 +263,6 @@ soviet_afghani_agreements = {
 			set_country_flag = kgb_operating
 		}
 				
-		ai_will_do = {
-			factor = 1
-		}
+		ai_will_do = { factor = 1 }
+	}
 	}

@@ -58,76 +58,37 @@ political_decisions = {
 		}
 1800scenariostarter = {
 			picture = spaceprogrampic
-		potential = {
-			has_global_flag = ImpossibleFlag
-				}
+		potential = { has_global_flag = ImpossibleFlag }
 		effect = {
 
 		HRE = {
-		all_core = {
-		remove_core = HRE } } 
+		all_core = { remove_core = HRE }
+		} 
 
-					220 = {
-		change_province_name = "Washington"
-			}
+					220 = { change_province_name = "Washington" }
 			set_global_flag = hre_dismantled
 			USA = {
-			all_core = {
-			remove_core = THC } }	
-		AUS = {
-		remove_country_modifier = holy_roman_emperor 
-			}
-				}
-			}
-
-victorianscenariostarter = {
-		picture = spaceprogrampic
-		potential = {
-			has_global_flag = ImpossibleFlag
-				}
-		effect = {
-	
+			all_core = { remove_core = THC } 
+			}	
+		AUS = { remove_country_modifier = holy_roman_emperor }
 				}
 			}
 
 WW1scenariostarter = {
 		picture = spaceprogrampic
-		potential = {
-			has_global_flag = ImpossibleFlag
-				}
+		potential = { has_global_flag = ImpossibleFlag }
 		effect = {
-		1649 = {
-		change_province_name = "Tokyo"
-			}
-		2472 = {
-		change_province_name = "Camberra"
-			}
-		BEL = {
-			all_core = {
-			remove_core = HRE } }
-		CZH = {
-			all_core = {
-			remove_core = HRE } }
-		FRA = {
-			all_core = {
-			remove_core = HRE } }
-		GER = {
-			all_core = {
-			remove_core = HRE } }
-		HUN = {
-			all_core = {
-			remove_core = HRE } }
-		ITA = {
-			all_core = {
-			remove_core = HRE } }
-	net = {
-			all_core = {
-			remove_core = HRE } }
-		SWI = {
-			all_core = {
-			remove_core = HRE } }
-		JAP = {
-			all_core = {
+		1649 = { change_province_name = "Tokyo" }
+		2472 = { change_province_name = "Camberra" }
+		BEL = { all_core = { remove_core = HRE } }
+		CZH = { all_core = { remove_core = HRE } }
+		FRA = { all_core = { remove_core = HRE } }
+		GER = { all_core = { remove_core = HRE } }
+		HUN = { all_core = { remove_core = HRE } }
+		ITA = { all_core = { remove_core = HRE } }
+	    NET = { all_core = { remove_core = HRE } }
+		SWI = { all_core = { remove_core = HRE } }
+		JAP = { all_core = {
 			remove_core = CHO
 			remove_core = KAG
 			remove_core = RYU
@@ -136,15 +97,22 @@ WW1scenariostarter = {
 			remove_core = TKG
 			remove_core = TOS
 			remove_core = YZW } }
-		
+		CAN = { add_country_modifier = {
+				name = indian_reserves
+				duration = -1
+		}
+		add_country_modifier = {
+				name = residential_school_system
+				duration = -1
+			}
+			set_country_flag = indian_act_enacted
+			set_country_flag = residential_school_allowed
 		}
 			}
-
+}
 WW2scenariostarter = {
 	picture = spaceprogrampic
-		potential = {
-			has_global_flag = ImpossibleFlag
-				}
+		potential = { has_global_flag = ImpossibleFlag }
 
 	effect = {
 		set_global_flag = NewScenarioFlag
@@ -170,7 +138,7 @@ WW2scenariostarter = {
 		government = democracy
 			}
 				}
-					add_country_modifier = {
+				add_country_modifier = {
 				name = female_suffrage
 				duration = -1
 			}
@@ -182,10 +150,7 @@ WW2scenariostarter = {
 				duration = -1
 			}
 				}
-		PLC = {
-			all_core = {
-			remove_core = PLC
-					} }
+		PLC = { all_core = { remove_core = PLC } }
 		AUS = {
 			set_country_flag = dual_monarchy_done
 		set_country_flag = grunderzeit_we_have_done
@@ -198,9 +163,7 @@ WW2scenariostarter = {
 			all_core = {
 			remove_core = AUS
 			remove_core = BOH } }		
-		HUN = {
-			all_core = {
-			remove_core = AUS } }		
+		HUN = { all_core = { remove_core = AUS } }		
 		YUG = {
 			all_core = {
 			remove_core = AUS
@@ -219,9 +182,7 @@ WW2scenariostarter = {
 			set_country_flag = the_vega_expedition_went
 			}
 
-		MEX = {
-			set_country_flag = we_have_tried_this_once	
-			}
+		MEX = { set_country_flag = we_have_tried_this_once	}
 		RUS = {
 	set_country_flag = eastern_christians_up_in_here_yall
 			add_country_modifier = {
@@ -232,9 +193,7 @@ WW2scenariostarter = {
 		set_country_flag = big_brother_is_watching
 			set_country_flag = the_manifesto	
 			}
-		SAF = {
-			set_country_flag = has_die_stem
-			}
+		SAF = { set_country_flag = has_die_stem }
 		ROM = {
 			all_core = {
 			remove_core = AUS
@@ -243,17 +202,12 @@ WW2scenariostarter = {
 			all_core = {
 			remove_core = AUS
 			remove_core = TUR } }	
-		ALB = {
-			all_core = {
-			remove_core = TUR } }	
-		GRE = {
-			all_core = {
-			remove_core = TUR } }				
-		POL = {
-		set_country_flag = WW2_Allies }
+		ALB = { all_core = { remove_core = TUR } }
+		GRE = { all_core = { remove_core = TUR } }				
+		POL = { set_country_flag = WW2_Allies }
 		ENG = {
-					barrels = 4000
-		aeroplanes = 4000
+		    barrels = 4000
+		    aeroplanes = 4000
 			add_country_modifier = {
 				name = the_yard
 				duration = -1
@@ -271,12 +225,8 @@ WW2scenariostarter = {
 		canned_food = 500
 		small_arms = 400
 		ammunition = 400 }
-		BRZ = {
-			set_country_flag = pedro_said_it_best
-			}
-		ARG = {
-			set_country_flag = 1420_passed
-			}
+		BRZ = { set_country_flag = pedro_said_it_best }
+		ARG = { set_country_flag = 1420_passed }
 		FRA = {
 			add_country_modifier = {
 				name = the_french_foreign_legion
@@ -288,40 +238,52 @@ WW2scenariostarter = {
 		set_country_flag = lambert_has_been_chartered
 		set_country_flag = merina_monarchy_is_over
 		set_country_flag = extreme_home_makeover
-		set_country_flag = WW2_Allies }
-		RUS = {
-		set_country_flag = WW2_Comintern }
+		set_country_flag = WW2_Allies
+		}
+		RUS = { set_country_flag = WW2_Comintern }
 		ITA = {
 		set_country_flag = cavour_has_done_his
 		set_country_flag = italia_ulterior
 		set_country_flag = vittoriano_built
-		set_country_flag = WW2_Axis }
+		set_country_flag = WW2_Axis 
+		}
 		JAP = {
 		set_country_flag = WW2_Axis }
+		GER = {
 		set_country_flag = WW2_Axis
 		set_country_flag = has_questioned_heligoland
-		great_wars_enabled = yes
-		set_global_flag = brazzaville_formed
-		set_global_flag = germania_werft_has_been_built
-		set_global_flag = great_wars_enabled
 		set_country_flag = schwabing_encircled
-		set_global_flag = congo_renamed
-		set_global_flag = the_great_trek
-		set_global_flag = piet_retief_massacre
-		set_country_flag = IOCMember 
+		set_country_flag = IOCMember
 		set_country_flag = ems_dispatch_sent
 		set_country_flag = von_moltke
 		barrels = 4000
 		aeroplanes = 4000
+		}
+		great_wars_enabled = yes
+		set_global_flag = brazzaville_formed
+		set_global_flag = germania_werft_has_been_built
+		set_global_flag = great_wars_enabled
+		set_global_flag = congo_renamed
+		set_global_flag = the_great_trek
+		set_global_flag = piet_retief_massacre
 		set_global_flag = ruhr_boom_has_happened
 		set_global_flag = anaconda_plan_active
 		set_global_flag = american_civil_war_has_happened
 		USA = {
-				aeroplanes = 400
+		aeroplanes = 400
 		barrels = 400
 		canned_food = 500
 		small_arms = 400
 		ammunition = 400
+		add_country_modifier = {
+				name = the_homestead_act
+				duration = -1
+			}
+		set_country_flag = has_used_radical_reconstruction
+		set_country_flag = wilmot_proviso_providing
+		set_country_flag = ostend_manifesto_published
+		set_country_flag = house_gag_rule_enacted
+		set_country_flag = custers_expedition_sent
 			}
 		any_country = {
 			any_pop = {
@@ -352,78 +314,24 @@ WW2scenariostarter = {
 			reduce_pop = 2
 				}
 					}
-
-			USA = {
-			add_country_modifier = {
-				name = the_homestead_act
-				duration = -1
-						}
-		set_country_flag = has_used_radical_reconstruction
-		set_country_flag = wilmot_proviso_providing
-		set_country_flag = ostend_manifesto_published
-			set_country_flag = house_gag_rule_enacted
-			set_country_flag = custers_expedition_sent
-			any_pop = {
-			limit = {
-			NOT = {
-			culture = zapotec
-			culture = mayan
-			culture = nahua
-			culture = tarascan 
-			culture = quechua 
-			culture = guarani 
-			culture = aimara 
-			culture = guarani 
-			culture = amazonian 
-			culture = patagonian 
-			culture = guajiro 
-			culture = tupinamba 
-			culture = metis 
-			culture = dakota 
-			culture = cherokee 
-			culture = pueblo
-			culture = inuit 
-			culture = cree 
-			culture = navajo 
-			culture = native_american_minor
-				}
-					}
-			reduce_pop = 3
-				}
-					}
-			EGY_921 = {
-			any_pop = {
-			limit = {
-			culture = ashkenazi 
-				}
-			reduce_pop = 15
-				}
-				}
-			
+					
+			EGY_921 = { any_pop = { limit = { culture = ashkenazi } reduce_pop = 15 } }
 			}
 		}
 
 	CWscenariostarter = {
 	picture = spaceprogrampic
-		potential = {
-			has_global_flag = ImpossibleFlag
-				}
+		potential = { has_global_flag = ImpossibleFlag }
 
 		effect = {
 			clr_global_flag = WW2inprogress
-				add_country_modifier = {
-				name = UNmember
-				duration = -1
-								}
 			POL = {
 			clr_country_flag = WW2_Allies
 			all_core = {
 			remove_core = GER
 			remove_core = PRU
 			remove_core = RUS } }
-			UKR = {
-			all_core = {
-			remove_core = POL } }	
+			UKR = { all_core = { remove_core = POL } }	
 			FIN = {
 			all_core = {
 			remove_core = SWE
@@ -437,22 +345,16 @@ WW2scenariostarter = {
 			remove_core = AUS
 			remove_core = ITA } }	
 
-			413 = {
-			add_core = FRA
-			}
+			413 = { add_core = FRA }
 				
-			ENG = {
-			clr_country_flag = WW2_Allies }
+			ENG = { clr_country_flag = WW2_Allies }
 			FRA = {
 			clr_country_flag = WW2_Allies
 			all_core = {
 			remove_core = GER } }
-			RUS = {
-			clr_country_flag = WW2_Comintern }
-			ITA = {
-			clr_country_flag = WW2_Axis }
-			JAP = {
-			clr_country_flag = WW2_Axis }
+			RUS = { clr_country_flag = WW2_Comintern }
+			ITA = { clr_country_flag = WW2_Axis }
+			JAP = { clr_country_flag = WW2_Axis }
 			clr_country_flag = WW2_Axis
 			any_country = {
 				add_country_modifier = {
@@ -465,9 +367,7 @@ WW2scenariostarter = {
 
 	WoTscenariostarter = {
 	picture = spaceprogrampic
-		potential = {
-			has_global_flag = ImpossibleFlag
-				}
+		potential = { has_global_flag = ImpossibleFlag }
 
 		effect = {
 			set_global_flag = disney_done
@@ -480,79 +380,44 @@ WW2scenariostarter = {
 			set_global_flag = ElvisDead
 			set_global_flag = BeatlesDone
 			set_global_flag = war_on_terror_happened
-			RUS = {
-			nuclear_weapons = 2000
-				}
-			ENG = {
-			nuclear_weapons = 500
-				}
-			FRA = {
-			nuclear_weapons = 600
-				}
-			CHI = {
-			nuclear_weapons = 400
-				}
+			RUS = { nuclear_weapons = 2000 }
+			ENG = { nuclear_weapons = 500 }
+			FRA = { nuclear_weapons = 600 }
+			CHI = { nuclear_weapons = 400 }
 			HND = {
 			nuclear_weapons = 100
 				any_pop = {
 					reduce_pop = 4
 						}
 				}
-			ISR = {
-			nuclear_weapons = 50
-				}
-			EST = {
-			all_core = {
-			remove_core = RUS } }	
-			LIT = {
-			all_core = {
-			remove_core = RUS } }	
-			LAT = {
-			all_core = {
-			remove_core = RUS } }	
+			ISR = { nuclear_weapons = 50 }
+			EST = { all_core = { remove_core = RUS } }	
+			LIT = { all_core = { remove_core = RUS } }	
+			LAT = { all_core = { remove_core = RUS } }	
 			BYE = {
 			all_core = {
 			remove_core = RUS
 			remove_core = POL } }	
-			UKR = {
-			all_core = {
-			remove_core = RUS } }	
-			MOL = {
-			all_core = {
-			remove_core = RUS } }	
-			SLV = {
-			all_core = {
-			remove_core = HUN } }	
-			KAZ = {
-			all_core = {
-			remove_core = RUS } }	
-			GEO = {
-			all_core = {
-			remove_core = RUS } }	
-			ARM = {
-			all_core = {
-			remove_core = RUS } }	
-			AZB = {
-			all_core = {
-			remove_core = RUS } }	
-			BGL = {
-			all_core = {
-			remove_core = HND } }	
-			PAK = {
-			all_core = {
-			remove_core = HND }
+			UKR = { all_core = { remove_core = RUS } }	
+			MOL = { all_core = { remove_core = RUS } }	
+			SLV = { all_core = { remove_core = HUN } }	
+			KAZ = { all_core = { remove_core = RUS } }	
+			GEO = { all_core = { remove_core = RUS } }	
+			ARM = { all_core = { remove_core = RUS } }	
+			AZB = { all_core = { remove_core = RUS } }	
+			BGL = { all_core = { remove_core = HND } }	
+			PAK = { all_core = { remove_core = HND }
 			nuclear_weapons = 50 }	
-			MCD = {
-			all_core = {
-			remove_core = SER } }	
-			AFG = {
-			all_core = {
-			remove_core = HND } }	
+			MCD = { all_core = { remove_core = SER } }	
+			AFG = { all_core = { remove_core = HND } }	
+            CAN = { 
+			remove_country_modifier = indian_reserves
+			remove_country_modifier = residential_school_system
+			clr_country_flag = residential_school_allowed
+		    clr_country_flag = indian_act_enacted
+		     }
 
-
-			371 = {
-			remove_core = GER
-			}
+			371 = { remove_core = GER }
 			
 
 		USA = {

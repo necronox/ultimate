@@ -1,8 +1,0 @@
-political_decisions = {
-	play_harder_game = {
-		potential = { has_country_flag = shown_decisions }
-		allow = {}
-		effect = { activate_technology = ad_hoc_hard_game }
-		ai_will_do = { factor = 0 }
-	}
-}

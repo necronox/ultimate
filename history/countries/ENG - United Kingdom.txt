@@ -439,9 +439,7 @@ modern_chemistry = 1
 puddling_iron = 1
 first_industrial_revolution_tech = 1 #until this for 1800
                 }
-1820.1.1 = {
-        decision = victorianscenariostarter
-                }
+
 1836.1.1 = {
 #GreaterPowers = prestige
 prestige = 100

@@ -702,7 +702,7 @@ prussian_doctrine = {
 	army_base = {
 		supply_consumption = 0.10
 	} 
-	max_fort = 1
+	#max_fort = 1
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -1326,7 +1326,7 @@ sir_francis_drake_doctrine = {
 	year = 1570
 	cost = 6400
 	unciv_military = yes
-	max_naval_base = 1
+	#max_naval_base = 1
 	ai_chance = {
 		factor = 1
 		# Land-locked countries don't research this

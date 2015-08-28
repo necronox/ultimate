@@ -522,26 +522,12 @@ advanced_limited_access_roads = 1
 natural_gas_power_station = 1 #until this for 1937
 }
 
-
-
-1935.1.1 = {
-	government = proletarian_dictatorship
-		}
-
-2000.1.1 = {
-	prestige = 150
-	oob = "/2000/CHI_oob.txt"
-		computerisation = 1
-		globalisation = 1
-		}
+1935.1.1 = { government = proletarian_dictatorship }
 
 1939.1.1 = { culture = beifaren
 culture = nanfaren
 culture = yue
 }
-
-
-
 
 1945.1.1 = {
 
@@ -942,10 +928,10 @@ street_road = 1
 secret_of_atom = 1 #until this for 1945
 	}
 
+1979.1.1 = { decision = economic_reforms }
 
-
-
-
+1990.11.26 = { ruling_party = CHI_socialist }
+	
 1999.1.1 = {
 
 #Technologies
@@ -1424,7 +1410,12 @@ renewable_energy = 1
 quantum_physics = 1 #until this for 2000
 	}
 
-
+2000.1.1 = {
+	prestige = 150
+	oob = "/2000/CHI_oob.txt"
+		computerisation = 1
+		globalisation = 1
+		}
 
 
 

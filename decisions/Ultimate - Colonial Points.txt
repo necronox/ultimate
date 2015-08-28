@@ -1,9 +1,0 @@
-political_decisions = {
-	colonial_points = {
-		potential = { has_country_flag = shown_decisions }
-		allow = {}
-		effect = { country_event = 22000110 }
-		ai_will_do = { factor = 0 }
-	}
-}
-

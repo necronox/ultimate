@@ -2137,6 +2137,7 @@ country_event = {
 		year = 1876
 		NOT = {
 			year = 2000
+			has_country_flag = indian_act_enacted
 		}
 	}
 	
@@ -2186,6 +2187,7 @@ country_event = {
 		year = 1890
 		NOT = {
 			year = 2000
+			has_country_flag = residential_school_allowed
 		}
 		has_country_flag = indian_act_enacted
 	}
@@ -2221,9 +2223,7 @@ country_event = {
 	trigger = {
 		tag = CAN
 		year = 1990
-		NOT = {
-			year = 2000
-		}
+		NOT = { year = 2000 }
 		has_country_flag = residential_school_allowed
 	}
 	
