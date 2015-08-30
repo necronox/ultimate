@@ -1,3 +1,6 @@
+owner = OYO
+add_core = OYO
+controller = OYO
 
 
 1903.1.1 = {

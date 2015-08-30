@@ -464,6 +464,7 @@ luxury_clothes_factory = {
 	input_goods = {   
 		regular_clothes = 0.9	#5.22
 		silk = 3.9		#39	total input+maint = 54
+		fur = 3.5
 	}
 	output_goods = luxury_clothes 
 	value = 1			#65
@@ -482,6 +483,7 @@ luxury_furniture_factory = {
 	input_goods = { 
 		furniture = 2	 	#45.08
 		tropical_wood = 7.5 #8.1	total input+maint = 53.18
+		fur = 2.4
 	}
 	output_goods = luxury_furniture 
 	value = 1.1			#64.9
@@ -614,6 +616,7 @@ regular_clothes_factory = {
 	template = factory_template
 	input_goods = {  
 		fabric = 40		#18	total input+maint = 72
+		fur = 0.8
 	}
 	output_goods = regular_clothes 
 	value = 15			#87
@@ -869,11 +872,17 @@ RGO_template_labourers = {
 	workforce = 40000
 }
 
-
 cattle_ranch = {
 	template = RGO_template_farmers
 	output_goods = cattle 
 	value = 1.8
+	farm = yes
+}
+
+fur_post = {
+	template = RGO_template_farmers
+	output_goods = fur
+	value = 2
 	farm = yes
 }
 
@@ -1226,6 +1235,7 @@ artisan_luxury_clothes = {
 	input_goods = {   
 		regular_clothes = 0.9	#5.22
 		silk = 3.9		#39	total input+maint = 54
+		fur = 3.5
 	}
 	output_goods = luxury_clothes 
 	value = 1			#65
@@ -1245,6 +1255,7 @@ artisan_luxury_furniture = {
 	input_goods = { 
 		furniture = 2	 	#45.08
 		tropical_wood = 7.5 #8.1	total input+maint = 53.18
+		fur = 2.4
 	}
 	output_goods = luxury_furniture 
 	value = 1.1			#64.9
@@ -1378,6 +1389,7 @@ artisan_paper = {
 artisan_regular_clothes = {       
 	input_goods = {  
 		fabric = 40		#72	total input+maint = 72
+		fur = 0.8
 	}
 	output_goods = regular_clothes 
 	value = 15			#87

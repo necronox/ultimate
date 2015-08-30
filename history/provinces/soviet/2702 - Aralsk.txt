@@ -1,3 +1,6 @@
+owner = KAZ
+add_core = KAZ
+controller = KAZ
 trade_goods = wool
 life_rating = 30
 

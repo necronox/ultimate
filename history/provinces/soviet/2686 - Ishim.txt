@@ -1,5 +1,10 @@
+add_core = SIB
+owner = SIB
+
+trade_goods = sulphur
+life_rating = 35
+1700.1.1 = {
 owner = RUS
 controller = RUS
 add_core = RUS
-trade_goods = sulphur
-life_rating = 35
+		}

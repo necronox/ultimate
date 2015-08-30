@@ -1,5 +1,23 @@
 ##1604 Puppets
-
+# Qazaq_khanate - khiva, bukhara, kokand
+vassal = {
+	first = KAZ
+	second = KHI
+	start_date = 1603.5.1
+	end_date = 1821.1.1
+		}
+vassal = {
+	first = KAZ
+	second = BUK
+	start_date = 1603.5.1
+	end_date = 1821.1.1
+		}
+vassal = {
+	first = KAZ
+	second = KOK
+	start_date = 1603.5.1
+	end_date = 1821.1.1
+		}
 #Crimea-Otto
 vassal = {
 	first = TUR
@@ -54,47 +72,7 @@ vassal = {
 		}
 		
 #Holy Roman Empire
-substate = {
-	first = HRE
-	second = SWI
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
-
-substate = {
-	first = HRE
-	second = SVY
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
-		
-substate = {
-	first = HRE
-	second = TUS
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
-		
-substate = {
-	first = HRE
-	second = PAR
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
-		
-substate = {
-	first = HRE
-	second = MOD
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
-		
-substate = {
-	first = HRE
-	second = LUC
-	start_date = 1551.1.1
-	end_date = 1648.1.1
-		}
+# removed - holy roman empire had almost no controll over the areas of switzerland and italy. - these where mostly controlled by france, the papal states, sicily or austria
 		
 #Ottoman Eyalets
 substate = {
@@ -115,6 +93,14 @@ substate = {
 	start_date = 1551.1.1
 	end_date = 1911.1.1
 		}
+
+#Ottoman Egypt
+vassal = {
+	first = TUR
+	second = EGY
+	start_date = 1600.1.1
+	end_date = 1841.1.1
+}
 
 
 ####Napoleonic Era####

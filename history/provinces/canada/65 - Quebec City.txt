@@ -1,5 +1,6 @@
 trade_goods = grain
 life_rating = 35
+colonial = 1
 
 1608.1.1 = {
 owner = FRA

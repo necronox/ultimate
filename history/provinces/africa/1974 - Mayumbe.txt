@@ -1,3 +1,6 @@
+owner = KNG
+add_core = KNG
+controller = KNG
 
 
 1903.1.1 = {

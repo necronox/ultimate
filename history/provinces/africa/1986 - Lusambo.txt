@@ -1,3 +1,7 @@
+owner = LBA
+add_core = LBA
+controller = LBA
+
 
 #Rubber discovered!
 1890.1.1 = {

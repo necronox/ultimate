@@ -3,7 +3,7 @@ controller = WYA
 add_core = WYA
 trade_goods = iron
 life_rating = 30
-
+colonial = 1
 1714.1.1 = {
 owner = FRA
 controller = FRA

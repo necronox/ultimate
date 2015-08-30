@@ -1,5 +1,6 @@
-trade_goods = grain
-life_rating = 35
+colonial = 1
+trade_goods = fur
+life_rating = 20
 
 1700.1.1 = {
 owner = RUS

@@ -3,7 +3,7 @@ controller = WYA
 add_core = WYA
 trade_goods = fish
 life_rating = 33
-
+colonial = 1
 1800.1.1 = {
 owner = ENG
 controller = ENG

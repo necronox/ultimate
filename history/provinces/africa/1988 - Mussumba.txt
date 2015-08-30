@@ -1,3 +1,6 @@
+owner = LND
+add_core = LND
+controller = LND
 
 #Rubber discovered!
 1890.1.1 = {

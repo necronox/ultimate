@@ -1,4 +1,4 @@
-capital = 46
+capital = 60
 primary_culture = cree
 culture = native_american_minor
 culture = inuit

@@ -1,3 +1,6 @@
+owner = SGH
+add_core = SGH
+controller = SGH
 trade_goods = cotton
 life_rating = 15
 

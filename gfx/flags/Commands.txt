@@ -1,0 +1,13 @@
+					303 = { # Southhampton
+				sub_unit = {
+					type = cruiser
+					value = current
+				}
+			}
+
+*This command spawns a cruiser in southampton
+
+GOOD = #
+
+*Condition that check whether you have the specified amount of goods in your stockpile. Replace GOOD with any trading good
+

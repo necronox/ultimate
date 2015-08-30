@@ -1,3 +1,6 @@
+owner = HAU
+add_core = HAU
+controller = HAU
 
 
 1903.1.1 = {

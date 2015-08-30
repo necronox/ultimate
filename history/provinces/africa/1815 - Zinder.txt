@@ -1,3 +1,6 @@
+owner = HAU
+add_core = HAU
+controller = HAU
 trade_goods = cattle
 life_rating = 10
 

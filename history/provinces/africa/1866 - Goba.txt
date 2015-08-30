@@ -1,3 +1,7 @@
+owner = AJU
+add_core = AJU
+controller = AJU
+
 trade_goods = cattle
 life_rating = 30
 1914.1.1 = {

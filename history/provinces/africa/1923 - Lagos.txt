@@ -1,3 +1,6 @@
+owner = OYO
+add_core = OYO
+controller = OYO
 trade_goods = tropical_wood
 life_rating = 15
 1861.1.1 = {

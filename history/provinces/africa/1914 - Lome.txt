@@ -1,3 +1,7 @@
+owner = ASH
+add_core = ASH
+controller = ASH
+
 
 
 1903.1.1 = {

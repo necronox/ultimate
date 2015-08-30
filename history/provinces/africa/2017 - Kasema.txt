@@ -1,3 +1,6 @@
+owner = LBA
+add_core = LBA
+controller = LBA
 
 
 1903.1.1 = {

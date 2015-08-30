@@ -1,3 +1,6 @@
+owner = KNR
+add_core = KNR
+controller = KNR
 
 
 1903.1.1 = {

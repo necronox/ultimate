@@ -1,5 +1,6 @@
-owner = FRA
-controller = FRA
+owner = WOL
+add_core = WOL
+controller = WOL
 trade_goods = fruit
 life_rating = 30
 colonial = 2

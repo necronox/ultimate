@@ -1,5 +1,6 @@
-owner = POR
-controller = POR
+owner = KNG
+add_core = KNG
+controller = KNG
 trade_goods = fruit
 life_rating = 35
 colonial = 2

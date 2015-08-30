@@ -1,3 +1,6 @@
+owner = LND
+add_core = LND
+controller = LND
 
 
 1903.1.1 = {

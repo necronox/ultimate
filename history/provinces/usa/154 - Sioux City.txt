@@ -21,7 +21,7 @@ add_core = SIX
 	colonial = 0
 	add_core = USA
 		}
-trade_goods = grain
+trade_goods = fur
 life_rating = 35
 1867.1.1 = {
 	owner = USA

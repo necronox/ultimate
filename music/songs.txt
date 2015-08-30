@@ -1,0 +1,153 @@
+song = {
+	name = "general1.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = yes
+			}
+		}	
+	}
+
+song = {
+	name = "general2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = yes
+			}
+		}	
+	}
+
+song = {
+	name = "general3.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = yes
+			}
+		}	
+	}
+
+song = {
+	name = "general4.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = yes
+			}
+		}	
+	}
+
+song = {
+	name = "general5.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = yes
+			}
+		}	
+	}
+
+song = {
+	name = "general6.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = yes
+			}
+		}	
+	}
+
+song = {
+	name = "general7.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = yes
+			}
+		}	
+	}
+
+song = {
+	name = "general8.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = yes
+			}
+		}	
+	}
+	
+song = {
+	name = "general10.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = yes
+			}
+		}	
+	}		
+	
+song = {
+	name = "war1.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = no
+			}
+		}	
+	}
+
+song = {
+	name = "war2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = no
+			}
+		}	
+	}
+	
+song = {
+	name = "war3.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = no
+			}
+		}	
+	}
+	
+song = {
+	name = "war4.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = no
+			}
+		}	
+	}
+	
+song = {
+	name = "war5.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = no
+			}
+		}	
+	}

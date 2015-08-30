@@ -1,6 +1,7 @@
-owner = SOK
-controller = SOK
-add_core = SOK
+owner = HAU
+add_core = HAU
+controller = HAU
+
 
 1903.1.1 = {
 		owner = ENG

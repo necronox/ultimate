@@ -1,3 +1,6 @@
+owner = KON
+add_core = KON
+controller = KON
 
 
 1903.1.1 = {

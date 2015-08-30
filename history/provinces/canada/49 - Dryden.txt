@@ -1,4 +1,6 @@
-trade_goods = timber
+colonial = 1
+owner = WYA
+trade_goods = fur
 life_rating = 25
 
 1700.1.1 = {

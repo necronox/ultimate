@@ -8,7 +8,7 @@ add_core = IRO
 	add_core = USA
 		}
 
-trade_goods = timber
+trade_goods = fur
 life_rating = 35
 1867.1.1 = { 	#AFTER CIVIL WAR
 	owner = USA	#AFTER CIVIL WAR

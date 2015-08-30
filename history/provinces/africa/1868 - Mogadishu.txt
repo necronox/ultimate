@@ -1,6 +1,6 @@
-owner = OMA
-controller = OMA
-add_core = OMA
+owner = AJU
+add_core = AJU
+controller = AJU
 trade_goods = cattle
 life_rating = 35
 1861.1.1 = {

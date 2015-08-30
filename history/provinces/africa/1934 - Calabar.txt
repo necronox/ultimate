@@ -1,3 +1,6 @@
+owner = ARO
+add_core = ARO
+controller = ARO
 
 
 1903.1.1 = {

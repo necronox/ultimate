@@ -1,3 +1,6 @@
+owner = FAN
+add_core = FAN
+controller = FAN
 
 
 1903.1.1 = {

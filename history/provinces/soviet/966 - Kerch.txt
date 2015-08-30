@@ -24,5 +24,5 @@ add_core = UKR
 
 
 add_core = CRI
-trade_goods = iron
+trade_goods = wool
 life_rating = 35

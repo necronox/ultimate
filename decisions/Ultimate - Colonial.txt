@@ -33,39 +33,7 @@ virginia_company = {
 }
 			}
 
-found_quebec = {
-	picture = champlain
-		potential = {
-		65 = {
-			empty = yes
-			}
-		tag = FRA
-		NOT = {
-		has_global_flag = quebecity_founded
-			}
-				}
-		allow = {
-			money = 10000
-			}
 
-
-		effect = {
-		set_global_flag = quebecity_founded
-		prestige = 5
-		money = -10000
-		65 = {
-		secede_province = FRA
-			}
-				}
-		ai_will_do = {
-	    factor = 1
-	    modifier = {
-	 	factor = 0
-	 	NOT = { year = 1608 }
-	}
-}		
-				
-			}
 new_netherlands = {
 	picture = newnetherlandspic
 		potential = {
@@ -130,7 +98,12 @@ new_sweden = {
 	}
 }
 			}	
+
+###################################################################
+###################################################################
+################# THIRTEEN COLONIES AND USA #######################
 louisiana_purchasepart1 = {
+	alert = no
 	picture = louisianapurchasepic
 		potential = {
 		exists = USA
@@ -201,6 +174,7 @@ louisiana_purchasepart1 = {
                       }
 				}
 			}
+
 	forming_thirteen_colonies_1 = {
 		picture = louisianapurchasepic
 		potential = {
@@ -817,4 +791,334 @@ louisiana_purchasepart1 = {
 			release_vassal = THC
 		}
 	}
+
+################################################################
+################################################################
+############################ FRANCE ############################
+
+found_quebec = {
+	picture = champlain
+		potential = {
+			65 = {
+				empty = yes
+			}
+			tag = FRA
+			NOT = {
+				has_global_flag = quebecity_founded
+			}
+			NOT = { exists = USA }
+		}
+		allow = {
+			money = 10000
+			}
+
+
+		effect = {
+		set_global_flag = quebecity_founded
+		prestige = 5
+		money = -10000
+		diplomatic_influence = { who = WYA value = 100 }
+		diplomatic_relation = { who = WYA value = 250 }
+		65 = { secede_province = FRA }
+		61 = { secede_province = FRA }
+		63 = { secede_province = FRA }
+		58 = { secede_province = FRA }
+		64 = { secede_province = FRA }
+		66 = { secede_province = FRA }
+		67 = { secede_province = FRA }
+		77 = { secede_province = FRA }
+		}
+			
+		ai_will_do = {
+	   	 	factor = 1
+		}						
+}
+
+found_Louisiana = {
+	picture = champlain
+		potential = {
+			139 = {
+				empty = yes
+			}
+			tag = FRA
+			NOT = { has_global_flag = found_louisiana }
+			NOT = { exists = USA }
+		}
+		allow = {
+			year = 1682
+				OR = {
+					money = 275000
+					ai = yes
+				}
+			}
+
+		effect = {
+			prestige = 10
+			money = -275000
+			139 = {	secede_province = FRA }
+			140 = {	secede_province = FRA }
+		    141 = {	secede_province = FRA }
+		    142 = {	secede_province = FRA }
+		    143 = {	secede_province = FRA }
+		    144 = {	secede_province = FRA }
+		    145 = {	secede_province = FRA }
+		    146 = {	secede_province = FRA }
+		    147 = {	secede_province = FRA }
+		    148 = {	secede_province = FRA }
+		    149 = {	secede_province = FRA }
+		    150 = {	secede_province = FRA }
+		    187 = {	secede_province = FRA }
+		    189 = {	secede_province = FRA }
+		    193 = {	secede_province = FRA }
+		    192 = {	secede_province = FRA }
+		    194 = {	secede_province = FRA }
+		    197 = {	secede_province = FRA }
+		    132 = { secede_province = FRA }
+		    131 = { secede_province = FRA }
+		    130 = { secede_province = FRA }
+		    126 = { secede_province = FRA }
+		    151 = { secede_province = FRA }
+		    152 = { secede_province = FRA }
+		    set_global_flag = found_louisiana
+		}
+			
+		ai_will_do = {
+	   	 	factor = 1
+		}						
+}
+
+expand_inwards_fra = {
+	picture = louisianapurchasepic
+		potential = {
+			year = 1660
+			tag = FRA
+			NOT = { has_global_flag = expand_inward_fra }
+			NOT = { exists = USA }
+		}
+		allow = {
+			OR = {
+				money = 475000
+				ai = yes
+			}
+		}
+
+		effect = {
+			prestige = 10
+			money = -475000
+			52 = { secede_province = FRA }
+			57 = { secede_province = FRA }
+			56 = { secede_province = FRA }
+			46 = { secede_province = FRA }
+			53 = { secede_province = FRA }
+			55 = { secede_province = FRA }
+			54 = { secede_province = FRA }
+			51 = { secede_province = FRA }
+			50 = { secede_province = FRA }
+			49 = { secede_province = FRA }
+			157 = { secede_province = FRA }
+			158 = { secede_province = FRA }
+			177 = { secede_province = FRA }
+			160 = { secede_province = FRA }
+			161 = { secede_province = FRA }
+			162 = { secede_province = FRA }
+			159 = { secede_province = FRA }
+			176 = { secede_province = FRA }
+			175 = { secede_province = FRA }
+			174 = { secede_province = FRA }
+			173 = { secede_province = FRA }
+			164 = { secede_province = FRA }
+			166 = { secede_province = FRA }
+			165 = { secede_province = FRA }
+			163 = { secede_province = FRA }
+			167 = { secede_province = FRA }
+			168 = { secede_province = FRA }
+			171 = { secede_province = FRA }
+			169 = { secede_province = FRA }
+			170 = { secede_province = FRA }
+			172 = { secede_province = FRA }
+			182 = { secede_province = FRA }
+			181 = { secede_province = FRA }
+			180 = { secede_province = FRA }
+			FRA = {
+				create_vassal = SIX
+				create_vassal = WYA
+				create_vassal = CMC
+			}
+			set_global_flag = expand_inward_fra 
+		}
+			
+		ai_will_do = {
+	   	 	factor = 1
+		}						
+}
+
+################################################################
+################################################################
+############################ RUSSIA ############################
+
+russian_american  = {
+	picture = champlain
+		potential = {
+			year = 1733
+			tag = RUS
+			NOT = { has_global_flag = russian_america }
+			NOT = { exists = USA }
+		}
+		allow = {
+			OR = {
+				money = 475000
+				ai = yes
+			}
+		}
+
+		effect = {
+			prestige = 10
+			money = -475000
+			2631 = { secede_province = RUS }
+			1 = { secede_province = RUS }
+			2 = { secede_province = RUS }
+			3 = { secede_province = RUS }
+			4 = { secede_province = RUS }
+			5 = { secede_province = RUS }
+			2630 = { secede_province = RUS }
+			13 = { secede_province = RUS }
+			14 = { secede_province = RUS }
+			15 = { secede_province = RUS }
+			set_global_flag = russian_america
+		}
+			
+		ai_will_do = {
+	   	 	factor = 1
+		}						
+}
+
+mikhail_stadukhin_expedition = {
+		picture = champlain
+		potential = {
+			year = 1639
+			tag = RUS
+			NOT = { has_global_flag = mikhail_stadukhin }
+		}
+		allow = {
+			OR = {
+				money = 875000
+				ai = yes
+			}
+		}
+
+		effect = {
+			prestige = 10
+			money = -875000
+			2641 = { secede_province = RUS }
+			1072 = { secede_province = RUS }
+			2639 = { secede_province = RUS }
+			2618 = { secede_province = RUS }
+			2638 = { secede_province = RUS }
+			1073 = { secede_province = RUS }
+			2663 = { secede_province = RUS }
+			2616 = { secede_province = RUS }
+			2663 = { secede_province = RUS }
+			1074 = { secede_province = RUS }
+			2639 = { secede_province = RUS }
+			2637 = { secede_province = RUS }
+			2590 = { secede_province = RUS }
+			2634 = { secede_province = RUS }
+			2633 = { secede_province = RUS }
+			set_global_flag = mikhail_stadukhin
+		}
+			
+		ai_will_do = {
+	   	 	factor = 1
+		}
+}
+
+founding_of_yakutsk = {
+		picture = champlain
+		potential = {
+			year = 1638
+			tag = RUS
+			NOT = { has_global_flag = yakutsk_founding }
+		}
+		allow = {
+			OR = {
+				money = 175000
+				ai = yes
+			}
+		}
+
+		effect = {
+			prestige = 10
+			money = -175000
+			1079 = { secede_province = RUS }
+			2645 = { secede_province = RUS }
+			2644 = { secede_province = RUS }
+			2696 = { secede_province = RUS }
+			1081 = { secede_province = RUS }
+			2697 = { secede_province = RUS }
+			1080 = { secede_province = RUS }
+			2669 = { secede_province = RUS }
+
+			 set_global_flag = yakutsk_founding
+		}
+			
+		ai_will_do = {
+	   	 	factor = 1
+		}
+}
+
+
+################################################################
+################################################################
+############################ SPAIN #############################
+
+spanish_expeditions_to_alta_california  = {
+	picture = lousianapurchasepic
+		potential = {
+			year = 1769
+			tag = SPA
+			NOT = { has_global_flag = spanish_expeditions_california }
+			NOT = { exists = USA }
+		}
+		allow = {
+			OR = {
+				money = 475000
+				ai = yes
+			}
+		}
+
+		effect = {
+			prestige = 10
+			money = -475000
+			release = APC
+			2631 = { secede_province = RUS }
+			100 = { secede_province = SPA }
+			101 = { secede_province = SPA }
+			102 = { secede_province = SPA }
+			98 = { secede_province = SPA }
+			97 = { secede_province = SPA }
+			99 = { secede_province = SPA }
+			94 = { secede_province = SPA }
+			95 = { secede_province = SPA }
+			96 = { secede_province = SPA }
+			85 = { secede_province = SPA }
+			86 = { secede_province = SPA }
+			84 = { secede_province = SPA }
+			88 = { secede_province = SPA }
+			87 = { secede_province = SPA }
+			89 = { secede_province = SPA }
+			90 = { secede_province = SPA }
+			set_global_flag = spanish_expeditions_california
+			war = { 
+				target = APC
+				attacker_goal = {
+					casus_belli = establish_protectorate_casus_belli
+				}
+			}
+		}
+			
+		ai_will_do = {
+	   	 	factor = 1
+		}						
+}
+
 }

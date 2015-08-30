@@ -1,3 +1,5 @@
+colonial = 1
+owner = WYA
 trade_goods = cattle
 life_rating = 30
 

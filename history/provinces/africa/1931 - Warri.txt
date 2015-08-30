@@ -1,3 +1,6 @@
+owner = OYO
+add_core = OYO
+controller = OYO
 
 #Rubber discovered!
 1890.1.1 = {

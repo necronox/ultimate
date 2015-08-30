@@ -1,3 +1,6 @@
+owner = MOS
+add_core = MOS
+controller = MOS
 
 
 1903.1.1 = {
