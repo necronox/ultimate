@@ -6,6 +6,9 @@ owner = PNJ
 controller = PNJ
 		}
 add_core = PNJ
+1936.1.1 = {
+	add_core = PAK
+		}
 
 
 #Decolonisation
@@ -16,7 +19,6 @@ add_core = PNJ
 	colonial = 0
 		}
 
-add_core = HND
 1880.1.1 = {
 owner = ENG #hello
 controller = ENG #hello

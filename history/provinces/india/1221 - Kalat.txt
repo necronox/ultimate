@@ -19,9 +19,6 @@ add_core = KAL
 	colonial = 0
 		}
 
-
-
-add_core = HND
 1880.1.1 = {
 owner = ENG #hello
 controller = ENG #hello

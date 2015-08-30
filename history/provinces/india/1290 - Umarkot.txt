@@ -6,7 +6,10 @@ owner = SIN
 controller = SIN
 		}
 add_core = SIN
-
+1936.1.1 = {
+	add_core = PAK
+	remove_core = SIN
+		}
 
 #Decolonisation
 1947.1.1 = {
@@ -17,8 +20,6 @@ add_core = SIN
 		}
 
 
-
-add_core = HND
 1880.1.1 = {
 owner = ENG #hello
 controller = ENG #hello

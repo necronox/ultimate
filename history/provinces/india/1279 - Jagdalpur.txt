@@ -21,6 +21,11 @@ controller = BAS
 add_core = BAS
 remove_core = MRT
 		}
+1936.1.1 = {
+add_core = HND
+remove_core = BAS
+remove_core = GWD
+		}
 #Decolonisation
 1947.1.1 = {
 	owner = HND

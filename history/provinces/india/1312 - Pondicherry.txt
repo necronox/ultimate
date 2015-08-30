@@ -9,7 +9,14 @@ colonial = 2
 		}
 add_core = HYD
 
-
+1748.12.4 = {
+controller = ENG
+owner = ENG
+colonial = 2
+		}
+1936.1.1 = {
+add_core = HND
+		}
 #Decolonisation
 1947.1.1 = {
 	owner = HND

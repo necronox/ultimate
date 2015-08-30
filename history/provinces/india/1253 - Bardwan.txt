@@ -13,6 +13,7 @@
 1947.1.1 = {
 	owner = HND
 	controller = HND
+	add_core = HND
 	colonial = 0
 		}
 
